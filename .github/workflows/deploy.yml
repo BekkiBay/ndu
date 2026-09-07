@@ -20,7 +20,9 @@ jobs:
         run: python3 scripts/check_links.py
 
       - name: Report size
-        run: du -sh . && echo "html pages: $(ls *.html | wc -l)"
+        run: |
+          du -sh .
+          echo "html pages: $(ls *.html | wc -l)"
 
   deploy-hermes:
     name: Deploy to Hermes
