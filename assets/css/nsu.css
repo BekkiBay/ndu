@@ -34,13 +34,13 @@
 .nsu-crumbs span:not(.sep){color:var(--nsu-accent)}
 
 /* ---------------------------------------------------------- sections */
-#sp-main-body .sppb-section{padding:56px 0}
-#sp-main-body .sppb-section.nsu-alt{background:var(--nsu-light)}
-#sp-main-body .sppb-addon-title{
+.nsu-inner #sp-main-body .sppb-section{padding:56px 0}
+.nsu-inner #sp-main-body .sppb-section.nsu-alt{background:var(--nsu-light)}
+.nsu-inner #sp-main-body .sppb-addon-title{
   color:var(--nsu-primary);font-size:30px;font-weight:700;margin:0 0 22px;line-height:1.25;
 }
-#sp-main-body .sppb-addon-content{color:var(--nsu-text);font-size:16px;line-height:1.75}
-#sp-main-body .sppb-addon-content p{margin:0 0 16px}
+.nsu-inner #sp-main-body .sppb-addon-content{color:var(--nsu-text);font-size:16px;line-height:1.75}
+.nsu-inner #sp-main-body .sppb-addon-content p{margin:0 0 16px}
 h4.nsu-sub,h5.nsu-sub{
   color:var(--nsu-dark);font-weight:700;margin:28px 0 12px;font-size:20px;line-height:1.35;
 }
@@ -177,22 +177,22 @@ h5.nsu-sub{font-size:17px}
   .nsu-page-hero h1{font-size:38px}
 }
 @media (max-width:991px){
-  #sp-main-body .sppb-section{padding:44px 0}
+  .nsu-inner #sp-main-body .sppb-section{padding:44px 0}
   .nsu-hero-inner{padding:52px 0 46px}
   .nsu-page-hero h1{font-size:32px}
   .nsu-hero-sub{font-size:16px}
-  #sp-main-body .sppb-addon-title{font-size:25px}
+  .nsu-inner #sp-main-body .sppb-addon-title{font-size:25px}
   .nsu-cta h3{font-size:26px}
   .nsu-stat-num{font-size:32px}
 }
 @media (max-width:767px){
-  #sp-main-body .sppb-section{padding:36px 0}
+  .nsu-inner #sp-main-body .sppb-section{padding:36px 0}
   .nsu-hero-inner{padding:40px 0 34px}
   .nsu-page-hero h1{font-size:26px}
   .nsu-crumbs{font-size:11px}
-  #sp-main-body .sppb-addon-title{font-size:22px}
+  .nsu-inner #sp-main-body .sppb-addon-title{font-size:22px}
   h4.nsu-sub{font-size:18px}
-  #sp-main-body .sppb-addon-content{font-size:15px}
+  .nsu-inner #sp-main-body .sppb-addon-content{font-size:15px}
   .nsu-cta h3{font-size:22px}
   .nsu-cta p{font-size:15px}
   .nsu-btn{padding:12px 22px;font-size:14px}
@@ -233,4 +233,45 @@ a.nsu-card-link{text-decoration:none;color:inherit}
 }
 #section-id-8NRmDSVfMdJu9ynYsykyE .sppb-row-overlay{
   background:linear-gradient(90deg,rgba(7,30,51,.9) 0%,rgba(7,30,51,.55) 60%,rgba(7,30,51,.35) 100%) !important;
+}
+
+/* ==========================================================================
+   Home page fixes (template quirks that surfaced with NavDU content)
+   ========================================================================== */
+
+/* Slider pagination duplicated the slide titles next to the arrow as pale,
+   half-legible captions. With two slides and working arrows it adds nothing. */
+.sp-slider-custom-dot-indecators{display:none !important}
+
+/* Decorative watermark behind the hero: "NavDU" at 250px overflowed its box,
+   dropping the U onto a second line. Keep it on one line and inside the frame. */
+.sppb-sp-slider-text.number-heading,
+.sppb-sp-slider-text.number-heading p{
+  white-space:nowrap;
+  font-size:170px !important;
+  line-height:1.05 !important;
+}
+@media (max-width:1199px){
+  .sppb-sp-slider-text.number-heading,
+  .sppb-sp-slider-text.number-heading p{font-size:130px !important}
+}
+@media (max-width:767px){
+  .sppb-sp-slider-text.number-heading,
+  .sppb-sp-slider-text.number-heading p{font-size:84px !important}
+}
+
+/* Rector card: the name wraps to two lines, and the designation had a 14px
+   line-height on 18px text, so it collided with the name above it. */
+.sppb-person-information{padding-top:6px}
+.sppb-person-name{display:block;line-height:1.3 !important;margin-bottom:10px}
+.sppb-person-designation{
+  display:block;
+  font-size:16px !important;
+  line-height:1.55 !important;
+  opacity:.9;
+}
+
+/* News carousel sat in a 2/3-width column, leaving a third of the row empty. */
+@media (min-width:1200px){
+  #column-wrap-id-3tytuIrDOkcJOkRj3X5k8{max-width:100% !important;flex-basis:100% !important}
 }
