@@ -59,7 +59,13 @@ for sheet in stylesheets:
     css = open(sheet, encoding='utf-8', errors='ignore').read()
     base = os.path.dirname(sheet)
     for ref in sorted(set(CSS_REF.findall(css)) | set(CSS_IMPORT.findall(css))):
-        if ref.startswith(('data:', 'http', '//')):
+        if ref.startswith('//'):
+            # SP Page Builder emits local paths as '//images/...', which the
+            # browser reads as a host name. Always a bug, never a real CDN.
+            if ref.startswith(('//images/', '//templates/', '//media/', '//components/')):
+                errors.append(f'{sheet}: protocol-relative local path {ref}')
+            continue
+        if ref.startswith(('data:', 'http')):
             continue
         target = resolve(ref, base)
         if target and not os.path.isfile(target):

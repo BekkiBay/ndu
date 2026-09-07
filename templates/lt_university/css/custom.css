@@ -1,9 +1,9 @@
-@import url('/templates/lt_university/css/font-awesome5.min.css');
+@import url('font-awesome5.min.css');
 
 /*** General CSS ***/
 @font-face {
     font-family: 'TTWellingtons_Regular';
-    src: url('/templates/lt_university/fonts/TTWellingtons-Regular.woff') format('woff');
+    src: url('../fonts/TTWellingtons-Regular.woff') format('woff');
     font-weight:400; font-style:normal; font-display:swap;
    size-adjust: 100%;
   ascent-override: 90%;
@@ -13,7 +13,7 @@
 
 @font-face {
     font-family: 'TTWellingtons_Medium';
-    src: url('/templates/lt_university/fonts/TTWellingtons-Medium.woff') format('woff');
+    src: url('../fonts/TTWellingtons-Medium.woff') format('woff');
     font-weight:500; font-style:normal; font-display:swap;
    size-adjust: 100%;
   ascent-override: 90%;
@@ -23,7 +23,7 @@
 
 @font-face {
     font-family: 'TTWellingtons_Bold';
-    src: url('/templates/lt_university/fonts/TTWellingtons-Bold.woff') format('woff');
+    src: url('../fonts/TTWellingtons-Bold.woff') format('woff');
     font-weight:600; font-style:normal; font-display:swap;
    size-adjust: 100%;
   ascent-override: 90%;
@@ -33,7 +33,7 @@
 
 @font-face{
   font-family:'TT_Wellingtons_Regular';
-  src:url("/templates/lt_university/fonts/ttwellingtons-regular-webfont.woff") format("woff");
+  src:url("../fonts/ttwellingtons-regular-webfont.woff") format("woff");
   font-weight:400; font-style:normal; font-display:swap;
 
    size-adjust: 100%;
@@ -44,7 +44,7 @@
 
 @font-face{
   font-family:'TT_Wellingtons_Bold';
-  src:url("/templates/lt_university/fonts/ttwellingtons-bold-webfont.woff") format("woff");
+  src:url("../fonts/ttwellingtons-bold-webfont.woff") format("woff");
   font-weight:600; font-style:normal; font-display:swap;
 
    size-adjust: 100%;
@@ -55,7 +55,7 @@
 @font-face{
   font-family: "TTWellingtonsBold";
   src:
-    url("/templates/lt_university/fonts/TTWellingtons-Bold.woff") format("woff");
+    url("../fonts/TTWellingtons-Bold.woff") format("woff");
   font-weight: 700;
   font-style: normal;
   font-display: swap;

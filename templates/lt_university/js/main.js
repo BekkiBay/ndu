@@ -5,85 +5,13 @@
  * @license http://www.gnu.org/licenses/gpl-2.0.html GNU/GPLv2 or Later
  */
 
-/* ===== CPRO VIDEO PRELOADER ===== */
+/* ===== PRELOADER =====
+ * The template shipped a WIUT-branded intro video here. The NavDU mock-up
+ * does not carry that footage, so the preloader just gets out of the way.
+ */
 
 jQuery(function () {
-
-    // Только главная
-    const isHome =
-        window.location.pathname === '/' ||
-        window.location.pathname === '';
-
-    if (!isHome) {
-        jQuery('.sp-pre-loader').remove();
-        return;
-    }
-
-    // Только один раз за сессию
-    if (sessionStorage.getItem('preloaderShown')) {
-        jQuery('.sp-pre-loader').remove();
-        return;
-    }
-
-    sessionStorage.setItem('preloaderShown', 'true');
-
-    const isMobile = window.matchMedia("(max-width: 768px)").matches;
-
-    // Разные видео
-    const videoSrc = isMobile
-        ? '/images/logo/Mustaqillik_35yil_mobile.mp4'
-        : '/images/logo/Mustaqillik_35yil.mp4';
-
-    const loader = jQuery('.sp-pre-loader');
-    const circle = loader.find('.sp-loader-circle');
-
-    circle.empty();
-
-    // Создаём видео
-    const video = document.createElement('video');
-
-    video.src = videoSrc;
-
-    video.autoplay = true;
-    video.muted = true;
-    video.playsInline = true;
-
-    video.setAttribute('autoplay', '');
-    video.setAttribute('muted', '');
-    video.setAttribute('playsinline', '');
-    video.setAttribute('webkit-playsinline', '');
-
-    // Важно для быстрого запуска
-    video.preload = 'auto';
-
-    video.className = 'cpro-preloader-video';
-
-    circle.append(video);
-
-    // Запускаем сразу
-    const playVideo = function () {
-        video.play().catch(function (error) {
-            console.log('Preloader video autoplay error:', error);
-        });
-    };
-
-    // Пытаемся запустить сразу
-    playVideo();
-
-    // Если браузер ещё не готов — запускаем при появлении данных
-    video.addEventListener('canplay', playVideo, { once: true });
-
-    // Максимальное время показа
-    const delay = isMobile ? 7000 : 5500;
-
-    setTimeout(function () {
-
-        loader.fadeOut(700, function () {
-            jQuery(this).remove();
-        });
-
-    }, delay);
-
+    jQuery('.sp-pre-loader').remove();
 });
 
 
