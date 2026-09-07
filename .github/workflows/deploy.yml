@@ -84,8 +84,13 @@ jobs:
   deploy-pages:
     name: Deploy to GitHub Pages
     needs: check
+    # GitHub Pages is unavailable for private repos on the Free plan.
+    # Enable Pages (Settings > Pages > Source: GitHub Actions), then set the
+    # repository variable ENABLE_PAGES=true to turn this job on.
+    if: vars.ENABLE_PAGES == 'true'
     runs-on: ubuntu-latest
     permissions:
+      contents: read
       pages: write
       id-token: write
     environment:
