@@ -1,0 +1,22 @@
+name: CI
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+  workflow_call:
+
+jobs:
+  validate:
+    name: Validate static site
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Every internal link and asset resolves
+        run: python3 scripts/check_links.py
+
+      - name: Site inventory
+        run: |
+          echo "html pages: $(ls *.html | wc -l)"
+          du -sh .

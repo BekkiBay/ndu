@@ -6,87 +6,106 @@ on:
   workflow_dispatch:
 
 concurrency:
-  group: deploy-${{ github.ref }}
-  cancel-in-progress: true
+  group: deploy-production
+  cancel-in-progress: false
 
 jobs:
   check:
-    name: Validate static site
-    runs-on: ubuntu-latest
-    steps:
-      - uses: actions/checkout@v4
+    # Reuse the CI checks as a gate: nothing ships unless they pass.
+    uses: ./.github/workflows/ci.yml
 
-      - name: Check internal links and assets
-        run: python3 scripts/check_links.py
-
-      - name: Report size
-        run: |
-          du -sh .
-          echo "html pages: $(ls *.html | wc -l)"
-
-  deploy-hermes:
-    name: Deploy to Hermes
+  deploy:
+    name: Rsync to Hermes
     needs: check
     runs-on: ubuntu-latest
-    # runs only when the Hermes secrets are configured
-    if: github.event_name == 'workflow_dispatch' || github.ref == 'refs/heads/main'
+    environment:
+      name: production
+      url: ${{ vars.SITE_URL }}
     steps:
       - uses: actions/checkout@v4
 
-      - name: Skip if server secrets are missing
+      - name: Check deploy secrets are configured
         id: guard
         env:
-          HOST: ${{ secrets.HERMES_HOST }}
-          KEY: ${{ secrets.HERMES_SSH_KEY }}
+          HOST: ${{ secrets.DEPLOY_HOST }}
+          KEY: ${{ secrets.DEPLOY_SSH_KEY }}
         run: |
           if [ -z "$HOST" ] || [ -z "$KEY" ]; then
-            echo "HERMES_HOST / HERMES_SSH_KEY not set - skipping server deploy."
+            echo "::warning::DEPLOY_HOST / DEPLOY_SSH_KEY not set - skipping deploy."
             echo "ready=false" >> "$GITHUB_OUTPUT"
           else
             echo "ready=true" >> "$GITHUB_OUTPUT"
           fi
 
-      - name: Set up SSH
+      - name: Set up SSH key
         if: steps.guard.outputs.ready == 'true'
         env:
-          KEY: ${{ secrets.HERMES_SSH_KEY }}
-          HOST: ${{ secrets.HERMES_HOST }}
-          PORT: ${{ secrets.HERMES_PORT || '22' }}
+          KEY: ${{ secrets.DEPLOY_SSH_KEY }}
+          HOST: ${{ secrets.DEPLOY_HOST }}
+          PORT: ${{ secrets.DEPLOY_PORT }}
         run: |
+          set -eu
           mkdir -p ~/.ssh
+          chmod 700 ~/.ssh
           printf '%s\n' "$KEY" > ~/.ssh/deploy_key
           chmod 600 ~/.ssh/deploy_key
-          ssh-keyscan -p "$PORT" -H "$HOST" >> ~/.ssh/known_hosts 2>/dev/null
+          ssh-keyscan -p "${PORT:-22}" -H "$HOST" >> ~/.ssh/known_hosts 2>/dev/null
 
-      - name: Rsync site to server
+      - name: Upload site
         if: steps.guard.outputs.ready == 'true'
         env:
-          HOST: ${{ secrets.HERMES_HOST }}
-          PORT: ${{ secrets.HERMES_PORT || '22' }}
-          USER: ${{ secrets.HERMES_USER || 'root' }}
-          PATH_REMOTE: ${{ secrets.HERMES_PATH || '/var/www/navdu' }}
+          HOST: ${{ secrets.DEPLOY_HOST }}
+          USER: ${{ secrets.DEPLOY_USER }}
+          PORT: ${{ secrets.DEPLOY_PORT }}
+          DEST: ${{ secrets.DEPLOY_PATH }}
         run: |
-          rsync -az --delete \
-            --exclude '.git' --exclude '.github' --exclude 'scripts' \
-            -e "ssh -i ~/.ssh/deploy_key -p $PORT -o StrictHostKeyChecking=accept-new" \
-            ./ "$USER@$HOST:$PATH_REMOTE/"
+          set -eu
+          : "${DEST:?DEPLOY_PATH secret is required}"
+          ssh -i ~/.ssh/deploy_key -p "${PORT:-22}" "${USER:-root}@$HOST" \
+            "mkdir -p '$DEST'"
+          # No --delete: the workflow never removes anything already on the server.
+          rsync -avz --human-readable \
+            -e "ssh -i ~/.ssh/deploy_key -p ${PORT:-22}" \
+            --exclude '.git' \
+            --exclude '.github' \
+            --exclude 'deploy' \
+            --exclude 'scripts' \
+            --exclude '.gitignore' \
+            --exclude '.DS_Store' \
+            ./ "${USER:-root}@$HOST:$DEST/"
 
-      - name: Reload web server
+      - name: Sync container config and reconcile
         if: steps.guard.outputs.ready == 'true'
         env:
-          HOST: ${{ secrets.HERMES_HOST }}
-          PORT: ${{ secrets.HERMES_PORT || '22' }}
-          USER: ${{ secrets.HERMES_USER || 'root' }}
+          HOST: ${{ secrets.DEPLOY_HOST }}
+          USER: ${{ secrets.DEPLOY_USER }}
+          PORT: ${{ secrets.DEPLOY_PORT }}
         run: |
-          ssh -i ~/.ssh/deploy_key -p "$PORT" -o StrictHostKeyChecking=accept-new \
-            "$USER@$HOST" 'nginx -t && systemctl reload nginx || true'
+          set -eu
+          # The wiut-static compose project owns only its own container.
+          # `up -d` is a no-op when nothing in deploy/ changed.
+          rsync -avz -e "ssh -i ~/.ssh/deploy_key -p ${PORT:-22}" \
+            deploy/docker-compose.yml deploy/nginx-site.conf deploy/server-setup.sh \
+            "${USER:-root}@$HOST:/opt/wiut-static/"
+          ssh -i ~/.ssh/deploy_key -p "${PORT:-22}" "${USER:-root}@$HOST" \
+            'cd /opt/wiut-static && docker compose -p wiut-static up -d'
 
-  deploy-pages:
+      - name: Verify site responds
+        if: steps.guard.outputs.ready == 'true' && vars.SITE_URL != ''
+        run: |
+          set -eu
+          code=$(curl -s -o /dev/null -w '%{http_code}' --max-time 20 "${{ vars.SITE_URL }}")
+          echo "GET ${{ vars.SITE_URL }} -> $code"
+          [ "$code" = "200" ] || { echo "::error::site did not return 200"; exit 1; }
+
+      - name: Clean up key
+        if: always()
+        run: rm -f ~/.ssh/deploy_key
+
+  pages:
     name: Deploy to GitHub Pages
     needs: check
-    # GitHub Pages is unavailable for private repos on the Free plan.
-    # Enable Pages (Settings > Pages > Source: GitHub Actions), then set the
-    # repository variable ENABLE_PAGES=true to turn this job on.
+    # Set the repository variable ENABLE_PAGES=true to publish a Pages copy.
     if: vars.ENABLE_PAGES == 'true'
     runs-on: ubuntu-latest
     permissions:
@@ -99,10 +118,8 @@ jobs:
     steps:
       - uses: actions/checkout@v4
       - uses: actions/configure-pages@v5
-        continue-on-error: true
       - uses: actions/upload-pages-artifact@v3
         with:
           path: .
       - id: pages
         uses: actions/deploy-pages@v4
-        continue-on-error: true
