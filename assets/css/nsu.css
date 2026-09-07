@@ -278,17 +278,49 @@ a.nsu-card-link{text-decoration:none;color:inherit}
    Header: slim, single-row, flexible
    ========================================================================== */
 
-/* The template fixed the bar at 110px around a 90px logo. */
+/* The template hard-codes 110px on the header AND on every box inside it -
+   the logo column, the menu wrapper, the menu list and each menu link (whose
+   line-height does the vertical centring). Shrinking only #sp-header left the
+   logo centred in a 110px column that hung 13px below the bar. Drive them all
+   from one value. */
+:root{--nsu-header-h:64px}
+
 #sp-header,
+#sp-header > div > div > div,
+#sp-header .container,
+#sp-header .container-inner,
+#sp-header .row,
+#sp-header .row > [class*="col-"],
+#sp-header .sp-column,
 #sp-header .logo,
-#sp-header > div > div > div{height:64px !important}
+#sp-header .sp-megamenu-wrapper,
+#sp-header .sp-megamenu-parent,
+#sp-header .sp-megamenu-parent > li,
+#sp-header .sp-megamenu-parent > li > a{
+  height:var(--nsu-header-h) !important;
+  min-height:0 !important;
+}
+#sp-header .sp-megamenu-parent > li > a{line-height:var(--nsu-header-h) !important}
+#sp-header .row,
+#sp-header .row > [class*="col-"],
+#sp-header .sp-column,
+#sp-header .logo{display:flex !important;align-items:center}
+/* Turning the columns into flex containers made the menu column shrink to its
+   content and sit next to the logo; let it span the row so the menu keeps its
+   right alignment next to the burger. */
+#sp-header .row > .flex-auto{flex:1 1 auto}
+#sp-header .row > [class*="col-"] > .sp-column{flex:1 1 auto}
+#sp-header .sp-column.justify-content-end{justify-content:flex-end !important}
+#sp-header .row > .col-auto:first-child,
+#sp-header .row > .col-auto:first-child > .sp-column{flex:0 0 auto}
 #sp-header .logo img,
 #sp-header .logo-image,
 #sp-header .logo-image-phone{
-  max-height:44px !important;
-  height:44px !important;
+  max-height:calc(var(--nsu-header-h) - 20px) !important;
+  height:calc(var(--nsu-header-h) - 20px) !important;
   width:auto !important;
 }
+#sp-header .burger-icon{margin:0}
 .sp-megamenu-parent > li > a{font-size:14px;padding:0 11px}
 
 /* Top bar: one row at every width. The two columns were col-lg-6, so the
@@ -342,14 +374,15 @@ a.nsu-card-link{text-decoration:none;color:inherit}
 @media (max-width:1099px){
   #sp-top-bar .mod-menu li:nth-child(2){display:none}
 }
+/* Below 1200px the nine top-level items no longer fit next to the logo and
+   the menu dropped onto a second line inside the bar. The burger is always
+   present, so hand navigation over to the off-canvas menu instead. */
+@media (max-width:1199.98px){
+  #sp-header .sp-megamenu-parent{display:none !important}
+}
 @media (max-width:991px){
   #sp-top-bar .social-icons{display:none}
-  #sp-header,
-  #sp-header .logo,
-  #sp-header > div > div > div{height:58px !important}
-  #sp-header .logo img,
-  #sp-header .logo-image,
-  #sp-header .logo-image-phone{max-height:38px !important;height:38px !important}
+  :root{--nsu-header-h:58px}
 }
 @media (max-width:575px){
   #sp-top-bar{display:none}
