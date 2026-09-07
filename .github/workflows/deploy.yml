@@ -84,11 +84,17 @@ jobs:
           set -eu
           # The wiut-static compose project owns only its own container.
           # `up -d` is a no-op when nothing in deploy/ changed.
-          rsync -avz -e "ssh -i ~/.ssh/deploy_key -p ${PORT:-22}" \
+          #
+          # --inplace matters: nginx-site.conf is bind-mounted into the
+          # container by inode, so replacing the file (rsync's default) leaves
+          # the container serving the old config until it is recreated.
+          rsync -avz --inplace -e "ssh -i ~/.ssh/deploy_key -p ${PORT:-22}" \
             deploy/docker-compose.yml deploy/nginx-site.conf deploy/server-setup.sh \
             "${USER:-root}@$HOST:/opt/wiut-static/"
           ssh -i ~/.ssh/deploy_key -p "${PORT:-22}" "${USER:-root}@$HOST" \
-            'cd /opt/wiut-static && docker compose -p wiut-static up -d'
+            'cd /opt/wiut-static && docker compose -p wiut-static up -d \
+             && docker exec wiut-static nginx -t \
+             && docker exec wiut-static nginx -s reload'
 
       - name: Verify site responds
         if: steps.guard.outputs.ready == 'true' && vars.SITE_URL != ''
