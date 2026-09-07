@@ -1,0 +1,144 @@
+name: Deploy
+
+on:
+  push:
+    branches: [main]
+  workflow_dispatch:
+
+concurrency:
+  group: deploy-production
+  cancel-in-progress: false
+
+jobs:
+  check:
+    # Reuse the CI checks as a gate: nothing ships unless they pass.
+    uses: ./.github/workflows/ci.yml
+
+  deploy:
+    name: Rsync to Hermes
+    needs: check
+    runs-on: ubuntu-latest
+    environment:
+      name: production
+      url: ${{ vars.SITE_URL }}
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Check deploy secrets are configured
+        id: guard
+        env:
+          HOST: ${{ secrets.DEPLOY_HOST }}
+          KEY: ${{ secrets.DEPLOY_SSH_KEY }}
+        run: |
+          if [ -z "$HOST" ] || [ -z "$KEY" ]; then
+            echo "::warning::DEPLOY_HOST / DEPLOY_SSH_KEY not set - skipping deploy."
+            echo "ready=false" >> "$GITHUB_OUTPUT"
+          else
+            echo "ready=true" >> "$GITHUB_OUTPUT"
+          fi
+
+      - name: Set up SSH key
+        if: steps.guard.outputs.ready == 'true'
+        env:
+          KEY: ${{ secrets.DEPLOY_SSH_KEY }}
+          HOST: ${{ secrets.DEPLOY_HOST }}
+          PORT: ${{ secrets.DEPLOY_PORT }}
+        run: |
+          set -eu
+          mkdir -p ~/.ssh
+          chmod 700 ~/.ssh
+          printf '%s\n' "$KEY" > ~/.ssh/deploy_key
+          chmod 600 ~/.ssh/deploy_key
+          ssh-keyscan -p "${PORT:-22}" -H "$HOST" >> ~/.ssh/known_hosts 2>/dev/null
+
+      - name: Version stylesheet and script URLs
+        if: steps.guard.outputs.ready == 'true'
+        # Rewrites href/src to style.css?v=<hash> so browsers holding an old
+        # copy fetch the new one. Runs on the checkout, never on the repo.
+        run: python3 scripts/stamp_assets.py
+
+      - name: Upload site
+        if: steps.guard.outputs.ready == 'true'
+        env:
+          HOST: ${{ secrets.DEPLOY_HOST }}
+          USER: ${{ secrets.DEPLOY_USER }}
+          PORT: ${{ secrets.DEPLOY_PORT }}
+          DEST: ${{ secrets.DEPLOY_PATH }}
+        run: |
+          set -eu
+          : "${DEST:?DEPLOY_PATH secret is required}"
+          ssh -i ~/.ssh/deploy_key -p "${PORT:-22}" "${USER:-root}@$HOST" \
+            "mkdir -p '$DEST'"
+          # No --delete: the workflow never removes anything already on the server.
+          rsync -avz --human-readable \
+            -e "ssh -i ~/.ssh/deploy_key -p ${PORT:-22}" \
+            --exclude '.git' \
+            --exclude '.github' \
+            --exclude 'deploy' \
+            --exclude 'scripts' \
+            --exclude 'preview' \
+            --exclude 'download_assets.py' \
+            --exclude 'README.md' \
+            --exclude '.gitignore' \
+            --exclude '.DS_Store' \
+            ./ "${USER:-root}@$HOST:$DEST/"
+
+      - name: Sync container config and reconcile
+        if: steps.guard.outputs.ready == 'true'
+        env:
+          HOST: ${{ secrets.DEPLOY_HOST }}
+          USER: ${{ secrets.DEPLOY_USER }}
+          PORT: ${{ secrets.DEPLOY_PORT }}
+        run: |
+          set -eu
+          # The ndu-static compose project owns only its own container.
+          # nginx-site.conf is bind-mounted as a single file, and a bind mount
+          # follows the inode. Plain rsync writes a temp file and renames it -
+          # new inode, container keeps reading the old one, and a reload
+          # changes nothing. --inplace overwrites the same inode, so the
+          # reload that follows really picks the new config up.
+          rsync -avz --inplace -e "ssh -i ~/.ssh/deploy_key -p ${PORT:-22}" \
+            deploy/docker-compose.yml deploy/nginx-site.conf deploy/server-setup.sh \
+            "${USER:-root}@$HOST:/opt/ndu-static/"
+          ssh -i ~/.ssh/deploy_key -p "${PORT:-22}" "${USER:-root}@$HOST" '
+            set -e
+            cd /opt/ndu-static
+            docker compose -p ndu-static up -d
+            docker exec ndu-static nginx -t
+            docker exec ndu-static nginx -s reload
+          '
+
+      - name: Verify site responds
+        if: steps.guard.outputs.ready == 'true' && vars.SITE_URL != ''
+        run: |
+          set -eu
+          code=$(curl -s -o /dev/null -w '%{http_code}' --max-time 20 "${{ vars.SITE_URL }}")
+          echo "GET ${{ vars.SITE_URL }} -> $code"
+          [ "$code" = "200" ] || { echo "::error::site did not return 200"; exit 1; }
+
+      - name: Clean up key
+        if: always()
+        run: rm -f ~/.ssh/deploy_key
+
+  pages:
+    name: Deploy to GitHub Pages
+    needs: check
+    # Set the repository variable ENABLE_PAGES=true to publish a Pages copy.
+    # Requires a public repo (or GitHub Pro) for Pages to be available.
+    if: vars.ENABLE_PAGES == 'true'
+    runs-on: ubuntu-latest
+    permissions:
+      contents: read
+      pages: write
+      id-token: write
+    environment:
+      name: github-pages
+      url: ${{ steps.pages.outputs.page_url }}
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/configure-pages@v5
+      - uses: actions/upload-pages-artifact@v3
+        with:
+          path: .
+      - id: pages
+        uses: actions/deploy-pages@v4
