@@ -243,21 +243,18 @@ a.nsu-card-link{text-decoration:none;color:inherit}
    half-legible captions. With two slides and working arrows it adds nothing. */
 .sp-slider-custom-dot-indecators{display:none !important}
 
-/* Decorative watermark behind the hero: "NavDU" at 250px overflowed its box,
-   dropping the U onto a second line. Keep it on one line and inside the frame. */
+/* Decorative watermark behind the hero. The template sized it at 250px with
+   !important and pulled it left by up to 120px, so on narrower screens the
+   word ran off the edge and the U wrapped onto a second line. Scale it with
+   the viewport, keep it on one line, and start it at the content edge. */
 .sppb-sp-slider-text.number-heading,
-.sppb-sp-slider-text.number-heading p{
-  white-space:nowrap;
-  font-size:170px !important;
-  line-height:1.05 !important;
-}
-@media (max-width:1199px){
-  .sppb-sp-slider-text.number-heading,
-  .sppb-sp-slider-text.number-heading p{font-size:130px !important}
-}
-@media (max-width:767px){
-  .sppb-sp-slider-text.number-heading,
-  .sppb-sp-slider-text.number-heading p{font-size:84px !important}
+.sppb-sp-slider-text.number-heading p,
+#sppb-addon-W1mbff-sKIl91D-Pqq_YY .pitech-slider .number-heading{
+  white-space:nowrap !important;
+  font-size:clamp(46px, 9.5vw, 150px) !important;
+  line-height:1.06 !important;
+  left:0 !important;
+  top:-.62em !important;
 }
 
 /* Rector card: the name wraps to two lines, and the designation had a 14px
@@ -274,4 +271,118 @@ a.nsu-card-link{text-decoration:none;color:inherit}
 /* News carousel sat in a 2/3-width column, leaving a third of the row empty. */
 @media (min-width:1200px){
   #column-wrap-id-3tytuIrDOkcJOkRj3X5k8{max-width:100% !important;flex-basis:100% !important}
+}
+
+
+/* ==========================================================================
+   Header: slim, single-row, flexible
+   ========================================================================== */
+
+/* The template fixed the bar at 110px around a 90px logo. */
+#sp-header,
+#sp-header .logo,
+#sp-header > div > div > div{height:64px !important}
+#sp-header .logo img,
+#sp-header .logo-image,
+#sp-header .logo-image-phone{
+  max-height:44px !important;
+  height:44px !important;
+  width:auto !important;
+}
+.sp-megamenu-parent > li > a{font-size:14px;padding:0 11px}
+
+/* Top bar: one row at every width. The two columns were col-lg-6, so the
+   right-hand list ran out of room and dropped EN (and below 992px the whole
+   thing stacked into three rows). Let both columns take just what they need. */
+#sp-top-bar{padding:0 !important;font-size:13px}
+#sp-top-bar .row{flex-wrap:nowrap !important;align-items:center;min-height:36px}
+#sp-top-bar #sp-top1,
+#sp-top-bar #sp-top2{
+  flex:0 1 auto !important;
+  width:auto !important;
+  max-width:none !important;
+}
+#sp-top-bar #sp-top2{margin-left:auto}
+#sp-top-bar .sp-column{display:flex;align-items:center;gap:14px;text-align:left !important}
+#sp-top-bar .sp-module{margin:0}
+#sp-top-bar .social-icons{display:flex;align-items:center;gap:10px;margin:0;padding:0;list-style:none}
+#sp-top-bar .social-icons li{margin:0}
+#sp-top-bar .mod-menu{
+  display:flex;
+  flex-wrap:nowrap !important;
+  align-items:center;
+  gap:12px;
+  white-space:nowrap;
+  margin:0;
+}
+#sp-top-bar .mod-menu li{margin:0}
+#sp-top-bar .top-header-phone{white-space:nowrap;margin:0}
+
+/* Language switch reads as one group rather than three loose links. */
+#sp-top-bar .mod-menu li:nth-last-child(3),
+#sp-top-bar .mod-menu li:nth-last-child(2),
+#sp-top-bar .mod-menu li:nth-last-child(1){margin-left:0}
+#sp-top-bar .mod-menu li:nth-last-child(3){
+  margin-left:6px;
+  padding-left:14px;
+  border-left:1px solid rgba(11,69,159,.25);
+}
+#sp-top-bar .mod-menu li:nth-last-child(2),
+#sp-top-bar .mod-menu li:nth-last-child(1){margin-left:-4px}
+
+/* Shed the least important links before anything can wrap. */
+@media (max-width:1399px){
+  #sp-top-bar{font-size:12.5px}
+  #sp-top-bar .mod-menu{gap:10px}
+  .sp-megamenu-parent > li > a{font-size:13px;padding:0 9px}
+}
+@media (max-width:1199px){
+  #sp-top-bar .mod-menu li:nth-child(3){display:none}
+}
+@media (max-width:1099px){
+  #sp-top-bar .mod-menu li:nth-child(2){display:none}
+}
+@media (max-width:991px){
+  #sp-top-bar .social-icons{display:none}
+  #sp-header,
+  #sp-header .logo,
+  #sp-header > div > div > div{height:58px !important}
+  #sp-header .logo img,
+  #sp-header .logo-image,
+  #sp-header .logo-image-phone{max-height:38px !important;height:38px !important}
+}
+@media (max-width:575px){
+  #sp-top-bar{display:none}
+}
+
+/* ==========================================================================
+   Hero video
+   ========================================================================== */
+.sp-item .nsu-hero-media{
+  position:absolute;
+  inset:0;
+  z-index:1;
+  overflow:hidden;
+  pointer-events:none;
+}
+.sp-item .nsu-hero-video{
+  width:100%;
+  height:100%;
+  object-fit:cover;
+  display:block;
+}
+/* The still background carried the template's dark tint; the video sits on top
+   of it, so it needs its own scrim to keep the headline readable. */
+.sp-item .nsu-hero-scrim{
+  position:absolute;
+  inset:0;
+  background:linear-gradient(90deg,
+    rgba(7,30,51,.78) 0%,
+    rgba(7,30,51,.55) 45%,
+    rgba(7,30,51,.38) 100%);
+}
+.sp-item .sppb-container,
+.sp-item .sp-slider-content-align-left{position:relative;z-index:3}
+@media (prefers-reduced-motion:reduce){
+  .sp-item .nsu-hero-video{display:none}
 }
