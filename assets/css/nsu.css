@@ -1,0 +1,236 @@
+/* NavDU content styles — built on the WIUT (lt_university) template palette */
+:root{
+  --nsu-primary:#0b459f;
+  --nsu-dark:#071e33;
+  --nsu-accent:#4dace1;
+  --nsu-btn:#264f9d;
+  --nsu-light:#f4f7fb;
+  --nsu-border:#e4e9f2;
+  --nsu-text:#1d2733;
+  --nsu-muted:#5a6b7d;
+}
+
+/* ---------------------------------------------------------- page hero */
+.nsu-page-hero{
+  position:relative;
+  background:var(--nsu-dark);
+  background-size:cover;
+  background-position:center;
+  padding:0;
+}
+.nsu-page-hero.has-bg::before{
+  content:"";position:absolute;inset:0;
+  background:linear-gradient(90deg,rgba(7,30,51,.92) 0%,rgba(7,30,51,.75) 55%,rgba(7,30,51,.55) 100%);
+}
+.nsu-hero-inner{position:relative;z-index:2;padding:70px 0 60px;max-width:900px}
+.nsu-page-hero h1{
+  color:#fff;margin:0;font-size:44px;line-height:1.15;font-weight:700;letter-spacing:.2px;
+}
+.nsu-hero-sub{color:rgba(255,255,255,.85);font-size:18px;line-height:1.6;margin:16px 0 0;max-width:760px}
+.nsu-crumbs{font-size:13px;color:rgba(255,255,255,.7);margin-bottom:18px;letter-spacing:.4px;text-transform:uppercase}
+.nsu-crumbs a{color:rgba(255,255,255,.7);text-decoration:none}
+.nsu-crumbs a:hover{color:#fff}
+.nsu-crumbs .sep{opacity:.5;margin:0 4px}
+.nsu-crumbs span:not(.sep){color:var(--nsu-accent)}
+
+/* ---------------------------------------------------------- sections */
+#sp-main-body .sppb-section{padding:56px 0}
+#sp-main-body .sppb-section.nsu-alt{background:var(--nsu-light)}
+#sp-main-body .sppb-addon-title{
+  color:var(--nsu-primary);font-size:30px;font-weight:700;margin:0 0 22px;line-height:1.25;
+}
+#sp-main-body .sppb-addon-content{color:var(--nsu-text);font-size:16px;line-height:1.75}
+#sp-main-body .sppb-addon-content p{margin:0 0 16px}
+h4.nsu-sub,h5.nsu-sub{
+  color:var(--nsu-dark);font-weight:700;margin:28px 0 12px;font-size:20px;line-height:1.35;
+}
+h5.nsu-sub{font-size:17px}
+
+/* ---------------------------------------------------------- lists */
+.nsu-list{list-style:none;margin:0 0 20px;padding:0}
+.nsu-list li{
+  position:relative;padding:12px 0 12px 28px;border-bottom:1px solid var(--nsu-border);
+}
+.nsu-list li:last-child{border-bottom:0}
+.nsu-list li::before{
+  content:"";position:absolute;left:4px;top:20px;width:8px;height:8px;border-radius:50%;
+  background:var(--nsu-accent);
+}
+.nsu-list li strong{color:var(--nsu-primary);display:block;margin-bottom:2px}
+.nsu-list li span{color:var(--nsu-muted)}
+
+/* ---------------------------------------------------------- cards */
+.nsu-cards{margin:0 -12px}
+.nsu-cards>[class*="col-"]{padding:12px}
+.nsu-card{
+  height:100%;background:#fff;border:1px solid var(--nsu-border);border-radius:4px;overflow:hidden;
+  display:flex;flex-direction:column;transition:box-shadow .25s ease,transform .25s ease;
+}
+.nsu-card:hover{box-shadow:0 12px 30px rgba(7,30,51,.12);transform:translateY(-3px)}
+.nsu-card-img{aspect-ratio:16/10;overflow:hidden;background:var(--nsu-light)}
+.nsu-card-img img{width:100%;height:100%;object-fit:cover;display:block}
+.nsu-card-body{padding:22px}
+.nsu-card-body h4{
+  color:var(--nsu-primary);font-size:18px;font-weight:700;margin:0 0 10px;line-height:1.35;
+}
+.nsu-card-body p{color:var(--nsu-muted);font-size:15px;line-height:1.6;margin:0 0 8px}
+.nsu-card-body p:last-child{margin-bottom:0}
+
+/* ---------------------------------------------------------- stats */
+.nsu-stats{margin:8px -12px 12px}
+.nsu-stats>[class*="col-"]{padding:12px}
+.nsu-stat{text-align:center;padding:26px 12px;background:#fff;border:1px solid var(--nsu-border);border-radius:4px;height:100%}
+.nsu-alt .nsu-stat{background:#fff}
+.nsu-stat-num{display:block;font-size:40px;font-weight:700;color:var(--nsu-primary);line-height:1.1}
+.nsu-stat-lbl{display:block;margin-top:8px;color:var(--nsu-muted);font-size:15px}
+
+/* ---------------------------------------------------------- misc content */
+.nsu-quote{
+  border-left:4px solid var(--nsu-accent);background:var(--nsu-light);
+  margin:24px 0;padding:22px 26px;font-size:18px;line-height:1.7;color:var(--nsu-dark);font-style:italic;
+}
+.nsu-figure{margin:8px 0 24px}
+.nsu-figure img{width:100%;height:auto;border-radius:4px;display:block}
+.nsu-table{width:100%;border:1px solid var(--nsu-border)}
+.nsu-table td,.nsu-table th{border:1px solid var(--nsu-border);padding:12px 14px;font-size:15px;vertical-align:top}
+.nsu-table tr:first-child td,.nsu-table th{background:var(--nsu-light);font-weight:700;color:var(--nsu-dark)}
+
+/* ---------------------------------------------------------- related links */
+.nsu-related{background:var(--nsu-light)}
+.nsu-rel-row{margin:0 -8px}
+.nsu-rel-row>[class*="col-"]{padding:8px}
+.nsu-rel{
+  display:flex;align-items:center;justify-content:space-between;gap:12px;height:100%;
+  background:#fff;border:1px solid var(--nsu-border);border-radius:4px;padding:16px 18px;
+  color:var(--nsu-dark);text-decoration:none;font-weight:600;font-size:15px;transition:.2s;
+}
+.nsu-rel i{color:var(--nsu-accent);font-size:13px;transition:transform .2s}
+.nsu-rel:hover{border-color:var(--nsu-primary);color:var(--nsu-primary)}
+.nsu-rel:hover i{transform:translateX(4px)}
+
+/* ---------------------------------------------------------- CTA */
+.nsu-cta-sec{background:var(--nsu-dark)}
+.nsu-cta{text-align:center;padding:10px 0}
+.nsu-cta h3{color:#fff;font-size:32px;font-weight:700;margin:0 0 12px}
+.nsu-cta p{color:rgba(255,255,255,.8);font-size:17px;margin:0 auto 26px;max-width:640px}
+.nsu-cta-btns{display:flex;gap:14px;justify-content:center;flex-wrap:wrap}
+.nsu-btn{
+  display:inline-block;padding:13px 30px;border-radius:3px;font-weight:600;font-size:15px;
+  text-decoration:none;transition:.2s;border:1px solid transparent;
+}
+.nsu-btn-primary{background:var(--nsu-btn);color:#fff}
+.nsu-btn-primary:hover{background:var(--nsu-accent);color:#fff}
+.nsu-btn-ghost{border-color:rgba(255,255,255,.55);color:#fff}
+.nsu-btn-ghost:hover{background:#fff;color:var(--nsu-dark)}
+
+/* ---------------------------------------------------------- news grid */
+.nsu-news-grid{margin:0 -12px}
+.nsu-news-grid>[class*="col-"]{padding:12px}
+.nsu-news-card{
+  display:flex;flex-direction:column;height:100%;background:#fff;border:1px solid var(--nsu-border);
+  border-radius:4px;overflow:hidden;text-decoration:none;transition:box-shadow .25s,transform .25s;
+}
+.nsu-news-card:hover{box-shadow:0 12px 30px rgba(7,30,51,.12);transform:translateY(-3px)}
+.nsu-news-img{aspect-ratio:16/10;overflow:hidden}
+.nsu-news-img img{width:100%;height:100%;object-fit:cover;display:block}
+.nsu-news-body{padding:20px}
+.nsu-news-tag{
+  display:inline-block;font-size:12px;letter-spacing:1px;color:var(--nsu-accent);font-weight:700;margin-bottom:8px;
+}
+.nsu-news-body h4{color:var(--nsu-primary);font-size:17px;font-weight:700;margin:0 0 8px;line-height:1.4}
+.nsu-news-body p{color:var(--nsu-muted);font-size:14px;line-height:1.6;margin:0}
+
+/* ---------------------------------------------------------- footer */
+#sp-bottom{background:var(--nsu-dark);color:rgba(255,255,255,.75);padding:60px 0 40px}
+.nsu-footer-row{row-gap:32px}
+.nsu-foot-logo{width:64px;height:auto;margin-bottom:14px}
+.nsu-foot-brand{color:#fff;font-size:18px;font-weight:700;margin:0 0 8px}
+.nsu-foot-contact p{margin:0 0 8px;font-size:14px;line-height:1.6}
+.nsu-foot-contact a{color:rgba(255,255,255,.8);text-decoration:none}
+.nsu-foot-contact a:hover{color:var(--nsu-accent)}
+.nsu-foot-contact .fas{color:var(--nsu-accent);width:18px;margin-right:6px}
+.nsu-foot-contact .social-icons{list-style:none;display:flex;gap:10px;padding:0;margin:18px 0 0}
+.nsu-foot-contact .social-icons a{
+  display:flex;align-items:center;justify-content:center;width:34px;height:34px;border-radius:50%;
+  background:rgba(255,255,255,.1);color:#fff;
+}
+.nsu-foot-contact .social-icons a:hover{background:var(--nsu-accent)}
+.nsu-foot-title{color:#fff;font-size:14px;font-weight:700;letter-spacing:1px;margin:0 0 14px}
+.nsu-foot-list{list-style:none;padding:0;margin:0}
+.nsu-foot-list li{margin-bottom:9px}
+.nsu-foot-list a{color:rgba(255,255,255,.72);text-decoration:none;font-size:14px}
+.nsu-foot-list a:hover{color:var(--nsu-accent)}
+#sp-footer{background:#04121f;color:rgba(255,255,255,.55);padding:18px 0;font-size:13px}
+#sp-footer .sp-copyright{color:rgba(255,255,255,.55)}
+
+/* ---------------------------------------------------------- offcanvas quick links */
+.nsu-oc-quick{padding:0 4px 8px}
+.nsu-oc-quick h4{font-size:12px;letter-spacing:1px;color:var(--nsu-muted);margin:0 0 10px}
+.nsu-oc-quick a{
+  display:block;padding:10px 12px;background:var(--nsu-light);border-radius:3px;
+  color:var(--nsu-primary);font-size:12px;font-weight:700;text-decoration:none;text-align:center;
+}
+.nsu-oc-quick a:hover{background:var(--nsu-accent);color:#fff}
+
+/* ---------------------------------------------------------- responsive */
+@media (max-width:1199px){
+  .nsu-page-hero h1{font-size:38px}
+}
+@media (max-width:991px){
+  #sp-main-body .sppb-section{padding:44px 0}
+  .nsu-hero-inner{padding:52px 0 46px}
+  .nsu-page-hero h1{font-size:32px}
+  .nsu-hero-sub{font-size:16px}
+  #sp-main-body .sppb-addon-title{font-size:25px}
+  .nsu-cta h3{font-size:26px}
+  .nsu-stat-num{font-size:32px}
+}
+@media (max-width:767px){
+  #sp-main-body .sppb-section{padding:36px 0}
+  .nsu-hero-inner{padding:40px 0 34px}
+  .nsu-page-hero h1{font-size:26px}
+  .nsu-crumbs{font-size:11px}
+  #sp-main-body .sppb-addon-title{font-size:22px}
+  h4.nsu-sub{font-size:18px}
+  #sp-main-body .sppb-addon-content{font-size:15px}
+  .nsu-cta h3{font-size:22px}
+  .nsu-cta p{font-size:15px}
+  .nsu-btn{padding:12px 22px;font-size:14px}
+  #sp-bottom{padding:44px 0 28px}
+}
+
+/* ---------------------------------------------------------- home: partner tiles */
+.nsu-partner{
+  display:flex;flex-direction:column;align-items:center;justify-content:center;gap:6px;
+  height:120px;padding:16px;background:#fff;border:1px solid var(--nsu-border);border-radius:4px;
+  text-align:center;transition:.2s;
+}
+.nsu-partner:hover{border-color:var(--nsu-primary);box-shadow:0 8px 22px rgba(7,30,51,.1)}
+.nsu-partner span{
+  display:block;font-size:14px;font-weight:700;color:var(--nsu-primary);line-height:1.35;
+}
+.nsu-partner small{display:block;font-size:12px;color:var(--nsu-muted)}
+.sppb-carousel-extended-item a{text-decoration:none}
+
+/* ---------------------------------------------------------- home: careers band */
+#section-id-8NRmDSVfMdJu9ynYsykyE .sppb-addon-title,
+#section-id-8NRmDSVfMdJu9ynYsykyE .sppb-addon-content,
+#section-id-8NRmDSVfMdJu9ynYsykyE p{color:#fff !important}
+#section-id-8NRmDSVfMdJu9ynYsykyE::before{
+  content:"";position:absolute;inset:0;background:rgba(7,30,51,.55);pointer-events:none;
+}
+#section-id-8NRmDSVfMdJu9ynYsykyE{position:relative}
+#section-id-8NRmDSVfMdJu9ynYsykyE .sppb-row-container{position:relative;z-index:2}
+
+/* ---------------------------------------------------------- home: faculties grid */
+a.nsu-card-link{text-decoration:none;color:inherit}
+#section-id-1697795874370 .nsu-cards{margin-top:8px}
+
+/* careers band: NavDU photo + readable overlay */
+#section-id-8NRmDSVfMdJu9ynYsykyE{
+  background-image:url(../../images/nsu/news/graduation.jpg) !important;
+  background-size:cover !important;background-position:center !important;
+}
+#section-id-8NRmDSVfMdJu9ynYsykyE .sppb-row-overlay{
+  background:linear-gradient(90deg,rgba(7,30,51,.9) 0%,rgba(7,30,51,.55) 60%,rgba(7,30,51,.35) 100%) !important;
+}
