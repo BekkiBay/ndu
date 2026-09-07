@@ -16,6 +16,15 @@ jobs:
       - name: Every internal link and asset resolves
         run: python3 scripts/check_links.py
 
+      - name: Asset cache stamps are current
+        run: |
+          python3 scripts/stamp_assets.py
+          if ! git diff --quiet; then
+            echo "::error::CSS/JS ?v= stamps are stale - run scripts/stamp_assets.py and commit."
+            git --no-pager diff --stat
+            exit 1
+          fi
+
       - name: Site inventory
         run: |
           echo "html pages: $(ls *.html | wc -l)"
