@@ -96,3 +96,9 @@ body.home-navy #navdu-cta-next a.btn.outline:hover { background-color: var(--nv)
 body.home-navy #sp-main-body .sppb-feature-box-icon img { filter: brightness(.42) saturate(.7); } /* синие иконки-картинки «Nima uchun NavDU» */
 body.home-navy #sp-bottom { background-color: var(--nv) !important; }
 body.home-navy #sp-footer { background-color: #07131f !important; }
+
+/* ---------- фоны в высоком разрешении (2560px, Unsplash) ----------
+   Шаблон берёт их из wiut-inline.css в 900px; для полосы во всю ширину
+   этого мало. Миниатюры в карточках остаются прежними. */
+body.home-navy #section-id-g13XmNaQ6vDEhx2SIGFAE { background-image: url("../../images/nsu/hd/campus-building.jpg") !important; } /* «Hujjat topshirishga tayyormisiz?» */
+body.home-navy #column-id-1764759961887 { background-image: url("../../images/nsu/hd/lecture-hall.jpg") !important; } /* фото справа от формы «So‘rovingiz» */
