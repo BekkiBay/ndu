@@ -12,8 +12,9 @@
 
   position: relative;
   width: 100%;
-  /* Шапка WIUT непрозрачная (62px на десктопе), hero занимает остаток экрана. */
-  height: calc(100svh - 62px);
+  /* Шапка фиксированная и прозрачная, hero занимает весь экран, как в Макете 3. */
+  height: 100vh;
+  height: 100svh;
   min-height: 620px;
   overflow: hidden;
   background: #0b1a2b;

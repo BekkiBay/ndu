@@ -323,78 +323,127 @@ document.addEventListener("DOMContentLoaded", function () {
 
 
 
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600;700;800&display=swap" rel="stylesheet">
 		<link href="assets/css/nsu.css?v=93b49492cc" rel="stylesheet">
+		<link href="assets/css/header.css?v=84149491cf" rel="stylesheet">
 </head>
 	<body class="site helix-ultimate hu com_sppagebuilder com-sppagebuilder view-page layout-default task-none itemid-101 uz-uz ltr layout-fluid offcanvas-init offcanvs-position-right nsu-inner">
+<!-- ====== SVG sprite (lucide-style icons) ====== -->
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+  <symbol id="i-mail" viewBox="0 0 24 24"><rect width="20" height="16" x="2" y="4" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/></symbol>
+  <symbol id="i-phone" viewBox="0 0 24 24"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></symbol>
+  <symbol id="i-chevron-down" viewBox="0 0 24 24"><path d="m6 9 6 6 6-6"/></symbol>
+  <symbol id="i-chevron-right" viewBox="0 0 24 24"><path d="m9 18 6-6-6-6"/></symbol>
+  <symbol id="i-arrow-right" viewBox="0 0 24 24"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></symbol>
+  <symbol id="i-arrow-left" viewBox="0 0 24 24"><path d="m12 19-7-7 7-7"/><path d="M19 12H5"/></symbol>
+  <symbol id="i-arrow-up" viewBox="0 0 24 24"><path d="m5 12 7-7 7 7"/><path d="M12 19V5"/></symbol>
+  <symbol id="i-menu" viewBox="0 0 24 24"><path d="M4 12h16"/><path d="M4 6h16"/><path d="M4 18h16"/></symbol>
+  <symbol id="i-x" viewBox="0 0 24 24"><path d="M18 6 6 18"/><path d="m6 6 12 12"/></symbol>
+  <symbol id="i-calendar" viewBox="0 0 24 24"><path d="M8 2v4"/><path d="M16 2v4"/><rect width="18" height="18" x="3" y="4" rx="2"/><path d="M3 10h18"/></symbol>
+  <symbol id="i-eye" viewBox="0 0 24 24"><path d="M2 12s3-7 10-7 10 7 10 7-3 7-10 7-10-7-10-7Z"/><circle cx="12" cy="12" r="3"/></symbol>
+  <symbol id="i-play" viewBox="0 0 24 24"><polygon points="6 3 20 12 6 21 6 3"/></symbol>
+  <symbol id="i-check" viewBox="0 0 24 24"><path d="M20 6 9 17l-5-5"/></symbol>
+  <symbol id="i-graduation" viewBox="0 0 24 24"><path d="M21.42 10.922a1 1 0 0 0-.019-1.838L12.83 5.18a2 2 0 0 0-1.66 0L2.6 9.08a1 1 0 0 0 0 1.832l8.57 3.908a2 2 0 0 0 1.66 0z"/><path d="M22 10v6"/><path d="M6 12.5V16a6 3 0 0 0 12 0v-3.5"/></symbol>
+  <symbol id="i-target" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><circle cx="12" cy="12" r="6"/><circle cx="12" cy="12" r="2"/></symbol>
+  <symbol id="i-gift" viewBox="0 0 24 24"><rect x="3" y="8" width="18" height="4" rx="1"/><path d="M12 8v13"/><path d="M19 12v7a2 2 0 0 1-2 2H7a2 2 0 0 1-2-2v-7"/><path d="M7.5 8a2.5 2.5 0 0 1 0-5A4.8 8 0 0 1 12 8a4.8 8 0 0 1 4.5-5 2.5 2.5 0 0 1 0 5"/></symbol>
+  <symbol id="i-building" viewBox="0 0 24 24"><path d="M6 22V4a2 2 0 0 1 2-2h8a2 2 0 0 1 2 2v18Z"/><path d="M6 12H4a2 2 0 0 0-2 2v6a2 2 0 0 0 2 2h2"/><path d="M18 9h2a2 2 0 0 1 2 2v9a2 2 0 0 1-2 2h-2"/><path d="M10 6h4"/><path d="M10 10h4"/><path d="M10 14h4"/><path d="M10 18h4"/></symbol>
+  <symbol id="i-briefcase" viewBox="0 0 24 24"><path d="M16 20V4a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"/><rect width="20" height="14" x="2" y="6" rx="2"/></symbol>
+  <symbol id="i-globe" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><path d="M12 2a14.5 14.5 0 0 0 0 20 14.5 14.5 0 0 0 0-20"/><path d="M2 12h20"/></symbol>
+  <symbol id="i-badge-check" viewBox="0 0 24 24"><path d="M3.85 8.62a4 4 0 0 1 4.78-4.77 4 4 0 0 1 6.74 0 4 4 0 0 1 4.78 4.78 4 4 0 0 1 0 6.74 4 4 0 0 1-4.77 4.78 4 4 0 0 1-6.75 0 4 4 0 0 1-4.78-4.77 4 4 0 0 1 0-6.76Z"/><path d="m9 12 2 2 4-4"/></symbol>
+  <symbol id="i-map-pin" viewBox="0 0 24 24"><path d="M20 10c0 4.993-5.539 10.193-7.399 11.799a1 1 0 0 1-1.202 0C9.539 20.193 4 14.993 4 10a8 8 0 0 1 16 0"/><circle cx="12" cy="10" r="3"/></symbol>
+  <symbol id="i-book-open" viewBox="0 0 24 24"><path d="M12 7v14"/><path d="M3 18a1 1 0 0 1-1-1V4a1 1 0 0 1 1-1h5a4 4 0 0 1 4 4 4 4 0 0 1 4-4h5a1 1 0 0 1 1 1v13a1 1 0 0 1-1 1h-6a3 3 0 0 0-3 3 3 3 0 0 0-3-3z"/></symbol>
+  <symbol id="i-trending-up" viewBox="0 0 24 24"><path d="M22 7 13.5 15.5 8.5 10.5 2 17"/><path d="M16 7h6v6"/></symbol>
+  <symbol id="i-users" viewBox="0 0 24 24"><path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M22 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></symbol>
+  <symbol id="i-flask" viewBox="0 0 24 24"><path d="M10 2v7.31"/><path d="M14 9.3V1.99"/><path d="M8.5 2h7"/><path d="M14 9.3a6.5 6.5 0 1 1-4 0"/><path d="M5.52 16h12.96"/></symbol>
+  <symbol id="i-newspaper" viewBox="0 0 24 24"><path d="M15 18h-5"/><path d="M18 14h-8"/><rect width="16" height="20" x="4" y="2" rx="2"/><path d="M8 6h8v4H8z"/></symbol>
+  <symbol id="i-quote" viewBox="0 0 24 24"><path d="M16 3a2 2 0 0 0-2 2v6a2 2 0 0 0 2 2h1a1 1 0 0 1 1 1v1a2 2 0 0 1-2 2h-1a1 1 0 0 0-1 1v2a1 1 0 0 0 1 1h1a6 6 0 0 0 6-6V5a2 2 0 0 0-2-2z"/><path d="M5 3a2 2 0 0 0-2 2v6a2 2 0 0 0 2 2h1a1 1 0 0 1 1 1v1a2 2 0 0 1-2 2H4a1 1 0 0 0-1 1v2a1 1 0 0 0 1 1h1a6 6 0 0 0 6-6V5a2 2 0 0 0-2-2z"/></symbol>
+  <symbol id="i-file-text" viewBox="0 0 24 24"><path d="M15 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V7Z"/><path d="M14 2v4a2 2 0 0 0 2 2h4"/><path d="M10 9H8"/><path d="M16 13H8"/><path d="M16 17H8"/></symbol>
+  <symbol id="i-clock" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></symbol>
+  <symbol id="i-award" viewBox="0 0 24 24"><path d="m15.477 12.89 1.515 8.526a.5.5 0 0 1-.81.47l-3.58-2.687a1 1 0 0 0-1.197 0l-3.586 2.686a.5.5 0 0 1-.81-.469l1.514-8.526"/><circle cx="12" cy="8" r="6"/></symbol>
+  <symbol id="i-home" viewBox="0 0 24 24"><path d="m3 9 9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></symbol>
+  <symbol id="i-music" viewBox="0 0 24 24"><path d="M9 18V5l12-2v13"/><circle cx="6" cy="18" r="3"/><circle cx="18" cy="16" r="3"/></symbol>
+  <symbol id="i-palette" viewBox="0 0 24 24"><circle cx="13.5" cy="6.5" r=".5"/><circle cx="17.5" cy="10.5" r=".5"/><circle cx="8.5" cy="7.5" r=".5"/><circle cx="6.5" cy="12.5" r=".5"/><path d="M12 2C6.5 2 2 6.5 2 12s4.5 10 10 10c.926 0 1.648-.746 1.648-1.688 0-.437-.18-.835-.437-1.125-.29-.289-.438-.652-.438-1.125a1.64 1.64 0 0 1 1.668-1.668h1.996c3.051 0 5.555-2.503 5.555-5.554C21.965 6.012 17.461 2 12 2z"/></symbol>
+  <symbol id="i-leaf" viewBox="0 0 24 24"><path d="M11 20A7 7 0 0 1 9.8 6.1C15.5 5 17 4.48 19 2c1 2 2 4.18 2 8 0 5.5-4.78 10-10 10Z"/><path d="M2 21c0-3 1.85-5.36 5.08-6C9.5 14.52 12 13 13 12"/></symbol>
+  <symbol id="i-scale" viewBox="0 0 24 24"><path d="m16 16 3-8 3 8c-.87.65-1.92 1-3 1s-2.13-.35-3-1Z"/><path d="m2 16 3-8 3 8c-.87.65-1.92 1-3 1s-2.13-.35-3-1Z"/><path d="M7 21h10"/><path d="M12 3v18"/><path d="M3 7h2c2 0 5-1 7-2 2 1 5 2 7 2h2"/></symbol>
+  <symbol id="i-heart" viewBox="0 0 24 24"><path d="M19 14c1.49-1.46 3-3.21 3-5.5A5.5 5.5 0 0 0 16.5 3c-1.76 0-3 .5-4.5 2-1.5-1.5-2.74-2-4.5-2A5.5 5.5 0 0 0 2 8.5c0 2.3 1.5 4.05 3 5.5l7 7Z"/></symbol>
+  <symbol id="i-lightbulb" viewBox="0 0 24 24"><path d="M15 14c.2-1 .7-1.7 1.5-2.5 1-.9 1.5-2.2 1.5-3.5A6 6 0 0 0 6 8c0 1 .2 2.2 1.5 3.5.7.7 1.3 1.5 1.5 2.5"/><path d="M9 18h6"/><path d="M10 22h4"/></symbol>
+</svg>
+
+<!-- ====== HEADER (из Макета 3) ====== -->
+<header class="site-header" id="siteHeader">
+  <div class="topbar">
+    <div class="container topbar__inner">
+      <div class="topbar__mobile">
+        <button class="topbar__burger" id="burgerBtn" type="button" aria-label="Menyuni ochish"><svg class="ico"><use href="#i-menu"/></svg></button>
+        <span class="topbar__sep">|</span>
+        <a class="topbar__link" href="https://qabul.nsu.uz">QABUL PORTALI</a>
+      </div>
+
+      <div class="topbar__left">
+        <div class="social-row"><a class="social-row__item" href="https://facebook.com/nsu.uz" aria-label="Facebook"><img src="assets/facebook_white.svg" alt=""></a><a class="social-row__item" href="https://instagram.com/nsu.uz" aria-label="Instagram"><img src="assets/instagram_white.svg" alt=""></a><a class="social-row__item" href="https://t.me/nsu_uz" aria-label="Telegram"><img src="assets/telegram_white.svg" alt=""></a><a class="social-row__item" href="https://youtube.com/@nsu_uz" aria-label="YouTube"><img src="assets/youtube_white.svg" alt=""></a><a class="social-row__item" href="#" aria-label="LinkedIn"><img src="assets/linkedin_white.svg" alt=""></a></div>
+        <span class="topbar__sep">|</span>
+        <a class="topbar__contact" href="mailto:info@nsu.uz"><svg class="ico"><use href="#i-mail"/></svg>info@nsu.uz</a>
+        <a class="topbar__contact" href="tel:+998792237789"><svg class="ico"><use href="#i-phone"/></svg>+998 (79) 223-77-89</a>
+      </div>
+
+      <div class="topbar__right">
+        <a class="topbar__link" href="#">HEMIS</a>
+        <span class="topbar__sep topbar__sep--md">|</span>
+        <a class="topbar__link topbar__link--md" href="https://qabul.nsu.uz">QABUL PORTALI</a>
+        <span class="topbar__sep">|</span>
+        <div class="lang" id="lang">
+          <button class="lang__btn" type="button" aria-haspopup="true" aria-expanded="false">
+            <img class="lang__flag" src="assets/flag-uz.svg" alt="">
+            <span class="lang__label">O‘zbekcha</span>
+            <svg class="ico"><use href="#i-chevron-down"/></svg>
+          </button>
+          <ul class="lang__menu">
+            <li><button type="button" class="is-active" data-label="O‘zbekcha">O‘zbekcha</button></li>
+            <li><button type="button" data-label="Русский">Русский</button></li>
+            <li><button type="button" data-label="English">English</button></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <nav class="mainnav" aria-label="Asosiy menyu">
+    <div class="container mainnav__inner">
+      <a class="brand" href="index.html" aria-label="Navoiy davlat universiteti — bosh sahifa">
+        <img class="brand__seal" src="images/nsu/nsu-seal.png" alt="">
+        <span class="brand__txt"><b>Navoiy davlat</b><i>universiteti</i></span>
+      </a>
+      <div class="menu"><div class="menu__item"><button class="menu__btn" type="button">Ta’lim<svg class="ico"><use href="#i-chevron-down"/></svg></button><div class="dd dd--w52"><div class="dd__panel"><a class="dd__link" href="education-bachelor.html">Bakalavriat</a><a class="dd__link" href="education-master.html">Magistratura</a><a class="dd__link" href="education-phd-dsc.html">PhD va DSc</a><a class="dd__link" href="education-courses.html">Kurslar</a><div class="dd__link"><span>Fakultetlar</span><svg class="ico"><use href="#i-chevron-right"/></svg><div class="dd__sub"><div class="dd__panel"><a class="dd__link" href="faculty-aniq-fanlar.html">Aniq fanlar fakulteti</a><a class="dd__link" href="faculty-iqtisodiyot.html">Iqtisodiyot fakulteti</a><a class="dd__link" href="faculty-maktabgacha-boshlangich.html">Maktabgacha va boshlang‘ich ta’lim fakulteti</a><a class="dd__link" href="faculty-sanat-sport.html">San’at va sport fakulteti</a><a class="dd__link" href="faculty-tabiiy-fanlar-tibbiyot.html">Tabiiy fanlar va tibbiyot fakulteti</a><a class="dd__link" href="faculty-tarix.html">Tarix fakulteti</a><a class="dd__link" href="faculty-tillar.html">Tillar fakulteti</a></div></div></div></div></div></div><div class="menu__item"><button class="menu__btn" type="button">Qabul<svg class="ico"><use href="#i-chevron-down"/></svg></button><div class="dd dd--w52"><div class="dd__panel"><a class="dd__link" href="admissions-study.html">Qabul haqida</a><div class="dd__link"><span>Ta’lim darajalari</span><svg class="ico"><use href="#i-chevron-right"/></svg><div class="dd__sub"><div class="dd__panel"><a class="dd__link" href="education-bachelor.html">Bakalavriat</a><a class="dd__link" href="education-master.html">Magistratura</a><a class="dd__link" href="education-phd-dsc.html">PhD va DSc</a><a class="dd__link" href="education-courses.html">Kurslar</a></div></div></div><a class="dd__link" href="international-office.html">Xalqaro talabalar</a><a class="dd__link" href="https://qabul.nsu.uz">Qabul portali</a><a class="dd__link" href="contact.html">Bog‘lanish</a></div></div></div><div class="menu__item"><button class="menu__btn" type="button">Ilmiy faoliyat<svg class="ico"><use href="#i-chevron-down"/></svg></button><div class="dd dd--w52"><div class="dd__panel"><a class="dd__link" href="research.html">Ilmiy faoliyat</a><a class="dd__link" href="education-phd-dsc.html">Doktorantura (PhD, DSc)</a><a class="dd__link" href="research-council.html">Ilmiy kengash</a><a class="dd__link" href="research-conferences.html">Konferensiyalar</a><a class="dd__link" href="research-journals.html">Ilmiy jurnallar</a></div></div></div><div class="menu__item"><button class="menu__btn" type="button">Xalqaro<svg class="ico"><use href="#i-chevron-down"/></svg></button><div class="dd dd--w52"><div class="dd__panel"><a class="dd__link" href="international-office.html">Xalqaro aloqalar bo‘limi</a><a class="dd__link" href="about-partnerships.html">Hamkorlik</a><a class="dd__link" href="about-partnerships-erasmus.html">Akademik almashinuv</a><a class="dd__link" href="admissions-international.html">Xalqaro talabalar</a></div></div></div><a class="menu__link" href="student-life.html">Talabalar hayoti</a><a class="menu__link" href="news.html">Yangiliklar</a><div class="menu__item"><button class="menu__btn is-active" type="button">Universitet<svg class="ico"><use href="#i-chevron-down"/></svg></button><div class="dd dd--w52"><div class="dd__panel"><a class="dd__link" href="about.html">Universitet haqida</a><a class="dd__link" href="about-history.html">Tarix</a><a class="dd__link" href="about-mission.html">Missiya va maqsad</a><a class="dd__link" href="about-leadership.html">Rahbariyat</a><a class="dd__link" href="about-rector.html">Rektor murojaati</a><a class="dd__link" href="about-structure.html">Tashkiliy tuzilma</a><a class="dd__link" href="about-numbers.html">NavDU raqamlarda</a><a class="dd__link" href="about-requisites.html">Rekvizitlar</a><a class="dd__link" href="about-partnerships.html">Hamkorlik</a></div></div></div><a class="menu__link" href="contact.html">Bog‘lanish</a></div>
+    </div>
+  </nav>
+</header>
+
+<!-- ====== MOBILE MENU ====== -->
+<div class="mobile-menu" id="mobileMenu" aria-hidden="true">
+  <div class="mobile-menu__overlay" data-close></div>
+  <div class="mobile-menu__panel">
+    <div class="mobile-menu__head">
+      <a class="brand brand--dark" href="index.html">
+        <img class="brand__seal" src="images/nsu/nsu-seal.png" alt="">
+        <span class="brand__txt"><b>Navoiy davlat</b><i>universiteti</i></span>
+      </a>
+      <button class="mobile-menu__close" type="button" aria-label="Yopish" data-close><svg class="ico"><use href="#i-x"/></svg></button>
+    </div>
+    <nav class="mobile-menu__nav" aria-label="Mobil menyu">
+      <ul class="mm"><li class="mm__item"><button class="mm__btn" type="button" aria-expanded="false">Ta’lim<svg class="ico"><use href="#i-chevron-right"/></svg></button><ul class="mm__sub"><li><a class="mm__link" href="education-bachelor.html">Bakalavriat</a></li><li><a class="mm__link" href="education-master.html">Magistratura</a></li><li><a class="mm__link" href="education-phd-dsc.html">PhD va DSc</a></li><li><a class="mm__link" href="education-courses.html">Kurslar</a></li><li><button class="mm__btn" type="button" aria-expanded="false">Fakultetlar<svg class="ico"><use href="#i-chevron-right"/></svg></button><ul class="mm__sub mm__sub--nested"><li><a class="mm__link" href="faculty-aniq-fanlar.html">Aniq fanlar fakulteti</a></li><li><a class="mm__link" href="faculty-iqtisodiyot.html">Iqtisodiyot fakulteti</a></li><li><a class="mm__link" href="faculty-maktabgacha-boshlangich.html">Maktabgacha va boshlang‘ich ta’lim fakulteti</a></li><li><a class="mm__link" href="faculty-sanat-sport.html">San’at va sport fakulteti</a></li><li><a class="mm__link" href="faculty-tabiiy-fanlar-tibbiyot.html">Tabiiy fanlar va tibbiyot fakulteti</a></li><li><a class="mm__link" href="faculty-tarix.html">Tarix fakulteti</a></li><li><a class="mm__link" href="faculty-tillar.html">Tillar fakulteti</a></li></ul></li></ul></li><li class="mm__item"><button class="mm__btn" type="button" aria-expanded="false">Qabul<svg class="ico"><use href="#i-chevron-right"/></svg></button><ul class="mm__sub"><li><a class="mm__link" href="admissions-study.html">Qabul haqida</a></li><li><button class="mm__btn" type="button" aria-expanded="false">Ta’lim darajalari<svg class="ico"><use href="#i-chevron-right"/></svg></button><ul class="mm__sub mm__sub--nested"><li><a class="mm__link" href="education-bachelor.html">Bakalavriat</a></li><li><a class="mm__link" href="education-master.html">Magistratura</a></li><li><a class="mm__link" href="education-phd-dsc.html">PhD va DSc</a></li><li><a class="mm__link" href="education-courses.html">Kurslar</a></li></ul></li><li><a class="mm__link" href="international-office.html">Xalqaro talabalar</a></li><li><a class="mm__link" href="https://qabul.nsu.uz">Qabul portali</a></li><li><a class="mm__link" href="contact.html">Bog‘lanish</a></li></ul></li><li class="mm__item"><button class="mm__btn" type="button" aria-expanded="false">Ilmiy faoliyat<svg class="ico"><use href="#i-chevron-right"/></svg></button><ul class="mm__sub"><li><a class="mm__link" href="research.html">Ilmiy faoliyat</a></li><li><a class="mm__link" href="education-phd-dsc.html">Doktorantura (PhD, DSc)</a></li><li><a class="mm__link" href="research-council.html">Ilmiy kengash</a></li><li><a class="mm__link" href="research-conferences.html">Konferensiyalar</a></li><li><a class="mm__link" href="research-journals.html">Ilmiy jurnallar</a></li></ul></li><li class="mm__item"><button class="mm__btn" type="button" aria-expanded="false">Xalqaro<svg class="ico"><use href="#i-chevron-right"/></svg></button><ul class="mm__sub"><li><a class="mm__link" href="international-office.html">Xalqaro aloqalar bo‘limi</a></li><li><a class="mm__link" href="about-partnerships.html">Hamkorlik</a></li><li><a class="mm__link" href="about-partnerships-erasmus.html">Akademik almashinuv</a></li><li><a class="mm__link" href="admissions-international.html">Xalqaro talabalar</a></li></ul></li><li class="mm__item"><a class="mm__link" href="student-life.html">Talabalar hayoti</a></li><li class="mm__item"><a class="mm__link" href="news.html">Yangiliklar</a></li><li class="mm__item"><button class="mm__btn" type="button" aria-expanded="false">Universitet<svg class="ico"><use href="#i-chevron-right"/></svg></button><ul class="mm__sub"><li><a class="mm__link" href="about.html">Universitet haqida</a></li><li><a class="mm__link" href="about-history.html">Tarix</a></li><li><a class="mm__link" href="about-mission.html">Missiya va maqsad</a></li><li><a class="mm__link" href="about-leadership.html">Rahbariyat</a></li><li><a class="mm__link" href="about-rector.html">Rektor murojaati</a></li><li><a class="mm__link" href="about-structure.html">Tashkiliy tuzilma</a></li><li><a class="mm__link" href="about-numbers.html">NavDU raqamlarda</a></li><li><a class="mm__link" href="about-requisites.html">Rekvizitlar</a></li><li><a class="mm__link" href="about-partnerships.html">Hamkorlik</a></li></ul></li><li class="mm__item"><a class="mm__link" href="contact.html">Bog‘lanish</a></li></ul>
+    </nav>
+  </div>
+</div>
+
 
 		
 		
 		<div class="body-wrapper">
 			<div class="body-innerwrapper">
 				
-<div id="sp-top-bar">
-	<div class="container">
-		<div class="container-inner">
-			<div class="row">
-				<div id="sp-top1" class="col-lg-6">
-					<div class="sp-column text-center text-lg-start">
-													<ul class="social-icons"><li class="social-icon-facebook"><a target="_blank" rel="noopener noreferrer" href="https://facebook.com/nsu.uz" aria-label="Facebook"><span class="fab fa-facebook" aria-hidden="true"></span></a></li><li class="social-icon-youtube"><a target="_blank" rel="noopener noreferrer" href="https://youtube.com/@nsu_uz" aria-label="Youtube"><span class="fab fa-youtube" aria-hidden="true"></span></a></li><li class="social-icon-instagram"><a target="_blank" rel="noopener noreferrer" href="https://instagram.com/nsu.uz" aria-label="Instagram"><span class="fab fa-instagram" aria-hidden="true"></span></a></li><li class="social-icon-custom"><a target="_blank" rel="noopener noreferrer" href="https://t.me/nsu_uz" aria-label="Custom"><span class="fab fa-telegram" aria-hidden="true"></span></a></li></ul>						
-												<div class="sp-module "><div class="sp-module-content">
-<div id="mod-custom136" class="mod-custom custom">
-    <div class="top-header-phone" style="display: flex; align-items: center;"><i class="fas fa-phone" style="margin-right: 5px; color: #0b459f;"></i> <a href="tel:+998792237789" style="text-decoration: none; color: #0b459f; font-weight: 600;">+998 (79) 223-77-89</a></div></div>
-</div></div>
-					</div>
-				</div>
 
-				<div id="sp-top2" class="col-lg-6">
-					<div class="sp-column text-center text-lg-end">
-						
-																									<div class="sp-module "><div class="sp-module-content"><ul class="mod-menu mod-list menu"><li class="item-1040"><a href="#" class="brand-search-icon"><span class="pe-2 fas fa-search" aria-hidden="true"></span><span class="visually-hidden">Qidiruv</span></a></li><li><a href="student-life.html">TALABALAR</a></li><li><a href="about-alumni.html">BITIRUVCHILAR</a></li><li><a href="https://qabul.nsu.uz/" target="_blank" rel="noopener">HUJJAT TOPSHIRISH</a></li><li><a href="#">O‘Z</a></li><li><a href="#">РУ</a></li><li><a href="#">EN</a></li></ul>
-</div></div>
-					</div>
-				</div>
-			</div>
-		</div>
-	</div>
-</div>
-
-<header id="sp-header">
-	<div class="container">
-		<div class="container-inner">
-			<div class="row">
-				<!-- Logo -->
-				<div id="sp-logo" class="col-auto">
-					<div class="sp-column">
-						<div class="logo"><a href="index.html">
-				<img class='logo-image  d-none d-lg-inline-block'
-					srcset='images/nsu/nsu-seal.png 1x, images/nsu/nsu-seal.png 2x'
-					src='images/nsu/nsu-seal.png'
-					alt='Navoiy davlat universiteti'
-				/>
-				<img class="logo-image-phone d-inline-block d-lg-none" src="images/nsu/nsu-seal.png" alt="Navoiy davlat universiteti" /></a></div>						
-					</div>
-				</div>
-
-				<!-- Menu -->
-				<div id="sp-menu" class="col-auto flex-auto">
-					<div class="sp-column d-flex justify-content-end align-items-center">
-						<nav class="sp-megamenu-wrapper d-flex" role="navigation"><ul class="sp-megamenu-parent menu-animation-fade-up d-none d-lg-block"><li class="sp-menu-item sp-has-child active"><a href="about.html">UNIVERSITET</a><div class="sp-dropdown sp-dropdown-main sp-menu-right" style="width: 280px;"><div class="sp-dropdown-inner"><ul class="sp-dropdown-items"><li class="sp-menu-item"><a href="about.html">Universitet haqida</a></li><li class="sp-menu-item"><a href="about-mission.html">Missiya va maqsad</a></li><li class="sp-menu-item"><a href="about-rector.html">Rektor</a></li><li class="sp-menu-item"><a href="about-leadership.html">Rahbariyat</a></li><li class="sp-menu-item"><a href="about-structure.html">Tashkiliy tuzilma</a></li><li class="sp-menu-item"><a href="about-numbers.html">NavDU raqamlarda</a></li><li class="sp-menu-item"><a href="about-history.html">Universitet tarixi</a></li><li class="sp-menu-item sp-has-child"><a href="about-governance.html">Boshqaruv organlari</a><div class="sp-dropdown sp-dropdown-sub sp-menu-right" style="width: 260px;"><div class="sp-dropdown-inner"><ul class="sp-dropdown-items"><li class="sp-menu-item"><a href="about-governance-academic-council.html">Akademik kengash</a></li><li class="sp-menu-item"><a href="about-governance-scientific-council.html">Ilmiy kengash</a></li><li class="sp-menu-item"><a href="about-governance-admission-committee.html">Qabul komissiyasi</a></li><li class="sp-menu-item"><a href="about-governance-ethics.html">Odob-axloq komissiyasi</a></li><li class="sp-menu-item"><a href="about-governance-trustees.html">Vasiylik kengashi</a></li></ul></div></div></li><li class="sp-menu-item sp-has-child"><a href="about-departments.html">Bo‘lim va markazlar</a><div class="sp-dropdown sp-dropdown-sub sp-menu-right" style="width: 260px;"><div class="sp-dropdown-inner"><ul class="sp-dropdown-items"><li class="sp-menu-item"><a href="about-departments-hr.html">Kadrlar bo‘limi</a></li><li class="sp-menu-item"><a href="about-departments-it.html">Raqamli ta’lim va IT markazi</a></li><li class="sp-menu-item"><a href="about-departments-finance.html">Moliya bo‘limi</a></li><li class="sp-menu-item"><a href="about-departments-execution-control.html">Ijro nazorati bo‘limi</a></li><li class="sp-menu-item"><a href="about-departments-facilities.html">Xo‘jalik bo‘limi</a></li><li class="sp-menu-item"><a href="about-departments-publishing.html">Nashriyot bo‘limi</a></li><li class="sp-menu-item"><a href="about-departments-software.html">Dasturiy ta’minot bo‘limi</a></li><li class="sp-menu-item"><a href="about-departments-transformation.html">Transformatsiya bo‘limi</a></li></ul></div></div></li><li class="sp-menu-item sp-has-child"><a href="about-regulations.html">Me’yoriy hujjatlar</a><div class="sp-dropdown sp-dropdown-sub sp-menu-right" style="width: 260px;"><div class="sp-dropdown-inner"><ul class="sp-dropdown-items"><li class="sp-menu-item"><a href="about-regulations-academic.html">Akademik hujjatlar</a></li><li class="sp-menu-item"><a href="about-regulations-admission.html">Qabul qoidalari</a></li><li class="sp-menu-item"><a href="about-regulations-financial.html">Moliya va xaridlar</a></li><li class="sp-menu-item"><a href="about-regulations-hr-ethics.html">HR va odob-axloq</a></li><li class="sp-menu-item"><a href="about-regulations-templates.html">Shablon va shakllar</a></li></ul></div></div></li><li class="sp-menu-item sp-has-child"><a href="about-partnerships.html">Hamkorlik</a><div class="sp-dropdown sp-dropdown-sub sp-menu-right" style="width: 260px;"><div class="sp-dropdown-inner"><ul class="sp-dropdown-items"><li class="sp-menu-item"><a href="about-partnerships-strategic.html">Strategik hamkorlik</a></li><li class="sp-menu-item"><a href="about-partnerships-erasmus.html">Erasmus+ dasturlari</a></li><li class="sp-menu-item"><a href="about-partnerships-directory.html">Hamkorlar katalogi</a></li><li class="sp-menu-item"><a href="about-partnerships-success-stories.html">Muvaffaqiyat hikoyalari</a></li></ul></div></div></li><li class="sp-menu-item"><a href="about-alumni.html">Mashhur bitiruvchilar</a></li><li class="sp-menu-item"><a href="about-jobs.html">Bo‘sh ish o‘rinlari</a></li><li class="sp-menu-item"><a href="about-requisites.html">Rekvizitlar</a></li><li class="sp-menu-item"><a href="about-repression-museum.html">Qatag‘on qurbonlari muzeyi</a></li></ul></div></div></li><li class="sp-menu-item sp-has-child"><a href="education-bachelor.html">TA’LIM</a><div class="sp-dropdown sp-dropdown-main sp-menu-right" style="width: 280px;"><div class="sp-dropdown-inner"><ul class="sp-dropdown-items"><li class="sp-menu-item"><a href="education-bachelor.html">Bakalavriat</a></li><li class="sp-menu-item"><a href="education-master.html">Magistratura</a></li><li class="sp-menu-item"><a href="education-phd-dsc.html">PhD va DSc</a></li><li class="sp-menu-item"><a href="education-courses.html">Kurslar</a></li><li class="sp-menu-item"><a href="education-calendar.html">Akademik kalendar</a></li><li class="sp-menu-item"><a href="education-grading.html">Baholash tizimi (GPA)</a></li><li class="sp-menu-item"><a href="education-registrar.html">Registrator ofisi</a></li><li class="sp-menu-item"><a href="education-scholarship.html">Stipendiya va to‘lovlar</a></li></ul></div></div></li><li class="sp-menu-item sp-has-child"><a href="faculties.html">FAKULTETLAR</a><div class="sp-dropdown sp-dropdown-main sp-menu-right" style="width: 280px;"><div class="sp-dropdown-inner"><ul class="sp-dropdown-items"><li class="sp-menu-item"><a href="faculties.html">Barcha fakultetlar</a></li><li class="sp-menu-item"><a href="faculty-aniq-fanlar.html">Aniq fanlar fakulteti</a></li><li class="sp-menu-item"><a href="faculty-iqtisodiyot.html">Iqtisodiyot fakulteti</a></li><li class="sp-menu-item"><a href="faculty-maktabgacha-boshlangich.html">Maktabgacha va boshlang‘ich ta’lim</a></li><li class="sp-menu-item"><a href="faculty-sanat-sport.html">San’at va sport fakulteti</a></li><li class="sp-menu-item"><a href="faculty-tabiiy-fanlar-tibbiyot.html">Tabiiy fanlar va tibbiyot</a></li><li class="sp-menu-item"><a href="faculty-tarix.html">Tarix fakulteti</a></li><li class="sp-menu-item"><a href="faculty-tillar.html">Tillar fakulteti</a></li></ul></div></div></li><li class="sp-menu-item sp-has-child"><a href="admissions-study.html">QABUL</a><div class="sp-dropdown sp-dropdown-main sp-menu-right" style="width: 280px;"><div class="sp-dropdown-inner"><ul class="sp-dropdown-items"><li class="sp-menu-item"><a href="admissions-study.html">NavDUda o‘qish</a></li><li class="sp-menu-item sp-has-child"><a href="admissions-bachelor.html">Bakalavriatga qabul</a><div class="sp-dropdown sp-dropdown-sub sp-menu-right" style="width: 260px;"><div class="sp-dropdown-inner"><ul class="sp-dropdown-items"><li class="sp-menu-item"><a href="admissions-bachelor-general.html">Umumiy ma’lumot</a></li><li class="sp-menu-item"><a href="admissions-bachelor-documents.html">Namunaviy hujjatlar</a></li><li class="sp-menu-item"><a href="admissions-bachelor-exam.html">Imtihon dasturi</a></li><li class="sp-menu-item"><a href="admissions-bachelor-transfer.html">O‘qishni ko‘chirish</a></li><li class="sp-menu-item"><a href="admissions-bachelor-tuition.html">To‘lov va stipendiyalar</a></li></ul></div></div></li><li class="sp-menu-item sp-has-child"><a href="admissions-master.html">Magistraturaga qabul</a><div class="sp-dropdown sp-dropdown-sub sp-menu-right" style="width: 260px;"><div class="sp-dropdown-inner"><ul class="sp-dropdown-items"><li class="sp-menu-item"><a href="admissions-master-general.html">Umumiy ma’lumot</a></li><li class="sp-menu-item"><a href="admissions-master-tuition.html">To‘lov va stipendiyalar</a></li></ul></div></div></li><li class="sp-menu-item sp-has-child"><a href="admissions-international.html">Xorijiy talabalar</a><div class="sp-dropdown sp-dropdown-sub sp-menu-right" style="width: 260px;"><div class="sp-dropdown-inner"><ul class="sp-dropdown-items"><li class="sp-menu-item"><a href="admissions-international-requirements.html">Qabul talablari</a></li><li class="sp-menu-item"><a href="admissions-international-visa.html">Viza va kelish</a></li><li class="sp-menu-item"><a href="admissions-international-tuition.html">To‘lov va stipendiyalar</a></li></ul></div></div></li><li class="sp-menu-item"><a href="reception.html">Ijodiy imtihon dasturlari</a></li></ul></div></div></li><li class="sp-menu-item sp-has-child"><a href="research.html">ILMIY FAOLIYAT</a><div class="sp-dropdown sp-dropdown-main sp-menu-right" style="width: 280px;"><div class="sp-dropdown-inner"><ul class="sp-dropdown-items"><li class="sp-menu-item"><a href="research.html">Ilmiy faoliyat</a></li><li class="sp-menu-item"><a href="research-council.html">Ilmiy kengash</a></li><li class="sp-menu-item"><a href="research-doctorate.html">Doktorantura bo‘limi</a></li><li class="sp-menu-item"><a href="research-projects.html">Ilmiy-tadqiqot loyihalari</a></li><li class="sp-menu-item"><a href="research-conferences.html">Ilmiy konferensiyalar</a></li><li class="sp-menu-item"><a href="research-journals.html">Ilmiy jurnallar</a></li><li class="sp-menu-item"><a href="research-abstracts.html">Avtoreferatlar</a></li><li class="sp-menu-item"><a href="research-innovation.html">Innovatsiya va tijoratlashtirish</a></li><li class="sp-menu-item"><a href="research-talented-students.html">Iqtidorli talabalar</a></li><li class="sp-menu-item"><a href="articles.html">Maqolalar</a></li></ul></div></div></li><li class="sp-menu-item sp-has-child"><a href="student-life.html">TALABALAR HAYOTI</a><div class="sp-dropdown sp-dropdown-main sp-menu-right" style="width: 280px;"><div class="sp-dropdown-inner"><ul class="sp-dropdown-items"><li class="sp-menu-item"><a href="student-life.html">Talabalar hayoti</a></li><li class="sp-menu-item"><a href="student-life-accommodation.html">Talabalar turar joyi</a></li><li class="sp-menu-item"><a href="student-life-library.html">Axborot resurs markazi</a></li><li class="sp-menu-item"><a href="student-life-sports.html">Sport va sog‘lomlashtirish</a></li><li class="sp-menu-item"><a href="student-life-career.html">Karyera va bandlik markazi</a></li><li class="sp-menu-item sp-has-child"><a href="student-life-student-council.html">Talabalar kengashi</a><div class="sp-dropdown sp-dropdown-sub sp-menu-right" style="width: 260px;"><div class="sp-dropdown-inner"><ul class="sp-dropdown-items"><li class="sp-menu-item"><a href="student-life-student-council-structure.html">Tuzilma</a></li><li class="sp-menu-item"><a href="student-life-student-council-elections.html">Saylovlar</a></li></ul></div></div></li><li class="sp-menu-item"><a href="student-life-spirituality.html">Ma’naviyat va ma’rifat</a></li><li class="sp-menu-item"><a href="student-life-psychology.html">Psixologik maslahat markazi</a></li><li class="sp-menu-item"><a href="student-life-tutoring.html">Tyutorlik faoliyati</a></li><li class="sp-menu-item"><a href="student-life-eco.html">«Ekofaol talabalar»</a></li><li class="sp-menu-item"><a href="student-life-green.html">«Yashil universitet»</a></li></ul></div></div></li><li class="sp-menu-item sp-has-child"><a href="international-office.html">XALQARO</a><div class="sp-dropdown sp-dropdown-main sp-menu-right" style="width: 280px;"><div class="sp-dropdown-inner"><ul class="sp-dropdown-items"><li class="sp-menu-item"><a href="international-office.html">Xalqaro aloqalar bo‘limi</a></li><li class="sp-menu-item"><a href="admissions-international.html">Xorijiy talabalar</a></li><li class="sp-menu-item"><a href="about-partnerships-erasmus.html">Erasmus+ dasturlari</a></li><li class="sp-menu-item"><a href="about-partnerships-strategic.html">Strategik hamkorlik</a></li></ul></div></div></li><li class="sp-menu-item"><a href="news.html">YANGILIKLAR</a></li><li class="sp-menu-item"><a href="contact.html">ALOQA</a></li></ul><a id="offcanvas-toggler" aria-label="Menu" class="offcanvas-toggler-right" href="#"><div class="burger-icon" aria-hidden="true"><span></span><span></span><span></span></div></a></nav>						
-
-						<!-- Related Modules -->
-						<div class="d-none d-lg-flex header-modules align-items-center">
-							
-													</div>
-
-						<!-- if offcanvas position right -->
-													<a id="offcanvas-toggler"  aria-label="Menu" title="Menu"  class="mega_offcanvas offcanvas-toggler-secondary offcanvas-toggler-right d-flex align-items-center" href="#">
-							<div class="burger-icon" aria-hidden="true"><span></span><span></span><span></span></div>
-							</a>
-											</div>
-				</div>
-			</div>
-		</div>
-	</div>
-</header>
 				<section id="sp-page-title" class="nsu-page-hero"><div class="container"><div class="container-inner"><div class="nsu-hero-inner"><nav class="nsu-crumbs" aria-label="breadcrumb"><a href="index.html">Bosh sahifa</a> <span class="sep">/</span> <a href="about.html">UNIVERSITET</a> <span class="sep">/</span> <span>Hamkorlik</span></nav><h1>Hamkorlik</h1><p class="nsu-hero-sub">Universitetning milliy va xalqaro hamkorlik aloqalari.</p></div></div></div></section><section id="sp-main-body"><div class="row"><div id="sp-component" class="col-lg-12"><div class="sp-column"><div id="sp-page-builder" class="sp-page-builder"><div class="page-content builder-container"><section id="nsu-sec-0" class="sppb-section "><div class="sppb-row-container"><div class="sppb-row"><div class="sppb-row-column"><div class="sppb-column"><div class="sppb-column-addons"><div class="sppb-addon-wrapper addon-root-text-block"><div class="clearfix"><div class="sppb-addon sppb-addon-text-block"><div class="sppb-addon-content"><p>Navoiy davlat universiteti ta’lim sifati va ilmiy salohiyatni oshirish maqsadida xorijiy va mahalliy oliy ta’lim muassasalari, ilmiy markazlar hamda ishlab chiqarish korxonalari bilan keng hamkorlik aloqalarini yo‘lga qo‘ygan. Hamkorlik qo‘shma ta’lim dasturlari, akademik almashinuv, qo‘shma tadqiqotlar va amaliyot imkoniyatlarini o‘z ichiga oladi.</p><h4 class="nsu-sub">Hamkorlik yo‘nalishlari</h4><div class="row nsu-cards"><div class="col-md-6 col-lg-4"><div class="nsu-card"><div class="nsu-card-body"><h4>Strategik hamkorlar</h4><p>Asosiy xalqaro va milliy sheriklar.</p></div></div></div><div class="col-md-6 col-lg-4"><div class="nsu-card"><div class="nsu-card-body"><h4>Hamkorlar yo‘riqnomasi</h4><p>Hamkor tashkilotlar ro‘yxati.</p></div></div></div><div class="col-md-6 col-lg-4"><div class="nsu-card"><div class="nsu-card-body"><h4>Xalqaro aloqalar bo‘limi</h4><p>Xalqaro hamkorlikni muvofiqlashtirish.</p></div></div></div><div class="col-md-6 col-lg-4"><div class="nsu-card"><div class="nsu-card-body"><h4>Erasmus+</h4><p>Akademik mobillik dasturi.</p></div></div></div><div class="col-md-6 col-lg-4"><div class="nsu-card"><div class="nsu-card-body"><h4>Muvaffaqiyat hikoyalari</h4><p>Hamkorlik natijalari.</p></div></div></div></div></div></div></div></div></div></div></div></div></div></section><section id="nsu-related" class="sppb-section nsu-related"><div class="sppb-row-container"><div class="sppb-row"><div class="sppb-row-column"><div class="sppb-column"><div class="sppb-column-addons"><div class="sppb-addon-wrapper addon-root-text-block"><div class="clearfix"><div class="sppb-addon sppb-addon-text-block"><h3 class="sppb-addon-title">UNIVERSITET</h3><div class="sppb-addon-content"><div class="row nsu-rel-row"><div class="col-md-6 col-lg-4"><a class="nsu-rel" href="about.html"><span>Universitet haqida</span><i class="fas fa-arrow-right"></i></a></div><div class="col-md-6 col-lg-4"><a class="nsu-rel" href="about-mission.html"><span>Missiya va maqsad</span><i class="fas fa-arrow-right"></i></a></div><div class="col-md-6 col-lg-4"><a class="nsu-rel" href="about-rector.html"><span>Rektor</span><i class="fas fa-arrow-right"></i></a></div><div class="col-md-6 col-lg-4"><a class="nsu-rel" href="about-leadership.html"><span>Rahbariyat</span><i class="fas fa-arrow-right"></i></a></div><div class="col-md-6 col-lg-4"><a class="nsu-rel" href="about-structure.html"><span>Tashkiliy tuzilma</span><i class="fas fa-arrow-right"></i></a></div><div class="col-md-6 col-lg-4"><a class="nsu-rel" href="about-numbers.html"><span>NavDU raqamlarda</span><i class="fas fa-arrow-right"></i></a></div><div class="col-md-6 col-lg-4"><a class="nsu-rel" href="about-history.html"><span>Universitet tarixi</span><i class="fas fa-arrow-right"></i></a></div><div class="col-md-6 col-lg-4"><a class="nsu-rel" href="about-governance.html"><span>Boshqaruv organlari</span><i class="fas fa-arrow-right"></i></a></div><div class="col-md-6 col-lg-4"><a class="nsu-rel" href="about-departments.html"><span>Bo‘lim va markazlar</span><i class="fas fa-arrow-right"></i></a></div><div class="col-md-6 col-lg-4"><a class="nsu-rel" href="about-regulations.html"><span>Me’yoriy hujjatlar</span><i class="fas fa-arrow-right"></i></a></div><div class="col-md-6 col-lg-4"><a class="nsu-rel" href="about-alumni.html"><span>Mashhur bitiruvchilar</span><i class="fas fa-arrow-right"></i></a></div><div class="col-md-6 col-lg-4"><a class="nsu-rel" href="about-jobs.html"><span>Bo‘sh ish o‘rinlari</span><i class="fas fa-arrow-right"></i></a></div></div></div></div></div></div></div></div></div></div></div></section><section id="nsu-cta-sec" class="sppb-section nsu-cta-sec"><div class="sppb-row-container"><div class="sppb-row"><div class="sppb-row-column"><div class="sppb-column"><div class="sppb-column-addons"><div class="nsu-cta"><h3>Savolingiz yoki taklifingiz bormi?</h3><p>Universitet jamoasi siz bilan bogʻlanishdan mamnun. Biz bilan toʻgʻridan-toʻgʻri aloqaga chiqing.</p><div class="nsu-cta-btns"><a class="nsu-btn nsu-btn-primary" href="contact.html">Bogʻlanish</a><a class="nsu-btn nsu-btn-ghost" href="https://qabul.nsu.uz/" target="_blank" rel="noopener">Hujjat topshirish</a></div></div></div></div></div></div></div></section></div></div></div></div></div></section><section id="sp-bottom"><div class="container"><div class="container-inner"><div class="row nsu-footer-row"><div class="col-lg-4 nsu-foot-contact"><img src="images/nsu/nsu-seal.png" alt="Navoiy davlat universiteti" class="nsu-foot-logo"><p class="nsu-foot-brand">Navoiy davlat universiteti</p><p>Bilim, ilm, ma’naviyat — bizning qadriyatlarimiz.</p><p><span class="fas fa-map-marker-alt"></span> Navoiy sh., G‘alaba shoh ko‘chasi, 103</p><p><span class="fas fa-phone"></span> <a href="tel:+998792237789">+998 (79) 223-77-89</a></p><p><span class="fas fa-envelope"></span> <a href="mailto:info@nsu.uz">info@nsu.uz</a> · <a href="mailto:admission@nsu.uz">admission@nsu.uz</a></p><ul class="social-icons"><li class="social-icon-facebook"><a target="_blank" rel="noopener noreferrer" href="https://facebook.com/nsu.uz" aria-label="Facebook"><span class="fab fa-facebook" aria-hidden="true"></span></a></li><li class="social-icon-youtube"><a target="_blank" rel="noopener noreferrer" href="https://youtube.com/@nsu_uz" aria-label="Youtube"><span class="fab fa-youtube" aria-hidden="true"></span></a></li><li class="social-icon-instagram"><a target="_blank" rel="noopener noreferrer" href="https://instagram.com/nsu.uz" aria-label="Instagram"><span class="fab fa-instagram" aria-hidden="true"></span></a></li><li class="social-icon-custom"><a target="_blank" rel="noopener noreferrer" href="https://t.me/nsu_uz" aria-label="Custom"><span class="fab fa-telegram" aria-hidden="true"></span></a></li></ul></div><div class="col-lg-8"><div class="row"><div class="col-sm-6 col-lg-3"><h4 class="nsu-foot-title">UNIVERSITET</h4><ul class="nsu-foot-list"><li><a href="about.html">Universitet haqida</a></li><li><a href="about-leadership.html">Rahbariyat</a></li><li><a href="about-structure.html">Tuzilma</a></li><li><a href="about-history.html">Tarix</a></li><li><a href="about-requisites.html">Rekvizitlar</a></li></ul></div><div class="col-sm-6 col-lg-3"><h4 class="nsu-foot-title">TA’LIM</h4><ul class="nsu-foot-list"><li><a href="education-bachelor.html">Bakalavriat</a></li><li><a href="education-master.html">Magistratura</a></li><li><a href="education-phd-dsc.html">PhD va DSc</a></li><li><a href="education-courses.html">Kurslar</a></li><li><a href="education-calendar.html">Akademik kalendar</a></li></ul></div><div class="col-sm-6 col-lg-3"><h4 class="nsu-foot-title">QABUL</h4><ul class="nsu-foot-list"><li><a href="admissions-study.html">NavDUda o‘qish</a></li><li><a href="admissions-bachelor.html">Bakalavriat</a></li><li><a href="admissions-master.html">Magistratura</a></li><li><a href="admissions-international.html">Xorijiy talabalar</a></li><li><a href="reception.html">Ijodiy imtihon</a></li></ul></div><div class="col-sm-6 col-lg-3"><h4 class="nsu-foot-title">ILM VA TALABA</h4><ul class="nsu-foot-list"><li><a href="research.html">Ilmiy faoliyat</a></li><li><a href="research-journals.html">Ilmiy jurnallar</a></li><li><a href="student-life.html">Talabalar hayoti</a></li><li><a href="student-life-accommodation.html">Turar joy</a></li><li><a href="student-life-library.html">Axborot resurs markazi</a></li></ul></div></div></div></div></div></div></section><footer id="sp-footer"><div class="container"><div class="container-inner"><div class="row"><div class="col-lg-12"><div class="sp-column"><span class="sp-copyright">© 2026 Navoiy davlat universiteti. Barcha huquqlar himoyalangan.</span></div></div></div></div></div></footer>
 			</div>
 		</div>
@@ -409,280 +458,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
 
 
-<div class="offcanvas-menu border-menu">
-	<div class="d-flex align-items-center p-3 pt-4">
-		<div class="logo"><a href="#">
-				<img class='logo-image  d-none d-lg-inline-block'
-					srcset='images/nsu/nsu-seal.png 1x, images/nsu/nsu-seal.png 2x'
-					src='images/nsu/nsu-seal.png'
-					alt='Navoiy davlat universiteti'
-				/>
-				<img class="logo-image-phone d-inline-block d-lg-none" src="images/nsu/nsu-seal.png" alt="Navoiy davlat universiteti" /></a></div>		<a href="#" class="close-offcanvas" aria-label="Close Off-canvas">
-			<div class="burger-icon">
-				<span></span>
-				<span></span>
-				<span></span>
-			</div>
-		</a>
-	</div>
-	<div class="offcanvas-inner">
-      
-      
-    
-      
-      
-       <!-- ✅ Quick Links module first -->
-    <div class="sp-module "><div class="sp-module-content">
-<div id="mod-custom159" class="mod-custom custom">
-    <div class="container-fluid offcanvas-custom-module py-3">
-<div class="row g-2">
-<div class="col-12">
-<div class="top-header-phone2 d-flex justify-content-center align-items-center py-2" style="background: #4dace1; margin-bottom: 15px;"><i class="fas fa-phone me-2" style="color: #ffffff;"></i> <a href="tel:+998792237789" style="text-decoration: none; color: #ffffff; font-weight: 600;"> +998 (79) 223-77-89 </a></div>
-</div>
-<div class="col-12">
-<div class="d-flex justify-content-between align-items-center">
-<div class="offcanvas-search"><a href="#" rel="noopener"> <img src="images/demo/search1.png" alt="Search" width="18" height="18" loading="lazy" style="vertical-align: middle;" /> </a></div>
-<div class="offcanvas-languages d-flex align-items-center"><a href="#" class="me-3" style="color: #0b459f; text-decoration: none;"><strong>O‘Z</strong></a> <a href="#" style="color: #0b459f; text-decoration: none;"><strong>РУ</strong></a></div>
-</div>
-</div>
-</div>
-</div></div>
-</div></div>
-      
-      
-      
-      
-      
-		<div class="d-flex header-modules mb-3">
-			
-					</div>
-		
-					<div class="sp-module "><div class="sp-module-content"><ul class="mod-menu mod-list menu nav-pills"><li class="item-nsu menu-deeper menu-parent"><a href="about.html">UNIVERSITET<span class="menu-toggler"></span></a><ul class="mod-menu__sub list-unstyled small menu-child"><li class="item-nsu"><a href="about.html">Universitet haqida</a></li><li class="item-nsu"><a href="about-mission.html">Missiya va maqsad</a></li><li class="item-nsu"><a href="about-rector.html">Rektor</a></li><li class="item-nsu"><a href="about-leadership.html">Rahbariyat</a></li><li class="item-nsu"><a href="about-structure.html">Tashkiliy tuzilma</a></li><li class="item-nsu"><a href="about-numbers.html">NavDU raqamlarda</a></li><li class="item-nsu"><a href="about-history.html">Universitet tarixi</a></li><li class="item-nsu menu-deeper menu-parent"><a href="about-governance.html">Boshqaruv organlari<span class="menu-toggler"></span></a><ul class="mod-menu__sub list-unstyled small menu-child"><li class="item-nsu"><a href="about-governance-academic-council.html">Akademik kengash</a></li><li class="item-nsu"><a href="about-governance-scientific-council.html">Ilmiy kengash</a></li><li class="item-nsu"><a href="about-governance-admission-committee.html">Qabul komissiyasi</a></li><li class="item-nsu"><a href="about-governance-ethics.html">Odob-axloq komissiyasi</a></li><li class="item-nsu"><a href="about-governance-trustees.html">Vasiylik kengashi</a></li></ul></li><li class="item-nsu menu-deeper menu-parent"><a href="about-departments.html">Bo‘lim va markazlar<span class="menu-toggler"></span></a><ul class="mod-menu__sub list-unstyled small menu-child"><li class="item-nsu"><a href="about-departments-hr.html">Kadrlar bo‘limi</a></li><li class="item-nsu"><a href="about-departments-it.html">Raqamli ta’lim va IT markazi</a></li><li class="item-nsu"><a href="about-departments-finance.html">Moliya bo‘limi</a></li><li class="item-nsu"><a href="about-departments-execution-control.html">Ijro nazorati bo‘limi</a></li><li class="item-nsu"><a href="about-departments-facilities.html">Xo‘jalik bo‘limi</a></li><li class="item-nsu"><a href="about-departments-publishing.html">Nashriyot bo‘limi</a></li><li class="item-nsu"><a href="about-departments-software.html">Dasturiy ta’minot bo‘limi</a></li><li class="item-nsu"><a href="about-departments-transformation.html">Transformatsiya bo‘limi</a></li></ul></li><li class="item-nsu menu-deeper menu-parent"><a href="about-regulations.html">Me’yoriy hujjatlar<span class="menu-toggler"></span></a><ul class="mod-menu__sub list-unstyled small menu-child"><li class="item-nsu"><a href="about-regulations-academic.html">Akademik hujjatlar</a></li><li class="item-nsu"><a href="about-regulations-admission.html">Qabul qoidalari</a></li><li class="item-nsu"><a href="about-regulations-financial.html">Moliya va xaridlar</a></li><li class="item-nsu"><a href="about-regulations-hr-ethics.html">HR va odob-axloq</a></li><li class="item-nsu"><a href="about-regulations-templates.html">Shablon va shakllar</a></li></ul></li><li class="item-nsu menu-deeper menu-parent"><a href="about-partnerships.html">Hamkorlik<span class="menu-toggler"></span></a><ul class="mod-menu__sub list-unstyled small menu-child"><li class="item-nsu"><a href="about-partnerships-strategic.html">Strategik hamkorlik</a></li><li class="item-nsu"><a href="about-partnerships-erasmus.html">Erasmus+ dasturlari</a></li><li class="item-nsu"><a href="about-partnerships-directory.html">Hamkorlar katalogi</a></li><li class="item-nsu"><a href="about-partnerships-success-stories.html">Muvaffaqiyat hikoyalari</a></li></ul></li><li class="item-nsu"><a href="about-alumni.html">Mashhur bitiruvchilar</a></li><li class="item-nsu"><a href="about-jobs.html">Bo‘sh ish o‘rinlari</a></li><li class="item-nsu"><a href="about-requisites.html">Rekvizitlar</a></li><li class="item-nsu"><a href="about-repression-museum.html">Qatag‘on qurbonlari muzeyi</a></li></ul></li><li class="item-nsu menu-deeper menu-parent"><a href="education-bachelor.html">TA’LIM<span class="menu-toggler"></span></a><ul class="mod-menu__sub list-unstyled small menu-child"><li class="item-nsu"><a href="education-bachelor.html">Bakalavriat</a></li><li class="item-nsu"><a href="education-master.html">Magistratura</a></li><li class="item-nsu"><a href="education-phd-dsc.html">PhD va DSc</a></li><li class="item-nsu"><a href="education-courses.html">Kurslar</a></li><li class="item-nsu"><a href="education-calendar.html">Akademik kalendar</a></li><li class="item-nsu"><a href="education-grading.html">Baholash tizimi (GPA)</a></li><li class="item-nsu"><a href="education-registrar.html">Registrator ofisi</a></li><li class="item-nsu"><a href="education-scholarship.html">Stipendiya va to‘lovlar</a></li></ul></li><li class="item-nsu menu-deeper menu-parent"><a href="faculties.html">FAKULTETLAR<span class="menu-toggler"></span></a><ul class="mod-menu__sub list-unstyled small menu-child"><li class="item-nsu"><a href="faculties.html">Barcha fakultetlar</a></li><li class="item-nsu"><a href="faculty-aniq-fanlar.html">Aniq fanlar fakulteti</a></li><li class="item-nsu"><a href="faculty-iqtisodiyot.html">Iqtisodiyot fakulteti</a></li><li class="item-nsu"><a href="faculty-maktabgacha-boshlangich.html">Maktabgacha va boshlang‘ich ta’lim</a></li><li class="item-nsu"><a href="faculty-sanat-sport.html">San’at va sport fakulteti</a></li><li class="item-nsu"><a href="faculty-tabiiy-fanlar-tibbiyot.html">Tabiiy fanlar va tibbiyot</a></li><li class="item-nsu"><a href="faculty-tarix.html">Tarix fakulteti</a></li><li class="item-nsu"><a href="faculty-tillar.html">Tillar fakulteti</a></li></ul></li><li class="item-nsu menu-deeper menu-parent"><a href="admissions-study.html">QABUL<span class="menu-toggler"></span></a><ul class="mod-menu__sub list-unstyled small menu-child"><li class="item-nsu"><a href="admissions-study.html">NavDUda o‘qish</a></li><li class="item-nsu menu-deeper menu-parent"><a href="admissions-bachelor.html">Bakalavriatga qabul<span class="menu-toggler"></span></a><ul class="mod-menu__sub list-unstyled small menu-child"><li class="item-nsu"><a href="admissions-bachelor-general.html">Umumiy ma’lumot</a></li><li class="item-nsu"><a href="admissions-bachelor-documents.html">Namunaviy hujjatlar</a></li><li class="item-nsu"><a href="admissions-bachelor-exam.html">Imtihon dasturi</a></li><li class="item-nsu"><a href="admissions-bachelor-transfer.html">O‘qishni ko‘chirish</a></li><li class="item-nsu"><a href="admissions-bachelor-tuition.html">To‘lov va stipendiyalar</a></li></ul></li><li class="item-nsu menu-deeper menu-parent"><a href="admissions-master.html">Magistraturaga qabul<span class="menu-toggler"></span></a><ul class="mod-menu__sub list-unstyled small menu-child"><li class="item-nsu"><a href="admissions-master-general.html">Umumiy ma’lumot</a></li><li class="item-nsu"><a href="admissions-master-tuition.html">To‘lov va stipendiyalar</a></li></ul></li><li class="item-nsu menu-deeper menu-parent"><a href="admissions-international.html">Xorijiy talabalar<span class="menu-toggler"></span></a><ul class="mod-menu__sub list-unstyled small menu-child"><li class="item-nsu"><a href="admissions-international-requirements.html">Qabul talablari</a></li><li class="item-nsu"><a href="admissions-international-visa.html">Viza va kelish</a></li><li class="item-nsu"><a href="admissions-international-tuition.html">To‘lov va stipendiyalar</a></li></ul></li><li class="item-nsu"><a href="reception.html">Ijodiy imtihon dasturlari</a></li></ul></li><li class="item-nsu menu-deeper menu-parent"><a href="research.html">ILMIY FAOLIYAT<span class="menu-toggler"></span></a><ul class="mod-menu__sub list-unstyled small menu-child"><li class="item-nsu"><a href="research.html">Ilmiy faoliyat</a></li><li class="item-nsu"><a href="research-council.html">Ilmiy kengash</a></li><li class="item-nsu"><a href="research-doctorate.html">Doktorantura bo‘limi</a></li><li class="item-nsu"><a href="research-projects.html">Ilmiy-tadqiqot loyihalari</a></li><li class="item-nsu"><a href="research-conferences.html">Ilmiy konferensiyalar</a></li><li class="item-nsu"><a href="research-journals.html">Ilmiy jurnallar</a></li><li class="item-nsu"><a href="research-abstracts.html">Avtoreferatlar</a></li><li class="item-nsu"><a href="research-innovation.html">Innovatsiya va tijoratlashtirish</a></li><li class="item-nsu"><a href="research-talented-students.html">Iqtidorli talabalar</a></li><li class="item-nsu"><a href="articles.html">Maqolalar</a></li></ul></li><li class="item-nsu menu-deeper menu-parent"><a href="student-life.html">TALABALAR HAYOTI<span class="menu-toggler"></span></a><ul class="mod-menu__sub list-unstyled small menu-child"><li class="item-nsu"><a href="student-life.html">Talabalar hayoti</a></li><li class="item-nsu"><a href="student-life-accommodation.html">Talabalar turar joyi</a></li><li class="item-nsu"><a href="student-life-library.html">Axborot resurs markazi</a></li><li class="item-nsu"><a href="student-life-sports.html">Sport va sog‘lomlashtirish</a></li><li class="item-nsu"><a href="student-life-career.html">Karyera va bandlik markazi</a></li><li class="item-nsu menu-deeper menu-parent"><a href="student-life-student-council.html">Talabalar kengashi<span class="menu-toggler"></span></a><ul class="mod-menu__sub list-unstyled small menu-child"><li class="item-nsu"><a href="student-life-student-council-structure.html">Tuzilma</a></li><li class="item-nsu"><a href="student-life-student-council-elections.html">Saylovlar</a></li></ul></li><li class="item-nsu"><a href="student-life-spirituality.html">Ma’naviyat va ma’rifat</a></li><li class="item-nsu"><a href="student-life-psychology.html">Psixologik maslahat markazi</a></li><li class="item-nsu"><a href="student-life-tutoring.html">Tyutorlik faoliyati</a></li><li class="item-nsu"><a href="student-life-eco.html">«Ekofaol talabalar»</a></li><li class="item-nsu"><a href="student-life-green.html">«Yashil universitet»</a></li></ul></li><li class="item-nsu menu-deeper menu-parent"><a href="international-office.html">XALQARO<span class="menu-toggler"></span></a><ul class="mod-menu__sub list-unstyled small menu-child"><li class="item-nsu"><a href="international-office.html">Xalqaro aloqalar bo‘limi</a></li><li class="item-nsu"><a href="admissions-international.html">Xorijiy talabalar</a></li><li class="item-nsu"><a href="about-partnerships-erasmus.html">Erasmus+ dasturlari</a></li><li class="item-nsu"><a href="about-partnerships-strategic.html">Strategik hamkorlik</a></li></ul></li><li class="item-nsu"><a href="news.html">YANGILIKLAR</a></li><li class="item-nsu"><a href="contact.html">ALOQA</a></li></ul>
-</div></div>		
-		
-		
 				
-					<div class="sp-module "><div class="sp-module-content"><div class="mod-custom custom"><div class="nsu-oc-quick"><h4>TEZKOR HAVOLALAR</h4><div class="row g-2"><div class="col-6"><a href="https://qabul.nsu.uz/" target="_blank" rel="noopener">HUJJAT TOPSHIRISH</a></div><div class="col-6"><a href="admissions-study.html">NavDUda o‘qish</a></div><div class="col-6"><a href="student-life.html">TALABALAR</a></div><div class="col-6"><a href="about-alumni.html">BITIRUVCHILAR</a></div><div class="col-6"><a href="news.html">YANGILIKLAR</a></div><div class="col-6"><a href="contact.html">ALOQA</a></div></div></div></div></div></div><div class="sp-module "><div class="sp-module-content"><div class="mod-sppagebuilder  sp-page-builder" data-module_id="160">
-	<div class="page-content">
-		<section id="offcanvas-social-icons" class="sppb-section sppb-section-content-center" ><div class="sppb-row-container"><div class="sppb-row sppb-align-center"><div class="sppb-row-column  " id="column-wrap-id-fOSRYU62JYK5Cg_ke0nJj"><div id="column-id-fOSRYU62JYK5Cg_ke0nJj" class="sppb-column " ><div class="sppb-column-addons"><div id="sppb-addon-wrapper-Br2cUqQtpVd_HzjZCNPbs" class="sppb-addon-wrapper  addon-root-icon"><div id="sppb-addon-Br2cUqQtpVd_HzjZCNPbs" class="clearfix  "     ><div class="sppb-icon offcanvas-icons sppb-icon-hover-effect-zoom-in"><a target="_blank" href="https://www.facebook.com/wiut.uz/" ><span class="sppb-icon-inner"><i class="fab fa-facebook" aria-hidden="true" title="" aria-hidden="true"></i><span class="sppb-form-label-visually-hidden">fab fa-facebook</span></span></a></div><style type="text/css">#sppb-addon-Br2cUqQtpVd_HzjZCNPbs{
-}#sppb-addon-Br2cUqQtpVd_HzjZCNPbs{
-}
-@media (max-width: 1199.98px) {#sppb-addon-Br2cUqQtpVd_HzjZCNPbs{}}
-@media (max-width: 991.98px) {#sppb-addon-Br2cUqQtpVd_HzjZCNPbs{}}
-@media (max-width: 767.98px) {#sppb-addon-Br2cUqQtpVd_HzjZCNPbs{}}
-@media (max-width: 575.98px) {#sppb-addon-Br2cUqQtpVd_HzjZCNPbs{}}#sppb-addon-wrapper-Br2cUqQtpVd_HzjZCNPbs{
-}
-@media (max-width: 1199.98px) {#sppb-addon-wrapper-Br2cUqQtpVd_HzjZCNPbs{}}
-@media (max-width: 991.98px) {#sppb-addon-wrapper-Br2cUqQtpVd_HzjZCNPbs{}}
-@media (max-width: 767.98px) {#sppb-addon-wrapper-Br2cUqQtpVd_HzjZCNPbs{}}
-@media (max-width: 575.98px) {#sppb-addon-wrapper-Br2cUqQtpVd_HzjZCNPbs{}}#sppb-addon-Br2cUqQtpVd_HzjZCNPbs .sppb-addon-title{
-}#sppb-addon-Br2cUqQtpVd_HzjZCNPbs .offcanvas-icons .sppb-icon-inner i{line-height:35px;font-size:20px;}</style><style type="text/css">#sppb-addon-Br2cUqQtpVd_HzjZCNPbs .sppb-icon-inner{
-height: 40px;
-width: 40px;
-color: #ffffff;
-background-color: #0b459f;
-border-style: solid;border-color:#ffffff;
-}
-@media (max-width: 1199.98px) {#sppb-addon-Br2cUqQtpVd_HzjZCNPbs .sppb-icon-inner{}}
-@media (max-width: 991.98px) {#sppb-addon-Br2cUqQtpVd_HzjZCNPbs .sppb-icon-inner{}}
-@media (max-width: 767.98px) {#sppb-addon-Br2cUqQtpVd_HzjZCNPbs .sppb-icon-inner{}}
-@media (max-width: 575.98px) {#sppb-addon-Br2cUqQtpVd_HzjZCNPbs .sppb-icon-inner{}}#sppb-addon-Br2cUqQtpVd_HzjZCNPbs .sppb-icon-inner:hover{
-color: #0b459f;
-background-color: #ffffff;
-}
-@media (max-width: 1199.98px) {#sppb-addon-Br2cUqQtpVd_HzjZCNPbs .sppb-icon-inner:hover{}}
-@media (max-width: 991.98px) {#sppb-addon-Br2cUqQtpVd_HzjZCNPbs .sppb-icon-inner:hover{}}
-@media (max-width: 767.98px) {#sppb-addon-Br2cUqQtpVd_HzjZCNPbs .sppb-icon-inner:hover{}}
-@media (max-width: 575.98px) {#sppb-addon-Br2cUqQtpVd_HzjZCNPbs .sppb-icon-inner:hover{}}#sppb-addon-Br2cUqQtpVd_HzjZCNPbs .sppb-icon-inner i{
-line-height: 40px;
-font-size: 20px;
-}
-@media (max-width: 1199.98px) {#sppb-addon-Br2cUqQtpVd_HzjZCNPbs .sppb-icon-inner i{}}
-@media (max-width: 991.98px) {#sppb-addon-Br2cUqQtpVd_HzjZCNPbs .sppb-icon-inner i{}}
-@media (max-width: 767.98px) {#sppb-addon-Br2cUqQtpVd_HzjZCNPbs .sppb-icon-inner i{}}
-@media (max-width: 575.98px) {#sppb-addon-Br2cUqQtpVd_HzjZCNPbs .sppb-icon-inner i{}}#sppb-addon-Br2cUqQtpVd_HzjZCNPbs .sppb-icon-inner{
-}#sppb-addon-Br2cUqQtpVd_HzjZCNPbs{
-text-align: center;
-}
-@media (max-width: 1199.98px) {#sppb-addon-Br2cUqQtpVd_HzjZCNPbs{}}
-@media (max-width: 991.98px) {#sppb-addon-Br2cUqQtpVd_HzjZCNPbs{}}
-@media (max-width: 767.98px) {#sppb-addon-Br2cUqQtpVd_HzjZCNPbs{}}
-@media (max-width: 575.98px) {#sppb-addon-Br2cUqQtpVd_HzjZCNPbs{}}</style></div></div><div id="sppb-addon-wrapper-tQBAuoeAz5K2t7rvJf7bi" class="sppb-addon-wrapper  addon-root-icon"><div id="sppb-addon-tQBAuoeAz5K2t7rvJf7bi" class="clearfix  "     ><div class="sppb-icon offcanvas-icons sppb-icon-hover-effect-zoom-in"><a target="_blank" href="https://www.instagram.com/wiutuni/" ><span class="sppb-icon-inner"><i class="fab fa-instagram" aria-hidden="true" title="" aria-hidden="true"></i><span class="sppb-form-label-visually-hidden">fab fa-instagram</span></span></a></div><style type="text/css">#sppb-addon-tQBAuoeAz5K2t7rvJf7bi{
-}#sppb-addon-tQBAuoeAz5K2t7rvJf7bi{
-}
-@media (max-width: 1199.98px) {#sppb-addon-tQBAuoeAz5K2t7rvJf7bi{}}
-@media (max-width: 991.98px) {#sppb-addon-tQBAuoeAz5K2t7rvJf7bi{}}
-@media (max-width: 767.98px) {#sppb-addon-tQBAuoeAz5K2t7rvJf7bi{}}
-@media (max-width: 575.98px) {#sppb-addon-tQBAuoeAz5K2t7rvJf7bi{}}#sppb-addon-wrapper-tQBAuoeAz5K2t7rvJf7bi{
-}
-@media (max-width: 1199.98px) {#sppb-addon-wrapper-tQBAuoeAz5K2t7rvJf7bi{}}
-@media (max-width: 991.98px) {#sppb-addon-wrapper-tQBAuoeAz5K2t7rvJf7bi{}}
-@media (max-width: 767.98px) {#sppb-addon-wrapper-tQBAuoeAz5K2t7rvJf7bi{}}
-@media (max-width: 575.98px) {#sppb-addon-wrapper-tQBAuoeAz5K2t7rvJf7bi{}}#sppb-addon-tQBAuoeAz5K2t7rvJf7bi .sppb-addon-title{
-}#sppb-addon-tQBAuoeAz5K2t7rvJf7bi .offcanvas-icons .sppb-icon-inner i{line-height:35px;font-size:20px;}</style><style type="text/css">#sppb-addon-tQBAuoeAz5K2t7rvJf7bi .sppb-icon-inner{
-height: 40px;
-width: 40px;
-color: #ffffff;
-background-color: #0b459f;
-border-style: solid;border-color:#ffffff;
-}
-@media (max-width: 1199.98px) {#sppb-addon-tQBAuoeAz5K2t7rvJf7bi .sppb-icon-inner{}}
-@media (max-width: 991.98px) {#sppb-addon-tQBAuoeAz5K2t7rvJf7bi .sppb-icon-inner{}}
-@media (max-width: 767.98px) {#sppb-addon-tQBAuoeAz5K2t7rvJf7bi .sppb-icon-inner{}}
-@media (max-width: 575.98px) {#sppb-addon-tQBAuoeAz5K2t7rvJf7bi .sppb-icon-inner{}}#sppb-addon-tQBAuoeAz5K2t7rvJf7bi .sppb-icon-inner:hover{
-color: #0b459f;
-background-color: #ffffff;
-}
-@media (max-width: 1199.98px) {#sppb-addon-tQBAuoeAz5K2t7rvJf7bi .sppb-icon-inner:hover{}}
-@media (max-width: 991.98px) {#sppb-addon-tQBAuoeAz5K2t7rvJf7bi .sppb-icon-inner:hover{}}
-@media (max-width: 767.98px) {#sppb-addon-tQBAuoeAz5K2t7rvJf7bi .sppb-icon-inner:hover{}}
-@media (max-width: 575.98px) {#sppb-addon-tQBAuoeAz5K2t7rvJf7bi .sppb-icon-inner:hover{}}#sppb-addon-tQBAuoeAz5K2t7rvJf7bi .sppb-icon-inner i{
-line-height: 40px;
-font-size: 20px;
-}
-@media (max-width: 1199.98px) {#sppb-addon-tQBAuoeAz5K2t7rvJf7bi .sppb-icon-inner i{}}
-@media (max-width: 991.98px) {#sppb-addon-tQBAuoeAz5K2t7rvJf7bi .sppb-icon-inner i{}}
-@media (max-width: 767.98px) {#sppb-addon-tQBAuoeAz5K2t7rvJf7bi .sppb-icon-inner i{}}
-@media (max-width: 575.98px) {#sppb-addon-tQBAuoeAz5K2t7rvJf7bi .sppb-icon-inner i{}}#sppb-addon-tQBAuoeAz5K2t7rvJf7bi .sppb-icon-inner{
-}#sppb-addon-tQBAuoeAz5K2t7rvJf7bi{
-text-align: center;
-}
-@media (max-width: 1199.98px) {#sppb-addon-tQBAuoeAz5K2t7rvJf7bi{}}
-@media (max-width: 991.98px) {#sppb-addon-tQBAuoeAz5K2t7rvJf7bi{}}
-@media (max-width: 767.98px) {#sppb-addon-tQBAuoeAz5K2t7rvJf7bi{}}
-@media (max-width: 575.98px) {#sppb-addon-tQBAuoeAz5K2t7rvJf7bi{}}</style></div></div><div id="sppb-addon-wrapper-8-59oMtr1iPAogs6hfNa1" class="sppb-addon-wrapper  addon-root-icon"><div id="sppb-addon-8-59oMtr1iPAogs6hfNa1" class="clearfix  "     ><div class="sppb-icon offcanvas-icons  sppb-icon-hover-effect-zoom-in"><a target="_blank" href="https://uz.linkedin.com/school/wiut-uni-uz/" ><span class="sppb-icon-inner"><i class="fab fa-linkedin" aria-hidden="true" title="" aria-hidden="true"></i><span class="sppb-form-label-visually-hidden">fab fa-linkedin</span></span></a></div><style type="text/css">#sppb-addon-8-59oMtr1iPAogs6hfNa1{
-}#sppb-addon-8-59oMtr1iPAogs6hfNa1{
-}
-@media (max-width: 1199.98px) {#sppb-addon-8-59oMtr1iPAogs6hfNa1{}}
-@media (max-width: 991.98px) {#sppb-addon-8-59oMtr1iPAogs6hfNa1{}}
-@media (max-width: 767.98px) {#sppb-addon-8-59oMtr1iPAogs6hfNa1{}}
-@media (max-width: 575.98px) {#sppb-addon-8-59oMtr1iPAogs6hfNa1{}}#sppb-addon-wrapper-8-59oMtr1iPAogs6hfNa1{
-}
-@media (max-width: 1199.98px) {#sppb-addon-wrapper-8-59oMtr1iPAogs6hfNa1{}}
-@media (max-width: 991.98px) {#sppb-addon-wrapper-8-59oMtr1iPAogs6hfNa1{}}
-@media (max-width: 767.98px) {#sppb-addon-wrapper-8-59oMtr1iPAogs6hfNa1{}}
-@media (max-width: 575.98px) {#sppb-addon-wrapper-8-59oMtr1iPAogs6hfNa1{}}#sppb-addon-8-59oMtr1iPAogs6hfNa1 .sppb-addon-title{
-}#sppb-addon-8-59oMtr1iPAogs6hfNa1 .offcanvas-icons .sppb-icon-inner i{line-height:35px;font-size:20px;}</style><style type="text/css">#sppb-addon-8-59oMtr1iPAogs6hfNa1 .sppb-icon-inner{
-height: 40px;
-width: 40px;
-color: #ffffff;
-background-color: #0b459f;
-border-style: solid;border-color:#ffffff;
-}
-@media (max-width: 1199.98px) {#sppb-addon-8-59oMtr1iPAogs6hfNa1 .sppb-icon-inner{}}
-@media (max-width: 991.98px) {#sppb-addon-8-59oMtr1iPAogs6hfNa1 .sppb-icon-inner{}}
-@media (max-width: 767.98px) {#sppb-addon-8-59oMtr1iPAogs6hfNa1 .sppb-icon-inner{}}
-@media (max-width: 575.98px) {#sppb-addon-8-59oMtr1iPAogs6hfNa1 .sppb-icon-inner{}}#sppb-addon-8-59oMtr1iPAogs6hfNa1 .sppb-icon-inner:hover{
-color: #0b459f;
-background-color: #ffffff;
-}
-@media (max-width: 1199.98px) {#sppb-addon-8-59oMtr1iPAogs6hfNa1 .sppb-icon-inner:hover{}}
-@media (max-width: 991.98px) {#sppb-addon-8-59oMtr1iPAogs6hfNa1 .sppb-icon-inner:hover{}}
-@media (max-width: 767.98px) {#sppb-addon-8-59oMtr1iPAogs6hfNa1 .sppb-icon-inner:hover{}}
-@media (max-width: 575.98px) {#sppb-addon-8-59oMtr1iPAogs6hfNa1 .sppb-icon-inner:hover{}}#sppb-addon-8-59oMtr1iPAogs6hfNa1 .sppb-icon-inner i{
-line-height: 40px;
-font-size: 20px;
-}
-@media (max-width: 1199.98px) {#sppb-addon-8-59oMtr1iPAogs6hfNa1 .sppb-icon-inner i{}}
-@media (max-width: 991.98px) {#sppb-addon-8-59oMtr1iPAogs6hfNa1 .sppb-icon-inner i{}}
-@media (max-width: 767.98px) {#sppb-addon-8-59oMtr1iPAogs6hfNa1 .sppb-icon-inner i{}}
-@media (max-width: 575.98px) {#sppb-addon-8-59oMtr1iPAogs6hfNa1 .sppb-icon-inner i{}}#sppb-addon-8-59oMtr1iPAogs6hfNa1 .sppb-icon-inner{
-}#sppb-addon-8-59oMtr1iPAogs6hfNa1{
-text-align: center;
-}
-@media (max-width: 1199.98px) {#sppb-addon-8-59oMtr1iPAogs6hfNa1{}}
-@media (max-width: 991.98px) {#sppb-addon-8-59oMtr1iPAogs6hfNa1{}}
-@media (max-width: 767.98px) {#sppb-addon-8-59oMtr1iPAogs6hfNa1{}}
-@media (max-width: 575.98px) {#sppb-addon-8-59oMtr1iPAogs6hfNa1{}}</style></div></div><div id="sppb-addon-wrapper-s778QcxdFT9mXcKdfGJ_v" class="sppb-addon-wrapper  addon-root-icon"><div id="sppb-addon-s778QcxdFT9mXcKdfGJ_v" class="clearfix  "     ><div class="sppb-icon offcanvas-icons  sppb-icon-hover-effect-zoom-in"><a target="_blank" href="https://www.youtube.com/channel/UCePtwIMsg6nztjWHWOEsASQ?view_as=subscriber" ><span class="sppb-icon-inner"><i class="fab fa-youtube" aria-hidden="true" title="" aria-hidden="true"></i><span class="sppb-form-label-visually-hidden">fab fa-youtube</span></span></a></div><style type="text/css">#sppb-addon-s778QcxdFT9mXcKdfGJ_v{
-}#sppb-addon-s778QcxdFT9mXcKdfGJ_v{
-}
-@media (max-width: 1199.98px) {#sppb-addon-s778QcxdFT9mXcKdfGJ_v{}}
-@media (max-width: 991.98px) {#sppb-addon-s778QcxdFT9mXcKdfGJ_v{}}
-@media (max-width: 767.98px) {#sppb-addon-s778QcxdFT9mXcKdfGJ_v{}}
-@media (max-width: 575.98px) {#sppb-addon-s778QcxdFT9mXcKdfGJ_v{}}#sppb-addon-wrapper-s778QcxdFT9mXcKdfGJ_v{
-}
-@media (max-width: 1199.98px) {#sppb-addon-wrapper-s778QcxdFT9mXcKdfGJ_v{}}
-@media (max-width: 991.98px) {#sppb-addon-wrapper-s778QcxdFT9mXcKdfGJ_v{}}
-@media (max-width: 767.98px) {#sppb-addon-wrapper-s778QcxdFT9mXcKdfGJ_v{}}
-@media (max-width: 575.98px) {#sppb-addon-wrapper-s778QcxdFT9mXcKdfGJ_v{}}#sppb-addon-s778QcxdFT9mXcKdfGJ_v .sppb-addon-title{
-}#sppb-addon-s778QcxdFT9mXcKdfGJ_v .offcanvas-icons .sppb-icon-inner i{line-height:35px;font-size:20px;}</style><style type="text/css">#sppb-addon-s778QcxdFT9mXcKdfGJ_v .sppb-icon-inner{
-height: 40px;
-width: 40px;
-color: #ffffff;
-background-color: #0b459f;
-border-style: solid;border-color:#ffffff;
-}
-@media (max-width: 1199.98px) {#sppb-addon-s778QcxdFT9mXcKdfGJ_v .sppb-icon-inner{}}
-@media (max-width: 991.98px) {#sppb-addon-s778QcxdFT9mXcKdfGJ_v .sppb-icon-inner{}}
-@media (max-width: 767.98px) {#sppb-addon-s778QcxdFT9mXcKdfGJ_v .sppb-icon-inner{}}
-@media (max-width: 575.98px) {#sppb-addon-s778QcxdFT9mXcKdfGJ_v .sppb-icon-inner{}}#sppb-addon-s778QcxdFT9mXcKdfGJ_v .sppb-icon-inner:hover{
-color: #0b459f;
-background-color: #ffffff;
-}
-@media (max-width: 1199.98px) {#sppb-addon-s778QcxdFT9mXcKdfGJ_v .sppb-icon-inner:hover{}}
-@media (max-width: 991.98px) {#sppb-addon-s778QcxdFT9mXcKdfGJ_v .sppb-icon-inner:hover{}}
-@media (max-width: 767.98px) {#sppb-addon-s778QcxdFT9mXcKdfGJ_v .sppb-icon-inner:hover{}}
-@media (max-width: 575.98px) {#sppb-addon-s778QcxdFT9mXcKdfGJ_v .sppb-icon-inner:hover{}}#sppb-addon-s778QcxdFT9mXcKdfGJ_v .sppb-icon-inner i{
-line-height: 40px;
-font-size: 20px;
-}
-@media (max-width: 1199.98px) {#sppb-addon-s778QcxdFT9mXcKdfGJ_v .sppb-icon-inner i{}}
-@media (max-width: 991.98px) {#sppb-addon-s778QcxdFT9mXcKdfGJ_v .sppb-icon-inner i{}}
-@media (max-width: 767.98px) {#sppb-addon-s778QcxdFT9mXcKdfGJ_v .sppb-icon-inner i{}}
-@media (max-width: 575.98px) {#sppb-addon-s778QcxdFT9mXcKdfGJ_v .sppb-icon-inner i{}}#sppb-addon-s778QcxdFT9mXcKdfGJ_v .sppb-icon-inner{
-}#sppb-addon-s778QcxdFT9mXcKdfGJ_v{
-text-align: center;
-}
-@media (max-width: 1199.98px) {#sppb-addon-s778QcxdFT9mXcKdfGJ_v{}}
-@media (max-width: 991.98px) {#sppb-addon-s778QcxdFT9mXcKdfGJ_v{}}
-@media (max-width: 767.98px) {#sppb-addon-s778QcxdFT9mXcKdfGJ_v{}}
-@media (max-width: 575.98px) {#sppb-addon-s778QcxdFT9mXcKdfGJ_v{}}</style></div></div><div id="sppb-addon-wrapper-TUbVhTspe9V1y8MAC5vO3" class="sppb-addon-wrapper  addon-root-icon"><div id="sppb-addon-TUbVhTspe9V1y8MAC5vO3" class="clearfix  "     ><div class="sppb-icon offcanvas-icons  sppb-icon-hover-effect-zoom-in"><a target="_blank" href="https://t.me/wiut_official_telegram" ><span class="sppb-icon-inner"><i class="fab fa-telegram" aria-hidden="true" title="" aria-hidden="true"></i><span class="sppb-form-label-visually-hidden">fab fa-telegram</span></span></a></div><style type="text/css">#sppb-addon-TUbVhTspe9V1y8MAC5vO3{
-}#sppb-addon-TUbVhTspe9V1y8MAC5vO3{
-}
-@media (max-width: 1199.98px) {#sppb-addon-TUbVhTspe9V1y8MAC5vO3{}}
-@media (max-width: 991.98px) {#sppb-addon-TUbVhTspe9V1y8MAC5vO3{}}
-@media (max-width: 767.98px) {#sppb-addon-TUbVhTspe9V1y8MAC5vO3{}}
-@media (max-width: 575.98px) {#sppb-addon-TUbVhTspe9V1y8MAC5vO3{}}#sppb-addon-wrapper-TUbVhTspe9V1y8MAC5vO3{
-}
-@media (max-width: 1199.98px) {#sppb-addon-wrapper-TUbVhTspe9V1y8MAC5vO3{}}
-@media (max-width: 991.98px) {#sppb-addon-wrapper-TUbVhTspe9V1y8MAC5vO3{}}
-@media (max-width: 767.98px) {#sppb-addon-wrapper-TUbVhTspe9V1y8MAC5vO3{}}
-@media (max-width: 575.98px) {#sppb-addon-wrapper-TUbVhTspe9V1y8MAC5vO3{}}#sppb-addon-TUbVhTspe9V1y8MAC5vO3 .sppb-addon-title{
-}#sppb-addon-TUbVhTspe9V1y8MAC5vO3 .offcanvas-icons .sppb-icon-inner i{line-height:35px;font-size:20px;}</style><style type="text/css">#sppb-addon-TUbVhTspe9V1y8MAC5vO3 .sppb-icon-inner{
-height: 40px;
-width: 40px;
-color: #ffffff;
-background-color: #0b459f;
-border-style: solid;border-color:#ffffff;
-}
-@media (max-width: 1199.98px) {#sppb-addon-TUbVhTspe9V1y8MAC5vO3 .sppb-icon-inner{}}
-@media (max-width: 991.98px) {#sppb-addon-TUbVhTspe9V1y8MAC5vO3 .sppb-icon-inner{}}
-@media (max-width: 767.98px) {#sppb-addon-TUbVhTspe9V1y8MAC5vO3 .sppb-icon-inner{}}
-@media (max-width: 575.98px) {#sppb-addon-TUbVhTspe9V1y8MAC5vO3 .sppb-icon-inner{}}#sppb-addon-TUbVhTspe9V1y8MAC5vO3 .sppb-icon-inner:hover{
-color: #0b459f;
-background-color: #ffffff;
-}
-@media (max-width: 1199.98px) {#sppb-addon-TUbVhTspe9V1y8MAC5vO3 .sppb-icon-inner:hover{}}
-@media (max-width: 991.98px) {#sppb-addon-TUbVhTspe9V1y8MAC5vO3 .sppb-icon-inner:hover{}}
-@media (max-width: 767.98px) {#sppb-addon-TUbVhTspe9V1y8MAC5vO3 .sppb-icon-inner:hover{}}
-@media (max-width: 575.98px) {#sppb-addon-TUbVhTspe9V1y8MAC5vO3 .sppb-icon-inner:hover{}}#sppb-addon-TUbVhTspe9V1y8MAC5vO3 .sppb-icon-inner i{
-line-height: 40px;
-font-size: 20px;
-}
-@media (max-width: 1199.98px) {#sppb-addon-TUbVhTspe9V1y8MAC5vO3 .sppb-icon-inner i{}}
-@media (max-width: 991.98px) {#sppb-addon-TUbVhTspe9V1y8MAC5vO3 .sppb-icon-inner i{}}
-@media (max-width: 767.98px) {#sppb-addon-TUbVhTspe9V1y8MAC5vO3 .sppb-icon-inner i{}}
-@media (max-width: 575.98px) {#sppb-addon-TUbVhTspe9V1y8MAC5vO3 .sppb-icon-inner i{}}#sppb-addon-TUbVhTspe9V1y8MAC5vO3 .sppb-icon-inner{
-}#sppb-addon-TUbVhTspe9V1y8MAC5vO3{
-text-align: center;
-}
-@media (max-width: 1199.98px) {#sppb-addon-TUbVhTspe9V1y8MAC5vO3{}}
-@media (max-width: 991.98px) {#sppb-addon-TUbVhTspe9V1y8MAC5vO3{}}
-@media (max-width: 767.98px) {#sppb-addon-TUbVhTspe9V1y8MAC5vO3{}}
-@media (max-width: 575.98px) {#sppb-addon-TUbVhTspe9V1y8MAC5vO3{}}</style></div></div></div></div></div></div></div></section><style type="text/css">.sp-page-builder .page-content #offcanvas-social-icons{box-shadow:0px 0px 0px 0px #FFFFFF;}.sp-page-builder .page-content #offcanvas-social-icons{padding-top:0px;padding-right:0px;padding-bottom:0px;padding-left:0px;margin-top:0px;margin-right:0px;margin-bottom:0px;margin-left:0px;}#column-wrap-id-fOSRYU62JYK5Cg_ke0nJj{max-width:100%;flex-basis:100%;}@media (max-width:1199.98px) {#column-wrap-id-fOSRYU62JYK5Cg_ke0nJj{max-width:100%;flex-basis:100%;}}@media (max-width:991.98px) {#column-wrap-id-fOSRYU62JYK5Cg_ke0nJj{max-width:100%;flex-basis:100%;}}@media (max-width:767.98px) {#column-wrap-id-fOSRYU62JYK5Cg_ke0nJj{max-width:100%;flex-basis:100%;}}@media (max-width:575.98px) {#column-wrap-id-fOSRYU62JYK5Cg_ke0nJj{max-width:100%;flex-basis:100%;}}</style>	</div>
-</div></div></div>
-			</div>
-</div>				
 
 		<script>
 (function () {
@@ -765,5 +541,6 @@ document.addEventListener("DOMContentLoaded", function () {
 
 		<!-- Go to top -->
 					<a href="#" class="sp-scroll-up" aria-label="Scroll Up"><span class="fas fa-angle-up" aria-hidden="true"></span></a>
-					</body>
+					<script src="assets/js/header.js?v=6e7bb79807" defer></script>
+</body>
 </html>

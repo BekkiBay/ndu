@@ -1,0 +1,302 @@
+/* Шапка сайта — 1:1 из Макета 3 (дизайн UDEA): верхняя полоса + главное
+   меню, фиксированные, прозрачные над баннером и белые после прокрутки;
+   мобильное off-canvas меню. Все правила ограничены .site-header и
+   .mobile-menu, переменные объявлены на них же, чтобы ничего не утекало
+   в Bootstrap/Helix. */
+
+.site-header, .mobile-menu {
+  --font-sans: Montserrat, "Segoe UI", "Helvetica Neue", Arial, sans-serif;
+  --navy: #003566;
+  --navy-2: #003366;
+  --navy-3: #002F68;
+  --yellow: #f7b500;
+  --gray-50: #f9fafb;
+  --gray-100: #f3f4f6;
+  --gray-200: #e5e7eb;
+  --gray-300: #d1d5dc;
+  --gray-500: #6a7282;
+  --gray-700: #364153;
+  --gray-800: #1e2939;
+  --gray-900: #101828;
+  --r-lg: 10px;
+  --r-xl: 14px;
+  --sh-sm: 0 1px 3px 0 rgba(0, 0, 0, .1), 0 1px 2px -1px rgba(0, 0, 0, .1);
+  --sh-lg: 0 10px 15px -3px rgba(0, 0, 0, .1), 0 4px 6px -4px rgba(0, 0, 0, .1);
+  --sh-xl: 0 20px 25px -5px rgba(0, 0, 0, .1), 0 8px 10px -6px rgba(0, 0, 0, .1);
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+/* ---------- локальный reset (шаблон WIUT задаёт шрифт через !important) ---------- */
+.site-header, .site-header *, .mobile-menu, .mobile-menu * { font-family: var(--font-sans) !important; box-sizing: border-box; }
+.site-header button, .mobile-menu button { font: inherit; color: inherit; background: none; border: 0; padding: 0; cursor: pointer; }
+.site-header ul, .mobile-menu ul { margin: 0; padding: 0; list-style: none; }
+.site-header img, .site-header svg, .mobile-menu img, .mobile-menu svg { display: block; max-width: 100%; }
+.site-header a, .mobile-menu a { color: inherit; text-decoration: none; }
+.site-header a:hover, .mobile-menu a:hover { text-decoration: none; }
+.site-header .ico, .mobile-menu .ico { width: 1em; height: 1em; fill: none; stroke: currentColor; stroke-width: 2; stroke-linecap: round; stroke-linejoin: round; flex-shrink: 0; }
+body.is-locked { overflow: hidden; }
+
+/* Контейнер как в Макете 3 (сетка Tailwind), а не Bootstrap. */
+.site-header .container { width: 100%; max-width: none; margin-inline: auto; padding: 0; }
+@media (min-width: 640px)  { .site-header .container { max-width: 640px; } }
+@media (min-width: 768px)  { .site-header .container { max-width: 768px; } }
+@media (min-width: 1024px) { .site-header .container { max-width: 1024px; } }
+@media (min-width: 1280px) { .site-header .container { max-width: 1280px; } }
+@media (min-width: 1536px) { .site-header .container { max-width: 1536px; } }
+
+/* ============================================================
+   HEADER
+   ============================================================ */
+.topbar {
+  position: fixed;
+  top: 0; left: 0; right: 0;
+  z-index: 50;
+  font-size: 12px;
+  line-height: 16px;
+  color: #fff;
+  border-bottom: 1px solid rgba(255, 255, 255, .1);
+  -webkit-backdrop-filter: blur(12px);
+  backdrop-filter: blur(12px);
+  padding: 4px 0;
+  transition: background-color .3s, color .3s, padding .3s, border-color .3s;
+}
+.topbar__inner { display: flex; align-items: center; justify-content: space-between; padding: 0 16px; }
+.topbar__mobile { display: flex; align-items: center; gap: 12px; }
+.topbar__burger { display: flex; align-items: center; justify-content: center; width: 24px; height: 20px; }
+.topbar__burger .ico { width: 20px; height: 20px; }
+.topbar__left { display: none; align-items: center; gap: 20px; }
+.topbar__right { display: flex; align-items: center; gap: 16px; }
+.topbar__sep { color: rgba(255, 255, 255, .5); }
+.topbar__sep--md, .topbar__link--md { display: none; }
+.topbar__link { font-weight: 500; transition: color .2s; }
+.topbar__contact { display: flex; align-items: center; gap: 6px; transition: color .2s; }
+.topbar__contact .ico { width: 14px; height: 14px; }
+/* Специфичность выше .site-header .social-row__item, иначе верхняя полоса раздувается до 44px. */
+.site-header .topbar .social-row { gap: 2px; }
+.site-header .topbar .social-row__item { min-width: 24px; min-height: 20px; border-radius: 4px; }
+.site-header .topbar .social-row__item img { width: 14px; height: 14px; }
+
+.site-header .social-row { display: flex; flex-wrap: wrap; align-items: center; justify-content: center; gap: 8px; }
+.site-header .social-row__item { display: inline-flex; align-items: center; justify-content: center; min-width: 44px; min-height: 44px; border-radius: 6px; }
+.site-header .social-row__item img { width: 20px; height: 20px; opacity: .9; pointer-events: none; transition: filter .3s; }
+.site-header .social-row__item:hover img { opacity: 1; }
+
+.lang { position: relative; }
+.lang__btn { display: flex; align-items: center; gap: 8px; outline: none; }
+.lang__btn .ico { width: 14px; height: 14px; }
+.lang__flag { width: 16px; height: 16px; border-radius: 50%; }
+.lang__label { display: none; }
+.lang__menu {
+  display: none;
+  position: absolute;
+  right: 0; top: 100%;
+  margin-top: 8px;
+  min-width: 150px;
+  padding: 6px;
+  background: #fff;
+  color: var(--gray-700);
+  border: 1px solid var(--gray-200);
+  border-radius: var(--r-lg);
+  box-shadow: var(--sh-lg);
+}
+.lang.is-open .lang__menu { display: block; }
+.lang__menu button { display: block; width: 100%; text-align: left; padding: 8px 10px; border-radius: 6px; font-size: 14px; }
+.lang__menu button:hover { background: var(--gray-100); }
+.lang__menu button.is-active { color: var(--navy); font-weight: 600; }
+
+.mainnav {
+  position: fixed;
+  top: 29px; left: 0; right: 0;
+  width: 100%;
+  z-index: 40;
+  padding: 5px 0;
+  -webkit-backdrop-filter: blur(12px);
+  backdrop-filter: blur(12px);
+  transition: background-color .3s, box-shadow .3s;
+}
+.mainnav__inner { display: flex; align-items: center; justify-content: space-between; gap: 12px; padding: 0 16px; }
+.brand { flex-shrink: 0; display: flex; align-items: center; gap: 12px; transition: opacity .2s; }
+.brand:hover { opacity: .8; }
+.brand__seal { height: 36px; width: auto; }
+.brand__txt { display: none; line-height: 1.1; color: #fff; transition: color .3s; }
+.brand__txt b { display: block; font-size: 15px; font-weight: 700; letter-spacing: .01em; }
+.brand__txt i { display: block; font-size: 11.5px; font-weight: 500; font-style: normal; opacity: .85; }
+.brand--dark .brand__txt, .is-scrolled .mainnav .brand__txt { color: var(--navy); }
+
+.site-header .menu { display: none; align-items: center; gap: 26px; font-size: 13.5px; font-weight: 500; color: #fff; }
+.menu__item { position: relative; }
+.menu__btn, .menu__link { display: flex; align-items: center; gap: 4px; transition: color .2s; }
+.menu__btn .ico { width: 16px; height: 16px; transition: transform .2s; }
+.menu__btn:hover, .menu__link:hover { color: var(--gray-200); }
+.menu__item:hover > .menu__btn .ico { transform: rotate(180deg); }
+
+/* dropdowns */
+.dd { position: absolute; top: 100%; left: 0; padding-top: 8px; display: none; z-index: 60; }
+.menu__item:hover > .dd, .menu__item:focus-within > .dd { display: block; }
+.dd__panel {
+  min-width: 192px;
+  padding: 8px;
+  background: rgba(0, 0, 0, .4);
+  border: 1px solid rgba(255, 255, 255, .3);
+  border-radius: var(--r-xl);
+  color: #fff;
+  -webkit-backdrop-filter: blur(24px);
+  backdrop-filter: blur(24px);
+}
+.dd--wide .dd__panel {
+  min-width: 240px;
+  background: rgba(0, 0, 0, .5);
+  border-color: rgba(255, 255, 255, .1);
+  box-shadow: var(--sh-xl);
+  -webkit-backdrop-filter: blur(40px);
+  backdrop-filter: blur(40px);
+}
+.dd--w52 .dd__panel { min-width: 208px; }
+.dd__link {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  padding: 10px 16px;
+  border-radius: var(--r-lg);
+  font-size: 14px;
+  font-weight: 500;
+  white-space: nowrap;
+  text-align: left;
+  width: 100%;
+  transition: background-color .2s;
+  cursor: pointer;
+}
+.dd--wide .dd__link { padding: 12px 16px; }
+.dd__link:hover { background: rgba(255, 255, 255, .1); }
+.dd__link .ico { width: 16px; height: 16px; }
+.dd__sub { display: none; position: absolute; left: 100%; top: 0; padding-left: 8px; }
+.dd__link:hover > .dd__sub { display: block; }
+.dd__sub .dd__panel { min-width: 200px; }
+
+/* активный пункт меню */
+.menu__btn.is-active, .menu__link.is-active { color: var(--yellow); }
+.is-scrolled .menu__btn.is-active, .is-scrolled .menu__link.is-active { color: var(--navy); }
+.menu__btn.is-active::after, .menu__link.is-active::after {
+  content: ""; position: absolute; left: 0; right: 18px; bottom: -8px; height: 2px;
+  background: currentColor; border-radius: 2px;
+}
+.menu__item, .menu__link { position: relative; }
+.menu__link.is-active::after { right: 0; }
+
+/* scrolled state */
+.is-scrolled .topbar {
+  background: #fff;
+  color: var(--gray-700);
+  border-color: var(--gray-200);
+  box-shadow: var(--sh-sm);
+  padding: 4px 0;
+}
+.is-scrolled .topbar__sep { color: var(--gray-300); }
+.is-scrolled .topbar__link:hover, .is-scrolled .topbar__contact:hover { color: var(--gray-900); }
+.is-scrolled .topbar .social-row__item img { filter: grayscale(1) brightness(0); opacity: .7; }
+.is-scrolled .mainnav { background: #fff; box-shadow: var(--sh-sm); }
+.is-scrolled .menu { color: var(--gray-800); }
+.is-scrolled .menu__btn:hover, .is-scrolled .menu__link:hover { color: var(--navy); }
+
+@media (min-width: 640px) {
+  .site-header .social-row { gap: 12px; }
+  .site-header .topbar .social-row { gap: 4px; }
+  .brand__seal { height: 38px; }
+  .brand__txt { display: block; }
+  .lang__label { display: inline; }
+}
+@media (min-width: 768px) {
+  .topbar { padding: 4px 0; }
+  .topbar__mobile .topbar__sep, .topbar__mobile .topbar__link { display: none; }
+  .topbar__right { gap: 24px; }
+  .topbar__sep--md { display: inline; }
+  .topbar__link--md { display: inline; }
+  .mainnav { top: 29px; }
+  .mainnav__inner { gap: 20px; flex-wrap: wrap; }
+}
+@media (min-width: 1024px) {
+  .topbar__mobile { display: none; }
+  .topbar__left { display: flex; }
+  .brand__seal { height: 40px; }
+  .brand__txt b { font-size: 16px; }
+  .brand__txt i { font-size: 12px; }
+  .site-header .menu { display: flex; }
+}
+
+/* ============================================================
+   MOBILE MENU
+   (.mobile-menu перед .mm* нужен из-за локального reset выше: .mobile-menu button
+   и .mobile-menu a специфичнее голых .mm__btn / .mm__link)
+   ============================================================ */
+.mobile-menu {
+  position: fixed;
+  inset: 0;
+  z-index: 99;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity .3s;
+}
+.mobile-menu.is-open { opacity: 1; pointer-events: auto; }
+.mobile-menu__overlay { position: absolute; inset: 0; background: rgba(0, 0, 0, .5); -webkit-backdrop-filter: blur(4px); backdrop-filter: blur(4px); }
+.mobile-menu__panel {
+  position: absolute;
+  left: 0; top: 0;
+  width: 100%; height: 100%;
+  background: #fff url("../navbar-pattern.svg") top center / cover no-repeat;
+  transform: translateX(-100%);
+  transition: transform .3s ease-out;
+}
+.mobile-menu.is-open .mobile-menu__panel { transform: translateX(0); }
+.mobile-menu__head {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 24px;
+  border-bottom: 1px solid var(--gray-200);
+  background: #fff;
+}
+.mobile-menu__head img { height: 33px; width: auto; }
+.mobile-menu__close { color: var(--gray-700); }
+.mobile-menu__close .ico { width: 28px; height: 28px; }
+.mobile-menu__close:hover { color: var(--gray-900); }
+.mobile-menu__nav { overflow-y: auto; height: calc(100% - 82px); padding-bottom: 40px; }
+.mobile-menu .mm { padding: 8px 0; }
+.mobile-menu .mm__item { border-bottom: 1px solid var(--gray-100); }
+.mobile-menu .mm__btn {
+  display: flex;
+  width: 100%;
+  align-items: center;
+  justify-content: space-between;
+  padding: 16px 24px;
+  color: var(--navy-2);
+  font-weight: 600;
+  text-align: left;
+}
+.mobile-menu .mm__btn:hover { background: var(--gray-50); }
+.mobile-menu .mm__btn .ico { width: 20px; height: 20px; color: var(--gray-500); transition: transform .2s; }
+.mobile-menu .mm__btn[aria-expanded="true"] .ico { transform: rotate(90deg); }
+.mobile-menu .mm__link { display: block; padding: 16px 24px; font-weight: 600; color: var(--navy-3); }
+.mobile-menu .mm__link:hover { background: var(--gray-50); }
+.mobile-menu .mm__sub { display: none; background: var(--gray-50); }
+.mobile-menu .mm__btn[aria-expanded="true"] + .mm__sub { display: block; }
+.mobile-menu .mm__sub > li { border-bottom: 1px solid var(--gray-100); }
+.mobile-menu .mm__sub > li:last-child { border-bottom: 0; }
+.mobile-menu .mm__sub .mm__link { padding: 12px 40px; font-weight: 500; }
+.mobile-menu .mm__sub .mm__link:hover { background: var(--gray-100); }
+.mobile-menu .mm__sub .mm__btn { padding: 12px 40px; font-weight: 500; }
+.mobile-menu .mm__sub .mm__btn:hover { background: var(--gray-100); }
+.mobile-menu .mm__sub--nested { background: rgba(243, 244, 246, .5); }
+.mobile-menu .mm__sub--nested .mm__link { padding: 10px 56px; font-size: 14px; border-bottom: 1px solid rgba(229, 231, 235, .2); }
+.mobile-menu .mm__sub--nested .mm__link:hover { background: rgba(229, 231, 235, .5); }
+@media (min-width: 1024px) { .mobile-menu { display: none; } }
+
+/* ---------- стыковка с внутренними страницами WIUT ----------
+   Шапка фиксированная и прозрачная, поэтому тёмный баннер страницы
+   получает запас сверху, чтобы хлебные крошки не уехали под меню. */
+/* wiut-inline.css задаёт #sp-page-title { margin-top: 30px !important } под старую шапку. */
+#sp-page-title.nsu-page-hero { margin-top: 0 !important; }
+.nsu-page-hero .nsu-hero-inner { padding-top: 150px; }
+@media (max-width: 991px) { .nsu-page-hero .nsu-hero-inner { padding-top: 118px; } }
