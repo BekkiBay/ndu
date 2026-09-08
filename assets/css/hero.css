@@ -13,9 +13,10 @@
   position: relative;
   width: 100%;
   /* Шапка фиксированная и прозрачная, hero занимает весь экран, как в Макете 3. */
-  height: 100vh;
-  height: 100svh;
-  min-height: 620px;
+  min-height: 100vh;
+  min-height: 100svh;
+  display: flex;
+  flex-direction: column;
   overflow: hidden;
   background: #0b1a2b;
   font-family: var(--font-sans);
@@ -42,7 +43,7 @@
 .hero__inner {
   position: relative;
   z-index: 10;
-  height: 100%;
+  flex: 1;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -159,9 +160,9 @@
 
 /* Соцсети внизу — только на мобильных, на десктопе они в верхней полосе. */
 .hero__social {
-  position: absolute;
-  bottom: 28px; left: 0; right: 0;
+  position: relative;
   z-index: 30;
+  padding: 0 0 18px;
   display: flex;
   justify-content: center;
   pointer-events: none;
@@ -186,3 +187,56 @@
   .hero__links { display: flex; }
 }
 @media (min-width: 1024px) { #hero .hero__title { font-size: 60px; } }
+
+/* ============================================================
+   Нижняя полоса-указатель уровней обучения (из Макета 2)
+   ============================================================ */
+.hero__index {
+  --hi-accent: #2563eb;
+  --hi-accent-soft: #60a5fa;
+  --hi-ease: cubic-bezier(.2, .7, .2, 1);
+  position: relative;
+  z-index: 10;
+  border-top: 1px solid rgba(255, 255, 255, .13);
+  background: linear-gradient(180deg, rgba(5, 8, 15, .34), rgba(5, 8, 15, .72));
+  -webkit-backdrop-filter: blur(8px);
+  backdrop-filter: blur(8px);
+}
+/* В Макете 2 полоса набрана Geist; #hero * выше принудительно ставит Montserrat. */
+#hero .hero__index, #hero .hero__index * { font-family: Geist, system-ui, -apple-system, "Segoe UI", Roboto, sans-serif !important; }
+.hero__index-inner { display: grid; grid-template-columns: repeat(4, 1fr); }
+.hindex {
+  position: relative;
+  display: grid;
+  grid-template-rows: auto auto;
+  row-gap: 7px;
+  padding: 22px 26px 24px;
+  color: #fff;
+  transition: background .25s var(--hi-ease);
+}
+.hindex + .hindex { box-shadow: inset 1px 0 0 rgba(255, 255, 255, .14); }
+.hindex::before {
+  content: ""; position: absolute; left: 0; right: 0; top: -1px; height: 2px;
+  background: var(--hi-accent); transform: scaleX(0); transform-origin: left;
+  transition: transform .35s var(--hi-ease);
+}
+.hindex:hover { background: rgba(255, 255, 255, .07); color: #fff; }
+.hindex:hover::before, .hindex:focus-visible::before { transform: none; }
+.hindex__title { font-size: 21px; font-weight: 600; letter-spacing: -.03em; line-height: 1.15; }
+.hindex__meta { display: flex; align-items: center; justify-content: space-between; gap: 12px; font-size: 13.5px; color: rgba(255, 255, 255, .58); }
+.hindex__meta .ico { width: 18px; height: 18px; color: var(--hi-accent-soft); opacity: .9; transition: transform .25s var(--hi-ease), opacity .25s; }
+.hindex:hover .hindex__meta .ico, .hindex:focus-visible .hindex__meta .ico { opacity: 1; transform: translateX(4px); }
+.hindex:focus-visible { outline: 2px solid var(--hi-accent-soft); outline-offset: -3px; }
+@media (max-width: 991px) {
+  .hero__index-inner { grid-template-columns: 1fr 1fr; }
+  .hindex { padding: 18px 20px 20px; }
+  .hindex:nth-child(n+3) { box-shadow: inset 0 1px 0 rgba(255, 255, 255, .14); }
+  .hindex:nth-child(4) { box-shadow: inset 1px 0 0 rgba(255, 255, 255, .14), inset 0 1px 0 rgba(255, 255, 255, .14); }
+}
+@media (max-width: 640px) {
+  .hero__index-inner { grid-template-columns: 1fr; }
+  .hindex { padding: 14px 0 15px; }
+  .hindex + .hindex { box-shadow: inset 0 1px 0 rgba(255, 255, 255, .14); }
+  .hindex:nth-child(4) { box-shadow: inset 0 1px 0 rgba(255, 255, 255, .14); }
+  .hindex__title { font-size: 20px; }
+}
