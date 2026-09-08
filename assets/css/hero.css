@@ -55,7 +55,15 @@
 .hero__content { padding: 12px; width: 100%; }
 /* На телефоне шапка фиксированная (≈80px), а полоса уровней внизу высокая:
    даём контенту запас сверху, иначе чип и заголовок уходят под меню. */
-@media (max-width: 767px) { .hero__inner { padding-top: 104px; padding-bottom: 12px; } }
+@media (max-width: 767px) {
+  .hero__inner { padding-top: 104px; padding-bottom: 12px; }
+  .hero__content { padding: 12px 4px; }
+  .hero__eyebrow { margin-bottom: 18px; }
+  #hero .hero__title { margin-bottom: 16px; }
+  .hero .hero__text { margin-bottom: 28px; }
+  .hero__actions { flex-direction: column; gap: 10px; }
+  .hero-btn { width: 100%; min-height: 54px; }
+}
 
 /* Стеклянный чип: живая точка + статус + год. */
 .hero__eyebrow {
@@ -95,7 +103,8 @@
   color: #fff;
   text-shadow: 0 2px 24px rgba(0, 0, 0, .3);
 }
-.hero__text { color: rgba(255, 255, 255, .85); font-size: 17px; line-height: 1.6; font-weight: 400; max-width: 600px; margin: 0 0 30px; }
+/* .hero .hero__text — иначе margin перебивает сброс «.hero p { margin: 0 }» выше. */
+.hero .hero__text { color: rgba(255, 255, 255, .85); font-size: 17px; line-height: 1.6; font-weight: 400; max-width: 600px; margin: 0 0 30px; }
 
 /* .btn / .btn--ghost Макета 2; класс переименован, чтобы не пересекаться
    с .btn Bootstrap из шаблона WIUT. */

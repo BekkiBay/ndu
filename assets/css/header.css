@@ -300,3 +300,20 @@ body.is-locked { overflow: hidden; }
 #sp-page-title.nsu-page-hero { margin-top: 0 !important; }
 .nsu-page-hero .nsu-hero-inner { padding-top: 150px; }
 @media (max-width: 991px) { .nsu-page-hero .nsu-hero-inner { padding-top: 118px; } }
+
+/* ---------- мобильная шапка ----------
+   На телефоне прозрачная шапка с блюром над светлым кадром видео становится
+   белёсой, а белый текст на ней нечитаем. Даём плотный тёмный фон и
+   показываем название рядом с печатью и на узких экранах. */
+@media (max-width: 1023px) {
+  .site-header .topbar { background: rgba(11, 26, 43, .96); border-bottom-color: rgba(255, 255, 255, .08); }
+  .site-header .mainnav { background: rgba(11, 26, 43, .96); }
+  .site-header.is-scrolled .topbar, .site-header.is-scrolled .mainnav { background: #fff; }
+  .site-header .mainnav__inner { padding: 2px 16px; }
+}
+@media (max-width: 639px) {
+  .site-header .brand__txt { display: block; }
+  .site-header .brand__txt b { font-size: 13.5px; }
+  .site-header .brand__txt i { font-size: 10.5px; }
+  .site-header .brand__seal { height: 36px; }
+}
