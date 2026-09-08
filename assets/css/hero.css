@@ -1,0 +1,187 @@
+/* Первый экран главной — hero из Макета 3 (дизайн UDEA), пересаженный в
+   шаблон WIUT. Все правила ограничены .hero, чтобы не задевать Bootstrap и
+   Helix; переменные тоже объявлены на .hero, а не на :root. */
+
+.hero {
+  --font-sans: Montserrat, "Segoe UI", "Helvetica Neue", Arial, sans-serif;
+  --font-serif: ui-serif, Georgia, Cambria, "Times New Roman", Times, serif;
+  --red: #BE1A1A;
+  --red-h: #d42020;
+  --yellow: #f7b500;
+  --r-2xl: 16px;
+
+  position: relative;
+  width: 100%;
+  /* Шапка WIUT непрозрачная (62px на десктопе), hero занимает остаток экрана. */
+  height: calc(100svh - 62px);
+  min-height: 620px;
+  overflow: hidden;
+  background: #0b1a2b;
+  font-family: var(--font-sans);
+  color: #fff;
+}
+.hero h1, .hero p { margin: 0; }
+/* Шаблон WIUT навешивает свой шрифт через !important, перебиваем тем же. */
+#hero, #hero * { font-family: var(--font-sans) !important; }
+.hero a { color: inherit; text-decoration: none; }
+.hero img, .hero svg, .hero video { display: block; max-width: 100%; }
+/* Шаблон WIUT уменьшает span внутри заголовков — наследуем размер от h1. */
+#hero .hero__title span { font: inherit !important; }
+.hero .ico { width: 1em; height: 1em; fill: none; stroke: currentColor; stroke-width: 2; stroke-linecap: round; stroke-linejoin: round; flex-shrink: 0; }
+
+.hero__bg { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; }
+.hero__overlay {
+  position: absolute;
+  inset: 0;
+  /* Темнее слева, где заголовок; правее фото остаётся видимым. */
+  background:
+    linear-gradient(100deg, rgba(2, 16, 33, .88) 0%, rgba(2, 16, 33, .66) 42%, rgba(2, 16, 33, .40) 100%),
+    linear-gradient(to top, rgba(2, 16, 33, .55) 0%, rgba(2, 16, 33, 0) 30%);
+}
+.hero__inner {
+  position: relative;
+  z-index: 10;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.hero__content { padding: 12px; width: 100%; }
+
+/* Стеклянный чип: живая точка + статус + год. */
+.hero__eyebrow {
+  display: inline-flex; align-items: center; gap: 10px; margin-bottom: 22px;
+  padding: 8px 15px 8px 12px; border-radius: 999px;
+  background: rgba(255, 255, 255, .08); border: 1px solid rgba(255, 255, 255, .16);
+  -webkit-backdrop-filter: blur(14px); backdrop-filter: blur(14px);
+  color: #fff; font-size: 13px; line-height: 1; font-weight: 600; letter-spacing: .01em;
+}
+.hero__eyebrow em {
+  display: inline-flex; align-items: center; gap: 10px;
+  font-style: normal; font-weight: 500; color: rgba(255, 255, 255, .62);
+}
+.hero__eyebrow em::before { content: ""; width: 1px; height: 12px; background: rgba(255, 255, 255, .28); }
+.hero__live {
+  flex: none; width: 8px; height: 8px; border-radius: 50%;
+  background: #34d399; box-shadow: 0 0 0 0 rgba(52, 211, 153, .6);
+  animation: hero-live 2.2s ease-out infinite;
+}
+@keyframes hero-live {
+  0% { box-shadow: 0 0 0 0 rgba(52, 211, 153, .6); }
+  70% { box-shadow: 0 0 0 7px rgba(52, 211, 153, 0); }
+  100% { box-shadow: 0 0 0 0 rgba(52, 211, 153, 0); }
+}
+
+/* #hero нужен для специфичности: шаблон WIUT задаёт h1 свой шрифт через id-селектор. */
+#hero .hero__title, #hero .hero__title span {
+  font-family: var(--font-serif) !important;
+  font-size: 30px;
+  line-height: 1.08;
+  font-weight: 800;
+  max-width: 17ch;
+  color: #fff;
+}
+.hero__text { color: #fff; font-size: 14px; line-height: 20px; font-weight: 500; max-width: 672px; margin-top: 16px; }
+
+.btn-apply {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  height: 56px;
+  padding: 0 16px;
+  margin-top: 24px;
+  border-radius: var(--r-2xl);
+  background: var(--red);
+  color: #fff;
+  font-size: 16px;
+  font-weight: 600;
+  white-space: nowrap;
+  animation: hero-cta-pulse 2s ease-in-out infinite;
+  transition: background-color .3s, transform .3s, box-shadow .3s;
+}
+.btn-apply .ico { width: 16px; height: 16px; }
+.btn-apply:hover { background: var(--red-h); color: #fff; animation: none; transform: scale(1.06); box-shadow: 0 8px 26px rgba(190, 26, 26, .45); }
+@keyframes hero-cta-pulse {
+  0%, 100% { transform: scale(1); box-shadow: 0 4px 14px rgba(190, 26, 26, .2); }
+  50% { transform: scale(1.04); box-shadow: 0 6px 22px rgba(190, 26, 26, .4); }
+}
+
+/* Стеклянные карточки справа. */
+.hero__links { display: none; flex-direction: column; gap: 12px; width: 340px; margin-right: 12px; }
+.hero-link {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  padding: 14px 16px;
+  border-radius: 14px;
+  color: #fff;
+  background: rgba(255, 255, 255, .09);
+  border: 1px solid rgba(255, 255, 255, .16);
+  backdrop-filter: blur(14px) saturate(1.3);
+  -webkit-backdrop-filter: blur(14px) saturate(1.3);
+  box-shadow: 0 8px 30px rgba(0, 0, 0, .22);
+  transition: background-color .25s, border-color .25s, transform .25s, box-shadow .25s;
+}
+.hero-link:hover {
+  color: #fff;
+  background: rgba(255, 255, 255, .16);
+  border-color: rgba(247, 181, 0, .55);
+  transform: translateY(-2px);
+  box-shadow: 0 14px 38px rgba(0, 0, 0, .3);
+}
+.hero-link:focus-visible { outline: 2px solid var(--yellow); outline-offset: 3px; }
+.hero-link__icon {
+  flex: none;
+  display: grid;
+  place-items: center;
+  width: 40px; height: 40px;
+  border-radius: 11px;
+  background: rgba(247, 181, 0, .16);
+  color: var(--yellow);
+  transition: background-color .25s;
+}
+.hero-link__icon .ico { width: 19px; height: 19px; }
+.hero-link:hover .hero-link__icon { background: rgba(247, 181, 0, .28); }
+.hero-link__body { min-width: 0; display: flex; flex-direction: column; gap: 3px; }
+.hero-link__title { font-size: 15px; font-weight: 700; line-height: 1.25; letter-spacing: -.01em; }
+.hero-link__note { font-size: 12.5px; font-weight: 500; line-height: 1.3; color: rgba(255, 255, 255, .68); }
+.hero-link__go {
+  flex: none;
+  margin-left: auto;
+  width: 16px; height: 16px;
+  opacity: .5;
+  transition: transform .25s, opacity .25s;
+}
+.hero-link:hover .hero-link__go { opacity: 1; transform: translateX(3px); }
+
+/* Соцсети внизу — только на мобильных, на десктопе они в верхней полосе. */
+.hero__social {
+  position: absolute;
+  bottom: 28px; left: 0; right: 0;
+  z-index: 30;
+  display: flex;
+  justify-content: center;
+  pointer-events: none;
+}
+.hero__social .social-row { display: flex; gap: 10px; pointer-events: auto; }
+.hero__social .social-row__item {
+  display: grid; place-items: center; width: 44px; height: 44px; border-radius: 50%;
+  background: rgba(255, 255, 255, .1); border: 1px solid rgba(255, 255, 255, .2);
+}
+.hero__social .social-row__item img { width: 20px; height: 20px; }
+
+@media (prefers-reduced-motion: reduce) { .hero__live, .btn-apply { animation: none; } }
+@media (min-width: 640px) {
+  .hero__text { font-size: 20px; line-height: 28px; }
+  .btn-apply { height: 64px; font-size: 18px; }
+  .hero__social { display: none; }
+}
+@media (min-width: 768px) {
+  .hero__inner { flex-direction: row; justify-content: space-between; }
+  .hero__content { width: auto; }
+  #hero .hero__title { font-size: 50px; }
+  .hero__links { display: flex; }
+}
+@media (min-width: 1024px) { #hero .hero__title { font-size: 60px; } }
