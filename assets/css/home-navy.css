@@ -1,0 +1,98 @@
+/* Главная: фирменный ярко-синий шаблона WIUT (#0b459f, #264f9d) и голубой
+   акцент (#4dace1) переведены в тёмно-синий тон hero. Фон страницы остаётся
+   белым/светлым. Только для body.home-navy (index.html).
+
+   Правила ниже сгенерированы по фактическим синим элементам страницы
+   (скрипт gen-navy.mjs: обход DOM, computed-стили), поэтому адресованы
+   конкретным аддонам Page Builder по id и не задевают белые заголовки на
+   тёмных полосах. !important нужен, потому что Page Builder красит блоки
+   через свои <style>. */
+
+body.home-navy {
+  --nv: #0b1a2b;          /* тон hero: заливки, заголовки, кнопки */
+  --nv-2: #10233a;        /* подложка блока ректора */
+  --nv-accent: #1f4e79;   /* бывший голубой акцент: малые кнопки, стрелки, метки */
+  --nv-accent-h: #173d61;
+}
+
+/* ---------- сгенерированные правила ----------
+   (правки руками: заголовки секций сужены до .sppb-section-title a, иначе
+   голое «#section a» красило и белые названия плиток «Ta’lim dasturlari») */
+body.home-navy #sppb-addon-QYyxoMQXgTomvaVJ2vr4- h3.sppb-addon-title{color:var(--nv) !important}
+body.home-navy #navdu-cta-next a.btn:not(.outline){background-color:var(--nv) !important}
+body.home-navy #navdu-cta-next a.btn.outline{color:var(--nv) !important}
+body.home-navy #navdu-cta-next a.btn.outline{border-color:var(--nv) !important}
+body.home-navy #sppb-addon-MlDeqQLCBbArYeqZSObAt div{color:var(--nv) !important}
+body.home-navy #sppb-addon-4vMSsDdARqrf-PY0h08_S div{color:var(--nv) !important}
+body.home-navy #sppb-addon-veiWFQIBBzOHfl0OV6YBA div{color:var(--nv) !important}
+body.home-navy #sppb-addon-c3khVYBdnRUC0MhiY1kOz div{color:var(--nv) !important}
+body.home-navy #sppb-addon-c3khVYBdnRUC0MhiY1kOz div::after{color:var(--nv) !important}
+body.home-navy #section-id-7jTutyTLL1tRLYv4mNrDX .sppb-section-title a{color:var(--nv) !important}
+body.home-navy #btn-TmHGeNX0UVbiAa4YwD2-E{background-color:var(--nv-accent) !important}
+body.home-navy #sppb-addon-TmHGeNX0UVbiAa4YwD2-E div.overlay-background-style{background-image:linear-gradient(rgba(0, 0, 0, 0.12) 20%, rgba(11, 26, 43, 0.9) 60%) !important}
+body.home-navy #btn-ldUhZcVYWxlQWqRB3g6Lu{background-color:var(--nv-accent) !important}
+body.home-navy #sppb-addon-ldUhZcVYWxlQWqRB3g6Lu div.overlay-background-style{background-image:linear-gradient(rgba(0, 0, 0, 0.12) 20%, rgba(11, 26, 43, 0.9) 60%) !important}
+body.home-navy #btn-QuYXHIQo_z8vjbqGdd4aH{background-color:var(--nv-accent) !important}
+body.home-navy #sppb-addon-QuYXHIQo_z8vjbqGdd4aH div.overlay-background-style{background-image:linear-gradient(rgba(0, 0, 0, 0.12) 20%, rgba(11, 26, 43, 0.9) 60%) !important}
+body.home-navy #btn-88cOxLfyyd5lVkEdS8y38{background-color:var(--nv-accent) !important}
+body.home-navy #sppb-addon-88cOxLfyyd5lVkEdS8y38 div.overlay-background-style{background-image:linear-gradient(rgba(0, 0, 0, 0.12) 20%, rgba(11, 26, 43, 0.9) 60%) !important}
+body.home-navy #btn-49fS29qVd1nVdSoITXkjG{background-color:var(--nv-accent) !important}
+body.home-navy #sppb-addon-49fS29qVd1nVdSoITXkjG div.overlay-background-style{background-image:linear-gradient(rgba(0, 0, 0, 0.12) 20%, rgba(11, 26, 43, 0.9) 60%) !important}
+body.home-navy #btn-XT2cV_ExcEQlgT25T3ZhB{background-color:var(--nv-accent) !important}
+body.home-navy #sppb-addon-XT2cV_ExcEQlgT25T3ZhB div.overlay-background-style{background-image:linear-gradient(rgba(0, 0, 0, 0.12) 20%, rgba(11, 26, 43, 0.9) 60%) !important}
+body.home-navy #section-id-AJgHQwicpLyuwVdLnHxpp{background-color:var(--nv) !important}
+body.home-navy #sppb-addon-hJ3HZL76WfYakbwhnLJKU{background-color:var(--nv-2) !important}
+body.home-navy #sppb-addon-hJ3HZL76WfYakbwhnLJKU div.sppb-person-information{background-color:var(--nv) !important}
+body.home-navy #section-id-BeorKSLc_jr9Pqae6VBGB .sppb-section-title a{color:var(--nv) !important}
+body.home-navy #sppb-addon-1752214269078 h3.sppb-addon-title.sppb-feature-box-title{color:var(--nv) !important}
+body.home-navy #sppb-addon-DtwPtLZywHCzSiCIZpO7Q h3.sppb-addon-title.sppb-feature-box-title{color:var(--nv) !important}
+body.home-navy #sppb-addon-oskOkhcq0Y-vEz1HTVrtt h3.sppb-addon-title.sppb-feature-box-title{color:var(--nv) !important}
+body.home-navy #sppb-addon-Fl5rRtwCFZiKUKJ7mmexk h3.sppb-addon-title.sppb-feature-box-title{color:var(--nv) !important}
+body.home-navy #section-id-OnEznp7H8qbuVhhi2wcy3 .sppb-section-title a{color:var(--nv) !important}
+body.home-navy #sppb-addon-q5VKN37saU0gY9fFxTwcp a.sppb-articles-carousel-link{color:var(--nv) !important}
+body.home-navy #sppb-addon-q5VKN37saU0gY9fFxTwcp a{color:var(--nv-accent) !important}
+body.home-navy #btn-zOnQsO6tmkF-QlS0lhe5R{background-color:var(--nv-accent) !important}
+body.home-navy #slick-slide00 a.sppb-articles-carousel-link{color:var(--nv) !important}
+body.home-navy #slick-slide00 a{color:var(--nv-accent) !important}
+body.home-navy #slick-slide01 a.sppb-articles-carousel-link{color:var(--nv) !important}
+body.home-navy #slick-slide01 a{color:var(--nv-accent) !important}
+body.home-navy #slick-slide02 a.sppb-articles-carousel-link{color:var(--nv) !important}
+body.home-navy #slick-slide02 a{color:var(--nv-accent) !important}
+body.home-navy #slick-slide03 a.sppb-articles-carousel-link{color:var(--nv) !important}
+body.home-navy #slick-slide03 a{color:var(--nv-accent) !important}
+body.home-navy #slick-slide04 a.sppb-articles-carousel-link{color:var(--nv) !important}
+body.home-navy #slick-slide04 a{color:var(--nv-accent) !important}
+body.home-navy #slick-slide05 a.sppb-articles-carousel-link{color:var(--nv) !important}
+body.home-navy #slick-slide05 a{color:var(--nv-accent) !important}
+body.home-navy #slick-slide06 a.sppb-articles-carousel-link{color:var(--nv) !important}
+body.home-navy #slick-slide06 a{color:var(--nv-accent) !important}
+body.home-navy #slick-slide07 a.sppb-articles-carousel-link{color:var(--nv) !important}
+body.home-navy #slick-slide07 a{color:var(--nv-accent) !important}
+body.home-navy #slick-slide08 a.sppb-articles-carousel-link{color:var(--nv) !important}
+body.home-navy #slick-slide08 a{color:var(--nv-accent) !important}
+body.home-navy #slick-slide09 a.sppb-articles-carousel-link{color:var(--nv) !important}
+body.home-navy #slick-slide09 a{color:var(--nv-accent) !important}
+body.home-navy #slick-slide010 a.sppb-articles-carousel-link{color:var(--nv) !important}
+body.home-navy #slick-slide010 a{color:var(--nv-accent) !important}
+body.home-navy #section-id-1697795874370 .sppb-section-title a{color:var(--nv) !important}
+body.home-navy #section-id-1697795874370 h4{color:var(--nv) !important}
+body.home-navy #section-id-g13XmNaQ6vDEhx2SIGFAE div.sppb-row-overlay{background-image:linear-gradient(90deg, rgb(11, 26, 43) 30%, rgba(11, 26, 43, 0.09) 80%) !important}
+body.home-navy #btn-dNmM87Xcioqwt6UY1RcB21{background-color:var(--nv-accent) !important}
+body.home-navy #section-id-1697800484357 h3.sppb-title-heading{color:var(--nv) !important}
+body.home-navy #sppb-sp-slider-50_vlbeXsnFLgsc0h2OO- span.sp-slider-btn-text{background-color:var(--nv-accent) !important}
+body.home-navy #sppb-sp-slider-50_vlbeXsnFLgsc0h2OO- span.next-control.nav-control{background-color:var(--nv-accent) !important}
+body.home-navy #sppb-sp-slider-50_vlbeXsnFLgsc0h2OO- span.prev-control.nav-control{background-color:var(--nv-accent) !important}
+body.home-navy #sppb-addon--j0hjR4deaZc6tcKPFLqJ h3.sppb-addon-title{color:var(--nv) !important}
+body.home-navy #sppb-addon-1698040857828 span{color:var(--nv) !important}
+body.home-navy #sppb-addon-1764762543593 h3.sppb-addon-title{color:var(--nv) !important}
+body.home-navy #cf23 button.cf-btn{background-color:var(--nv) !important}
+
+/* ---------- вручную ---------- */
+body.home-navy #sppb-addon--j0hjR4deaZc6tcKPFLqJ::before, body.home-navy #sppb-addon--j0hjR4deaZc6tcKPFLqJ::after { border-color: var(--nv) !important; } /* уголки у фото */
+body.home-navy #sp-main-body :is(.sppb-btn-primary, .sppb-btn-custom, .sp-slider-btn-text, .nav-control):hover { background-color: var(--nv-accent-h) !important; border-color: var(--nv-accent-h) !important; }
+body.home-navy #sp-main-body :is(.sppb-btn-primary, .sppb-btn-custom) { border-color: var(--nv-accent) !important; }
+body.home-navy #navdu-cta-next a.btn:not(.outline):hover { background-color: var(--nv-2) !important; }
+body.home-navy #navdu-cta-next a.btn.outline:hover { background-color: var(--nv) !important; color: #fff !important; }
+body.home-navy #sp-main-body .sppb-feature-box-icon img { filter: brightness(.42) saturate(.7); } /* синие иконки-картинки «Nima uchun NavDU» */
+body.home-navy #sp-bottom { background-color: var(--nv) !important; }
+body.home-navy #sp-footer { background-color: #07131f !important; }
