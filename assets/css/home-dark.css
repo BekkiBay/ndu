@@ -1,0 +1,95 @@
+/* Тёмная главная: вся страница в тоне hero (тёмно-синий #0b1a2b), а не на
+   светло-голубом фоне шаблона WIUT. Только для body.home-dark (index.html).
+   Секции Page Builder красят себя через <style>-блоки, поэтому здесь
+   везде !important. Блок .hero не трогаем — он уже тёмный. */
+
+body.home-dark {
+  --dk-bg: #0b1a2b;
+  --dk-bg-alt: #0e2036;
+  --dk-footer: #07131f;
+  --dk-card: rgba(255, 255, 255, .05);
+  --dk-card-hover: rgba(255, 255, 255, .09);
+  --dk-border: rgba(255, 255, 255, .12);
+  --dk-text: rgba(255, 255, 255, .82);
+  --dk-muted: rgba(255, 255, 255, .62);
+  --dk-accent: #4dace1;
+  --dk-accent-soft: #7cc4f0;
+  background: var(--dk-bg);
+}
+body.home-dark .body-wrapper, body.home-dark .body-innerwrapper { background: var(--dk-bg); }
+/* Область действия — .body-innerwrapper: секция с формой (#your-enquiry) лежит
+   рядом с .body-innerwrapper, а не внутри него. */
+
+/* ---------- секции: убираем светло-голубые и белые подложки ---------- */
+body.home-dark .body-innerwrapper .sppb-section { background-color: transparent !important; }
+/* Чередование тона только для секций верхнего уровня: вложенные div.sppb-section
+   внутри колонок иначе получают свою подложку. */
+body.home-dark #sp-page-builder > .sppb-section:nth-of-type(even) { background-color: var(--dk-bg-alt) !important; }
+/* Обёртки аддонов тоже красят себя (новости — светло-голубым, ректор — синим). */
+body.home-dark .body-innerwrapper [id^="sppb-addon-"] { background-color: transparent !important; }
+
+/* ---------- текст ---------- */
+body.home-dark .body-innerwrapper { color: var(--dk-text); }
+body.home-dark .body-innerwrapper :is(p, li, small, .sppb-animated-number-title, .sppb-addon-text-block, .sppb-addon-content):not(.hero *) { color: var(--dk-text) !important; }
+body.home-dark .body-innerwrapper :is(small, .text-muted):not(.hero *) { color: var(--dk-muted) !important; }
+body.home-dark .body-innerwrapper :is(h1, h2, h3, h4, h5, h6, strong, .sppb-addon-title, .sppb-title-heading, .sppb-feature-box-title):not(.hero *),
+body.home-dark .body-innerwrapper :is(h1, h2, h3, h4, h5, h6) span:not(.hero *) { color: #fff !important; }
+body.home-dark .body-innerwrapper .sppb-animated-number { color: var(--dk-accent-soft) !important; }
+body.home-dark .body-innerwrapper a:not(.hero *):not(.sppb-btn):not(.btn):not(.nsu-card):not(.nsu-partner) { color: #fff; }
+body.home-dark .body-innerwrapper a:not(.hero *):not(.sppb-btn):not(.btn):hover { color: var(--dk-accent-soft); }
+
+/* ---------- карточки ---------- */
+body.home-dark .body-innerwrapper :is(.nsu-card, .nsu-partner, .sppb-articles-carousel-content, .sppb-person-information) {
+  background: var(--dk-card) !important;
+  border: 1px solid var(--dk-border) !important;
+  box-shadow: none !important;
+  color: var(--dk-text) !important;
+}
+body.home-dark .body-innerwrapper :is(.nsu-card, .nsu-partner):hover { background: var(--dk-card-hover) !important; }
+body.home-dark .body-innerwrapper .nsu-card-img { background: transparent !important; }
+body.home-dark .body-innerwrapper :is(.nsu-card, .nsu-partner, .sppb-articles-carousel-content) :is(h3, h4, h5, a, strong, .nsu-card-title) { color: #fff !important; }
+body.home-dark .body-innerwrapper :is(.nsu-card, .nsu-partner, .sppb-articles-carousel-content) :is(small, p) { color: var(--dk-muted) !important; }
+body.home-dark .body-innerwrapper .sppb-articles-carousel-column { border-color: var(--dk-border) !important; }
+body.home-dark .body-innerwrapper .nsu-partner :is(span, small, strong, a) { color: #fff !important; }
+body.home-dark .body-innerwrapper .nsu-partner small { color: var(--dk-muted) !important; }
+body.home-dark .body-innerwrapper .sppb-person-information :is(h1, h2, h3, h4, p, span, a) { color: #fff !important; }
+
+/* ---------- слайдер «Talabalik hayoti»: белая скошенная подложка ---------- */
+body.home-dark .body-innerwrapper .sp-item .sp-background:after { background: linear-gradient(100deg, var(--dk-bg-alt) 60%, rgba(0, 0, 0, 0) 40%) transparent !important; }
+@media (max-width: 991px) { body.home-dark .body-innerwrapper .sp-item .sp-background:after { background: linear-gradient(170deg, var(--dk-bg-alt) 55%, rgba(0, 0, 0, 0) 0%) transparent !important; } }
+@media (max-width: 767px) { body.home-dark .body-innerwrapper .sp-item .sp-background:after { background: linear-gradient(170deg, var(--dk-bg-alt) 74%, rgba(0, 0, 0, 0) 0%) transparent !important; } }
+
+/* ---------- обёртка raw-html блока с кнопками (Bootstrap .card) ---------- */
+body.home-dark .body-innerwrapper .card { background: transparent !important; border: 0 !important; box-shadow: none !important; }
+
+/* ---------- кнопки-«призраки» ---------- */
+body.home-dark .body-innerwrapper .btn.outline {
+  background: transparent !important; color: #fff !important; border-color: rgba(255, 255, 255, .55) !important;
+}
+body.home-dark .body-innerwrapper .btn.outline:hover { background: rgba(255, 255, 255, .1) !important; }
+
+/* ---------- иконки feature-box (синие штриховые) ---------- */
+body.home-dark .body-innerwrapper .sppb-feature-box-icon img { filter: brightness(0) invert(1); opacity: .9; }
+body.home-dark .body-innerwrapper .sppb-feature-box-icon svg, body.home-dark .body-innerwrapper .sppb-feature-box-icon i { color: var(--dk-accent-soft) !important; }
+
+/* ---------- форма «So‘rovingiz» (ConvertForms) ---------- */
+body.home-dark .body-innerwrapper .convertforms { background: var(--dk-card) !important; border: 1px solid var(--dk-border); }
+body.home-dark .body-innerwrapper .convertforms :is(.cf-form, .cf-inner, .cf-form-wrap, .cf-content, .cf-row, .cf-col, .cf-control-group) { background: transparent !important; }
+body.home-dark .body-innerwrapper .convertforms :is(.cf-label, label, p, small, span:not(.cf-required)) { color: var(--dk-text) !important; }
+/* Поле телефона (intl-tel-input) красит себя отдельно. */
+body.home-dark .body-innerwrapper .convertforms :is(.iti, .iti input, .iti__selected-flag, .iti__flag-container) { background: rgba(255, 255, 255, .06) !important; color: #fff !important; border-color: rgba(255, 255, 255, .22) !important; }
+body.home-dark .body-innerwrapper .convertforms .iti__selected-dial-code { color: #fff !important; }
+body.home-dark .body-innerwrapper :is(.cf-form, form) :is(input, select, textarea) {
+  background: rgba(255, 255, 255, .06) !important; color: #fff !important; border-color: rgba(255, 255, 255, .22) !important;
+}
+body.home-dark .body-innerwrapper :is(.cf-form, form) :is(input, select, textarea)::placeholder { color: rgba(255, 255, 255, .45); }
+body.home-dark .body-innerwrapper :is(.cf-form, form) :is(label, legend, .cf-label) { color: #fff !important; }
+body.home-dark .body-innerwrapper :is(.cf-form, form) select option { color: #111; }
+
+/* ---------- точки/стрелки слайдеров ---------- */
+body.home-dark .body-innerwrapper .slick-dots li button::before, body.home-dark .body-innerwrapper .slick-dots li button { color: #fff !important; }
+body.home-dark .body-innerwrapper .sppb-carousel-indicators li { background: rgba(255, 255, 255, .35) !important; }
+body.home-dark .body-innerwrapper .sppb-carousel-indicators li.active { background: #fff !important; }
+
+/* ---------- подвал ---------- */
+body.home-dark #sp-bottom, body.home-dark #sp-footer { background: var(--dk-footer) !important; }
