@@ -13,4 +13,15 @@
       else { video.pause(); }
     }, { threshold: 0.05 }).observe(video);
   }
+
+  /* ---------- «Yaqinlashayotgan tadbirlar»: появление карточек при прокрутке (Макет 2) ---------- */
+  var reveals = Array.prototype.slice.call(document.querySelectorAll('.nd-events .reveal'));
+  if (reveals.length && 'IntersectionObserver' in window) {
+    var io = new IntersectionObserver(function (entries) {
+      entries.forEach(function (en) { if (en.isIntersecting) { en.target.classList.add('is-visible'); io.unobserve(en.target); } });
+    }, { threshold: 0.15 });
+    reveals.forEach(function (r) { io.observe(r); });
+  } else {
+    reveals.forEach(function (r) { r.classList.add('is-visible'); });
+  }
 })();
