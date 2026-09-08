@@ -1,19 +1,19 @@
-# Standalone static host for the NavDU mock-up (WIUT design).
+# Standalone static host for the NDU site (NavDU, WIUT-based design).
 #
-# Deliberately its own compose project (`wiut-static`), NOT part of
-# /opt/navoiyliklar and not shared with `udea-static`. It has its own
-# container, port and document root, so bringing it up or down cannot
-# affect anything else running on the server.
+# Deliberately its own compose project (`ndu-static`), NOT part of
+# /opt/navoiyliklar and not shared with `udea-static`, `wiut-static` or
+# `newuu-static`. It has its own container, port and document root, so
+# bringing it up or down cannot affect anything else running on the server.
 
 services:
   web:
     image: nginx:1.27-alpine
-    container_name: wiut-static
+    container_name: ndu-static
     restart: unless-stopped
     ports:
-      - "${WIUT_PORT:-8081}:80"
+      - "${NDU_PORT:-8083}:80"
     volumes:
-      - ${WIUT_ROOT:-/var/www/wuit-navoiyliklar}:/usr/share/nginx/html:ro
+      - ${NDU_ROOT:-/var/www/ndu}:/usr/share/nginx/html:ro
       - ./nginx-site.conf:/etc/nginx/conf.d/default.conf:ro
     healthcheck:
       test: ["CMD", "wget", "-qO-", "http://127.0.0.1/"]

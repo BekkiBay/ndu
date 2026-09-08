@@ -1,4 +1,8 @@
-# Макет WIUT — сайт NavDU в дизайне wiut.uz
+# NDU — сайт Навоийского государственного университета
+
+Итоговый проект. Основа — макет WIUT (дизайн wiut.uz); дальше в него по кусочкам
+переезжают лучшие части остальных макетов (Макет 2, Макет 3, Макет C).
+Репозиторий: https://github.com/BekkiBay/ndu
 
 Многостраничный статический сайт **Навоийского государственного университета
 (NavDU)**, собранный в дизайне [wiut.uz](https://www.wiut.uz/): вёрстка, CSS, JS,
@@ -11,7 +15,7 @@ ES-модули (Bootstrap 5, Joomla core) не грузятся по `file://`,
 локальный HTTP-сервер:
 
 ```bash
-cd "Макет WIUT"
+cd NDU
 python3 -m http.server 8899
 ```
 
@@ -81,8 +85,8 @@ media/                          Joomla core, Bootstrap 5, jQuery, ConvertForms
 
 ## Деплой
 
-Живая версия: **http://185.217.199.92:8081** (сервер Hermes) и копия на
-**https://bekkibay.github.io/wuit_navoiyliklar/**.
+Живая версия: **http://185.217.199.92:8083** (сервер Hermes) и копия на
+**https://bekkibay.github.io/ndu/**.
 
 CI/CD — `.github/workflows/`: `ci.yml` проверяет, что все внутренние ссылки и
 ресурсы резолвятся, `deploy.yml` после успешной проверки раскатывает сайт на
