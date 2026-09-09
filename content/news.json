@@ -1,0 +1,114 @@
+{
+  "posts": [
+    {
+      "slug": "gallery-campus-life",
+      "title": "Kampus hayoti",
+      "date": null,
+      "excerpt": "",
+      "cover": "images/nsu/news/campus.jpg",
+      "body": "<p>Kampus hayoti</p>",
+      "gallery": [],
+      "updated": "2026-09-09T11:01:21Z"
+    },
+    {
+      "slug": "gallery-graduation-2026",
+      "title": "Bitiruv marosimi 2026",
+      "date": null,
+      "excerpt": "",
+      "cover": "images/nsu/news/graduation.jpg",
+      "body": "<p>Bitiruv marosimi 2026</p>",
+      "gallery": [],
+      "updated": "2026-09-09T11:01:21Z"
+    },
+    {
+      "slug": "resource-center-upgrade",
+      "title": "Axborot-resurs markazi yangi fondlar bilan boyidi",
+      "date": null,
+      "excerpt": "Kutubxona elektron va bosma adabiyotlarning yangi to'plamlari bilan to'ldirildi.",
+      "cover": "images/nsu/news/library.jpg",
+      "body": "<p>Kutubxona elektron va bosma adabiyotlarning yangi to'plamlari bilan to'ldirildi.</p><p>Talabalar endi xalqaro ilmiy bazalarga va minglab yangi kitoblarga kirish imkoniyatiga ega.</p>",
+      "gallery": [],
+      "updated": "2026-09-09T11:01:21Z"
+    },
+    {
+      "slug": "gallery-research-labs",
+      "title": "Zamonaviy laboratoriyalar",
+      "date": null,
+      "excerpt": "",
+      "cover": "images/nsu/news/building.jpg",
+      "body": "<p>Zamonaviy laboratoriyalar</p>",
+      "gallery": [],
+      "updated": "2026-09-09T11:01:21Z"
+    },
+    {
+      "slug": "gallery-sports-day",
+      "title": "Sport kuni",
+      "date": null,
+      "excerpt": "",
+      "cover": "images/nsu/news/sports.jpg",
+      "body": "<p>Sport kuni</p>",
+      "gallery": [],
+      "updated": "2026-09-09T11:01:21Z"
+    },
+    {
+      "slug": "gallery-cultural-festival",
+      "title": "Madaniyat festivali",
+      "date": null,
+      "excerpt": "",
+      "cover": "images/nsu/news/festival.jpg",
+      "body": "<p>Madaniyat festivali</p>",
+      "gallery": [],
+      "updated": "2026-09-09T11:01:21Z"
+    },
+    {
+      "slug": "open-lecture-series",
+      "title": "Taniqli olimlardan ochiq ma'ruzalar turkumi",
+      "date": null,
+      "excerpt": "Yetakchi mutaxassislar talabalar uchun ochiq ma'ruzalar o'qimoqda.",
+      "cover": "images/nsu/news/lecture.jpg",
+      "body": "<p>Yetakchi mutaxassislar talabalar uchun ochiq ma'ruzalar o'qimoqda.</p><p>Ma'ruzalar turkumi davomida zamonaviy fan yutuqlari va kasbiy yo'nalishlar muhokama qilinadi.</p>",
+      "gallery": [],
+      "updated": "2026-09-09T11:01:21Z"
+    },
+    {
+      "slug": "new-laboratory-opened",
+      "title": "Yangi zamonaviy laboratoriya ochildi",
+      "date": null,
+      "excerpt": "Kimyo fakultetida yangi laboratoriya ishga tushirildi.",
+      "cover": "images/nsu/news/lab.jpg",
+      "body": "<p>Kimyo fakultetida yangi laboratoriya ishga tushirildi.</p><p>Zamonaviy uskunalar bilan jihozlangan laboratoriya talaba va o'qituvchilar uchun ochiq.</p>",
+      "gallery": [],
+      "updated": "2026-09-09T11:01:21Z"
+    },
+    {
+      "slug": "student-sports-festival",
+      "title": "Talabalar sport festivali bo'lib o'tdi",
+      "date": null,
+      "excerpt": "Fakultetlararo sport musobaqalari katta qiziqish uyg'otdi.",
+      "cover": "images/nsu/news/students.jpg",
+      "body": "<p>Fakultetlararo sport musobaqalari katta qiziqish uyg'otdi.</p><p>Festivalda yuzlab talaba turli sport turlari bo'yicha bellashdi va sog'lom turmush tarzini targ'ib qildi.</p>",
+      "gallery": [],
+      "updated": "2026-09-09T11:01:21Z"
+    },
+    {
+      "slug": "international-conference-2026",
+      "title": "Xalqaro ilmiy konferensiya",
+      "date": null,
+      "excerpt": "15 davlatdan olimlar ishtirokida konferensiya bo'lib o'tdi.",
+      "cover": "images/nsu/news/conference.jpg",
+      "body": "<p>15 davlatdan olimlar ishtirokida konferensiya bo'lib o'tdi.</p><p>Konferensiya doirasida zamonaviy fan-texnika yo'nalishlari muhokama qilindi.</p>",
+      "gallery": [],
+      "updated": "2026-09-09T11:01:21Z"
+    },
+    {
+      "slug": "2026-academic-year-opened",
+      "title": "2026-2027 oʻquv yili ochildi",
+      "date": null,
+      "excerpt": "Universitetimizda yangi o'quv yili tantanali ravishda ochildi.",
+      "cover": "images/nsu/news/campus.jpg",
+      "body": "<p>Universitetimizda yangi o'quv yili tantanali ravishda ochildi.</p><p>Bugun universitetimizda 2026-2027 oʻquv yili rasmiy tarzda boshlandi. Yangi birinchi kurs talabalari tabriklandi.</p>",
+      "gallery": [],
+      "updated": "2026-09-09T11:01:21Z"
+    }
+  ]
+}
