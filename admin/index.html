@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex, nofollow">
+<title>NavDU · Yangiliklar — админка</title>
+<link rel="icon" href="../images/nsu/nsu-seal-navy.png" type="image/png">
+<link rel="stylesheet" href="vendor/quill.snow.css">
+<link rel="stylesheet" href="admin.css">
+</head>
+<body>
+<header class="top">
+  <a class="brand" href="../news.html" target="_blank" rel="noopener">NavDU · Yangiliklar</a>
+  <div class="deploy" id="deploy" hidden></div>
+  <button class="link" id="logout" type="button" hidden>Выйти</button>
+</header>
+
+<main>
+  <section id="screen-login" class="card narrow">
+    <h1>Вход</h1>
+    <p>Нужен GitHub fine-grained token с доступом только к репозиторию <code>BekkiBay/ndu</code>:
+       Settings → Developer settings → Personal access tokens → Fine-grained tokens → Generate new token.
+       Repository access: <b>Only select repositories → BekkiBay/ndu</b>.
+       Permissions: <b>Contents — Read and write</b>, <b>Actions — Read-only</b>.</p>
+    <form id="login-form">
+      <label>Токен <input type="password" id="token" autocomplete="off" required></label>
+      <button type="submit" class="primary" id="login-btn">Войти</button>
+      <p class="error" id="login-error" hidden></p>
+    </form>
+    <p class="muted">Токен хранится только в этом браузере (localStorage) и отправляется только на api.github.com.</p>
+  </section>
+
+  <section id="screen-list" hidden>
+    <div class="bar">
+      <h1>Посты <span class="muted" id="count"></span></h1>
+      <button class="primary" id="new-post" type="button">+ Новый пост</button>
+    </div>
+    <p class="notice" id="notice" hidden></p>
+    <div class="table-wrap">
+      <table class="posts">
+        <thead><tr><th></th><th>Заголовок</th><th>Дата</th><th>Просмотры</th><th></th></tr></thead>
+        <tbody id="rows"></tbody>
+      </table>
+    </div>
+  </section>
+
+  <section id="screen-edit" hidden>
+    <div class="bar">
+      <h1 id="edit-title">Новый пост</h1>
+      <button class="link" id="back" type="button">← К списку</button>
+    </div>
+    <div class="editor">
+      <form id="post-form" novalidate>
+        <label>Заголовок <input id="f-title" required maxlength="200" autocomplete="off"></label>
+        <div class="row2">
+          <label>Дата <input type="date" id="f-date"></label>
+          <label>Slug <input id="f-slug" maxlength="80" spellcheck="false" autocomplete="off">
+            <small class="muted">news-<span id="slug-preview">…</span>.html</small></label>
+        </div>
+        <label>Анонс <textarea id="f-excerpt" rows="3" maxlength="300"></textarea>
+          <small class="muted"><span id="excerpt-len">0</span>/300</small></label>
+        <div class="field">
+          <span class="label">Обложка</span>
+          <div class="cover">
+            <img id="cover-preview" alt="" hidden>
+            <label class="button">Выбрать файл <input type="file" id="f-cover" accept="image/*" hidden></label>
+          </div>
+        </div>
+        <div class="field">
+          <span class="label">Текст</span>
+          <div id="quill"></div>
+        </div>
+        <div class="field">
+          <span class="label">Галерея</span>
+          <div class="gallery" id="gallery"></div>
+          <label class="button">Добавить фото <input type="file" id="f-gallery" accept="image/*" multiple hidden></label>
+        </div>
+        <p class="error" id="form-error" hidden></p>
+        <div class="actions">
+          <button type="submit" class="primary" id="save">Опубликовать</button>
+          <button type="button" class="link" id="cancel">Отмена</button>
+          <button type="button" class="danger" id="delete" hidden>Удалить пост</button>
+        </div>
+      </form>
+      <aside class="preview">
+        <div class="preview-hero" id="p-hero"><span class="preview-date" id="p-date"></span><h2 id="p-title"></h2></div>
+        <div class="preview-body nsu-post-body" id="p-body"></div>
+        <div class="preview-gallery" id="p-gallery"></div>
+      </aside>
+    </div>
+  </section>
+</main>
+
+<script src="vendor/quill.js"></script>
+<script type="module" src="admin.js"></script>
+</body>
+</html>
