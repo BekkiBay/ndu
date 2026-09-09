@@ -267,6 +267,11 @@ function pickInlineImage() {
   input.click();
 }
 
+// Quill 2 serialises every space as &nbsp;, which would stop text from wrapping on the site.
+function bodyHtml() {
+  return state.quill.getSemanticHTML().replace(/&nbsp;/g, ' ');
+}
+
 function findPost(slug) {
   return state.news.posts.find((p) => p.slug === slug) || null;
 }
@@ -353,7 +358,7 @@ function renderPreview() {
   $('p-date').textContent = formatDateUz($('f-date').value);
   const cover = currentCoverUrl();
   $('p-hero').style.backgroundImage = cover ? `url("${cover}")` : '';
-  $('p-body').innerHTML = state.quill.getSemanticHTML();
+  $('p-body').innerHTML = bodyHtml();
   const g = $('p-gallery');
   g.textContent = '';
   for (const item of state.gallery) {
@@ -404,7 +409,7 @@ async function collectFiles(slug, existing) {
     files.push({ path: cover, base64: await blobToBase64(state.cover.blob) });
   }
 
-  const doc = new DOMParser().parseFromString(state.quill.getSemanticHTML(), 'text/html');
+  const doc = new DOMParser().parseFromString(bodyHtml(), 'text/html');
   let n = 0;
   for (const img of doc.querySelectorAll('img')) {
     const src = img.getAttribute('src') || '';
