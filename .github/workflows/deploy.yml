@@ -117,8 +117,14 @@ jobs:
           code=$(curl -s -o /dev/null -w '%{http_code}' --max-time 20 "${{ vars.SITE_URL }}")
           echo "GET ${{ vars.SITE_URL }} -> $code"
           [ "$code" = "200" ] || { echo "::error::site did not return 200"; exit 1; }
-          code=$(curl -s -o /dev/null -w '%{http_code}' --max-time 20 "${{ vars.SITE_URL }}/views/health")
-          echo "GET ${{ vars.SITE_URL }}/views/health -> $code"
+          # The counter container may still be starting right after `compose up`
+          # (first deploy pulls the image), so give it up to 30 seconds.
+          for attempt in 1 2 3 4 5 6 7 8 9 10; do
+            code=$(curl -s -o /dev/null -w '%{http_code}' --max-time 20 "${{ vars.SITE_URL }}/views/health")
+            echo "GET ${{ vars.SITE_URL }}/views/health -> $code (attempt $attempt)"
+            [ "$code" = "200" ] && break
+            sleep 3
+          done
           [ "$code" = "200" ] || { echo "::error::view counter did not return 200"; exit 1; }
 
       - name: Clean up key
