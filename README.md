@@ -16,6 +16,7 @@ ES-модули (Bootstrap 5, Joomla core) не грузятся по `file://`,
 
 ```bash
 cd NDU
+python3 scripts/build_news.py   # генерирует news.html и news-*.html из content/news.json
 python3 -m http.server 8899
 ```
 
@@ -37,7 +38,7 @@ python3 -m http.server 8899
 | ILMIY FAOLIYAT | 10 | `research.html`, `research-council.html`, `research-journals.html`, `articles.html` |
 | TALABALAR HAYOTI | 13 | `student-life.html`, `student-life-library.html`, `student-life-sports.html`, `student-life-student-council*.html` |
 | XALQARO | 1 | `international-office.html` |
-| Новости | 12 | `news.html` + 11 новостей |
+| Новости | 12 | `news.html` + посты из `content/news.json` (генерируются, см. ниже) |
 | Прочее | 2 | `contact.html`, `brosdcast.html` |
 
 Все ссылки внутри сайта рабочие (проверено: 0 битых), формы — заглушки
@@ -48,12 +49,57 @@ python3 -m http.server 8899
 ```
 index.html                      главная (дизайн главной wiut.uz, контент NavDU)
 <раздел>-<подраздел>.html       внутренние страницы (плоские имена = относительные пути работают)
+content/news.json               посты новостей — источник правды (правится админкой)
+images/nsu/news/<slug>/         фотографии поста, загруженные через админку
+admin/                          админка новостей (см. «Новости и админка»)
+scripts/build_news.py           генерирует news.html, news-*.html и карусель на главной
+deploy/counter/counter.py       сервис счётчика просмотров (контейнер ndu-counter)
+tests/                          юнит-тесты сборки и счётчика (python3 -m unittest discover -s tests)
 assets/css/nsu.css              стили контентных блоков NavDU (палитра/шрифты WIUT)
 images/nsu/                     фотографии и логотип NavDU
 templates/lt_university/        шаблон WIUT: CSS, JS, шрифты
 components/com_sppagebuilder/   SP Page Builder: слайдеры, аддоны
 media/                          Joomla core, Bootstrap 5, jQuery, ConvertForms
 ```
+
+## Новости и админка
+
+Новости не лежат в репозитории готовыми страницами. Источник правды —
+`content/news.json`: массив постов с полями `slug`, `title`, `date`
+(`YYYY-MM-DD` или `null`), `excerpt`, `cover`, `body` (HTML из редактора),
+`gallery`, `updated`. Из него `scripts/build_news.py` генерирует:
+
+- `news-<slug>.html` — страницу каждого поста (оболочка берётся из
+  `contact.html`, поэтому шапка и подвал новостей всегда совпадают с сайтом);
+- `news.html` — список карточек, сначала посты с датой (новые выше), потом без;
+- блок между маркерами `<!-- news:carousel -->` и `<!-- /news:carousel -->` в
+  `index.html` — карусель из шести последних постов.
+
+`news.html` и `news-*.html` в `.gitignore`: CI собирает их перед проверками и
+деплоем, локально — команда из раздела «Запуск». `index.html` остаётся в git,
+сборка правит в нём только блок между маркерами.
+
+**Админка** — `http://185.217.199.92:8083/admin/` (после переезда на домен тот
+же путь на домене). Статическая страница: создание, редактирование и удаление
+постов, текст в визуальном редакторе (Quill), обложка, фото в тексте и галерея.
+Каждое действие — один коммит в `main` через GitHub API; дальше CI собирает
+сайт и выкатывает его за 1–2 минуты, статус деплоя виден в шапке админки.
+
+Вход — GitHub fine-grained token: Settings → Developer settings → Personal
+access tokens → Fine-grained tokens; Repository access: only `BekkiBay/ndu`;
+Permissions: Contents — Read and write, Actions — Read-only. Токен хранится в
+`localStorage` браузера и уходит только на `api.github.com`.
+
+Фото сжимаются в браузере (длинная сторона ≤ 1600 px, JPEG) и кладутся в
+`images/nsu/news/<slug>/` с меткой времени в имени, чтобы замена картинки не
+упиралась в кэш браузера. При удалении поста удаляется и его папка; общие файлы
+`images/nsu/news/*.jpg` импортированных постов админка не трогает.
+
+**Просмотры** считает контейнер `ndu-counter` на Hermes
+(`deploy/counter/counter.py`), доступный через nginx сайта по адресу
+`/views/`: страница поста делает `POST views/hit`, админка читает
+`views/counts`. Один просмотр на (пост, посетитель, сутки), боты не считаются.
+На копии GitHub Pages счётчика нет — блок просмотров там просто скрыт.
 
 ## Контент NavDU
 
@@ -88,14 +134,19 @@ media/                          Joomla core, Bootstrap 5, jQuery, ConvertForms
 Живая версия: **http://185.217.199.92:8083** (сервер Hermes) и копия на
 **https://bekkibay.github.io/ndu/**.
 
-CI/CD — `.github/workflows/`: `ci.yml` проверяет, что все внутренние ссылки и
-ресурсы резолвятся, `deploy.yml` после успешной проверки раскатывает сайт на
-Hermes (rsync без `--delete`) и на GitHub Pages. Подробности и первичная
-настройка сервера — в [`deploy/README.md`](deploy/README.md).
+CI/CD — `.github/workflows/`: `ci.yml` гоняет юнит-тесты, проверяет штампы
+`?v=`, собирает новости и проверяет, что все внутренние ссылки и ресурсы
+резолвятся; `deploy.yml` после успешной проверки раскатывает сайт на Hermes
+(rsync без `--delete`; единственное исключение — страницы удалённых новостей
+`news-*.html`) и на GitHub Pages, поднимает контейнер счётчика. Подробности и
+первичная настройка сервера — в [`deploy/README.md`](deploy/README.md).
 
 ## Как пересобрать
 
-Сайт генерируется скриптами (лежат вне репозитория, в рабочей папке сессии):
-`site_data.py` (парсинг nsuz.uz) → `build.py` (внутренние страницы) →
-`gen_home.py` (главная). Шапка/подвал/меню собираются в `shell.py`, контентные
-блоки — в `render.py`, структура меню — в `menu_def.py`.
+Новости собираются `scripts/build_news.py` из репозитория (см. выше).
+Остальной сайт генерировался скриптами, которые лежат вне репозитория, в
+рабочей папке сессии: `site_data.py` (парсинг nsuz.uz) → `build.py`
+(внутренние страницы) → `gen_home.py` (главная). Шапка/подвал/меню собираются
+в `shell.py`, контентные блоки — в `render.py`, структура меню — в
+`menu_def.py`. Если менять шапку или подвал, менять их надо на всех страницах,
+включая `contact.html`: из него сборка новостей берёт оболочку.
