@@ -422,8 +422,9 @@ async function collectFiles(slug, existing) {
       img.setAttribute('src', src.slice(SITE_ROOT.href.length));
     }
   }
-  let body = doc.body.innerHTML.trim();
-  body = body.replace(/(<p>(<br>|\s|&nbsp;)*<\/p>\s*)+$/, '');
+  // Quill leaves an empty paragraph where an image or a line was removed; the site
+  // does not need blank lines, so drop every empty paragraph, not just trailing ones.
+  const body = doc.body.innerHTML.trim().replace(/<p>(<br>|\s|&nbsp;)*<\/p>\s*/g, '').trim();
 
   const gallery = [];
   let g = 0;
