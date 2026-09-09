@@ -20,3 +20,29 @@ services:
       interval: 30s
       timeout: 5s
       retries: 3
+    depends_on:
+      - counter
+
+  counter:
+    # View counter for the news pages (deploy/counter/counter.py).
+    # Reachable only from the web container as http://counter:8080/;
+    # nginx publishes it under /views/. No host port on purpose.
+    image: python:3.12-alpine
+    container_name: ndu-counter
+    restart: unless-stopped
+    command: ["python", "-u", "/app/counter.py"]
+    environment:
+      COUNTER_DB: /data/views.db
+    volumes:
+      - ./counter/counter.py:/app/counter.py:ro
+      - ndu-counter-data:/data
+    healthcheck:
+      test: ["CMD", "python", "-c", "import urllib.request,sys;sys.exit(0 if urllib.request.urlopen('http://127.0.0.1:8080/health',timeout=3).status==200 else 1)"]
+      interval: 30s
+      timeout: 5s
+      retries: 3
+
+volumes:
+  # SQLite database of the view counter. Survives container recreation;
+  # back it up with: docker cp ndu-counter:/data/views.db ./views.db
+  ndu-counter-data:
