@@ -24,6 +24,11 @@ jobs:
     steps:
       - uses: actions/checkout@v4
 
+      - name: Build news pages
+        run: |
+          python3 scripts/build_news.py
+          python3 scripts/stamp_assets.py
+
       - name: Check deploy secrets are configured
         id: guard
         env:
@@ -70,8 +75,17 @@ jobs:
             --exclude '.github' \
             --exclude 'deploy' \
             --exclude 'scripts' \
+            --exclude 'content' \
+            --exclude 'tests' \
+            --exclude 'docs' \
             --exclude '.gitignore' \
             --exclude '.DS_Store' \
+            ./ "${USER:-root}@$HOST:$DEST/"
+          # The only deletion the deploy ever performs: pages of posts that
+          # were removed from content/news.json. The filter limits --delete
+          # to news-*.html; nothing else on the server is touched.
+          rsync -av --delete --include='news-*.html' --exclude='*' \
+            -e "ssh -i ~/.ssh/deploy_key -p ${PORT:-22}" \
             ./ "${USER:-root}@$HOST:$DEST/"
 
       - name: Sync container config and reconcile
@@ -82,15 +96,15 @@ jobs:
           PORT: ${{ secrets.DEPLOY_PORT }}
         run: |
           set -eu
-          # The ndu-static compose project owns only its own container.
+          # The ndu-static compose project owns only its own containers
+          # (nginx + the view counter).
           # `up -d` is a no-op when nothing in deploy/ changed.
           #
           # --inplace matters: nginx-site.conf is bind-mounted into the
           # container by inode, so replacing the file (rsync's default) leaves
           # the container serving the old config until it is recreated.
           rsync -avz --inplace -e "ssh -i ~/.ssh/deploy_key -p ${PORT:-22}" \
-            deploy/docker-compose.yml deploy/nginx-site.conf deploy/server-setup.sh \
-            "${USER:-root}@$HOST:/opt/ndu-static/"
+            deploy/ "${USER:-root}@$HOST:/opt/ndu-static/"
           ssh -i ~/.ssh/deploy_key -p "${PORT:-22}" "${USER:-root}@$HOST" \
             'cd /opt/ndu-static && docker compose -p ndu-static up -d \
              && docker exec ndu-static nginx -t \
@@ -103,6 +117,9 @@ jobs:
           code=$(curl -s -o /dev/null -w '%{http_code}' --max-time 20 "${{ vars.SITE_URL }}")
           echo "GET ${{ vars.SITE_URL }} -> $code"
           [ "$code" = "200" ] || { echo "::error::site did not return 200"; exit 1; }
+          code=$(curl -s -o /dev/null -w '%{http_code}' --max-time 20 "${{ vars.SITE_URL }}/views/health")
+          echo "GET ${{ vars.SITE_URL }}/views/health -> $code"
+          [ "$code" = "200" ] || { echo "::error::view counter did not return 200"; exit 1; }
 
       - name: Clean up key
         if: always()
@@ -123,6 +140,11 @@ jobs:
       url: ${{ steps.pages.outputs.page_url }}
     steps:
       - uses: actions/checkout@v4
+
+      - name: Build news pages
+        run: |
+          python3 scripts/build_news.py
+          python3 scripts/stamp_assets.py
       - uses: actions/configure-pages@v5
       - uses: actions/upload-pages-artifact@v3
         with:

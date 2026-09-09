@@ -13,10 +13,11 @@ jobs:
     steps:
       - uses: actions/checkout@v4
 
-      - name: Every internal link and asset resolves
-        run: python3 scripts/check_links.py
+      - name: Unit tests (news build, view counter)
+        run: python3 -m unittest discover -s tests -v
 
       - name: Asset cache stamps are current
+        # Runs on the pristine checkout, before the build touches index.html.
         run: |
           python3 scripts/stamp_assets.py
           if ! git diff --quiet; then
@@ -24,6 +25,14 @@ jobs:
             git --no-pager diff --stat
             exit 1
           fi
+
+      - name: Build news pages
+        run: |
+          python3 scripts/build_news.py
+          python3 scripts/stamp_assets.py
+
+      - name: Every internal link and asset resolves
+        run: python3 scripts/check_links.py
 
       - name: Site inventory
         run: |
