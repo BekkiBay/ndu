@@ -445,3 +445,4 @@ a.nsu-card-link{text-decoration:none;color:inherit}
 .nsu-post-body th{background:var(--nsu-light);color:var(--nsu-primary);font-weight:700}
 .nsu-post-body td:first-child{text-align:center;white-space:nowrap;color:var(--nsu-muted)}
 .nsu-post-body .nsu-post-source{margin-top:28px;font-size:14px;color:var(--nsu-muted)}
+.nsu-post-body .nsu-nowrap{white-space:nowrap}
