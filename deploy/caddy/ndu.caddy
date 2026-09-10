@@ -1,0 +1,27 @@
+# Public domains of the NDU site.
+#
+# .github/workflows/deploy.yml copies this file to /opt/caddy-sites/ndu.caddy
+# on Hermes and reloads Caddy. Caddy itself belongs to the navoiyliklar stack
+# (/opt/navoiyliklar); its Caddyfile ends with `import /etc/caddy/sites/*.caddy`
+# and docker-compose.prod.yml mounts /opt/caddy-sites there. Certificates come
+# from Let's Encrypt automatically once the DNS A records point at the server.
+#
+# 172.18.0.1 is the host as seen from the navoiyliklar_default network and
+# 8083 is the host port of the ndu-static nginx (deploy/docker-compose.yml).
+
+ndu.uz {
+	reverse_proxy 172.18.0.1:8083
+}
+
+www.ndu.uz {
+	redir https://ndu.uz{uri} permanent
+}
+
+# Earlier domain of the same site (registered 2026-09-08).
+nav-du.uz {
+	reverse_proxy 172.18.0.1:8083
+}
+
+www.nav-du.uz {
+	redir https://nav-du.uz{uri} permanent
+}

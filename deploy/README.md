@@ -85,15 +85,26 @@ User-Agent, в открытом виде не хранится. Боты по Us
 перезапускается командой `docker compose -p ndu-static restart counter`
 (compose делает это сам, если менялся `docker-compose.yml`).
 
-## Поддомен вместо порта
+## Домен ndu.uz
 
-Чтобы отдавать сайт по домену, нужна A-запись и один блок `reverse_proxy`
-в `/opt/navoiyliklar/Caddyfile`:
+Публичный адрес сайта — `https://ndu.uz` (плюс `www.ndu.uz` с редиректом на
+apex и более ранний `nav-du.uz`). Порты 80/443 на Hermes занимает Caddy стека
+navoiyliklar, поэтому домен подключён через него:
 
-```
-ndu.navoiyliklar.uz {
-    reverse_proxy 127.0.0.1:8083
-}
-```
+- `deploy/caddy/ndu.caddy` — блоки `reverse_proxy 172.18.0.1:8083` для доменов
+  сайта (172.18.0.1 — хост со стороны сети `navoiyliklar_default`).
+- Деплой (шаг «Publish domains to Caddy») копирует файл в `/opt/caddy-sites/`
+  на сервере, проверяет конфигурацию (`caddy validate`) и делает graceful
+  `caddy reload`.
+- В репозитории navoiyliklar `Caddyfile` заканчивается строкой
+  `import /etc/caddy/sites/*.caddy`, а `docker-compose.prod.yml` монтирует
+  `/opt/caddy-sites` в контейнер только для чтения. Сам стек navoiyliklar
+  при этом не трогается.
 
-Это правка чужого стека, поэтому автоматикой не делается — только вручную.
+Сертификаты Let's Encrypt Caddy получает сам, как только A-записи домена
+укажут на 185.217.199.92. Пока DNS не опубликован, в логе Caddy будут
+ошибки получения сертификата — это нормально, он повторяет попытки.
+
+Так как запросы приходят из Docker-сети, `nginx-site.conf` доверяет заголовку
+`X-Forwarded-For` от адресов `172.16.0.0/12` (`set_real_ip_from`): в логах и
+в счётчике просмотров виден реальный IP посетителя, а не адрес прокси.

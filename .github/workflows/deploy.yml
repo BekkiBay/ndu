@@ -103,12 +103,33 @@ jobs:
           # --inplace matters: nginx-site.conf is bind-mounted into the
           # container by inode, so replacing the file (rsync's default) leaves
           # the container serving the old config until it is recreated.
-          rsync -avz --inplace -e "ssh -i ~/.ssh/deploy_key -p ${PORT:-22}" \
+          rsync -avz --inplace --exclude 'caddy' \
+            -e "ssh -i ~/.ssh/deploy_key -p ${PORT:-22}" \
             deploy/ "${USER:-root}@$HOST:/opt/ndu-static/"
           ssh -i ~/.ssh/deploy_key -p "${PORT:-22}" "${USER:-root}@$HOST" \
             'cd /opt/ndu-static && docker compose -p ndu-static up -d \
              && docker exec ndu-static nginx -t \
              && docker exec ndu-static nginx -s reload'
+
+      - name: Publish domains to Caddy
+        if: steps.guard.outputs.ready == 'true'
+        env:
+          HOST: ${{ secrets.DEPLOY_HOST }}
+          USER: ${{ secrets.DEPLOY_USER }}
+          PORT: ${{ secrets.DEPLOY_PORT }}
+        run: |
+          set -eu
+          # deploy/caddy/*.caddy -> /opt/caddy-sites, which the Caddy of the
+          # navoiyliklar stack imports (see deploy/caddy/ndu.caddy). Validate
+          # before reloading so a broken file can never take the other sites
+          # on that Caddy down; the reload itself is graceful.
+          ssh -i ~/.ssh/deploy_key -p "${PORT:-22}" "${USER:-root}@$HOST" \
+            'mkdir -p /opt/caddy-sites'
+          rsync -avz -e "ssh -i ~/.ssh/deploy_key -p ${PORT:-22}" \
+            deploy/caddy/ "${USER:-root}@$HOST:/opt/caddy-sites/"
+          ssh -i ~/.ssh/deploy_key -p "${PORT:-22}" "${USER:-root}@$HOST" \
+            'docker exec navoiyliklar-caddy-1 caddy validate --config /etc/caddy/Caddyfile \
+             && docker exec navoiyliklar-caddy-1 caddy reload --config /etc/caddy/Caddyfile'
 
       - name: Verify site responds
         if: steps.guard.outputs.ready == 'true' && vars.SITE_URL != ''
