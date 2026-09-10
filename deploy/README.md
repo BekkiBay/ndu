@@ -62,6 +62,73 @@ ssh root@185.217.199.92 'echo "ssh-ed25519 AAAA... github-actions-ndu" >> ~/.ssh
 `github-actions-ndu`).
 Переменные: `SITE_URL`, `ENABLE_PAGES`.
 
+## Админка новостей и её бэкенд
+
+Админка — `https://ndu.uz/admin/`. Вход по **логину и паролю**; GitHub-токен
+в браузере больше не нужен. Работает только на сервере: на копии в GitHub
+Pages бэкенда нет, и страница сразу это скажет.
+
+Что происходит при публикации:
+
+1. Браузер шлёт пост и фотографии в `POST /api/posts/<slug>`.
+2. Сервис `deploy/api/api.py` (контейнер `ndu-api`) делает **один коммит**
+   в `BekkiBay/ndu` — источником правды остаётся git.
+3. Он же сразу пересобирает страницы новостей прямо в `/var/www/ndu`
+   тем же `scripts/build_news.py`, что и CI. Пост виден на сайте за секунды.
+4. Обычный деплой позже кладёт ровно те же файлы. Если пересборка на сервере
+   не удалась, пост всё равно закоммичен и появится после деплоя — админка
+   об этом честно пишет.
+
+### Настройка (один раз, под root)
+
+Файл `/opt/ndu-static/api.env` в репозиторий не попадает и деплоем не
+затирается. Пароль превращается в хеш scrypt прямо на сервере:
+
+```bash
+docker exec -it ndu-api python /app/api.py hash-password
+```
+
+```bash
+cat > /opt/ndu-static/api.env <<'ENV'
+ADMIN_USER=admin
+ADMIN_PASSWORD_HASH=scrypt$16384$8$1$...$...
+GITHUB_TOKEN=github_pat_...
+ENV
+chmod 600 /opt/ndu-static/api.env
+cd /opt/ndu-static && docker compose -p ndu-static up -d api
+```
+
+`GITHUB_TOKEN` — fine-grained token только на репозиторий `BekkiBay/ndu`,
+права **Contents — Read and write** и **Actions — Read-only** (второе нужно
+только для строки со статусом деплоя). Срок жизни лучше поставить максимальный:
+когда токен истечёт, публикация перестанет работать до замены.
+
+Пока `api.env` пуст, контейнер не падает: `/api/health` отвечает
+`{"configured": false}`, остальное — 503 с понятным текстом, а деплой остаётся
+зелёным.
+
+### Смена пароля
+
+```bash
+docker exec -it ndu-api python /app/api.py hash-password   # напечатает новый хеш
+nano /opt/ndu-static/api.env                               # заменить ADMIN_PASSWORD_HASH
+cd /opt/ndu-static && docker compose -p ndu-static up -d api
+```
+
+Старые сессии переживают смену пароля. Чтобы выкинуть все:
+`docker exec ndu-api python -c "import sqlite3;sqlite3.connect('/data/api.db').execute('DELETE FROM sessions').connection.commit()"`.
+
+### Что защищает вход
+
+- Пароль хранится только как хеш scrypt, сравнение постоянное по времени.
+- Сессия — случайный токен в базе, cookie `HttpOnly`, `Secure`, `SameSite=Strict`;
+  30 дней простоя или 90 дней всего.
+- Мутирующие запросы дополнительно требуют заголовок `X-Requested-With`,
+  который кросс-сайтовая форма поставить не может (защита от CSRF).
+- 10 неудачных попыток входа с одного адреса за 15 минут — и вход блокируется.
+- Сервис пишет только внутрь папки картинок того поста, который сохраняется;
+  любой другой путь отклоняется (`SAFE_PATH_RE` в `api.py`).
+
 ## Счётчик просмотров
 
 Просмотры новостей считает контейнер `ndu-counter` (`deploy/counter/counter.py`,

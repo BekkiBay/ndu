@@ -22,6 +22,37 @@ services:
       retries: 3
     depends_on:
       - counter
+      - api
+
+  api:
+    # News admin backend (deploy/api/api.py): password login, one commit per
+    # action in BekkiBay/ndu, and a rebuild of the news pages straight into the
+    # document root so a post is live in seconds instead of after the CI deploy.
+    # Reachable only from the web container as http://api:8080/; nginx
+    # publishes it under /api/. No host port on purpose.
+    image: python:3.12-alpine
+    container_name: ndu-api
+    restart: unless-stopped
+    command: ["python", "-u", "/app/api.py"]
+    # Credentials and the GitHub token live only on the server, never in git.
+    # See deploy/README.md for how to create this file.
+    env_file:
+      - ./api.env
+    environment:
+      API_DB: /data/api.db
+      SITE_ROOT: /site
+      BUILD_SCRIPT: /app/build_news.py
+    volumes:
+      # api.py plus the copy of scripts/build_news.py the deploy puts here.
+      - ./api:/app:ro
+      # Writable on purpose: this is how a published post reaches the site at once.
+      - ${NDU_ROOT:-/var/www/ndu}:/site
+      - ndu-api-data:/data
+    healthcheck:
+      test: ["CMD", "python", "-c", "import urllib.request,sys;sys.exit(0 if urllib.request.urlopen('http://127.0.0.1:8080/health',timeout=3).status==200 else 1)"]
+      interval: 30s
+      timeout: 5s
+      retries: 3
 
   counter:
     # View counter for the news pages (deploy/counter/counter.py).
@@ -46,3 +77,6 @@ volumes:
   # SQLite database of the view counter. Survives container recreation;
   # back it up with: docker cp ndu-counter:/data/views.db ./views.db
   ndu-counter-data:
+
+  # Sessions of the admin backend. Losing it only signs the editor out.
+  ndu-api-data:

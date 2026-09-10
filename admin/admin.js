@@ -1,18 +1,16 @@
-// NavDU news admin: edits content/news.json and the post images in BekkiBay/ndu
-// through the GitHub API. Every action is exactly one commit; CI builds and
-// deploys the site afterwards (1-2 minutes).
-import { GitHub, GitHubError } from './github.js';
+// NavDU news admin: edits the posts of BekkiBay/ndu through the backend in
+// deploy/api/api.py. The browser holds a session cookie, never a GitHub token;
+// the server commits and rebuilds the pages, so a post is live in seconds.
+import { Api, ApiError } from './api.js';
 import { prepareImage, blobToBase64, blobToDataUrl } from './images.js';
 import { slugify, isValidSlug } from './slug.js';
 
-const SITE_ROOT = new URL('..', location.href); // http://host:8083/  or  https://…/ndu/
-const TOKEN_KEY = 'ndu.admin.token';
-const BRANCH = localStorage.getItem('ndu.admin.branch') || 'main'; // dev override only
+const SITE_ROOT = new URL('..', location.href); // https://ndu.uz/
 const IMAGES_DIR = 'images/nsu/news/';
 const $ = (id) => document.getElementById(id);
 
 const state = {
-  gh: null,
+  user: null,           // login name of the signed-in editor
   news: null,           // {posts:[...]} as last read from the repository
   views: {},            // slug -> count
   editing: null,        // slug of the post being edited; null for a new post
@@ -78,17 +76,16 @@ function setError(id, message) {
 }
 
 function describe(e) {
-  if (e instanceof GitHubError) return `GitHub: ${e.message} (${e.status})`;
   return e && e.message ? e.message : String(e);
 }
 
-// Any 401 means the token is gone: back to the login screen.
+// Any 401 means the session is gone: back to the login screen.
 async function guarded(fn) {
   try {
     return await fn();
   } catch (e) {
-    if (e instanceof GitHubError && e.status === 401) {
-      logout('Токен отозван или истёк. Войдите заново.');
+    if (e instanceof ApiError && e.status === 401) {
+      await signOut('Сессия истекла. Войдите заново.');
       return undefined;
     }
     throw e;
@@ -97,34 +94,34 @@ async function guarded(fn) {
 
 // ---------------------------------------------------------------- auth
 
-async function login(token, fromForm) {
-  const gh = new GitHub(token, BRANCH);
+async function login(username, password) {
   $('login-btn').disabled = true;
   setError('login-error', '');
   try {
-    await gh.repo();
+    const { user } = await Api.login(username, password);
+    state.user = user;
   } catch (e) {
-    $('login-btn').disabled = false;
-    const msg = e instanceof GitHubError && e.status === 401 ? 'Токен не принят GitHub.'
-      : e instanceof GitHubError && (e.status === 403 || e.status === 404) ? 'У токена нет доступа к BekkiBay/ndu.'
-        : describe(e);
-    if (fromForm) setError('login-error', msg);
-    else localStorage.removeItem(TOKEN_KEY);
+    setError('login-error', describe(e));
     showScreen('login');
     return;
+  } finally {
+    $('login-btn').disabled = false;
   }
-  $('login-btn').disabled = false;
-  localStorage.setItem(TOKEN_KEY, token);
-  state.gh = gh;
+  $('password').value = '';
   await loadList();
 }
 
-function logout(message) {
-  localStorage.removeItem(TOKEN_KEY);
-  state.gh = null;
+// Drops the session on the server too, so the cookie cannot be replayed.
+async function signOut(message) {
+  try {
+    await Api.logout();
+  } catch {
+    // The session is being abandoned either way.
+  }
+  state.user = null;
   state.news = null;
   clearTimeout(state.runTimer);
-  $('token').value = '';
+  $('password').value = '';
   setError('login-error', message || '');
   showScreen('login');
 }
@@ -135,9 +132,7 @@ async function loadList(notice) {
   const viewsPromise = fetch(siteUrl('views/counts'), { cache: 'no-store' })
     .then((r) => (r.ok ? r.json() : {}))
     .catch(() => ({}));
-  const head = await guarded(() => state.gh.head());
-  if (!head) return;
-  state.news = await guarded(() => state.gh.readNews(head.commitSha));
+  state.news = await guarded(() => Api.news());
   if (!state.news) return;
   state.views = await viewsPromise;
   renderList();
@@ -194,10 +189,10 @@ async function pollRun() {
   const box = $('deploy');
   let run;
   try {
-    run = await state.gh.latestRun();
+    ({ run } = await Api.deploy());
   } catch (e) {
-    box.textContent = e instanceof GitHubError && e.status === 403
-      ? 'Статус деплоя: нет права Actions — Read у токена' : `Статус деплоя недоступен: ${describe(e)}`;
+    if (e instanceof ApiError && e.status === 401) return;
+    box.textContent = `Статус деплоя недоступен: ${describe(e)}`;
     return;
   }
   if (!run) {
@@ -383,21 +378,9 @@ function validate() {
   return { title, slug, date: date || null };
 }
 
-// Paths of every image of a post that lives in the post's own folder.
-function ownImages(post, dir) {
-  const out = new Set();
-  if (!post) return out;
-  if (post.cover && post.cover.startsWith(dir)) out.add(post.cover);
-  for (const p of post.gallery || []) if (p.startsWith(dir)) out.add(p);
-  const doc = new DOMParser().parseFromString(post.body || '', 'text/html');
-  for (const img of doc.querySelectorAll('img')) {
-    const src = img.getAttribute('src') || '';
-    if (src.startsWith(dir)) out.add(src);
-  }
-  return out;
-}
-
-// Turns the editor state into the post record + the files to upload.
+// Turns the editor state into the post record + the images to upload. Which
+// old images to drop is worked out by the backend (api.py: stale_images), which
+// is the only side that can see the repository.
 async function collectFiles(slug, existing) {
   const dir = `${IMAGES_DIR}${slug}/`;
   const mark = stamp();
@@ -439,13 +422,7 @@ async function collectFiles(slug, existing) {
     }
   }
 
-  const record = { cover, body, gallery };
-  const keep = ownImages(record, dir);
-  const inRepo = new Set(await state.gh.listDir(dir.slice(0, -1)));
-  for (const path of ownImages(existing, dir)) {
-    if (!keep.has(path) && inRepo.has(path)) files.push({ path, delete: true });
-  }
-  return { files, ...record };
+  return { files, cover, body, gallery };
 }
 
 async function savePost(event) {
@@ -469,16 +446,12 @@ async function savePost(event) {
       slug: v.slug, title: v.title, date: v.date, excerpt, cover, body, gallery,
       updated: new Date().toISOString().replace(/\.\d{3}Z$/, 'Z'),
     };
-    const message = `news: ${existing ? 'update' : 'add'} «${v.title}»`;
-    const result = await guarded(() => state.gh.commit(message, (news) => {
-      const i = news.posts.findIndex((p) => p.slug === v.slug);
-      if (i >= 0) news.posts[i] = record;
-      else news.posts.push(record);
-      return news;
-    }, files));
+    const result = await guarded(() => Api.savePost(v.slug, { ...record, files }));
     if (!result) return;
     state.news = result.news;
-    await loadList('Сохранено. Сайт обновится через 1–2 минуты после завершения деплоя.');
+    await loadList(result.warning
+      ? 'Сохранено в репозитории, но страницу не удалось пересобрать на сервере. Она появится после деплоя.'
+      : 'Опубликовано. Страница на сайте уже обновлена.');
   } catch (e) {
     setError('form-error', `Не удалось сохранить: ${describe(e)}`);
   } finally {
@@ -491,17 +464,14 @@ async function savePost(event) {
 async function deletePost(slug) {
   const post = findPost(slug);
   if (!post) return;
-  if (!confirm(`Удалить пост «${post.title}»? Страница и её фото исчезнут с сайта после деплоя.`)) return;
-  const dir = `${IMAGES_DIR}${slug}`;
+  if (!confirm(`Удалить пост «${post.title}»? Страница и её фото исчезнут с сайта.`)) return;
   try {
-    const files = (await guarded(() => state.gh.listDir(dir)) || []).map((path) => ({ path, delete: true }));
-    const result = await guarded(() => state.gh.commit(`news: delete «${post.title}»`, (news) => {
-      news.posts = news.posts.filter((p) => p.slug !== slug);
-      return news;
-    }, files));
+    const result = await guarded(() => Api.deletePost(slug));
     if (!result) return;
     state.news = result.news;
-    await loadList(`Пост «${post.title}» удалён. Сайт обновится через 1–2 минуты.`);
+    await loadList(result.warning
+      ? `Пост «${post.title}» удалён в репозитории; страница исчезнет с сайта после деплоя.`
+      : `Пост «${post.title}» удалён.`);
   } catch (e) {
     alert(`Не удалось удалить: ${describe(e)}`);
   }
@@ -512,9 +482,9 @@ async function deletePost(slug) {
 function boot() {
   $('login-form').addEventListener('submit', (e) => {
     e.preventDefault();
-    login($('token').value.trim(), true);
+    login($('username').value.trim(), $('password').value);
   });
-  $('logout').addEventListener('click', () => logout());
+  $('logout').addEventListener('click', () => signOut());
   $('new-post').addEventListener('click', () => openEditor(null));
   $('back').addEventListener('click', () => loadList());
   $('cancel').addEventListener('click', () => loadList());
@@ -558,9 +528,14 @@ function boot() {
     }
   });
 
-  const token = localStorage.getItem(TOKEN_KEY);
-  if (token) login(token, false);
-  else showScreen('login');
+  // The session cookie is HttpOnly, so the only way to know whether we are
+  // signed in is to ask the server.
+  Api.session()
+    .then(({ user }) => { state.user = user; return loadList(); })
+    .catch((e) => {
+      if (!(e instanceof ApiError) || e.status !== 401) setError('login-error', describe(e));
+      showScreen('login');
+    });
 }
 
 boot();

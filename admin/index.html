@@ -19,16 +19,15 @@
 <main>
   <section id="screen-login" class="card narrow">
     <h1>Вход</h1>
-    <p>Нужен GitHub fine-grained token с доступом только к репозиторию <code>BekkiBay/ndu</code>:
-       Settings → Developer settings → Personal access tokens → Fine-grained tokens → Generate new token.
-       Repository access: <b>Only select repositories → BekkiBay/ndu</b>.
-       Permissions: <b>Contents — Read and write</b>, <b>Actions — Read-only</b>.</p>
     <form id="login-form">
-      <label>Токен <input type="password" id="token" autocomplete="off" required></label>
+      <label>Логин <input type="text" id="username" autocomplete="username"
+                          autocapitalize="none" spellcheck="false" required></label>
+      <label>Пароль <input type="password" id="password" autocomplete="current-password" required></label>
       <button type="submit" class="primary" id="login-btn">Войти</button>
       <p class="error" id="login-error" hidden></p>
     </form>
-    <p class="muted">Токен хранится только в этом браузере (localStorage) и отправляется только на api.github.com.</p>
+    <p class="muted">Вход по логину и паролю. Пароль проверяет сервер сайта;
+       в браузере остаётся только сессия, она сама закрывается через 30 дней без входа.</p>
   </section>
 
   <section id="screen-list" hidden>

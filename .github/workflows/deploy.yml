@@ -106,8 +106,14 @@ jobs:
           rsync -avz --inplace --exclude 'caddy' \
             -e "ssh -i ~/.ssh/deploy_key -p ${PORT:-22}" \
             deploy/ "${USER:-root}@$HOST:/opt/ndu-static/"
+          # The admin backend runs the very same page generator as this
+          # workflow, so it is copied next to api.py rather than duplicated.
+          rsync -avz --inplace -e "ssh -i ~/.ssh/deploy_key -p ${PORT:-22}" \
+            scripts/build_news.py "${USER:-root}@$HOST:/opt/ndu-static/api/build_news.py"
           ssh -i ~/.ssh/deploy_key -p "${PORT:-22}" "${USER:-root}@$HOST" \
-            'cd /opt/ndu-static && docker compose -p ndu-static up -d \
+            'cd /opt/ndu-static \
+             && touch api.env && chmod 600 api.env \
+             && docker compose -p ndu-static up -d \
              && docker exec ndu-static nginx -t \
              && docker exec ndu-static nginx -s reload'
 
@@ -147,6 +153,14 @@ jobs:
             sleep 3
           done
           [ "$code" = "200" ] || { echo "::error::view counter did not return 200"; exit 1; }
+          # The admin backend, same story: it may still be starting.
+          for attempt in 1 2 3 4 5 6 7 8 9 10; do
+            code=$(curl -s -o /dev/null -w '%{http_code}' --max-time 20 "${{ vars.SITE_URL }}/api/health")
+            echo "GET ${{ vars.SITE_URL }}/api/health -> $code (attempt $attempt)"
+            [ "$code" = "200" ] && break
+            sleep 3
+          done
+          [ "$code" = "200" ] || { echo "::error::admin backend did not return 200 (is /opt/ndu-static/api.env set up?)"; exit 1; }
 
       - name: Clean up key
         if: always()
