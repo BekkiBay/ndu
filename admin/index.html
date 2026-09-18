@@ -51,6 +51,13 @@
     </div>
     <div class="editor">
       <form id="post-form" novalidate>
+        <div class="langs" id="langs" role="tablist" aria-label="Язык поста">
+          <button type="button" class="lang-tab is-active" data-lang="uz" role="tab">O‘zbekcha</button>
+          <button type="button" class="lang-tab" data-lang="ru" role="tab">Русский</button>
+          <button type="button" class="lang-tab" data-lang="en" role="tab">English</button>
+        </div>
+        <p class="muted" id="lang-hint">Узбекский — оригинал. Пустой перевод означает,
+           что на русской или английской странице покажется узбекский текст.</p>
         <label>Заголовок <input id="f-title" required maxlength="200" autocomplete="off"></label>
         <div class="row2">
           <label>Дата <input type="date" id="f-date"></label>

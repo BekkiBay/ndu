@@ -384,6 +384,10 @@ class Publisher:
 
 # --------------------------------------------------------------------------- posts
 
+#: Языки перевода поста; узбекский лежит в полях без суффикса.
+TRANSLATIONS = ('ru', 'en')
+
+
 def clean_post(slug, data, existing):
     """Validates the record the browser sent and returns what goes into news.json."""
     if not SLUG_RE.match(slug) or len(slug) > SLUG_MAX:
@@ -400,7 +404,7 @@ def clean_post(slug, data, existing):
     gallery = data.get('gallery') or []
     if not isinstance(gallery, list) or any(not isinstance(p, str) for p in gallery):
         raise ApiError(400, 'Галерея повреждена.')
-    return {
+    record = {
         'slug': slug,
         'title': title,
         'date': date,
@@ -410,6 +414,14 @@ def clean_post(slug, data, existing):
         'gallery': gallery,
         'updated': time.strftime('%Y-%m-%dT%H:%M:%SZ', time.gmtime()),
     }
+    # Переводы поста. Пустой перевод не сохраняется: build_news.py тогда
+    # покажет узбекский оригинал, и news.json не обрастает пустыми полями.
+    for lang in TRANSLATIONS:
+        for field in ('title', 'excerpt', 'body'):
+            value = data.get(f'{field}_{lang}')
+            if isinstance(value, str) and value.strip():
+                record[f'{field}_{lang}'] = value.strip() if field != 'body' else value
+    return record
 
 
 def clean_files(slug, files):
@@ -449,9 +461,13 @@ def referenced_images(post, prefix):
     for path in post.get('gallery') or []:
         if path.startswith(prefix):
             out.add(path)
-    for src in SRC_RE.findall(post.get('body') or ''):
-        if src.startswith(prefix):
-            out.add(src)
+    # Картинки ищутся во всех языковых версиях текста, иначе фото, вставленное
+    # только в русский или английский перевод, было бы удалено как ненужное.
+    bodies = [post.get('body') or ''] + [post.get(f'body_{lang}') or '' for lang in TRANSLATIONS]
+    for body in bodies:
+        for src in SRC_RE.findall(body):
+            if src.startswith(prefix):
+                out.add(src)
     return out
 
 

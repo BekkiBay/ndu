@@ -17,6 +17,8 @@ const state = {
   slugTouched: false,   // the user edited the slug by hand
   cover: null,          // {blob, url} pending cover, or null (keep the current one)
   gallery: [],          // [{path} | {blob, url}] in display order
+  lang: 'uz',           // language tab being edited
+  texts: null,          // {uz|ru|en: {title, excerpt, body}}; uz is the original
   quill: null,
   runTimer: null,
   saving: false,
@@ -39,13 +41,22 @@ function formatDate(iso) {
   return `${d}.${m}.${y}`;
 }
 
-const MONTHS_UZ = ['yanvar', 'fevral', 'mart', 'aprel', 'may', 'iyun',
-  'iyul', 'avgust', 'sentabr', 'oktabr', 'noyabr', 'dekabr'];
+// Те же языки и подписи, что у scripts/build_news.py.
+const LANGS = ['uz', 'ru', 'en'];
+const MONTHS = {
+  uz: ['yanvar', 'fevral', 'mart', 'aprel', 'may', 'iyun',
+    'iyul', 'avgust', 'sentabr', 'oktabr', 'noyabr', 'dekabr'],
+  ru: ['января', 'февраля', 'марта', 'апреля', 'мая', 'июня',
+    'июля', 'августа', 'сентября', 'октября', 'ноября', 'декабря'],
+  en: ['January', 'February', 'March', 'April', 'May', 'June',
+    'July', 'August', 'September', 'October', 'November', 'December'],
+};
 
-function formatDateUz(iso) {
+function formatDateUz(iso, lang = 'uz') {
   if (!iso) return '';
   const [y, m, d] = iso.split('-').map(Number);
-  return `${d}-${MONTHS_UZ[m - 1]}, ${y}`;
+  const month = MONTHS[lang][m - 1];
+  return lang === 'uz' ? `${d}-${month}, ${y}` : `${d} ${month} ${y}`;
 }
 
 // Same order as scripts/build_news.py: dated posts newest first, then undated in file order.
@@ -276,6 +287,46 @@ function absolutize(html) {
   return html.replaceAll(`src="${IMAGES_DIR}`, `src="${siteUrl(IMAGES_DIR)}`);
 }
 
+// Поле поста на конкретном языке: у узбекского оригинала суффикса нет.
+function postField(post, field, lang) {
+  if (!post) return '';
+  return (lang === 'uz' ? post[field] : post[`${field}_${lang}`]) || '';
+}
+
+// Переносит то, что сейчас в форме, в состояние текущего языка.
+function captureLang() {
+  if (!state.texts) return;
+  state.texts[state.lang] = {
+    title: $('f-title').value,
+    excerpt: $('f-excerpt').value,
+    body: bodyHtml(),
+  };
+}
+
+// Показывает в форме тексты выбранного языка.
+function applyLang(lang) {
+  const quill = ensureQuill();
+  state.lang = lang;
+  const text = state.texts[lang];
+  $('f-title').value = text.title;
+  $('f-excerpt').value = text.excerpt;
+  $('excerpt-len').textContent = String(text.excerpt.length);
+  quill.setContents([], 'silent');
+  if (text.body) quill.clipboard.dangerouslyPasteHTML(0, absolutize(text.body), 'silent');
+  quill.history.clear();
+  for (const tab of document.querySelectorAll('.lang-tab')) {
+    tab.classList.toggle('is-active', tab.dataset.lang === lang);
+  }
+  $('lang-hint').hidden = lang === 'uz';
+  renderPreview();
+}
+
+function switchLang(lang) {
+  if (lang === state.lang) return;
+  captureLang();
+  applyLang(lang);
+}
+
 function openEditor(slug) {
   const post = slug ? findPost(slug) : null;
   const quill = ensureQuill();
@@ -283,23 +334,24 @@ function openEditor(slug) {
   state.slugTouched = false;
   state.cover = null;
   state.gallery = post ? post.gallery.map((path) => ({ path })) : [];
+  state.texts = Object.fromEntries(LANGS.map((lang) => [lang, {
+    title: postField(post, 'title', lang),
+    excerpt: postField(post, 'excerpt', lang),
+    body: postField(post, 'body', lang),
+  }]));
   setError('form-error', '');
   $('edit-title').textContent = post ? 'Редактирование поста' : 'Новый пост';
-  $('f-title').value = post ? post.title : '';
   $('f-date').value = post ? (post.date || '') : today();
   $('f-slug').value = post ? post.slug : '';
   $('f-slug').readOnly = !!post;
-  $('f-excerpt').value = post ? (post.excerpt || '') : '';
-  $('excerpt-len').textContent = String($('f-excerpt').value.length);
   const cover = $('cover-preview');
   cover.hidden = !post;
   cover.src = post ? siteUrl(post.cover) : '';
   $('f-cover').value = '';
   $('f-gallery').value = '';
   $('delete').hidden = !post;
-  quill.setContents([], 'silent');
-  if (post && post.body) quill.clipboard.dangerouslyPasteHTML(0, absolutize(post.body), 'silent');
-  quill.history.clear();
+  state.lang = 'uz';
+  applyLang('uz');
   updateSlugPreview();
   renderGallery();
   renderPreview();
@@ -350,7 +402,7 @@ function currentCoverUrl() {
 function renderPreview() {
   if (!state.quill) return;
   $('p-title').textContent = $('f-title').value || 'Заголовок';
-  $('p-date').textContent = formatDateUz($('f-date').value);
+  $('p-date').textContent = formatDateUz($('f-date').value, state.lang);
   const cover = currentCoverUrl();
   $('p-hero').style.backgroundImage = cover ? `url("${cover}")` : '';
   $('p-body').innerHTML = bodyHtml();
@@ -367,8 +419,12 @@ function renderPreview() {
 // ---------------------------------------------------------------- save
 
 function validate() {
-  const title = $('f-title').value.trim();
-  if (!title) return { error: 'Введите заголовок.', focus: 'f-title' };
+  captureLang();
+  const title = state.texts.uz.title.trim();
+  if (!title) {
+    if (state.lang !== 'uz') applyLang('uz');
+    return { error: 'Введите заголовок на узбекском — это оригинал поста.', focus: 'f-title' };
+  }
   const slug = $('f-slug').value.trim();
   if (!isValidSlug(slug)) return { error: 'Slug: только латинские буквы, цифры и дефисы, до 80 символов.', focus: 'f-slug' };
   if (!state.editing && findPost(slug)) return { error: `Slug «${slug}» уже занят другим постом.`, focus: 'f-slug' };
@@ -392,22 +448,28 @@ async function collectFiles(slug, existing) {
     files.push({ path: cover, base64: await blobToBase64(state.cover.blob) });
   }
 
-  const doc = new DOMParser().parseFromString(bodyHtml(), 'text/html');
+  // Картинки нумеруются сквозняком по всем языкам, чтобы вставленная только в
+  // перевод фотография не затёрла файл узбекской версии.
   let n = 0;
-  for (const img of doc.querySelectorAll('img')) {
-    const src = img.getAttribute('src') || '';
-    if (src.startsWith('data:image/')) {
-      n += 1;
-      const path = `${dir}${mark}-${String(n).padStart(2, '0')}.jpg`;
-      files.push({ path, base64: src.split(',')[1] });
-      img.setAttribute('src', path);
-    } else if (src.startsWith(siteUrl(IMAGES_DIR))) {
-      img.setAttribute('src', src.slice(SITE_ROOT.href.length));
+  const bodies = {};
+  for (const lang of LANGS) {
+    const doc = new DOMParser().parseFromString(state.texts[lang].body, 'text/html');
+    for (const img of doc.querySelectorAll('img')) {
+      const src = img.getAttribute('src') || '';
+      if (src.startsWith('data:image/')) {
+        n += 1;
+        const path = `${dir}${mark}-${String(n).padStart(2, '0')}.jpg`;
+        files.push({ path, base64: src.split(',')[1] });
+        img.setAttribute('src', path);
+      } else if (src.startsWith(siteUrl(IMAGES_DIR))) {
+        img.setAttribute('src', src.slice(SITE_ROOT.href.length));
+      }
     }
+    // Quill leaves an empty paragraph where an image or a line was removed; the site
+    // does not need blank lines, so drop every empty paragraph, not just trailing ones.
+    bodies[lang] = doc.body.innerHTML.trim().replace(/<p>(<br>|\s|&nbsp;)*<\/p>\s*/g, '').trim();
   }
-  // Quill leaves an empty paragraph where an image or a line was removed; the site
-  // does not need blank lines, so drop every empty paragraph, not just trailing ones.
-  const body = doc.body.innerHTML.trim().replace(/<p>(<br>|\s|&nbsp;)*<\/p>\s*/g, '').trim();
+  const body = bodies.uz;
 
   const gallery = [];
   let g = 0;
@@ -422,7 +484,7 @@ async function collectFiles(slug, existing) {
     }
   }
 
-  return { files, cover, body, gallery };
+  return { files, cover, body, bodies, gallery };
 }
 
 async function savePost(event) {
@@ -440,12 +502,19 @@ async function savePost(event) {
   $('save').textContent = 'Публикуется…';
   try {
     const existing = state.editing ? findPost(state.editing) : null;
-    const { files, cover, body, gallery } = await collectFiles(v.slug, existing);
-    const excerpt = $('f-excerpt').value.trim();
+    const { files, cover, body, bodies, gallery } = await collectFiles(v.slug, existing);
     const record = {
-      slug: v.slug, title: v.title, date: v.date, excerpt, cover, body, gallery,
+      slug: v.slug, title: v.title, date: v.date,
+      excerpt: state.texts.uz.excerpt.trim(), cover, body, gallery,
       updated: new Date().toISOString().replace(/\.\d{3}Z$/, 'Z'),
     };
+    // Пустой перевод не отправляется: страница на этом языке покажет оригинал.
+    for (const lang of LANGS.filter((l) => l !== 'uz')) {
+      const text = state.texts[lang];
+      if (text.title.trim()) record[`title_${lang}`] = text.title.trim();
+      if (text.excerpt.trim()) record[`excerpt_${lang}`] = text.excerpt.trim();
+      if (bodies[lang]) record[`body_${lang}`] = bodies[lang];
+    }
     const result = await guarded(() => Api.savePost(v.slug, { ...record, files }));
     if (!result) return;
     state.news = result.news;
@@ -491,8 +560,16 @@ function boot() {
   $('post-form').addEventListener('submit', savePost);
   $('delete').addEventListener('click', () => state.editing && deletePost(state.editing));
 
+  $('langs').addEventListener('click', (e) => {
+    const tab = e.target.closest('.lang-tab');
+    if (tab) switchLang(tab.dataset.lang);
+  });
+
   $('f-title').addEventListener('input', () => {
-    if (!state.editing && !state.slugTouched) $('f-slug').value = slugify($('f-title').value);
+    // Slug строится только из узбекского заголовка: он один и тот же для всех языков.
+    if (!state.editing && !state.slugTouched && state.lang === 'uz') {
+      $('f-slug').value = slugify($('f-title').value);
+    }
     updateSlugPreview();
     renderPreview();
   });

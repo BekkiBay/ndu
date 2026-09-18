@@ -43,7 +43,8 @@ services:
       SITE_ROOT: /site
       BUILD_SCRIPT: /app/build_news.py
     volumes:
-      # api.py plus the copy of scripts/build_news.py the deploy puts here.
+      # api.py plus the copies of scripts/build_news.py, build_i18n.py and
+      # i18n.py the deploy puts here (the generator imports the other two).
       - ./api:/app:ro
       # Writable on purpose: this is how a published post reaches the site at once.
       - ${NDU_ROOT:-/var/www/ndu}:/site

@@ -24,10 +24,11 @@ jobs:
     steps:
       - uses: actions/checkout@v4
 
-      - name: Build news pages
+      - name: Build the translated pages and the news
         run: |
-          python3 scripts/build_news.py
           python3 scripts/stamp_assets.py
+          python3 scripts/build_i18n.py
+          python3 scripts/build_news.py
 
       - name: Check deploy secrets are configured
         id: guard
@@ -82,9 +83,12 @@ jobs:
             --exclude '.DS_Store' \
             ./ "${USER:-root}@$HOST:$DEST/"
           # The only deletion the deploy ever performs: pages of posts that
-          # were removed from content/news.json. The filter limits --delete
-          # to news-*.html; nothing else on the server is touched.
-          rsync -av --delete --include='news-*.html' --exclude='*' \
+          # were removed from content/news.json. The filter limits --delete to
+          # news-*.html in the three language trees; nothing else is touched.
+          rsync -av --delete \
+            --include='ru/' --include='en/' \
+            --include='news-*.html' --include='ru/news-*.html' --include='en/news-*.html' \
+            --exclude='*' \
             -e "ssh -i ~/.ssh/deploy_key -p ${PORT:-22}" \
             ./ "${USER:-root}@$HOST:$DEST/"
 
@@ -108,8 +112,10 @@ jobs:
             deploy/ "${USER:-root}@$HOST:/opt/ndu-static/"
           # The admin backend runs the very same page generator as this
           # workflow, so it is copied next to api.py rather than duplicated.
+          # build_news.py imports i18n.py and build_i18n.py, so all three go.
           rsync -avz --inplace -e "ssh -i ~/.ssh/deploy_key -p ${PORT:-22}" \
-            scripts/build_news.py "${USER:-root}@$HOST:/opt/ndu-static/api/build_news.py"
+            scripts/build_news.py scripts/build_i18n.py scripts/i18n.py \
+            "${USER:-root}@$HOST:/opt/ndu-static/api/"
           ssh -i ~/.ssh/deploy_key -p "${PORT:-22}" "${USER:-root}@$HOST" \
             'cd /opt/ndu-static \
              && touch api.env && chmod 600 api.env \
@@ -182,10 +188,11 @@ jobs:
     steps:
       - uses: actions/checkout@v4
 
-      - name: Build news pages
+      - name: Build the translated pages and the news
         run: |
-          python3 scripts/build_news.py
           python3 scripts/stamp_assets.py
+          python3 scripts/build_i18n.py
+          python3 scripts/build_news.py
       - uses: actions/configure-pages@v5
       - uses: actions/upload-pages-artifact@v3
         with:

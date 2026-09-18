@@ -1,5 +1,5 @@
 /* Первый экран главной — hero из Макета 3 (дизайн UDEA), пересаженный в
-   шаблон WIUT. Все правила ограничены .hero, чтобы не задевать Bootstrap и
+   базовый шаблон. Все правила ограничены .hero, чтобы не задевать Bootstrap и
    Helix; переменные тоже объявлены на .hero, а не на :root. */
 
 .hero {
@@ -26,11 +26,11 @@
   color: #fff;
 }
 .hero h1, .hero p { margin: 0; }
-/* Шаблон WIUT навешивает свой шрифт через !important, перебиваем тем же. */
+/* Базовый шаблон навешивает свой шрифт через !important, перебиваем тем же. */
 #hero, #hero * { font-family: var(--font-sans) !important; }
 .hero a { color: inherit; text-decoration: none; }
 .hero img, .hero svg, .hero video { display: block; max-width: 100%; }
-/* Шаблон WIUT уменьшает span внутри заголовков — наследуем размер от h1. */
+/* Базовый шаблон уменьшает span внутри заголовков — наследуем размер от h1. */
 #hero .hero__title span { font: inherit !important; }
 .hero .ico { width: 1em; height: 1em; fill: none; stroke: currentColor; stroke-width: 2; stroke-linecap: round; stroke-linejoin: round; flex-shrink: 0; }
 
@@ -91,7 +91,7 @@
 
 /* Заголовок, текст и кнопки — как в hero Макета 2 (Geist 600, плотный трекинг,
    синяя кнопка со стрелкой + «призрак»). #hero нужен для специфичности:
-   шаблон WIUT задаёт h1 свой шрифт через id-селектор. */
+   базовый шаблон задаёт h1 свой шрифт через id-селектор. */
 #hero .hero__title, #hero .hero__title span {
   font-family: var(--font-sans) !important;
   font-size: 36px;
@@ -107,7 +107,7 @@
 .hero .hero__text { color: rgba(255, 255, 255, .85); font-size: 17px; line-height: 1.6; font-weight: 400; max-width: 600px; margin: 0 0 30px; }
 
 /* .btn / .btn--ghost Макета 2; класс переименован, чтобы не пересекаться
-   с .btn Bootstrap из шаблона WIUT. */
+   с .btn Bootstrap из базового шаблона. */
 .hero__actions { display: flex; gap: 12px; flex-wrap: wrap; }
 .hero-btn {
   position: relative;

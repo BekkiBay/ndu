@@ -37,6 +37,35 @@ DONOR = '''<!DOCTYPE html><html><head>
 '''
 
 
+class LanguageTests(unittest.TestCase):
+    def test_date_format_per_language(self):
+        self.assertEqual(bn.format_date('2026-09-07', 'uz'), '7-sentabr, 2026')
+        self.assertEqual(bn.format_date('2026-09-07', 'ru'), '7 сентября 2026')
+        self.assertEqual(bn.format_date('2026-09-07', 'en'), '7 September 2026')
+
+    def test_field_falls_back_to_the_uzbek_original(self):
+        p = post(title='Sarlavha', title_ru='Заголовок')
+        self.assertEqual(bn.field(p, 'title', 'uz'), 'Sarlavha')
+        self.assertEqual(bn.field(p, 'title', 'ru'), 'Заголовок')
+        self.assertEqual(bn.field(p, 'title', 'en'), 'Sarlavha')
+
+    def test_a_blank_translation_falls_back_too(self):
+        self.assertEqual(bn.field(post(title='Sarlavha', title_ru='  '), 'title', 'ru'), 'Sarlavha')
+
+    def test_assets_of_a_translated_page_move_one_level_up(self):
+        self.assertEqual(bn.asset('images/x.jpg', 'uz'), 'images/x.jpg')
+        self.assertEqual(bn.asset('images/x.jpg', 'ru'), '../images/x.jpg')
+
+    def test_links_inside_a_translated_body_move_too(self):
+        body = '<p><img src="images/nsu/news/a/01.jpg"><a href="news.html">x</a>' \
+               '<a href="https://nsu.uz">y</a></p>'
+        out = bn.relocate_html(body, 'en')
+        self.assertIn('src="../images/nsu/news/a/01.jpg"', out)
+        self.assertIn('href="news.html"', out)
+        self.assertIn('href="https://nsu.uz"', out)
+        self.assertEqual(bn.relocate_html(body, 'uz'), body)
+
+
 class DateTests(unittest.TestCase):
     def test_uzbek_format(self):
         self.assertEqual(bn.format_date_uz('2026-09-07'), '7-sentabr, 2026')
@@ -136,6 +165,43 @@ class RenderTests(unittest.TestCase):
     def setUp(self):
         self.shell = bn.Shell.from_donor(DONOR)
 
+    def test_russian_post_page(self):
+        shell = bn.Shell.from_donor(DONOR, lang='ru')
+        p = post(title='Sarlavha', title_ru='Заголовок', excerpt_ru='Анонс',
+                 body_ru='<p>Текст</p>', gallery=['images/nsu/news/test-post/g01.jpg'])
+        out = bn.render_post(p, shell, 'ru')
+        self.assertIn('<title>Заголовок — NavDU</title>', out)
+        self.assertIn('<h1>Заголовок</h1>', out)
+        self.assertIn('<div class="nsu-post-body"><p>Текст</p></div>', out)
+        self.assertIn('7 сентября 2026', out)
+        self.assertIn('<a href="index.html">Главная</a>', out)
+        self.assertIn('<a href="news.html">Новости</a>', out)
+        self.assertIn('Просмотры:', out)
+        self.assertIn("fetch('../views/hit'", out)
+        self.assertIn('background-image:url(../images/nsu/news/test-post/cover.jpg)', out)
+        self.assertIn('href="../images/nsu/news/test-post/g01.jpg"', out)
+        self.assertIn('Есть вопрос или предложение?', out)
+
+    def test_english_post_falls_back_to_the_uzbek_text(self):
+        shell = bn.Shell.from_donor(DONOR, lang='en')
+        out = bn.render_post(post(title='Sarlavha', body='<p>Matn</p>'), shell, 'en')
+        self.assertIn('<title>Sarlavha — NavDU</title>', out)
+        self.assertIn('<div class="nsu-post-body"><p>Matn</p></div>', out)
+        # The shell around it is still English.
+        self.assertIn('<a href="news.html">News</a>', out)
+        self.assertIn('7 September 2026', out)
+
+    def test_translated_listing_and_carousel(self):
+        shell = bn.Shell.from_donor(DONOR, lang='ru')
+        posts = [post(slug='a', title='Sarlavha', title_ru='Заголовок', date=None)]
+        out = bn.render_list(posts, shell, 'ru')
+        self.assertIn('<title>Новости и объявления — NavDU</title>', out)
+        self.assertIn('<span class="nsu-news-tag">НОВОСТИ</span><h4>Заголовок</h4>', out)
+        self.assertIn('background-image:url(../images/nsu/news/campus.jpg)', out)
+        index = bn.patch_carousel('X<!-- news:carousel --><!-- /news:carousel -->Y', posts, 'ru')
+        self.assertIn('>Заголовок</a>', index)
+        self.assertIn('itemprop="genre">НОВОСТИ</a>', index)
+
     def test_post_page(self):
         p = post(title='A & B', excerpt='Ex', gallery=['images/nsu/news/test-post/g01.jpg'])
         out = bn.render_post(p, self.shell)
@@ -232,6 +298,29 @@ class BuildTests(unittest.TestCase):
         self.write_posts([post(slug='a', cover='missing.jpg')])
         with self.assertRaises(bn.BuildError):
             bn.build(self.root)
+
+    def test_only_languages_with_a_shell_are_built(self):
+        self.assertEqual(bn.languages(self.root), ['uz'])
+        (self.root / 'ru').mkdir()
+        (self.root / 'ru/contact.html').write_text(DONOR, encoding='utf-8')
+        (self.root / 'ru/index.html').write_text(
+            'X<!-- news:carousel -->old<!-- /news:carousel -->Y', encoding='utf-8')
+        self.assertEqual(bn.languages(self.root), ['uz', 'ru'])
+        result = bn.build(self.root)
+        self.assertIn('ru/news-a.html', result['written'])
+        self.assertIn('ru/news.html', result['written'])
+        self.assertTrue((self.root / 'ru/news-a.html').is_file())
+        self.assertFalse((self.root / 'en').exists())
+
+    def test_a_stale_translated_post_page_is_deleted(self):
+        (self.root / 'ru').mkdir()
+        (self.root / 'ru/contact.html').write_text(DONOR, encoding='utf-8')
+        (self.root / 'ru/index.html').write_text(
+            'X<!-- news:carousel -->old<!-- /news:carousel -->Y', encoding='utf-8')
+        (self.root / 'ru/news-gone.html').write_text('stale', encoding='utf-8')
+        result = bn.build(self.root)
+        self.assertIn('ru/news-gone.html', result['deleted'])
+        self.assertFalse((self.root / 'ru/news-gone.html').exists())
 
     def test_main_reports_error_without_traceback(self):
         self.write_posts([post(slug='Bad Slug', cover='images/nsu/news/a/cover.jpg')])

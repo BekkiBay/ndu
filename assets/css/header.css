@@ -27,7 +27,7 @@
   line-height: 1.5;
 }
 
-/* ---------- локальный reset (шаблон WIUT задаёт шрифт через !important) ---------- */
+/* ---------- локальный reset (базовый шаблон задаёт шрифт через !important) ---------- */
 .site-header, .site-header *, .mobile-menu, .mobile-menu * { font-family: var(--font-sans) !important; box-sizing: border-box; }
 .site-header button, .mobile-menu button { font: inherit; color: inherit; background: none; border: 0; padding: 0; cursor: pointer; }
 .site-header ul, .mobile-menu ul { margin: 0; padding: 0; list-style: none; }
@@ -101,9 +101,10 @@ body.is-locked { overflow: hidden; }
   box-shadow: var(--sh-lg);
 }
 .lang.is-open .lang__menu { display: block; }
-.lang__menu button { display: block; width: 100%; text-align: left; padding: 8px 10px; border-radius: 6px; font-size: 14px; }
-.lang__menu button:hover { background: var(--gray-100); }
-.lang__menu button.is-active { color: var(--navy); font-weight: 600; }
+.lang__menu a { display: flex; align-items: center; gap: 8px; width: 100%; padding: 8px 10px; border-radius: 6px; font-size: 14px; color: inherit; }
+.lang__menu a:hover { background: var(--gray-100); }
+.lang__menu a.is-active { color: var(--navy); font-weight: 600; }
+.lang__menu .lang__flag { flex: none; }
 
 .mainnav {
   position: fixed;
@@ -293,10 +294,10 @@ body.is-locked { overflow: hidden; }
 .mobile-menu .mm__sub--nested .mm__link:hover { background: rgba(229, 231, 235, .5); }
 @media (min-width: 1024px) { .mobile-menu { display: none; } }
 
-/* ---------- стыковка с внутренними страницами WIUT ----------
+/* ---------- стыковка с внутренними страницами шаблона ----------
    Шапка фиксированная и прозрачная, поэтому тёмный баннер страницы
    получает запас сверху, чтобы хлебные крошки не уехали под меню. */
-/* wiut-inline.css задаёт #sp-page-title { margin-top: 30px !important } под старую шапку. */
+/* template-inline.css задаёт #sp-page-title { margin-top: 30px !important } под старую шапку. */
 #sp-page-title.nsu-page-hero { margin-top: 0 !important; }
 .nsu-page-hero .nsu-hero-inner { padding-top: 150px; }
 @media (max-width: 991px) { .nsu-page-hero .nsu-hero-inner { padding-top: 118px; } }

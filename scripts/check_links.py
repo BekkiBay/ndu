@@ -19,7 +19,7 @@ ASSET = re.compile(
     r'(?:src|href)="((?!http|mailto|tel|#|//|data:)[^"]+\.'
     r'(?:css|js|png|jpe?g|gif|svg|webp|ico|woff2?|ttf|eot|otf|pdf|mp4|webm))"'
 )
-PAGE = re.compile(r'href="([^"#?]+\.html)"')
+PAGE = re.compile(r'href="((?!http|//|mailto:|tel:)[^"#?]+\.html)"')
 CSS_REF = re.compile(r'url\(\s*["\']?([^"\')]+)["\']?\s*\)')
 CSS_IMPORT = re.compile(r'@import\s+(?:url\(\s*)?["\']([^"\']+)["\']')
 LEGACY_FONT = re.compile(r'\.(eot|svg)(\?|#|$)')
@@ -37,7 +37,11 @@ def resolve(ref, base_dir):
     return os.path.normpath(os.path.join(base_dir, path))
 
 
+# Узбекская версия лежит в корне, переводы — в ru/ и en/ (их собирает
+# scripts/build_i18n.py). Ссылки в переводах относительные, поэтому каждая
+# страница проверяется относительно своего каталога.
 pages = sorted(glob.glob('*.html'))
+pages += sorted(glob.glob('ru/*.html')) + sorted(glob.glob('en/*.html'))
 if not pages:
     sys.exit('no html pages found')
 
@@ -45,12 +49,14 @@ known = set(pages)
 errors, warnings = [], []
 
 for page in pages:
+    base = os.path.dirname(page)
     html = open(page, encoding='utf-8').read()
-    for target in sorted(set(PAGE.findall(html))):
+    for ref in sorted(set(PAGE.findall(html))):
+        target = resolve(ref, base)
         if target not in known:
-            errors.append(f'{page}: missing page {target}')
+            errors.append(f'{page}: missing page {ref}')
     for ref in sorted(set(ASSET.findall(html))):
-        target = resolve(ref, '')
+        target = resolve(ref, base)
         if target and not os.path.isfile(target):
             errors.append(f'{page}: missing asset {ref}')
 

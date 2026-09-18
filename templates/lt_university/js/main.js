@@ -6,7 +6,7 @@
  */
 
 /* ===== PRELOADER =====
- * The template shipped a WIUT-branded intro video here. The NavDU mock-up
+ * The template shipped a branded intro video here. The NavDU site
  * does not carry that footage, so the preloader just gets out of the way.
  */
 

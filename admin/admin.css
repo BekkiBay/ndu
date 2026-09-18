@@ -28,6 +28,12 @@ input[type=text],input[type=password],input[type=date],input:not([type]),textare
 input:read-only{background:var(--light);color:var(--muted)}
 textarea{resize:vertical}
 .row2{display:grid;grid-template-columns:200px 1fr;gap:16px}
+/* Вкладки языков поста: узбекский — оригинал, русский и английский — переводы. */
+.langs{display:flex;gap:4px;border-bottom:1px solid var(--border);margin:0 0 12px}
+.lang-tab{border:1px solid transparent;border-bottom:0;border-radius:4px 4px 0 0;padding:7px 14px;margin-bottom:-1px;color:var(--muted);background:none;font-size:14px}
+.lang-tab:hover{color:var(--text)}
+.lang-tab.is-active{background:#fff;border-color:var(--border);color:var(--primary);font-weight:600}
+#lang-hint{font-size:13px;margin:0 0 14px}
 .field{margin:0 0 16px}
 .field .label{display:block;font-weight:600;font-size:13px;color:var(--muted);margin:0 0 6px}
 .table-wrap{overflow-x:auto;background:#fff;border:1px solid var(--border);border-radius:6px}

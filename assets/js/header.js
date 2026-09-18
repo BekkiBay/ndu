@@ -2,12 +2,11 @@
    мобильное меню.
 
    Обработчики висят на document, а элементы ищутся в момент события:
-   скрипты шаблона WIUT (Helix / SP Page Builder) пересобирают часть DOM
+   скрипты базового шаблона (Helix / SP Page Builder) пересобирают часть DOM
    после загрузки, и прямые ссылки на элементы шапки устаревают. */
 (function () {
   'use strict';
   var $ = function (s, r) { return (r || document).querySelector(s); };
-  var $$ = function (s, r) { return Array.prototype.slice.call((r || document).querySelectorAll(s)); };
 
   /* ---------- scrolled state ---------- */
   function onScroll() {
@@ -37,7 +36,6 @@
     if (!t || !t.closest) return;
 
     var langBtn = t.closest('.lang__btn');
-    var langItem = t.closest('.lang__menu button');
     var lang = $('#lang');
     if (langBtn && lang) {
       e.stopPropagation();
@@ -45,13 +43,8 @@
       langBtn.setAttribute('aria-expanded', String(open));
       return;
     }
-    if (langItem && lang) {
-      $$('.lang__menu button', lang).forEach(function (x) { x.classList.remove('is-active'); });
-      langItem.classList.add('is-active');
-      $('.lang__label', lang).textContent = langItem.dataset.label;
-      lang.classList.remove('is-open');
-      return;
-    }
+    /* Пункты меню — обычные ссылки на ту же страницу в /ru/ или /en/:
+       достаточно закрыть список и не мешать переходу. */
     if (lang) lang.classList.remove('is-open');
 
     if (t.closest('#burgerBtn')) { setMenu(true); return; }

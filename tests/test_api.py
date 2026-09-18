@@ -167,6 +167,21 @@ class RecordTests(unittest.TestCase):
         with self.assertRaises(api.ApiError):
             api.clean_post('test', self.payload(cover=None), None)
 
+    def test_translations_are_kept(self):
+        record = api.clean_post('test', self.payload(
+            title_ru=' Заголовок ', excerpt_ru='Анонс', body_ru='<p>Текст</p>',
+            title_en='Title', excerpt_en='Lead', body_en='<p>Body</p>'), None)
+        self.assertEqual(record['title_ru'], 'Заголовок')
+        self.assertEqual(record['body_ru'], '<p>Текст</p>')
+        self.assertEqual(record['title_en'], 'Title')
+        self.assertEqual(record['excerpt_en'], 'Lead')
+
+    def test_empty_translations_are_not_stored(self):
+        record = api.clean_post('test', self.payload(
+            title_ru='   ', excerpt_ru='', body_ru='', title_en=None), None)
+        for key in ('title_ru', 'excerpt_ru', 'body_ru', 'title_en'):
+            self.assertNotIn(key, record)
+
 
 class FileTests(unittest.TestCase):
     def test_upload_inside_the_post_folder_is_accepted(self):
@@ -197,6 +212,15 @@ class FileTests(unittest.TestCase):
                 'body': f'<p>a</p><img src="{prefix}01.jpg"><img src="https://x/y.jpg">'}
         self.assertEqual(api.referenced_images(post, prefix),
                          {prefix + 'cover.jpg', prefix + 'g01.jpg', prefix + '01.jpg'})
+
+    def test_referenced_images_covers_the_translated_bodies(self):
+        # A photo used only in the Russian or English text must not look stale.
+        prefix = 'images/nsu/news/test/'
+        post = {'cover': prefix + 'cover.jpg', 'gallery': [], 'body': '',
+                'body_ru': f'<img src="{prefix}ru.jpg">',
+                'body_en': f'<img src="{prefix}en.jpg">'}
+        self.assertEqual(api.referenced_images(post, prefix),
+                         {prefix + 'cover.jpg', prefix + 'ru.jpg', prefix + 'en.jpg'})
 
     def test_stale_images_keeps_referenced_and_uploading(self):
         prefix = 'images/nsu/news/test/'
