@@ -38,10 +38,19 @@ class BuildError(Exception):
     """Ошибка входных данных; печатается без трейсбека."""
 
 
+#: Страницы, которые пишет build_news.py для каждого языка сам: список
+#: новостей и страницы разделов (content/news.json, поле ``section``).
+GENERATED_PAGES = frozenset({'news.html', 'kelajakka-qadam.html'})
+
+
+def is_generated(name):
+    """Страница генерируется build_news.py, а не переводится отсюда."""
+    return name in GENERATED_PAGES or name.startswith('news-')
+
+
 def source_pages():
     """Узбекские страницы в корне, кроме генерируемых новостных."""
-    return sorted(p for p in i18n.ROOT.glob('*.html')
-                  if not p.name.startswith('news-') and p.name != 'news.html')
+    return sorted(p for p in i18n.ROOT.glob('*.html') if not is_generated(p.name))
 
 
 def lang_switcher(lang, page, indent='        '):
@@ -128,7 +137,7 @@ def build(langs=('ru', 'en'), quiet=False):
     if not pages:
         raise BuildError('в корне нет страниц')
     page_links = {p.name for p in i18n.ROOT.glob('*.html')}
-    page_links.update({'news.html'})
+    page_links.update(GENERATED_PAGES)
 
     # Узбекские страницы тоже проходят через render: переключатель языка и
     # ссылки hreflang должны быть одинаковыми во всех трёх версиях.
@@ -161,7 +170,7 @@ def prune(folder, keep):
     for path in folder.glob('*.html'):
         if path.name in keep:
             continue
-        if path.name == 'news.html' or path.name.startswith('news-'):
+        if is_generated(path.name):
             continue          # их держит build_news.py
         path.unlink()
 

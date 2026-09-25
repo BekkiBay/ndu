@@ -28,6 +28,7 @@ DONOR = '''<!DOCTYPE html><html><head>
 <a class="is-active" data-label="O‘zbekcha">UZ</a>
 <a class="menu__link is-active" href="contact.html">Bogʻlanish</a>
 <a class="menu__link" href="news.html">Yangiliklar</a>
+<a class="menu__link" href="kelajakka-qadam.html">Kelajakka qadam dasturi</a>
 <a class="mm__link" href="news.html">Yangiliklar</a>
 \t\t\t\t<section id="sp-page-title" class="nsu-page-hero">OLD CONTENT</section><section id="sp-main-body">OLD</section><!-- ====== FOOTER (из Макета 2) ====== -->
 <footer>F</footer>
@@ -275,7 +276,8 @@ class BuildTests(unittest.TestCase):
 
     def test_writes_pages_and_patches_index(self):
         result = bn.build(self.root)
-        self.assertEqual(sorted(result['written']), ['index.html', 'news-a.html', 'news.html'])
+        self.assertEqual(sorted(result['written']),
+                         ['index.html', 'kelajakka-qadam.html', 'news-a.html', 'news.html'])
         self.assertIn('data-views="a"', (self.root / 'news-a.html').read_text(encoding='utf-8'))
         index = (self.root / 'index.html').read_text(encoding='utf-8')
         self.assertTrue(index.startswith('X<!-- news:carousel --><div role="article"'))
@@ -293,6 +295,29 @@ class BuildTests(unittest.TestCase):
         result = bn.build(self.root)
         self.assertEqual(result['deleted'], ['news-gone.html'])
         self.assertFalse((self.root / 'news-gone.html').exists())
+
+    def test_a_section_post_leaves_the_news_for_its_own_page(self):
+        self.write_posts([post(slug='a', cover='images/nsu/news/a/cover.jpg'),
+                          post(slug='k', cover='images/nsu/news/a/cover.jpg', title='Dastur',
+                               section='kelajakka-qadam')])
+        bn.build(self.root)
+        read = lambda name: (self.root / name).read_text(encoding='utf-8')
+        self.assertIn('href="news-a.html"', read('news.html'))
+        self.assertNotIn('href="news-k.html"', read('news.html'))
+        self.assertNotIn('news-k.html', read('index.html'))
+        section = read('kelajakka-qadam.html')
+        self.assertIn('href="news-k.html"', section)
+        self.assertNotIn('href="news-a.html"', section)
+        self.assertIn('class="menu__link is-active" href="kelajakka-qadam.html"', section)
+        page = read('news-k.html')
+        self.assertIn('<a href="kelajakka-qadam.html">Kelajakka qadam dasturi</a>', page)
+        self.assertIn('class="menu__link is-active" href="kelajakka-qadam.html"', page)
+        self.assertIn('class="menu__link" href="news.html"', page)
+
+    def test_unknown_section_is_a_build_error(self):
+        self.write_posts([post(slug='a', cover='images/nsu/news/a/cover.jpg', section='nope')])
+        with self.assertRaises(bn.BuildError):
+            bn.build(self.root)
 
     def test_invalid_data_is_a_build_error(self):
         self.write_posts([post(slug='a', cover='missing.jpg')])

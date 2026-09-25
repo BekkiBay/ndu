@@ -401,6 +401,11 @@ def clean_post(slug, data, existing):
     cover = data.get('cover') or (existing or {}).get('cover')
     if not cover:
         raise ApiError(400, 'Выберите обложку.')
+    # Раздел сайта (build_news.SECTIONS). Админка его не показывает, поэтому
+    # при правке поста раздел берётся из уже сохранённой записи.
+    section = data.get('section', (existing or {}).get('section'))
+    if section is not None and not (isinstance(section, str) and SLUG_RE.match(section)):
+        raise ApiError(400, 'Неверный раздел.')
     gallery = data.get('gallery') or []
     if not isinstance(gallery, list) or any(not isinstance(p, str) for p in gallery):
         raise ApiError(400, 'Галерея повреждена.')
@@ -414,6 +419,8 @@ def clean_post(slug, data, existing):
         'gallery': gallery,
         'updated': time.strftime('%Y-%m-%dT%H:%M:%SZ', time.gmtime()),
     }
+    if section:
+        record['section'] = section
     # Переводы поста. Пустой перевод не сохраняется: build_news.py тогда
     # покажет узбекский оригинал, и news.json не обрастает пустыми полями.
     for lang in TRANSLATIONS:

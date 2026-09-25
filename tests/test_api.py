@@ -142,6 +142,11 @@ class RecordTests(unittest.TestCase):
         self.assertEqual(record['date'], '2026-09-10')
         self.assertTrue(record['updated'].endswith('Z'))
 
+    def test_section_survives_an_edit_from_the_admin(self):
+        existing = {'slug': 'test', 'section': 'kelajakka-qadam'}
+        self.assertEqual(api.clean_post('test', self.payload(), existing)['section'], 'kelajakka-qadam')
+        self.assertNotIn('section', api.clean_post('test', self.payload(), None))
+
     def test_empty_date_becomes_null(self):
         self.assertIsNone(api.clean_post('test', self.payload(date=''), None)['date'])
 

@@ -3,7 +3,9 @@
 
 Writes news-<slug>.html for every post, news.html (the listing) and replaces
 the block between the news:carousel markers in index.html with the latest
-posts. The page shell (head, header, menu, footer, scripts) is taken from
+posts. A post with a ``section`` (see SECTIONS) is listed on that section's own
+page, which has its own item in the main menu, instead of news.html and the
+carousel. The page shell (head, header, menu, footer, scripts) is taken from
 contact.html on every run, so header and footer changes reach the news pages
 without a separate template.
 
@@ -41,6 +43,24 @@ LIST_HERO = 'images/nsu/news/campus.jpg'
 SEAL = 'images/nsu/nsu-seal-navy.png'
 
 LANGS = i18n.LANGS
+
+#: Разделы сайта, которые собираются из тех же постов content/news.json.
+#: Пост с ``"section": "<ключ>"`` попадает на страницу раздела, а не в
+#: Yangiliklar. Страница раздела есть в главном меню каждой страницы сайта
+#: и в build_i18n.GENERATED_PAGES.
+SECTIONS = {
+    'kelajakka-qadam': {
+        'page': 'kelajakka-qadam.html',
+        'hero': 'images/nsu/news/kelajakka-qadam-dasturi/20260924-144311-cover.jpg',
+        'uz': ('Kelajakka qadam dasturi',
+               '“Kelajakka qadam” dasturi doirasidagi imkoniyatlar, e’lonlar va yangiliklar.'),
+        'ru': ('Программа «Kelajakka qadam»',
+               'Возможности, объявления и новости программы «Kelajakka qadam» («Шаг в будущее»).'),
+        'en': ('Kelajakka qadam programme',
+               'Opportunities, announcements and news of the “Kelajakka qadam” '
+               '(“Step into the Future”) programme.'),
+    },
+}
 
 MONTHS_UZ = ['yanvar', 'fevral', 'mart', 'aprel', 'may', 'iyun',
              'iyul', 'avgust', 'sentabr', 'oktabr', 'noyabr', 'dekabr']
@@ -162,6 +182,9 @@ def validate_posts(posts, root):
         if not (p.get('title') or '').strip():
             raise BuildError(f'{slug}: empty title')
         parse_date(p.get('date'))
+        section = p.get('section')
+        if section is not None and section not in SECTIONS:
+            raise BuildError(f'{slug}: unknown section {section!r}, expected one of {sorted(SECTIONS)}')
         cover = p.get('cover') or ''
         if not cover or not (root / cover).is_file():
             raise BuildError(f'{slug}: cover file {cover!r} does not exist')
@@ -195,15 +218,21 @@ class Shell:
         self.head, self.tail, self.lang = head, tail, lang
 
     @classmethod
-    def from_donor(cls, page_html, where=DONOR, lang='uz'):
+    def from_donor(cls, page_html, where=DONOR, lang='uz', active='news.html'):
         start = find_once(page_html, CONTENT_MARK, where)
         footer = find_once(page_html, FOOTER_MARK, where)
         if footer < start:
             raise BuildError(f'{where}: footer marker precedes the content marker')
         head = page_html[:start]
         head = re.sub(r'(class="menu__(?:link|btn)) is-active"', r'\1"', head)
-        head = sub_once(r'class="menu__link" href="news\.html"',
-                        'class="menu__link is-active" href="news.html"', head, where)
+        pattern = r'class="menu__link" href="' + re.escape(active) + '"'
+        mark = f'class="menu__link is-active" href="{active}"'
+        if active == 'news.html':
+            head = sub_once(pattern, mark, head, where)
+        else:
+            # Пункт раздела подсвечивается, если он уже есть в меню донора;
+            # без него страница раздела всё равно собирается.
+            head = re.sub(pattern, mark, head, count=1)
         return cls(head, page_html[footer:], lang)
 
     def render(self, title, description, og_image, content, before_body_end='', page=None):
@@ -287,10 +316,13 @@ def hero(cover, crumbs, title, extra=''):
             f'</div></div></div></section>')
 
 
-def crumbs(lang, tail=None):
+def crumbs(lang, tail=None, section=None):
     labels = LABELS[lang]
     line = f'<a href="index.html">{esc(labels["home"])}</a> <span class="sep">/</span> '
     if tail is None:
+        if section:
+            info = SECTIONS[section]
+            return line + f'<a href="{info["page"]}">{esc(info[lang][0])}</a>'
         return line + f'<a href="news.html">{esc(labels["news"])}</a>'
     return line + f'<span>{esc(tail)}</span>'
 
@@ -312,7 +344,8 @@ def render_post(post, shell, lang='uz'):
                         for src in post['gallery'])
         gallery = f'<div class="nsu-post-gallery">{items}</div>'
     body = relocate_html(field(post, 'body', lang), lang)
-    content = (hero(cover, crumbs(lang), title, f'<p class="nsu-post-meta">{meta}</p>')
+    content = (hero(cover, crumbs(lang, section=post.get('section')), title,
+                    f'<p class="nsu-post-meta">{meta}</p>')
                + MAIN_OPEN + TEXT_OPEN.format(sid='nsu-sec-0')
                + f'<div class="nsu-post-body">{body}</div>' + gallery
                + TEXT_CLOSE + cta(lang) + MAIN_CLOSE)
@@ -326,7 +359,7 @@ def relocate_html(body, lang):
     """Переписывает относительные ссылки в теле поста для подкаталога языка."""
     if lang == 'uz' or not body:
         return body
-    pages = {'index.html', 'news.html', 'contact.html'}
+    pages = {'index.html', 'news.html', 'contact.html'} | {s['page'] for s in SECTIONS.values()}
     return i18n.apply(body, {}, depth=1, page_links=pages)
 
 
@@ -353,6 +386,18 @@ def render_list(posts, shell, lang='uz'):
                + f'<div class="row nsu-news-grid">{grid}</div>'
                + TEXT_CLOSE + cta(lang) + MAIN_CLOSE)
     return shell.render(title, sub, asset(SEAL, lang), content, page='news.html')
+
+
+def render_section(key, posts, shell, lang='uz'):
+    info = SECTIONS[key]
+    title, sub = info[lang]
+    grid = ''.join(card(p, lang) for p in sort_posts(posts))
+    content = (hero(asset(info['hero'], lang), crumbs(lang, title), title,
+                    f'<p class="nsu-hero-sub">{esc(sub)}</p>')
+               + MAIN_OPEN + TEXT_OPEN.format(sid='nsu-news-list')
+               + f'<div class="row nsu-news-grid">{grid}</div>'
+               + TEXT_CLOSE + cta(lang) + MAIN_CLOSE)
+    return shell.render(title, sub, asset(info['hero'], lang), content, page=info['page'])
 
 
 def carousel_item(post, lang='uz'):
@@ -426,15 +471,23 @@ def build(root=ROOT):
         base = f'{folder}/' if folder else ''
         donor = (root / base / DONOR).read_text(encoding='utf-8')
         shell = Shell.from_donor(donor, where=f'{base}{DONOR}', lang=lang)
+        section_shells = {key: Shell.from_donor(donor, where=f'{base}{DONOR}', lang=lang,
+                                                active=info['page'])
+                          for key, info in SECTIONS.items()}
         wanted = set()
         for p in posts:
             name = f'{base}news-{p["slug"]}.html'
             wanted.add(name)
-            emit(name, render_post(p, shell, lang))
-        emit(f'{base}news.html', render_list(posts, shell, lang))
+            emit(name, render_post(p, section_shells.get(p.get('section'), shell), lang))
+        news = [p for p in posts if not p.get('section')]
+        emit(f'{base}news.html', render_list(news, shell, lang))
+        for key, info in SECTIONS.items():
+            emit(f'{base}{info["page"]}',
+                 render_section(key, [p for p in posts if p.get('section') == key],
+                                section_shells[key], lang))
         index_path = root / base / 'index.html'
         emit(f'{base}index.html',
-             patch_carousel(index_path.read_text(encoding='utf-8'), posts, lang))
+             patch_carousel(index_path.read_text(encoding='utf-8'), news, lang))
         for stale in sorted((root / base if base else root).glob('news-*.html')):
             if f'{base}{stale.name}' not in wanted:
                 stale.unlink()

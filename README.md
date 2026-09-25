@@ -134,6 +134,13 @@ media/                          Joomla core, Bootstrap 5, jQuery, ConvertForms
 - блок между маркерами `<!-- news:carousel -->` и `<!-- /news:carousel -->` в
   `index.html` — карусель из шести последних постов.
 
+Пост с полем `"section": "kelajakka-qadam"` уходит из «Yangiliklar» и карусели
+на страницу своего раздела `kelajakka-qadam.html` («Kelajakka qadam dasturi»,
+отдельный пункт главного меню). Разделы описаны в `SECTIONS` в
+`scripts/build_news.py`; страница раздела тоже генерируется и лежит в
+`build_i18n.GENERATED_PAGES`. Админка поле `section` не показывает, но при
+правке поста сохраняет.
+
 `news.html` и `news-*.html` в `.gitignore`: CI собирает их перед проверками и
 деплоем, локально — команда из раздела «Запуск». `index.html` остаётся в git,
 сборка правит в нём только блок между маркерами. Запускать `build_news.py`
