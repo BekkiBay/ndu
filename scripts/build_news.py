@@ -54,11 +54,11 @@ SECTIONS = {
         'hero': 'images/nsu/news/kelajakka-qadam-dasturi/20260924-144311-cover.jpg',
         'uz': ('Kelajakka qadam dasturi',
                '“Kelajakka qadam” dasturi doirasidagi imkoniyatlar, e’lonlar va yangiliklar.'),
-        'ru': ('Программа «Kelajakka qadam»',
-               'Возможности, объявления и новости программы «Kelajakka qadam» («Шаг в будущее»).'),
-        'en': ('Kelajakka qadam programme',
-               'Opportunities, announcements and news of the “Kelajakka qadam” '
-               '(“Step into the Future”) programme.'),
+        'ru': ('Программа «Шаг в будущее»',
+               'Возможности, объявления и новости программы «Шаг в будущее» («Kelajakka qadam»).'),
+        'en': ('Step into the Future programme',
+               'Opportunities, announcements and news of the Step into the Future '
+               '(“Kelajakka qadam”) programme.'),
     },
 }
 
@@ -359,8 +359,13 @@ def relocate_html(body, lang):
     """Переписывает относительные ссылки в теле поста для подкаталога языка."""
     if lang == 'uz' or not body:
         return body
-    pages = {'index.html', 'news.html', 'contact.html'} | {s['page'] for s in SECTIONS.values()}
+    # Каждая страница сайта (и каждый пост) собирается на всех языках, так что
+    # ссылка на соседнюю .html-страницу остаётся внутри того же языка.
+    pages = set(LOCAL_PAGE.findall(body))
     return i18n.apply(body, {}, depth=1, page_links=pages)
+
+
+LOCAL_PAGE = re.compile(r'href="([\w.-]+\.html)(?:[?#][^"]*)?"')
 
 
 def card(post, lang):

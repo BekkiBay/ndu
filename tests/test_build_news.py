@@ -66,6 +66,14 @@ class LanguageTests(unittest.TestCase):
         self.assertIn('href="https://nsu.uz"', out)
         self.assertEqual(bn.relocate_html(body, 'uz'), body)
 
+    def test_links_to_other_pages_stay_in_the_same_language(self):
+        body = '<a href="news-other-post.html">a</a><a href="about-rector.html#x">b</a>' \
+               '<a href="files/doc.pdf">c</a>'
+        out = bn.relocate_html(body, 'ru')
+        self.assertIn('href="news-other-post.html"', out)
+        self.assertIn('href="about-rector.html#x"', out)
+        self.assertIn('href="../files/doc.pdf"', out)
+
 
 class DateTests(unittest.TestCase):
     def test_uzbek_format(self):

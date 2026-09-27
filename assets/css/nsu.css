@@ -446,3 +446,7 @@ a.nsu-card-link{text-decoration:none;color:inherit}
 .nsu-post-body td:first-child{text-align:center;white-space:nowrap;color:var(--nsu-muted)}
 .nsu-post-body .nsu-post-source{margin-top:28px;font-size:14px;color:var(--nsu-muted)}
 .nsu-post-body .nsu-nowrap{white-space:nowrap}
+
+/* Текст «по ширине» в узкой колонке телефона даёт дыры между словами,
+   особенно на длинных русских словах. Переносы по слогам их закрывают. */
+@media (max-width:767px){main p,main li,#sp-main-body p,#sp-main-body li{-webkit-hyphens:auto;hyphens:auto}}

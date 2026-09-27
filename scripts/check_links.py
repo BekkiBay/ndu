@@ -17,11 +17,12 @@ import urllib.parse
 
 ASSET = re.compile(
     r'(?:src|href)="((?!http|mailto|tel|#|//|data:)[^"]+\.'
-    r'(?:css|js|png|jpe?g|gif|svg|webp|ico|woff2?|ttf|eot|otf|pdf|mp4|webm))"'
+    r'(?:css|js|png|jpe?g|gif|svg|webp|ico|woff2?|ttf|eot|otf|pdf|mp4|webm)(?:[?#][^"]*)?)"'
 )
 PAGE = re.compile(r'href="((?!http|//|mailto:|tel:)[^"#?]+\.html)"')
 CSS_REF = re.compile(r'url\(\s*["\']?([^"\')]+)["\']?\s*\)')
 CSS_IMPORT = re.compile(r'@import\s+(?:url\(\s*)?["\']([^"\']+)["\']')
+LEAVES_LANG = re.compile(r'<a\b[^>]*href="\.\./[^"/]+\.html[^"]*"[^>]*>')
 LEGACY_FONT = re.compile(r'\.(eot|svg)(\?|#|$)')
 
 root = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
@@ -55,6 +56,11 @@ for page in pages:
         target = resolve(ref, base)
         if target not in known:
             errors.append(f'{page}: missing page {ref}')
+    if base:
+        # Из перевода на узбекскую страницу ведёт только переключатель языка.
+        for tag in LEAVES_LANG.findall(html):
+            if 'hreflang=' not in tag:
+                errors.append(f'{page}: link leaves the language: {tag[:120]}')
     for ref in sorted(set(ASSET.findall(html))):
         target = resolve(ref, base)
         if target and not os.path.isfile(target):

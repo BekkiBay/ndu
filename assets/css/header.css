@@ -44,6 +44,11 @@ body.is-locked { overflow: hidden; }
 @media (min-width: 1024px) { .site-header .container { max-width: 1024px; } }
 @media (min-width: 1280px) { .site-header .container { max-width: 1280px; } }
 @media (min-width: 1536px) { .site-header .container { max-width: 1536px; } }
+/* Поля по краям экрана. .site-header .container обнуляет padding самого
+   контейнера, поэтому без них на ширине ровно 1024/1280px логотип и меню
+   прилипали к краям. На внешних полосах поле не съедает ширину контейнера,
+   пока экран шире max-width. */
+.site-header .topbar, .site-header .mainnav { padding-inline: 16px; }
 
 /* ============================================================
    HEADER
@@ -128,6 +133,14 @@ body.is-locked { overflow: hidden; }
 .site-header .menu { display: none; align-items: center; gap: 26px; font-size: 13.5px; font-weight: 500; color: #fff; }
 .menu__item { position: relative; }
 .menu__btn, .menu__link { display: flex; align-items: center; gap: 4px; transition: color .2s; }
+/* Пункт меню не переносится внутри себя: если строка не влезает, меню
+   целиком уходит под логотип (flex-wrap у .mainnav__inner). */
+.menu__btn, .menu__link { white-space: nowrap; }
+/* На 1024–1279px меню стоит отдельной строкой под логотипом и при обычном
+   шаге не влезает в ширину. Русские подписи длиннее узбекских, им плотнее
+   всегда — иначе на 1280px меню не встаёт рядом с логотипом. */
+@media (max-width: 1279px) { .site-header .menu { gap: 18px; } }
+html[lang="ru"] .site-header .menu { gap: 14px; }
 .menu__btn .ico { width: 16px; height: 16px; transition: transform .2s; }
 .menu__btn:hover, .menu__link:hover { color: var(--gray-200); }
 .menu__item:hover > .menu__btn .ico { transform: rotate(180deg); }
