@@ -151,8 +151,12 @@ html[lang="ru"] .site-header .menu { gap: 14px; }
 .dd__panel {
   min-width: 192px;
   padding: 8px;
-  background: rgba(0, 0, 0, .4);
-  border: 1px solid rgba(255, 255, 255, .3);
+  /* Непрозрачный фон: blur у вложенного в .mainnav элемента не размывает
+     страницу (родитель с backdrop-filter становится его backdrop root), и
+     крупный белый текст hero читался сквозь пункты даже при 94%. */
+  background: #0b1a2b;
+  border: 1px solid rgba(255, 255, 255, .14);
+  box-shadow: 0 16px 40px rgba(0, 0, 0, .35);
   border-radius: var(--r-xl);
   color: #fff;
   -webkit-backdrop-filter: blur(24px);
@@ -160,7 +164,7 @@ html[lang="ru"] .site-header .menu { gap: 14px; }
 }
 .dd--wide .dd__panel {
   min-width: 240px;
-  background: rgba(0, 0, 0, .5);
+  background: #0b1a2b;
   border-color: rgba(255, 255, 255, .1);
   box-shadow: var(--sh-xl);
   -webkit-backdrop-filter: blur(40px);
