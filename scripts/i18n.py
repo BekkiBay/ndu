@@ -213,7 +213,21 @@ def _url_edits(src, depth, page_links):
             new = _rewrite_css_urls(block, prefix, page_links)
             if new != block:
                 yield (a, b, new)
+        elif kind == 'other' and m and m.group('opaque') and m.group('ot') == 'script':
+            # <script src> целиком попадает в непрозрачный токен, поэтому
+            # атрибуты его открывающего тега разбираются здесь отдельно.
+            head = SCRIPT_OPEN.match(src, a)
+            for am in ATTR.finditer(head.group('attrs')):
+                if am.group('name').lower() != 'src':
+                    continue
+                val = am.group('val')
+                new = relocate(val, prefix, page_links)
+                if new != val:
+                    base = head.start('attrs')
+                    yield (base + am.start('val'), base + am.end('val'), new)
 
+
+SCRIPT_OPEN = re.compile(r'<script\b(?P<attrs>(?:"[^"]*"|\'[^\']*\'|[^>"\'])*)>', re.I)
 
 CSS_URL = re.compile(r'url\(\s*(?P<q>["\']?)(?P<val>[^"\')]*)(?P=q)\s*\)')
 
