@@ -450,3 +450,26 @@ a.nsu-card-link{text-decoration:none;color:inherit}
 /* Текст «по ширине» в узкой колонке телефона даёт дыры между словами,
    особенно на длинных русских словах. Переносы по слогам их закрывают. */
 @media (max-width:767px){main p,main li,#sp-main-body p,#sp-main-body li{-webkit-hyphens:auto;hyphens:auto}}
+
+/* ---------------------------------------------------------- publication card (faculty pages) */
+.nsu-book{display:flex;gap:36px;align-items:flex-start;background:#fff;border:1px solid var(--nsu-border);border-radius:4px;padding:28px;margin:8px 0 12px}
+.nsu-book-cover{flex:0 0 240px;display:block;border-radius:3px;overflow:hidden;box-shadow:0 12px 30px rgba(7,30,51,.18);transition:transform .2s}
+.nsu-book-cover:hover{transform:translateY(-3px)}
+.nsu-book-cover img{display:block;width:100%;height:auto}
+.nsu-book-info{flex:1;min-width:0}
+.nsu-book-kind{display:inline-block;font-size:12px;font-weight:700;letter-spacing:.06em;text-transform:uppercase;color:var(--nsu-primary);background:var(--nsu-light);border-radius:3px;padding:4px 10px;margin-bottom:12px}
+.nsu-inner #sp-main-body h4.nsu-book-title{color:var(--nsu-dark);font-size:24px;font-weight:700;line-height:1.3;margin:0 0 6px}
+.nsu-inner #sp-main-body .sppb-addon-content p.nsu-book-authors{color:var(--nsu-muted);font-weight:600;margin:0 0 14px}
+.nsu-book-meta{display:grid;grid-template-columns:max-content 1fr;gap:8px 18px;margin:18px 0 22px;padding:16px 0 0;border-top:1px solid var(--nsu-border);font-size:15px;line-height:1.5}
+.nsu-book-meta dt{color:var(--nsu-muted);font-weight:600}
+.nsu-book-meta dd{margin:0;color:var(--nsu-text)}
+.nsu-book-btns{display:flex;gap:12px;flex-wrap:wrap}
+.nsu-btn-line{border-color:var(--nsu-btn);color:var(--nsu-btn)}
+.nsu-btn-line:hover{background:var(--nsu-btn);color:#fff}
+@media (max-width:767px){
+  .nsu-book{flex-direction:column;gap:22px;padding:20px}
+  .nsu-book-cover{flex:none;width:180px}
+  .nsu-inner #sp-main-body h4.nsu-book-title{font-size:20px}
+  .nsu-book-meta{grid-template-columns:1fr;gap:2px}
+  .nsu-book-meta dd{margin-bottom:8px}
+}
