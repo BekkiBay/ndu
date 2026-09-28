@@ -473,3 +473,10 @@ a.nsu-card-link{text-decoration:none;color:inherit}
   .nsu-book-meta{grid-template-columns:1fr;gap:2px}
   .nsu-book-meta dd{margin-bottom:8px}
 }
+.nsu-book+.nsu-book{margin-top:24px}
+.nsu-book-toc{margin-top:22px;border-top:1px solid var(--nsu-border);padding-top:14px}
+.nsu-book-toc summary{cursor:pointer;font-weight:700;color:var(--nsu-primary);list-style:none;display:flex;align-items:center;gap:8px}
+.nsu-book-toc summary::-webkit-details-marker{display:none}
+.nsu-book-toc summary::after{content:"";width:8px;height:8px;border-right:2px solid currentColor;border-bottom:2px solid currentColor;transform:rotate(45deg);margin-top:-4px;transition:transform .2s}
+.nsu-book-toc[open] summary::after{transform:rotate(-135deg);margin-top:4px}
+.nsu-book-toc .nsu-list{margin:10px 0 0;font-size:15px}
