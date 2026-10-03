@@ -18,6 +18,7 @@ ES-модули (Bootstrap 5, Joomla core) не грузятся по `file://`,
 cd NDU
 python3 scripts/build_i18n.py   # собирает ru/ и en/ из узбекских страниц
 python3 scripts/build_news.py   # генерирует новости для всех трёх языков
+python3 scripts/build_publications.py   # каталог научных публикаций, тоже на трёх языках
 python3 -m http.server 8899
 ```
 
@@ -36,7 +37,7 @@ python3 -m http.server 8899
 | TA'LIM | 8 | `education-bachelor.html`, `education-master.html`, `education-phd-dsc.html`, `education-calendar.html`, `education-grading.html` |
 | FAKULTETLAR | 8 (`faculties.html` + 7) | `faculties.html`, `faculty-tillar.html`, `faculty-tarix.html`, … (7 факультетов) |
 | QABUL | 15 | `admissions-study.html`, `admissions-bachelor*.html`, `admissions-master*.html`, `admissions-international*.html`, `reception.html` |
-| ILMIY FAOLIYAT | 10 | `research.html`, `research-council.html`, `research-journals.html`, `articles.html` |
+| ILMIY FAOLIYAT | 9 + публикации | `research.html`, `research-council.html`, `research-journals.html`; `publications.html` и `publication-*.html` генерируются из `content/publications.json` (см. «Научные публикации») |
 | TALABALAR HAYOTI | 13 | `student-life.html`, `student-life-library.html`, `student-life-sports.html`, `student-life-student-council*.html` |
 | XALQARO | 1 | `international-office.html` |
 | Новости | 12 | `news.html` + посты из `content/news.json` (генерируются, см. ниже) |
@@ -102,12 +103,15 @@ content/i18n/uz.json            каталог переводимых строк
 content/i18n/ru.json, en.json   словари переводов — источник правды
 <раздел>-<подраздел>.html       внутренние страницы (плоские имена = относительные пути работают)
 content/news.json               посты новостей — источник правды (правится админкой)
+content/publications.json       научные публикации — источник правды (см. «Научные публикации»)
+files/publications/             PDF публикаций
 images/nsu/news/<slug>/         фотографии поста, загруженные через админку
 admin/                          админка новостей (см. «Новости и админка»)
 scripts/i18n.py                 разбор и перезапись HTML: подмена строк, перенос ссылок
 scripts/build_i18n.py           собирает ru/ и en/ из узбекских страниц
 scripts/i18n_extract.py         каталог переводимых строк и отчёт о пропусках
 scripts/build_news.py           генерирует news.html, news-*.html и карусель — на всех языках
+scripts/build_publications.py   генерирует publications.html и publication-*.html — на всех языках
 deploy/counter/counter.py       сервис счётчика просмотров (контейнер ndu-counter)
 tests/                          юнит-тесты сборки и счётчика (python3 -m unittest discover -s tests)
 assets/css/nsu.css              стили контентных блоков NavDU (палитра/шрифты шаблона)
@@ -179,6 +183,56 @@ GitHub-токеном, и он же сразу пересобирает стра
 `views/counts`. Один просмотр на (пост, посетитель, сутки), боты не считаются.
 На копии GitHub Pages счётчика нет — блок просмотров там просто скрыт.
 
+## Научные публикации
+
+Раздел **Ilmiy nashrlar** (меню «Ilmiy faoliyat» → «Ilmiy nashrlar») — каталог
+статей, тезисов, сборников конференций, монографий и учебников с отдельной
+страницей у каждой работы, по образцу страниц статей в журнальных системах
+(OJS). Источник правды — `content/publications.json`; страницы
+`publications.html` и `publication-<slug>.html` (на всех трёх языках)
+генерирует `scripts/build_publications.py`, они в `.gitignore`, как новости.
+
+Что есть на странице работы: тип и год, люди с ролями и местом работы
+(авторы, ответственный и научные редакторы, редакторы, рецензенты),
+ключевые слова, аннотация, содержание сборника с поиском и ссылками прямо на
+страницу PDF (`файл.pdf#page=N`), список литературы, обложка, кнопки «открыть»
+и «скачать» PDF, библиографические данные и готовые ссылки для цитирования
+(ГОСТ, APA, MLA, BibTeX) с кнопкой копирования. В `<head>` — теги
+`citation_*`, по которым работу находит Google Scholar. Каталог ищет по
+названию, авторам и ключевым словам, а у сборников — и по статьям внутри
+(кириллица и латиница, апострофы в «o‘» не мешают), фильтрует по типу и году.
+
+**Как добавить работу:**
+
+1. PDF — в `files/publications/<slug>.pdf`, обложка (первая страница,
+   ширина ~720 px, JPEG) — в `images/nsu/publications/<slug>-cover.jpg`.
+   На macOS первую страницу даёт `qlmanage -t -s 1200 -o /tmp файл.pdf`.
+2. Запись — в `content/publications.json`, в массив `publications`:
+
+   | Поле | Что это |
+   |---|---|
+   | `slug` | имя страницы, `[a-z0-9-]` |
+   | `type` | `article`, `thesis`, `proceedings`, `monograph`, `textbook`, `other` |
+   | `language` | язык самой работы (`uz`, `ru`, `en`) — на нём строится ГОСТ-ссылка |
+   | `title`, `subtitle` | название как в издании; `title_ru`, `title_en` … — переводы для страниц на других языках |
+   | `date`, `year` | дата конференции или выхода (`YYYY-MM-DD` или `null`) и год |
+   | `place`, `publisher` | город и издатель (с переводами `_ru`, `_en`) |
+   | `people` | `family`, `given`, `role` (`author`, `chief_editor`, `scientific_editor`, `editor`, `reviewer`), `affiliation` (+ `_ru`, `_en`) |
+   | `source` | для статьи и тезисов: `title` журнала или сборника, `volume`, `issue`, `pages` (`60–62`), `doi` |
+   | `keywords`, `abstract` | с переводами `_ru`, `_en` |
+   | `languages`, `pages` | языки текстов и число страниц |
+   | `pdf`, `cover` | пути из шага 1 |
+   | `toc` | для сборника: `title`, `byline` (авторы и место работы), `page` — **номер страницы в PDF** |
+   | `references` | список литературы, строками |
+   | `copyright`, `license` | только то, что указано в самом издании |
+
+3. `python3 scripts/build_publications.py` (после `build_i18n.py`), тесты,
+   `check_links.py`, коммит — деплой как обычно.
+
+Содержание двух первых сборников (2025) снято с их последних страниц
+«Mundarija»; печатные номера там местами сбиты на 1–7 страниц, поэтому в
+`toc` записаны настоящие страницы PDF, сверенные по тексту.
+
 ## Контент NavDU
 
 - Тексты, заголовки, списки, таблицы и структура меню — с nsuz.uz/uz (узбекский).
@@ -224,16 +278,16 @@ CI/CD — `.github/workflows/`: `ci.yml` гоняет юнит-тесты, пр�
 `?v=`, собирает переводы и новости и проверяет, что все внутренние ссылки и
 ресурсы резолвятся во всех трёх языковых деревьях; `deploy.yml` после успешной
 проверки раскатывает сайт на Hermes (rsync без `--delete`; единственное
-исключение — страницы удалённых новостей `news-*.html`, в том числе в `ru/` и
-`en/`) и на GitHub Pages, поднимает контейнер счётчика. Рядом с `api.py` на
+исключение — страницы удалённых новостей `news-*.html` и публикаций
+`publication-*.html`, в том числе в `ru/` и `en/`) и на GitHub Pages, поднимает контейнер счётчика. Рядом с `api.py` на
 сервер кладутся `build_news.py`, `build_i18n.py` и `i18n.py` — генератор
 импортирует их, когда админка пересобирает страницы. Подробности и
 первичная настройка сервера — в [`deploy/README.md`](deploy/README.md).
 
 ## Как пересобрать
 
-Переводы собираются `scripts/build_i18n.py`, новости — `scripts/build_news.py`
-(именно в таком порядке, см. выше).
+Переводы собираются `scripts/build_i18n.py`, новости — `scripts/build_news.py`,
+публикации — `scripts/build_publications.py` (именно в таком порядке, см. выше).
 Остальной сайт генерировался скриптами, которые лежат вне репозитория, в
 рабочей папке сессии: `site_data.py` (парсинг nsuz.uz) → `build.py`
 (внутренние страницы) → `gen_home.py` (главная). Шапка/подвал/меню собираются

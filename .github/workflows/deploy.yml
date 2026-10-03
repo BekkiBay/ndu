@@ -24,11 +24,12 @@ jobs:
     steps:
       - uses: actions/checkout@v4
 
-      - name: Build the translated pages and the news
+      - name: Build the translated pages, the news and the publications
         run: |
           python3 scripts/stamp_assets.py
           python3 scripts/build_i18n.py
           python3 scripts/build_news.py
+          python3 scripts/build_publications.py
 
       - name: Check deploy secrets are configured
         id: guard
@@ -82,12 +83,15 @@ jobs:
             --exclude '.gitignore' \
             --exclude '.DS_Store' \
             ./ "${USER:-root}@$HOST:$DEST/"
-          # The only deletion the deploy ever performs: pages of posts that
-          # were removed from content/news.json. The filter limits --delete to
-          # news-*.html in the three language trees; nothing else is touched.
+          # The only deletion the deploy ever performs: pages of posts and
+          # publications that were removed from content/news.json and
+          # content/publications.json. The filter limits --delete to
+          # news-*.html and publication-*.html in the three language trees;
+          # nothing else is touched.
           rsync -av --delete \
             --include='ru/' --include='en/' \
             --include='news-*.html' --include='ru/news-*.html' --include='en/news-*.html' \
+            --include='publication-*.html' --include='ru/publication-*.html' --include='en/publication-*.html' \
             --exclude='*' \
             -e "ssh -i ~/.ssh/deploy_key -p ${PORT:-22}" \
             ./ "${USER:-root}@$HOST:$DEST/"
@@ -188,11 +192,12 @@ jobs:
     steps:
       - uses: actions/checkout@v4
 
-      - name: Build the translated pages and the news
+      - name: Build the translated pages, the news and the publications
         run: |
           python3 scripts/stamp_assets.py
           python3 scripts/build_i18n.py
           python3 scripts/build_news.py
+          python3 scripts/build_publications.py
       - uses: actions/configure-pages@v5
       - uses: actions/upload-pages-artifact@v3
         with:

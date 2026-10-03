@@ -10,9 +10,10 @@
 * ``<html lang>``, переключатель языка и ссылки ``hreflang`` переписываются
   под язык страницы.
 
-Страницы новостей здесь не трогаются: их на всех языках генерирует
-``scripts/build_news.py`` из ``content/news.json`` — запускать его надо
-после этого скрипта.
+Страницы новостей и научных публикаций здесь не трогаются: их на всех
+языках генерируют ``scripts/build_news.py`` (из ``content/news.json``) и
+``scripts/build_publications.py`` (из ``content/publications.json``) —
+запускать их надо после этого скрипта.
 
 Детерминированный: два запуска подряд без правок ничего не меняют.
 """
@@ -38,14 +39,16 @@ class BuildError(Exception):
     """Ошибка входных данных; печатается без трейсбека."""
 
 
-#: Страницы, которые пишет build_news.py для каждого языка сам: список
-#: новостей и страницы разделов (content/news.json, поле ``section``).
-GENERATED_PAGES = frozenset({'news.html', 'kelajakka-qadam.html'})
+#: Страницы, которые генераторы пишут для каждого языка сами: build_news.py —
+#: список новостей и страницы разделов (content/news.json, поле ``section``),
+#: build_publications.py — каталог научных публикаций.
+GENERATED_PAGES = frozenset({'news.html', 'kelajakka-qadam.html', 'publications.html'})
+GENERATED_PREFIXES = ('news-', 'publication-')
 
 
 def is_generated(name):
-    """Страница генерируется build_news.py, а не переводится отсюда."""
-    return name in GENERATED_PAGES or name.startswith('news-')
+    """Страница генерируется build_news.py или build_publications.py, а не переводится отсюда."""
+    return name in GENERATED_PAGES or name.startswith(GENERATED_PREFIXES)
 
 
 def source_pages():

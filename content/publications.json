@@ -1,0 +1,1453 @@
+{
+ "publications": [
+  {
+   "type": "proceedings",
+   "language": "uz",
+   "publisher": "Navoiy davlat universiteti",
+   "publisher_ru": "Навоийский государственный университет",
+   "publisher_en": "Navoi State University",
+   "place": "Navoiy",
+   "place_ru": "Навои",
+   "place_en": "Navoi",
+   "year": 2025,
+   "copyright": "© Navoiy davlat universiteti, 2025",
+   "license": null,
+   "slug": "raqamli-transformatsiya-talim-fan-va-jamiyat",
+   "title": "Raqamli transformatsiya: ta’lim, fan va jamiyat",
+   "subtitle": "Xalqaro ilmiy konferensiya to‘plami",
+   "title_ru": "Цифровая трансформация: образование, наука и общество",
+   "subtitle_ru": "Сборник материалов международной научной конференции",
+   "title_en": "Digital Transformation: Education, Science and Society",
+   "subtitle_en": "Proceedings of the international scientific conference",
+   "date": "2025-05-01",
+   "people": [
+    {
+     "family": "Safarova",
+     "given": "Nigora",
+     "affiliation": "falsafa fanlari doktori, professor, NavDU Ijtimoiy fanlar kafedrasi mudiri",
+     "affiliation_ru": "доктор философских наук, профессор, заведующая кафедрой общественных наук НавГУ",
+     "affiliation_en": "Doctor of Philosophical Sciences, Professor, Head of the Department of Social Sciences, Navoi State University",
+     "role": "chief_editor"
+    },
+    {
+     "family": "Karimov",
+     "given": "Elyor",
+     "affiliation": "tarix fanlari doktori, professor, Xofstra universiteti (Nyu-York, AQSH), YUNESKOning Butunjahon hujjatli merosini himoya qilish qo‘mitasi a’zosi",
+     "affiliation_ru": "доктор исторических наук, профессор Университета Хофстра (Нью-Йорк, США), член комитета ЮНЕСКО по защите всемирного документального наследия",
+     "affiliation_en": "Doctor of Historical Sciences, Professor, Hofstra University (New York, USA), member of the UNESCO committee for the protection of the world documentary heritage",
+     "role": "scientific_editor"
+    },
+    {
+     "family": "Madayeva",
+     "given": "Shahnoza",
+     "affiliation": "falsafa fanlari doktori, professor, O‘zbekiston Milliy universiteti falsafa va mantiq kafedrasi mudiri",
+     "affiliation_ru": "доктор философских наук, профессор, заведующая кафедрой философии и логики Национального университета Узбекистана",
+     "affiliation_en": "Doctor of Philosophical Sciences, Professor, Head of the Department of Philosophy and Logic, National University of Uzbekistan",
+     "role": "scientific_editor"
+    },
+    {
+     "family": "Shamsutdinova",
+     "given": "Nigina",
+     "affiliation": "falsafa fanlari doktori (DSc), NavDU Ijtimoiy fanlar kafedrasi dotsenti",
+     "affiliation_ru": "доктор философских наук (DSc), доцент кафедры общественных наук НавГУ",
+     "affiliation_en": "DSc, Associate Professor, Department of Social Sciences, Navoi State University",
+     "role": "reviewer"
+    },
+    {
+     "family": "Norqobilov",
+     "given": "Mirzohid",
+     "affiliation": "falsafa doktori (PhD), NavDU O‘zbekiston tarixi kafedrasi dotsenti",
+     "affiliation_ru": "доктор философии (PhD), доцент кафедры истории Узбекистана НавГУ",
+     "affiliation_en": "PhD, Associate Professor, Department of History of Uzbekistan, Navoi State University",
+     "role": "reviewer"
+    }
+   ],
+   "keywords": [
+    "raqamli transformatsiya",
+    "ta’limni raqamlashtirish",
+    "raqamli iqtisodiyot",
+    "sun’iy intellekt",
+    "oliy ta’lim",
+    "jamiyat"
+   ],
+   "keywords_ru": [
+    "цифровая трансформация",
+    "цифровизация образования",
+    "цифровая экономика",
+    "искусственный интеллект",
+    "высшее образование",
+    "общество"
+   ],
+   "keywords_en": [
+    "digital transformation",
+    "digitalisation of education",
+    "digital economy",
+    "artificial intelligence",
+    "higher education",
+    "society"
+   ],
+   "abstract": "To‘plam “Raqamli transformatsiya: ta’lim, fan va jamiyat” mavzusidagi xalqaro ilmiy konferensiya (Navoiy, 2025-yil 1-may) materiallaridan iborat. Unda raqamli transformatsiya jarayonida fan va ta’limni raqamlashtirish, raqamli iqtisodiyot shakllanishi sharoitida mamlakatni ijtimoiy-iqtisodiy rivojlantirish maqsadlariga erishishga qaratilgan nazariy masalalar bo‘yicha tahliliy materiallar jamlangan. Maqolalar o‘zbek, rus va ingliz tillarida.",
+   "abstract_ru": "Сборник включает материалы международной научной конференции «Цифровая трансформация: образование, наука и общество» (Навои, 1 мая 2025 года). В нём собраны аналитические материалы по теоретическим вопросам цифровизации науки и образования в ходе цифровой трансформации и достижения целей социально-экономического развития страны в условиях формирования цифровой экономики. Статьи на узбекском, русском и английском языках.",
+   "abstract_en": "The volume contains the proceedings of the international scientific conference “Digital Transformation: Education, Science and Society” (Navoi, 1 May 2025). It brings together analytical papers on the theoretical questions of digitalising science and education in the course of digital transformation and of reaching the country’s socio-economic development goals as the digital economy takes shape. Papers are in Uzbek, Russian and English.",
+   "languages": [
+    "uz",
+    "ru",
+    "en"
+   ],
+   "pages": 305,
+   "pdf": "files/publications/raqamli-transformatsiya-talim-fan-va-jamiyat.pdf",
+   "cover": "images/nsu/publications/raqamli-transformatsiya-talim-fan-va-jamiyat-cover.jpg",
+   "toc": [
+    {
+     "title": "SO‘ZBOSHI",
+     "byline": "",
+     "page": 3
+    },
+    {
+     "title": "СОВРЕМЕННЫЕ ИНФОРМАЦИОННЫЕ ТЕХНОЛОГИИ В ПРОЦЕССЕ СОХРАНЕНИЯ НАЦИОНАЛЬНЫХ И ОБЩЕЧЕЛОВЕЧЕСКИХ ЦЕННОСТЕЙ (на примере программы ЮНЕСКО MemoryoftheWorld)",
+     "byline": "Каримов Элёр Эрикович – доктор исторических наук, профессор. Hofstra University (США)",
+     "page": 4
+    },
+    {
+     "title": "ТРАНСФОРМАЦИОННЫЕ ПРОЦЕССЫ СОВРЕМЕННОЙ МОДЕЛИ ВЫСШЕЙ ШКОЛЫ",
+     "byline": "Сафарова Нигора Олимовна- д.ф.н., профессор Заведующая кафедрой Общыстенных наук, НавГПИ, Узбекистан",
+     "page": 6
+    },
+    {
+     "title": "ЎЗБЕКИСТОНДА ИСЛОМ ТЕОЛОГИЯСИ ВА РАЦИОНАЛИЗМИНИНГ ТАРИХИЙ ИЛДИЗЛАРИ ҲАМДА ИЛМИЙ АҲАМИЯТИ",
+     "byline": "Ш.О.Мадаева- ф.ф.д., проф. Мирзо Улуғбек номидаги Ўзбекистон Миллий университетиФалсафа ва мантиқ кафедраси мудири",
+     "page": 9
+    },
+    {
+     "title": "ВЛИЯНИЕ ИСКУССТВЕННОГО ИНТЕЛЛЕКТА НА ФОРМИРОВАНИЕ И РАЗВИТИЕ ДУХОВНОГО И КУЛЬТУРНОГО НАСЛЕДИИ",
+     "byline": "Спанов Мейирхан Жантаевич – кандидат философских наук, кафедра философии, Южно-Казахстанского университет имени М.Ауэзова, Шымкент, Казахстан. Джуншеев Расилхан Ербосинович – кандидат философских наук, Университет имени М.Х. Дулати в Таразе, доцент кафедры «философии и политологии», Тараз, Казахстан.",
+     "page": 11
+    },
+    {
+     "title": "СУНЪИЙ ИНТЕЛЛЕКТ: ИНСОНИЯТ, ДУНЁ ВА ТАЪЛИМ УЧУН ФОЙДА ВА ЗАРАРЛАРИ",
+     "byline": "Қурбонова М.Б. - БухДУ Археология ва Бухоро тарихи кафедраси профессори, тарих фанлари номзоди",
+     "page": 15
+    },
+    {
+     "title": "ИСКУССТВЕННЫЙ ИНТЕЛЛЕКТ И СОВРЕМЕННОЕ ОБРАЗОВАНИЕ",
+     "byline": "А.Х.Рахманова-д.ф.н., проф. НГУ",
+     "page": 17
+    },
+    {
+     "title": "СУЩНОСТЬ ФИЛОСОФИЯ АБУ АЛИ ИБН СИНЫ – «Я мыслю, следовательно, существую»",
+     "byline": "Шамсутдинова Нигина Каримовна- Доктор философских наук (DSc), доцент Навоийский государственный педагогический институт. Узбекистан",
+     "page": 21
+    },
+    {
+     "title": "ЭПИСТЕМОЛОГИЧЕСКИЕ ВЫЗОВЫ И ВОЗМОЖНОСТИ ИСКУССТВЕННОГО ИНТЕЛЛЕКТА В УСЛОВИЯХ ЦИФРОВИЗАЦИЯ ВЫСШЕГО ОБР АЗОВАНИЯ",
+     "byline": "Филиппов Ольгерд Александрович- Доктор философии по философским наукам (PhD), Навоийский филиал НУВО “PROFI UNIVERSITY”",
+     "page": 23
+    },
+    {
+     "title": "ИСКУССТВЕННЫЙ ИНТЕЛЛЕКТ И ЕГО ВЛИЯНИЕ НА СОХРАНЕНИЕ КУЛЬТУРНОГО И ДУХОВНОГО НАСЛЕДИЯ",
+     "byline": "Есимова А.Э.- ЮКУ имени М.Ауэзова, Казахстан",
+     "page": 27
+    },
+    {
+     "title": "RAQAMLI TRANSFORMATSIYA JARAYONLARINING QADRIYATLAR TIZIMIGA TA’SIRI: DISSIMMETRIK TAHLIL",
+     "byline": "Bekpo‘latov U.R.- Navoiy davlat universiteti doktoranti, f.f.f.d. (PhD), dotsent",
+     "page": 30
+    },
+    {
+     "title": "SA’DUDDIN TAFTAZONIY VA SHARIF JURJONIY ILMIY QARASHLARINING FALSAFIY TAHLILI",
+     "byline": "M.X.Norqobilov - NavDU Tarix kafedrasi dotsenti, f.f.f.d. (PhD) S.Abduhakimova - mustaqil tadqiqotchi",
+     "page": 32
+    },
+    {
+     "title": "INSON TARAQQIYOTI VA KAPITALINI RIVOJLANTIRISHDA YOSHLAR MASALASIGA BO‘LGAN E’TIBOR",
+     "byline": "Shirinov Anvar Qanoatovich- Buxoro davlat universiteti “Ijtimoiy-siyosiy fanlar universiteti” dotsenti",
+     "page": 34
+    },
+    {
+     "title": "O‘QUVCHILAR BILISH JARAYONIDA NEYROPEDAGOGIK XUSUSIYATLARNING AHAMIYATI",
+     "byline": "Axatova D.A.- NavDU Psixologiya kafedrasi dotsenti, p.f.n.",
+     "page": 37
+    },
+    {
+     "title": "QORAXONIYLAR DAVRIDA ILM-FAN TARAQQIYOTI (Progress of Science under the karakhanids)",
+     "byline": "Qozoqov Tohirjon Qodiraliyevich- Tarix fanlari nomzodi, dotsent. Namangan Impuls tibbiyot instituti, O‘zbekiston",
+     "page": 40
+    },
+    {
+     "title": "IMKONIYATI CHEKLANGAN BOLALAR IJTIMOIYLASHUVIDA PEDAGOGIK KOMPETENTLIKNING ROLI",
+     "byline": "Хaydarova Shaхlo Narzullayevna Navoiy davlat universiteti, Maktabgacha ta’lim kafedrasi dotsenti, PhD",
+     "page": 41
+    },
+    {
+     "title": "TA’LIM JARAYONLARIDA IJTIMOIY BOSHQARUV STRATEGIYASI",
+     "byline": "Mansurova Malohat Yunus qizi – Navoiy davlat universiteti Tarix fakulteti Falsafa fanlari bo‘yicha falsafa doktori (PhD)",
+     "page": 44
+    },
+    {
+     "title": "BO‘LAJAK TARBIYACHILARDA IQTISODIY XULQ-ATVORNI SHAKLLANISHIDA MILLIY AN’ANA VA QADRIYATLARNING TUTGAN O‘RNI",
+     "byline": "Azimova Musharraf Utkirovna- Navoiy davlat universiteti Maktabgacha ta’lim kafedrasi dotsenti v.b",
+     "page": 46
+    },
+    {
+     "title": "SUN’IY INTELLEKT VA UNI QO‘LLASH IMKONIYATLARI",
+     "byline": "Nuraliyeva P.E.- TDPU Informatika va uni o‘qitish metodikasi kafedrasi dotsenti v.b, (PhD) Mardonova S.- TDPU matematika va informatika yo‘nalishi talabasi",
+     "page": 50
+    },
+    {
+     "title": "MANAGEMENT PHILOSOPHY IN THE CONTEXT OF PHILOSOPHY AND BASIC CONCEPTS OF MANAGEMENT",
+     "byline": "Aslanov Said- Navoi State University Independent applicant ORCID: 0009-0007-9494-131X",
+     "page": 51
+    },
+    {
+     "title": "ГЛОБАЛЛАШУВ ЖАРАЁНИДА БАРКАМОЛ АВЛОД ОНГИДА МИЛЛИЙ ВА УМУМИНСОНИЙ ҚАДРИЯТЛАРГА ҲУРМАТ ҲИССИНИ СИНГДИРИШДА ИННОВАЦИОН ТЕХНОЛОГИЯЛАРНИНГ РОЛИ",
+     "byline": "Шоира Туробова - НДУ Ижтимоий фанлар кафедраси катта ўқитувчиси",
+     "page": 54
+    },
+    {
+     "title": "SUN’IY INTELLEKTNING JAMIYAT HAYOTIGA TASIRI",
+     "byline": "Achilova Marxabo- NDPI katta o‘qituvchi",
+     "page": 56
+    },
+    {
+     "title": "RAQAMLI DUNYODA FARZAND TARBIYASI: OTA-ONALARGA MASLAHATLAR",
+     "byline": "Ermatova Gulnoz Pirimovna, Shamiyeva Manzura Fayzullayevna NavDU, Maktabgacha ta’lim kafedrasi o‘qituvchilari",
+     "page": 58
+    },
+    {
+     "title": "OLIY O‘QUV YURTIDA MA’RUZALARDA O‘QITISH TEXNOLOGIYALARI",
+     "byline": "Muzaffarova L.N., Sadikova D.A. Navoiy davlat universiteti, Navoiy, O‘zbekiston",
+     "page": 61
+    },
+    {
+     "title": "РОЛЬ СЕМЬИ В ФОРМИРОВАНИИ ИНТЕЛЛИГЕНТНОСТИ И КУЛЬТУРНЫХ ЦЕННОСТЕЙ ЛИЧНОСТИ В ПРОИЗВЕДЕНИЯХ А. ФИТРАТА И САДРИДДИНА АЙНИ: СОЦИАЛЬНО-ФИЛОСОФСКИЙ АНАЛИЗ",
+     "byline": "Маъмура Бурханова- Старший преподаватель кафедры Английского языка прикладных дисциплин, НавГУ",
+     "page": 64
+    },
+    {
+     "title": "RAHBAR KADR TAYYORLASHNING TIPOLOGIK JIHATLARI",
+     "byline": "Tagayev Kamol Kamilovich- Navoiy davlat pedagogika instituti, мустақил тадқиқотчиси",
+     "page": 69
+    },
+    {
+     "title": "СУНЪИЙ ИНТЕЛЛЕКТ: ИЖОБИЙ ВА САЛБИЙ ЖИҲАТЛАРИ",
+     "byline": "Ачилова М.Э.-НавДУ",
+     "page": 71
+    },
+    {
+     "title": "“MANU QONUNLARI” – QADIMGI HINDISTON SIYOSIY-HUQUQIY TA”LIMOTINING MUHIM METODLOGIK MANBASI",
+     "byline": "Nutfullayeva Nastarin Tolmasjonovna. Buxoro davlat universiteti, Tarix va yuridik fakulteti, 5-1siyos-24 guruhi talabasi Ilmiy rahbar: Turdiyev Bexruz Sobirovich Buxoro davlat universiteti, Tarix va yuridik fakulteti, Ijtimoiy-siyosiy fanlar kafedrasi, f.f.d. (DSc)",
+     "page": 72
+    },
+    {
+     "title": "YOSHLAR HUQUQIY TARBIYASINI YUKSALTIRISHNING IJTIMOIY-FALSAFIY TAHLILI",
+     "byline": "Sardor Qavmiddinovich Norboyev- Buxoro davlat pedagogika instituti, Ijtimoiy fanlar kafedrasi o‘qituvchisi BuxDU mustaqil izlanuvchisi",
+     "page": 74
+    },
+    {
+     "title": "SOGʻLOM TURMUSH TARZINI TAʼMINLASHNING ILMIY-NAZARIY ASOSLARI",
+     "byline": "Pulatov Jaxongir Nazirovich, Navoiy viloyati PMM dotsenti",
+     "page": 77
+    },
+    {
+     "title": "SHHT VA O‘ZBEKISTON MUNOSABATLARINING BARQARORLIKNI TA’MINLASHDAGI ROLI",
+     "byline": "Sotvoldiyev Jaxongir Sultonali o‘g‘li- Buxoro davlat universiteti, Tarix va yuridik fakulteti Siyosatshunoslik 5-1SIYOS-24 guruh talabasi",
+     "page": 79
+    },
+    {
+     "title": "ЧЕТЫРЕ ОСНОВАНИЯ В ПОСТРОЕНИИ ПРОГРАММАХ ОБУЧЕНИЯ ПО ИСТОРИИ УЗБЕКИСТАНА И ЦЕНТРАЛЬНОЙ АЗИИ",
+     "byline": "Нуритдинова Нодира Сирожовна – преп. ТГЭУ",
+     "page": 84
+    },
+    {
+     "title": "BIR QANCH O‘ZBEK TAOMLARI KELIB CHIQISHI TARIXI HAQIDA",
+     "byline": "Jumayev Buron Ulug‘murotovich- Toshkent xalqaro moliyaviy boshqaruv va texnologiyalar universiteti “Ijtimoiy-gumanitar fanlar va tarix” kafеdrasi o‘qituvchisi",
+     "page": 86
+    },
+    {
+     "title": "ЁШЛАРНИ БАҒРИКЕНГЛИК РУҲИДА ТАРБИЯЛАШДА МАРКАЗИЙ ОСИЁ УЙҒОНИШ ДАВРИ МУТАФАККИРЛАРИ ФАЛСАФИЙ МЕРОСИНИНГ ЎРНИ",
+     "byline": "Мамадиева Нилуфар Халиловна- ТДТУ катта ўқитувчи Бойханов Шохрух, ТДТУ талабаси",
+     "page": 89
+    },
+    {
+     "title": "SEPARATIZM – KO‘P QIRRALI IJTIMOIY-SIYOSIY HODISA: FALSAFIY TAHLIL",
+     "byline": "Kabulov Jaxongir- NavDU mustaqil tadqiqotchisi",
+     "page": 92
+    },
+    {
+     "title": "YEVROPA FALSAFASIDA KORRUPSIYANING DESTRUKTIV XUSUSIYATI",
+     "byline": "Latipov Sardor – Zarafshon shahar IIB boshlig‘i, NavDU mustaqil tadqiqotchisi",
+     "page": 94
+    },
+    {
+     "title": "МЕЖЛИЧНОСТНАЯ МАНИПУЛЯЦИЯ: ФИЛОСОФСКОЕ ОСМЫСЛЕНИЕ",
+     "byline": "Рустамова Мадина- Соискатель Навоийского государственного Университета",
+     "page": 96
+    },
+    {
+     "title": "IJTIMOIY VA MADANIY O‘ZGARISHLARNING QADRIYATLAR TIZIMIGA TA’SIRI",
+     "byline": "Mamadiyorova Malika – Navoiy davlat universiteti, ijtimoiy fanlar kafedrasi mustaqil tadqiqotchi",
+     "page": 97
+    },
+    {
+     "title": "TA’LIMDA NEYROPEDAGOGIK DIAGNOSTIKANING MOHIYATI",
+     "byline": "Aliqulova H.B.- NavDU Psixologiya kafedrasi katta o‘qituvchisi",
+     "page": 99
+    },
+    {
+     "title": "TA’LIM, FAN VA JAMIYATDA CHATGPT NING O‘RNI VA TA’SIRI: FALSAFIY TAHLIL VA SINERGETIK YONDASHUV",
+     "byline": "Djurayeva Nurxon Kavilovna- Navoiy davlat universiteti, Ilmiy tadqiqotlar va innovatsiyalar departameti bosh mutaxassisi",
+     "page": 102
+    },
+    {
+     "title": "“TANQIDIY TAFAKKUR”NING RAQAMLI JAMIYATDAGI O‘RNI",
+     "byline": "Islamova Mohichexra Bekmurzaevna- Navoiy davlat universiteti tayanch doktoranti",
+     "page": 106
+    },
+    {
+     "title": "TALABALARNING FIZIKADAN SIMMETRIYA VA TENGLIK TAMOYILLARIGA OID KOMPETENSIYALARINI RIVOJLANTIRISHDA INTEGRATIV YONDASHUVNING O‘RNI",
+     "byline": "M.U.Musurmonov - Navoiy davlat universiteti tayanch doktoranti",
+     "page": 108
+    },
+    {
+     "title": "RAQAMLI TEXNOLOGIYALAR ASOSIDA O‘QUVCHILARNING FIZIKA FANIGA OID UMUMIY KOMPETENSIYALARINI SHAKLLANTIRISH IMKONIYATLARI",
+     "byline": "Najmiddinov M.K.- Navoiy davlat universiteti mustaqil tadqiqotchisi",
+     "page": 110
+    },
+    {
+     "title": "GRAVITATSION DOIMIYLIK METODOLOGIK ASOSLARINING ILMIY- NAZARIY TAHLILI",
+     "byline": "Xamidov Botirjon Xusnidinovich- Navoiy davlat universiteti doktoranti",
+     "page": 112
+    },
+    {
+     "title": "INSON KAPITALINI RIVOJLANTIRISHDA MEDIA SAVODXONLIK",
+     "byline": "Suyarqulova Shukrona- Navoiy Davlat Universiteti Pedagogika yo‘nalishi 1-kurs talabasi",
+     "page": 114
+    },
+    {
+     "title": "MILLIY KONTENT YARATISHDA TILIMIZDAGI MADANIY KONSEPTLARNING O‘RNI",
+     "byline": "Fozilova Gulmehra Faxriddin qizi – NavDU O‘zbek tili va adabiyoti mutaxassisligi 1-kurs magistranti",
+     "page": 117
+    },
+    {
+     "title": "III RENESSANS KONTEKSTIDA “MILLIY MEROS’’ TUSHUNCHASINING TARIXIY VA AKSEOLOGIK MOHIYATINI YORITISHDA SUN’IY INTELLEKT ASOSIDA YARATILADIGAN MILLIY KONTENTLARNING O‘RNI",
+     "byline": "Sayitmurodova Feruza Xayrulla qizi- NDU “Ijtimoiy-gumanitar fanlar” (Tarix) yo‘nalishi 1-M guruh magistranti, E-mail: Ilmiy rahbar: prof. Safarova N.O",
+     "page": 120
+    },
+    {
+     "title": "ABU RAYHON BERUNIYNING PEDAGOGIKA ASARI HAQIDA",
+     "byline": "Jumanov Akbar Serikboyevich- O‘zMU Tarix fakulteti 1-kurs talabasi",
+     "page": 123
+    },
+    {
+     "title": "SUN’IY INTELLEKT VA SANOAT INQILOBIDAGI O‘ZGARISHLAR",
+     "byline": "Kucharboyeva Durdona - Navoiy davlat universiteti Milliy g‘oya, ma’naviyat asoslari va huquq ta’limi talabasi",
+     "page": 125
+    },
+    {
+     "title": "O‘RGANISH USLUBLARINI O‘ZGARTIRAYOTGAN TEXNOLOGIYA; SUN’IY INTELLEKTNING TA’LIMDAGI ROLI.",
+     "byline": "Mamatqulova Saboxat Abduraxmonovna-Termiz davlat pedagogika instituti Pedagogika va inklyuziv ta’lim kafedrasi o‘qituvchisi",
+     "page": 127
+    },
+    {
+     "title": "ZAMONAVIY ELEKTRON TIJORAT BOZORINING XUSUSIYATLARI",
+     "byline": "Xatamova Gavhar Kiyamovna - Navoiy davlat universiteti Geografiya kafedrasi dotsenti",
+     "page": 132
+    },
+    {
+     "title": "OLIY TA’LIMDA SUN’IY INTELLEKTDAN FOYDALANISHNING PEDAGOGIK IMKONIYATLARI",
+     "byline": "Maxmudova Gulchiroy G‘anisherovna- Navoiy davlat universiteti Pedagogika kafedrasi o`qituvchisi",
+     "page": 136
+    },
+    {
+     "title": "SUN’IY INTELLEKT VA TA’LIMNING KELAJAGI: PEDAGOGIK FAOLIYATNI TRANSFORMATSIYA QILISH",
+     "byline": "N.K.Musayeva-Navoiy davlat universiteti Maktabgacha ta’lim kafedrasi katta o‘qituvchisi, PhD. N.G.Meyliyeva-Maktabgacha ta’lim kafedrasi o‘qituvchisi",
+     "page": 138
+    },
+    {
+     "title": "ИННОВАЦИОННЫЕ МЕТОДЫ ДИСТАНЦИОННОГО ОБУЧЕНИЯ ИНОСТРАННЫХ ЯЗЫКОВ В ВЫСШИХ УЧЕБНЫХ ЗАВЕДЕНИЯХ",
+     "byline": "Супиев Шавкат Ахматович- Старший преподаватель кафедры межфакультетских иностранных языков Навоийского государственного университета",
+     "page": 143
+    },
+    {
+     "title": "ZAMONAVIY TA’LIMDA PEDAGOG - TARBIYACHINING PEDAGOGIK MAHORATI",
+     "byline": "G.T.Raxmatova- Navoiy Davlat Universiteti Maktabgacha ta’lim kafedrasi o‘qituvchisi M.I.Murodullayeva-Maktabgacha ta’lim yo‘nalishi talabasi",
+     "page": 149
+    },
+    {
+     "title": "XIX OXIRI – XX ASR BOSHLARIDA SURXONDARYO VOHASIDA SAVDO- SOTIQ MUNOSABATLARI: TARIXIY MANBALAR ASOSIDA TAHLIL",
+     "byline": "Rahmatova Marjona- Navoiy davlat universiteti magistranti",
+     "page": 152
+    },
+    {
+     "title": "RAQAMLI TRANSFORMATSIYA VA SUN’IY INTELLEKT",
+     "byline": "Sharopova Diyora - Navoiy davlat universiteti Milliy g‘oya, ma’naviyat asoslari va huquq ta’limi talabasi",
+     "page": 154
+    },
+    {
+     "title": "ENERGETIK ICHIMLIKLARNING TA’SIRI NATIJASIDA YURAK QON TOMIRLARDAGI PATOMORFOLOGIK O‘ZGARISHLAR TASNIFI",
+     "byline": "Buronova Sidiqa Tuxtayevna- NavDU “Umumiy tibbiy fanlar” kafedrasi o‘qituvchisi",
+     "page": 157
+    },
+    {
+     "title": "ЯНГИ ЎЗБЕКИСТОНДА МАКТАБГАЧА ТАЪЛИМ МУАССАСАЛАРИГА БЕЛГИЛАНГАН МЕЪЁРЛАР ВА ҚЎЙИЛГАН ДАВЛАТ ТАЛАБЛАРИ",
+     "byline": "Ширинова Фируза Иноятовна- Навоий давлат университети",
+     "page": 160
+    },
+    {
+     "title": "TA’LIM OLUVCHILARNI KASBGA YO‘NALTIRISH SAMARADORLIGINI TA’MINLASHDA TA’LIM MUASSASASI, MAHALLA, OILA HAMKORLIGI MASALALARI",
+     "byline": "D.Q.Ulug‘berdiyeva- Navoiy davlat universiteti Maktabgacha ta’lim yo‘nalishi katta o‘qituvchisi E.B. Qudratova- NDU talabasi",
+     "page": 162
+    },
+    {
+     "title": "ZAMONAVIY O‘QITISHDA INNOVATSION TA’LIMNING PEDAGOGIK- PSIXOLOGIK MEZONLARI",
+     "byline": "Kazakbayeva Mariya Alimkulovna - NavDU Tarix fakulteti “Psixologiya” kafedrasi katta o‘qituvchisi",
+     "page": 165
+    },
+    {
+     "title": "MAKTABGACHA 4–5 YOSHDAGI BOLALAR NUTQINI O‘STIRISHDA SUN’IY INTELLEKTNING AHAMIYATI",
+     "byline": "Yarova Gulhayo Fazliddin qizi- Navoiy davlat universiteti Maktabgacha ta’lim kafedrasi o‘qituvchisi Turdiyeva Diyora Sharofboy qizi- Maktabgacha ta’lim yo‘nalishi talabasi",
+     "page": 167
+    },
+    {
+     "title": "ФАКТОРЫ, ВЛИЯЮЩИЕ НА ГОТОВНОСТЬ ДЕТЕЙ К ШКОЛЬНОМУ ОБУЧЕНИЮ",
+     "byline": "Умарова Ширин Сулеймановна- cтудентка “Российский государственный педагогический университет им. А.И. Герцена”",
+     "page": 170
+    },
+    {
+     "title": "MATEMATIK TASAVVURLARNI SHAKLLANTIRISH ORQALI BO‘LAJAK TARBIYACHILARDA KREATIV FIKRLASHNI RIVOJLANTIRISHNING PEDAGOGIK IMKONIYATLARI",
+     "byline": "Elmurodova Malika Dilshod qizi-Navoiy davlat universiteti 70110201- ta’lim va tarbiya nazariyasi va metodikasi (maktabgacha ta’lim) magistranti Murtazayeva Tohira Shopulat qizi- Navoiy Davlat universiteti Maktabgacha ta’lim yo‘nalishi talabasi",
+     "page": 174
+    },
+    {
+     "title": "TALABALAR MUSTAQIL ISHLARINI TASHKIL ETISHDA RAQAMLI VOSITALARDAN FOYDALANISHNING O‘RNI",
+     "byline": "Farmanov Sardorbek Utkir o‘g‘li- Navoiy innovatsiyalar universiteti Iqtisodiyot va axborot texnologiyalari kafedrasi o‘qituvchisi",
+     "page": 176
+    },
+    {
+     "title": "O‘ZBEKISTONDA ORKESTR IJROCHILIGINING TARIXI VA BUGUNGI KUNI",
+     "byline": "Fayzullayev Ermat Majidovich- JDPU “Musiqa ta’limi” kafedrasi katta o‘qituvchisi, p.f.n",
+     "page": 179
+    },
+    {
+     "title": "YEVROPADA KITOBXONLIK MADANIYATINING RIVOJLANISH BOSQICHLARI",
+     "byline": "Ashrapov Ravil Ramzaevich- NavDU “Psixologiya” kafedrasi katta o‘qituvchisi",
+     "page": 181
+    },
+    {
+     "title": "O‘ZBEKISTONDA ZAMONAVIY MUSIQA IJODIYOTINING RIVOJLANISHIDAGI TAMOYILLAR",
+     "byline": "Himmatova Dilnoza Himmatovna- NavDU Musiqiy ta’lim va san’at yo‘nalishi magistranti",
+     "page": 185
+    },
+    {
+     "title": "MUSIQA FANIDAN SINFDAN TASHQARI ISHLAR, TO‘GARAKLARNI TASHKIL ETISH USULLARI",
+     "byline": "Egamberdiyev Uyg‘un Zavqiddin o‘g‘li- NavDU Musiqiy ta’lim va san’at yo‘nalishi magistranti",
+     "page": 187
+    },
+    {
+     "title": "TALABA-YOSHLARGA INNOVATSION AN’ANALAR INTEGRATSIYASI ASOSIDA TARBIYALASHNING SAMARALI MEXANIZMLARI",
+     "byline": "Usmonova Dilafruz Umirzoqovna- Navoiy davlat universiteti Tarix fakulteti “Psixologiya” kafedrasi o‘qituvchisi",
+     "page": 188
+    },
+    {
+     "title": "AJDODLARIMIZ TOMONIDAN TIBBIY GIYOHLARDAN FOYDALANISHNING O‘ZIGA XOS XUSUSIYATLARI",
+     "byline": "Xasanova Dilshoda Uktam qizi- Navoiy Abu Ali ibn Sino nomidagi jamoat salomatligi texnikumi Terapiya fani yetakchi o‘qituvchisi",
+     "page": 192
+    },
+    {
+     "title": "ONLAYN TAʼLIM PLATFORMALARIDA INNOVATSION METODLAR VA VOSITALARNING INTEGRATSIYASI",
+     "byline": "X.B.Suyarov - NavDU Jismoniy madaniyat kafedrasi dotsenti",
+     "page": 195
+    },
+    {
+     "title": "ARTIFICIAL INTELLIGENCE IN LITERARY STUDIES: DIGITALLY ASSISTED OF ENGLISH CLASSICS BASED ON JANE AUSTEN’S WORK",
+     "byline": "Navoi State University The faculty of English language and literature Student: Ashrapova Alina",
+     "page": 198
+    },
+    {
+     "title": "PAREMIOLOGLARNING TIBBIYOT VA SALOMATLIKKA OID MAQOLLAR HAQIDAGI IZLANISHLARI TAHLILI",
+     "byline": "Jo‘rayeva Marjona Ubaydullo qizi - Navoiy Abu Ali ibn Sino nomidagi jamoat salomatligi texnikumi Tibbiy fanlar o‘qituvchisi",
+     "page": 200
+    },
+    {
+     "title": "TАJОVUZKОRLIK HISSINI О‘RGАNISHNING PSIXОLОGIK TАBIАTI",
+     "byline": "R.Begmatov - Navoiy DPI Psixologiya kafedrasi dotsenti v.b., p.f.f.d (PhD)",
+     "page": 203
+    },
+    {
+     "title": "FAVQULODDA VAZIYATLARDA TIBBIY YORDAMNI TAKOMILLASHTIRISH MUAMMOLARI",
+     "byline": "Barnoyeva Zarina Zafar qizi- Navoiy Abu Ali ibn Sino nomidagi jamoat salomatligi texnikumi Tibbiy fanlar o‘qituvchisi",
+     "page": 205
+    },
+    {
+     "title": "СТРУКТУРА И СЕМАНТИКА ФРАЗЕОЛОГИЗМОВ РУССКОГО И УЗБЕКСКОГО ЯЗЫКОВ СЛОВНОЙ СТРУКТУРЫ",
+     "byline": "Шахназарова Дилфуза Нарпулатовна- НавГУ преподаватель кафедры русского языка и литературы",
+     "page": 207
+    },
+    {
+     "title": "AHOLIGA TIBBIY XIZMAT KO‘RSATISHNING HUDUDIYJIH ATLARI",
+     "byline": "Hamidova Nargiza Suyunboy qizi- Navoiy Abu Ali ibn Sino nomidagi jamoat salomatligi texnikumi Tibbiy fanlar o‘qituvchisi",
+     "page": 210
+    },
+    {
+     "title": "TALABALARNING VIZUAL DASTURLASHGA OID KOMPETENTLIGINI RIVOJLANTIRISH PEDAGOGIK MUAMMO SIFATIDA",
+     "byline": "Farmonova Malika- Navoiy davlat universiteti magistranti",
+     "page": 212
+    },
+    {
+     "title": "СРАВНИТЕЛЬНАЯ ХАРАКТЕРИСТИКА ЛЕКСИЧЕСКИХ СИСТЕМ РУССКОГО И УЗБЕКСКОГО ЯЗЫКОВ",
+     "byline": "Ҳасанова Маъмура Саитовна- Преподаватель русского языка Навоийского техникума здравоохранения имени Абу Али ибн Сино",
+     "page": 214
+    },
+    {
+     "title": "XIX ASRNING IKKINCHI YARMIDA TURKISTONDA JADIDLARNING TA’LIM JARAYONINI YUZAGA KELISHI VA DARSLIKLAR MASALASI",
+     "byline": "Parmonov Ulug‘bek Odiljon o‘g‘li – Xalqaro Nordik unversiteti yoshlar ishlari va talabalarga xizmat ko‘rsatish departamenti tyutori, tarbiyachi-pedagog",
+     "page": 216
+    },
+    {
+     "title": "СПЕЦИФИКА СТРУКТУРЫ ПРИСТАВОЧНЫХ ГЛАГОЛОВ ДВИЖЕНИЯ В РУССКОМ ЯЗЫКЕ",
+     "byline": "С.А.Хайруллаева - Магистрант УзГУМЯ. Ташкент.Узбекистан",
+     "page": 218
+    },
+    {
+     "title": "TALABALARDA O‘Z-O‘ZINI RIVOJLANTIRUVCHI INTELLEKTNI SHAKLLANTIRISH PSIXOLOGIK MUAMMO SIFATIDA",
+     "byline": "Kadirova Muhayyo Mavlonovna- Navoiy davlat universiteti Psixologiya kafedrasi katta o‘qituvchisi",
+     "page": 221
+    },
+    {
+     "title": "NAVOIY VILOYATIDA OMMAVIY SPORTNI RIVOJLANTIRISHGA OID DAVLAT SIYOSATI",
+     "byline": "Ergasheva Gulchehra- NavDU mustaqil tadqiqotchisi",
+     "page": 224
+    },
+    {
+     "title": "ZAMONAVIY O‘ZBEKISTONDA YOSHLARNI TARBIYALASHDA “AVESTO”DAGI MA’NAVIY-AXLOQIY QARASHLARDAN FOYDALANISH",
+     "byline": "Hamroyeva Shahrizoda Shavkat qizi – NavDU Milliy g‘oya, ma’naviyat asoslari va huquq ta’limi yo‘nalishi talabasi Ilmiy rahbar: Egamberdiyeva Nafisa – NavDPI Tarix kafedrasi dotsenti v.b",
+     "page": 228
+    },
+    {
+     "title": "HAZRAT NAVOIY HIKMATLARIDA ILM VA TARBIYA UYG‘UNLIGI",
+     "byline": "Raxmatov Sherali Abdulloyevich - Buxoro viloyat G‘ijduvon tumani ixtisoslashtirilgan maktabi Ona tili va adabiyot fani o‘qituvchisi",
+     "page": 231
+    },
+    {
+     "title": "RAQAMLASHTIRISH DAVRIDA MAKTABGACHA TA’LIMNING GLOBAL KELAJAGI VA UNING QIYOSIY-TARIXIY TAHLILI (Samarqand viloyati misolida)",
+     "byline": "Pulatov Erkin Begmuratovich- Mustaqil tadqiqotchi",
+     "page": 233
+    },
+    {
+     "title": "СВОЕОБРАЗИЕ УЗБЕКСКОЙ ЛИТЕРАТУРЫ",
+     "byline": "Н.О.Султанова - Студентка 2 курса кафедры русского языка и литературы Университета Альфраганус",
+     "page": 237
+    },
+    {
+     "title": "TA’LIMDA O‘ZBEK CHOLG‘U ANSAMBL TO‘GARAGINI TASHKIL ETISHNING AMALIY AHAMIYATI",
+     "byline": "Axmedov Nozim Jumaqulovich- O‘zbek milliy maqom san’ati Navoiy viloyati hududiy bo‘linmasi ansambl sozandasi",
+     "page": 240
+    },
+    {
+     "title": "O‘ZBEKISTONNING XALQARO TURIZM TARAQQIYOTDAGI O‘RNI",
+     "byline": "Fattoyev Islom Ilg‘orovich- Navoiy davlat universiteti doktoranti",
+     "page": 243
+    },
+    {
+     "title": "SUN’IY INTELEKTNING TA’LIMDA QO‘LLANISHI",
+     "byline": "Qiyasova Gavhar Tursunovna – NavDU",
+     "page": 244
+    },
+    {
+     "title": "MAKTABGACHA TA’LIM TASHKILOTI DIREKTORINING BOSHQARUV FAOLIYATI JARAYONLARINI TASHKIL ETISH MEXANIZMLARI",
+     "byline": "Rahmonova Diyora O‘tkir qizi- NavDU Maktabgacha va boshlang‘ich ta’lim fakulteti Maktabgacha ta’lim yo‘nalishi 1-kurs magistranti",
+     "page": 246
+    },
+    {
+     "title": "RAQAMLI XAVFSIZLIK KONSEPSIYASI: KIBERXAVF VA AXBOROT HIMOYASINING NAZARIY ASOSLARI",
+     "byline": "Qilichev Nodirjon Abrarovich- O‘zbekiston Milliy Universiteti mustaqil tadqiqotchisi",
+     "page": 248
+    },
+    {
+     "title": "O‘ZBEKISTON TASVIRIY SAN’ATIDA DASTGOHLI RANGTASVIRNING RIVOJLANISHI VA BUGUNGI KUNDAGI AHAMIYATI",
+     "byline": "Kunuzoqova Sadoqat Abdumurodovna- Navoiy ixtisoslashtirilgan Madaniyat maktabi Tasviriy san’at va muxandislik grafika mutaxasisslik oʻqituvchisi",
+     "page": 250
+    },
+    {
+     "title": "TASVIRIY SAN’ATDA “NATYURMORT” JANRI HAQIDA",
+     "byline": "Suyunova Nafisa Miltiqboyevna- Navoiy ixtisoslashtirilgan Madaniyat maktabi Tasviriy san’at va muxandislik grafika mutaxasiss oʻqituvchisi",
+     "page": 253
+    },
+    {
+     "title": "TASVIRIY SAN’AT VA UNING MOHIYATI, TUR VA JANRLARI",
+     "byline": "Qurbonova Gulchehra Abdullayevna- Navoiy ixtisoslashtirilgan Madaniyat maktabi Tasviriy san’at va muhandislik grafika mutaxasiss oʻqituvchisi",
+     "page": 254
+    },
+    {
+     "title": "AMALIYOTCHI PSIXOLOG FAOLIYATINING TA’LIM TIZIMIDAGI O‘RNI VA AHAMIYATI",
+     "byline": "Haqberdiyeva Sharofat Shavqiyevna- Navoiy ixtisoslashtirilgan Madaniyat maktabi Amaliyotchi psixologi",
+     "page": 257
+    },
+    {
+     "title": "ARXITEKTURA VA QURILISH SOHASIDA KOMPYUTER GRAFIKASI FANINI O‘QITISHNI TAKOMILLASHTIRISH",
+     "byline": "Kuldasheva Nafisa Xoljigitovna- Navoiy ixtisoslashtirilgan Madaniyat maktabi Arxitektura asoslari fani o‘qituvchisi",
+     "page": 259
+    },
+    {
+     "title": "TASVIRIY SAN’AT O‘QITUVCHILARINING KASBIY KOMPETENTLIGINI RIVOJLANTIRISH MASALALARI",
+     "byline": "Qodirov Sevdiyor Ziyadullayevich- Navoiy ixtisoslashtirilgan Madaniyat maktabi Tasviriy san’at mutaxassisi oʻqituvchisi",
+     "page": 262
+    },
+    {
+     "title": "JADID MA’RIFATPARVARLARINING O‘QUVCHILARDA TADBIRKORLIK KO‘NIKMALARINI SHAKLLANTIRISHGA DOIR PEDAGOGIK QARASHLARI",
+     "byline": "Ismatillayeva Mahliyo Muzaffar qizi- NavDU “Pedagogika nazariyasi. Pedagogik ta’limotlar tarixi” yo‘nalishi tayanch doktoranti “Profi University” nodavlat oliy ta’lim muassasasi Navoiy filiali o‘qituvchisi",
+     "page": 266
+    },
+    {
+     "title": "TALABALARDA AXLOQIY ONG VA MADANIYATNI RIVOJLANTIRISHDA JADID PEDAGOGLARINING TARBIYAVIY G‘OYALARI",
+     "byline": "Raxmatova Dilbar Anvar qizi- Profi University Navoiy filiali o’qituvchisi Navoiy davlat universiteti doktoranti",
+     "page": 268
+    },
+    {
+     "title": "RENESSANSLAR – TARIXIY JARAYONLAR TARAQQIYOTI VA TANAZZULI CHORRAHASIDA",
+     "byline": "Abilkosimova Madina Muxiddinovna- Mustaqil tadqiqotchi",
+     "page": 270
+    },
+    {
+     "title": "HUQUQIY TAFAKKUR –MURAKKAB, KO‘P QIRRALI HODISA SIFATIDA",
+     "byline": "Abdullayeva Surayyo - Navoiy davlat universiteti mustaqil tadqiqotchisi",
+     "page": 273
+    },
+    {
+     "title": "CLASSES OF THE PRONOUN",
+     "byline": "Nazarboyeva Niginabonu- NavSU Student of Languages faculty",
+     "page": 274
+    },
+    {
+     "title": "REKLAMA MATNLARIDA SINTAKTIK-STILISTIK VОSITALARNING QО‘LLANISHI",
+     "byline": "Kоbilоva Makhfuza Sherali kizi- Teacher at Prоfi University Dоctоrate at NSU",
+     "page": 278
+    },
+    {
+     "title": "MUSTAQILLIK YILLARIDA TURIZM SOHASIDA AMALGA OSHIRILGAN ISLOHOTLAR (NAVOIY VILOYATI MISOLIDA)",
+     "byline": "Xo‘jayeva L.Sh.- NavDU Tarix fakulteti Tarix kafedrasi o‘qituvchsi",
+     "page": 280
+    },
+    {
+     "title": "BOSHLANG‘ICH SINFLARDA TA’LIM JARAYONIDA ELEKTRON LUG‘ATLARDAN FOYDALANISH",
+     "byline": "Murodova Shaxlo Akmaljonovna- Navoiy Shahar 11-AFChO‘IM Boshlang‘ich sinf o‘qituvchisi",
+     "page": 285
+    },
+    {
+     "title": "XORAZM JADIDCHILIGINING TARIXIY-METODOLOGIK ASOSLARI",
+     "byline": "Davlatov Abror Azamat o‘g‘li- Mustaqil tadqiqorchi",
+     "page": 287
+    },
+    {
+     "title": "GENDER TENGLIK VA UNI SHAKLLANTIRISH MADANIYATI",
+     "byline": "Mansurova Nigora Dmitriy qizi-Buxoro Davlat Universiteti Tarix va Yuridik fakulteti, Siyosatshunoslik yo‘nalishi 2-bosqich talabasi",
+     "page": 289
+    }
+   ]
+  },
+  {
+   "type": "proceedings",
+   "language": "uz",
+   "publisher": "Navoiy davlat universiteti",
+   "publisher_ru": "Навоийский государственный университет",
+   "publisher_en": "Navoi State University",
+   "place": "Navoiy",
+   "place_ru": "Навои",
+   "place_en": "Navoi",
+   "year": 2025,
+   "copyright": "© Navoiy davlat universiteti, 2025",
+   "license": null,
+   "slug": "renessans-kontekstida-markaziy-osiyoning-ilmiy-manaviy-merosi",
+   "title": "Renessans kontekstida Markaziy Osiyoning ilmiy-ma’naviy merosi",
+   "subtitle": "Xalqaro ilmiy konferensiya materiallari",
+   "title_ru": "Научно-духовное наследие Центральной Азии в контексте Ренессанса",
+   "subtitle_ru": "Материалы международной научной конференции",
+   "title_en": "Scientific and Spiritual Heritage of Central Asia in the Context of the Renaissance",
+   "subtitle_en": "Proceedings of the international scientific conference",
+   "date": "2025-04-10",
+   "people": [
+    {
+     "family": "Safarova",
+     "given": "Nigora",
+     "affiliation": "falsafa fanlari doktori, professor, NavDU Ijtimoiy fanlar kafedrasi mudiri",
+     "affiliation_ru": "доктор философских наук, профессор, заведующая кафедрой общественных наук НавГУ",
+     "affiliation_en": "Doctor of Philosophical Sciences, Professor, Head of the Department of Social Sciences, Navoi State University",
+     "role": "chief_editor"
+    },
+    {
+     "family": "Karimov",
+     "given": "Elyor",
+     "affiliation": "tarix fanlari doktori, professor, Xofstra universiteti (Nyu-York, AQSH), YUNESKOning Butunjahon hujjatli merosini himoya qilish qo‘mitasi a’zosi",
+     "affiliation_ru": "доктор исторических наук, профессор Университета Хофстра (Нью-Йорк, США), член комитета ЮНЕСКО по защите всемирного документального наследия",
+     "affiliation_en": "Doctor of Historical Sciences, Professor, Hofstra University (New York, USA), member of the UNESCO committee for the protection of the world documentary heritage",
+     "role": "reviewer"
+    },
+    {
+     "family": "Madayeva",
+     "given": "Shahnoza",
+     "affiliation": "falsafa fanlari doktori, professor, O‘zbekiston Milliy universiteti falsafa va mantiq kafedrasi mudiri",
+     "affiliation_ru": "доктор философских наук, профессор, заведующая кафедрой философии и логики Национального университета Узбекистана",
+     "affiliation_en": "Doctor of Philosophical Sciences, Professor, Head of the Department of Philosophy and Logic, National University of Uzbekistan",
+     "role": "reviewer"
+    },
+    {
+     "family": "Shamsutdinova",
+     "given": "Nigina",
+     "affiliation": "falsafa fanlari doktori (DSc), NavDU Ijtimoiy fanlar kafedrasi dotsenti",
+     "affiliation_ru": "доктор философских наук (DSc), доцент кафедры общественных наук НавГУ",
+     "affiliation_en": "DSc, Associate Professor, Department of Social Sciences, Navoi State University",
+     "role": "editor"
+    },
+    {
+     "family": "Norqobilov",
+     "given": "Mirzohid",
+     "affiliation": "falsafa doktori (PhD), NavDU O‘zbekiston tarixi kafedrasi dotsenti",
+     "affiliation_ru": "доктор философии (PhD), доцент кафедры истории Узбекистана НавГУ",
+     "affiliation_en": "PhD, Associate Professor, Department of History of Uzbekistan, Navoi State University",
+     "role": "editor"
+    }
+   ],
+   "keywords": [
+    "Markaziy Osiyo",
+    "Uyg‘onish davri",
+    "ilmiy-ma’naviy meros",
+    "mutafakkirlar",
+    "falsafa",
+    "tasavvuf",
+    "yoshlar tarbiyasi"
+   ],
+   "keywords_ru": [
+    "Центральная Азия",
+    "эпоха Возрождения",
+    "научно-духовное наследие",
+    "мыслители",
+    "философия",
+    "суфизм",
+    "воспитание молодёжи"
+   ],
+   "keywords_en": [
+    "Central Asia",
+    "Renaissance",
+    "scientific and spiritual heritage",
+    "thinkers",
+    "philosophy",
+    "Sufism",
+    "education of youth"
+   ],
+   "abstract": "To‘plam “Renessans kontekstida Markaziy Osiyoning ilmiy-ma’naviy merosi” mavzusidagi xalqaro ilmiy konferensiya (Navoiy, 2025-yil 10-aprel) materiallaridan iborat. Unda Uyg‘onish davrida Markaziy Osiyoda yashab ijod etgan buyuk mutafakkirlarning falsafiy, tabiiy-ilmiy, ijtimoiy-iqtisodiy, siyosiy-huquqiy va ma’naviy-diniy qarash va g‘oyalarining sivilizatsion ahamiyati hamda insoniyat tarixidagi mohiyati ochib berilgan, turli fan sohasi vakillarining tahliliy materiallari jamlangan. Maqolalar o‘zbek, rus, ingliz va qozoq tillarida.",
+   "abstract_ru": "Сборник включает материалы международной научной конференции «Научно-духовное наследие Центральной Азии в контексте Ренессанса» (Навои, 10 апреля 2025 года). В нём раскрыты цивилизационное значение и место в истории человечества философских, естественнонаучных, социально-экономических, политико-правовых и духовно-религиозных взглядов и идей великих мыслителей, живших и творивших в Центральной Азии в эпоху Возрождения; собраны аналитические материалы представителей разных областей науки. Статьи на узбекском, русском, английском и казахском языках.",
+   "abstract_en": "The volume contains the proceedings of the international scientific conference “Scientific and Spiritual Heritage of Central Asia in the Context of the Renaissance” (Navoi, 10 April 2025). It examines the civilisational significance and the place in human history of the philosophical, natural-scientific, socio-economic, political-legal and spiritual-religious views and ideas of the great thinkers who lived and worked in Central Asia during the Renaissance, and brings together analytical papers by scholars from different fields. Papers are in Uzbek, Russian, English and Kazakh.",
+   "languages": [
+    "uz",
+    "ru",
+    "en",
+    "kk"
+   ],
+   "pages": 387,
+   "pdf": "files/publications/renessans-kontekstida-markaziy-osiyoning-ilmiy-manaviy-merosi.pdf",
+   "cover": "images/nsu/publications/renessans-kontekstida-markaziy-osiyoning-ilmiy-manaviy-merosi-cover.jpg",
+   "toc": [
+    {
+     "title": "SO‘ZBOSHI",
+     "byline": "",
+     "page": 3
+    },
+    {
+     "title": "ДЖАЛАЛ АД-ДИН РУМИ: САМЫЙ ПРОДАВАЕМЫЙ ПОЭТ В США!",
+     "byline": "Каримов Элёр Эрикович, доктор исторических наук, профессор. Hofstra University (США). Член комитета ЮНЕСКО по защите всемирного документального наследия Память мира (Memory of the World), США",
+     "page": 4
+    },
+    {
+     "title": "ЭТНОКУЛЬТУРНЫЙ КОМПОНЕНТ В СОДЕРЖАНИИ ПОДГОТОВКИ ПЕДАГОГОВ (из опыта работы УО МГПУ им. И.П.Шамякина)",
+     "byline": "Навныко Валерий Николаевич, кандидат физико-математических наук, доцент, ректор Мозырского государственного педагогического университета имени И.П.Шамякина, Беларусь",
+     "page": 4
+    },
+    {
+     "title": "ИМОМ БУХОРИЙ ХАЛҚАРО ИЛМИЙ-ТАДҚИҚОТ МАРКАЗИДА “ЖАҲОЛАТГА ҚАРШИ МАЪРИФАТ” ТУРКУМИДА НАШР ЭТИЛГАН КИТОБЛАР",
+     "byline": "Шовосил Зиёдов, Имом Бухорий халқаро илмий-тадқиқот маркази директори, тарих фанлари доктори, профессор",
+     "page": 9
+    },
+    {
+     "title": "ШАРИАТ ВА ТАРИҚАТНИНГ ЎЗАРО БОҒЛИҚЛИГИ (тавба мезони талқинида)",
+     "byline": "Ражабова М.А., Ўзбекистон Республикаси ИИБ Академияси, ю.ф.д., профессор, жиноят ҳуқуқи кафедраси профессори",
+     "page": 12
+    },
+    {
+     "title": "PLACE OF SUFISM AND HANAFI SCHOOLS IN THE HISTORY OF UZBEK IDENTITY",
+     "byline": "Madaeva Sh. A., Professor of National University of Uzbekistan",
+     "page": 19
+    },
+    {
+     "title": "КРОССКУЛЬТУРНОЕ ВЗАИМОДЕЙСТВИЕ В ДОИСЛАМСКОЙ ЦЕНТРАЛЬНОЙ АЗИИ",
+     "byline": "Шомахмадов Сафарали Хайбуллоевич, К.и.н., ст.н.с. Института восточных рукописей Российская академия наук",
+     "page": 23
+    },
+    {
+     "title": "МАРКАЗИЙ ОСИЁ ИЛМИЙ МЕРОСИНИНГ МЕТОДОЛОГИК АСОСЛАРИ",
+     "byline": "Сафарова Нигора Олимовна- Фалсафа фанлари доктори, профессор, Навоий давлат университети Ижтимоий фанлар кафедраси мудири, Ўзбекистон",
+     "page": 24
+    },
+    {
+     "title": "JOMIY VA NAVOIY – XALQLARARO DO‘STONA MUNOSABAT VA ADABIY ALOQALARNI MUSTAHKAMLANISHIGA HISSA QO‘SHGAN BUYUK IKKI SIYMO",
+     "byline": "Tavakkal Choriyev, Navoiy davalat universiteti professori, filologiya fanlari nomzodi",
+     "page": 27
+    },
+    {
+     "title": "MAKTABGACHA TA’LIMDA SUN’IY INTELLEKT: IMKONIYATMI YOKI XAVF?",
+     "byline": "Davlatova Ra’no- Filologiya fanlari doktori, DSc. Navoiy davlat Universiteti Maktabgacha ta’lim kafedrasi mudiri",
+     "page": 30
+    },
+    {
+     "title": "СУФИЙСКАЯ КОНЦЕПЦИЯ АБУ АЛИ ИБН СИНЫ О НЕОБХОДИМО СУЩЕМ (ВОЖИБ-УЛ-ВУЖУД)",
+     "byline": "Шамсутдинова Нигина Каримовна, Доктор философских наук, доцент кафедры Общественных наук Навоийского государственного университета, Узбекистан",
+     "page": 32
+    },
+    {
+     "title": "ABU RAYHON BERUNIY ILMIY-MA’NVIY MEROSINING YOSHLAR TARBIYASIDA TUTGAN OʻRNI",
+     "byline": "Djurakulov Xusan Anvarovich, O‘zbekiston xalqaro islom akademiyasi huzuridagi Malaka oshirish markazining Samarqand viloyati mintaqaviy filiali, falsafa fanlari doktori (DSc), dotsent",
+     "page": 36
+    },
+    {
+     "title": "BERUNIYNING TA’LIMIY VA AXLOQIY QARASHLARINING BUGUNGI KUNDAGI AHAMIYATI",
+     "byline": "R.M.Qarshiyev- Navoiy davlat universiteti dotsenti, tarix fanlari nomzodi",
+     "page": 38
+    },
+    {
+     "title": "ЎЗБЕКИСТОНЛИК “МЕҲНАТ АРМИЯЧИЛАРИ”НИНГ МАЪРИФИЙ- ТАРҒИБОТЧИЛИК ФАОЛИЯТИ",
+     "byline": "Курбанов Хуршид Раупович- Навоий давлат университети доценти, тарих фанлари номзоди",
+     "page": 40
+    },
+    {
+     "title": "TEXNOGEN SIVILIZATSIYA RIVOJLANISHIDA MUHAMMAD AL-XORAZMIYNING O‘RNI",
+     "byline": "Ochilov Jamshid Abdurashidovich - O‘zbekiston xalqaro islom akademiyasi huzuridagi Malaka oshirish markazining Samarqand viloyati mintaqaviy filiali direktori, falsafa fanlari bo‘yicha falsafa doktori (PhD), dotsent",
+     "page": 43
+    },
+    {
+     "title": "MARKAZIY OSIYO ILMIY, MADANIY MEROSINI O‘RGANISHDA DISSIMMETRIK YONDASHUVNING O‘RNI",
+     "byline": "Bekpo‘latov Ulug‘bek Rahmatulla o‘g‘li- Navoiy davlat universiteti doktoranti, f.f.f.d. (PhD), dotsent",
+     "page": 45
+    },
+    {
+     "title": "СИНТЕЗ ТРАДИЦИЙ ВОСТОЧНОЙ ФИЛОСОФИИ НАУКИ И СОВРЕМЕННЫХ ТЕХНОЛОГИЙ ИСКУССТВЕННОГО ИНТЕЛЛЕКТА В РАЗВИТИИ НАУЧНОГО ПОЗНАНИЯ",
+     "byline": "Филиппов Ольгерд Александрович- Доктор философии по философским наукам (PhD), Навоийский филиал НУВО “PROFI UNIVERSITY”",
+     "page": 47
+    },
+    {
+     "title": "МАРКАЗИЙ ОСИЁ МУТАССАВУФЛАРИ ИЖОДИДА ИНСОН МОҲИЯТИ ТАЛҚИНИ",
+     "byline": "Бозоров Мустафо Жабборович- Самарқанд давлат чет тиллар интитути “Гуманитар фанлар ва ахборот технологиялари” кафедраси профессори, фалсафа фанлари номзоди",
+     "page": 51
+    },
+    {
+     "title": "ЭВОЛЮЦИЯ ОНТОЛОГИЧЕСКИХ И ГНОСЕОЛОГИЧЕСКИХ ПРЕДСТАВЛЕНИЙ О ЦИВИЛИЗАЦИИ В КОНТЕКСТЕ ЦИФРОВОЙ ТРАНСФОРМАЦИИ ОБРАЗОВАТЕЛЬНЫХ СИСТЕМ ТЮРКСКИХ СТРАН",
+     "byline": "Джураев Аваз Ахмеджанович- Кандидат философских наук, доцент кафедры «Гуманитарных и социальных наук» Ангренского Университета, Узбекистан Джураева Нигора Авазовна- факультет Социальных наук, кафедра «Философия»- старший преподаватель, PhD Национальный университет Узбекистана имени Мирзо Улугбека, Узбекистан",
+     "page": 54
+    },
+    {
+     "title": "РЕЛИГИОЗНАЯ ТОЛЕРАНТНОСТЬ В ДУХОВНОМ НАСЛЕДИИ МЫСЛИТЕЛЕЙ ЦЕНТРАЛЬНОЙ АЗИИ",
+     "byline": "Марданова Ф.Б.- док.философ. (PhD) доц. кафедры русского языка и литературы НГУ. Узбекистан",
+     "page": 57
+    },
+    {
+     "title": "ZAMONAVIY TA’LIM TIZIMIDA KASBIY KOMPETENTLILIKNING MOHIYATI VA TUZILMASI",
+     "byline": "Sh.S.Boboyorov – NavDU Tarix kafedrasi dotsenti",
+     "page": 60
+    },
+    {
+     "title": "THE INFLUENCE OF INFORMATION ETHICS ON THE SPIRITUAL UPBRINGING OF YOUTH",
+     "byline": "Tilavova Umida Kakhramonovna, Phd The Department of Social Sciences Navai State University",
+     "page": 62
+    },
+    {
+     "title": "SHAXSNING HAYOTIY MAKONI IJTIMOIYLASHUV MAKONI SIFATIDA",
+     "byline": "Shukurov Akmal Sharofovich- O‘zMU, “Falsafa” kafedrasi katta o‘qituvchisi, falsafa fanlari bo‘yicha falsafa doktori (PhD)",
+     "page": 64
+    },
+    {
+     "title": "ИСТОРИЧЕСКИЙ ОБЗОР НАУЧНОГО И ДУХОВНОГО НАСЛЕДИЯ",
+     "byline": "Раджапова Наталья Базаровна- Термезский государственный университет кафедра русского языкознания PhD",
+     "page": 67
+    },
+    {
+     "title": "ALISHER NAVOIY TASAVVUFIY G‘OYALARINING MA’NAVIY VA INTELLEKTUAL MOHIYATI",
+     "byline": "Turobov Bekpulat Nusratullayevich- Samarqand davlat chet tillar instituti, Gumanitar fanlar kafedrasi dotsenti, PhD",
+     "page": 72
+    },
+    {
+     "title": "QORAXONIYLAR DAVLATI TARIXINI O‘RGANISHDA MAHMUD KOSH G‘ARIY MA`LUMOTLARINING AHAMIYATI",
+     "byline": "Sayfullayev Behruz Dilshod o‘g‘li- Toshkent xalqaro moliyaviy boshqaruv va texnologiya universiteti “Ijtimoiy-gumanitar fanlar va tarix” kafedrasi mudiri, tarix fanlari bo‘yicha (PhD) Maxmudov Bexzod Xamidovich- Toshkent xalqaro moliyaviy boshqaruv va texnologiya universiteti “Ijtimoiy-gumanitar fanlar va tarix” kafedrasi dotsenti, tarix fanlari nomzodi",
+     "page": 74
+    },
+    {
+     "title": "KITOB MUTOALASI OMMAVIY KOMUNIKATSIYA VOSITASI SIFATIDA",
+     "byline": "Dulanbayeva Oygul- O‘zbekiston Milliy universiteti Ijtimoiy fanlar fakulteti Sotsiologiya kafedrasi katta o‘qituvchisi, sotsiologiya fanlari bo‘yicha falsafa doktori (PhD)",
+     "page": 76
+    },
+    {
+     "title": "СТРУКТУРНАЯ СУЩНОСТЬ И СОЦИАЛЬНЫЕ ФУНКЦИИ УПРАВЛЕНЧЕСКОЙ ДЕЯТЕЛЬНОСТИ",
+     "byline": "Асланов Саид Каримович- Сингапурский институт развития менеджмента в Ташкенте",
+     "page": 79
+    },
+    {
+     "title": "ФАХРИДДИН РОЗИЙ ҲАЁТИ ВА ИЖОДИГА УМУМИЙ БИР НАЗАР",
+     "byline": "Эшпулатов Иноят Сапарович- Фалсафа доктори (PhD)",
+     "page": 81
+    },
+    {
+     "title": "ENERGY AND THE STATE SOVEREIGNTY HOW DANGEROUS IS IT FOR UZBEKISTAN’S SOVEREIGNTY TO BE TIED TO ONE COUNTRY IN A STRATEGIC ISSUE LIKE ENERGY?",
+     "byline": "Akhadov Shokhjakhon - Masters student of Politics, Economics, Philosophy program at Higher Schoo l of Economics in Moscow",
+     "page": 83
+    },
+    {
+     "title": "ALISHER NAVOIYNING IJTIMOIY QARASHLARIDA TAVOZE TALQINI",
+     "byline": "Gulova Anorgul Axtamovna- Buxoro davlat universiteti “Ijtimoiy-siyosiy fanlar” kafedrasi dotsenti, falsafa fanlari bo‘yicha falsafa doktori (PhD)",
+     "page": 88
+    },
+    {
+     "title": "SAYYID SHARIF JURJONIY ILMIY MEROSINING FALSAFIY TAFAKKUR TARAQQIYOTIDAGI AHAMIYATI",
+     "byline": "M.Norqobilov- Navoiy davlat universiteti Tarix kafedrasi dotsenti, f.f.f.d. (PhD) S.Abduhakimova - mustaqil tadqiqotchi",
+     "page": 91
+    },
+    {
+     "title": "SADR SHAHID HUSOMIDDIN BUXORIYNING “VAQF KITOBI” ASARI",
+     "byline": "Raxshona Kenjaboyeva- Islomshunoslik fanlari bo‘yicha falsafa doktori (PhD), Baytul-Hikma Academy MCHJ direktori",
+     "page": 93
+    },
+    {
+     "title": "MUTAFAKKIR IBN SINO MA’NAVIY MEROSINING FRANSUZ TADQIQOT TAJRIBASIDAN MAKTAB TA’LIMIDA FOYDALANISH",
+     "byline": "Kurbanov Djamshid Djurayevich- BMTI akademik litseyi o‘qituvchisi, falsafa tarixi fanlari bo‘yicha falsafa doktori (PhD) Boqiyeva Marjona Shuhratovna BMTI akademik litsey ingliz tili o‘qituvchisi",
+     "page": 95
+    },
+    {
+     "title": "MA’NAVIY MEROSNI O‘RGANISH-TARBIYA MANBAI",
+     "byline": "Ilyos Quvondiqov- Toshkent kimyo-texnologiya instituti Yangiyer filiali dotsenti, falsafa doktori (PhD)",
+     "page": 98
+    },
+    {
+     "title": "JAMIYAT TARAQQIYOTIDA SIYOSIY MODERNIZATSIYANING O‘ZIGA XOS XUSUSIYATLARI",
+     "byline": "Xojiyev Tunis Nurkosimovich- O‘zbekiston Milliy universiteti Huquqiy fanlar kafedrasi dotsenti, falsafa fanlari bo‘yicha falsafa doktori",
+     "page": 101
+    },
+    {
+     "title": "ABU RAYHON BERUNIY VA IBN SINONING TABIAT VA ATROF-MUHITGA OID QARASHLARI",
+     "byline": "Toshturov Sh.E.- Navoiy davlat universiteti doktoranti, t.f.f.d., PhD",
+     "page": 106
+    },
+    {
+     "title": "“HUDUD UL-OLAM” ASARI MARKAZIY OSIYO UYG‘ONISH DAVRINING ILMIY MEROSI SIFATIDA",
+     "byline": "Xudayberdiyev Ikrom- TIFT o‘qituvchisi (PhD)",
+     "page": 109
+    },
+    {
+     "title": "JAMIYAT BARQARORLIGINI TA’MINLASHDA GENDER TENGLIGI MASALASI",
+     "byline": "Pulatov Jaxongir Nazirovich- Navoiy viloyati PMM dotsenti",
+     "page": 112
+    },
+    {
+     "title": "ЁШЛАР ТАРБИЯСИДА МАРКАЗИЙ ОСИЁ МУТАФАККИРЛАРИ ИЛМИЙ-МАЪНАВИЙ МЕРОСНИНГ ЎРНИ ВА АҲАМИЯТИ",
+     "byline": "Ш.Б.Туробова- НавДУ катта уқитувчиси",
+     "page": 113
+    },
+    {
+     "title": "ЎЗБЕКИСТОН ДИНИЙ БАГРИКЕНГЛИК БОРАСИДА НАМУНА",
+     "byline": "Сувонова Насиба Мардоновна- Навоий давлат университети ижтимоий фанлар кафедраси катта ўқитувчиси",
+     "page": 114
+    },
+    {
+     "title": "ОИЛАВИЙ ҚАДРИЯТЛАР ТИЗИМИНИНГ ЗАМОНАВИЙ ИЖТИМОИЙ ШАРОИТЛАР БИЛАН АЛОҚАСИ",
+     "byline": "Мамадиярова Малика- НавДУ мустақил тадқиқотчиси",
+     "page": 117
+    },
+    {
+     "title": "“INGLIZ VA OʻZBEK FOLKLORIDA YOLGʻIZLIK MOTIVIʼʼ",
+     "byline": "Sayidova Moxichexra Islomovna Aniq va ijtimoiy fanlar universiteti 2-bosqich magistranti",
+     "page": 119
+    },
+    {
+     "title": "АНАЛИЗ СУЩНОСТИ И ВЫЯВЛЕНИЕ СОЦИАЛЬНЫХ ФАКТОРОВ СЕПАРАТИЗМА",
+     "byline": "Кабулов Жахонгир- Соискатель Урганчского государственного университета",
+     "page": 122
+    },
+    {
+     "title": "AXBOROTLASHGAN JAMIYATDA YOSHLAR MA’NAVIYATINING DEFORMATSIYASIGA SABAB BO‘LUVCHI OMILLAR",
+     "byline": "Sayidova Muhabbat G‘afforovna Navoiy davlat konchilik va texnologiyalar universiteti katta o‘qituvchisi",
+     "page": 124
+    },
+    {
+     "title": "СОЦИАЛЬНОЕ ПРОЕКТИРОВАНИЕ КАК ФАКТОР СИСТЕМНОСТИ ПОДГОТОВКИ РУКОВОДЯЩИХ КАДРОВ",
+     "byline": "Тагаев Камол- Соискатель Навоийского государственного университета, Узбекистан",
+     "page": 126
+    },
+    {
+     "title": "СОЦИАЛЬНАЯ СУЩНОСТЬ МОНИПУЛЯЦИИ",
+     "byline": "Рустамова Мадина Соискатель Навоийского государственного Университета",
+     "page": 130
+    },
+    {
+     "title": "MEHR – SHAVQAT -- ULUG‘ QADRIYAT",
+     "byline": "Asadov Muhammad O‘tkir o‘g‘li - Navoiy Davlat Universiteti “Tarix” mutaxassisligi doktoranti",
+     "page": 132
+    },
+    {
+     "title": "COMPARATIVE ANALYSIS OF STYLISTIC TECHNIQUES IN MODERNIST NOVELS (BASED ON THE WORKS OF ANDREI BELY AND JAMES JOYCE)",
+     "byline": "Ashrapova Alina- Navoi State University The faculty of English language and literature",
+     "page": 135
+    },
+    {
+     "title": "“MADANIY TAFAKKUR” TUSHUNCHASI VA UNING INSONIYAT RIVOJIDAGI O‘RNI",
+     "byline": "Aslonov Jurabek Mansurovich- Navoiy davlar universiteti “Ijtimoiy fanlar “kafedrasi doktoranti The concept of \"Cultural thought\" and its role in human development",
+     "page": 138
+    },
+    {
+     "title": "YOSHLAR TARBIYASIDA ILMIY-MA’NAVIY MEROSNING O‘RNI",
+     "byline": "Boqiyeva Marjona Shuhratovna- BMTI akademik litsey ingliz tili o‘qituvchisi Kurbanov Djamshid Djurayevich- BMTI akademik litseyi o‘qituvchisi, falsafa tarixi fanlari bo‘yicha falsafa doktori (PhD)",
+     "page": 140
+    },
+    {
+     "title": "TIPALOGIK TAHLIL VA TALQIN",
+     "byline": "Maxmudova Diyora Muxtor qizi- Navoiy davlat universiteti O‘zbek tili va adabiyoti mutaxassisligi, I bosqich magistranti. Ilmiy rahbar: f.f.f.d dotsent Ahmedova.Z",
+     "page": 141
+    },
+    {
+     "title": "XОJА АHRОR VАLIY TАSАVVUFIY G‘ОYАLАRINING O‘ZIGA XOS JIHATLARI",
+     "byline": "Nazarova Gulshan Ismoilovna Osiyo xalqaro Universiteti 2-bosqich magistranti",
+     "page": 146
+    },
+    {
+     "title": "O‘ZBEKISTОN YОSHLАRI TАRBIYАSIDА MА’NАVIY MERОSNING O‘RNI",
+     "byline": "Juliyev Ismat- Samarqand viloyati Oliy ta’lim, fan va innovatsiyalar boshqarmasi Ta’lim jarayonini tashkil etish sho‘basi yyetakchi mutaxassisi Sоliyev Аnvar- Sаmаrqаnd trаnspоrt texnikumi ishlab chiqarish ta’lim bo‘yicha direktor o‘rinbosari",
+     "page": 149
+    },
+    {
+     "title": "ALLYUZIYALARNI O‘QITISHDA PEDAGOGIK YONDASHUV",
+     "byline": "Bozorova Matluba- Buxoro Davlat Pedagogika Instituti tayanch doktorant",
+     "page": 151
+    },
+    {
+     "title": "TURKIY TAMADDUN ASOSLARI BILAN YANGI UYG‘ONISH SARI",
+     "byline": "Muzaffar Suvonkulov- Guliston davlat universiteti dayanch doktoranti",
+     "page": 153
+    },
+    {
+     "title": "MIRZO ULUG‘BEKNING ILM-FAN RIVOJIDAGI RO‘LI",
+     "byline": "Boyto‘rayev Sirojiddin Usmon o‘g‘li- Denov tadbirkorlik va pedagogika instituti o‘qituvchisi Mamasaidova Ruxshona Qarshi qizi- Denov tadbirkorlik va pedogogika instituti talabasi",
+     "page": 157
+    },
+    {
+     "title": "MARKAZIY OSIYO DAVLATCHILIK TARIXIDA IJTIMOIY BOSHQARUVNING MA’NAVIY ASOSLARI",
+     "byline": "Mansurova Malohat Yunus qizi- Navoiy davlat universiteti “Ijtimoiy fanlar” kefedrasi katta o‘qituvchisi Saxatov Bekzod Kenjayevich- Navoiy viloyat Ichkiishlar boshqarmasi TKX KITEB xodimi",
+     "page": 160
+    },
+    {
+     "title": "KARIMBEK KAMIY IJODIDA TARBIYA MASALASI",
+     "byline": "Mardonova Xonzoda Anvar qizi Navoiy davlat universiteti 1-kurs magistranti",
+     "page": 161
+    },
+    {
+     "title": "YUSUF XОS HОJIBNING \"QUTАDG‘U BILIG\" АSАRIDА MILIY, MА’NАVIY MЕRОSI, АXLОQIY VА SIYОSIY QАRАSHLАR TАHLILI.",
+     "byline": "Mеlibоyеv Akobir Sаmаrqаnd trаnspоrt tеxnikumi, Yоshlаr bilаn ishlаsh bo‘yichа dirеktоr o‘rinbоsаri",
+     "page": 164
+    },
+    {
+     "title": "\"SCIENTIFIC-TECHNOLOGICAL MAPPING OF ‘VIDEVDAT’: A CASE STUDY OF PERSONAL NAMES",
+     "byline": "Murodova Gulmira Muhiddin qizi",
+     "page": 167
+    },
+    {
+     "title": "KOGNITIV TA’LIM TEXNOLOGIYALARINING ASOSIY TAMOYILLARI VA ULARNING O‘QUVCHILAR MUAMMOLARINI HAL ETISHDAGI ROLI.",
+     "byline": "N.N.Umarov Navoiy davlat universiteti mustaqil tadqiqotchisi",
+     "page": 169
+    },
+    {
+     "title": "YANGI O‘ZBEKISTONDA MA’RIFATLI SHAXS TARBIYASINING HUQUQIY ASOSLARI",
+     "byline": "Habibullayev Orif Muhiddin o‘g‘li- Toshkent xalqaro moliyaviy boshqaruv va texnologiyalar universiteti “Ijtimoiy-gumanitar va tarix” kafedrasi katta o‘qituvchisi",
+     "page": 171
+    },
+    {
+     "title": "YOSHLARNI TARBIYALASHDA ILMIY VA MA’NAVIY MEROSNING O‘RNI",
+     "byline": "O‘ktamova Dilfuza O‘ktamovna- Navoiy davlat universiteti “Ijtimoiy fanlar” kafedrasi 1-kurs Tayanch doktoranti",
+     "page": 174
+    },
+    {
+     "title": "NAVOIY QIT’ALARINING O‘RGANILISHI",
+     "byline": "O‘ktamova Diyora Qayum qizi- Navoiy davlat universiteti O‘zbek tili va adabiyoti mutaxasisligi,1-kurs magistranti. Ilmiy rahbar:f.f.f.d dotsent Xudoyorova.M",
+     "page": 177
+    },
+    {
+     "title": "O‘RTA OSIYODA O‘TKAZILGAN MILLIY-HUDUDIY CHEGARALANISH VA O‘ZBEKISTON SSRNING TASHKIL TOPISHI",
+     "byline": "Orziqulov Komiljon- Navoiy davlat universiteti 1-bosqich magistranti",
+     "page": 180
+    },
+    {
+     "title": "FRANSIYA TADQIQOTCHILARINIG OKS SIVILIZATSIYASI YODGORLIKLARIDAGI ARXEOLOGIK TADQIQOTLARI XUSUSIDA",
+     "byline": "Rasulova Sevara Chariyerovna Termiz davlat universiteti, O‘zbekiston tarixi ixtisosligi 07.00.01 2-kurs tayanch doktoranti",
+     "page": 183
+    },
+    {
+     "title": "AMIR TEMUR VA TEMURIYLAR DAVRI SAN’ATIGA BIR NAZAR",
+     "byline": "Boyto‘rayev Sirojiddin Usmon o‘g‘li- Denov tadbirkorlik va pedogogika instituti o‘qituvchisi Ravshanova Marjona Karimovna- Denov tadbirkorlik va pedogogika instituti talabasi",
+     "page": 186
+    },
+    {
+     "title": "YOLG‘ON VA DEZINFORMATSIYA KATEGORIYALARINING FALSAFIY VA MANTIQIY TAHLILI HAMDA ULARNING INSON TAFAKKURIDA TUTGAN O‘RNI",
+     "byline": "Salomov Suhrob-O‘zbekiston Milliy universiteti Ijtimoiy fanlar fakulteti “Falsafa” kafedrasi mustaqil tadqiqotchisi",
+     "page": 189
+    },
+    {
+     "title": "“NOROZILIK” AKTI VA UNI YUZAGA KELTIRIVCHI LISONIY BIRLIKLAR (Ahmad Yassaviy hikmatlari misolida)",
+     "byline": "Toshpulatova Gulhayo Azamat qizi- Navoiy davlat universiteti 1- kurs magistranti",
+     "page": 191
+    },
+    {
+     "title": "NOSIR XISRAVNING HAYOTI VA ILMIY ME`ROSI",
+     "byline": "Usmonov Nurmuhammad Eshmahmat oʻgʻli- Denov tadbirkorlik va pedagogika inistituti talabasi Mahmaraimov Izzat Azamat oʻgʻli- Denov tadbirkorlik va pedagogika inistituti talabasi",
+     "page": 194
+    },
+    {
+     "title": "YOSHLAR TARBIYASIDA JADIDLARNING ILMIY MA’NAVIY MEROSINI O‘RGANISHNING DOLZARBLIGI",
+     "byline": "Xaydarova Dilorom Abduxamidovna- Namangan davlat universiteti ilmiy tadqiqotchisi",
+     "page": 196
+    },
+    {
+     "title": "YOSH AVLODNI TARBIYALASHDA BUYUK ALLOMALARNING MADANIY VA MA’NAVIY MEROSINING O‘RNI VA AHAMIYARI",
+     "byline": "Fadoyeva Ferangiz Xursan qizi- Buxoro davlat universiteti, “Fizika-matematika” fakulteti talabasi",
+     "page": 198
+    },
+    {
+     "title": "MADANIY VA TEXNOLOGIK DETERMINIZMNING JAMIYATDAGI O‘ZARO ALOQADORLIGI VA O‘ZARO TA’SIRI",
+     "byline": "Yunusova Gulnoza Akramovna- Navoiy Davlat Universiteti",
+     "page": 200
+    },
+    {
+     "title": "FOROBIY IJTOMOIY HAYOT, JAMIYAT VA UNING TARQQIYOTI HAQIDA",
+     "byline": "Abdunasirova Xalima Erdtillayaevna- Toshkent to‘qimachilik va yengil sanoat instituti ”Ijtimoiy fanlar va jismoniy madaniyat” kafedrasi katta o‘qituvchisi",
+     "page": 203
+    },
+    {
+     "title": "MARKAZIY OSIYO MUTAFFAKKIRLARINING DAVLATCHILIK TO‘GRISIDAGI GOYALARI VA QARASHLARI.",
+     "byline": "Maxmudov L.Yu.-TIFT Ijtimoiy fanlar va tarix kafedrasi katta o‘qituvchisi, Dalak’yan Janna-Toshkent arxitektura va qurilish universiteti katta o‘qituvchisi",
+     "page": 205
+    },
+    {
+     "title": "THE ROLE OF POLEMICS IN THE DJADIDIZM MOVEMENT",
+     "byline": "Saakyan Roza Yurevna Asia International University",
+     "page": 207
+    },
+    {
+     "title": "YOSHLAR TARBIYASIDA MILLIY VA UMUMINSONIY QADRIYATLARNI “ALPOMISH” DOSTONI ORQALI SINGDIRISH",
+     "byline": "Sattorova Muborak- Navoiy davlat universiteti katta o‘qituvchisi",
+     "page": 209
+    },
+    {
+     "title": "FAROBIYNING ILM VA TARBIYA BORASIDAGI ILMIY MEROSI",
+     "byline": "Sadikova Roza Ismailovna- Toshkent to‘qimachilik va yengil sanoat instituti “Ijtimoiy fanlar va jismoniy madaniyat” kafedrasi katta o‘qituvchisi",
+     "page": 211
+    },
+    {
+     "title": "TIBBIYOT HODIMI HAMDA BEMOR MUNOSABATLARI",
+     "byline": "Quvondiqova Yulduz- Navoiy Abu Ali ibn Sino nomidagi jamoat salomatligi texnikumi yetakchi o‘qituvchisi",
+     "page": 213
+    },
+    {
+     "title": "TIBBIY SUG‘URTA: AMALDAGI TURLARINI RIVOJLANTIRISH VA MAJBURIY TURINI JORIY ETISH IMKONIYATLARI",
+     "byline": "Boymurodova Mahliyo- Navoiy Abu Ali ibn Sino nomidagi jamoat salomatligi texnikumi yyetakchi o‘qituvchisi",
+     "page": 215
+    },
+    {
+     "title": "ЎЗБЕКИСТОНДА ПЕДИАТРИЯ ФАНИНИНГ РИВОЖЛАНИШИ",
+     "byline": "Тӯрақулова Сурайё Равшановна- Навоий Абу Али ибн Сино номидаги жамоат саломатлиги техникуми",
+     "page": 218
+    },
+    {
+     "title": "YOSHLARNI MUOMALA VA SHAXSLARARO MUNOSABATLARGA O‘RGATISHNING PSIXOLOGIK MOHIYATI",
+     "byline": "Suvonova Mehribonu Musayevna- Navoiy Abu Ali ibn Sino nomidagi jamoat salomatligi texnikumi bosh o‘qituvchisi Saidova Nafisa Bahriddinovna- Navoiy Abu Ali ibn Sino nomidagi jamoat salomatligi texnikumi yetakchi o‘qituvchi",
+     "page": 220
+    },
+    {
+     "title": "XX ASRDA HUQUQNI MUHOFAZA QILISH ORGALARI XODIMLARINING QATAG‘ON QILINISHI",
+     "byline": "Sayfiyeva Marjona- Navoiy davlat universiteti magistranti",
+     "page": 222
+    },
+    {
+     "title": "MAKTAB TA’LIMIDA O‘ZBEK CHOLG‘U ASBOBLAR TO‘GARAGINI SHAKLLANTIRISHNING NAZARIY ASOSLARI",
+     "byline": "Egamberdiyev Uyg‘un Sayfiddin o‘g‘li - NavDU Magistranti Ilmiy rahbar: Nurullayev Farrux G‘aybullayevich - BuxDU p.f.f.d.professor",
+     "page": 224
+    },
+    {
+     "title": "BADIIY ASARLAR VOSITASIDA O‘QUVCHILARNING MUSIQIY TAFAKKURINI RIVOJLANTIRISH MASALALARI",
+     "byline": "Hikmatova Dilnoza Himmatovna - NavDU Magistranti Ilmiy rahbar: O.O.Fayziyev - NavDU professori",
+     "page": 227
+    },
+    {
+     "title": "CHOR ROSSIYASIDA JADIDCHILIK HARAKATI",
+     "byline": "Erkinboyev Fozilbek Zakirjon o‘g‘li- Ilmiy rahbar: Shirinova Firuza Inoyatovna- Navoiy davlat universiteti Tarix fakulteti",
+     "page": 230
+    },
+    {
+     "title": "TRADING STRATEGIES AND TECHNICAL ANALYSIS METHODS: CHART PATTERNS AND INDICATORS",
+     "byline": "To‘qmirzayev Kamol Mo‘min o‘g‘li, Profi Universiteti (Navoiy Filiali) rektor yordamchisi",
+     "page": 234
+    },
+    {
+     "title": "O‘ZBEKISTONDA TA’LIMNI RAQAMLASHTIRISH VA EdTechning JORIY ETILISHI",
+     "byline": "T.U.O‘tapov-NavDU Informatika kafedrasi dotsenti",
+     "page": 237
+    },
+    {
+     "title": "KORXONALARNING IQTISODIY BARQARORLIK VA XAVFSIZLIK DARAJASINI IFODALOVCHI KO‘RSATKICHLAR TAHLILI",
+     "byline": "Sheraliyeva Saida Azatovna- Geografiya va iqtisodiy bilim asoslari kafedrasi dotsenti v.b",
+     "page": 240
+    },
+    {
+     "title": "BOSHLANG‘ICH SINFLARDA O‘QISH DARSLARINI O‘QITISHNING DIDAKTIK VAZIFALARI",
+     "byline": "Murodilloyeva Mahbuba - Profi University Boshlang‘ich ta’lim yo‘nalishi 5-bosqich talabasi Ilmiy rahbar: K.M.Ulug‘murodova f.f.f.n (PhD)",
+     "page": 242
+    },
+    {
+     "title": "BOSHLANG‘ICH SINFLARDA ANVAR OBIDJON IJODINING O‘RGANILISHI",
+     "byline": "Ishpo‘latova Laziza - Profi University Boshlang‘ich ta’lim yo‘nalishi 5-bosqich talabasi Ilmiy rahbar: K.M.Ulug‘murodova f.f.f.n (PhD)",
+     "page": 245
+    },
+    {
+     "title": "MAMLAKAT IQTISODIYOTINI MODERNIZATSIYA QILISHDA BANKLAR FAOLIYATINING TAHLILI",
+     "byline": "G.K.Xatamova - NavDU Geografiya kafedrasi dotsenti",
+     "page": 247
+    },
+    {
+     "title": "BOSHLANG‘ICH SINF ONA TILI DARSLARIDA O‘QUVCHILARGA “OT” SO‘Z TURKUMINI O‘RGATISH TEXNOLOGIYASI",
+     "byline": "Abdualimova Nazokat Kamol qizi- Profi University Boshlang‘ich ta’lim yo‘nalishi 5-bosqich talabasi Ilmiy rahbar: K.M.Ulug‘murodova f.f.f.d. (PhD)",
+     "page": 249
+    },
+    {
+     "title": "O‘ZBEKISTON UCHINCHI RENESSANS OSTONASIDA: JADIDLAR ORZULARINING USHALISHI",
+     "byline": "Parmonov Ulug‘bek Odiljon o‘g‘li- Xalqaro Nordik unversiteti yoshlar ishlari va talabalarga xizmat ko‘rsatish departamenti tyutori, tarbiyachi-pedagog",
+     "page": 252
+    },
+    {
+     "title": "O‘ZBEK ADABIYOTSHUNOSLIGIDA BADIIY PSIXOLOGIZM ILDIZLARI VA TADRIJIY TARAQQIYOTI",
+     "byline": "Aslonova Moxiniso- NavDU O‘zbek tili va adabiyoti ta’lim yo‘nalishi 2-kurs magistranti Ilmiy rahbar: dots.Boltayeva G.",
+     "page": 254
+    },
+    {
+     "title": "MARKAZIY OSIYO XALQLARI ORASIDA NOG‘ORA URMA CHOLG‘ULARDAN FOYDALANISHNING AHAMIYATI",
+     "byline": "Saidiy Said Bolta-Zoda- NavDPI professori, San ’atshunoslik fanlari nomzodi",
+     "page": 258
+    },
+    {
+     "title": "UMUMTA'LIM MAKTABLARIDA MUSIQIY TO‘GARAKLAR FAOLIYATINI TAKOMILLASHTIRISH",
+     "byline": "Nematov Shahzodbek Otabek oʻgʻli- Navoiy DU, Musiqiy ta’lim kafedrasi talabasi Ilmiy rahbar: Nosirov Laziz Nematulloyevich- Navoiy DU, Musiqiy ta’lim kafedrasi o‘qituvchisi",
+     "page": 259
+    },
+    {
+     "title": "SUN’IY INTELLEKT VOSITALARI YORDAMIDA CHET TILINI O‘QITISH: MAKTAB VA OLIY TA’LIM TIZIMI HAMKORLIGI",
+     "byline": "N.A.Nematova- Navoiy davlat universiteti Fakultetlararo chet tillar kafedrasi oʻqituvchisi, Z.N.Pirmatova- Zarafshon shahridagi 13-IDUM ingliz tili oʻqituvchisi",
+     "page": 262
+    },
+    {
+     "title": "MILLIY MUSIQANING INSON MA’NAVIY TARBIYASIDAGI ROLI VA AHAMIYATI",
+     "byline": "Tursunov Kamoliddin Mirza o‘g‘li-Navoiy DU Musiqiy ta’lim kafedrasi talabasi Ilmiy rahbar: Nosirov Laziz Nematulloyevich- Navoiy DU Musiqiy ta’lim kafedrasi o‘qituvchisi",
+     "page": 265
+    },
+    {
+     "title": "ANSAMBLDA JAMOAGA BO‘LIB KUYLASH VA RAHBARLIKNING NAZARIY VA AMALIY AHAMIYATI",
+     "byline": "JDPU “Musiqa ta’limi” kafedrasi katta o‘qituvchisi, p.f.n. Fayzullayev Ermat Majidovich, Musiqa ta’limi yo‘nalishi 1-kurs talabasi Tursunova Maftuna Bahodir qizi",
+     "page": 268
+    },
+    {
+     "title": "PEDAGOGIK JARAYONDA MULOQOTNING O‘RNI VA AHAMIYATINING PSIXOLOGIK TAHLILI",
+     "byline": "Kazakbayeva Mariya Alimkulovna - NavDU Tarix fakulteti “Psixologiya” kafedrasi katta o‘qituvchisi Жалғасова Ұлбала- NavDU Tabiiy fanlar fakulteti Biologiya yo‘nalishi 2-kurs talabasi",
+     "page": 271
+    },
+    {
+     "title": "SOHIBQIRON AMIR TEMUR – ADOLAT VA QUDRAT TIMSOLI",
+     "byline": "Sariyev Nasraddin Turdibayevich- NavDKTU Ijtimoiy-gumanitar va jismoniy tarbiya kafedrasi katta o‘qituvchisi",
+     "page": 274
+    },
+    {
+     "title": "UMUMTA'LIM MAKTABLARIDA MUSIQIY DARSLARNI TASHKIL ETISHDA KOMPYUTER TEXNOLOGIYALARIDAN FOYDALANISH METODIKASI",
+     "byline": "Usmonova Shaxrizoda Xusen qizi- NavDU 2-bosqich magistranti",
+     "page": 276
+    },
+    {
+     "title": "BО‘LAJAK MUSIQA О‘QITUVCHISINING KASBIY SALOHIYATINI TAKOMILLASHTIRISH MASALALARI",
+     "byline": "Bekboyev Zafar Zavqiddin o‘g‘li-NavDU, Musiqa ta'limi Magistranti Ilmiy rahbar: Mustafayev Shomurod Normo‘minovich",
+     "page": 278
+    },
+    {
+     "title": "ЛЮБОВЬ И УВАЖЕНИЕ КАК ОСНОВА СЕМЕЙНЫХ ОТНОШЕНИЙ В ТВОРЧЕСТВЕ АБАЯ КУНАНБАЕВА",
+     "byline": "Рахматова Мамура Шахридиновна-преподаватель кафедры русского языка и литературы Навоийского государственного университета",
+     "page": 280
+    },
+    {
+     "title": "MUSTAQIL TAʼLIM OLISH KO‘NIKMALARINI RIVOJLANTIRISH",
+     "byline": "Xurshid Suyarov- NavDU Jismoniy madaniyat kafedrasi dotsenti",
+     "page": 282
+    },
+    {
+     "title": "ПЕДАГОГИКАЛЫҚ ШЕБЕРЛІК – ТАБЫСТЫ ОҚЫТУДЫҢ КІЛТІ",
+     "byline": "Мамирова Зулхумар Нарбаевна - NavDU Tarix fakulteti Psixologiya kafedrasi o‘qituvchi Орынбаева Айгерім- NavDU San’at va sport fakulteti 3-kurs talabasi",
+     "page": 285
+    },
+    {
+     "title": "LOOK AT THE VIEWS OF ALISHER NAVOI AND FRANCIS BACON",
+     "byline": "Olimov Husniddin Jobirovich- Master’s student,1st year Bukhara Institute of Psychology and Foreign Languages",
+     "page": 286
+    },
+    {
+     "title": "JADID MA’RIFATPARVARLARINING O‘QUVCHILARDA TADBIRKORLIK KO‘NIKMALARINI SHAKLLANTIRISHGA DOIR PEDAGOGIK QARASHLARI",
+     "byline": "Ismatillayeva Mahliyo Muzaffar qizi – NDU “Pedagogika nazariyasi. Pedagogik ta’limotlar tarixi” yo‘nalishi tayanch doktoranti “Profi University” nodavlat oliy ta’lim muassasasi Navoiy filiali o‘qituvchisi",
+     "page": 288
+    },
+    {
+     "title": "METAFORIK NOMINATSIYANING LINGVOMADANIY TAHLILI (ingliz va o‘zbek tillari misolida)",
+     "byline": "Dildora Yadullayevna Xalikova- o‘qituvchi",
+     "page": 290
+    },
+    {
+     "title": "AKSIOLOGIK YONDOSHUV ORQALI BO‘LAJAK MUSIQA O‘QITUVCHILARINI KASBIY TAYYORGARLIGINI TAKOMILLASHTIRISH",
+     "byline": "Bekboyev Zafar Zavqiddin o‘g‘li, NavDU Ilmiy rahbar: Mustafayev Shomurod Normo‘minovich, NavDU",
+     "page": 293
+    },
+    {
+     "title": "TALABALARNING O‘Z-O‘ZINI IDORA QILISHI – PSIXOLOGIK MUAMMO SIFATIDA",
+     "byline": "Xidirova Maftuna – Samarqand Davlat Universiteti Psixologiya va ijtimoiy siyosiy fanlar fakulteti Psixologiya yo‘nalishi talabasi",
+     "page": 296
+    },
+    {
+     "title": "TALABALARNI MA’NAVIY RUHDA TARBIYALASHDA INNOVATSIYALAR VA AN’ANALAR INTEGRATSIYASINING AHAMIYATI",
+     "byline": "Usmonova Dilafruz Umirzoqovna- Navoiy davlat universiteti Tarix fakulteti “Psixologiya” kafedrasi o‘qituvchisi",
+     "page": 298
+    },
+    {
+     "title": "MАKTАBGАCHА TАL’IM TIZIMIDАGI ISLOHOTLАR: TARIX, BUGUN, ISTIQBOL (Samarqand viloyati misolida)",
+     "byline": "Pulatov Erkin Begmuratovich- Mustaqil tadqiqotchi",
+     "page": 299
+    },
+    {
+     "title": "O‘ZGA TILLI SINFLARDA GAPIRISH KO‘NIKMALARNI RIVOJLANTIRISHGA DOIR TAVSIYALAR",
+     "byline": "Tangatarova Sohibjamol Abdullayevna- Toshkent amaliy fanlar universiteti tadqiqotchisi",
+     "page": 302
+    },
+    {
+     "title": "TАLАBАLАRDА TАJОVUZKОRLIK HISSI SHАKLLАNISHINING YОSH DINАMIKАSI",
+     "byline": "R.Begmatov - Navoiy DPI Psixologiya kafedrasi dotsenti v.b., p.f.f.d (PhD)",
+     "page": 305
+    },
+    {
+     "title": "ЎЗБЕКИСТОНДА УЙ-ЖОЙ ВА КОММУНАЛ ХЎЖАЛИГИДАГИ ЎЗГАРИШЛАР (1945-1955 ЙИЛЛАР МИСОЛИДА)",
+     "byline": "Джунаев Фарход Абдухамидович-Навоий давлат университети таянч докторанти",
+     "page": 307
+    },
+    {
+     "title": "TA’LIM JARAYONIDA MANTIQIY FIKRLASHNI RIVOJLANTIRISHNING PEDAGOGIK ASOSLARI",
+     "byline": "Rasulov Jasur - NavDU Umumiy pedagogika va psixologiya kafedrasi katta o‘qituvchisi",
+     "page": 312
+    },
+    {
+     "title": "BAXSHICHILIK SAN’ATIGA BIR NAZAR",
+     "byline": "Uzakov Satbay Erejepbaevich- Oʻzbekiston davlat sanʼat va madaniyat instituti, Nukus filiali “Folklor va etnografiya” kafedrasi oʻqituvchisi",
+     "page": 314
+    },
+    {
+     "title": "MAKTABGACHA YOSHDAGI BOLALARGA BERILADIGAN TA’LIM MAZMUNI",
+     "byline": "Diyora Rahmonova O‘tkir qizi- NavDU Maktabgacha va boshlang‘ich ta’lim fakulteti Maktabgacha ta’lim yo‘nalishi 1-kurs magistranti",
+     "page": 315
+    },
+    {
+     "title": "XVI ASRDA OKEANORTIDA TIBBIYOT FANINING RIVOJLANISHI TARIXI",
+     "byline": "Buronova Sidiqa Tuxtayevna- NavDU “Umumiy tibbiy fanlar” kafedrasi o‘qituvchisi",
+     "page": 317
+    },
+    {
+     "title": "MUAMMOLI TA’LIMNING MOHIYATI VA TARIX FANINI O‘QITISHDA MUAMMOLI TA’LIM TEXNOLOGIYALARIDAN FOYDALANISH",
+     "byline": "Jo‘raqulova Farangiz Temur qizi- Navoiy viloyat Qiziltepa 2-son politexnikumi tarix fani o‘qituvchisi",
+     "page": 319
+    },
+    {
+     "title": "XIX ASRDA QO‘QON XONLIGI TARIXSHUNOSLIGIGA BIR NAZAR",
+     "byline": "Valiyev Olimjon- Mirzo Ulug‘bek nomidagi Milliy universiteti magistranti",
+     "page": 322
+    },
+    {
+     "title": "NAVOIY VILOYATIDA TURIZM SOHASINI RIVOJLANTIRISH YO‘NALISHLARI VA OMILLARI",
+     "byline": "Xo‘jayeva L.Sh. NavDU tarix fakulteti Tarix kafedrasi o‘qituvchsi",
+     "page": 324
+    },
+    {
+     "title": "O‘ZBEK XALQ QO‘SHIQLARINI KUYLASHDA AN’ANAVIY IJROCHILIK VA ANSAMBL SOHASINI RIVOJLANTIRISH YO’LLARI",
+     "byline": "Axmedov Nozim Jumaqulovich- O‘zbek milliy maqom san’ati Navoiy viloyati hududiy bo‘linmasi ansambl sozandasi",
+     "page": 328
+    },
+    {
+     "title": "“TEMUR TUZUKLARI” ASARINING TARIXIY MANBA SIFATIDAGI AHAMIYATI",
+     "byline": "Abdusalomova Gulnoza – NavDU Tarix fakulteti 3-курс talabasi Ilmiy rahbar: Egamberdiyeva Aziza – NavDU Tarix kafedrasi dotsenti v.b",
+     "page": 332
+    },
+    {
+     "title": "NAVOIY VILOYATI SPORTCHILARINING XALQARO MUSOBAQALARDAGI ISHTIROKI VA YUTUQLARI",
+     "byline": "Ergasheva Gulchehra- NavDU mustaqil tadqiqotchisi",
+     "page": 334
+    },
+    {
+     "title": "MARKAZIY OSIYO XALQLARI TARIXIY-MADANIY MEROSIDA JADIDCHILIK HARAKATINING TUTGAN O‘RNI",
+     "byline": "Abilkosimova Madina Muxiddinovna- Mustaqil tadqiqotchi",
+     "page": 338
+    },
+    {
+     "title": "O‘ZBEKISTONDA “PAXTA ISHI” MASALASI VA UNING OQIBATLARI",
+     "byline": "Sharofova Shaxnoza Shodmon qizi- Navoiy davlat universiteti Ijtimoiy gumanitar fanlarni o‘qitish metodikasi (Tarix) yo‘nalishi magistranti",
+     "page": 341
+    },
+    {
+     "title": "PEDAGOGIK DEONTOLOGIYA VA MULOQOT MADANIYATINING O‘ZARO BOG‘LIQLIGI",
+     "byline": "Tashpulatova Nodira Olimjon qizi- Profi University “Pedagogika va chet tillar” kafedrasi o’qituvchisi, NDU “Pedagogika nazariyasi. Pedagogika ta’limotlar tarixi” ixtisosligi doktoranti",
+     "page": 343
+    },
+    {
+     "title": "TURKIY XALQLAR ETNOGRAFIYASI, TARIXI VA MADANIYATI",
+     "byline": "Raxmatov Sherali Abdulloyevich - Buxoro viloyat G‘ijduvon tumani ixtisoslashtirilgan maktabi Ona tili va adabiyot fani o‘qituvchisi",
+     "page": 345
+    },
+    {
+     "title": "MODERNIZATSIYALASHUV JARAYONIDA YOSHLAR MA’NAVIY-AXLOQIY MADANIYATINI OSHIRISH MASALALARI",
+     "byline": "Fayntllayeva Sabina Azizjon qizi - NavDU Milliy g‘oya, ma’naviyat asoslari va huquq ta’limi yo‘nalishi talabasi Ilmiy rahbar: Egamberdiyeva Nafisa – NavDPI Tarix kafedrasi dotsenti v.b",
+     "page": 349
+    },
+    {
+     "title": "SUN’IY INTELLEKT VA BLOKCHEYN TEXNOLOGIYALARINING AXBOROT XAVFSIZLIGIDAGI O’RNI",
+     "byline": "Qilichev Nodirjon Abrarovich- O’zbekiston Milliy Universiteti mustaqil tadqiqotchisi",
+     "page": 351
+    },
+    {
+     "title": "PHONETIC ELEMENTS IN ENGLISH AND UZBEK LANGUAGES",
+     "byline": "Nazarboyeva Niginabonu- NavSU Student of Langiages Faculty",
+     "page": 353
+    },
+    {
+     "title": "TA’LIM TURIZMINING XALQARO XIZMATLAR BOZORIDAGI AHAMIYATI VA SALOHIYATI",
+     "byline": "Fattoyev Islom Ilg‘orovich- Navoiy davlat universiteti doktoranti",
+     "page": 356
+    },
+    {
+     "title": "JADIDCHILIK HARAKATINING O‘ZBEK TARIXSHUNOSLIGIDAGI O‘RNI",
+     "byline": "Davlatov Abror Azamat o‘g‘li- Mustaqil tadqiqorchi",
+     "page": 361
+    },
+    {
+     "title": "AMIR TEMUR VA TEMURIYLAR DAVRI TARIXSHUNOSLIGI",
+     "byline": "Baxtiyorova Ruxshona Sodiqjon qizi- Navoiy davlat universiteti “Tarix” ta’lim yo‘nalishi 1-bosqich talabasi Ilmiy rahbar: Djunayev Farxod Abduxamidovich",
+     "page": 366
+    },
+    {
+     "title": "“TIB QONUNLARI” – IBN SINO MEROSI DURDONASI",
+     "byline": "Odilov Umidjon Husanovich-Toshkent tibbiyot akademiyasi talabasi",
+     "page": 368
+    },
+    {
+     "title": "BURHONIDDIN MARG‘INONIYNING “AL-HIDOYA” ASARIDA OILA MUNOSABATLARI",
+     "byline": "Ergasheva S.U. - Navoiy davlat universiteti Tarix fakulteti 1-kurs talabasi Ilmiy rahbar: Atoyeva Sh.Sh",
+     "page": 370
+    }
+   ]
+  }
+ ]
+}

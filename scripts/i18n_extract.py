@@ -14,13 +14,13 @@ import pathlib
 import sys
 
 sys.path.insert(0, str(pathlib.Path(__file__).resolve().parent))
+import build_i18n  # noqa: E402
 import i18n  # noqa: E402
 
 
 def source_pages():
-    """Узбекские страницы в корне (новости генерируются отдельно)."""
-    return sorted(p for p in i18n.ROOT.glob('*.html')
-                  if not p.name.startswith('news-') and p.name != 'news.html')
+    """Узбекские страницы в корне (новости и публикации генерируются отдельно)."""
+    return build_i18n.source_pages()
 
 
 def collect():

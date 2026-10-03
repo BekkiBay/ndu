@@ -13,7 +13,7 @@ jobs:
     steps:
       - uses: actions/checkout@v4
 
-      - name: Unit tests (news build, view counter)
+      - name: Unit tests (news and publications build, view counter)
         run: python3 -m unittest discover -s tests -v
 
       - name: Asset cache stamps are current
@@ -26,11 +26,12 @@ jobs:
             exit 1
           fi
 
-      - name: Build the translated pages and the news
+      - name: Build the translated pages, the news and the publications
         run: |
           python3 scripts/stamp_assets.py
           python3 scripts/build_i18n.py
           python3 scripts/build_news.py
+          python3 scripts/build_publications.py
 
       - name: Every internal link and asset resolves
         run: python3 scripts/check_links.py
