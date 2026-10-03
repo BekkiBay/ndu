@@ -42,7 +42,7 @@ JS = 'assets/js/publications.js'
 SITE = build_i18n.SITE
 
 TYPES = ('article', 'thesis', 'proceedings', 'monograph', 'textbook', 'other')
-ROLES = ('author', 'chief_editor', 'scientific_editor', 'editor', 'reviewer')
+ROLES = ('author', 'chief_editor', 'scientific_editor', 'editor', 'technical_editor', 'reviewer', 'committee')
 #: Роли, которые в библиографической записи стоят на месте автора.
 EDITOR_ROLES = ('chief_editor', 'scientific_editor', 'editor')
 
@@ -93,7 +93,9 @@ LABELS = {
             'chief_editor': ('Mas’ul muharrir', 'Mas’ul muharrirlar'),
             'scientific_editor': ('Ilmiy muharrir', 'Ilmiy muharrirlar'),
             'editor': ('Muharrir', 'Muharrirlar'),
+            'technical_editor': ('Texnik muharrir', 'Texnik muharrirlar'),
             'reviewer': ('Taqrizchi', 'Taqrizchilar'),
+            'committee': ('Tashkiliy qo‘mita a’zosi', 'Tashkiliy qo‘mita'),
         },
         'langs': {'uz': 'o‘zbek', 'ru': 'rus', 'en': 'ingliz', 'kk': 'qozoq', 'tg': 'tojik', 'tr': 'turk'},
         'keywords': 'Kalit so‘zlar',
@@ -161,7 +163,9 @@ LABELS = {
             'chief_editor': ('Ответственный редактор', 'Ответственные редакторы'),
             'scientific_editor': ('Научный редактор', 'Научные редакторы'),
             'editor': ('Редактор', 'Редакторы'),
+            'technical_editor': ('Технический редактор', 'Технические редакторы'),
             'reviewer': ('Рецензент', 'Рецензенты'),
+            'committee': ('Член оргкомитета', 'Организационный комитет'),
         },
         'langs': {'uz': 'узбекский', 'ru': 'русский', 'en': 'английский', 'kk': 'казахский',
                   'tg': 'таджикский', 'tr': 'турецкий'},
@@ -231,7 +235,9 @@ LABELS = {
             'chief_editor': ('Editor-in-chief', 'Editors-in-chief'),
             'scientific_editor': ('Scientific editor', 'Scientific editors'),
             'editor': ('Editor', 'Editors'),
+            'technical_editor': ('Technical editor', 'Technical editors'),
             'reviewer': ('Reviewer', 'Reviewers'),
+            'committee': ('Organising committee member', 'Organising committee'),
         },
         'langs': {'uz': 'Uzbek', 'ru': 'Russian', 'en': 'English', 'kk': 'Kazakh', 'tg': 'Tajik', 'tr': 'Turkish'},
         'keywords': 'Keywords',
@@ -342,6 +348,8 @@ def validate(items, root):
         if not isinstance(p.get('year'), int):
             raise BuildError(f'{slug}: "year" must be a number')
         news.parse_date(p.get('date'))
+        if p.get('date_end') and (not p.get('date') or news.parse_date(p['date_end']) < news.parse_date(p['date'])):
+            raise BuildError(f'{slug}: "date_end" needs a "date" and must not precede it')
         for key in ('pdf', 'cover'):
             path = p.get(key) or ''
             if not path or not (root / path).is_file():
@@ -354,12 +362,33 @@ def validate(items, root):
             if not (person.get('family') or '').strip():
                 raise BuildError(f'{slug}: a person without "family"')
         for entry in p.get('toc') or []:
+            if 'section' in entry:
+                if not (entry.get('section') or '').strip():
+                    raise BuildError(f'{slug}: an empty toc section')
+                continue
             if not (entry.get('title') or '').strip() or not isinstance(entry.get('page'), int):
                 raise BuildError(f'{slug}: a toc entry needs "title" and a numeric "page"')
 
 
 def sort_items(items):
     return sorted(items, key=lambda p: (p.get('date') or f'{p["year"]}-00-00', p['slug']), reverse=True)
+
+
+def articles(item):
+    """Пункты содержания без заголовков разделов (``{"section": …}``)."""
+    return [e for e in item.get('toc') or [] if 'section' not in e]
+
+
+def event_date(item, lang):
+    """Дата конференции; двухдневная в одном месяце — «15–16-may, 2026»."""
+    start, end = news.parse_date(item.get('date')), news.parse_date(item.get('date_end'))
+    if start is None:
+        return ''
+    if end is None or end == start:
+        return news.format_date(item['date'], lang)
+    if (end.year, end.month) == (start.year, start.month):
+        return news.format_date(item['date_end'], lang).replace(str(end.day), f'{start.day}–{end.day}', 1)
+    return f'{news.format_date(item["date"], lang)} – {news.format_date(item["date_end"], lang)}'
 
 
 # --------------------------------------------------------------------------- names and citations
@@ -369,7 +398,9 @@ def full_name(person):
 
 
 def initials(given):
-    return ' '.join(f'{part[0]}.' for part in re.split(r'[\s-]+', given or '') if part)
+    """«Nigora» → «N.»; уже сокращённое («B. Ye.», «O‘.») остаётся как есть."""
+    return ' '.join(part if part.endswith('.') else f'{part[0]}.'
+                    for part in re.split(r'[\s-]+', given or '') if part)
 
 
 def people_by_role(item, roles):
@@ -454,8 +485,12 @@ def cite_gost(item):
     if item.get('subtitle'):
         text += f' : {esc(item["subtitle"])}'
     if item.get('date') and kind == 'proceedings':
-        d = news.parse_date(item['date'])
-        text += f' ({esc(item.get("place") or "")}, {d.strftime("%d.%m.%Y")})'
+        d, end = news.parse_date(item['date']), news.parse_date(item.get('date_end'))
+        when = d.strftime('%d.%m.%Y')
+        if end and end != d:
+            when = (f'{d.day:02d}–{end.strftime("%d.%m.%Y")}' if (end.year, end.month) == (d.year, d.month)
+                    else f'{when}–{end.strftime("%d.%m.%Y")}')
+        text += f' ({esc(item.get("place") or "")}, {when})'
     if people:
         if edited:
             resp = f'{words[people[0]["role"]]} {", ".join(gost_short(p) for p in people)}'
@@ -618,7 +653,10 @@ def people_block(item, lang):
             aff = f'<span>{esc(aff)}</span>' if aff else ''
             rows += f'<li><b>{esc(full_name(person))}</b>{aff}</li>'
         title = labels['roles'][role][1 if len(group) > 1 else 0]
-        out += f'<div class="pub-people-group"><h2 class="pub-h">{esc(title)}</h2><ul class="pub-people">{rows}</ul></div>'
+        # Длинный список (оргкомитет) занимает всю ширину и идёт в колонки.
+        wide = ' pub-people-group--wide' if len(group) > 4 else ''
+        out += (f'<div class="pub-people-group{wide}"><h2 class="pub-h">{esc(title)}</h2>'
+                f'<ul class="pub-people">{rows}</ul></div>')
     return f'<div class="pub-block pub-block--people">{out}</div>' if out else ''
 
 
@@ -629,6 +667,9 @@ def toc_block(item, lang):
         return ''
     rows = ''
     for entry in entries:
+        if 'section' in entry:
+            rows += f'<li class="pub-toc-section">{esc(entry["section"])}</li>'
+            continue
         byline = entry.get('byline') or ''
         haystack = search_text(f'{entry["title"]} {byline}')
         by = f'<span class="pub-toc-by">{esc(byline)}</span>' if byline else ''
@@ -636,10 +677,11 @@ def toc_block(item, lang):
                  f'target="_blank" rel="noopener" title="{esc(labels["page_title"])}">'
                  f'<span class="pub-toc-title">{esc(entry["title"])}</span>{by}</a>'
                  f'<span class="pub-toc-page">{labels["page_abbr"]} {entry["page"]}</span></li>')
-    return (f'<div class="pub-block pub-toc" data-pub-toc data-more="{esc(labels["show_all"](len(entries)))}" '
+    count = len(articles(item))
+    return (f'<div class="pub-block pub-toc" data-pub-toc data-more="{esc(labels["show_all"](count))}" '
             f'data-less="{esc(labels["show_less"])}">'
             f'<div class="pub-toc-head"><h2 class="pub-h">{esc(labels["toc"])}</h2>'
-            f'<span class="pub-toc-count">{esc(labels["toc_count"](len(entries)))}</span></div>'
+            f'<span class="pub-toc-count">{esc(labels["toc_count"](count))}</span></div>'
             f'<label class="pub-search pub-search--small">{ICON_SEARCH}'
             f'<input type="search" data-pub-toc-q placeholder="{esc(labels["toc_search"])}" '
             f'aria-label="{esc(labels["toc_search"])}"></label>'
@@ -668,7 +710,7 @@ def meta_rows(item, lang):
         if src.get('pages'):
             rows.append((labels['range'], esc(src['pages'])))
     if item.get('date'):
-        date = news.format_date(item['date'], lang)
+        date = event_date(item, lang)
         if item['type'] == 'proceedings':
             place = field(item, 'place', lang)
             rows.append((labels['event'], esc(f'{date}, {place}' if place else date)))
@@ -714,8 +756,8 @@ def item_card(item, lang):
     labels = LABELS[lang]
     href = f'{PAGE_PREFIX}{item["slug"]}.html'
     title = field(item, 'title', lang)
-    sub = field(item, 'subtitle', lang)
-    sub = f'<p class="pub-item-sub">{esc(sub)}</p>' if sub else ''
+    subtitle = field(item, 'subtitle', lang)
+    sub = f'<p class="pub-item-sub">{esc(subtitle)}</p>' if subtitle else ''
     people, edited = responsible(item)
     who = ''
     if people:
@@ -732,17 +774,17 @@ def item_card(item, lang):
         facts.append(field(src, 'title', lang))
     if item.get('date') and item['type'] == 'proceedings':
         place = field(item, 'place', lang)
-        facts.append(', '.join(x for x in (place, news.format_date(item['date'], lang)) if x))
+        facts.append(', '.join(x for x in (place, event_date(item, lang)) if x))
     if item.get('pages'):
         facts.append(labels['pages_n'](item['pages']))
-    if item.get('toc'):
-        facts.append(labels['materials'](len(item['toc'])))
+    if articles(item):
+        facts.append(labels['materials'](len(articles(item))))
     # Пробел между фактами — место переноса строки; точка-разделитель
     # остаётся в конце строки (см. .pub-item-facts в publications.css).
     facts_html = ' '.join(f'<span>{esc(f)}</span>' for f in facts)
     keywords = ' '.join(list_field(item, 'keywords', lang) + (item.get('keywords') or []))
     names = ' '.join(full_name(p) for p in item.get('people') or [])
-    haystack = search_text(' '.join([title, item['title'], sub, item.get('subtitle') or '', names, keywords,
+    haystack = search_text(' '.join([title, item['title'], subtitle, item.get('subtitle') or '', names, keywords,
                                      src.get('title') or '']))
     cover = news.asset(item['cover'], lang)
     return (f'<li class="pub-item" data-pub-item data-slug="{esc(item["slug"])}" data-type="{item["type"]}" '
@@ -913,8 +955,8 @@ def render_list(items, shell, lang, root):
 
     # Содержание сборников для поиска «внутри книги»: [заголовок, авторы, страница, ссылка].
     index = {p['slug']: [[e['title'], e.get('byline') or '', e['page'], pdf_href(p, lang, e['page'])]
-                         for e in p.get('toc') or []]
-             for p in items if p.get('toc')}
+                         for e in articles(p)]
+             for p in items if articles(p)}
     index_json = json.dumps(index, ensure_ascii=False, separators=(',', ':')).replace('</', '<\\/')
 
     cards = ''.join(item_card(p, lang) for p in items)

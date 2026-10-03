@@ -110,6 +110,46 @@ class CitationTests(unittest.TestCase):
         self.assertIn('&lt;b&gt;', bp.cite_apa(work(title='<b>x')))
 
 
+class SectionAndDateTests(unittest.TestCase):
+    def test_initials_keep_given_abbreviations(self):
+        self.assertEqual(bp.initials('Nigora'), 'N.')
+        self.assertEqual(bp.initials('Anvar Bek'), 'A. B.')
+        self.assertEqual(bp.initials('B. Ye.'), 'B. Ye.')
+        self.assertEqual(bp.initials('O‘. T.'), 'O‘. T.')
+
+    def test_two_day_conference_in_one_month(self):
+        item = work(date='2026-05-15', date_end='2026-05-16')
+        self.assertEqual(bp.event_date(item, 'uz'), '15–16-may, 2026')
+        self.assertEqual(bp.event_date(item, 'ru'), '15–16 мая 2026')
+        self.assertEqual(bp.event_date(item, 'en'), '15–16 May 2026')
+        self.assertIn('(Navoiy, 15–16.05.2026)', bp.cite_gost(item))
+
+    def test_single_day_and_no_date(self):
+        self.assertEqual(bp.event_date(work(), 'uz'), '10-aprel, 2025')
+        self.assertEqual(bp.event_date(work(date=None), 'uz'), '')
+
+    def test_sections_are_headings_not_articles(self):
+        item = work(toc=[{'section': 'I sho‘ba. Kimyo'}, {'title': 'MAQOLA', 'byline': 'A', 'page': 5},
+                         {'section': 'II sho‘ba. Biologiya'}, {'title': 'IKKINCHI', 'byline': 'B', 'page': 9}])
+        self.assertEqual(len(bp.articles(item)), 2)
+        block = bp.toc_block(item, 'uz')
+        self.assertIn('<li class="pub-toc-section">I sho‘ba. Kimyo</li>', block)
+        self.assertIn('2 ta material', block)
+        self.assertEqual(block.count('data-q='), 2)
+
+    def test_committee_is_listed_but_not_cited(self):
+        people = [person('Sobirov', 'Bahodir', 'committee'), person('Ummatova', 'Muxayyo', 'technical_editor')]
+        item = work(people=people)
+        self.assertIn('Tashkiliy qo‘mita a’zosi', bp.people_block(item, 'uz'))
+        self.assertIn('Texnik muharrir', bp.people_block(item, 'uz'))
+        self.assertNotIn('Sobirov', bp.cite_gost(item))
+        self.assertNotIn('Ummatova', bp.cite_apa(item))
+
+    def test_long_groups_go_full_width(self):
+        people = [person(f'F{i}', 'G', 'committee') for i in range(6)]
+        self.assertIn('pub-people-group--wide', bp.people_block(work(people=people), 'uz'))
+
+
 class ScholarMetaTests(unittest.TestCase):
     def test_tags_for_proceedings(self):
         meta = bp.scholar_meta(work())
@@ -252,6 +292,13 @@ class ValidationTests(unittest.TestCase):
     def test_duplicate_slug(self):
         with self.assertRaises(bp.BuildError):
             bp.validate([work(), work()], self.tmp)
+
+    def test_date_end_needs_a_date_before_it(self):
+        self.check(work(date='2026-05-16', date_end='2026-05-15'), 'date_end')
+        self.check(work(date=None, date_end='2026-05-15'), 'date_end')
+
+    def test_empty_section_is_rejected(self):
+        self.check(work(toc=[{'section': ' '}]), 'section')
 
     def test_toc_page_must_be_a_number(self):
         self.check(work(toc=[{'title': 'X', 'page': '5'}]), 'toc entry')

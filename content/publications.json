@@ -1,6 +1,1070 @@
 {
  "publications": [
   {
+   "slug": "biologik-xilma-xillik-yashil-iqtisodiyot-ekologik-muvozanat",
+   "type": "proceedings",
+   "language": "uz",
+   "title": "Biologik xilma-xillik, yashil iqtisodiyot, ekologik muvozanat muammolari va yechimlari",
+   "subtitle": "Xalqaro ilmiy-amaliy konferensiya materiallari to‘plami",
+   "title_ru": "Проблемы биологического разнообразия, зелёной экономики, экологического равновесия и пути их решения",
+   "subtitle_ru": "Сборник материалов международной научно-практической конференции",
+   "title_en": "Scientific Challenges and Strategic Solutions Concerning Biodiversity, the Green Economy, and Ecological Balance",
+   "subtitle_en": "Proceedings of the international scientific conference",
+   "date": "2026-05-15",
+   "date_end": "2026-05-16",
+   "year": 2026,
+   "place": "Navoiy",
+   "place_ru": "Навои",
+   "place_en": "Navoi",
+   "publisher": "Navoiy davlat universiteti",
+   "publisher_ru": "Навоийский государственный университет",
+   "publisher_en": "Navoi State University",
+   "people": [
+    {
+     "family": "Kalonov",
+     "given": "Muhiddin",
+     "role": "chief_editor",
+     "affiliation": "NDU rektori, iqtisodiyot fanlari doktori, professor",
+     "affiliation_ru": "ректор НавГУ, доктор экономических наук, профессор",
+     "affiliation_en": "Rector of Navoi State University, Doctor of Economic Sciences, Professor"
+    },
+    {
+     "family": "Xakimov",
+     "given": "O‘. T.",
+     "role": "reviewer",
+     "affiliation": "O‘zR FA Navoiy bo‘limi katta ilmiy xodimi, qishloq xo‘jaligi fanlari nomzodi",
+     "affiliation_ru": "старший научный сотрудник Навоийского отделения АН РУз, кандидат сельскохозяйственных наук",
+     "affiliation_en": "Senior Researcher, Navoi Branch of the Academy of Sciences of Uzbekistan, Candidate of Agricultural Sciences"
+    },
+    {
+     "family": "Jumabayev",
+     "given": "B. Ye.",
+     "role": "reviewer",
+     "affiliation": "NDU Biologiya kafedrasi professori v.b., biologiya fanlari nomzodi",
+     "affiliation_ru": "и. о. профессора кафедры биологии НавГУ, кандидат биологических наук",
+     "affiliation_en": "Acting Professor, Department of Biology, Navoi State University, Candidate of Biological Sciences"
+    },
+    {
+     "family": "Ummatova",
+     "given": "Muxayyo",
+     "role": "technical_editor",
+     "affiliation": "NDU Biologiya kafedrasi dotsenti, biologiya fanlari bo‘yicha falsafa doktori (PhD)",
+     "affiliation_ru": "доцент кафедры биологии НавГУ, доктор философии по биологическим наукам (PhD)",
+     "affiliation_en": "Associate Professor, Department of Biology, Navoi State University, PhD in Biology"
+    },
+    {
+     "family": "To‘yboyev",
+     "given": "M. M.",
+     "role": "technical_editor",
+     "affiliation": "NDU Ilmiy tadqiqotlar va innovatsiyalar departamenti mutaxassisi",
+     "affiliation_ru": "специалист департамента научных исследований и инноваций НавГУ",
+     "affiliation_en": "Specialist, Department of Research and Innovation, Navoi State University"
+    }
+   ],
+   "keywords": [
+    "biologik xilma-xillik",
+    "ekologik muammolar",
+    "yashil iqtisodiyot",
+    "ekologik barqarorlik",
+    "qishloq xo‘jaligi",
+    "tabiiy fanlarni o‘qitish",
+    "xalqaro hamkorlik"
+   ],
+   "keywords_ru": [
+    "биологическое разнообразие",
+    "экологические проблемы",
+    "зелёная экономика",
+    "экологическая устойчивость",
+    "сельское хозяйство",
+    "преподавание естественных наук",
+    "международное сотрудничество"
+   ],
+   "keywords_en": [
+    "biodiversity",
+    "environmental problems",
+    "green economy",
+    "ecological sustainability",
+    "agriculture",
+    "teaching of natural sciences",
+    "international cooperation"
+   ],
+   "abstract": "To‘plam Navoiy davlat universitetida 2026-yil 15–16-mayda o‘tkazilgan “Biologik xilma-xillik, yashil iqtisodiyot, ekologik muvozanat muammolari va yechimlari” mavzusidagi xalqaro ilmiy-amaliy konferensiya materiallaridan tashkil topgan. Konferensiya O‘zbekiston Respublikasi Oliy ta’lim, fan va innovatsiyalar vazirining 2026-yil 16-yanvardagi 11-son buyrug‘iga asosan o‘tkazildi. To‘plamdagi 189 ta maqola besh sho‘baga bo‘lingan: biologik xilma-xillik va ekologik muammolar, ekologik barqarorlik va yashil iqtisodiyot, qishloq xo‘jaligida innovatsion texnologiyalar, tabiiy fanlarni o‘qitish va barqaror rivojlanish, xalqaro hamkorlik va milliy siyosat. Maqolalar o‘zbek, rus va ingliz tillarida.",
+   "abstract_ru": "Сборник составлен из материалов международной научно-практической конференции «Проблемы биологического разнообразия, зелёной экономики, экологического равновесия и пути их решения», прошедшей в Навоийском государственном университете 15–16 мая 2026 года по приказу министра высшего образования, науки и инноваций Республики Узбекистан от 16 января 2026 года № 11. 189 статей разделены на пять секций: биологическое разнообразие и экологические проблемы, экологическая устойчивость и зелёная экономика, инновационные технологии в сельском хозяйстве, преподавание естественных наук и устойчивое развитие, международное сотрудничество и национальная политика. Статьи на узбекском, русском и английском языках.",
+   "abstract_en": "The volume brings together the proceedings of the international scientific and practical conference “Scientific Challenges and Strategic Solutions Concerning Biodiversity, the Green Economy, and Ecological Balance”, held at Navoi State University on 15–16 May 2026 under order No. 11 of the Minister of Higher Education, Science and Innovation of the Republic of Uzbekistan of 16 January 2026. Its 189 papers are arranged in five sections: biodiversity and environmental problems, ecological sustainability and the green economy, innovative technologies in agriculture, teaching of natural sciences and sustainable development, and international cooperation and national policy. Papers are in Uzbek, Russian and English.",
+   "languages": [
+    "uz",
+    "ru",
+    "en"
+   ],
+   "pages": 621,
+   "pdf": "files/publications/biologik-xilma-xillik-yashil-iqtisodiyot-ekologik-muvozanat.pdf",
+   "cover": "images/nsu/publications/biologik-xilma-xillik-yashil-iqtisodiyot-ekologik-muvozanat-cover.jpg",
+   "copyright": "© Navoiy davlat universiteti, 2026",
+   "license": null,
+   "toc": [
+    {
+     "section": "I sho‘ba. Biologik xilma-xillik va ekologik muammolar"
+    },
+    {
+     "title": "LAQQA (Silurus glanis Linnaeus, 1758) BALIGʻINING BIOLOG IYASI VA TARQALISHI",
+     "byline": "B.Ye. Jumabayev, Sh.V. Nuriddinov 1Navoiy davlat universiteti dotsenti, Navoiy, O’zbekiston 2 Navoiy davlat universiteti doktoranti., Navoiy, O’zbekiston",
+     "page": 7
+    },
+    {
+     "title": "SAKSOVUL BUKRI CHIGIRTKASINING EKOLOGIK HAMDA OZUQAVIY AHAMIYATI",
+     "byline": "B.Z.Zaripov, D.F.Yusupov 1O’zbekiston Milliy Universiteti Professor akademik, Toshkent, O’zbekiston 2Navoiy Davlat Universiteti o’qituvchisi, Navoiy, O’zbekiston",
+     "page": 12
+    },
+    {
+     "title": "BULOQ VA CHASHMALAR GIDROBIONTLARNING T ARQALISHIGA ABIOTIK OMILLAR TA’SIRI. X.T",
+     "byline": "Boymurodov 1, N.H. Xasanov 2, Z. Shakirova 3 1 Samarqand davlat veterinariya meditsinasi, chorvachilik va biotexnologiyalar universiteti, Biologiya fanlari doktori (DSc), professor, Samarqand, O‘zbekiston 2Navoiy davl at universiteti, b.f.f.d (PhD) Navoiy, O‘zbekiston. 3Navoiy davlat universiteti magistranti, Navoiy O‘zbekiston",
+     "page": 17
+    },
+    {
+     "title": "SURXONDARYO VILOYATI SHAROITIDA O‘SMA (ISATIS TINCTORIA L.) O‘SIMLIGINING INTRODUKSIYASI VA BIOXILMA-XILLIKNI SAQLASHDAGI O‘RNI",
+     "byline": "X.G.Aslanova,B.X.Amanov2Denov tadbirkorlik va pedagogika instituti. Termiz.O‘zbekiston",
+     "page": 20
+    },
+    {
+     "title": "TOPINAMBUR O‘SIMLIGINING FITOREMEDIATSION XUSUSIYATLARI VA EKOLOGIK AHAMIYATI",
+     "byline": "Ataqulova Manzura Nema tovna Navoiy davlat universiteti Biologiya kafedrasi dotsenti., pedagogika fanlari falsafa doktori (Phd), Navoiy, O‘zbekiston",
+     "page": 24
+    },
+    {
+     "title": "O‘ZBEKISTON SHAROITIDA OQ AMURNING INTENSIV AKVAKULTURADAGI IQTISODIY SAMARADORLIGI VA YETISHTIRISH TEXNOLOGIYALARI",
+     "byline": "1Ummatova Muxayyo Egamberdiyevna Navoiy davlat universiteti dotsenti, b.f.f.d.(PhD). Navoiy, O‘zbekiston.2To‘xsanov Shahboz A’lam o‘g‘li Navoiy davlat universiteti tayanch doktoranti, Navoiy, O‘zbekiston",
+     "page": 28
+    },
+    {
+     "title": "РАЗМЕРНО-ВОЗРАСТНЫЕ ПОКАЗАТЕЛИ CУДАКА ТУДАКУЛЬСКОМ ВОДОХРАНИЛИЩЕ",
+     "byline": "1Намозов С.М., 2Собиров Ж.Ж. 1 Младший научный сотрудник лаборатории Ихтиологии и гидробиологии института Зоологии АН РУз - Tashkent, Узбекистан 2 Заведующий лабораторией ихтиологии и гидроби ологии Института зоологии АН РУз; старший научный сотрудник, PhD-Tashkent, Узбекистан",
+     "page": 31
+    },
+    {
+     "title": "INTRODUKTSIYA SHAROITIDA ALLIUM STIPITATUM REGEL TURI BARGLARINING MORFOLOGIK XUSUSIYATLARI",
+     "byline": "1,2Avalbayev Olimjon Narkuziyevich, 1Turayev Umirzoq Zoitovich, 1Kattabekov Oʻtkir Otabekovich 1Sabzavot, poliz ekinlari va kartoshkachilik ilmiy- tadqiqot instituti Zomin ilmiy-tajriba stantsiyasi, Jizzax, O`zbekiston 2Oʻzbekiston Respublikasi Ichki ishlar vazirligi Jizzax akademik litseyi, Jizzax, O`zbekiston",
+     "page": 34
+    },
+    {
+     "title": "JANUBIY OROLBO‘YI HUDUDIDA DEGRADATSIYAGA UCHRAGAN YERLARDAN FOYDALANISHDA GALOFIT O‘SIMLIKLARNING AHAMIYATI",
+     "byline": "N.K.Mamutov, N.M.Kenesbaeva 1Qoraqalpoq davlat universiteti b,f,n, dotsenti, Nukus, O’zbekiston 2Nukus davlat pedagogika instituti doktoranti, Nukus,O’zbekiston",
+     "page": 37
+    },
+    {
+     "title": "AMUDARYONING QO‘YI OQIMIDA YILQICHINING BURCHINUS OEDICNEMUS BIOEKOLOGIYASI G.A",
+     "byline": "Matekova, N.I. Ametova 1O‘zRFA QQB, Tabiiy fanlar ilmiy tadqiqot instituti, Nukus sh., O ‘zbekistan 2Berdaq nomidagi Qoraqalpoq davlat universiteti, Nukus sh., O‘zbekistan",
+     "page": 41
+    },
+    {
+     "title": "G‘UZOR TUMANI HUDUDIDA UCHROVCHI MAROKASH CHIGIRTKASINING (DOCIOSTAURUS MAROCCANUS THUNB.) TARQALISHI",
+     "byline": "N.A.Maxmatqulova, A.Y.Raxmatullayev 1Qarshi davlat universiteti, 3 -kurs biologiya yo‘nalishi talabasi. Qarshi, O`zbekiston.2Ilmiy rahbar: Qarshi davlat universiteti dotsenti, b.f.n. Qarshi, O`zbekiston",
+     "page": 43
+    },
+    {
+     "title": "BЕGОNА ОʻTLАRNI BIOEKOLOGIYASINI ОʻRGАNISH VА ULАRNING ZАRАRI. L",
+     "byline": "S.Ortiqova, K.Toʻlqinova 2 1Jizzax davlat pedagogika universiteti dotsenti (PhD), Jizzax, O’zbekiston 2Jizzax davlat pedagogika universiteti talabasi, Jizzax, O’zbekiston",
+     "page": 46
+    },
+    {
+     "title": "СОДЕРЖАНИЕ Б ИОРАЗНООБРАЗИЯ НА ТЕРРИТОРИИ ПРОМЫШЛЕННЫХ ПРЕДПРИЯТИЙ",
+     "byline": "Х.Ю.Бакоев, И.З. Бахрамов, С. Аслонова, Р.Худойбердиева Начальник отдела охраны окружающей среды АО»НГМК»1Наваинский государстсвенний университет, Наваи,Узбекистон",
+     "page": 51
+    },
+    {
+     "title": "SANOATLSHGAN HUDUDLARNING BIOXILMA-XILLIK MONITORING (Navoiy shahri misolida)",
+     "byline": "Bahromov I. 1, Aslonova S. 1, Xudoyberdiyeva R. 1, Baqoyev X. 2 Navoiy davlat universiteti Navoiy, O`zbekiston \"NKMK\" AJ atrof-muhitni muhofaza qilish bo‘limi boshlig‘i2",
+     "page": 55
+    },
+    {
+     "title": "ZOOPLANKTONLARNING RIVOJLANISHIDA IQLIM OMILLARINI TA‘SIRI",
+     "byline": "Shodmonov F.Q 1, Okilova G.A 2, Yarashov A.B. 3 1Buxoro davlat universiteti dotsent b.f.f.d., (PhD), Buxoro O‘zbekiston 2Buxoro davlat universiteti doktaranti, Buxoro O‘zbekiston 3Buxoro davlat universiteti doktaranti, Buxoro O‘zbekiston",
+     "page": 59
+    },
+    {
+     "title": "SUV BIORESURSLARINING BIOLOGIK XILMA XILLIGI:ZAMONAVIY HOLATI VA MUHOFAZA QILISH ISTIQBOLLARI",
+     "byline": "R.B.Hakimova,Ch.E.O’rinova 1 Nаvоiy d аvlаt universiteti dotsenti,b.f.f.d.(PhD),Navoiy, O’zbekiston 2Nаvоiy d аvlаt universiteti magistranti, Navoiy, O’zbekiston",
+     "page": 64
+    },
+    {
+     "title": "CHIROQCHI TUMANI AGROTSENOZLARIDA TARQALGAN QALQONLI QANDALALAR PENTATOMIDAE OILASI FAUNASI. Z.A",
+     "byline": "Toʻychiyeva 1, A.Y.Raxmatullayev 1Qarshi davlat universiteti,3 kurs biologiya yo‘nalishi talabasi. Qarshi, O’zbekiston 2Ilmiy rahbar: Qarshi davlat universiteti dotsenti, b.f.n. Qarshi, O’zbekiston",
+     "page": 66
+    },
+    {
+     "title": "IMPACT OF ENVIRONMENTAL FACTORS ON HUMAN HEALTH: A COMPREHENSIVE ANALYSIS BASED ON THE NAVOI REGION",
+     "byline": "1Abdul Aziz., 2Tog`aymurodova Sevinch 1Lecturer of Navoi state university, Navoi, Uzbekistan",
+     "page": 70
+    },
+    {
+     "title": "O‘ZBEKISTON FAUNASIDA SUDRALUVCHI HAYVONLAR GELMINTLARINI O‘RGANILISH HOLATI",
+     "byline": "U.J.Toshov,O‘.R.Abdirashidova21Qarshi davlat universiteti dotsenti, 2 Qarshi davlat universiteti talabasi",
+     "page": 73
+    },
+    {
+     "title": "SACHRATQI (CICHORIUM INTYBUS L.) NING TURLI EKOLOGIK MINTAQALARDAGI FITOMASSA HOSILDORLIGINI O’RGANISH",
+     "byline": "Tadjiyev Jamshid Janizakovich Sharof Rashidov nomidagi Samarqand davlat universiteti tayanch doktaranti, Samarqand, O’zbekiston",
+     "page": 78
+    },
+    {
+     "title": "ATMOSFERA IFLOSL ANISHING OLDINI OLISH VA BIOLOGIK XILMA-XILLIKNI SAQLASHNING AHAMIYATI",
+     "byline": "Kanatbayeva T.S1., Ermamatova A.B 2. 1Navoiy davlat universiteti “Biologiya” kafedrasi dotsenti,, Navoiy, O`zbekiston 2Navoiy davlat universiteti “Biologiya” ta`lim yo`nalishi 4-kurs talabasi, Navoiy, O`zbekiston",
+     "page": 80
+    },
+    {
+     "title": "EKOLOGIK MUAMMOLAR VA ULARNING BIOLOGIK XILMA-XILLIKKA TA’SIRI",
+     "byline": "Kanatbayeva T.S'., Yesemuratova A. T 2., Zairova D. K 3. Navoiy davlat universiteti \"Biologiya\" kafedrasi dotsenti Navoiy davlat universiteti \"Biologiya\" ta limy onalishi 3-kurs talabasi Navoiy davlat universiteti \"Biologiya\" ta limy onalishi 3-kurs talabasi",
+     "page": 83
+    },
+    {
+     "title": "LYCIUM BARBARUM L.NING BIOXILMA-XILLIKNI SAQLASHDAGI O’RNI VA EKOLOGIK AHAMIYATI (NAVOIY VILOYATI MISOLIDA)",
+     "byline": "Ataqulova Manzura Nematovna, Valiyeva Feruza Telmon qizi 2, 1Navoiy davlat universiteti dotsenti, b.f.f.d.(PhD), Navoiy, O’zbekiston 2Navoiy davlat universiteti 2-kurs magistranti, Navoiy, O’zbekiston",
+     "page": 85
+    },
+    {
+     "title": "ATMOSFERA HAVOSINING IFLOSLANISHI VA UNING ALLERGIK KASALLIKLAR ORTISHIDAGI ROLI. G.V",
+     "byline": "Sharapova, Azamatova G.A.2 1Navoiy davlat universiteti dotsenti, 2Navoiy davlat universiteti 2-bosqich talabasi",
+     "page": 89
+    },
+    {
+     "title": "NAVOIY VILOYATI TABIIY SHAROITIDA OʻSUVCHI SILYBUM MARIANUM DORIVOR OʻSIMLIGINING FENOLOGIYASI",
+     "byline": "B.Ye. Jumaboyev 1Ismatova Manzura Hikmatillo qizi Aniq va tabiiy fanlarni o’qitish metodikasi(biologiya) mutahassisligi 2 -kurs magistranti, Navoiy, O`zbekist on 2Navoiy davlat universiteti, Biologiya kafedrasi b.f.n., dotsenti. Navoiy, O`zbekiston",
+     "page": 91
+    },
+    {
+     "title": "РОЛЬ ГЕНЕТИЧЕСКИХ И ГЕНОМНЫХ ИССЛЕДОВАНИЙ В СОХРАНЕНИИ БИОРАЗНООБРАЗИЯ",
+     "byline": "1Рахмонова Рухсора Бахриддиновна – старший преподаватель, кафедры Биологии 2Рахмонова Гулса ра Бахриддиновна – преподаватель, школа №19 3Назарбаева Гульшода Тимуровна – студентка направления обучения «Биология» 1Навоийский государственный университет, г.Навоий, Республика Узбекистан 2Общеобразовательная школа №19 Навоийская область, г. Нурата, Ре спублика Узбекистан 3Навоийский государственный университет, г.Навоий, Республика Узбекистан",
+     "page": 94
+    },
+    {
+     "title": "ZARAFSHON DARYOSI QUYI OQIMI SUV HAVZALARIDAGI ODDIY OQCHA (ABRAMIS BRAMA) BALIG’INING O’ZBEKISTON BALIQCHILIK SANOATIDA TUTGAN O’RNI",
+     "byline": "M.A.Yuldoshev 1, G.K.Uma raliyeva 1 Toshkent davlat agrar universiteti professori, Navoiy, O’zbekiston 2Navoiy davlat universiteti o‘qituvchisi, Navoiy, O’zbekiston",
+     "page": 97
+    },
+    {
+     "title": "O’ZBEKISTON RESPUBLIKASIDA ISSIQXONA SHAROITIDA TUPROQ NEMATODA FAUNASINING O’RGANILISH HOLATI",
+     "byline": "G.G’ofirjonova 1, S.B.Narzullayev 1Sharof Rashidov nomidagi Samarqand davlat universiteti magistranti, Samarqand, O’zbekiston 2 Sharof Rashidov nomidagi Samarqand davlat universiteti dotsenti, Samarqand, O’zbekiston",
+     "page": 102
+    },
+    {
+     "title": "ATMOSFERA IFLOSLANISHINING INSON IMMUN TIZIMIGA TA’SIR I",
+     "byline": "Baxodirova Umida Baxodirovna, Sharapova Gulnoza Valentinovna, Hasanova Oygul Bahron qizi Xalilov Tohirjon Valijon o’g’li 4 1,2 Navoiy davlat universiteti dotsent, Navoiy, O`zbekiston 3 Biologiya ta’lim yo’nalishi 2-bosqich talabasi, Navoiy,O`zbekiston",
+     "page": 105
+    },
+    {
+     "title": "HALOXYLON “PSAMMOFIT O’SIMLIKLARNING QIROLI” NING NAVOIY VILOYATI EKOLOGIK HOLATNI YAXSHILASHDAGI AHAMIYATI",
+     "byline": "1Hakimov O’ktam Toshbotirovich 2Isayeva Gulniso Abzal qizi 1O’zR FA Navoiy bo’limi katta ilmiy xodimi, Navoiy, O`zbekiston 2Navoiy davlat universiteti Biologiya ta’lim yo’nalishi 1 -kurs magistranti, Navoiy, O`zbekiston",
+     "page": 108
+    },
+    {
+     "title": "TETRANYCHIDAE OILASINING BIOEKOLOGIK XUSUSIYATLARI VA TARQALISHI. S.I",
+     "byline": "Kalbayeva 1, T.I. Juginisov 2, Z.U. Elmuratova 3 1Qoraqalpoq davlat universiteti tayanch doktoranti, Nukus, O`zbekiston 2Qoraqalpoq davlat universiteti b.f.d., professor, Nukus, O`zbekiston 3O‘zbekiston Milliy universiteti b.f.f.d., dotsent, Toshkent,O`zbekiston",
+     "page": 109
+    },
+    {
+     "title": "SIRDARYO VILOYATI QORINOYOQLI MOLLYUSKALARINING FAUNISTIK TARKIBI VA EKOLOGIYASI",
+     "byline": "A.T.Karimqulov, O. G‘.Nabijonova 1Guliston davlat universiteti dotsenti, b.f.n., Guliston, O‘zbekiston 2Guliston davlat universiteti talabasi, Guliston, O‘zbekiston",
+     "page": 112
+    },
+    {
+     "title": "NAVOIY VILOYATI TUPROQLARIGA ANTROPOGEN OMILLARNING TA ’SIRI",
+     "byline": "1Joniyev Otabek Toxirovich., 2Faxriddinova Xonzoda., 3Tolipova Farangiz 1Navoiy davlat universiteti dotsenti, O`zbekiston 2Navoiy davlat universiteti Geografiya ta’lim yo‘nalishi magistranti, O`zbekiston 3Navoiy davlat universiteti Geografiya ta’lim yo‘nalishi talabasi, O`zbekiston",
+     "page": 115
+    },
+    {
+     "title": "ЭКОЛОГО-ХОЗЯЙСТВЕННАЯ ХАРАКТЕРИСТИКА ПАРТЕКОВО-СИНГРЕНОВО- ДЖУЗГУНОВОЙ ПАСТБИЩНОЙ РАЗНОСТИ НА НЕЗАКРЕПЛЁННЫХ БАРХАНАХ",
+     "byline": "Садинов Ж.С. Институт ботаники Академии наук Республики Узбекистан, Ташкент, Узбекистан",
+     "page": 117
+    },
+    {
+     "title": "OROLBO‘YI MILLIY TABIAT BOG‘I VA UNING BIOXILMA XILLIKNI SAQLASHDAGI AHAMIYATI. G‘.J",
+     "byline": "Matrasulov 1, S.E. Begjanova 2, G.S. Kurbonova 3 1Qoraqalpoq davlat universiteti dotsenti,b.f.f.d, Nukus, Qoraqalpog‘iston. 2Qoraqalpoq davlat universiteti talabasi. 3Nukus davlat texnika universiteti p.f.f.d., PhD.",
+     "page": 122
+    },
+    {
+     "title": "PAST HARORAT STRESSI TA’SIR ETTIRILGAN BUG‘DOY NAMUNALARIDA",
+     "byline": "TaDREB GENLARINING NISBIY EKSPRESSIYA TAHLILLARI. A.K. Safiullina 1, G. Mamatqulova 2, D.Sh. Erjigitov 3, S.K. Baboev 4, F.N. Kushanov 5 1O‘zR FA Genetika va o‘simliklar eksperimental biologiyasi instituti doktoranti (DSc), Toshkent, O‘zbekiston 2O‘zR FA Genetika va o‘simliklar eksperimental biologiyasi institut i b.f.f.d., katta ilmiy xodim, Toshkent, O‘zbekiston 3O‘zR FA Genetika va o‘simliklar eksperimental biologiyasi institut i b.f.f.d., katta ilmiy xo dim, Toshkent, O‘zbekiston 4O‘zR FA Genetika va o‘simliklar eksperimental biologiyasi institut i b.f.d., professor Toshkent, O‘zbekiston 5O‘zR FA Genetika va o‘simliklar eksperimental biologiyasi instituti b.f.d., professor Toshkent, O‘zbekiston",
+     "page": 124
+    },
+    {
+     "title": "TO‘DAKO‘L SUV OMBORIDA RUTILUS ARALENSISNING O‘SISH KO‘RSATKICHLARI VA UZUNLIK-VAZN MUNOSABATI. S.M",
+     "byline": "Namozov O‘zR FA Zoologiya instituti kichik ilmiy xodimi",
+     "page": 130
+    },
+    {
+     "title": "NAVOIY VILOYATINING HAYVONOT OLAMI VA UNING EKOLOGIK XUSUSIYATLARI",
+     "byline": "M.N.Ataqulova, Boris Hucko 2, M.B.Shuxratova Navoiy davlat universiteti Biologiya kafedrasi dotsenti.,Navoiy, O`zbekiston 2Chexiya davlat Tabiiy fanlar universiteti professori, 3Ekologiya ta`lim yo`nalishi 1-kurs magistranti, Navoiy, O`zbekiston",
+     "page": 133
+    },
+    {
+     "title": "BALKASH OKUNINING TANGACHALARI ASOSIDA YO SHINI ANIQLASH VA MORFOLOGIK KO‘RSATKICHLARINI BAHOLASH",
+     "byline": "1M. E.Ummatova, 2 R.A.Sohibnazarov 1Navoiy davlat universiteti dotsenti, b.f.f.d.(PhD), Navoiy, O`zbekiston 2Navoiy davlat universiteti mustaqil tadqiqotchisi, Navoiy, O`zbekiston",
+     "page": 137
+    },
+    {
+     "title": "HAVO IFLOSLANISH I VA NAFAS YO’LLARI KASALLIKLARI O’RTASIDAGI BOG’LIQLIK",
+     "byline": "Sharapova G.V.1, Bo’riyeva G. U. 2 1Navoiy davlat universiteti dotsenti, Navoiy, O`zbekiston 2Navoiy davlat universiteti 2-bosqich talabasi, Navoiy, O`zbekiston",
+     "page": 140
+    },
+    {
+     "title": "BIOLOGIK XILMA-XILLIK VA EKOLOGIK MU AMMOLAR",
+     "byline": "1M. E.Ummatova, 2Shuxratova S., 3Yusupova D. 1Navoiy davlat universiteti dotsenti, b.f.f.d.(PhD), Navoiy, O`zbekiston 2Navoiy davlat universiteti 2-bosqich talabasi, Navoiy, O`zbekiston 3Navoiy davlat universiteti 2-bosqich talabasi, Navoiy, O`zbekiston",
+     "page": 144
+    },
+    {
+     "title": "ATMOSFERA IFLOSLANISHINING EKOLOGIK OQIBATLARI",
+     "byline": "1D.Yu.Jo`rayeva, 2 X.Esanova 1Navoiy davlat universiteti, p.f.f.d.(PhD), Navoiy, O`zbekiston 2Navoiy Davlat Universiteti talabasi, Navoiy, O`zbekiston",
+     "page": 146
+    },
+    {
+     "title": "PARAZITLAR VA ULARNING INSON SALOMATLIGIGA TA'SIRI",
+     "byline": "1M. E.Ummatova, 2Norqulova N., 3 Quvondiqova S. 1Navoiy davlat universiteti dotsenti, b.f.f.d.(PhD), Navoiy, O`zbekiston 2Navoiy davlat universiteti 1-bosqich talabasi, Navoiy, O`zbekiston 3Navoiy davlat universiteti 1-bosqich talabasi, Navoiy, O`zbekiston",
+     "page": 148
+    },
+    {
+     "title": "HAVO IFLOSLANISHINING BOLALAR IMMUNITETIGA TA’SIRI",
+     "byline": "Sharapova Gulnoza Valentinovna,1 Komilova Sevara Samad qizi 2 1Navoiy davlat universiteti dotsenti, Navoiy, O`zbekiston 2 Navoiy davlat universiteti 2-bosqich talabasi, Navoiy, O`zbekiston",
+     "page": 150
+    },
+    {
+     "title": "ZARAFSHON DARYOSI QUYI OQIMI SUV HAVZALARIDA UCHROVCHI OQCHA (ABRAMIS BRAMA) BALIG’INING FENOTIPIK O’ZGARUVCHANLIGIGA EKOLOGIK OMILLARNING TA’SIRI",
+     "byline": "M.A.Yuldoshev 1, G.K.Umaraliyeva 2 1Agrar davlat universiteti professori, Toshkent, O’zbekiston 2Navoiy davlat universiteti o‘qituvchisi, Navoiy, O’zbekiston",
+     "page": 153
+    },
+    {
+     "title": "DYNAMICS OF PLANT SPECIES DISTRIBUTION IN URBAN AREAS: A CASE STUDY OF SAMARKAND",
+     "byline": "G’ofurova Gulxayo Shavkat qizi Samarkand State University named after Sharof Rashidov, Samarkand, Uzbekistan",
+     "page": 156
+    },
+    {
+     "title": "BALIQLARNING YASHASH MUHITIGA SALBIY TA’SIR ETUVCHI EKOLOGIK OMILLAR. M.E",
+     "byline": "Ummatova 1, M.B.Muxammadiyeva 2 1Navoiy davlat universiteti dotsenti, 2Navoiy davlat universiteti 1-bosqich magistranti, Navoiy, O`zbekiston",
+     "page": 159
+    },
+    {
+     "title": "HAVO IFLOSLANISHINING INSON SALOMATLIGIGA TA ’SIRI: ALLERGIYA MUAMMOSI. G.V",
+     "byline": "Sharapova 1, X.Q.Muhammadqulova 2 1Navoiy davlat universiteti dotsenti, Navoiy, O`zbekiston 2Navoiy davlat universiteti 2-bosqich magistranti, Navoiy, O`zbekiston",
+     "page": 162
+    },
+    {
+     "title": "BIOLOGIK XILMA-XILLIK VA EKOLOGIK MUAMMOLAR",
+     "byline": "Kanatbayeva T.S1., Seytmuratov M.N 2., Jalgasova U.J 3. 1Navoiy davlat universiteti “Biologiya” kafedrasi dotsenti, Navoiy, O`zbekiston 2,3Navoiy davlat universiteti “ Biologiya” ta`limy o`nalishi 3 -kurs talabasi, Navoiy, O`zbekiston",
+     "page": 164
+    },
+    {
+     "title": "G‘O‘ZANING AYRIM BIOLOGIK VA FIZIOL OGIK XUSUSIYATLARINI O‘RGANISH ORQALI EKOLOGIK SAMARADORLIKNI OSHIRISH",
+     "byline": "Ulugmurodova Yulduz Sharof Rashidov nomidagi Samarqand davlat universiteti tayanch doktaranti, Samarqand, O`zbekiston",
+     "page": 166
+    },
+    {
+     "title": "KO‘PAYISHNING ZAMONAVIY USULLARI — BIOLOGIK XILMA-XILLIKNI SAQLASH VA YASHIL IQTISODIYOTNING ASOSI SIFATIDA",
+     "byline": "Shodiyeva O.M.,1Abdukarimova Sh.J.2 Navoiy davlat universiteti o‘qituvchisi, Navoiy, O’zbekiston Navoiy davlat universiteti talabasi, Navoiy, O’zbekiston",
+     "page": 170
+    },
+    {
+     "title": "NAVOIY VILOYATI TUPROQLARIGA ANTROPOGEN OMILLARNING TA’SIRI",
+     "byline": "Joniyev Otabek Toxirovich 2Faxriddinova Xonzoda 3Tolipova Farangiz 1Navoiy davlat universiteti dotsenti, Navoiy, O`zbekiston 2Navoiy davlat universiteti Geografiya ta’ lim yo‘nalishi magistranti, Navoiy, O`zbekiston 3Navoiy davlat universiteti Geografiya ta’ lim yo‘nalishi talabasi, Navoiy, O`zbekiston",
+     "page": 173
+    },
+    {
+     "title": "OQCHA BALIG’I (ABRAMIS BRAMA) NING BALIQ XO’JALIKLARI UCHUN IQTISODIY AHAMIYATI",
+     "byline": "G.K.Umaraliyeva, Sh.Q.Nosirova 2 1 Navoiy davlat universiteti o‘qituvchisi, Navoiy, O’zbekiston 2Navoiy davlat universiteti o‘qituvchisi, Navoiy, O’zbekiston",
+     "page": 175
+    },
+    {
+     "title": "AGROEKOLOGIK TIZIMLARNI HUDUDIY TASHKIL ETISHDA INNOVATSION XORIJIY TAJRIBALAR. I.A",
+     "byline": "Xudoyberdiyeva Navoiy davlat universiteti v.b.dotsenti, g.f.f.d (PhD), Navoiy O‘zbekiston",
+     "page": 179
+    },
+    {
+     "title": "SAMARQAND HUDUDI O‘SIMLIK T URLARI CHANG DONALARI ASOSIDA BIOXILMA-XILLIKNI BAHOLASH. Z.U",
+     "byline": "Djumayeva Samarqand davlat pedagogika instituti assistenti, b.f.f.d. (PhD), Samarqand, O`zbekiston",
+     "page": 183
+    },
+    {
+     "title": "CHAVOQ BALIQNING (RUTILUS RUTILUS) O‘ZBEKISTON SUV HAVZALARIDAGI MORFO-BIOLOGIYASI",
+     "byline": "Homido va Zilola Yunusovna Navoiy davlat universiteti doktoranti Profi University “Ta’lim faoliyativa tillar” fakulteti dekani. Navoiy, O`zbekiston.",
+     "page": 187
+    },
+    {
+     "title": "URBANIZATSIYA SHAROITIDA QIZILQUM CHO'LIDA EKOLOGIK. O'ZGARISHI",
+     "byline": "Ikromova M.V Navoiy davlat universiteti 2-bosqich magistranti. O`zbekiston",
+     "page": 193
+    },
+    {
+     "title": "ZARAFSHON DARYOSI QUYI OQIMI SUV HAVZALARIDAGI ODDIY OQCHA (ABRAMIS BRAMA) BALIG’INING IQLIM O’ZGARISHI TA’SIRIDA POPULYATSIYASIDA KUZATILGAN O’ZGARISHLAR",
+     "byline": "G.K.Umaraliyeva, Sh.Q.Nosirova 2 1Navoiy davlat universiteti o’qi tuvchisi, Navoiy, O’zbekiston 2Navoiy davlat universiteti o’qituvchisi, Navoiy, O’zbekiston",
+     "page": 196
+    },
+    {
+     "title": "O‘ZBEKISTONDA TACHINIDAE (DIPTERA) OILASI: FAUNASI, BIOLOGIYASI VA EKOLOGIK AHAMIYATI",
+     "byline": "Turabova Sitora Sobir qizi, Saidova Feruza Ziyodullayevna, Mamanov Sobit xon Sayfullo o‘g‘li3 SamDU magistrant talabasi, SamDTU akademik litseyi biologiya o‘qituvchisi, SamDTU akademik litseyi biologiya o‘qituvchisi. Samarqand, O`zbekiston",
+     "page": 201
+    },
+    {
+     "title": "EKOLOGIK MUAMMOLAR VA ULARNING KELIB CHIQISH OMILLARI: ANTROPOGEN TA’SIR TAHLILI. K",
+     "byline": "anatbayeva T.S¹, Kenjebekova D.A², Kutibayeva A.T³ 1 Navoiy davlat universiteti, “Biologiya” kafedrasi dotsenti, Navoiy, O`zbekiston 2,3Navoiy davlat universiteti, “Biologiya” ta’lim yo‘nalishi 3-kurs talabasi, Navoiy, O`zbekiston",
+     "page": 207
+    },
+    {
+     "title": "GLOBAL EKOLOGIK MUAMM OLAR VA GEOGRAFIK YONDASHUV",
+     "byline": "1Norquvvatova Umida Izzatullayevna,. 2Bahodirova Zahro Bobomurod qizi. 1Navoiy davlat universiteti o’qituvchisi. 1,2,3Navoiy davlat universiteti 2-kurs talabalari. Navoiy, O`zbekiston",
+     "page": 210
+    },
+    {
+     "title": "SOYA O’SIMLIGINING BIOLOGIK XUSUSIYATLAR I, AGROTEXNOLOGIYASI VA SHO‘RLANISHGA TA‘SIRI",
+     "byline": "1Xakimov O‘ktam Toshbotirovich q.x.f.n 2Bozorov Xolmurod Maxmudovich q.x.f.d, 3Maxmudov Bobir Turg‘unjon o‘g‘li 1O‘Z.R.FA Navoiy bo‘limi kata ilmiy xodimi 2Paxta seleksiyasi, urug’chiligi va yetishtirish agrot exnologiyalari ilmiy tadqiqot instituti yetakchi ilmiy xodimi. 3Fanlar akademiyasi Navoiy bo’limi tayanch doktoranti. Navoiy, O`zbekiston",
+     "page": 212
+    },
+    {
+     "title": "БИОЛОГИЧЕСКОЕ РАЗНООБРАЗИЕ УЗБЕКИСТАНА В УСЛОВИЯХ ИЗМЕНЕНИЯ КЛИМАТА: РИСКИ, МОНИТОРИНГ И МЕХАНИЗМЫ СОХРАНЕНИЯ",
+     "byline": "Сиддикова Шахноза Ахмедовна- доцент Джиззакский государственный педагогический университет. Жиззах, Узбекистан",
+     "page": 216
+    },
+    {
+     "title": "BIOLOGIK XILMA - XILLIK VA EKOLOGIK MUAMMOLAR",
+     "byline": "1Qurbonboyeva Bibijon Qurbonboy qizi 2Yusupova Dilnozaxon 1,2Profi Universitiy Navoiy filyali Bos hlang‘ich ta‘lim yo‘nalishi 3- bosqich talabalari. Navoiy, O`zbekiston",
+     "page": 218
+    },
+    {
+     "title": "CHO‘LLANISH SABABLARI, VA UNING OLDINI OLISH YO‘LLARI",
+     "byline": "Kanatbayeva T.S 1., Astanova N.T 2., Sharapatova U.B 3. 1Navoiy davlat universiteti “Biologiya” kafedrasi dotsenti 2Navoiy davlat universiteti “Biologiya” ta`lim yo`nalishi 3 -kurs talabasi 3Navoiy davlat universiteti “Biologiya” ta`lim yo`nalishi 3-kurs talabasi",
+     "page": 220
+    },
+    {
+     "title": "DORI ALLERGIYASI: BIOLOGIK XILMA-XILLIK VA EKOLOGIK MUAMMOLARNING INSON SALOMATLIGIGA TA’SIRI",
+     "byline": "U.B.Baxodirova Sh.T.Shok irova Navoiy davlat universiteti dotsenti Navoiy davlat universiteti magistranti",
+     "page": 222
+    },
+    {
+     "section": "II sho‘ba. Ekologik barqarorlik va yashil iqtisodiyot"
+    },
+    {
+     "title": "Satellite-Based Multi-Sensor Analysis of Atmospheric Ecosystems",
+     "byline": "Cuddapah Dhananjaya Rao 1, Hamidova S.O. 2, Shodiyev Sh.M. 3, Bekniyozov S.Q. 41Associate Professor of Physics Department of Physics and Astronomy, Navoi State University, Uzbekistan 2Master’s Second Course stude nt Department of Physics and Astronomy, Navoi State University, Uzbekistan3Master’s Second Course student Department of Physics and Astronomy, Navoi State University, Uzbekistan4Master’s Second Course student Department of Physics and Astronomy, Navoi State University, Uzbekistan",
+     "page": 225
+    },
+    {
+     "title": "O‘ZBEKISTONDA \"YASHIL\" IQTISODIYOTGA O‘TISHDA BIOTEXNOLOGIK YONDASHUVLARNING O‘RNI VA ISTIQBOLLARI",
+     "byline": "Xujjiyev S.O. 1, Jonuzoqov A.G. 2 1Navoiy davlat universiteti “Biologiya” kafedrasi professori, b.f.n. 2Navoiy davlat universiteti “Biologiya” ta`lim yo`nalishi 3-kurs talabasi",
+     "page": 231
+    },
+    {
+     "title": "YASHIL IQTISODIYOTNI RIVOJLANTIRISH MASALALARI",
+     "byline": "J.Q.Umarova 1, K.Q.To`rayeva 1Navoiy davlat universiteti dotsenti, b.f.n. Navoiy, O`zbekiston 2Navoiy davlat universiteti talabasi. Navoiy, O`zbekiston",
+     "page": 234
+    },
+    {
+     "title": "SUYUQLIKLARNING YOPISHQOQ ELASTIK XOSSALARINI O’RGANISH",
+     "byline": "B.F.Izbosarov, G.M.Rizoqulova 2 1Navoiy davlat universiteti professori, Navoiy, O’zbekiston 2Navoiy davlat universiteti magistranti, Navoiy, O’zbekiston",
+     "page": 236
+    },
+    {
+     "title": "NA VOIY VILOYATIDA BOLALAR UCHUN EKO-GIGIYENIK P ROFILAKTIKA: RAQAMLI TA’LIM PLATFORMASI YARATISH.A.R",
+     "byline": "Malikova, M.Sh. Bafoyeva 2 1Navoiy Davlat Universiteti dotsenti. Navoiy, O’zbekiston 2Navoiy Davlat Universiteti magistranti. Navoiy, O’zbekiston",
+     "page": 239
+    },
+    {
+     "title": "ТРЕНДОВЫЙ АНАЛИЗ ГИДРОХИМИЧЕСКИХ ПОКАЗАТЕЛЕЙ ПОВЕРХНОСТНЫХ ВОД ЮЖНОГО ПРИАР АЛЬЯ (2019-2024 гг.) Я.И",
+     "byline": "Аметов 1, Ж.М. Турдымуратова 2 1профессор Каракалпакского государственного университета, д.б.н., Нукус, 2докторант Каракалпакского государственного университета, Нукус, Узбекистан",
+     "page": 242
+    },
+    {
+     "title": "ARALASH DISTILLANGAN YOG‘ KISLOTALARI ASOSIDA KISLOTA NITRILLARI OLISH TEXNOLOGIYASINING EKOLOGIK JIHATLARI. S.R",
+     "byline": "Nuraliyev, Sh.A.Sultanova, M.Sh. Bobonazarova 2. 1Navoiy davlat universiteti t.f.f.d.(PhD), Navoiy, O’zbekiston 2Navoiy davlat universiteti magistranti, Navoiy, O‘zbekiston",
+     "page": 246
+    },
+    {
+     "title": "BARQAROR RIVOJLANISHDA YASHIL IQTISODNING O’RNI: EKOLOGIYA VA AHOLI HAYOT SIFATIDA”",
+     "byline": "Sharapova Gulnoza Valentinovna 1Navoiy davlat universiteti v.b dotsenti Navoiy, O`zbekiston",
+     "page": 250
+    },
+    {
+     "title": "EKOLOGIK BARQARORLIK VA “YASHIL IQTISODIYOT” GA O‘TISHNING DOLZARB MASALALARI",
+     "byline": "S.M.Mansurov, J.N.Y akubov, 1Toshkent gumanitar fanlar universiteti dotsenti, i.f.n., Toshkent O‘zbekiston 2Toshkent gumanitar fanlar universiteti dotsenti, i.f.n., Toshkent O‘zbekiston",
+     "page": 253
+    },
+    {
+     "title": "“NAVOIY VILOYATIDA UMUMIY EKOLOGIK HOLAT”",
+     "byline": "G‘aybullayeva Ozoda Obid qizi, Mamasharipova Sevinch Utkirjon qizi 2 1Navoiy davlat universiteti b.f.f.d (PhD), Navoiy, O’zbekiston",
+     "page": 257
+    },
+    {
+     "title": "IMPACT OF INDUSTRIAL GAS EMISSIONS ON HUMAN HEALTH (CASE STUDY OF NAVOI REGION)",
+     "byline": "Gayatri Prasat Sharma 1, Boypo‘latova Mohlaroyim Dilshodjon qizi 21Navoi State University Faculty of Natural Sciences and Medicine, Lecturer 2Navoi State University Student of biology department",
+     "page": 260
+    },
+    {
+     "title": "OG‘IR METALL IONLARINI ALYUMINON V A ALIZARIN REAGENTLARI ASOSIDA SPEKTROFOTOMETRIK USULDA ANIQLASHNING EKOLOGIK MONITORINGDAGI ROLI HAMDA JARAYONNI OPTIMALLASHTIRISH SHARTLARI",
+     "byline": "Azimova Zarina Karimboyevna, Xamraqulova Zarina Karimjon qizi 2, Halilova Lola Mexriddinovna 1 1 Navoiy davlat universiteti magistranti. Navoiy, O`zbekiston 2Navoiy davlat universiteti, magistranti Navoiy, O`zbekiston1Navoiy davlat universiteti, dotsenti. Navoiy, O`zbekiston",
+     "page": 263
+    },
+    {
+     "title": "O‘ZGARIB BORAYOTGAN IQLIM SHAROITIDA TUYACHILIK: STRATEGIK V A MUQOBIL CHORA SIFATIDA",
+     "byline": "L.U.Xalilova 1, K.A.Saparov 21Navoiy davlat universiteti doktoranti, Navoiy, O’zbekiston 2Nizomiy nomidagi TDPU Tabiiy fanlar kafedrasi professori. b.f.d",
+     "page": 264
+    },
+    {
+     "title": "IPAK FIBROINI ASOSIDA PB(II) IONLARINI ANIQLASHNING EKOLOGIK MONITORINGDAGI AHAMIYATI VA ZAMONAVIY INNOVATSION YONDASHUVLAR",
+     "byline": "Amonboyeva Bog’dagul Omonboy qizi Olimova Madina Abdurasul qizi Halilova Lola Mexriddinovna 1 Navoiy davlat universiteti magistranti Navoiy, O`zbekiston 2Navoiy davlat universiteti, magistranti Navoiy, O`zbekiston 1Navoiy davlat universiteti, dotsenti Navoiy, O`zbekiston",
+     "page": 268
+    },
+    {
+     "title": "ATROF-MUHITNI MUHOFAZA QILISHDA IPAK FIBRIONI ASOSIDAGI EKOLOGIK TOZA SORBENTLARNING ROLI VA ULARNING YUTISH XUSUSIYATLARI",
+     "byline": "Olimova Madina Abdurasul qizi 1 Amonboyeva Bog’dagul Omonboy qizi 2 1Halilova Lola Mexriddinovna1Navoiy davlat univ ersiteti, magistranti Navoiy, O`zbekiston 2Navoiy davlat universiteti, magistranti Navoiy, O`zbekiston 1Navoiy davlat universiteti, dotsenti Navoiy, O`zbekiston",
+     "page": 270
+    },
+    {
+     "title": "THE ROLE OF NATURAL POLYMER-BASED SORBENTS IN THE ECO-FRIENDLY REMOVAL OF HEAVY METALS FROM W ASTEWATER",
+     "byline": "Khalilova Lola Mekhriddinovna Obloqulova Saida Kasimovna 2, Fayzullayeva Sevinch Ubaydullayevna 3 1Doctor of Philosophy in Chemical Sciences, Navoi State University (NavDU) 2magistr of Navoi State University student of Navoi State University",
+     "page": 272
+    },
+    {
+     "title": "ISSIQLIK ALMASHINISHNI JADALLASHTIRISH MAQSADIDA DISPERS SISTEMALARNI QO‘LLASHNING SAMARADORLIGINI TADQIQ QILISH",
+     "byline": "Ismoilova Zarina Otabek qizi 1 1Navoiy davlat konchilik va texnologiyalar universiteti Kimyo - metallurgiya fakulteti Kimyo muhandisligi ta’lim yo‘nalishi 3A- 24KM guruh talabasi, Navoiy.",
+     "page": 276
+    },
+    {
+     "title": "QISHLOQ XO‘JALIGIDA KIMYOVIY MODDALARNING EKOLOGIK OQIBATLARI VA CHIQINDILARNI QAYTA ISHLASHDA KIMYONING ROLI",
+     "byline": "Lola Mehriddinovna Xalilova Karomatova Dilfuza Rustamjon qizi 2 1Navoiy davlat universiteti dotsenti Navoiy, O`zbekiston 2Navoiy davlat universiteti talabasi Navoiy, O`zbekiston",
+     "page": 278
+    },
+    {
+     "title": "SPIRULINA BIOMASSASINI OLISHDA ZARRUKA VA CFTRI OZUQALARIDAN FOYDALANISH",
+     "byline": "A.M.Qobilov 1, H.S.Ikromova 2 1 Buxoro davlat universiteti dotsenti, b.f.f.d. (PhD), Buxoro, Oʻzbekiston 2Buxoro davlat universiteti tayanch dokto ranti, Buxoro, Oʻzbekiston",
+     "page": 281
+    },
+    {
+     "title": "EKOLOGIK BARQARORLIKNI TA’MINLASH VA YASHIL IQTISODIYOTNI RIVOJLANTIRISHDA QAYTA TIKLANUVCHI ENERGIYA MANBALARIDAN FOYDALANISH",
+     "byline": "Y.Y.Jamilov 1, M.O.Aslonova 2, M.S.Muxammadiyeva 3 1Navoiy davlat universiteti dotsenti, Navoiy, O‘zb ekiston. 2,3Navoiy davlat universiteti magistranti, Navoiy, O‘zbekiston.",
+     "page": 285
+    },
+    {
+     "title": "CROCODILE PHYSICS DASTURIDAN FOYDALANIB SHISHANING NUR SINDIRISH KO‘RSATKICHINI ANIQLASH. B.N",
+     "byline": "Xushvaqtov 1, M.B. Nematova 2, N.M. Xolmuminova21Navoiy davlat universiteti dotsenti, N avoiy, O’zbekiston 2Navoiy davlat universiteti magistranti, Navoiy, O’zbekiston",
+     "page": 288
+    },
+    {
+     "title": "NANOZARRACHALI CUX NING CN SELEKTIV ELEKTRODLARNING MEMBRANASI SIFATIDA QO‘LLANILISHI",
+     "byline": "Yangibayev S 1. 1Navoiy davlat universiteti, professor v.b. Navoiy, O‘zbekiston",
+     "page": 294
+    },
+    {
+     "title": "QUYOSH ENERGIYASIDAN FOYDALANISHNING YASHIL IQTISODIYOT UCHUN TA’SIRINI O‘QITISH METODIKASI",
+     "byline": "Kamolov Ixtiyor Ramazonovich Barakayeva Sarvinoz To‘lqunovna 1Navoiy davlat universiteti professori. Navoiy, O`zbekiston 2 Navoiy davlat universiteti dotsenti Navoiy, O`zbekiston",
+     "page": 296
+    },
+    {
+     "title": "РОЛЬ БОЛЕЕ ЧИСТОГО ПРОИЗВОДСТВА В ДОСТИЖЕНИИ ЦЕЛЕЙ УСТОЙЧИВОГО РАЗВИТИЯ. А.А",
+     "byline": "Хрипович доцент Белорусского национального технического университета, к.т.н. (PhD), г. Минск, Республика Беларусь",
+     "page": 299
+    },
+    {
+     "title": "ИСПОЛЬЗОВАНИЕ ОТХОДОВ ПРОИЗВОДСТВА В КАЧЕСТВЕ КОМПОНЕНТОВ ШУМОПОГЛАЩАЮЩИХ И ВИБРОИЗОЛИРУЮЩИХ МАТЕРИАЛОВ. И.В",
+     "byline": "Скуратович, Е.В. Зеленухо 1, Ю.С. Серегова 2, В.Г. Свисленок 2 1 старшие преподаватели Белорусского национального технического университета, 2 учащиеся УО «Национальный детский технопарк» г. Минск, Республика Беларусь",
+     "page": 305
+    },
+    {
+     "section": "III sho‘ba. Qishloq xo‘jaligida innovatsion texnologiyalar"
+    },
+    {
+     "title": "INNOVATSION SUG‘ORISH TEXNOLOGIYALARINING TUPROQ UNUMDORLIGI VA EKOLOGIK BARQARORLIKKA TA’SIRI (O‘ZBEKISTON MISOLIDA). A.J",
+     "byline": "Kushakov 1, S.Oʻ. Husanova 2 1 Navoiy davlat universiteti professori, Navoiy, Oʻzbekiston 2Navoiy davlat universiteti magistranti, Navoiy, Oʻzbekiston",
+     "page": 309
+    },
+    {
+     "title": "EKOSISTEMALARDA MUHITNI EKOLOGIK HOLATINI O`RGANISH, TAHLIL QILISHDA RAQAMLI TEXNOLOGIYALARDAN FOYDALANISHNING AHAMIYATI",
+     "byline": "Boratova Muxtasam G`aniyevna 1, Mirzamurodova Shabnam Sherzod qizi 2 Halilova Sohila 3 1SamDU, dotsent, p.f.f.d (PhD) 2Sharof Rashidov nomidagi Samarqand davlat universiteti talabalari",
+     "page": 311
+    },
+    {
+     "title": "IFLOSLANGAN TUPROQLARNI FITOMELIORATSIYA USULIDA TOZAL ASHNING",
+     "byline": "AFZALLIKLARI.Yuldashov Murod Xudargonovich 1, Sharopova Makhliyo Davlat qizi 2 1Navoiy davlat universiteti v/b. professori, q/x.f.n. Navoiy, O’zbekiston 2Navoiy davlat universiteti magistranti. Navoiy, O’zbekiston",
+     "page": 314
+    },
+    {
+     "title": "ZARAFSHON HAVZASI SUG‘ORILADIGAN TUPROQLARINING EKOLOGIK- MELIORATIV TAVSIFI",
+     "byline": "prof. Sh.M.Bobomurodov 1, prof.N.Yu. Abdiraxmonov 2, prof.M.M.Toshqo’ziyev, prof.A.J. Kushakov 1Tuproqshunoslik va agrokimyo ilmiy tadqiqotlar instituti proffessori 2Tuproqshunoslik va agrokimyo ilmiy tadqiqotlar instituti b.f.d. 3Tuproqshunoslik va agrokimyo ilmiy tadqiqotlar instituti proffessori 4Navoiy davlat universiteti proffessori",
+     "page": 316
+    },
+    {
+     "title": "O‘ZBEKISTON IQLIMIDA SAKSOVUL O’SIMLIGINING BIOLOGIK AHAMIYATI VA UNI SUN’IY KO’PAYTIRISH TEXNOLOGIYALARI",
+     "byline": "1M. E.Ummatova, 2Ibotova Sh.M, 3Ibragimova M.O. 1Navoiy davlat universiteti dotsenti, b.f.f.d.(PhD), Navoiy, O`zbekiston 2Navoiy davlat universiteti 1-bosqich talabasi, Navoiy, O`zbekiston 3Navoiy davlat universiteti 1-bosqich talabasi, Navoiy, O`zbekiston",
+     "page": 321
+    },
+    {
+     "title": "BALIQLARNI URCHITISHDA BIOTEXNOLOGIK USULLARDAN FOYDALANISH VA UNING",
+     "byline": "SAMARADORLIGI.T.Turdiqulov 1, S.G‘.Turabov 2 1 Guliston davlat universiteti dotsenti, q.-x.f.n., dotsent, Guliston, O‘zbekiston 2Guliston davlat universiteti talabasi, Guliston, O‘zbekiston",
+     "page": 323
+    },
+    {
+     "title": "AKVAKULTURANI RIVOJLANTIRISHDA SADOK TEXNOLOGIYASINING O‘RNI VA IQTISODIY SAMARADORLIGI (TO‘DAKO‘L SUV OMBORI MISOLIDA)",
+     "byline": "R.B.Hakimova¹, G.X.Bobokulova² ¹Navoiy davlat universiteti dotsenti, b.f.f.d. (PhD), Navoiy, O'zbekiston ²Navoiy davlat universiteti, 4-bosqich talabasi, Navoiy, O'zbekiston",
+     "page": 327
+    },
+    {
+     "title": "TIOMOCHEVINA–FORMALDEGID TIZIMLARI ASOSIDA AZOT VA OLTINGUGURT SAQLAGAN BIRIKMALAR SINTEZI",
+     "byline": "K.SH.Xamroyev, M.H.Tursuntosheva 2, M.SH. Nematova 1Navoiy davlat universiteti dotsenti, t.f.f.d.(PhD), Navoiy, O’zbekiston 2Navoiy davlat universiteti o’qituvchisi, Navoiy, O‘zbekiston 3Navoiy davlat universiteti o’qituvchisi, Navoiy, O‘zbekiston",
+     "page": 329
+    },
+    {
+     "title": "KARBAMID–FORMALDEGID TIZIMLARI ASOSIDA FUNKSIONAL MATERIALLAR SINTEZI VA ULARNING XOSSALARI",
+     "byline": "X.M.Vapoyev, K.SH.Xamroyev, M.SH. Nematova 1Navoiy davlat konchilik va texnologiyalar universiteti professori, t.f.d.(DSc), Navoiy, O’zbekiston 2Navoiy davlat universiteti dotsenti, t.f.f.d.(PhD), Navoiy, O’zbekiston 3Navoiy davlat universiteti o’qituvchisi, Navoiy, O‘zbekiston",
+     "page": 332
+    },
+    {
+     "title": "ВЛИЯНИЕ РЕСУРСОСБЕРЕГАЮЩЕЙ ТЕХНОЛОГИИ НА ПЛОДОРОДИЕ ПОЧВЫ И УРОЖАЙ ЗИМНИХ КУЛЬТУР",
+     "byline": "X.Ф.Батиров, А.Шакаров, Р.Шавкатова Рухсора 1профессор Самаркандского госудаственного университета им. Ш.Рашидова, доктор с. -х наук, Самарканд, Узбекистан 2 студенты 2 -курса факультета географии и экологии СамГУ им.Ш.Рашидова, Самарканд, Узбекистан",
+     "page": 334
+    },
+    {
+     "title": "KARAMDOSHLAR (BRASSICACEAE) OILASI VAKILLARINING MORFO-FIZIOLOGIK XUSUSIYATLARINI LABORATORIYA VA ISSIQXONA SHAROITIDA O‘STIRISH VA QIYOSIY TAHLIL QILISH. V.B",
+     "byline": "Davletmuratova 1, S.E. Begjanova 2 1Qoraqalpoq davlat universiteti dotsenti,b.f.n., Nukus, Qoraqalpog‘iston 2Qoraqalpoq davlat universiteti talabasi, Nukus, Qoraqalpog‘iston",
+     "page": 338
+    },
+    {
+     "title": "BUXORO TUMANI SUV RESURSLARI VA ULARDAN SAMARALI FOYDALANISH",
+     "byline": "Xayitov Yozil Qosimovich 1, Ramazonova Iroda 2 1Buxoro davlat universiteti, Geografiya fanlari doktori(DSc) professor 2Buxoro davlat universiteti mustaqil tadqiqotchi",
+     "page": 339
+    },
+    {
+     "title": "INULA HELENIUM L. O‘SIMLIGINING KIMYOVIY TARKIBI, DORIVORLIK XUSUSIYATLARI VA ZAMONAVIY TIBBIYOTDA QO‘LLANILISHI",
+     "byline": "O.O.G‘aybullayeva, G.H.Xusainova 2 1 Navoiy davlat universiteti katta o‘qituvchisi, b.f.f.d.(PhD), Navoiy, O‘zbekiston 2Navoiy davlat universiteti 4- kurs talabasi, Navoiy, O‘zbekiston",
+     "page": 342
+    },
+    {
+     "title": "DEKORATIV DARAXTLARNI SUG'ORISHDA PET BUTILKADAN FOYDALANISH: ILMIY ASOSLANGAN YONDASHUV",
+     "byline": "P.Sh.Hamroqulova 1, M.B. Yuldasheva 2 1-Navoiy davlat universiteti, Biologiya ta’lim y o`nalishi I kurs talabasi 2 - Navoiy davlat universiteti, Biologiya kafedrasi katta o`qituvchisi",
+     "page": 347
+    },
+    {
+     "title": "IQLIM O'ZGARISHI VA UNING IQTISODIYOTGA TA'SIRI",
+     "byline": "Xalimova Nazokat Toʻxtasinovna, Berdimurotova Mohlaroyim Bahodir qizi 2, Amrulloyeva Saboat Akmal qizi 3, Ahadova Nilufar Sunnatillo qizi, Asadova Dilsora Akbar qizi 1Navoiy davlat universiteti Biologiya kafedrasi o’qituvchisi 2Navoiy davlat universiteti 2 - bosqich talabasi 3Navoiy davlat universiteti 2 -bosqich talabasi 4Navoiy davlat universiteti 2 - bosqich talabasi 5Navoiy davlat universiteti 2 -bosqich talabasi",
+     "page": 349
+    },
+    {
+     "title": "DORIVOR MOYCHECHAKNING O‘SISHI, RIVOJLANISHI VA QISHLOQ XO‘JALIGIDAGI AHAMIYATI",
+     "byline": "O.O.G‘aybullayeva 1, G. Iskandarova 2 1 Navoiy davlat universiteti katta o‘qituvchisi, b.f.f.d.(PhD), Navoiy, O‘zbekiston 2Navoiy davlat universiteti 4- kurs talabasi, Navoiy, O‘zbekiston",
+     "page": 352
+    },
+    {
+     "title": "DORIVOR QO’ZIQORIN GANODERMA LUCIDUMNING SHIFOBAXSH XUSUSIYATLARI VA LABORATORIYADA YETISHTIRISH BO’YICHA O’TKAZILGAN TADQIQOTLARNING O’RGANILISH HOLATI HAMDA DASTLABKI TADQIQOTGA TAYYORGARLIK ASOSLARI",
+     "byline": "Shodmonov Feruzjon Qamariddinovich, Shariqulov Qodirbek Shokir o’gli 2 1 Buxoro davlat universiteti b.f.f.d (PhD), dotsent 2Buxoro davlat universiteti 1 - bosqich magistranti",
+     "page": 354
+    },
+    {
+     "title": "QIZILMIYA ILDIZINING SHIFOBAXSH XUSUSIYATLARI VA BIOLOGIY ASI",
+     "byline": "O.O.G‘aybullayeva, N.Oripova 1Navoiy davlat universiteti katta o‘qituvchisi, b.f.f.d.(PhD), Navoiy, O‘zbekiston 2Navoiy davlat universiteti 4- kurs talabasi, Navoiy, O‘zbekiston",
+     "page": 358
+    },
+    {
+     "title": "OROLBO‘YI SUG‘ORILADIGAN TUPROQLARINING BIOLOGIK FAOLLIGINI",
+     "byline": "O‘RGANISH.G.M.Shamuratova, S.N.Mirzabaeva 2 1Qoraqalpoq davlat universiteti q.x.f.f.d. (PhD), Nukus, Qoraqalpog ‘iston 2Qoraqalpoq davlat universiteti magistranti, Nukus, Qoraqalpog‘iston",
+     "page": 363
+    },
+    {
+     "title": "QISHLOQ XO’JALIGIDA INNOVATSION TEXNOLOGIYALAR",
+     "byline": "M.A.Raxmatullayeva 1, M.Z.Yodgorova 1 Navoiy davlat universiteti Biologiya kafedrasi o’qituvchisi 2Biologiya yo’nalishi 3-bosqich talabasi",
+     "page": 365
+    },
+    {
+     "title": "FORMALDEGID ASOSIDA AZOT SAQLAGAN ORGANIK BIRIKMALAR SINTEZINING NAZARIY ASOSLARI VA DOLZARBLIGI",
+     "byline": "X.M.Vapoyev, K.SH.Xamroyev 2, M.H.Tursuntosheva 1Navoiy davlat konchilik va texnologiyalar universiteti professori, t.f.d.(DSc), Navoiy, O’zbekiston 2Navoiy davlat universiteti dotsenti, t.f.f.d.(PhD), Navoiy, O’zbekiston 3Navoiy davlat universiteti o’qituvchisi, Navoiy, O‘zbekiston",
+     "page": 369
+    },
+    {
+     "title": "NEW METHODS OF OBTAINING DRUGS FROM MICROORGANISMS (EXAMPLE OF VANCOMYCIN)",
+     "byline": "Qayumova Mohinur Karim qizi 1, Qalandarov Malika To‘raqulovna 2 1Navoi State U niversity Lecturer, department of Biology 2Navoi State University Student of Biology department",
+     "page": 371
+    },
+    {
+     "title": "SHOLI NAVLARINING SUV ALMASHINUVI VA FOTOSINTETIK KO‘RSATKICHLARINI SOLISHTIRMA BAHOLASH. M.G‘",
+     "byline": "Nematova 1, M.Sh. Jaynaqov 2 1Navoiy davlat universiteti o’qitu vchi, Navoiy, O’zbekiston 2Andijon davlat universiteti dotsenti, Andijon, O’zbekiston",
+     "page": 375
+    },
+    {
+     "title": "СОВРЕМЕННЫЕ МЕТОДЫ СЕЛЕКЦИИ СЕЛЬСКОХОЗЯЙСТВЕННЫХ КУЛЬТУР: МОЛЕКУЛЯРНЫЕ ПОДХОДЫ И ИХ РОЛЬ В УСТОЙЧИВОМ РАЗВИТИИ",
+     "byline": "Н.А.Мамадиева, М.Б.Юлдашева 2 1 Навоийский государственный университет, студент 3 курса направления Биологии 2Навоийский государственный университет, старший преподаватель кафедры Биологии, Навои, Узбекистан",
+     "page": 377
+    },
+    {
+     "title": "MAHALLIY VA XORIJIY G‘O‘ZA NAVLARINING MAHSULDORLIGIGA SHO‘R STRESSI TA’SIRINING FIZIOLOGIK XUSUSIYA TLARI",
+     "byline": "Avliyakulova Shaxnoza Muzafarovna 1Buxoro davlat universiteti mustaqil tadqiqotchisi",
+     "page": 381
+    },
+    {
+     "title": "BUXORO VILOYATI TUPROQ-IQLIM SHAROITIDA ODDIY QORAZIRA (CARUM CARVI L.) NAVLARINING INTRODUKSIYASI, MORFOFIZIOLOGIK XUSUSIYATLARI VA BIOKIMYOVIY TARKIBI",
+     "byline": "N.N.El murodova 1 Buxoro davlat universiteti doktoranti, Buxoro, O‘zbekiston",
+     "page": 385
+    },
+    {
+     "title": "XATIRCHI TUMANI SUG‘ORILADIGAN BO‘Z TUPROQLARNING DEGRADATSIYA JARAYONLARI VA ULARNI OLDINI OLISH YO‘LLARI",
+     "byline": "Jahongirova Malika Jahongir qizi 1 Navoiy davlat universiteti magistranti",
+     "page": 388
+    },
+    {
+     "title": "TRITIKALE NAVLARIDA UNUVCHANLIK QOBILYATI",
+     "byline": "M.M.Raimqulova Sharof Rashidov nomidagi Samarqand davlat universiteti Biokimyo instituti tayanch doktaranti, Samarqand, O‘zbekiston",
+     "page": 392
+    },
+    {
+     "title": "DOCIOSTAURUS MAROCCANUS (MAROKASH CHIGIRTKASI) UNINI BROYLERLARDA OZIQLANTIR ISH RATSIONIGA QOʻSHISHNING ZOOTEXNIK VA EKOLOGIK SAMARADORLIGI",
+     "byline": "S.H.Muydinova Navoiy davlat universiteti 2 -bosqich magistranti",
+     "page": 395
+    },
+    {
+     "title": "TUPROQ NAMLIGINI O‘LCHASH SENSORINING ISHLASH PRINSIPI VA QO‘LLANILISHI",
+     "byline": "Hamroyeva Sevara Nasriddinovna 1 1 NavDU “Fizika va as tronomiya” kafedrasi dotsenti",
+     "page": 398
+    },
+    {
+     "title": "ПОВЫШЕНИЕ ЭФФЕКТИВНОСТИ НАКЛОННОГО СОЛНЕЧНОГО ОПРЕСНИТЕЛ Я ВЫБОРОМ ОПТИМАЛЬНЫХ РАЗМЕРОВ",
+     "byline": "Ж.М.Абдуллаев, Ю.Ю.Жамилов 2 1Старший преподаватель, НавГУ, Навои, Узбекистан. 2Доцент, НавГУ, Навои, Узбекистан",
+     "page": 402
+    },
+    {
+     "title": "TUPROQ SHAROITIDA P LASTIK MATERIALLARNING PARCHALANISHI VA MIKROPLASTIK ZARRACHALARINI HOSIL QILISHI",
+     "byline": "1M.B.Yuldasheva, 2M.Otayeva 1Navoiy davlat universiteti dotsenti, b.f.f.d.(PhD), Navoiy, O`zbekiston 2Navoiy davlat universiteti 4-bosqich talabasi, Navoiy, O`zbekiston",
+     "page": 406
+    },
+    {
+     "section": "IV sho‘ba. Tabiiy fanlarni o‘qitish va barqaror rivojlanish"
+    },
+    {
+     "title": "EKOLOGIK TA’LIMDA BARQAROR RIVOJLANISH ASOSLARI",
+     "byline": "G.D.Shamsidinova Navoiy, O`zbekiston Navoiy davlat universiteti dotsenti, b.f.n, N DU Maktabgacha va boshlang‘ich ta’lim fakulteti dekani, Navoiy, O`zbekiston",
+     "page": 409
+    },
+    {
+     "title": "GENETIKA ISTIQBOLLARI VA FAN YUTUQLARIDAN BIOLOGIYA DARSLARIDA FOYDALANISH",
+     "byline": "J.Q.Umarova Navoiy davlat universiteti dotsenti, b.f.n. Navoiy, O`zbekiston",
+     "page": 412
+    },
+    {
+     "title": "TABIIY FANLARNI O‘QITISHDA ZAMONAVIY",
+     "byline": "3D MODELINING AFZALLIGI. 1Ilyasov A.S., 2Sadilloyeva L.S., 3Kamolova F.I., 4Saidjonov S.S. 1Navoiy innovatsiyalar universiteti professori, biologiya fanlari doktori. 2,3Navoiy innovatsiyalar universiteti katta o’qituvchilari 4Navoiy innovatsiyalar universiteti talabasi (Navoiy. O’zbekiston)",
+     "page": 414
+    },
+    {
+     "title": "BO‘LAJAK FIZIKA O’QITUVCHISINI TAYYORLASHDA EKSPERIMENTAL KOMPETENTLIKNI RIVOJLANTIRISH",
+     "byline": "A.A.Axmedov 1, O.Shirinov 2 1 NDU Fizika va astronomiya kafedrasi professori, p.f.d. Navoiy, O’zbekiston 2NDU fizika mutaxassisligi 1 -kurs magistranti Navoiy, O’zbekiston",
+     "page": 417
+    },
+    {
+     "title": "ATOM YADROSINING ZARYADI VA MASSASINI ANIQLASHDA AXBOROT TEXNOLOGIYA VOSITALARIDAN FOYDALANISH IMKONIYATLARI",
+     "byline": "A.K.Qutbedinov, E. A.Qudratov, D.B.Nurullayeva 3. 1Navoiy davlat universiteti professori, F - m.f.n. Navoiy, O‘zbekiston. 2Navoiy davlat universiteti dotsenti, Navoiy, O‘zbekiston. 3Navoiy davlat universiteti, “Fizika va astronomiya” ta’lim yo’nalishi, 4-kurs. Navoiy, O‘zbekiston.",
+     "page": 421
+    },
+    {
+     "title": "BIOLOGIYA DARSLARIDA AKADEMIK LITSEY O‘QUVCHILARINING TADQIQOTCHILIK KOMPETENSIYALARINI INTEGRATIV YONDASHUV ASOSIDA RIVOJLANTIRISH",
+     "byline": "M.N.Ibodova Navoiy davlat universiteti dotsenti, p.f.f.d (PhD), Navoiy, O‘zbekiston.",
+     "page": 424
+    },
+    {
+     "title": "FIZIKA DARSLARIDA O ’QUV MAQSADIGA ERISHGANLIK DARAJASINI ANIQLASHDA NOSTANDART TESTLARDAN FOYDALANISH IMKONIYATLARI",
+     "byline": "A.K.Qutbedinov, E.A.Qudratov 2, M.Ya.Uktamov 3 1 Navoiy davlat universiteti professori, F - m.f.n. Navoiy, O‘zbekiston. 2Navoiy davlat universiteti dotsenti, Navo iy, O‘zbekiston. 3Navoiy davlat universiteti, “Fizika va astronomiya” ta’lim yo’nalishi, 4-kurs. Navoiy, O‘zbekiston.",
+     "page": 427
+    },
+    {
+     "title": "IQTIDORLI O‘QUVCHILARDA EKOLOGIK MADANIYATNI SHAKLLANTIRISH METODIKASI",
+     "byline": "I.T.Azimov 1, N.I.Toshpo‘latova 2, M.I.Toshpo‘latova 3 1Nizomiy nomidagi O‘zbekiston milliy pedagogika universiteti dotsenti, Toshkent, O‘zbekiston 2O‘zbekiston milliy pedagogika universiteti 2 -kurs magistranti, Toshkent, O‘zbekiston 3O‘zbekiston milliy pedagogika universiteti 4-kurs talabasi, Toshkent, O‘zbekiston",
+     "page": 430
+    },
+    {
+     "title": "FIZIK VA EKOLOGIK BILIMLAR ASOSIDA YOSH AVLODNING EKOLOGIK MAS’ULIYATINI RIVOJLANTIRISH",
+     "byline": "S.S.Kanatbayev 1, G.Samatova 2, D.Murodova 2 1Navoiy davlat universiteti dotsenti, Navoiy, O’zbekiston 2Navoiy davlat universiteti 4-kurs talabasi, Navoiy, O’zbekiston",
+     "page": 433
+    },
+    {
+     "title": "UZLUKSIZ MILLIY TA’LIM TIZIMIDA EKOLOGIK TA’LIM VA TARBIYANING O`RNI",
+     "byline": "Ataqulova Manzura Nematovna Navoiy davlat universiteti dotsenti, p.f.f.d (Phd) Navoiy, O`zbekiston",
+     "page": 437
+    },
+    {
+     "title": "BIOLOGIYANI O ʻQITISHDA MASHQ VA MASALALARDAN TALABALARNING MUSTAQIL ISH LARINI TASHKIL ETISH DA FOYDALANISH NING DIDAKTIK IMKONIYATI",
+     "byline": "S.Z.Jumayev Nizomiy nomidagi O‘zMPU o‘qituvchisi, p.f.f.d.(PhD), Toshkent, O‘zbekiston",
+     "page": 440
+    },
+    {
+     "title": "O'SIMLIKLAR DUNYOSIDAGI EVOLYUTSION O'ZGARISHLAR MODULINI O'QITISH METODIKASI",
+     "byline": "M.N.Ibodova 1, D.S.Berdiyeva 2 1Navoiy davlat universiteti dotsenti. p.f.f.d.(PhD) Navoiy, O`zbekiston 2Navoiy davlat universiteti biologiya ta’lim yo’nalishi magistri, Navoiy,O`zbekiston",
+     "page": 442
+    },
+    {
+     "title": "XULQ-ATVOR GENETIKASINING ZAMONAVIY BIOLOGIYADAGI O‘RNI VA RIVOJLANISH ISTIQBOLLARI",
+     "byline": "J.Q.Umarova 1, F. N. Zokirova 2 1Navoiy Davlat Universiteti dotsenti, Navoiy, O`zbekiston 2Navoiy Davlat Universiteti 2-kurs magistranti",
+     "page": 447
+    },
+    {
+     "title": "KOGNITIV YONDASHUV ASOSIDA O‘QUVC HILARNING BIOLOGIYA DARSLARIDA TADQIQOTCHILIK KO‘NIKMALARINI RIVOJLANTIRIS H",
+     "byline": "I.T.Azimov F.A.Daminova 1 Nizomiy nomidagi O‘zbekiston milliy pedagogika universiteti dotsenti, Toshkent, O`zbekiston 2 Shahrisabz davlat pedagogika instituti, Pedagogika fakulteti, Tabiiy fanlar kafedrasi stajyor o‘qituvchisi,Qarshi, O`zbekiston",
+     "page": 450
+    },
+    {
+     "title": "STEAM YONDASHUVI ASOSIDA O‘SIMLIKLAR FIZIOLOGIYASI FANINI O‘QITISHNING ZAMONAVIY DIDAKTIK IMKONIYATLARI",
+     "byline": "G.A.Xoliqulova, U.E.Raxmatov 1Shahrisabz davlat pedagogika instituti tadqiqotchisi 2Nizomiy nomidagi O'zbekiston milliy pedagogika universiteti Tabiiy fanlar fakulteti, Biolo giya kafedrasi dotsenti, pedagogika fanlari bo'yicha falsafa doktori",
+     "page": 452
+    },
+    {
+     "title": "RAQAMLI DUNYODA TA’LIM OLISH - PISA 2025 NING INNOVATSION YO‘NALISHI",
+     "byline": "M.N.Doniyorov, I.Yo.Xamroyev 2 1 Nizomiy nomidagi O‘zMPU o‘qituvchisi, Toshkent, O‘zbekiston 2Impuls tibbiyot instituti assisenti, Chirchiq, O‘zbekiston",
+     "page": 456
+    },
+    {
+     "title": "ANALITIK KIMYONI O’QITISHDA RAQAMLI TEXNOLOGIYALARDAN FOYDALANISHNING AFZALLIKLARI V A KAMCHILIKLARI",
+     "byline": "L.M.Usmonova Navoiy davlat universiteti dotsenti, Navoiy, O’zbekiston",
+     "page": 459
+    },
+    {
+     "title": "СОВЕРШЕНСТВОВАНИЕ МЕТОДИКИ РЕШЕНИЯ ЗАДА Ч ПРИ ИЗУЧЕНИИ ВЗАИМОДЕЙСТВИЯ НЕАЛЛЕЛЬНЫХ ГЕНОВ",
+     "byline": "Р.Б.Рахмонова, М. Туракулов 2 1 Навоийский государственный университет старший преподаватель, кафедры биологии, Навои, Республика Узб eкистан 2Навоийский государственный университет студент факультет естеств енных наук и медицины Навои, Республика Узбeкистан",
+     "page": 461
+    },
+    {
+     "title": "«INSON FAOLIYATI XAVFSIZLIGI —ZAMONAVIY IJTIMOIY PEDAGOGIK MUAMMO SIFATIDA»",
+     "byline": "Sh.R.Akobirov Navoiy davlat universituti katta o‘qituvchisi,p.f.f.d.(PhD),Navoiy,O‘zbekiston",
+     "page": 465
+    },
+    {
+     "title": "SOG‘LOM TURMUSH MADANIYATINI TARBIYALASHNING PEDAGOGIK ASOSLARI",
+     "byline": "D.O.Raxmonova¹ G.I.Xalilova² ¹Navoiy davlat universiteti o’qituvchisi, Navoiy, O’zbekiston ²Navoiy davlat universiteti talabasi, Navoiy, O’zbekiston",
+     "page": 469
+    },
+    {
+     "title": "TABIIY FANLARNI O‘QITISHDA YANGI ZAMONAVIY TA’LIM TEXNOLOGIYALARIDAN FOYDALANISH",
+     "byline": "X.B.Shomurotova 1, F.Sh.Sheraliyev 2 1 Navoiy davlat universiteti tayanch doktaranti,Navoiy, O’zbekiston 2Navoiy davlat universiteti talabasi, Navoiy, O’zbekiston",
+     "page": 472
+    },
+    {
+     "title": "TALABALARDA EKOLOGIK BILIM VA MADANIYATNI RIVOJLANTIRISH METODIKASINI TAKOMILL ASHTIRISH",
+     "byline": "M.O.Gʻafforova Sharof Rashidov nomidagi SamDU magistranti,Samarqand, O`zbekiston",
+     "page": 475
+    },
+    {
+     "title": "QON AYLANISH SISTEMASI MAVZUSINI O‘QITISHDA DIGITAL SIMULATION METODLARIDAN FOYDALANISH. M.B",
+     "byline": "Ongarov 1 R. Yo Maxmudjonov 2 1 Nizomiy nomidagi Oʻzbekiston Milliy pedagogika universiteti Biologiya kafedrasi p.f.f.d dotsenti Toshkent, O`zbekiston 2Nizomiy nomidagi Oʻzbekiston Milliy pedagogika universiteti Biologiya yoʻnalishi 3- kurs talabasi Toshkent, O`zbekiston",
+     "page": 478
+    },
+    {
+     "title": "BIOLOGIK TA’LIM V A BARQAROR RIVOJLANISH",
+     "byline": "Kanatbaeva T.S 1., Vileva P.Q 2., Sartbayeva M.M 3. 1Navoiy davlat universiteti dotsenti, Navoiy, O`zbekiston 2Navoiy davlat universiteti “Biologiya” ta’lim yonalishi 3 -kurs talabasi, Navoiy, O`zbekiston 3Navoiy davlat universiteti “Biologiya” ta’lim yonalishi 3-kurs talabasi, Navoiy, O`zbekiston",
+     "page": 481
+    },
+    {
+     "title": "TELEGRAM IJTIMOIY TARMOG‘I BOTINING TALABALAR BIOLOGIYA TA’LIMIDAGI PEDAGOGIK IMKONIYATLARI",
+     "byline": "Yuldasheva M.B. Navoiy davlat universiteti katta o‘qituvchisi, Navoiy, O‘zbekiston",
+     "page": 483
+    },
+    {
+     "title": "BIOLOGIYA TA‘LIM YO‘NALISHI TALABALARIGA ODAM ANATOMIYASI FANINI O‘QITISHDA TELEGRAM-BOT TEXNOLOGIYASIDAN FOYDALANISH METODOLOGIYASI",
+     "byline": "D.G‘.Xamidova Navoiy davlat universiteti oʻqituvchisi, Navoiy, Oʻzbekiston",
+     "page": 487
+    },
+    {
+     "title": "KOMPETENSIYA TUSHUNCHASINING S INERGETIK TALQINI: BILIMDAN KO‘NIKMAGA O‘TISHNING CHIZIQLI BO‘LMAGAN YO‘LI",
+     "byline": "D.R.Sharipova, Navoiy davlat universiteti oʻqituvchisi Navoiy, Oʻzbekiston",
+     "page": 491
+    },
+    {
+     "title": "FIZIKA DARSLARIDA “AQL XARITASI”DAN FOYDALANISH IMKONIYATLARI",
+     "byline": "E.A.Qudratov, N.M.Hasanova 2 1 Navoiy davlat universiteti dotsenti, Navoiy, O‘zbekiston. 2Navoiy davlat universiteti, “Fizika va astronomiya” ta’lim yo’nalishi 4 -kurs talabasi, Navoiy, O‘zbekiston.",
+     "page": 494
+    },
+    {
+     "title": "MODERN APPROACHES TO FORMING AND DEVELOPING THE PROFESSIONAL COMPETENCE OF FUTURE BIOLOGY T EACHERS",
+     "byline": "Sh.R.Shamsiyeva Doctoral student, Bukhara state pedagodical institute, Bukhara, Uzbekistan",
+     "page": 496
+    },
+    {
+     "title": "Bo‘lajak o‘qituvchilarda sog‘lom turmush tarzi madaniyatini shakllantirishning gigiyenik xususiyatlari",
+     "byline": "D.O.Raxmonova¹ A.I.Olimova² ¹Navoiy davlat univer siteti o’qituvchisi, Navoiy, O’zbekiston ²Navoiy davlat universiteti talabasi, Navoiy, O’zbekiston",
+     "page": 499
+    },
+    {
+     "title": "Raqamli texnologiyalar vositasida o‘quvchilarning biologiyafanidan darsdan tashqari o‘quv faoliyatini faollashtirishni pedagogik shartlari",
+     "byline": "X.B.Shomurotova, D.B.Ismatillayeva 1Navoiy davlat universiteti tayanch doktaranti,Navoiy,O’zbekiston 2Farg’ona viloyati Rishton tumani 8-maktab o’qituvchisi, Farg’ona, O’zbekiston",
+     "page": 503
+    },
+    {
+     "title": "ZAMONAVIY GEOGRAFIYA TA’LIMIDA ZAMONAVIY VOSITALAR VA GATGA ASOSLANGAN PEDAGOGIKA",
+     "byline": "S.Q.Negmatov Navoiy davlat universiteti, geografiya kafedrasi oʻqituvchisi Navoiy, O`zbekiston",
+     "page": 506
+    },
+    {
+     "title": "EKOLOGIK TA’LIM VA TARBIYANING JAMIYAT TARAQQIYOTIDAGI AHAMIYATI",
+     "byline": "Kanatbayeva T.S 1, Joldibayev O.S 2. 1Navoiy davlat universiteti “Biologiya” kafedrasi dotsenti, Navoiy, O`zbekiston 2Navoiy davlat universiteti “Biologiya” ta`lim yo`nalishi 4 -kurs talabasi, Navoiy, O`zbekiston",
+     "page": 510
+    },
+    {
+     "title": "EKOLOGIK XAVFSIZLIK MADANIYATINI YUKSALTIRISHDA TA`LIM - TARBIYANING O`RNI",
+     "byline": "N.R.Tolibova 1 1 Navoiy Davlat Universiteti magistri, Navoiy, O`zbekiston",
+     "page": 512
+    },
+    {
+     "title": "UMUMTA’LIM MAKTABLARIDA TABIIY FANLARNI O‘QITISHDA INNOV ATSION YONDASHUVLARNI SAMARADORLIGINI OSHIRISH (NAZARIY V A AMALIY TAHLIL ASOSIDA). R. N",
+     "byline": "Achilova 1, X. Y. Davronova 1 Navoiy Davlat Universiteti katta o’qituvchisi p.f.f.d (PhD), 2Navoiy Davlat Universiteti 1-kurs magistranti, Navoiy, O’zbekiston",
+     "page": 516
+    },
+    {
+     "title": "KIMYO TA’LIMIDA RAQAMLI TEXNOLOGIYALARDAN FOYDALANISHNING ZAMONA VIY TENDENSIYALARI",
+     "byline": "L.M.Usmonova 1, G.D.Raxmatova 2 1 Navoiy davlat universiteti dotsenti, Navoiy, O’zbekiston 2Navoiy davlat universiteti talabasi, Navoiy, O’zbekiston",
+     "page": 519
+    },
+    {
+     "title": "ИНТЕГРАЦИЯ ЦИФРОВЫХ ТЕХНОЛОГИЙ В ПРЕПОДАВАНИЕ БИОЛОГИИ КАК ФАКТОР ФОРМИРОВАНИЯ ЭКОЛОГИЧЕСКОГО МЫШЛЕНИЯ УЧАЩИХСЯ. Ш.А",
+     "byline": "Сиддикова. Джиззакский государственный педагогический университет, доцент, г. Джизак, Узбекистан",
+     "page": 521
+    },
+    {
+     "title": "KREATIV YONDASHUV ASOSIDA BIOLOGIYA F ANINI O`QITISH METODIKASINI TAKOMILLASHTIRISH",
+     "byline": "M.B.Ravshanov Navoiy davlat universiteti akademik litseyi biologiya fani bosh o`qituvchisi, Navoiy, Oʻzbekiston",
+     "page": 524
+    },
+    {
+     "title": "BIOLOGIYA TA‘LIM YO‘NALISHI TALABALARIGA ODAM ANATOMIYASI FANINI O‘QITISHDA TELEGRAM-BOT TEXN OLOGIYASIDAN FOYDALANISH: NAZARIY ASOSLAR VA METODOLOGIK YONDASHUV",
+     "byline": "D.G’.Xamidova Navoiy davlat universiteti oʻqituvchisi, Navoiy, Oʻzbekiston",
+     "page": 526
+    },
+    {
+     "title": "\"KOMPETENSIYA\" TUSHUNCHASINING SINERGETIK TALQINI: BILIMDAN KO‘NIKMAGA O‘TISHNING CHIZIQLI BO‘LMAGAN YO‘LI",
+     "byline": "D.R.Sharipova Na voiy davlat universiteti oʻqituvchisi Navoiy, Oʻzbekiston",
+     "page": 530
+    },
+    {
+     "title": "TABIIY FANLAR NAZARIYASI VA METODIKASI FANINI O'QITISHDA INTERAKTIV TELEGRAM-TESTLARINING SAMARADORLIGI",
+     "byline": "D.S.Urunova Navoiy davlat universiteti, oʻqituvchisi, Navoiy, Oʻzbekiston",
+     "page": 533
+    },
+    {
+     "title": "OLIY TA`LIM MUASSALARIDA BOTANIKA DARSLARINI TASHKIL QILISHDA INTEGRATSIYANING O`RNI VA AHAMIYATI",
+     "byline": "Qayumova Mohinur Karim qizi NDU biologiya kafedrasi o`qituvchisi, tayanch doktorant, Navoiy, O`zbekiston",
+     "page": 536
+    },
+    {
+     "title": "QUSHLAR SINFI MODULINI O’QITISHDA RAQAMLI DIDAKTIK MATERIA LLAR YARATISH METODIKASI",
+     "byline": "M.D.Xamroyeva 1, M.Isroilova 2 1 Navoiy davlat universiteti o’qituvchisi Navoiy, O‘zbekiston",
+     "page": 540
+    },
+    {
+     "title": "O'QUVCHILARDA TADBIRKORLIK KO'NIKMALARINI RIVOJLANTIRISHNING HUQUQIY VA TARIXIY ASOSLARI",
+     "byline": "Farida Akmalova O’zM PU Aniq va tabiiy fanla r (Biologiya) yo’nalishi 1-bosqich magistranti Toshkent, O‘zbekiston",
+     "page": 544
+    },
+    {
+     "title": "TA’LIMNI AXBOROTLASHTIRISH VA RAQAMLASHTIRISH SHAROITIDA BIOLOGIYA FANINI O‘QITISHDA WEB-TEXNOLOGIYALARDAN FOYDALANISHNING ILMIY-METODOLOGIK ASOSLARI",
+     "byline": "M.S.Teshayeva Navoiy davlat universiteti, tayanch doktoranti Navoiy, O‘zbekiston",
+     "page": 546
+    },
+    {
+     "title": "TABIIY FANLARNI O`QITISHDA INNOVATSION TA`LIM TENOLOGIYALARNING AHAMIYATI",
+     "byline": "A.B.Altibayeva Navoiy davlat universiteti Biologiya ta`lim yo`nalishi 4 - bosqich talabasi Navoiy, O`zbekiston",
+     "page": 549
+    },
+    {
+     "title": "BOSHLANG'ICH SINF BIOLOGIYA TA'LIMIDA RAQAMLI TEXNOLOGIYALARNI QO'LLASH: MUAMMOLAR VA YECHIMLAR",
+     "byline": "Xayitova Shaxnoza Isokulovna Navoiy viloyati, Xatirchi tumani, 78 -maktab boshlang'ich sinf o'qituvchisi, Navoiy, O'zbekiston",
+     "page": 552
+    },
+    {
+     "section": "V sho‘ba. Xalqaro hamkorlik va milliy siyosat"
+    },
+    {
+     "title": "СОХРАНЕНИЕ БИОЛОГИЧЕСКОГО РАЗНООБРАЗИЯ В УСЛОВИЯХ ГЛОБАЛЬНЫХ ЭКОЛОГИЧЕСКИХ ПРОБЛЕМ: МЕЖДУНАРОДНЫЙ ОПЫТ И ПРАКТИКА УЗБЕКИСТАНА",
+     "byline": "Литвинова Е.А. 1, Рахмонова Р.Б.2, Равшанова М.Х.3 1Новосибирский государственный технический институт, к.б.н., доцент г. Новосиби рск, Российская Федерация 2Навоийский государственный университет, старший преподаватель г.Навоий, Республика Узбекистан 2Навоийский государственный университет, старший преподаватель г.Навоий, Республика Узбекистан",
+     "page": 555
+    },
+    {
+     "title": "SUV BIORESURSLARINI BOSHQARISH SOHASIDA XALQARO ALOQALAR VA BARQAROR RIVOJLANISH STRATEGIYALARI",
+     "byline": "B.Ye. Jumabayev, Ye.B.Isayev 1Navoiy davlat universiteti dotsenti, b.f.n. Navoiy, O’zbekiston 2M.Auvezov nomidagi Janubiy- Qozog’iston universiteti dotsenti, b.f.n., Qozog’iston",
+     "page": 559
+    },
+    {
+     "title": "O’ZBEKISTON RESPUBLIKASIDA “BARQAROR TARAQQIYOT-2030” DASTURINING AMALIY FAOLIYAT NATIJALARI",
+     "byline": "Shamsidinova Gulchehra Dustmurodovna 1 Xasanov Nodir Hamrokulovich 1Navoiy Davlat Universiteti dotsenti, b.f.n. O‘zbekiston, Navoiy",
+     "page": 563
+    },
+    {
+     "title": "IMPLEMENTATION OF THE TASKS SET AT NAVA I STATE UNIVERSITY: INTERNATIONAL EXCHANGE OF EXPERIENCE",
+     "byline": "Yang Guaqiang 1 Chongqing industry- education integration research institute. China J.Q.Umarova 2 Navoiy davlat universiteti dotsenti. b.f.n. Navoiy, O`zbekiston",
+     "page": 568
+    },
+    {
+     "title": "SUVNI IFLOSLANISHIGA QARSHI KURASH DA XALQARO HAMKORLIK VA EKOLOGIK SIYOSATNING O’RNI",
+     "byline": "M.E.Ummatova, R.K.Ibrohimova, Sh.G’. Bobomurodova Navoiy davlat universiteti dotsenti, b.f.f.d (PhD), Navoiy, O’zbekiston Navoiy davlat universiteti 2-kurs talabalari",
+     "page": 571
+    },
+    {
+     "title": "МЕЖДУНАРОДНЫЙ ОПЫТ И СОТРУДНИЧЕСТВО В РЕШЕНИИ ЭКОЛОГИЧЕСКИХ ПРОБЛЕМ. И.З",
+     "byline": "Бахрамов, Р.Худойбердиева Наваинский государстсвенний университет",
+     "page": 574
+    },
+    {
+     "title": "XALQARO HAMKORLIK VA MILLIY SIYOSAT DOIRASIDA SUV RESURSLARI VA BALIQCHILIKNI RIVOJLANTIRISH",
+     "byline": "R.B.Hakimova, Sh.M.Tohirova, O.M.Ziyodova Navoiy davlat universiteti dotsenti, b.f.f.d. (PhD), Navoiy, O’zbekiston Navoiy davlat universiteti 2 - kurs talabalari, Navoiy, O’zbekiston",
+     "page": 579
+    },
+    {
+     "title": "BIOXILMA-XILLIKNI SAQLASHDA XALQARO HAMKORLIK VA MILLIY STRATEGIYALARNING O‘ZARO UYG‘UNLIGI (O‘ZBEKISTON MISOLIDA)",
+     "byline": "Mansoor Maitah, R.N.Achilova 1Chexiya Tabiiy fanlar universiteti professori, Chexiya 2Navoiy Davlat Universiteti katta o’qituvchisi p.f.f.d (PhD), Navoiy, O’zbekiston",
+     "page": 583
+    },
+    {
+     "title": "HAVONI IFLOSLANISHIGA QARSHI KURASHDA XALQARO HAMKORLIK VA EKOLOGIK SIYOSATNING O’RNI",
+     "byline": "R.B.Hakimova, S.M.Xalillayeva, D.A.Yusupova Navoiy davlat universiteti dotsenti, b.f.f.d.(PhD), Navoiy, O’zbekiston Navoiy davlat universiteti 2-kurs talabalari, Navoiy, O’zbekiston",
+     "page": 587
+    },
+    {
+     "title": "BIOXILMA-XILLIKNI MUHOFAZA QILISHDA XALQ ARO HAMKORLIK VA DAVLAT DASTURLARINING SAMARADORLIGI. R.B",
+     "byline": "Raxmonova, M.X. Ravshanova. Navoiy davlat universiteti katta o‘qituvchi, Navoiy, O‘zbekiston Navoiy davlat universiteti katta o‘qituvchi, Navoiy, O‘zbekiston",
+     "page": 591
+    },
+    {
+     "title": "Биологическое разнообразие и устойчивое природопользование в Республике Узбекистан",
+     "byline": "Рахмонова Рухсора Бахриддиновна Нарзуллаева Захро Навоийский государственный университет, старший преподаватель, кафедры биологии. г. Навои, Узбнкистан Навоийский государств енный университет, студентка факультет естественных наук и медицины",
+     "page": 596
+    },
+    {
+     "title": "Mаhаlliy qush vа hаyvоn turlаrini sаqlаsh, pаrvаrish qilish, ko’pаytirish, sоnini tiklаsh vа mintаqаdа ekоturizmni rivоjlаntirishgа mo’ljаllаngаn pitоmniklаr mаjmuаsini tаshkil etilishning ekоlоgik аhаmiyati",
+     "byline": "I.S.Tаgаеv 1, B.А.Jo’rаqulоv 2 1O’zbеkistоn Rеspublikаsi «Jоnli tаbiаt» jаmоаt birlаshmаsi dirеktоri, b.f.n., Navoiy, O’zbekiston 2Nаvоiy Kоnchilik vа tехnоlоgiyalаr univеrsitеti o’qituvchisi, Navoiy, O’zbekiston",
+     "page": 598
+    },
+    {
+     "title": "EKOLOGIK MUVOZAN AT, XALQARO HAMKORLIK VA BIOXILMA-XILLIK",
+     "byline": "O.O.G'aybullayeva, O.Jumayeva 2, S.U.Mamasharipova 3 1Navoiy davlat universiteti, b.f.f.d (PhD), Navoiy, O'zbekiston 2 Navoiy viloyati agrokimyoviy tahlil markazi bo’lim boshlig’i 3Navoiy davlat universiteti, 2-bosqich talabasi, Navoiy, O'zbekiston",
+     "page": 601
+    },
+    {
+     "title": "G‘O‘ZA YETISHTIRISHDA SHINJON TEXNOLOGIYASI USULINING SAMARADORLIGI",
+     "byline": "H.S.Zaripov, D.N.Namozov 1PSUYAITI Navoiy ilmiy tajriba stansiyasi direktori, (PhD), 2PSUYAITI Navoiy ilmiy tajriba stansiyasi labaratoriya mudiri",
+     "page": 605
+    },
+    {
+     "title": "PLANTAGO OVATA FORSSK.NING O‘SISHI VA RIVOJLANISHIGA ORGANIK O‘G‘ITLARNIG TA’SIRI",
+     "byline": "N.A.Yuldasheva, T.X.Maxkamov 1O‘ZMU “Botanika va genetika” kafedrasi tayanch doktoranti 2Toshkent davlat agrar universiteti professori, b.f.d.",
+     "page": 608
+    },
+    {
+     "title": "КOРРЕЛЯЦИЯ ГЕМАТOЛOГИЧ ЕСКИХ ПOКАЗАТЕЛЕЙ И УРOВНЯ ГЛЮКOЗЫ С РЕЗУЛЬТАТАМИ Т-OБРАЗНOГO ЛАБИРИНТА У КРЫС",
+     "byline": "Oлимoва Л.Г. 1, Ахмедoва Г.Б.2, Зарипoв Б. 3 1 Дoктoрант НУУ имени Мирзo Улугбека, Ташкент Узбекистан 2Дoцент, к.б.н. (PhD) НУУ имени Мирзo Улугбека 3Академик, прoфессoр, д.б.н. НУУ имени Мирзo Улугбека",
+     "page": 611
+    },
+    {
+     "title": "ADAPTIVE CHANGES IN PHYSIOLOGICAL AND HEMATOBIOCHEMICAL PARAMETERS OF WHITE RATS CONSUMING WATER OF DIFFERENT MINERALIZATION. B",
+     "byline": "Zaripov 1, Sh.B. Sagidullaeva 2 1Academician, Doctor of Sciences in Biology, National University of Uzbekistan named after Mirzo Ulugbek, Tashkent, Uzbekistan 2 Master’s student, National University of Uzbekistan named after Mirzo Ulugbek, Tashkent, Uzbekistan",
+     "page": 616
+    },
+    {
+     "title": "GIDROKORTIZONNING ORGANIZMGA, AYNIQSA HAZM TIZIMIGA TA'SIRINI O'RGANISH VA BU PREPARATDAN EKOLOGIK XAVFSIZ HAMDA OQILONA FOYDALANISH AHAMIYATINI TUSHUNTIRISH. S.T",
+     "byline": "Usanova T oshkent Alfraganus universiteti katta o'qituvchisi, Тоshkent, O’zbekiston",
+     "page": 620
+    },
+    {
+     "title": "EKSPERIMENTAL DIABETDA CHIGIRTKA UNINING ORGANIZM FIZIOLOGIK KOʻRSATKICHLARIGA KORREKSIYALOVCHI TA'SIRINI BAHOLASH",
+     "byline": "Ibragimova Sh.Sh. 1, Axmedova G.B. 2, Zaripov B.Z3 1Mirzo Ulug’bek nomidagi O’zMU tayanch-doktaranti, Toshkent O’zbekiston 2Mirzo Ulug’bek nomidagi O’zMU PhD, dotsent 3Mirzo Ulug’bek nomidagi O’zMU b.f.d. akademik",
+     "page": 622
+    }
+   ]
+  },
+  {
    "type": "proceedings",
    "language": "uz",
    "publisher": "Navoiy davlat universiteti",
@@ -1446,6 +2510,2358 @@
      "title": "BURHONIDDIN MARG‘INONIYNING “AL-HIDOYA” ASARIDA OILA MUNOSABATLARI",
      "byline": "Ergasheva S.U. - Navoiy davlat universiteti Tarix fakulteti 1-kurs talabasi Ilmiy rahbar: Atoyeva Sh.Sh",
      "page": 370
+    }
+   ]
+  },
+  {
+   "slug": "kimyo-va-kimyoviy-texnologiyaning-dolzarb-muammolari-va-yechimlari",
+   "type": "proceedings",
+   "language": "uz",
+   "title": "Kimyo va kimyoviy texnologiyaning dolzarb muammolari va yechimlari",
+   "subtitle": "Respublika ilmiy-amaliy konferensiyasi materiallari to‘plami",
+   "title_ru": "Актуальные проблемы химии и химической технологии и пути их решения",
+   "subtitle_ru": "Сборник материалов республиканской научно-практической конференции",
+   "title_en": "Current Problems of Chemistry and Chemical Technology and Their Solutions",
+   "subtitle_en": "Proceedings of the national scientific and practical conference",
+   "date": null,
+   "year": 2023,
+   "place": "Navoiy",
+   "place_ru": "Навои",
+   "place_en": "Navoi",
+   "publisher": "Navoiy davlat pedagogika instituti",
+   "publisher_ru": "Навоийский государственный педагогический институт",
+   "publisher_en": "Navoi State Pedagogical Institute",
+   "people": [
+    {
+     "family": "Sobirov",
+     "given": "Bahodir",
+     "role": "committee",
+     "affiliation": "professor, texnika fanlari doktori, Navoiy davlat pedagogika instituti rektori",
+     "affiliation_ru": "профессор, доктор технических наук, ректор Навоийского государственного педагогического института",
+     "affiliation_en": "Professor, Doctor of Technical Sciences, Rector of Navoi State Pedagogical Institute"
+    },
+    {
+     "family": "Nasridinov",
+     "given": "Ilhom",
+     "role": "committee",
+     "affiliation": "dotsent, texnika fanlari nomzodi, NDPI ilmiy ishlar va innovatsiyalar bo‘yicha prorektori",
+     "affiliation_ru": "доцент, кандидат технических наук, проректор НГПИ по научной работе и инновациям",
+     "affiliation_en": "Associate Professor, Candidate of Technical Sciences, Vice-Rector for Research and Innovation, Navoi State Pedagogical Institute"
+    },
+    {
+     "family": "Yodgorov",
+     "given": "G‘ayrat",
+     "role": "committee",
+     "affiliation": "dotsent, fizika-matematika fanlari nomzodi, NDPI o‘quv ishlari bo‘yicha prorektori",
+     "affiliation_ru": "доцент, кандидат физико-математических наук, проректор НГПИ по учебной работе",
+     "affiliation_en": "Associate Professor, Candidate of Physical and Mathematical Sciences, Vice-Rector for Academic Affairs, Navoi State Pedagogical Institute"
+    },
+    {
+     "family": "Shodiyev",
+     "given": "Xamza",
+     "role": "committee",
+     "affiliation": "NDPI o‘quv-uslubiy boshqarma boshlig‘i",
+     "affiliation_ru": "начальник учебно-методического управления НГПИ",
+     "affiliation_en": "Head of the Academic and Methodological Department, Navoi State Pedagogical Institute"
+    },
+    {
+     "family": "Jumaboyev",
+     "given": "Bahodir",
+     "role": "committee",
+     "affiliation": "dotsent, biologiya fanlari nomzodi, NDPI Tabiiy fanlar fakulteti dekani",
+     "affiliation_ru": "доцент, кандидат биологических наук, декан факультета естественных наук НГПИ",
+     "affiliation_en": "Associate Professor, Candidate of Biological Sciences, Dean of the Faculty of Natural Sciences, Navoi State Pedagogical Institute"
+    },
+    {
+     "family": "Xamroyev",
+     "given": "Kamolliddin",
+     "role": "committee",
+     "affiliation": "kimyo fanlari bo‘yicha falsafa doktori (PhD), NDPI Kimyo kafedrasi mudiri",
+     "affiliation_ru": "доктор философии по химическим наукам (PhD), заведующий кафедрой химии НГПИ",
+     "affiliation_en": "PhD in Chemistry, Head of the Department of Chemistry, Navoi State Pedagogical Institute"
+    },
+    {
+     "family": "Karimova",
+     "given": "Dilorom",
+     "role": "committee",
+     "affiliation": "NDPI Kimyo kafedrasi professori, kimyo fanlari nomzodi",
+     "affiliation_ru": "профессор кафедры химии НГПИ, кандидат химических наук",
+     "affiliation_en": "Professor, Department of Chemistry, Candidate of Chemical Sciences, Navoi State Pedagogical Institute"
+    },
+    {
+     "family": "Xatamova",
+     "given": "Muhabbat",
+     "role": "committee",
+     "affiliation": "NDPI Kimyo kafedrasi dotsenti, kimyo fanlari nomzodi",
+     "affiliation_ru": "доцент кафедры химии НГПИ, кандидат химических наук",
+     "affiliation_en": "Associate Professor, Department of Chemistry, Candidate of Chemical Sciences, Navoi State Pedagogical Institute"
+    },
+    {
+     "family": "Yangiboyev",
+     "given": "Saparkul",
+     "role": "committee",
+     "affiliation": "NDPI Kimyo kafedrasi dotsenti, kimyo fanlari nomzodi",
+     "affiliation_ru": "доцент кафедры химии НГПИ, кандидат химических наук",
+     "affiliation_en": "Associate Professor, Department of Chemistry, Candidate of Chemical Sciences, Navoi State Pedagogical Institute"
+    },
+    {
+     "family": "Sultonov",
+     "given": "Shavkat",
+     "role": "committee",
+     "affiliation": "NDPI Kimyo kafedrasi dotsenti, texnika fanlari bo‘yicha falsafa doktori (PhD)",
+     "affiliation_ru": "доцент кафедры химии НГПИ, доктор философии по техническим наукам (PhD)",
+     "affiliation_en": "Associate Professor, Department of Chemistry, PhD in Technical Sciences, Navoi State Pedagogical Institute"
+    },
+    {
+     "family": "Axadov",
+     "given": "Mamurjon",
+     "role": "committee",
+     "affiliation": "pedagogika fanlari bo‘yicha falsafa doktori (PhD), NDPI Kimyo kafedrasi katta o‘qituvchisi",
+     "affiliation_ru": "доктор философии по педагогическим наукам (PhD), старший преподаватель кафедры химии НГПИ",
+     "affiliation_en": "PhD in Pedagogy, Senior Lecturer, Department of Chemistry, Navoi State Pedagogical Institute"
+    },
+    {
+     "family": "Omanov",
+     "given": "Behruzjon",
+     "role": "committee",
+     "affiliation": "texnika fanlari bo‘yicha falsafa doktori (PhD), NDPI Kimyo kafedrasi katta o‘qituvchisi",
+     "affiliation_ru": "доктор философии по техническим наукам (PhD), старший преподаватель кафедры химии НГПИ",
+     "affiliation_en": "PhD in Technical Sciences, Senior Lecturer, Department of Chemistry, Navoi State Pedagogical Institute"
+    }
+   ],
+   "keywords": [
+    "organik kimyo",
+    "noorganik kimyo",
+    "yuqori molekulyar birikmalar",
+    "kompozitsion materiallar",
+    "kimyoviy texnologiya",
+    "kimyo ta’limi",
+    "ekologiya",
+    "kimyo sanoati"
+   ],
+   "keywords_ru": [
+    "органическая химия",
+    "неорганическая химия",
+    "высокомолекулярные соединения",
+    "композиционные материалы",
+    "химическая технология",
+    "химическое образование",
+    "экология",
+    "химическая промышленность"
+   ],
+   "keywords_en": [
+    "organic chemistry",
+    "inorganic chemistry",
+    "macromolecular compounds",
+    "composite materials",
+    "chemical technology",
+    "chemistry education",
+    "ecology",
+    "chemical industry"
+   ],
+   "abstract": "To‘plam Navoiy davlat pedagogika institutida o‘tkazilgan “Kimyo va kimyoviy texnologiyaning dolzarb muammolari va yechimlari” mavzusidagi respublika ilmiy-amaliy konferensiyasi materiallaridan iborat. Unda 434 ta maqola yetti sho‘ba bo‘yicha jamlangan: organik va noorganik moddalar kimyosi va texnologiyasi, yuqori molekulyar birikmalar kimyosi va kompozitsion materiallar, ta’limda innovatsion texnologiyalar, iqtisod va menejment, ekologik muammolar va ularning yechimlari, aniq va tabiiy fanlar hamda kimyo sanoatida innovatsion texnologiyalar. Maqolalar o‘zbek, rus va ingliz tillarida.",
+   "abstract_ru": "Сборник включает материалы республиканской научно-практической конференции «Актуальные проблемы химии и химической технологии и пути их решения», проведённой в Навоийском государственном педагогическом институте. 434 статей распределены по семи секциям: химия и технология органических и неорганических веществ, химия высокомолекулярных соединений и композиционные материалы, инновационные технологии в образовании, экономика и менеджмент, экологические проблемы и их решения, точные и естественные науки, инновационные технологии в химической промышленности. Статьи на узбекском, русском и английском языках.",
+   "abstract_en": "The volume contains the proceedings of the national scientific and practical conference “Current Problems of Chemistry and Chemical Technology and Their Solutions” held at Navoi State Pedagogical Institute. Its 434 papers are arranged in seven sections: chemistry and technology of organic and inorganic substances, macromolecular compounds and composite materials, innovative technologies in education, economics and management, environmental problems and their solutions, exact and natural sciences, and innovative technologies in the chemical industry. Papers are in Uzbek, Russian and English.",
+   "languages": [
+    "uz",
+    "ru",
+    "en"
+   ],
+   "pages": 766,
+   "pdf": "files/publications/kimyo-va-kimyoviy-texnologiyaning-dolzarb-muammolari-va-yechimlari.pdf",
+   "cover": "images/nsu/publications/kimyo-va-kimyoviy-texnologiyaning-dolzarb-muammolari-va-yechimlari-cover.jpg",
+   "license": null,
+   "toc": [
+    {
+     "section": "I sho‘ba. Organik moddalar kimyosi va texnologiyasi"
+    },
+    {
+     "title": "ВЛИЯНИЕ НА КОРРОЗИИ АМИНОСПИРТОВ",
+     "byline": "Собиров Б.Б., Хамраев К.Ш., Шодиев Ҳ.Р.",
+     "page": 4
+    },
+    {
+     "title": "АНТИКОРРОЗИЙНОЕ ДЕЙСТВИЕ АМИНОВ",
+     "byline": "Собиров Б.Б. Хамраев К.Ш. Каримова Н.К. Азимова Б.Т.",
+     "page": 6
+    },
+    {
+     "title": "KO`P BOSQICHLI SHARBAT OLISHDA KIMYOVIY TEXNOLOGIK JARAYONLARNI KUCHAYTIRISH BILAN OPTIMAL YECHIMGA ERISHISH",
+     "byline": "Abdixalilov O`lmasjon Ulfat o`g`li",
+     "page": 7
+    },
+    {
+     "title": "РОЛЬ ОРГАНИЧЕСКИХ ВЫДЕЛЕНИЙ МИКРОФЛОРЫ АКТИВНОГО ИЛА В ДЛЯ ЖИЗНЕДЕЯТЕЛЬНОСТИ РАСТЕНИЙ",
+     "byline": "Тагаев Илхом Ахрорович, Иботова Наргиза Рахматулло қизи, Рахмонова Сурайё Шерхон қизи",
+     "page": 9
+    },
+    {
+     "title": "РЕАКЦИЯ АМИНОМЕТИЛИРОВАНИЯ НЕКОТОРЫХ ПРОПАРГИЛОВЫХ ЭФИРОВ НАСЫЩЕННЫХ КАРБОНОВЫХ КИСЛОТ С ДИЭТАНОЛАМИНОМ И АНАЛИЗ ИХ ФИЗИКО- ХИМИЧЕСКИЕ СВОЙСТВ",
+     "byline": "Шомуродов А.И., Исмаилов Б.М., Махсумов А.Г.",
+     "page": 11
+    },
+    {
+     "title": "HOZIRGI VAQTDA ORGANIK MODDALARNING TUZILISH NAZARIYASINI O‘QITISHNING BOSHLNG‘ICH USULLARI",
+     "byline": "Bo‘ronov Muhriddin Xoshimovich",
+     "page": 13
+    },
+    {
+     "title": "ORGANIK MODDALARNI TOZALASH USULLAR",
+     "byline": "Ilmiy rahbar: k.f.f.d.(PhD) K.Sh.Xamroyev Safarova Sadoqat Abduxalil qizi, Azimova Bahor Tuymuratovna",
+     "page": 15
+    },
+    {
+     "title": "AZOT, FOSFOR TUTGAN ANTIPIRENNING FIZIK-KIMYOVIY XOSSALARI",
+     "byline": "E.N. Nurqulov, X.S. Beknazarov",
+     "page": 16
+    },
+    {
+     "title": "ORGANIK SINTEZNING XALQ XO‘JALIGIDAGI O‘RNI",
+     "byline": "Ilmiy rahbar: k.f.f.d.(PhD) K.Sh.Xamroyev Rahimova Feruza Muzaffarovna, To‘rayeva ShaxloToshpo‘latovna",
+     "page": 17
+    },
+    {
+     "title": "AKRIL KISLOTA SOPOLIMER BOG‘LOVCHISI ASOSIDAGI QAVARIQLANUVCHI QOPLAMANING TERMIK TAHLILI",
+     "byline": "E.N. Nurqulov, X.S. Beknazarov",
+     "page": 19
+    },
+    {
+     "title": "TURLI ANGIDRIDLAR ASOSIDA XINOLIN AMIDLARINI SINTEZ QILISH",
+     "byline": "Karimova O.R., Niyazmetov A.R.",
+     "page": 20
+    },
+    {
+     "title": "КАТАЛИЗАТОРЫ НА ОСНОВЕ МИНЕРАЛА БЕНТОНИТА ПРИ СИНТЕЗЕ ПИРИДИНОВЫХ ПРОИЗВОДНЫХ",
+     "byline": "Кодиров С.М., Вапоев Х.М., Умрзоков А.Т.",
+     "page": 21
+    },
+    {
+     "title": "Investigation of methods for obtaining acrylic-urethane copolymer coating",
+     "byline": "Baxtiyor Shaykulov, Fayzulla Nurkulov,Abdulahat Djalilov",
+     "page": 22
+    },
+    {
+     "title": "МЕЛАМИН ФОРМАЛЬДЕГИД СМОЛАСИНИ МОДИФИКАЦИЯ ҚИЛИШ",
+     "byline": "Юсупов Қ.М, Эркабаев Ф.И.",
+     "page": 24
+    },
+    {
+     "title": "ASETALDEGID SINTEZIDA ISHLATILGAN KKF KATALIZATORINI QAYTA ISHLAB BENTONIT KADMIYLI KATALIZATOR TAYYORLASH",
+     "byline": "2 Ruziqulova Nigina Bobomuratovna, Vapoyev Husnitdin Mirzoyevich",
+     "page": 25
+    },
+    {
+     "title": "MAHALLIY XOMASHYOLAR ASOSIDA DIMETILEFIR OLISH UCHUN KATALIZATOR TANLASH VA TEXNOLOGIYASI",
+     "byline": "Shukurov Jasur Xoshimovich Fayzullaev Normurot Ibodullayevich",
+     "page": 26
+    },
+    {
+     "title": "ХИНАЗОЛИН-4-ОН СУБСТАНЦИЯСИ ВА УНИНГ ГИДРОХЛОРИДИНИ ОЛИШ ТЕХНОЛОГИЯСИ",
+     "byline": "Зиядуллаев М.Э. Адилбоев С.Х. Гаппарова А.А. Каримов Р.К.",
+     "page": 27
+    },
+    {
+     "title": "FTALOSIANIN VA ORGANIK BIRIKMALAR ASOSIDAGI YANGI PIGMENTLARINI SINTEZ QILISH",
+     "byline": "Sodiqov Sardorbek Husanovich, Beknazarov Hasan Soyibnazarovich, Djalilov Abdulahat Turapovich, Turayev Xayit Xudaynazarovich",
+     "page": 30
+    },
+    {
+     "title": "AYRIM DIAMINLAR ASOSIDA YANGI FTALOSIANIN PIGMENTINI SINTEZI",
+     "byline": "Sodiqov Sardorbek Husanovich, Beknazarov Hasan Soyibnazarovich, Djalilov Abdulahat Turapovich, Turayev Xayit Xudaynazarovich",
+     "page": 32
+    },
+    {
+     "title": "ОРТО КРЕЗОЛЛАР ВА ГЕКСАМЕТИЛЕНДИИЗОЦИАНАТ АСОСИДАГИ БИС-КАРБАМАТ СИНТЕЗИ ВА МЕХАНИЗМИ",
+     "byline": "Машаев Элдор Эргашвой ўғли, Махсумов Абдухамид Ғофурович, Исмаилов Бобур Маҳмуджанович, Абсалямова Гулноза Маматқуловна",
+     "page": 34
+    },
+    {
+     "title": "МИС АЦЕТАТ БИЛАН ПОЛИЭТИЛЕННИ ҲОСИЛ ҚИЛГАН МОДИФИКАЦИЯСИНИНГ ДЕРИВАТОГРАММАСИ НАТИЖАЛАРИ",
+     "byline": "Каримов Ойбек Тиркавович., Нуркулов Файзулла Нурмуминович",
+     "page": 35
+    },
+    {
+     "title": "НАТРИЙ САЛИЦИЛАТНИНГ ХЛОРСИРКА КИСЛОТА ЭФИРЛАРИ БИЛАН ФАЗАЛАРАРО КАТАЛИЗ ШАРОИТИДА РЕАКЦИЯЛАРИ",
+     "byline": "Ёдгоров Ч.Ғ., Холиқов Т.С., Йўлдошев О. Рожибоев Х.",
+     "page": 37
+    },
+    {
+     "title": "РОЛЬ ГИПЕРГАЛОФИТНОГО РАСТЕНИЯ САРСАЗАН (HALOCNЕMUM) В ОСВОЕНИИ НЕКОТОРЫХ СОЛОНЧАКОВ",
+     "byline": "Тагаев Илхом Ахрорович, Муминова Дилноза Рауф қизи, Бахтиёрова Гуласал Шухрат қизи",
+     "page": 38
+    },
+    {
+     "title": "СИНТЕЗ 4-(БИС(2-ГИДРОКСИЭТИЛ)АМИНО)БУТ-2-ИН-1-ИЛ БУТИРАТА 1 И ЕГО 1 ФИЗИКО-ХИМИЧЕСКОЕ СВОЙСТВА",
+     "byline": "Шомуродов А.И., Махсумов А.Г., Валеева Н.Г.",
+     "page": 40
+    },
+    {
+     "title": "БИС-КАРБАМАТНИНГ ДИНИТРОЗОЛИ ҲОСИЛАСИ СИНТЕЗИ",
+     "byline": "Махсумов Абдухамид Ғофурович, Азимова Шодияхон Абраровна, Машаев Элдор Эргашвой ўғли, Обидов Шоюнус Ботир ўғли",
+     "page": 41
+    },
+    {
+     "title": "СИНТЕЗ 2,5-ДИФЕНИЛГЕКСИН-3-ДИОЛА-2,5 И ИССЛЕДОВАНИЕ МЕТОДОМ ИНФРАКРАСНОЙ СПЕКТРОСКОПИИ",
+     "byline": "Уразов Ф.Б., Юсупова Л.А., Исмаилов Б.М., Нурманов С.Э.",
+     "page": 42
+    },
+    {
+     "title": "КРЕЗОЛЛАР АСОСИДАГИ БИС-КАРБАМАТНИНГ ДИНАТРИЙЛИ ҲОСИЛАСИНИНГ ОЛИНИШИ",
+     "byline": "Махсумов Абдухамид Ғофурович, Умарова Муаттар Бахтияровна, Машаев Элдор Эргашвой ўғли, Раҳимов Ҳусниддин Нурбобоевич",
+     "page": 43
+    },
+    {
+     "title": "ИССЛЕДОВАНИЕ ИНГИБИРУЮЩИХ СВОЙСТВ 2,5- ДИФЕНИЛГЕКСИН-3-ДИОЛА-2,5",
+     "byline": "Уразов Ф.Б., Обидов Ш.Б., Исмаилов Б.М., Азаматов У.Р., Юсупова Л.А. Ташкентский химико-технологический институт, г.Ташкент, Узбекистан",
+     "page": 44
+    },
+    {
+     "title": "ОРТО-КРЕЗОЛИЛО КАРБАМАТНИНГ ДИАЛКИЛЛИ ҲОСИЛАСИНИ ОЛИШ",
+     "byline": "Махсумов Абдухамид Ғофурович, Қодиров Обиджон Олимжон ўғли, Машаев Элдор Эргашвой ўғли, Омонов Шерзод Абдураим ўғли",
+     "page": 46
+    },
+    {
+     "title": "ИШЛАТИЛГАН МОТОР МОЙЛАРИНИ ТУРЛИ МАХАЛЛИЙ ФИЛЬТРЛАРДА ТОЗАЛАШ",
+     "byline": "Умарова М.Б., проф Максумова О.О., проф Пулатов Х.Л., Эргашев Ё.Т.",
+     "page": 47
+    },
+    {
+     "title": "STIMULYATORLAR SINTEZI VA ULARNING XOSSALARI",
+     "byline": "Yangibayev S., Soibova F., Xalibekova A.K., Mingboyev E., Raxmatova E.",
+     "page": 49
+    },
+    {
+     "title": "БИС-КАРБАМАТНИНГ ДИГАЛОГЕНЛИ ҲОСИЛАЛАРИ ВА ФИЗИК-КИМЁВИЙ ПАРАМЕТРЛАРИ",
+     "byline": "Муҳиддинов Баҳодир Фахриддинович, Уразов Фируз Баҳтиёр ўғли, Машаев Элдор Эргашвой ўғли, Эргашев Жасурбек Раҳимжон ўғли",
+     "page": 51
+    },
+    {
+     "title": "РАЗДЕЛЕНИЕ ОТХОДОВ ГАЗОХИМИЧЕСКИХ КОПЛЕКСОВ НА КОМПОНЕНТНЫЕ СОСТАВЛЯЮЩИЕ",
+     "byline": "Азимова Шодияхон Абраровна, Расулов Шухрат Мангиевич",
+     "page": 52
+    },
+    {
+     "title": "БИС-КАРБАМАТНИНГ N,N′-ДИБЕНЗИЛЛИ ҲОСИЛАСИ СИНТЕЗИ",
+     "byline": "Муҳиддинов Баҳодир Фахриддинович, Эргашев Ёрқин Тўлқин ўғли, Машаев Элдор Эргашвой ўғли, Шодиев Абдурасул Абдивали ўғли",
+     "page": 53
+    },
+    {
+     "title": "ИССЛЕДОВАНИЕ ПРИГОДНОСТИ ВТОРИЧНОГО ПРИМЕПНЕНИЯ РЕГЕНЕРИРОВАННЫХ ОТРАБОТАННЫХ МОТОРНЫХ МАСЕЛ",
+     "byline": "Азимова Ш.А., Азимов Д.М., Султанов К.З., Мирзаёров Ш.О.",
+     "page": 54
+    },
+    {
+     "title": "N,N′-ГЕКСАМЕТИЛЕН БИС-[(ОРТО-КРЕЗОЛИЛО)- КАРБАМАТ]НИНГ ИҚ СПЕКТОРИ ТАҲЛИЛИ",
+     "byline": "Машаев Элдор Эргашвой ўғли, Муҳиддинов Баҳодир Фахриддинович, Махсумов Абдухамид Ғофурович, Парманов Асқар Басимович",
+     "page": 55
+    },
+    {
+     "title": "ОБРАЗОВАНИЕ И ПЕРСПЕКТИВЫ ПЕРЕРАБОТКИ ОТХОДОВ ГАЗОХИМИЧЕСКИХ КОПЛЕКСОВ",
+     "byline": "Азимова Шодияхон Абраровна, Расулов Шухрат Мангиевич",
+     "page": 56
+    },
+    {
+     "title": "N,N′-ГЕКСАМЕТИЛЕН БИС-[(ОРТО-КРЕЗОЛИЛО)- КАРБАМАТ]НИНГ ХРОМАТО-МАСС СПЕКТОРИ ТАҲЛИЛИ",
+     "byline": "Машаев Элдор Эргашвой ўғли, Махсумов Абдухамид Ғофурович, 1 Муҳиддинов Баҳодир Фахриддинович, Азаматов Ўткирбек Рашидович",
+     "page": 57
+    },
+    {
+     "title": "N,N′-ГЕКСАМЕТИЛЕН БИС-[(ОРТО-КРЕЗОЛИЛО)- КАРБАМАТ]НИНГ ЗАМОНАВИЙ ЭЛЕКТРОН МИКРОСКОПИЯ ТАҲЛИЛИ",
+     "byline": "Машаев Элдор Эргашвой ўғли, Муҳиддинов Баҳодир Фахриддинович, Махсумов Абдухамид Ғофурович, Шапатов Феруз Ўтаганович",
+     "page": 58
+    },
+    {
+     "title": "ИССЛЕДОВАНИЯ ПО ПОВЫШЕНИЮ ЭФФЕКТИВНОСТИ ПЕРЕРАБОТКИ НЕФТЕГАЗОКОНДЕНСАТНОЙ СМЕСИ",
+     "byline": "Турдиев Ж.Х., Сайдахмедов И.М.",
+     "page": 59
+    },
+    {
+     "title": "N,N′-ГЕКСАМЕТИЛЕН БИС-[(ОРТО-КРЕЗОЛИЛО)- КАРБАМАТ]НИНГ БИОЛОГИК ФАОЛЛИКЛАРИ БАШОРАТИ",
+     "byline": "Машаев Элдор Эргашвой ўғли, Махсумов Абдухамид Ғофурович, Муҳиддинов Баҳодир Фахриддинович, Юсупова Лола Азимовна",
+     "page": 61
+    },
+    {
+     "title": "N,Nʹ-ГЕКСАМЕТИЛЕН БИС-[3-ЙОДФЕНОКСИ)- КАРБАМАТ]НИНГ ФИЗИК-КИМЁВИЙ ХОССАЛАРИ",
+     "byline": "Холикулов Б.Н., Махсумов А.Г.",
+     "page": 62
+    },
+    {
+     "title": "N,N′-ГЕКСАМЕТИЛЕН БИС-[(ОРТО-КРЕЗОЛИЛО)- КАРБАМАТ]НИНГ КОРРОЗИОН ФАОЛЛИГИ ТАҲЛИЛИ",
+     "byline": "Муҳиддинов Баҳодир Фахриддинович, Махсумов Абдухамид Ғофурович, Арипджанов Ойбек Юсупджанович, Машаев Элдор Эргашвой ўғли",
+     "page": 63
+    },
+    {
+     "title": "N,Nʹ-ГEКСАМEТИЛEН БИС [(3-ЙОДФEНОКСИ) - КАРБАМАТ]НИНГ ОЛИНИШИ ВА ХОССАЛАРИ",
+     "byline": "Холикулов Б.Н., Махсумов А.Г., Исмаилов Б.М.",
+     "page": 64
+    },
+    {
+     "title": "N,N′-ГЕКСАМЕТИЛЕН БИС-[(ОРТО-КРЕЗОЛИЛО)- КАРБАМАТ]НИ ЭҲМ ДАСТУРЛАРИ ЁРДАМИДАГИ СПЕКТОРЛАРИ БАШОРАТИ",
+     "byline": "Махсумов Абдухамид Ғофурович, Алиҳоджаев Аҳбор Анварович, Бешимов Умиджон тўлқин ўғли Машаев Элдор Эргашвой ўғли, Машаева Насиба Дилшод қизи",
+     "page": 65
+    },
+    {
+     "title": "ZAMONAVIY STANDARTLAR TALABLARIGA JAVOB BERADIGAN NEFT MAHSULOTLARI OLISH TEXNOLOGIYALARINI HOZIRGI KUNDAGI HOLATI",
+     "byline": "Tuymurodov M.A., Ismailov B.M., Raximov X.N.",
+     "page": 67
+    },
+    {
+     "title": "N,N′-ГЕКСАМЕТИЛЕН БИС-[(ОРТО-КРЕЗОЛИЛО)- КАРБАМАТ]НИНГ ЎСИМЛИКЛАРНИ ЎСТИРУВЧАНЛИК ФАОЛЛИГИ ТАҲЛИЛИ",
+     "byline": "Махсумов Абдухамид Ғофурович, Валеева Наиля Геннадиевна, 1 Миркомилов Шуҳрат Мирамилович, Машаев Элдор Эргашвой ўғли",
+     "page": 69
+    },
+    {
+     "title": "KATALIZATORLI REAKSION JARAYONLARNING BORISH MEXANIZMLARI",
+     "byline": "Muxamedov A.Y., Umarova M.B., Ismailov B.M.",
+     "page": 70
+    },
+    {
+     "title": "ИЗУЧЕНИЕ ГИДРИРОВАНИЕ ОЛЕФИНОВ В ПРИСУТСТВИИ КОМПЛЕКСА КАТАЛИЗАТОРА РОДИЯ С N- ФЕНИЛАНТРАНИЛОВОЙ КИСЛОТОЙ",
+     "byline": "Мухамедов А.Ю., Умарова М.Б., Исмаилов Б.М.",
+     "page": 72
+    },
+    {
+     "title": "N,N1-GEKSAMETILEN BIS-[(1,11-AMINODIFENIL)-MOCHEVINA] HOSILASI SINTEZI VA FIZIK-KIMYOVIY XOSSALARI",
+     "byline": "Absalyamova G.M., Xaitov J.Q., Maxsumov A.G.",
+     "page": 74
+    },
+    {
+     "title": "ATSETILENGA KATALITIK YO'LI BILAN SUV QO‘SHIB ATSETON ISHLAB CHIQARISH",
+     "byline": "Fayzullaev H.I., Karjavov A.R., Karimova A.R.",
+     "page": 75
+    },
+    {
+     "title": "2-АМИНОЭТИЛГИДРОСУЛЬФАТНИНГ ШИФФ АСОСЛАРИ СИНТЕЗИ",
+     "byline": "Бекназаров Ж.И., Хаитбаев А.Х., Маулянов С.А.",
+     "page": 76
+    },
+    {
+     "title": "BIS-MOCHEVINALARNI SINTEZ QILIB OLISHDA REAKSIYA UNUMINI TEMPERATURAGA BOG‘LIQLIGI prof.A.G‘.Maxsumov",
+     "byline": "J.K.Xayitov",
+     "page": 78
+    },
+    {
+     "title": "BIS-MOCHЕVINALARNI SINTЕZ QILIB OLISH",
+     "byline": "prof.A.G‘.Maxsumov., J.K.Xayitov",
+     "page": 79
+    },
+    {
+     "title": "BIS-MOCHЕVINALARNING KIMYOVIY XOSSALARINI O‘RGANISH",
+     "byline": "N,N -dixlorgeksametilen bis-[(1,1 amino-azobenzolil) mochevina] prof.A.G‘.Maxsumov., J.K.Xayitov",
+     "page": 81
+    },
+    {
+     "title": "DI(2-IZOPROPIL-5-METILFENILKARBOKSIMETILEN) OKSALAT SINTEZI",
+     "byline": "Choriyev A.U., Abdushukurov А.К., Аbdullayev М.G., Baxronov U.E.",
+     "page": 82
+    },
+    {
+     "title": "6-BROMXINАZOLIN-2,4-DIONNING XLORSULFON KISLOTA BILAN REАKSIYA YO‘NALISHINI KVАNT KIMYOVIY BАHOLАSH",
+     "byline": "A.R.Shonazarov, A.F.Tillaeva, X.O.Eshchanov, D.A.Dushamov",
+     "page": 84
+    },
+    {
+     "title": "IZO-BUTANOL SINTEZIGA TURLI OMILLAR TA‘SIRI",
+     "byline": "I.A.Anvarova",
+     "page": 86
+    },
+    {
+     "title": "ASETONNING TEXNOLOGIK JARAYON KIMYOSI VA UNING BOSQICHLARI",
+     "byline": "Omanov Behruzjon Shuhrat o‘g‘li Islomova Gulshoda Farhod qizi",
+     "page": 87
+    },
+    {
+     "title": "ВИНИЛАЦЕТ СИНТЕЗИНИНГ ЛАБОРАТОРИЯ ОЛИШ ТЕХНОЛОГИЯСИ",
+     "byline": "Оманов Беҳрузжон Шуҳрат ўғли Қиличева Мафтуна Алибоевна",
+     "page": 88
+    },
+    {
+     "title": "АЦЕТИЛЕНДАН ВИНИЛАЦЕТАТ СИНТЕЗИ ЖАРАЁНИНИ МОДЕЛЛАШТИРИШ",
+     "byline": "Оманов Беҳрузжон Шуҳрат ўғли",
+     "page": 89
+    },
+    {
+     "title": "ALKALOIDS OF ANNONA MURICATA L (FAM. ANNONACEAE)",
+     "byline": "Mamadou Sadialiou Sidibé, Rixsivoy Ziyayev Sory Fofana, To‘raqul Eshboboyev",
+     "page": 92
+    },
+    {
+     "title": "MONXLORSIRKA KISLOTA BILAN PROPARGIL SPIRTINI ETERIFIKATSIYA REAKSIYASINI TADQIQ QILISH",
+     "byline": "B.M.Abdullayev",
+     "page": 92
+    },
+    {
+     "title": "5-ETILAMINO-3-ETIL-1-METIL-1H-PIRAZOLO-4- KARBOKSILATDAN PIRAZOLOPIRIMIDIN HOSILALARINI SINTEZ QILISH",
+     "byline": "Murtazaeva Zarifa, Bozorov Xurshed, To'xtaev Davlat",
+     "page": 95
+    },
+    {
+     "title": "N,N1-GEKSAMETILIN BIS-[(1,11 AMINO-AZOBENZOLIL)- MOCHEVINA]-MOCHEVINANI SINTEZ QILIB OLISH MEXANIZMLARI VA XOSSALARINI O‘RGANISH",
+     "byline": "prof.A.G‘.Maxsumov., J.K.Xayitov.",
+     "page": 96
+    },
+    {
+     "title": "NEFT FRAKSIYALARINING ALKANLARINI TAHLIL QILISH",
+     "byline": "Yusupova G.X. Jumayev M.Sh.Razzaqov J.E.Mirusmonova F. B Shamsuddinov L.O",
+     "page": 98
+    },
+    {
+     "title": "α-Aminonitrillar sintez qilish usullari",
+     "byline": "A.A. Qodirov M.I.Jurayeva",
+     "page": 100
+    },
+    {
+     "title": "((1,3-DIOKSOIZOINDOLIN-2-IL)(3-NITROFENIL)METIL) FOSFIN KISLOTA SINTEZI",
+     "byline": "S.I. Nazarov, Z.A. Anvarova, M.A.Bakoeva, A.A. Xolov",
+     "page": 102
+    },
+    {
+     "title": "OLTINGUGURT SAQLOVCHI ORGANIK BIRIKMALAR",
+     "byline": "Noraliyeva D X, Xamraeva M A, Normurotov J B, O‘ralova M M.",
+     "page": 103
+    },
+    {
+     "title": "2,4 – DINITRO BENZOY KISLOTASI NARIYLI TUZI XLORSIRKA KISLOTASI FTALIMIDOETIL EFIRI BILAN REAKSIYASIaa b b",
+     "byline": "Saparbayev S.R.,Qayumov A.A, Yuldasheva M.R., Masharipov R.J",
+     "page": 105
+    },
+    {
+     "title": "FAOLLASHTIRILGAN KO‘MIRLARINING ADSORBSIYALASH XUSUSIYATLARINI TADQIQ QILISH",
+     "byline": "Oripova Lobar Norboyevna",
+     "page": 107
+    },
+    {
+     "title": "PIGMENTLAR KLASSIFIKATSIYASIDA MAVJUD ORGANIK PIGMENTLAR SINTEZI",
+     "byline": "Haqberdiyeva Mohinur Xo‘jaberdi qizi Maxmatkulova Zuxra Xolmurodovna",
+     "page": 108
+    },
+    {
+     "title": "PROPARGIL EFIRLARI SINTEZI VA KIMYOVIY O`ZGARISHLARI",
+     "byline": "B.M.Abdullayev",
+     "page": 110
+    },
+    {
+     "title": "GIDROKSIPROPILMETILSELLYULOZANING XALQ XO'JALIGIDAGI AHAMIYATI",
+     "byline": "Suyarova Xilola Xakimboyevna Yo‘ldosheva Diyora Shuxrat qizi",
+     "page": 112
+    },
+    {
+     "title": "RESVERATROLNING FARMOKOLOGIK XUSUSIYATLARI",
+     "byline": "Xamidov Sobir Xodiyevich",
+     "page": 114
+    },
+    {
+     "title": "RETINOLNING QO‘LLANILISHI",
+     "byline": "Mamatqulov B.U., Xamidov S.X.",
+     "page": 117
+    },
+    {
+     "title": "INDENNI VINILLASH REAKSIYASI IQ- SPEKTR TAXLILI",
+     "byline": "S.Sh.Saidobbozov*, S.E.Nurmanov",
+     "page": 118
+    },
+    {
+     "title": "ПРОПАН-БУТАН ФРАКЦИЯСИНИ АРОМАТЛАШ РЕАКЦИЯСИДА ЦИРКОНИЙАЛЮМИНОСИЛИКАТЛАР (ЦАС) ФАОЛЛИГИНИ ЎРГАНИШ",
+     "byline": "Файзуллаев Н.И., Холлиев Ш.Х. Пўлатова Г.Л1 1",
+     "page": 120
+    },
+    {
+     "title": "Sintez qilib olingan N,N-Geksametilin bis-[(1,1-amino-azobenzolil)-mochevina]ni kimyoviy N,N-dinatriylash",
+     "byline": "A.G‘.Maxsumov.,J.K.Xayitov",
+     "page": 122
+    },
+    {
+     "title": "SELLYULOZANING ODDIY EFIRLARI VA ULARNING OLINISHI",
+     "byline": "Suyarova Xilola Xakimboyevna",
+     "page": 123
+    },
+    {
+     "title": "Synthesis and importance of biologically important heterocyclic compounds",
+     "byline": "Karimova Feruza Sattorovna., Jurayeva Umida Baxodirovna., Jumaboyev Olimjon Sharofiddinovich., Xakhberdiyev Shuhrat",
+     "page": 124
+    },
+    {
+     "title": "FERMENTATSIYA USULIDA SPIRT OLISH JARAYONINING HOZIRGI ZAMON MUAMMO VA KAMCHILIKLARI",
+     "byline": "Ochilov Mansur Egamberdiyev Jonibek Davron o‘g‘li",
+     "page": 127
+    },
+    {
+     "title": "GISTIDINNING YANTAR KISLOTASI BILAN TA‘SIR REAKSIYASI MEXANIZMI",
+     "byline": "A.R Axmedov, U.K. Abdurahmonova",
+     "page": 129
+    },
+    {
+     "title": "Mechanisms of Histidine Reactions",
+     "byline": "A.R Axmedov, O‘.Q.Abdurahmonova",
+     "page": 130
+    },
+    {
+     "title": "To‘yinmagan uglevodorodlar asosida sintezlar",
+     "byline": "B.M. Abdullayev, I.A.Anvarova",
+     "page": 132
+    },
+    {
+     "title": "1-(2-ГИДРОКСИЭТИЛ)-3-ФЕНИЛТИОМОЧЕВИНА ВА УНИНГ АНАЛОГЛАРИНИНГ ИҚ- ВА РАМАН-СПЕКТРЛАРИ ТАҲЛИЛИ",
+     "byline": "Умиров М.Ф., Ешимбетов А.Г., Бобоев Б.Н.",
+     "page": 134
+    },
+    {
+     "title": "ORGANIK SINTEZ TEXNOLOGIYASINING ASOSIY JIHATLARI VA RIVOJLANISH ISTIQBOLLARI",
+     "byline": "Ilmiy rahbar:k.f.f.d.(PhD) Xamroyev K.Sh. Utashev Otabek Akbarjonovich Xo‘jayeva Farida Jamoliddinovna",
+     "page": 136
+    },
+    {
+     "title": "VINILXLORID ISHLAB CHIQARISH UCHUN MAHALLIY XOMASHYOLAR ASOSIDA KATALIZATORLAR TAYYORLASH USULI",
+     "byline": "Ibragimova Maftuna Lutfulla qizi, Vapoyev Xusnitdin Mirzoyevich",
+     "page": 138
+    },
+    {
+     "title": "N,N1-GEKSAMETILEN BIS-[(1,11-AMINODIFENIL)-MOCHEVINA] HOSILASINI OLISHNI EHTIMOLLI MEXANIZMI VA121 1 TAHLILI",
+     "byline": "1 Xaitov J.Q., Muhitdinov B.F., Ismailov B.M., Absalyamova G.M., Maxsumov A.G.",
+     "page": 139
+    },
+    {
+     "title": "NEFT-GAZ SANOATI UCHUN PF-1 MARKALI KORROZIYA INGIBITORI OLISH VA ULARNING SINOV TATQIQOT NATIJALARI",
+     "byline": "Xalilov J.A., Nurqulov F.N., Djalilov A.T.",
+     "page": 140
+    },
+    {
+     "title": "Nitrilakril kislotasini (akrilonitril) ishlab chiqarish",
+     "byline": "Yangibayev S., Khudoynazarov Kh.H.",
+     "page": 141
+    },
+    {
+     "title": "YOG‘ VA MOYLAR OKSIDLANISHINING NAZARIY VA AMALIY JIHATLARI",
+     "byline": "Qodirov Zufarjon Zafarjon o‘g‘li",
+     "page": 143
+    },
+    {
+     "title": "АБСОРБЦИОННАЯ ОСУШКА ГАЗА",
+     "byline": "Ш.А. РИЗАЕВ, Х.Б. РАХМАТОВ",
+     "page": 145
+    },
+    {
+     "title": "АДСОРБЦИЯ ЖАРАЁНИ СТАНДАРТ ЭНТАЛЬПИЯСИ ВА ЭНТРОПИЯСИ",
+     "byline": "PhD. Махаммадиев О.Р., т.ф.д. Бекназаров Х.С.",
+     "page": 148
+    },
+    {
+     "title": "АДСОРБЦИЯ ЖАРАЁНИ ТЕРМОДИНАМИКАСИ ВА ИЗОТЕРМАЛАРИ",
+     "byline": "PhD. Махаммадиев О.Р., т.ф.д. Бекназаров Х.С.",
+     "page": 149
+    },
+    {
+     "title": "АЛЬЮМОСИЛИКАТЛИ КАТАЛИЗАТОРЛАР АСОСИДА АКРОЛЕИН СИНТЕЗИ",
+     "byline": "Умрзоқов А.Т, Мухиддинов Б.Ф, Вапоев Ҳ.М, Қўлдошев У.О, Наврўзов А",
+     "page": 150
+    },
+    {
+     "title": "АЛИФАТИК НИТРИЛЛАР ГХ-МС ХРОМАТОГРАФИК АНАЛИЗИ",
+     "byline": "Анваров Т.Ў.,Юсупова И.,Дусмуродова Д.",
+     "page": 152
+    },
+    {
+     "title": "НАФТЕН КИСЛОТАЛАРИНИ ФЕНОЛЛАРДАН ТОЗАЛАШ",
+     "byline": "Арсланов Шарафутдин, Султонхўжаева Нозимахон, Азимова Шодияхон, 4 Азимов Дилмурод.",
+     "page": 153
+    },
+    {
+     "title": "АЦЕТОНИТРИЛ СИНТЕЗИГА КАТАЛИЗАТОРЛАР ТАБИАТИНИНГ ТАЪСИРИ",
+     "byline": "Умрзоқов А.Т, Мухиддинов Б.Ф, Вапоев Ҳ.М, Неъматов З.З, Юлдошев И.",
+     "page": 154
+    },
+    {
+     "title": "НЕФТЬ ЙЎЛДОШ ГАЗЛАРИНИ АРОМАТЛАШ ЖАРАЁНИГА ТУРЛИ ОМИЛЛАРНИНГ ТАЪСИРИ",
+     "byline": "Файзуллаев Н.И., Бобомуратова С.Ю.",
+     "page": 156
+    },
+    {
+     "title": "НЕФТЬ ЙЎЛДОШ ГАЗЛАРИНИ АРОМАТЛАШ ЖАРАЁНИ КАТАЛИЗАТОРЛАРИ ФАОЛЛИГИНИ ТЕКШИРИШ",
+     "byline": "Бобомуратова С.Ю., Холмўминова Д.А.",
+     "page": 158
+    },
+    {
+     "title": "ХИМИЧЕСКИЕ ИНИЦИРОВАННАЯ ПОИМЕРИЗАЦИЯ ВИНИЛФТОРИДА В ПРИСУТСТВИИ Ф-113",
+     "byline": "Матчанова М.Б., Бобомуратова С.Ю.",
+     "page": 160
+    },
+    {
+     "title": "THE STUDY OF ESTERS CHROMATOGRAPHY-MASS SPECTROMETRY OF ABSOLUTE ETHANOL EXTRACT OF THE CENTRAL ASIAN MINT PLANT",
+     "byline": "1Khaydarov Gayrat Shoyimovich 1Kholmirzaev Mekhroj Murodillayevich Tilyabov Makhsudjon Umurzkhovich 2Sapaev Bayramdurdi 2SaitkulovFoziljonErgashevich",
+     "page": 162
+    },
+    {
+     "title": "ZAMONAVIY FIZIK TADQIQOT USULLARIDA MASS- SPEKTROMETRIYA",
+     "byline": "1Haydarov Gayrat Shoyimovich 1Xolmirzaev Mexroj Murodillayevich Tilyabov Maxsudjon Umurzxovich 2Sapayev Bayramdurdi 2Saitkulov Foziljon Ergashevich",
+     "page": 163
+    },
+    {
+     "title": "ACHCHIQ BODOM O‘SIMLIGI QURUQ MEVASI TARKIBIDAN AFLATOKSINLAR MIQDORINI YUQORI SAMARALI SUYUQLIK XROMATOGRAFIYASI METODI YORDAMIDA TAHLIL QILISH",
+     "byline": "Xaydaraliyeva Obidaxon Foziljon qizi, Shopo‘latov O‘tkirjon Muxammadiyevich",
+     "page": 164
+    },
+    {
+     "title": "ALBENDAZOLNI GLITSIRRIZIN KISLOTASINI MONOKALIYLI TUZI BILAN OLINGAN KOMPLEKSINI YuSSX TAXLILI",
+     "byline": "Boboyev A.A, Umirov N.S., Yusupov B.A.",
+     "page": 166
+    },
+    {
+     "title": "ГЛИЦИРРИЗИН КИСЛОТАСИ АСОСИДАГИ КОМПЛЕКСЛАРНИНГ ЗАҲАРЛИЛИГИНИ АНИҚЛАШ",
+     "byline": "Умиров Н.С., Матчанов А.Д",
+     "page": 168
+    },
+    {
+     "title": "PROPARGIL SPIRTI VA UNING EFIRLARINI AMINOMETILLANISH REAKTSIYASI MEXANIZMI",
+     "byline": "Ilmiy rahbar: k.f.f.d.(PhD) K.Sh.Xamroyev Safarova Sadoqat Abduxalil qizi, Karimova Nafosat Kalandarovna",
+     "page": 169
+    },
+    {
+     "title": "ОҲОРЛАНГАН КАЛАВА ИПЛАРНИНГ РЕОЛОГИК ВА ФИЗИК –МЕХАНИК ХОССАЛАРИ",
+     "byline": "Шадиева Ш.Ш., Амонов М.Р., Равшанов Қ.А.",
+     "page": 171
+    },
+    {
+     "title": "БЕНЗОТИОФЕН МОЛЕКУЛАСИ АРОМАТИК ҲАЛҚАСИНИНГ АЦИЛЛОВЧИ РЕАГЕНТЛАРГА БЎЛГАН РЕАКЦИОН ҚОБИЛИЯТИНИ ЎРГАНИШ",
+     "byline": "Сафарова М.А., Қурбанов М.Ж., Бектошев Н., Эшонқулова Г.",
+     "page": 173
+    },
+    {
+     "title": "COMPLICATED ESTERS OF THE ROOT PART OF THE PLANT FERULA FARGANENSIS",
+     "byline": "N.M. Yuldasheva, A.U. Babekov A.M. Ismailova, B.J. Komilov, K. A. Eshbakova",
+     "page": 174
+    },
+    {
+     "title": "КИМЁ САНОАТИ ЧИҚИНДИ СУВЛАРИ ТАРКИБИДАГИ КАЛЬЦИЙ ВА МАГНИЙ ИОНЛАРИНИ ЭТАНОЛАМИНЛАР БИЛАН ТОЗАЛАШ",
+     "byline": "Умиров Ф.Э., Тагаев И.А., Вахобов Ж.В., Равшанова Ч.Б.,Аймбетова А.,Ахмадова Ю.",
+     "page": 175
+    },
+    {
+     "title": "АНАЛИЗ ОЧИСТКИ ТЕХНИЧЕСКИХ И ПРИРОДНЫХ ГАЗОВ ОТ СЕРОВОДОРОДА И УГЛЕКИСЛОГО ГАЗА",
+     "byline": "Т.Р.Юлдашев",
+     "page": 176
+    },
+    {
+     "title": "KATALIZATOR ISHTIROKIDA PARAFINDAN SINTETIK YOG‘ KISLOTALARINI SINTEZ QILISH",
+     "byline": "Berdiyarov O‘.M., Nuraliyev S.R.",
+     "page": 178
+    },
+    {
+     "title": "ПОЛИВИНИЛ ХЛОИД АСОСИДА ОЛИНГАН ПВХ-А-N-1 АНИОНИТИНИНГ ҚЎЛЛАНИЛИШ СОҲАЛАРИ",
+     "byline": "К.ф.ф.д.(PhD) Қутлимуратов Н.М., Нурматов О.М.",
+     "page": 180
+    },
+    {
+     "title": "Α- BROM-5-ATSETIL-2- METIL-1-TIAINDANNI DIOKSAN ERITMASIDA SINTEZLASH",
+     "byline": "Raxmatova G.B..,Turabayeva N.B.",
+     "page": 181
+    },
+    {
+     "title": "KISLOTA NITRILLARI SINTEZI VA GX-MS XROMATOGRAMMA ANALЕZI *",
+     "byline": "S.R Nuraliеv., С.Е Нурмонов",
+     "page": 183
+    },
+    {
+     "title": "Статистический анализ реакций синтеза 1,1-дихлорэтана с карбамидом и аммиаком",
+     "byline": "Анварова Ирода Анваровна",
+     "page": 185
+    },
+    {
+     "title": "ИЗУЧЕНИЕ ВЛИЯНИЯ РАЗЛИЧНЫХ ФАКТОРОВ НА СИНТЕЗ ВИНИЛОВЫХ ЭФИРОВ ФРУКТОВЫХ КИСЛОТ",
+     "byline": "Охундадаев Абдуғани Комилжон угли, Маматалиев Элдор Носир угли",
+     "page": 186
+    },
+    {
+     "title": "КРАХМАЛНИ ПОЛИВИНИЛАЦЕТАТ ВА ПОЛИФОСФАТ КИСЛОТАНИНГ КАЛИЙЛИ ТУЗЛАРИ ЁРДАМИДА МОДИФИКАЦИЯГА УЧРАТИБ ГИДРОГЕЛЬ ОЛИШ",
+     "byline": "Қулматов К А, Тўраев Х Х. Джалилов А Т.",
+     "page": 188
+    },
+    {
+     "title": "ИССЛЕДОВАНИЕ АДГЕЗИОННОЙ ПРОЧНОСТИ КОМПОЗИЦИОННОГО ПОЛИМЕРНОГО ПОКРЫТИЯ НА ОСНОВЕ МЕСТНОГО И ВТОРИЧНОГО СЫРЬЯ",
+     "byline": "М.А. Бабаханова, К.С. Негматова, М.Э. Икрамова, С.У. Султонов",
+     "page": 190
+    },
+    {
+     "title": "ИЗУЧЕНИЕ РЕАКЦИИ СУЛЬФОМЕТИЛИРОВАНИЯ АМИДОВ",
+     "byline": "Каипбергенова Гулжамила Расбергеновна",
+     "page": 191
+    },
+    {
+     "title": "ФИЗИКО-ТЕРМИЧЕСКОЕ ИССЛЕДОВАНИЕ МАТЕРИАЛОВ ОБРАЗЦОВ ФУТЕРОВОЧНЫЕ ТЕПЛОИЗОЛЯЦИОННЫЕ МАТЕРИАЛ",
+     "byline": "Раззоқов.X.Қ.,Рашидова.Р.K.,Расулов.M.T.,Аскарова.Г.A.",
+     "page": 193
+    },
+    {
+     "title": "ТЎЙИНМАГАН УГЛЕВОДОРОДЛАРНИ МЕТАЛЛЛ НАНОЗАРРАЛАР БИЛАН КАТАЛИЗ ҚИЛИШ ОРҚАЛИ ГИДРОГЕНЛАШ",
+     "byline": "Б.М.Абдуллаев",
+     "page": 195
+    },
+    {
+     "title": "AMINOKETONLARNING α–BROMATSILHOSILALAR BILAN REAKSIYASI",
+     "byline": "Raxmatova G.B. Turabayeva N.B.",
+     "page": 197
+    },
+    {
+     "title": "ТАРКИБИДА ОЛТИНГУГУРТ САҚЛАГАН ОРГАНИК БИРИКМАЛАРНИ ҚИЗИЛ ФОСФОР ВА ОЛТИНГУГУРТ АСОСИДА СИНТЕЗ ҚИЛИШ ВА УЛАРНИ ФИЗИК КИМЁВИЙ ХУСУСИЯТЛАРНИ ТАДҚИҚ ЭТИШ",
+     "byline": "Ф.Н.Нурқулов, Ф.А.Назаров",
+     "page": 199
+    },
+    {
+     "title": "Изучение координационного соединения дигидрат кобальт (II) – нитрата с хиназолин-4-оном и изучение процессов влияния на сорта хлопчатника \"Бухара-102\", \"Наманган-77\", \"Султан \", \"Ункурган",
+     "byline": "1\", \"С1-6524 \" 1 2 Сапаев Байрамдурди, 3 Саиткулов Фозилжон Эргашевич, 3 Насимов Хасан Муродович, Рахмонкулова Ирода Дониёр кизи, Лутфуллаева Азиза Нурмурод кизи",
+     "page": 202
+    },
+    {
+     "title": "Исследование влияния комплексное соединения бензиламинопурином обработки на посевные свойства семян сельскохозяйственных",
+     "byline": "Баймуратова Гулбахар Орынбаевна, Насимов Хасан Муродович",
+     "page": 203
+    },
+    {
+     "title": "ОПРЕДЕЛЕНИЯ ПРОСТЫХ ЭФИРОВ МАСС СПЕКТРОСКОПИЧЕСКИМ МЕТОДАМ",
+     "byline": "1Саиткулов Фозилжон Эргашевич, 2Насимов Хасан Муродович, 2Аронбаев Сергей Димитревич, 3Рахмонкулова Ирода Дониёр кизи, 3Лутфуллаева Азиза Нурмурод кизи",
+     "page": 204
+    },
+    {
+     "title": "The effect of the coordination compound 6-benzylaminopurine with cobalt-II nirtate dihydrate on cotton « С-6524»",
+     "byline": "Baymuratova Gulbakhor Orinbaevna, Nasimov Khasan Murodovich",
+     "page": 204
+    },
+    {
+     "title": "2-Метилхиназолин-4-тионни синтези ва метилланиш реакцияси",
+     "byline": "1Saitkulov Foziljon Ergashevich, 2Elmuradov Burkhon Juraevich",
+     "page": 205
+    },
+    {
+     "title": "Influence of the nature of the methyling agent and solvent on the directions of the methylation reaction of 212Н (methyl-) qinazolin-4-ones",
+     "byline": "F.E.Saitkulov, B.Zh.Elmuradov",
+     "page": 207
+    },
+    {
+     "title": "АБСОРБЦИОННАЯ ОСУШКА ПРИРОДНОГО ГАЗА РАСТВОРАМИ ЭТИЛЕНГЛИКОЛЯ",
+     "byline": "М.Ж.Махмудов, Ш.А.Ризаев",
+     "page": 208
+    },
+    {
+     "title": "ХАРАКТЕРИСТИКА ГЛИКОЛЕЙ ПРИМЕНЯЕМЫХ В КАЧЕСТВЕ АБСОРБЕНТА И ИХ ВЛИЯНИЕ НА СТЕПЕНЬ ОСУШКИ ПРИРОДНОГО ГАЗА",
+     "byline": "М.Ж.Махмудов, Ш.А.Ризаев",
+     "page": 209
+    },
+    {
+     "title": "УЛУЧШЕНИЕ ПРОЦЕССА ОСУШКИ ПРИРОДНЫХ ГАЗОВ",
+     "byline": "М.Ж.Махмудов, Ш.А.Ризаев",
+     "page": 212
+    },
+    {
+     "title": "МОЧЕВИНА ҲОСИЛАЛАРИ МОЛЕКУЛЯР ТУЗИЛИШИНИНГ КВАНТ-КИМЁВИЙ ТАҲЛИЛИ НАТИЖАЛАРИ",
+     "byline": "Ю.Х.Холбоев, А.Г.Махсумов, И.Р.Аскаров, Б.М.Исмаилов",
+     "page": 213
+    },
+    {
+     "title": "N,N-ГЕКСАМЕТИЛЕН БИС-[(АМИНОАРОИЛ) МОЧЕВИНА]ЛАРНИНГ БИОЛОГИК ФАОЛЛИГИНИ ЛАБОРАТОРИЯ ШАРОИТИДА ЎРГАНИШ",
+     "byline": "Ю.Х.Холбоев, А.Г.Махсумов, И.Р.Аскаров, Х.Исаков",
+     "page": 215
+    },
+    {
+     "title": "ТАБИИЙ ГАЗ АСОСИДА НЕФТ-ГАЗ САНОАТИ ҚУРИЛМАЛАРИ УЧУН ИНГИБИТОРЛАР ОЛИШ",
+     "byline": "Л.А. Юсупова, С.Э. Нурманов, Н.С. Юлдашева, Б.И. Райимжонов, Ш.Ш. Валиева",
+     "page": 216
+    },
+    {
+     "title": "ПЛАСТИФИКАЦИЯ ПОЛИВИНИЛФТОРИДА СИНТЕТИЧЕСКИМИ ВЫСОКОМОЛЕКУЛЯРНЫМИ СОЕДИНЕНИЯМИ",
+     "byline": "Мухиддинов Б.Ф., Собиров Б.Б., Вапоев Х.М., Турдиева О.Ж., Сирожова М.М. Навоийский государственный горно-технологический университет Навоийский государственный педагогический институт",
+     "page": 218
+    },
+    {
+     "title": "ИССЛЕДОВАНИЕ ТЕХНОЛОГИЧЕСКИХ И ТЕРМИЧЕСКИХ ХАРАКТЕРИСТИК КОМПОЗИЦИЙ ПОЛУЧЕННЫХ НА ОСНОВЕ ОТХОДОВ ПОЛИЭТИЛЕНТЕРЕФТАЛАТА С ПОЛИЭТИЛЕНОМ",
+     "byline": "МУХИДДИНОВ Б.Ф., ТИЛАВОВА Л.И., СОБИРОВ Б.Б. Навоийский государственный горно-технологический университет Навоийский государственный педагогический институт",
+     "page": 219
+    },
+    {
+     "title": "БИОРАЗЛАГАЕМЫЕ КОМПОЗИЦИОННЫЕ МАТЕРИАЛЫ НА ОСНОВЕ ПОЛИВИНИЛХЛОРИДА",
+     "byline": "Мухиддинов Б.Ф., Истамов Х.Й., Вапоев Х.М., Тошботиров Ф. Навоийский государственный горно-технологический университет",
+     "page": 221
+    },
+    {
+     "section": "II sho‘ba. Noorganik moddalar kimyosi va texnologiyasi"
+    },
+    {
+     "title": "SEMENTNI KIMYOVIY TARKIBI VA QURILISH JARAYONLARIDAGI AHAMIYAT",
+     "byline": "Assistent Jurayev Tulqinjon Ermaxammadovich T.f.d. (PhD) Egamberdiyeva Shaxnoza Abdurashidovna",
+     "page": 225
+    },
+    {
+     "title": "URAN TARKIBLI ERITMALARNI QAYTA ISHLASH JARAYONLARIGA FOSFAT IONLARININING TA‘SIRI",
+     "byline": "Sharafutdinov Ulugbek Ziyatovich, Rajabboyev Ibodulla Murodullayevich, Eshonova Gulnoza Aliyevna",
+     "page": 227
+    },
+    {
+     "title": "SULFAT KISLOTALI ERITMALARDAN URANNI EKSTRAKSIYALASH JARAYONIGA NITRAT IONLARINI TA‘SIRI",
+     "byline": "Sharafutdinov Ulugbek Ziyatovich, Rajabboyev Ibodulla Murodullayevich, Eshonova Gulnoza Aliyevna",
+     "page": 228
+    },
+    {
+     "title": "RUDA MAYDALANISH DARAJASINING BOYITILGAN MIS KONSENTRATI UNUMIGA TA‘SIRI",
+     "byline": "A.P Hamidov,S.A.Tursunov. G.Mamatqulova",
+     "page": 229
+    },
+    {
+     "title": "PROPERTIES AND PROPERTIES OF CHLORINE-FREE POTASH ERTILIZERS",
+     "byline": "Tursunov Sarvarbek Anvar o‘g‘li",
+     "page": 231
+    },
+    {
+     "title": "СУВЛАРНИ ЮМШАТИШ ВА ТОЗАЛАШ УЧУН ПЕРМУТИТ АСОСИДА АДСОРБЕНТ ОЛИШ",
+     "byline": "Бердиев Ш.И., Эркабаев Ф.И., Омонов О.В.",
+     "page": 232
+    },
+    {
+     "title": "ОГНЕЗАЩИЩЕННЫЕ И АНТИКОРРОЗИОННЫЕ ПОКРЫТЫЯ ДЛЯ РЕЗЕРВУАРОВ НЕФТЕХРАНИЛИШ",
+     "byline": "Мирзахмедов Б.Х., Хамрабаева Н.А.,Жуманова С.Г",
+     "page": 233
+    },
+    {
+     "title": "KALSIY LAKTAT QO‘SHILGAN SEMENTNING FIZIK- MEXANIK XOSSALARI",
+     "byline": "Mukimov A.S., Turayev X.X., Tojiyev P.J., Karimov M.U.",
+     "page": 235
+    },
+    {
+     "title": "CU(XZ)(SEPP)·H2O KOMPLEKSINI DMSO DAGI EPR-SPEKTRI TAHLILI",
+     "byline": "Nazarov Farxod Sobirovich",
+     "page": 237
+    },
+    {
+     "title": "2- SELENO-5,7-DIMETIL PIRIDO (2,3-D) PIRIMIDINON-4 NI CO(II), NI(II) VA CU(II) TUZLARI BILAN KOORDINASION BIRIKMALAR SINTEZI",
+     "byline": "Nazarov Farxod Sobirovich",
+     "page": 239
+    },
+    {
+     "title": "8-OKSIXINOLINNING COBALT (II) ATSETAT BILAN KOMPLEKS BIRIKMASI SINTEZI VA IQ-SPEKTRI TAHLILI",
+     "byline": "1Nazarov Y.E, 2Turayev X.X., 3Ashurov J.M. 4Kasimov SH.A",
+     "page": 240
+    },
+    {
+     "title": "8-OKSIXINOLINNING COBALT (II) ATSETAT BILAN KOMPLEKS BIRIKMASI TGA VA DTA TAHLILI",
+     "byline": "Nazarov Y.E, Turayev X.X., Ashurov J.M. Kasimov SH.A",
+     "page": 242
+    },
+    {
+     "title": "RUX SULFAT BILAN SEFOTAKSIM ASOSIDA BIR LIGANDLI KOMPLEKS BIRIKMASI SINTEZI VA ELEMENTLAR TAHLILI",
+     "byline": "Masharipov Azamat, Hasanov Shodlik, Abdullayeva Zubayda",
+     "page": 244
+    },
+    {
+     "title": "ИССЛЕДОВАНИЕ ВЛИЯНИЯ НОРМЫ И КОНЦЕНТРАЦИИ СЕРНОЙ КИСЛОТЫ НА РАЗЛОЖЕНИЕ ФОСФОРИТОВ В НЕЗАГУСТЕВАЮЩИХ ПУЛЬПАХ",
+     "byline": "Назирова Р.М., Кучаров Б.Х., Закиров Б.С.",
+     "page": 245
+    },
+    {
+     "title": "Ni(II) FORMIATINING Zn M-KREZOKSIATSETATI BILAN KOMPLEKS BIRIKMASI SINTEZI",
+     "byline": "Yaxshimuratov Murodjon, Hasanov Shodlik, Abdullayeva Zubayda",
+     "page": 247
+    },
+    {
+     "title": "TALK-MAGNEZIT MINERALINING KIMYOVIY TARKIBINI O‘RGANISHDA MAGNIYLI BIRIKMALAR OLISH USULLARI",
+     "byline": "Umirov F.E. Aslonov A.B. Yuldashova M.B.",
+     "page": 248
+    },
+    {
+     "title": "ИССЛЕДОВАНИЕ НИЗКОСОРТНЫХ ФОСФОРИТОВ",
+     "byline": "Усманов Б.С.",
+     "page": 249
+    },
+    {
+     "title": "12ХНМ ПЎЛАТ МАТЕРИАЛИНИНГ ТЕРМИК ИШЛОВ БЕРИШДА ИССИҚЛИККА ЧИДАМЛИЛИГИНИ ТАДҚИҚ ҚИЛИШ",
+     "byline": "А.М.Гафуров., А.Х.Хамиджонов",
+     "page": 251
+    },
+    {
+     "title": "ШИША ИШЛАБ ЧИҚАРИШ УЧУН ТУЛАКУЛ ТОМИРСИМОН КВАРЦЛАРИНИНГ ФИЗИК-КИМЁВИЙ ТАХЛИЛИ",
+     "byline": "А.Б. Анваров, З.Р. Қодирова",
+     "page": 254
+    },
+    {
+     "title": "ЦИАНИДЛИ МЕТАЛ КОМПЛЕКСЛАРИНИНГ АДСОРБСИЯСИГА ХАРОРАТ ТАЬСИРИ",
+     "byline": "Исоков Ю.Х., Зиёев Б.Т., Исокова О.Т.",
+     "page": 255
+    },
+    {
+     "title": "MIS(II)IONINING LIMON KISLOTA VA MONOETANOLAMIN BILAN KOMPLEKS BIRIKMASI SINTEZI",
+     "byline": "Rajabov Xudayor Madrimovich, Batirova Dilnavoz G‘afurjon qizi, Xudoyberganov Oybek Ikromovich",
+     "page": 258
+    },
+    {
+     "title": "MIS(II)IONINING LIMON KISLOTASI VA MONOETANOLAMIN BILAN SINTEZLANGAN KOMPLEKS BIRIKMASI TAHLILI",
+     "byline": "Rajabov Xudayor Madrimovich, Batirova Dilnavoz G‘afurjon qizi, Xudoyberganov Oybek Ikromovich",
+     "page": 259
+    },
+    {
+     "title": "FeSO4 – Lis*HCL – H2O УЧЛАМЧИ СИСТЕМАСИНИНГ 25ОС ДАГИ ИЗОТЕРМИК ЭРУВЧАНЛИГИНИ ЎРГАНИШ",
+     "byline": "Aлиев T.Б.1, Зайниддинова Г.Ш.2, Ҳусенов Қ.Ш.1, Зарипова Р.Ш.3",
+     "page": 260
+    },
+    {
+     "title": "METAN VA ENGIL UGLEVODORODLARNING KERAMIK MEMBRANALAR KANALLARIDA GETEROGEN KATALITIK REAKTSIYALARNING QONUNIYATLARI",
+     "byline": "Файзуллаев Н.И., Пардаева С.Б",
+     "page": 261
+    },
+    {
+     "title": "Zn(II) IONINING TIADIAZOL-1,3,4 HOSILALARI BILAN KOMPLEKS BIRIKMALARI",
+     "byline": "Husenov Q.Sh.4, Umarov B.B., Aliyev T.B., Zayniddinova G.Sh., Zaripova R.Sh.",
+     "page": 263
+    },
+    {
+     "title": "УМИД НЕФТ КОНИ ЙЎЛДОШ СУВЛАРИДАН ЙОДНИ АЖРАТИБ ОЛИШНИНГ ЭЛЕКТРОКИМЁВИЙ УСУЛИ",
+     "byline": "С.Н.Бегманов, Б.Ф.Муҳиддинов, Ҳ.М.Вапоев, А.А.Барноев",
+     "page": 265
+    },
+    {
+     "title": "OLTINGUGURT BIRIKMALARNING TIBBIYOTDA KENG QO‘LLANILISHI VA AHAMIYATI",
+     "byline": "Rahimova Hilolaxon Rustamjonovna, Kamolxo`jayev Islomxo`ja Jamolxo`ja o`g`li",
+     "page": 266
+    },
+    {
+     "title": "PAST HARORATLI AZOT ADSORBSIYASI ORQALI G‘OVAKLI MATERIALLARNING TEKSTURAVIY XUSUSIYATLARINI ANIQLASH",
+     "byline": "1Fayzullayev N.I., 2Mamadoliyev I.I",
+     "page": 268
+    },
+    {
+     "title": "FOSFAT KISLOTALI GIPSLI BO‘TQA ASOSIDA OLINGAN AZOT-FOSFORLI O‘G‘ITNING FIZIK-KIMYOVIY XOSSALARI",
+     "byline": "Nu‘monov Baxtiyorjon Omonjonovich",
+     "page": 270
+    },
+    {
+     "title": "Etil spirtning konsentrstsiyasini oshirish uchun CaSO4•0.5H2O dan foydalanish",
+     "byline": "Madusmanova.N.K., Razzaqov J.E, Jumayev M.Sh, Mirusmonova F. B, Shamsuddinov L.O.",
+     "page": 271
+    },
+    {
+     "title": "RUX (II) NING TRIAZIN VA SISTEIN ASOSIDAGI ARALASH LIGANDLI KOMPLEKS BIRIKMALARINI KVANT-KIMYOVIY HAMDA SPEKTROFOTOMETRIK ANALIZI USULIDA BAHOLASH",
+     "byline": "Jumaboyeva L.Sh., Buvrayev E.R., Mamatova G.Y.",
+     "page": 272
+    },
+    {
+     "title": "6 % Mo/ЮКЦ ТАРКИБЛИ КАТАЛИЗАТОР УНУМДОРЛИГИГА Zn ПРОМОТОРИ МИҚДОРИНИНГ ТАЪСИРИ",
+     "byline": "Файзуллаев Н.И., Холлиев Ш.Х.,Пўлатова Г.Л",
+     "page": 274
+    },
+    {
+     "title": "BIOMASSALARNI MODIFIKATSIYALAB OLINGAN SORBENTLARGA METALL IONLARINI YUTILSIHI",
+     "byline": "PhD. Yarmanov2Sherimmat Xalillayevich, PhD.Botirov Sunnatjon Xudoyberdi o‘g‘li, 2 проф. Bekchanov Davron Jumazarovich",
+     "page": 276
+    },
+    {
+     "title": "Xlorsizlantirish usulida olingan kaliyli o‘g‘itlarning samaradorliligini o‘rganish",
+     "byline": "Hamidov A.P, Tursunov. S.A. O‘ralova M.R",
+     "page": 278
+    },
+    {
+     "title": "TRIXLOROSILANDAN TOZA KREMNIY OLISH TEXNOLOGIYASI",
+     "byline": "Jiyanova S.I., Toʼraev X.X., Eshmurodov X.E.",
+     "page": 280
+    },
+    {
+     "title": "MIQDORIY ANALIZDA INDIKATORLARNING QO‘LLANILISHI",
+     "byline": "Usmonova L.M., O‘roqov E.T.",
+     "page": 281
+    },
+    {
+     "title": "MARGANETS(II) IONINING KETOROLAK VA KARBAMID BILAN KOORDINATSION BIRIKMASI SINTEZI",
+     "byline": "Karimova Momojon Egamberganovna, Hasanov Shodlik Bekpulatovich, Xudoyberganov Oybek Ikromovich",
+     "page": 283
+    },
+    {
+     "title": "СОВРЕМЕННЫЕ СОСТОЯНИЕ ПРОИЗВОДСТВА СТЕКЛОТАРЫ В УСЛОВИЯХ УЗБЕКИСТАНА И ОСНОВНЫЕ ТЕНДЕНЦИИ ИХ РАЗВИТИЯ",
+     "byline": "Бабаев З.К., Матчонов Ш.К., Кудиярова К,К., Шомуротов М.З., Абдуллаева М.Н.",
+     "page": 284
+    },
+    {
+     "title": "ТАБИИЙ БИРИКМАЛАР АСОСИДА КАДМИЙНИ АНАЛИЗ ҚИЛИШ",
+     "byline": "М.Б.Сирожиддинов: 2-21М-КА гуруҳ, Аскарова М.Р., У.К.Абдурахманова",
+     "page": 286
+    },
+    {
+     "title": "КАДМИЙНИ АНАЛИЗ ҚИЛИШНИНГ СПЕКТРОФОТОМЕТРИК УСУЛИ",
+     "byline": "Аскарова М.Р., М.Б.Сирожиддинов, У.К.Абдурахманова",
+     "page": 288
+    },
+    {
+     "title": "CO(II) ТУЗЛAPИНИНГ КOМПЛEКCЛAPИНИ ТEPМИК AНAЛИЗИ ACOCИДA ЎPГAНИШ",
+     "byline": "Карабаева Гулнора Бегмуротовна, Яхшиева Зухра Зиятовна",
+     "page": 289
+    },
+    {
+     "title": "ЎЗБЕКИСТОНДА ИССИҚҚА ЧИДАМЛИ БОҒЛОВЧИЛАР ИШЛАБ ЧИҚАРИШ ЗАРУРАТИ ВА ИСТИҚБОЛЛАРИ",
+     "byline": "Бабаев З.К., Матчонов Ш.К., Рузметова А.Ш., Шомуротов М.З., Собирова Ф.Р.",
+     "page": 291
+    },
+    {
+     "title": "ПРОИЗВОДСТВО НАНОМАТЕРИАЛОВ НА ОСНОВЕ ПОЛУПРОВОДНИКОВЫХ ОКСИДОВ МЕТАЛЛОВ ИММОБИЛИЗИРОВАННЫХ ОРГАНИЧЕСКИМИ КРАСИТЕЛЯМИ",
+     "byline": "Мирзаев.Ш.Э., Магдиев.Ш.Н., Бегимкулова Ш.А., Насимов А.М.",
+     "page": 293
+    },
+    {
+     "title": "ПОЛУЧЕНИЕ И ПРИМЕНЕНИЕ КОМПОЗИТНҚХ МАТЕРИАЛОВ НА ОСНОВЕ ИНТЕРПОЛИМЕРНЫХ КОМПЛЕКСОВ",
+     "byline": "Сейдалиева А. Ж. - студентка 3-курса ЧГПУ, МирзарахимовА.А.",
+     "page": 295
+    },
+    {
+     "title": "Интенсификация процессов отстаивания",
+     "byline": "Абдурахмонов Олим Рустамович, Юлдашев Хусан Махмудович",
+     "page": 296
+    },
+    {
+     "title": "ВЛИЯНИЕ ТЕМПЕРАТУРЫ И КОНЦЕНТРАЦИИ НАТРИЕВЫХ ГАЛОИДОВ НА СКОРОСТЬ КОРРОЗИИ МЕТАЛЛОВ",
+     "byline": "Раззоков Хасан Каландарович, Вапоев Ҳуснитдин Мирзоевич, Рузиева Мунира Шералиевна, Аскарова Гулчирой Ахрор қизи",
+     "page": 297
+    },
+    {
+     "title": "KALSIY VA MAGNIY XLORIDLARINI NATRIY XLORAT BILAN KALSIY VA MAGNIY XLORATGA O‘TKAZILISHINI O‘RGANISH",
+     "byline": "Omonbayeva Gulzoda Botirjon qizi",
+     "page": 299
+    },
+    {
+     "title": "Нитрокальцийфосфат суспeнзияларини тиндириш жараёнларини ўрганиш",
+     "byline": "С.Б.ТОШТЕМИРОВА, Т.ф.д., проф. Б.Э.СУЛТОНОВ, Дотс.в.б. А.Г.ЛУТФИДИНОВ",
+     "page": 301
+    },
+    {
+     "title": "ПОЛУПРОВОДНИКОВЫЙ СЕНСОР АММИАКА НА ОСНОВЕ",
+     "byline": "TiO2 и Fe2O3 Абдурахманов И.Э., Насимов А.М., Равшанов Р.А., Исмоилов Э.Х., Абдухалилов С.C., Хайруллаев Н.Ф., Холмурзаев Ф.Ф",
+     "page": 302
+    },
+    {
+     "title": "ЭФФЕКТИВНЫЙ ОТСТОЙНИК ДЛЯ ОЧИСТКИ МЕХАНИЧЕСКИХ ЧАСТИЦ ИЗ ПРЕССОВОГО МАСЛ А",
+     "byline": "Юлдашев Хусан Махмудович, Абдурахмонов Олим Рустамович",
+     "page": 305
+    },
+    {
+     "title": "Осаждение под действием силы тяжести",
+     "byline": "Юлдашев Хусан Махмудович, Абдурахмонов Олим Рустамович",
+     "page": 307
+    },
+    {
+     "title": "НИКЕЛ(II) ИОНИНИ ИММОБИЛЛАНГАН НИТРОЗОНИЙ САРИҒИ ТУЗИ РЕАГЕНТИ ЁРДАМИДА СОРБЦИОН СПЕКТРОФОТОМЕТРИК АНИҚЛАШ",
+     "byline": "Тураева Х.Г., Мадатов Ў.А., Сманова З.A.",
+     "page": 309
+    },
+    {
+     "title": "АНАЛИЗ СУЩЕСТВУЮЩИХ ТЕХНОЛОГИЧЕСКИХ ПРОЦЕССОВ ПОЛУЧЕНИЯ МАРГАНЕЦСОДЕРЖАЩИХ КОНЦЕНТРАТОВ",
+     "byline": "С.С. Негматов, К.С. Негматова, М.Э. Икрамова, Хакимова Д.Й.",
+     "page": 311
+    },
+    {
+     "title": "ОЛТИНТОҒ КАОЛИНИ НАЪМУНАЛАРИНИ ДИФФЕРЕНЦИАЛ-ТЕРМИК УСУЛДА ЎРГАНИШ",
+     "byline": "Эминов А.М., Жуманов Ю.Қ",
+     "page": 312
+    },
+    {
+     "title": "ФИЗИКО-ХИМИЧЕСКИЕ СВОЙСТВА МАРГАНЕЦСОДЕРЖАЩИХ РУД МЕСТОРОЖДЕНИЯ ДАУТАШ",
+     "byline": "Хакимова Д.Й., Икрамова М.Э., Негматова К.С., Абед Н.С., Негматов С.С.",
+     "page": 314
+    },
+    {
+     "title": "КАДМИЙНИ ГЛИЦИРРИЗИН КИСЛОТАСИ МОНОАММОНИЙ ТУЗИ БИЛАН КОМПЛЕКСИ ҲОЛИДА АНИҚЛАШНИНГ ЭРИТМА МУХИТИГА БОҒЛИҚЛИГИ",
+     "byline": "М.Мамбетмуратова, Aбдурахмонова U.K.",
+     "page": 315
+    },
+    {
+     "title": "МАРКАЗИЙ ҚИЗИЛҚУМ ОДДИЙ ФОСФОРИТ УНИНИ ПАРЧАЛАШ ЖАРАЁНИНИНГ ЧИҚИНДИСИЗ УСУЛИНИ ТАДҚИҚ ҚИЛИШ",
+     "byline": "Шерматов Акрамжон Ҳабибжон ўғли Шерқўзиев Дониёр Шермаматович",
+     "page": 316
+    },
+    {
+     "title": "СТИМУЛЯТОРЫ РОСТА РАСТЕНИЙ НА ОСНОВЕ ГУАНИЛГИДРОЗОНА И ИХ КОМПЛЕКСОВ С МЕТАЛЛАМИ",
+     "byline": "Доц. ГулбаевЯхшиликИрсалиевич, ХолмуминоваДилоромАнваровна",
+     "page": 317
+    },
+    {
+     "title": "ИЗУЧЕНИЕ ТЕРМИЧЕСКИЕ СВОЙСТВА КОЛЛАГЕНА",
+     "byline": "Худойбердиев Ш.Ш., Саидахмедова Д.Р",
+     "page": 318
+    },
+    {
+     "title": "СУВ ТАРКИБИДАГИ Cr+3, V+3, Zn+2, Co+2 ИОНЛАРИНИНГ (ИСП-ОЭС) ОПТИК ЭМИССИОН СПЕКТРОМЕТРИК УСУЛИДА ТАҲЛИЛИ",
+     "byline": "Аҳмаджонова Ёрқиной Тожимуродовна, Яхшиева Зуҳра Зиятовна.",
+     "page": 320
+    },
+    {
+     "title": "MARGANETS(II) IONINING KETOROLAK VA KARBAMID BILAN KOORDINATSION BIRIKMASI SINTEZI",
+     "byline": "Karimova Momojon Egamberganovna Hasanov Shodlik Bekpulatovich Xudoyberganov Oybek Ikromovich",
+     "page": 322
+    },
+    {
+     "title": "MIS(II)IONINING LIMON KISLOTA VA MONOETANOLAMIN BILAN KOMPLEKS BIRIKMASI SINTEZI",
+     "byline": "Rajabov Xudayor Madrimovich, Batirova Dilnavoz G‘afurjon qizi, Xudoyberganov Oybek Ikromovich",
+     "page": 324
+    },
+    {
+     "title": "MIS(II)IONINING LIMON KISLOTASI VA MONOETANOLAMIN BILAN SINTEZLANGAN KOMPLEKS BIRIKMASI TAHLILI",
+     "byline": "Rajabov Xudayor Madrimovich, Batirova Dilnavoz G‘afurjon qizi, Xudoyberganov Oybek Ikromovich",
+     "page": 324
+    },
+    {
+     "section": "III sho‘ba. Yuqori molekulyar birikmalar kimyosi va kimyoviy texnologiyasi, kompozitsion materiallar va materialshunoslik"
+    },
+    {
+     "title": "SUVOQ QORISHMALARIGA STANDART TALABLAR VA MAHALLIY KVARSNING QORISHMA TARKIBIGA QO‘LLASH UCHUN O‘RGANISH",
+     "byline": "ZOKIROV X.T1., ABDULLAYEV O.G‘2",
+     "page": 326
+    },
+    {
+     "title": "ALANIN-TEMIR (II) SULFAT-SUV UCHLAMCHI SISTEMASINING 25OC DAGI IZOTERMIK",
+     "byline": "ERUVCHANLIGI. Ernazarov Komil Anorboy o‘g‘li.",
+     "page": 328
+    },
+    {
+     "title": "FAOL BO`YOQLAR BILAN GUL BOSILGAN IPAK TOLALI MATOLARNING KOLORISTIK XOSSALARI",
+     "byline": "Аmonov М.R., Sayfilloyeva Sh.D.",
+     "page": 332
+    },
+    {
+     "title": "YANGI TARKIBLI QUYUQLASHTIRUVCHI BILAN GUL BOSILGAN MATONING EKSPLUATATSION XOSSALARI",
+     "byline": "Аmonov М.R., Sayfilloyeva Sh.D.",
+     "page": 334
+    },
+    {
+     "title": "METANDAN MEZOG‘AVAKLI UGLEROD OLISH",
+     "byline": "Fayzullayev N.I., Mamirzayev M.A., Asrorov D.A",
+     "page": 336
+    },
+    {
+     "title": "METANDAN MEZOG‘OVAKLI UGLEROD SINTEZI KINETIKASINI MATEMATIK MODELLASHTIRISH",
+     "byline": "M.Mamirzayev, N.I.Fayzullayev, D.B.Asrorov",
+     "page": 338
+    },
+    {
+     "title": "MODIFICATION OF RELEVANT POLYMERIC MATERIALS FOR MEDICAL APPLICATIONS AND DEVICES",
+     "byline": "Qurbonova Salima Shuhratovna",
+     "page": 341
+    },
+    {
+     "title": "VINILMORFOLIN, AKRIL KISLOTA VA KOLLOID KREMNIZOL ASOSIDAGI SOPOLIMERLAR SINTEZI VA ULARNING XOSSALARI",
+     "byline": "S.I. Nazarov, F.I. Ostonov, A.A. Xolov, I.O. Hojiyev",
+     "page": 343
+    },
+    {
+     "title": "GIPAN ASOSIDAGI GIDROGELLARNING FIZIK-KIMYOVIY XUSUSIYATLARIGA BOSHLANG'ICH MODDALAR KONSENTRATSIYASINING TA'SIRINI O'RGANISH",
+     "byline": "Kenjayeva N.R., Nazarov S.I., Shirinov Sh.D., Razzokov H.Q",
+     "page": 344
+    },
+    {
+     "title": "FOSFOR SAQLAGAN KRAXMAL ASOSIDAGI BIOPOLIMERLARNI OLISH VA ULARNI TADQIQ ETISH",
+     "byline": "Qarshiev M. T., Nurqulov F. N., Djalilov A. T.",
+     "page": 346
+    },
+    {
+     "title": "ИЗУЧЕНИЕ ВЛИЯНИЯ КАТАЛИЗАТОРА ВО ВРЕМЯ СИНТЕЗА ЭПОКСИДИРОВАНИЕ ПОДСОЛНЕЧНОГО МАСЛА",
+     "byline": "Қулбашова Хуршида Ҳасановна., Тўраев Ҳайит Худойназарович., Вафаев Ойбек Шукуруллаевич",
+     "page": 348
+    },
+    {
+     "title": "БУРҒИЛОВЧИ ЭРИТМАЛАР УЧУН КИМЁВИЙ РЕАГЕНТЛАР ТАРКИБЛАРНИ ИШЛАБ ЧИҚИШ",
+     "byline": "Сайфиева Г.О., Темирова Г.Ф.",
+     "page": 349
+    },
+    {
+     "title": "НОВЫЕ ВОЗМОЖНОСТИ ИСПОЛЬЗОВАНИЯ ПОЛИАНИЛИНА ДЛЯ СОЗДАНИЯ СЕРНИСТЫХ КОМПОЗИТОВ И ПИГМЕНТОВ",
+     "byline": "Д. А. Каримова, Г.Ё.Гадоева",
+     "page": 351
+    },
+    {
+     "title": "3-METILMEDAZOL ASOSIDAGI ION SUYUQLIGI MUHITIDA SHOLI SOMONIDAN SELLYULOZA OLISH TEXNOLOGIYASI",
+     "byline": "Аliqulova D.A., Urozov M.К., Raximov A.A., Tojiyev S.M.",
+     "page": 352
+    },
+    {
+     "title": "OLTINGUGURT VA TABIIY KAUCHUK BILAN MODIFIKATSIYALANGAN BITUMNI IQ-SPEKTR TAHLILI",
+     "byline": "Eshankulov X.N., To‘raev X.X., Umbarov I.A.",
+     "page": 354
+    },
+    {
+     "title": "TECHNOLOGIES ALLOWING TO INCREASE THE EFFICIENCY OF PROCESSING COMPOSITE MATERIALS BY THE MILLING METHOD",
+     "byline": "Assistant teacher Gayratov J.G., student Luqmonjonov A.B.",
+     "page": 356
+    },
+    {
+     "title": "CLASSIFICATION OF COMPOSITE MATERIALS AND THEIR ROLE IN MODERN ENGINEERING",
+     "byline": "Senior lecturer Rustamov M.A., Assistant teacher Sadirov Sh.M., student Kozimov M.",
+     "page": 358
+    },
+    {
+     "title": "MAHALLIY SORBENTLARDA O'SIMLIK MOYLARINI TOZALASHNING IQTISODIY ISTIQBOLLARI",
+     "byline": "Dots. Sultonov Sh.A., k.o‘qt. Sayimova D.Q., magistr. Oripova M.O.",
+     "page": 359
+    },
+    {
+     "title": "PRODUCTION AND TECHNOLOGY OF POLYMERS",
+     "byline": "Khamidov Davlatmurod Khayrulloyevich",
+     "page": 360
+    },
+    {
+     "title": "ПОЛИМЕР КОМПОЗИЦИОН МАТЕРИАЛЛАРДАН ОЗИҚ-ОВҚАТ САНОАТИДА ҚЎЛЛАШНИНГ ЭКОЛОГИК МУАММОЛАРИ ВА УЛАРНИНГ ЕЧИМИ",
+     "byline": "Худойназарова Г.А., Ганиев Б.Ш., Холиқова Г.Қ., Рашидова Р.Ў., Жумаева З.Р.",
+     "page": 362
+    },
+    {
+     "title": "ПОЛУЧЕНИЕ МОДИФИЦИРОВАННЫХ ПОЛИМЕР - ПОЛИМЕРНЫХ КОМПЛЕКСОВ И ОПРЕДЕЛИТЬ НАПРАВЛЕНИЕ ИСПОЛЬЗОВАНИЯ",
+     "byline": "Мамура Эргашева,,Камаридин Уринович Комилов",
+     "page": 364
+    },
+    {
+     "title": "ОСОБЕННОСТИ СНИЖЕНИЯ ГОРЮЧЕСТИ ПОЛИМЕРНЫХ СТРОИТЕ ЛЬНЫХ МАТЕРИАЛОВ",
+     "byline": "Камалов Ж.К., Муродов Б.З., Мухамедгалиев Б.А.",
+     "page": 366
+    },
+    {
+     "title": "ОҲОРЛОВЧИ ПОЛИМЕР КОМПОЗИЦИЯЛАР ТАРКИБИНИ ИШЛАБ ЧИҚИШ ВА УНИНГ ХОССАЛАРИНИ ЎРГАНИШ",
+     "byline": "Шадиева Ш.Ш.. Исматова Р.А.",
+     "page": 368
+    },
+    {
+     "title": "ПРОЧНОСТНЫЕ СВОЙСТВА ОШЛИХТОВАННОЙ ПРЯЖИ С СИНТЕТИЧЕСКИМИ ПОЛИМЕРАМ И",
+     "byline": "Р.А. Исматова, М.Р. Амонов",
+     "page": 370
+    },
+    {
+     "title": "ПОЛУЧЕНИЯ КОМПОЗИЦИО ННЫХ ЭЛАСТОМЕРНЫХ МАТЕРИАЛОВ С ПРИМЕНЕНИЕМ ЗОЛЬ О ТХОДОВ ТЕПЛОЭЛЕКТОСТАНЦИИ В КАЧЕСТВЕ НАПОЛНИТЕЛЯ ДЛЯ ДЕВУЛКАНИЗАТОВ",
+     "byline": "Д.Я. Юлдашов, Д.А.Раимкулов, Ф.С. Дунназарова.",
+     "page": 370
+    },
+    {
+     "title": "ИССИҚЛИККА ЧИДАМЛИ ҚОПЛАМАН И ДЕРИВОТОГРАФИК ХУСУСИЯТЛАРИНИ ТАҲЛИЛ ЭТИШ",
+     "byline": "Рўзиев Р.Т., Рахманкулов А.А.",
+     "page": 372
+    },
+    {
+     "title": "Синтез полимеров на основе хлорорганических соединений",
+     "byline": "Анварова Ирода Анваровна, преподаватель",
+     "page": 373
+    },
+    {
+     "title": "РЕЗИНА МАҲСУЛОТЛАР ИШЛАБ ЧИҚАРИШДА ТАБИИЙ ЛАТЕКС КОЛЛОИД БАРҚАРОРЛИГИНИ ТАЪМИНЛАШ",
+     "byline": "Яхшиқулов Искандар Сафарович",
+     "page": 375
+    },
+    {
+     "title": "POLYMERIC HYBRID COATINGS BASED ON VERMICULITE",
+     "byline": "Bakirov Zh.A. Khalikova S.J. Beknazarov Kh.S.",
+     "page": 376
+    },
+    {
+     "title": "ПОЛУЧЕНИЕ РЕЗИНОВЫХ СМЕСЕЙ, НАПОЛНЕННЫХ УГЛЕРОДСОДЕРЖАЩИМ МАТЕРИАЛОМ И ИССЛЕДОВАНИЕ ИХ СВОЙСТВ",
+     "byline": "1 Жураев Шохру х Тулкинович, Мухиддинов Баходир Фахриддинович, Рахмонова Рухсора С уръатилло қизи",
+     "page": 378
+    },
+    {
+     "title": "Композиты пониженной горючести на основе полипропилена и полибутилентерефталата",
+     "byline": "Н.Х.Бозорова., А.П.Худайназаров., Ж.Б.Ражабов., Б.Т.Жураев",
+     "page": 379
+    },
+    {
+     "title": "ИЗУЧЕНИЯ СВОЙТСВА ТАЛЬКНАПОЛЬНЕННЫХ КОМПОЗИЦИОННЫХ МАТЕРИАЛОВ НА ОСНОВЕ СОПОЛИМЕРА ЭТИЛЕНА С ПРОПИЛЕНОМ",
+     "byline": "Тошхужаев А.А, Нодиров С.Н, Вафаев О.Ш.",
+     "page": 381
+    },
+    {
+     "title": "РАСЧЁТ ПАРАМЕТРОВ СОПОЛИМЕРИЗАЦИИ С ИСПОЛЬЗОВАНИЕМ ОФИСНЫХ ПРИЛОЖЕНЫЙ",
+     "byline": "Рахимов Тохир Хакимович, Файзуллаева Чаросхон Обиджон овна",
+     "page": 382
+    },
+    {
+     "title": "ОГНЕ - И ТЕРМОСТОЙКИЕ ФОСФОНИЕВЫЕ ПОЛИМЕРЫ ДЛЯ СТРОИТЕЛЬНОЙ ПРОМЫШЛЕННОСТИ",
+     "byline": "Абдукадиров Фирдавс Бахтиёрович",
+     "page": 383
+    },
+    {
+     "title": "СТИМУЛЯТОРЛИК ХУСУСИЯТИГА ЭГА КОМПЛЕКС БИРИКМАНИНГ МАСС-СПЕКТРОМЕТРИК ТАҲЛИЛИ",
+     "byline": "Л.А.Шарипова, Ф.Қ.Маматова, М.Р.Ибрагимова, Т.А.Азизов",
+     "page": 385
+    },
+    {
+     "title": "ИККИЛАМЧИ ПОЛИЭТИЛЕН ВА МОДИФИКАЦИЯЛАНГАН ОЛТИНГУГУРТ АСОСИДА ПОЛИМЕР КОМПОЗИЦИОН МАТЕРИАЛ ОЛИШ",
+     "byline": "Маматова Ш.Б., Қурбанов М.Ж.",
+     "page": 386
+    },
+    {
+     "title": "POLIKONDENSATSIYA VA ETERIFIKATSIYA REAKSIYALARINING TEZLIGI HAMDA MONOMERLAR MIQDORINING MUQOBIL SHAROITLARINI OʻRGANISH",
+     "byline": "Magistr S.M.Samatov, k.f.d., dots F.B.Eshqurbonov",
+     "page": 388
+    },
+    {
+     "title": "ПОЛИМЕРНАЯ ДОБАВКА К БУРОВЫМ РАСТВОРАМ ДЛЯ ПОВЫШЕНИЯ ОГНЕСТОЙКОСТИ И КОЛЬМАТИРУЮЩИХ СВОЙСТВ",
+     "byline": "Жуманова С.Г., Мавлянова М.Э., Муродов Б.З., Саттаров З.М.",
+     "page": 392
+    },
+    {
+     "title": "РАЗРАБОТКА ПОЛИМЕРОВ ДЛЯ СНИЖЕНИЯ ПОСЛЕДСТВИИ ЭКОЛОГИЧЕСКОГО КРИЗИСА АРАЛА",
+     "byline": "Мавлянова М.Э., Абдурахимов А.А., Хакимов Х.Ш.",
+     "page": 394
+    },
+    {
+     "title": "МОДИФИКАЦИИ ПОЛИМЕРНОГО СВЯЗУЮЩЕГО С ЦЕЛЬЮ СОЗДАНИЯ ОГНЕЗАЩИЩЕННЫХ ДРЕВЕСНЫХ МАТЕРИАЛОВ",
+     "byline": "Рахимбобоева М.Ш., Сатторов З.М., Абдукадиров Ф.Б.",
+     "page": 396
+    },
+    {
+     "title": "GIBRID DIATSETATSELLYULOZA-KREMNEZEM NANOKOMPOZITSIYASIGA AMMIAK MOLEKULASINI ADSORBSIYALANISHI",
+     "byline": "Sobitov М.А., Yarkulov А.Yu., Umarov B.S., Sagdullayev B.U., Akbarov X.I.",
+     "page": 398
+    },
+    {
+     "title": "SYNTHESES AND POSSIBILITY OF THE USING PHOSPHOR CONTAINING POLYMERS FOR DECISIONS OF THE ARAL CRISIS",
+     "byline": "Khakimov A.M., Makhmanov D.M., Abduraximov A.A.",
+     "page": 399
+    },
+    {
+     "title": "A NEW IONITS FOR DECISION OF THE PROBLEMS PEELINGS SEWAGE",
+     "byline": "Ziyaeva M.A., Khakimov A.M.,Makhmanov D.M.",
+     "page": 401
+    },
+    {
+     "title": "NEW POLYMER ADDITIVES TO INCREASE FIRE RESISTANCE OF BUILDING CONSRUCTIONS",
+     "byline": "Mukhamedov N.A., Kasimov I.U.",
+     "page": 403
+    },
+    {
+     "title": "СНИЖЕНИЕ ПОЖАРО-ВЗРЫВООПАСНОСТИ ПРИСАДОЧНЫХ МАТЕРИАЛОВ ПРИМЕНЕНИЕМ ФОСФОРСОДЕРЖАЩИХ ПОЛИМЕРОВ",
+     "byline": "Хакимов А.М., Махманов Д.М., Хасанова О.Т.",
+     "page": 405
+    },
+    {
+     "title": "ИОНИТЫ ДЛЯ ОЧИСТКИ КОММУНАЛЬНО-БЫТОВЫХ СТОЧНЫХ ВОД",
+     "byline": "Нурузова З.А., Наджмутдинова Н.А.,Мухамедгалиев Б.А.",
+     "page": 407
+    },
+    {
+     "title": "ПОЛИМЕРНЫЙ ЗАКРЕПИТЕЛЬ ДЛЯ СНИЖЕНИЯ ПЕСЧАНЫХ ЗАНОСОВ ЖЕЛЕЗНОДОРОЖНЫХ ПУТЕЙ И АВТОМАГИСТРАЛЕЙ",
+     "byline": "Хакимов Х.Ш.,Абдурахимов А.А., Мавлянова М.Э.",
+     "page": 409
+    },
+    {
+     "title": "DUBININ-RADUSHKEVICH SORBSION MODELI ASOSIDA XITOZAN-GIDROKSIAPATIT ASOSIDAGI KOMPOZITLARNING SUV BUG‘I BILAN SORBSIYALANISH XOSSALARINI TAHLILI",
+     "byline": "1Valiyev M.A, 1,2Ergashev Q.X., 1Yarkulov A.Y., 1Umarov B.S., 2Vohidova N.R., 1Akbarov X.I.",
+     "page": 411
+    },
+    {
+     "title": "МАТЕМАТИК МОДЕЛЛАШ АСОСИДА ТИКУВЧИЛИК ҚИЙҚИМЛАРИНИ ҚАЙТА ИШЛАБ ТИКЛАНГАН ТОЛА ОЛИШ ТЕХНОЛОГИЯСИ",
+     "byline": "ПАНЖИЕВ ОРИФЖОН ЭРКИНОВИЧ,ИСАЕВА РАНО МАРДИЕВНА",
+     "page": 412
+    },
+    {
+     "title": "ЕНГИЛ САНОАТ КОРХОНАЛАРИ ТЕХНОЛОГИК ЖАРАЁНЛАРИНИ ТАДҚИҚ ЭТИШДА МАТЕМАТИК РЕЖАЛАШТИРИШ УСУЛЛАРИ АҲАМИЯТИ",
+     "byline": "ПАНЖИЕВ ОРИФЖОН ЭРКИНОВИЧ,ИСЛАМОВА РАХБАРХОН РАВШАНОВНА",
+     "page": 414
+    },
+    {
+     "title": "ИССЛЕДОВАНИЯ ФИЗИКО-ХИМИЧЕСКИХ СВОЙСТВ ПОЛИМЕРНОЙ КОМПОЗИЦИИ ПРИ МОДИФИКАЦИИ БЕЛКОВЫХ ВОЛОКОН",
+     "byline": "Н.Р.Шеркулова, М.Б.Маматкулова, Р.И.Исмаилов.",
+     "page": 416
+    },
+    {
+     "title": "ИЗУЧЕНИЕ СМАЧИВАЕМОСТИ НАТУРАЛЬНЫХ ШЕРСТЯНЫХ ВОЛОКОН С ПОЛИМЕРНЫМИ КОМПОЗИТАМИ ПРИ МОДИФИКАЦИИ",
+     "byline": "Исмаилов Р.И., Маматкулова М.Б., Давлатов Р.М.",
+     "page": 419
+    },
+    {
+     "title": "ВЛИЯНИЕ КОМПОЗИЦИОННОГО МОДИФИКАТОРА НА ДЕСТРУКЦИОННЫЕ ПРОЦЕССЫ БЕЛКОВОЙ ТКАНИ",
+     "byline": "1Н.Р.Шеркулова, 1М.Б.Маматкулова, 2Р.И.Исмаилов.",
+     "page": 421
+    },
+    {
+     "title": "ИССЛЕДОВАНИЯ ПРОЧНОСТНЫХ ХАРАКТЕРИСТИК ПО УСТОЙЧИВОСТИ ЭФФЕКТА МОДИФИКАЦИИ ХЛОПКОВОГО СЫРЬЯ",
+     "byline": "Д.Т.Шодиев, Р.М.Давлатов.",
+     "page": 423
+    },
+    {
+     "title": "ИСПЫТАНИЕ СВОЙСТВ НА ИЗГИБ И ПОВЕРХНОСТНОЕ ТРЕНИЕ МОДИФИЦИРОВАННОГО ХЛОПКА СЕРИЦИНОМ",
+     "byline": "Д.Т.Шодиев, Р.И. Исмаилов, Р.М.Давлатов.",
+     "page": 425
+    },
+    {
+     "title": "ANOMAL YUQORI BOSIMLI GAZ VA GAZKONDENSAT KONLARINI ISHLASH",
+     "byline": "Mirzayev Ergash Safarovich, dotsent",
+     "page": 427
+    },
+    {
+     "title": "POLIMER-POLIMER KOMPLEKSLAR VA DISPERS TO‘LDIRUVCHILAR ASOSIDA KOMPOZITSION MATERIALLAR OLISH",
+     "byline": "Ibodullayeva D.A., Nazmitdinova B.F.,Allayev Jumakul",
+     "page": 429
+    },
+    {
+     "title": "БАЗАЛЬТ КУКУНИНИНГ ИККИЛАМЧИ ПОЛИЭТИЛЕН ЁНУВЧАНЛИГИГА ТАЪСИРИ TAHLILI",
+     "byline": "НАЗАРОВ ФЕРУЗ ФАРХОДВИЧ",
+     "page": 432
+    },
+    {
+     "title": "ТЎЛДИРУВЧИНИ ПЭ НИНГ ЗИЧЛИГИ ВА ҚОВУШОҚ- ОҚУВЧАНЛИК КЎРСАТКИЧИГА (ПТР) БОҒЛИҚЛИГИ",
+     "byline": "НАЗАРОВ ФЕРУЗ ФАРХОДОВИЧ",
+     "page": 433
+    },
+    {
+     "title": "MATERIALLAR KIMYOVIY TARKIBINI ULARNING HOSSALARI VA TAN NARXIGA TA‘SIRI",
+     "byline": "Magistr: Umaraliyev Hojiakbar Ma‘murjon o‘g‘li, Ilmiy rahbar: Madaminov Bahrom Mirodilovich",
+     "page": 435
+    },
+    {
+     "title": "INVESTIGATION OF THE PROPERTIES OF ANTICORROSIVE COMPOSITE MATERIALS BASED ON LOCAL RAW MATERIALS",
+     "byline": "Senior teacher Sh. G. Rubidinov., student A. O. Olimjonov",
+     "page": 438
+    },
+    {
+     "title": "O'SIMLIK MOYLARINI TOZALASH UCHUN RAQOBATBARDOSH SORBENLAR OLISHNING SAMARADOR USULI",
+     "byline": "K.o‘qt. Sayimova D.Q., dots. Sultonov Sh.A., magistr. Rahmonova X.",
+     "page": 439
+    },
+    {
+     "title": "ISHLAB CHIQILGAN SORBENTLARNING SIRT MORFOLOGIYASI, TUZILISHI, KIMYOVIY TARKIBINI O'RGANISH",
+     "byline": "K.o‘qt. Sayimova D.Q., dots. Sultonov Sh.A.",
+     "page": 440
+    },
+    {
+     "title": "SORBENTLAR OLISH VA XOSSASINI O‘ZGARTIRISH METODIKASI",
+     "byline": "Sultonov Sh.A., Sayimova D.Q., k.o‘qt. Xolov X.M",
+     "page": 441
+    },
+    {
+     "title": "PAXTA MOYI TARKIBI VA UNI TOZALASH USULLARI",
+     "byline": "Magistr Oripova M. O, dots Sultonov Sh.A",
+     "page": 442
+    },
+    {
+     "section": "IV sho‘ba. Ta’limda innovatsion texnologiyalar, iqtisod va menejment"
+    },
+    {
+     "title": "KIMYO FANLARINI O‘QITISH METODIKASINI INNOVATSION TEXNOLOGIYALAR YORDAMIDA TAKOMILLASHTIRISH",
+     "byline": "Ochilova Maxbuba Kamol qizi",
+     "page": 444
+    },
+    {
+     "title": "Innovatsion texnologiyalarni bug‘doy donining morfologik va anatomik tuzilishini o‘qitish jarayonida qo‘llash",
+     "byline": "Normamatov N.D., Aliqulova D.A., Bobomurotov N.N",
+     "page": 445
+    },
+    {
+     "title": "ALKINLAR MAVZUSINI O'QITISHDA ZAMONAVIY PEDAGOGIK TEXNOLOGIYA USULLARIDAN FOYDALANISH",
+     "byline": "Farg‘ona jamoat salomatligi tibbiyot instituti Tibbiy va biologik kimyo kafedrasi assistenti Nazirtashova Roziya Mamadaliyevna.",
+     "page": 447
+    },
+    {
+     "title": "KIMYO MASHG‘ULOTLARIDA KOMPYUTER TEXNOLOGIYALARI ROLI",
+     "byline": "Allayev Jumakul",
+     "page": 449
+    },
+    {
+     "title": "ANALITIK KIMYO TA‘LIMIDA INNOVATSION TEXNOLOGIYALAR",
+     "byline": "Ruziyev E.A.",
+     "page": 450
+    },
+    {
+     "title": "KIMYo TALIMIDA KIMYoVIY KINETIKA VA KATALIZ NAZARIYaLARINI O‘QITIShNING PEDAGOGIK ASOSLARI",
+     "byline": "k.f.n. dots. B.Abduraxmanov magistrantlar: F. Mamatmuradova, Z. Pardaeva, F.Xo‘jaqulova",
+     "page": 451
+    },
+    {
+     "title": "KIMYo TA‘LIM SIFATINI OShIRIShDA O‘QITUVChINING INNOVATSION FAOLIYaTINI PEDAGOGIK ASOSLARI",
+     "byline": "dots. B.Abduraxmanov magistrantlar: A.Tursunov, F.Mamatmuradova",
+     "page": 453
+    },
+    {
+     "title": "ANALITIK KIMYO FANIDAN MUSTAQIL TA‘LIMNI TASHKIL ETISHDA KRoSSVORDLARDAN FOYDALANISH",
+     "byline": "Mavlonov Davronbek",
+     "page": 454
+    },
+    {
+     "title": "ЦИФРОВИЗАЦИЯ ПОТРЕБЛЕНИЯ",
+     "byline": "Элов Олимджон Комилович",
+     "page": 455
+    },
+    {
+     "title": "KREDIT-MODUL TIZIMINING AFZALLIKLARI",
+     "byline": "Ergashev I.M.,Mamirzaev M.A.,Ergashova Sh.I.",
+     "page": 457
+    },
+    {
+     "title": "QATTIQ PLASTIK POLIMER CHIQINDILARNI QAYTA ISHLAB SINTETIK SUYUQ YOQILG'I VA DEZINFEKSIYALOVCHI MAHSULOTLAR ISHLAB CHIQARISH",
+     "byline": "Ernazarov K., Kalabayeva M",
+     "page": 458
+    },
+    {
+     "title": "FIZIKA VA KIMYO FANLARINING O‘ZARO UZVIYLIGI VA BOG‘LIQLIGI",
+     "byline": "Ibrohimova Mohigul Bahodir qizi",
+     "page": 460
+    },
+    {
+     "title": "INNOVATSION TA‘LIM TEXNOLOGIYALARINING KIMYO FANINI O‘QITISHDAGI TADBIQI",
+     "byline": "Kurbanova D.S.",
+     "page": 461
+    },
+    {
+     "title": "UMUMTA‘LIM MAKTABLARIDA YUQORI MOLEKULYAR BIRIKMALAR MAVZUSINI O‘QITISHDA INTERAKTIV METODLARIDAN FOYDALANISH USULLARI",
+     "byline": "Sharifov G‘ulomjon Nabiyevich – Kimyo va uni o‘qitish metodikasi dotsenti v.b. Ixtiyorova Shodiya Toshpo‘lat qizi – magistrant.Vakkasova Mohichehra Ro‘zimurod qizi - magistrant.",
+     "page": 463
+    },
+    {
+     "title": "RAQAMLI LABORATORIYALAR ORQALI KIMYO TA‘LIMINI TASHKIL QILISH",
+     "byline": "Ernazarov Komil Anorboy o‘g‘li Kalabayeva Marina Askar qizi",
+     "page": 467
+    },
+    {
+     "title": "ИСПОЛЬЗОВАНИЯ ДИСТАНЦИОННОГО ОБУЧЕНИЯ В ВЫСШЕГО ОБРАЗОВАНИЯ",
+     "byline": "Уринова А.С., Курбанова М.Б. Магистранты НГПИ, кафедры Химии Научный руководитель: проф. Д.А.Каримова",
+     "page": 470
+    },
+    {
+     "title": "Maktab kimyo darslarida tabiiy fanlar integratsiyasi",
+     "byline": "Rahmonova U.T.- Kimyo va uni o‘qitish metodikasi kafedrasi o‘qituvchisi Mamarazoqov Shohruh Ilhom o‘g‘li-Talaba",
+     "page": 471
+    },
+    {
+     "title": "SAVDO SOTIQ SIYOSATI",
+     "byline": "Hamrayeva Mohira Nabijon qizi, Mamaniyazova Mashxura Asliddin qizi, Usmonova Dilso‘z Asqar qizi",
+     "page": 474
+    },
+    {
+     "title": "AGROSANOAT MAJMUI VA UNING MINTAQAVIY XUSUSIYATLARI",
+     "byline": "Geografiya va iqtisodiy bilim asoslari kafedrasi katta o‘qituvchisi, g.f.f.d. (PhD) H.A. Oblaqulov., magistr S.Bahodirova",
+     "page": 475
+    },
+    {
+     "title": "TA‘LIM JARAYОNIDA MUAMMOLI VA EVRISTIK METODLARNI QOʻLLASH",
+     "byline": "Mamarajab Tojiyev Akkulova Yulduz Alimovna TKTI Yangier filiali katta oʻqituvchisi",
+     "page": 477
+    },
+    {
+     "title": "Kreativ yondashuv asosida Anorganik kimyoning muhim vazifalarini o`qitish metodikasini takomillashtirish",
+     "byline": "Mamatova M.N. Xatamova M.S. Navoiy davlat pedagogika instituti",
+     "page": 479
+    },
+    {
+     "title": "“BOBURNOMA” ASARIDAGI EKOLOGIK TARBIYA TUSHUNCHALARI",
+     "byline": "Toshpulatova Dilraboxon Sobirjonovna",
+     "page": 480
+    },
+    {
+     "title": "KIMYOVIY BILIMLAR BERISHDA SMART TEXNOLOGIYALARNING O‘RHI",
+     "byline": "Xolova Sharifa Farxodovna 1-kurs magistranti Salohiddinova Dildora Alisherovna 1-kurs magistranti Mo‘minova Nargiza Isatullayevna- k.f.n., dotsent",
+     "page": 482
+    },
+    {
+     "title": "Tabiiy fanlarni interfaol usullar yordamida o‘qitish metodikasi",
+     "byline": "Boltayeva R. A. Kimyo va uni o‘qitish metodikasi kafedrasi o‘qituvchisi Safarova Shirida –Talaba",
+     "page": 484
+    },
+    {
+     "title": "Oliy ta‘limdagi innovatsion texnologiyalar va ularni qo‘llashdagi ayrim muammolar",
+     "byline": "Mirusmanova F.,B Jumayev,Razzaqov,Mirusmanova P. B",
+     "page": 485
+    },
+    {
+     "title": "ERITMALAR VA ULARNING KONSENTRATSIYALARINI IFODALASH MAVZUSIGA OID TAJRIBALARNI BAJARISH",
+     "byline": "Mengliyev Mirpo‘lat Urozmahammad o‘g‘li; Yusupov Boburjon Aliyevich; Tursunov Mirfayzi Raximqul o‘g‘li.",
+     "page": 488
+    },
+    {
+     "title": "KIMYO DARSLARIDA WEB SAYTLARNING O‘RNI",
+     "byline": "Muradova Dilafruz Kadirovna, Berdiyorova Aziza Ilhom qizi, Bobonazarova Shahzoda Jaxongir qizi",
+     "page": 490
+    },
+    {
+     "title": "KIMYO DARSLARINI O`QITISHDA ZAMONAVIY PEDAGOGIK TEXNOLOGIYALARNING O‘RNI",
+     "byline": "Normatova Nafosat Shuxrat qizi, Ochilova Mahliyo Baxtiyorovna, Kengashev Ruslan Qasimovich",
+     "page": 492
+    },
+    {
+     "title": "OLIY TA‘LIMDA HAMKORLIK TA'LIMI TEXNOLOGIYALARI IMKONYATLARI",
+     "byline": "Boʼriboev Аziz Аbdumannonovich, Buriboyeva Zuxro Nurmurodov qizi",
+     "page": 494
+    },
+    {
+     "title": "TEXNIKA YO‘NALISHIDAGI OLIY O‘QUV YURTLARIDA “TEBRANISHLAR VA TO‘LQINLAR” BO‘LIMINI O‘QITISHNING O‘ZIGA XOS XUSUSIYATLARI",
+     "byline": "Qulboyev Zohid Xo‘jamuradovich",
+     "page": 498
+    },
+    {
+     "title": "RIVOJLANGAN MAMLAKATLAR TA‘LIM TIZIMI TARAQQIYOTINING AYRIM MASALALARI",
+     "byline": "Turdimurodova L. Xatamova M.S.",
+     "page": 499
+    },
+    {
+     "title": "KIMYO FANINI O‘QITISHDA MODUL TIZIMIDAN FOYDALANISH",
+     "byline": "I.X. Ruziyev, R.V. Tashmatova, M.A. Tog‘ayeva, Z.V. Xurramova",
+     "page": 501
+    },
+    {
+     "title": "YETUK MUTAXASSISLAR TAYYORLASHDA RIVOJLANGAN DAVLATLAR VA O‘ZBEKISTON RESPUBLIKASIDAGI XUSUSIY TA‘LIM BERUVCHI TADBIRKORLARNING TAJRIBALARIDAN FOYDALANISH",
+     "byline": "Аliqulova D.A., Durmanova S.S.",
+     "page": 503
+    },
+    {
+     "title": "MAKTABDA KIMYO AMALIY MASHG‘ULOT DARSLARINI AKTDAN FOYDALANIB TASHKIL ETISH (7-8-SINFLARDA)",
+     "byline": "Jo‘rayev. M.M., Omonov. N.Sh.",
+     "page": 505
+    },
+    {
+     "title": "Kimyo fanini o‘qitishda hamkorlikda o‘qitish texnologiyasi",
+     "byline": "Narimova Venera Polatovna",
+     "page": 507
+    },
+    {
+     "title": "TA'LIM VA HAYOT ÒRTASIDAGI BOĢLIQLIK TAMOYILI",
+     "byline": "ASOSIDA MAKTAB ÒQUVCHILARIGA KIMYOGA QIZIQISHINI SHAKLLANTIRISH Imiy rahbar: t.f.d.,dotsent,Qayipbergenov Atabek Tulepbergenovich Narimova Venera Polatovna",
+     "page": 509
+    },
+    {
+     "title": "Ta‘lim jarayonida o‘quvchilarning tabiiy-ilmiy savodxonligini shakllantirish va oshirish",
+     "byline": "Aybek Yuldashevich Iskandarov Nigora Mahamattalipovna Ergashova",
+     "page": 511
+    },
+    {
+     "title": "UMUMTA‘LIM MAKTABLARIDA RAQAMLI TA'LIM VOSITALARIDAN FOYDALANISHNING AFZALLIKLARI VA KAMCHILIKLARI",
+     "byline": "Ernazarov K.A.",
+     "page": 516
+    },
+    {
+     "title": "OLIY, O‘RTA HAMDA O‘RTA MAXSUS TA‘LIM MAKTABLARINING KORXONA VA TASHKILOTLAR BILAN HAMKORLIKDA ORGANIK KIMYO FANINI O‘QITISHDA MALAKALI MUTAXASSISLAR TAYYORLASH MUAMMOLARI",
+     "byline": "Tuxsanov Feruz Sadullayevich, Oripov Ergash Oripovich",
+     "page": 518
+    },
+    {
+     "title": "Al‘degidlar olinishi va kimyoviy xossalariga xos reaksiyalarni klaster usulida olib borish",
+     "byline": "O`zMU Organik kimyo kafedrasi professori k.f.d. A. K. Abdushukurov Chirchiq davlat pedagogika unversiteti katta o`qituvchisi H. T. To`rayeva",
+     "page": 519
+    },
+    {
+     "title": "РАЗРАБОТКА МЕТОДИКИ ОПРЕДЕЛЕНИЯ ИОНА Fе(III) В АСКОРБИНОВОЙ КИСЛОТОЙ",
+     "byline": "Умаров Фахриддин Абдулазиз угли докторант Джизакского государственного педагогического университета. Узбекистан, Яхшиева Зухра Зиятовна доктор химических наук, профессор Джизакского государственного педагогического университета, Узбекистан",
+     "page": 521
+    },
+    {
+     "title": "KIMYO O‘QITISH METODIKASI FANINI O‘QITISHDA INNOVATSION TEXNOLOGIYALARNING QO‘LLANILISHI",
+     "byline": "Usmonova L.M.",
+     "page": 522
+    },
+    {
+     "title": "Содержание и структура химического образования в средней школе",
+     "byline": "Бегматова Нилуфар Зойиржон кизи",
+     "page": 524
+    },
+    {
+     "title": "Финансовая поддержка субъектов предпринимательства в инновационном развитии экономики",
+     "byline": "Данияров Куатбай Дауирханович",
+     "page": 526
+    },
+    {
+     "title": "Kimyoning asosiy qonunlari mavzusini o‘qitishda zamonaviy pedagogik texnologiya elementlaridan foydalanish",
+     "byline": "Mamatova M.N. Xatamova M.S.",
+     "page": 527
+    },
+    {
+     "title": "СОВРЕМЕННАЯ ХИМИИ И ЕЕ АКТУАЛЬНЫЕ ВОПРОСЫ ПРЕПОДАВАНИЯ",
+     "byline": "Ахмаджон Жуманов, доцент Кокандского государственного педагогического института Рухшона Мехмонова студентка Кокандского государственного педагогического института",
+     "page": 529
+    },
+    {
+     "title": "ИНТЕГРАЦИИ ВУЗ – ШКОЛА ПРЕПОДОВАНИЕ ХИМИЧЕСКИХ ДИЦИПЛИН",
+     "byline": "Ахметова А. студентка 2-курса ЧГПУ, Курбанова А.Дж.",
+     "page": 530
+    },
+    {
+     "title": "ТАЪЛИМ СИФАТИНИ ОШИРИШДА ИННОВАЦИОН ТЕХНОЛОГИЯЛАРДАН ФОЙДАЛАНИШ",
+     "byline": "Холмўминова Дилором Анваровна",
+     "page": 531
+    },
+    {
+     "title": "Табиий география фани бўйича талабалар компетенцияларини ривожлантириш",
+     "byline": "Шодиева Гўзал Рахматуллаевна",
+     "page": 533
+    },
+    {
+     "title": "Faol tadbirkorlik va innovatsion faoliyatni rivojlantirish",
+     "byline": "Raxmonov Ilg‘or",
+     "page": 535
+    },
+    {
+     "title": "РОЛЬ ПРОВЕДЕНИЯ НЕТРАДИЦИОННЫХ МЕТОДОВ НА УРОКАХ ХИМИИ",
+     "byline": "Бойхурозова Мухлиса Валикуловна –студентка 2-го курса Исомиддинов Хаким- магистр 2-го курса",
+     "page": 536
+    },
+    {
+     "title": "ПРИМЕНЕНИЕ ПРОГРАММНОГО КОМПЛЕКСА ДЛЯ СЕТЕВОГО ТЕСТИРОВАНИЯ NETTEST НА УРОКАХ ИНФОРМАЦИОННОЙ ТЕХНОЛОГИИ",
+     "byline": "Хасанов Дилмурод.",
+     "page": 538
+    },
+    {
+     "title": "SHarq mutafakkirlarining tarixiy merosi va уларнинг замонавий таълим tizimi rivojidagi ahamiyati",
+     "byline": "Xatamova Gavhar Qiyomovna",
+     "page": 540
+    },
+    {
+     "title": "BIOLOGIYADAN LABORATORIYA MASHG‘ULOTLARINI INNOVATSION TEXNOLOGIYALAR ASOSIDA TASHKIL ETISH",
+     "byline": "М.Х.Yuldashov, X.B.Shomurotova",
+     "page": 542
+    },
+    {
+     "title": "BO‘LAJAK BIOLOGIYA FANI O‘QITUVCHILARINING IJODIY QOBILIYATLARINI RIVOJLANTIRISH",
+     "byline": "М.Х.Yuldashov, X.B.Shomurotova",
+     "page": 543
+    },
+    {
+     "title": "ODAM ANATOMIYASI FANINI O‘QITISHDA INNOVATSION PEDAGOGIK TEXNOLOGIYALARDAN FOYDALANISH",
+     "byline": "O. M. Shodiyeva b.f.f.d.(PhD) Axtamova Z.",
+     "page": 545
+    },
+    {
+     "title": "AVTOMATLASHTIRISHGA MOYIL BO‘LMAYDIGAN KASBLAR",
+     "byline": "Ilmiy rahbar: Elov Olimdjon Kamiljonovich,Navoiy davlat pedagogika instituti Geografiya va iqtisodiy bilim asoslarikafedrasi o`qituvchisi Nazar NabiyevNavoiy Davlat pedagogika instituti Maktab menejmenti 3- kurs talabasi",
+     "page": 547
+    },
+    {
+     "title": "IQTISODIY INQIROZLAR VA ULARNING KO‘RINISHI",
+     "byline": "Ilmiy rahbar: Elov Olimdjon Kamiljonovich, Navoiy davlat pedagogika institute Geografiya va iqtisodiy bilim asoslari kafedrasi o`qituvchisi Hamidov Jasurbek, Xudoyberdiyev Shahrux Navoiy Davlat pedagogika institutiMaktab menejmenti 3 kurs talabalari",
+     "page": 549
+    },
+    {
+     "title": "KREDIT MUNOSABATLARINING RIVOJLANISH BOSQICHLARI",
+     "byline": "Ilmiy rahbar: Elov Olimdjon Kamiljonovich, Navoiy davlat pedagogika instituti Geografiya va iqtisodiy bilim asoslari kafedrasi o`qituvchisi Olimova Sohiba. Xidirova Kamola.",
+     "page": 551
+    },
+    {
+     "title": "4-SANOAT INQILOBI NATIJASIDA AVTOMATLASHTIRILISHI KUTILAYOTGAN KASBLAR TAHLILI",
+     "byline": "Ilmiy rahbar: Elov Olimdjon Kamiljonovich, Samadova Mohlaroyim",
+     "page": 553
+    },
+    {
+     "section": "V sho‘ba. Ekologik muammolar va ularning yechimlari"
+    },
+    {
+     "title": "O'SIMLIKLAR DUNYOSINI MUHOFAZA QILISH",
+     "byline": "p.f.f.d.(PhD) M.N.Ataqulova. B.Qulmamatov",
+     "page": 555
+    },
+    {
+     "title": "РАМСАР КОНВЕНЦИЯСИ: АЙДАР-АРНАСОЙ КЎЛЛАР ТИЗИМИ ЭКОЛОГИЯСИ",
+     "byline": "Ахмаджонова Ёрқиной Тожимуродовна",
+     "page": 557
+    },
+    {
+     "title": "MARKAZIY OSIYODA EKOLOGIYA FANLARINING RIVOJLANISH TARIXI VA MAHALLIY ALLOMALARINING EKOLOGIK QARASHLARI",
+     "byline": "Shamsidinova G.D.",
+     "page": 559
+    },
+    {
+     "title": "O‘zbekistondagi ekologik muammolar va ularni yechimlari",
+     "byline": "Umarova Saboxon Minavvarovna",
+     "page": 561
+    },
+    {
+     "title": "EKOLOGIK MUAMMOLAR VA ULARNI KELTIRIB CHIQARUVCHI OMILLAR",
+     "byline": "Tojiboyev Oybek Avazjonovich. Nazirtashova Roziya Mamadaliyevna",
+     "page": 561
+    },
+    {
+     "title": "EKOLOGIYA BUZILISHINING TABIATGA TA'SIRI",
+     "byline": "Sh. R. Akobirov.",
+     "page": 565
+    },
+    {
+     "title": "Navoiy viloyati Tomdi tumanidagi “Oqtog‘- Tomdi” qo‘riqxonasida uchraydigan Jayron (Gazella subgutturosa) — ohular (gʻizollar) urugʻiga mansub sut emizuvchi hayvonlar va ularni ekologiyasi",
+     "byline": "Abralov Olim. Sohibnazarov Ramizjon.Umirov Nodir",
+     "page": 567
+    },
+    {
+     "title": "EKOLOGIYA SOHASIDA DAVLAT BOSHQARUVI TIZIMINI TAKOMILLASHTIRISH MASALALARI",
+     "byline": "Shamsidinova G.D.",
+     "page": 569
+    },
+    {
+     "title": "Oqova suvlarini neytrallash usullari",
+     "byline": "Miradxamova Gulyorxon O`tkir qizi Ikromova Munira Suyun qizi",
+     "page": 572
+    },
+    {
+     "title": "Cd2+ БИЛАН РАНГЛИ КОМПЛЕКСЛАР ҲОСИЛ ҚИЛУВЧИ КИМЁВИЙ МОДДАЛАРДА КОЛОРИМЕТРИЯНИНГ АҲАМИЯТИ",
+     "byline": "Жўраев Хасан Бахромович. Яхшиева Зухра Зиятовна Яхшиева Зухра Зиятовна",
+     "page": 573
+    },
+    {
+     "title": "EKOLOGIYA VA INSON OMILI",
+     "byline": "b.f.f.d (PhD). Т.С.КАНАТБАЕВА b.f.f.d (PhD). M.E.UMMATOVA",
+     "page": 574
+    },
+    {
+     "title": "KIMYO SANOATINING ATROF MUHITGA ZARARLI TA‘SIRI",
+     "byline": "Fayzullayeva O‘g‘iloy Umidulloxon qizi Nazirtashova Roziya Mamadaliyevna",
+     "page": 576
+    },
+    {
+     "title": "ATMOSFERA IFLOSLANISHIGA OLIB KELADIGAN ENG KATTA OMILLAR KIMYOVIY MAXSULOTLARDIR",
+     "byline": "Alimova DIlrabo Kamolovna.",
+     "page": 576
+    },
+    {
+     "title": "Muhofaza etiladigan Tabiiy hududlarga ilmiy tadqiqotlarni amalga oshirish vazifalari",
+     "byline": "Rustamov N.T. Sohibnazarov R.A Abralov O.S",
+     "page": 579
+    },
+    {
+     "title": "Mintaqaviy ekologik muamolar va uning kimyo fanidagi o'rni",
+     "byline": "Rahimova Hilolaxon Rustamjonovna, Axmadshoyev Rizvon",
+     "page": 580
+    },
+    {
+     "title": "Ekologik omillar ulardan kelib chiqadigan muammolar",
+     "byline": "Umirov Z.T. Ortiqova M",
+     "page": 582
+    },
+    {
+     "title": "INSON ORGANIZMINING OG‘IR METALLAR BILAN ZARARLANISH YO‘LLARINI OLDINI OLISH CHORALARI",
+     "byline": "H. T. To`rayeva Z. Mo‘miniva",
+     "page": 583
+    },
+    {
+     "title": "Angren qo‘ng‘ir ko‘mri asosida olingan samarali ko‘mir adsorbenti yordamida oqova suv tarkibidagi organik moddalarni tozalash",
+     "byline": "Abdullaxonava Gulruh Abdullajon qizi., Esonqulova Nazira Maxmudovna., Ochilov G‘olibjon Mamayunusovich",
+     "page": 585
+    },
+    {
+     "title": "ДЕНГИЗКЎЛ ЗОВУРИ ЮҚОРИ ОҚИМИ СУВЛАРИНИНГ ГИДРОКИМЁВИЙ ТАРКИБИ",
+     "byline": "Ходжаева Зарина Фахриддин қизи",
+     "page": 586
+    },
+    {
+     "title": "Global ekologik muammolar",
+     "byline": "Xoshimxanova Muhayyo Abralovna, Shamsuddinov Latifxon Odil o‘g‘li, Jumayev Mansur Shokir o‘g‘li, Razzaqov Javlonbek Elmurod o‘g‘li",
+     "page": 589
+    },
+    {
+     "title": "IMPORTANCE OF KYZYLKUM ARHAR INCLUDED IN THE RED BOOK OF UZBEKISTAN",
+     "byline": "Nurmamatova Feruza Muxtor qizi Yaxshiyeva Zuhra Ziyatovna",
+     "page": 590
+    },
+    {
+     "title": "ЕКОЛОГИЯ ВА ХАЛҚАРО ҲАМКОРЛИК",
+     "byline": "Р.А Соҳибназаров. Н.З.Умиров",
+     "page": 592
+    },
+    {
+     "title": "SANOAT OQAVA SUVLARINI ZAHARLI VA OG‘IR METALL IONLARIDAN TOZALASH",
+     "byline": "PhD. Yarmanov Sh.X, PhD.Botirov S.X, проф. Bekchanov D.J",
+     "page": 593
+    },
+    {
+     "title": "ZA‘FARONNING KIMYOVIY TARKIBI VA UNDAN XALQ TABOBATIDA FOYDALANISH",
+     "byline": "Asqarov Ibrohimjon Rahmonovich, Ubaydullayev Komiljon Tursunboyevich",
+     "page": 594
+    },
+    {
+     "title": "AYDAR-ARNASOY KO‘LINING EKOLOGIK HOLATINI O‘RGANISH MASALALARI",
+     "byline": "Xamroyeva Madina Dadajonovna. Hamrayeva Gulshoda",
+     "page": 596
+    },
+    {
+     "title": "SHAHAR KESIMIDAGI EKOLOGIK MUAMMOLAR",
+     "byline": "Xamroyeva Madina Dadajonovna. Baratov Ulug‘bek",
+     "page": 598
+    },
+    {
+     "title": "МОРФОЛОГИЧЕСКАЯ ХАРАКТЕРИСТИКА МИКРОПЛАСТИКА",
+     "byline": "Юлдашева М.Б.",
+     "page": 599
+    },
+    {
+     "title": "Zaytunning xalq xo‘jaligidagi axamiyati va foydali xususiyatlari",
+     "byline": "N.D. Normamatov, Normamatov, N.N.Bobomuratov, M.S.Raximov, O.A.Gulboyev, R.O. Yo`ldoshev.",
+     "page": 600
+    },
+    {
+     "title": "ZARAFSHON HAVZASI SUG‘ORILADIGAN TUPROQLARI MEXANIK TARKIBINING TABIIY VA ANTROPOGEN OMILLAR TA‘SIRIDA O‘ZGARISHI",
+     "byline": "Kushakov A. J., Yuldashev M.X.",
+     "page": 602
+    },
+    {
+     "title": "ТРОФИЧЕСКАЯ ПИРАМИДА ПИТАНИЯ БИОЦЕНОЗА АКТИВНОГО ИЛА АЭРОТЕНКОВ",
+     "byline": "Тагаев Илхом Ахрорович, Рустамов Бекмурод Алишер ўғли, Кенжаева Мохинур Жамол қизи",
+     "page": 603
+    },
+    {
+     "title": "OROL MUAMMOSI - DUNYO MUAMMOSI",
+     "byline": "Karimova Feruza Sattarovna. Jo‘rayeva Farangiz Sherali qizi",
+     "page": 605
+    },
+    {
+     "title": "AYDARKO`L KO`LINING EKOLOGIK HOLATI",
+     "byline": "Jumabaev Baxodir Erejepovich",
+     "page": 607
+    },
+    {
+     "title": "ЗЕМЕЛЬНАЯ РЕНТА: ЭКОЛОГO-ЭКОНОМИЧЕСКИЕ ПРОБЛЕМЫ И РЕШЕНИЯ",
+     "byline": "Кувандиков Баходир Пардаевич",
+     "page": 609
+    },
+    {
+     "title": "O'ZBEKISTON SHAROITIDA TOVAR BALIQLARNI YETISHTIRISHNING AYRIM EKOLOGIK JIHATLARI",
+     "byline": "Abdusalomova Maftuna Sheraliyevna. Jumabaev Baxodir Erejepovich",
+     "page": 611
+    },
+    {
+     "title": "ATMOSFERA HAVOSINI SOFLIGINI SAQLASH HOZIRGI DAVRNING DOLZARB MUAMMOSIDIR",
+     "byline": "Ro‘ziqulova Xurshida Qo‘ziboyevna",
+     "page": 612
+    },
+    {
+     "title": "Қайта тикланувчи энергия манбаларни қўллаган ҳолда иссиқлик электр станцияларининг атроф-муҳитга бўлган таъсирини камайтириш",
+     "byline": "А. Р. Худайназаров., Ж.Б.Ражабов., Н.Х.Бозорова",
+     "page": 613
+    },
+    {
+     "title": "TODAY'S ENVIRONMENTAL PROBLEMS AND SOLUTIONS",
+     "byline": "Jobborov Bakhrom Turgunovich Yaxshilikov Sardor Anvar oʻg‘li Abdullaeva Asal Dilshod qizi",
+     "page": 615
+    },
+    {
+     "title": "IMPACT OF TODAY'S ECOLOGICAL PROBLEMS ON CLIMATE FACTORS",
+     "byline": "Jobborov Bakhrom Turgunovich, Абдуллаева Асал Дилшод қизи",
+     "page": 617
+    },
+    {
+     "title": "ОТБОР ПРОМЫШЛЕННЫХ СТОЧНЫХ ВОД ПО БИОЛОГИЧЕСКОМУ МЕТОДУ ОЧИСТКИ И ИХ XАРАКТЕРИСТИКА",
+     "byline": "С.Хужжиев, А.Сайфуллаев",
+     "page": 619
+    },
+    {
+     "title": "НАСЛЕДОВАНИЕ ЦВЕТА ВОЛОКНА ХЛОПЧАТНИКА",
+     "byline": "Рахмонова Рухсора Бахриддиновна Рахмонова Гулсара Бахриддиновна Рахмонова Хилола Бахриддиновна",
+     "page": 621
+    },
+    {
+     "title": "ЭКОЛОГИЧЕСКАЯ КОНЦЕПЦИЯ ОХРАНЫ ПРИРОДЫ",
+     "byline": "Самадов А.Х, Халилов С.М, Бекназарова Х.И.",
+     "page": 623
+    },
+    {
+     "title": "TUPROQ EROZIYASI: SABABLARI, TURLARI, OQIBATLARI, OLDINI OLISH USULLARI",
+     "byline": "A.J.Kushakov, М.X.Yuldashov, D.T.Yaxshiboyeva, G.V.Sharapova",
+     "page": 625
+    },
+    {
+     "title": "TUPROQNING IFLOSLANISH TURLARI VA MANBALARI HAMDA ULARNI BARTARAF ETISH CHORALARI",
+     "byline": "М.X.Yuldashov, D.T.Yaxshiboyeva, G.V.Sharapova",
+     "page": 627
+    },
+    {
+     "title": "Республикамизда сув ресурсларини муҳофаза қилиш ва улардан оқилона фойдаланиш",
+     "byline": "Д.T. Яхшибоева, Н.Д.Жуманиёзова",
+     "page": 629
+    },
+    {
+     "title": "EKOLOGIK MUAMMOLARNING KELIB CHIQISHI VA ULARNING YECHIMLARI",
+     "byline": "Kenjayeva Sevara Ismoil qizi",
+     "page": 630
+    },
+    {
+     "title": "CHIQINDILARDAN OQILONA FOYDALANISH ISTIQBOLLARI",
+     "byline": "Hamroyeva Marhabo Murodovna. Xamraeva Muqaddas Murodovna. Eshqobulova Nigora Normurotovna. Tilavova Madina Tulqinovna",
+     "page": 631
+    },
+    {
+     "title": "Atrof muhit ifloslanishi va uning oldini olish chora tadbirlari",
+     "byline": "Rahimova Hilolaxon Rustamjonovna, Zaripov Jamshid",
+     "page": 633
+    },
+    {
+     "title": "Global ekologik muammolar va ularning barqaror taraqqiyotga ta‘siri",
+     "byline": "Rajabov Omonboy G‘afforovich",
+     "page": 635
+    },
+    {
+     "title": "ЯНГИ ЭНЕРГИЯ ОЛИШ ЖАРАЁНИДАГИ ЭКОЛОГИК МУАММОЛАР",
+     "byline": "Д.А.Каримова, F.S.Soibova, G.Yo. Gadoyeva",
+     "page": 636
+    },
+    {
+     "title": "A NEW IONITS FOR DECISION OF THE PROBLEMS PEELINGS SEWAGE OIL AND GAZ INDUSTRY",
+     "byline": "Abduvaliev A.A., Nadjmutdinova N.A., Mukhamedgaliev B.A.",
+     "page": 638
+    },
+    {
+     "title": "ENVIRONMENTAL SAFETY OF THE OIL AND GAS INDUSTRY AN IMPORTANT ASPECT OF MODERNITY",
+     "byline": "Jumanova S.G.,Mirzaxmedov B.Kh.,Sattarov Z.M.",
+     "page": 640
+    },
+    {
+     "title": "АТМОСФЕРА ҲАВОСИНИНГ ИФЛОСЛАНИШИ ВА УНИ БАРТАРАФ ЭТИШ ЙЎЛЛАРИ",
+     "byline": "Гулбоев Яхшилик Ирсалиевич Холмўминова Дилором Анваровна",
+     "page": 642
+    },
+    {
+     "title": "АТРОФ-МУҲИТ ОБЪЕКТЛАРИДА АЛЮМИНИЙ ИОНИНИ ЛЮМИНЕЦЕНТ УСУЛДА АНИҚЛАШДА ҚЎЛЛАНИЛАДИГАН РЕАГЕНТЛАРНИ ИММОБИЛЛАШНИНГ АНАЛИТИК ҲОССАЛАРИНИ ЯХШИЛАШ",
+     "byline": "Бобожонов Хикмат Шавкатович. Усманова Хилола Уматалиевна",
+     "page": 644
+    },
+    {
+     "title": "OQAVA SUVLARNI TARKIBI VA ULARNI TOZALASHNING",
+     "byline": "ZAMONAVIY USULLARI (Navoiy viloyati miqyosida) R.Komilov, F.To‘xtayev",
+     "page": 646
+    },
+    {
+     "title": "OQAVA SUVLARNI TOZALASHNING SAMARALI USULLARI",
+     "byline": "professor B.B.Sobirov. Husanov Sultonbek Yusup o‘g‘li",
+     "page": 647
+    },
+    {
+     "title": "MIKROELEMENTLAR: KOBALT VA NIKELNING O`SIMLIK FIZIOLOGIYASIGA TA`SIRI",
+     "byline": "Xalilova Lola Mehriddinovna Abdullayeva Muborak Maxsumovna",
+     "page": 649
+    },
+    {
+     "title": "AYDAR KO‘L TIZIMINING KIMYOVIY TAVSIFI",
+     "byline": "Xalibekova Almagul Kenjebayevna",
+     "page": 650
+    },
+    {
+     "title": "INSON FAOLIYATINING TABIAT VA TABIIY MUHITGA TA‘SIRI",
+     "byline": "IBODOVA MAHFUZA NAMOZOVNA",
+     "page": 651
+    },
+    {
+     "section": "VI sho‘ba. Aniq va tabiiy fanlar"
+    },
+    {
+     "title": "THE IMPORTANCE OF ORGANIZING LABORATORY TRAINING IN CHEMISTRY IN SECONDARY EDUCATION SCHOOLS",
+     "byline": "Xamidov Davlatmurod Xayrulloyevich",
+     "page": 652
+    },
+    {
+     "title": "KIMYODAN BILIM OLISHDA MUAMMOLI TAJRIBALARNING O‘RNI",
+     "byline": "Botirova Sabogul Rahmatullayevna Ro‘ziqulova Xurshida Qo‘ziboyevna",
+     "page": 655
+    },
+    {
+     "title": "O`QUVCHI YOSHLARGA SUV MANBALARINING EKOGIGIYENIK HOLATLARINI YAXSHILANISHI SOG`LOM HAYOT GAROVI EKANLIGINI TUSHUNTIRISH",
+     "byline": "Ro`ziyeva Nazira Yodgorovna.",
+     "page": 657
+    },
+    {
+     "title": "ERITMALAR KONSENTRATSIYASINI HISOBLASH YUZASIDAN MASALALAR ISHLASH USULLARI",
+     "byline": "Pulatov Xudayor Erkin o`g`li,Kalonov Rustam Mamadiyorovich",
+     "page": 659
+    },
+    {
+     "title": "EKOLOGIK TARBIYANI SHAKLLANTIRISHDA EKSKURSIYA DARSLARINING O`RNI",
+     "byline": "M.X. Ravshanova, F.A.Shoyimov",
+     "page": 661
+    },
+    {
+     "title": "YAPON LAMINARIYASINING KIMYOVIY TARKIBI VA AHAMIYATI",
+     "byline": "I.I.Xomidov, S.X.Maxammatova",
+     "page": 662
+    },
+    {
+     "title": "ORGANIK YOD SAQLOVCHI TABIIY OZIQ OVQAT QOSHILMALARIDAN FOYDALANISH",
+     "byline": "Isaqov Hayatulla, Razzakov Ziyodulloh Nabijon o`g`li",
+     "page": 664
+    },
+    {
+     "title": "EGRI CHIZIQLI HARAKAT MAVZUSINI O‘QITISHDA FANLARARO BOG‘LANISH",
+     "byline": "Juraeva Nasiba Mardiyevna, Axmadjonova Umida Tojimurodovna",
+     "page": 665
+    },
+    {
+     "title": "Geografiya darslarida o`quvchilarda ijodiy faoliyat ko`nikmalarini shakllantirish",
+     "byline": "Kodirova Maxfuza Maxmudovna",
+     "page": 667
+    },
+    {
+     "title": "KIMYO O‘QITUVCHISINING KASBIY KOMPETENSIYALARNI SHAKLLANTIRISH",
+     "byline": "Xamroev K.SH, Abdullayeva N.E, Xadjiyeva D.S",
+     "page": 669
+    },
+    {
+     "title": "KATALIZATORLI REAKSIYALAR MEXANIZMI VA ULARNING QONUNIYATLARI",
+     "byline": "Muxamedov A.Y., Umarova M.B.",
+     "page": 670
+    },
+    {
+     "title": "IQTISODIY FANLARNI MASOFADAN O‘QITISH METODINI QO‘LLASHNING OB‘YEKTIV ASOSLARI, AFZALLIKLARI VA MUAMMOLARI",
+     "byline": "Cho‘lliyev Suhrob Rabbonaqulovich",
+     "page": 672
+    },
+    {
+     "title": "ҚИШЛОҚ ХЎЖАЛИГИ МАҲСУЛОТЛАРИНИ ҚУРИТИШНИНГ СУБЛИМАЦИОН ВА АКУСТИК УСУЛЛАРИ",
+     "byline": "Усмонов Нодиржон Ботиралиевич",
+     "page": 674
+    },
+    {
+     "title": "MEXANIKANI NAZARIY O‘RGANISHDA INTERFAOL METODLARDAN FOYDALANISH",
+     "byline": "Bekmurodova Manzura Bahodir qizi",
+     "page": 676
+    },
+    {
+     "title": "KIMYOVIY TAJRIBALARNI O‘TKAZISHNING ILMIY METODOLOGIK ASOSLARI",
+     "byline": "I.S.Sedalova, O‘.H.Abdiraxmonova, Z.X. Suyunova",
+     "page": 677
+    },
+    {
+     "title": "KIMYO FANINI O‘QITISHDA “SWOT-TAHLIL” METODIDAN FOYDALANISH",
+     "byline": "Eshchanov Ruzumboy Abdullayevich,Majidova Ferangiz Abduqodirova Ayzada Abdumussaqizi",
+     "page": 679
+    },
+    {
+     "title": "BIOLOGIYA DARSLARIDA INTERAKTIV MODULLARDAN FOYDALANISHNING AHAMIOYATI",
+     "byline": "Yuldasheva M.B., Ravshanova S.",
+     "page": 680
+    },
+    {
+     "title": "ВОЗРАСТНЫЕ ОСОБЕННОСТИ ИЗМЕНЕНИЯ ДЕЯТЕЛЬНОСТИ СИСТЕМ ВНЕШНЕГО ДЫХАНИЯ",
+     "byline": "Атамухамедова Масъуда Рахимжановна.",
+     "page": 681
+    },
+    {
+     "title": "Ekologik ta‘lim-tarbiya atrof-muhit xavfsizligini ta‘minlash omili",
+     "byline": "Umarova J.Q. Erkinova Z",
+     "page": 682
+    },
+    {
+     "title": "ИССЛЕДОВАНИЕ РОСТА И РАЗВИТИЯ БИФИДОБАКТЕРИЙ",
+     "byline": "Раззаков Набижон Алижанович,Отабекова Мохира Уйгунбек кизи",
+     "page": 683
+    },
+    {
+     "title": "AKADEMIK LITSEYLARDA FIZIKA FANINING “KVANT FIZIKA”BO‘LIMINI O‘QITIShNING NAZARIY-METODOLOGIK ASOSLARI",
+     "byline": "Sattarkulov Komil Raxmatovich",
+     "page": 684
+    },
+    {
+     "title": "O‘QUVCHILARDA TABIIY-ILMIY DUNYOQARASHNI SHAKLLANTIRISHDA KIMYONI INTEGRATIV O‘QITISHNING AHAMIYATI",
+     "byline": "A.M. Jumanov,M.Turdialieva",
+     "page": 685
+    },
+    {
+     "title": "“ПСОРАЛИН” ОЗИҚ-ОВҚАТ ҚЎШИЛМАСИ ТАРКИБИДАГИ β- КАРОТИН МИҚДОРИНИ АНИҚЛАШ",
+     "byline": "Ю.Х.Холбоев, А.Пакирдинов, А.Г.Махсумов, И.Р.Аскаров",
+     "page": 686
+    },
+    {
+     "title": "KIMYODAN DARSDAN TASHQARI MASHG‘ULOTLARNI INNOVATSION TEXNOLOGIYALARDAN FOYDALANIB TASHKILLASH",
+     "byline": "Mеliboyeva Gulchehra Salavatovna",
+     "page": 688
+    },
+    {
+     "section": "VII sho‘ba. Kimyo sanoatida innovatsion texnologiyalar"
+    },
+    {
+     "title": "TURLI MAHALLIY KVARS NAMUNALARIDAN SUVOQ QORISHMALARI TAYYORLASH UCHUN TO‘LDIRUVCHI SIFATIDA FOYDALANISH",
+     "byline": "ZOKIROV X.T., ABDULLAYEV O.G‘",
+     "page": 690
+    },
+    {
+     "title": "KIMYOVIY JARAYONLARDAN OQILONA FOYDALANISH",
+     "byline": "Tursuntosheva Mohigul Hikmatullayevna",
+     "page": 692
+    },
+    {
+     "title": "ХИМИЧЕСКАЯ ПРОМЫШЛЕННОСТЬ РЕСПУБЛИКИ УЗБЕКИСТАН: ПРОБЛЕМЫ, ПРЕПЯТСТВУЮЩИЕ РАЗВИТИЮ ХИМИЧЕСКОЙ ОТРАСЛИ",
+     "byline": "Мирзакулова Ирода Кодировна,Холмуминова Дилором Анваровна",
+     "page": 694
+    },
+    {
+     "title": "SULFOALYUMINAT ASOSIDAGI DEKORATIV SEMENTLAR, ULARNING QATTIQLASHUV JARAYONLARI",
+     "byline": "Qodirova Gulchehra Yuldashevna",
+     "page": 696
+    },
+    {
+     "title": "KIMYO SANOATI KORXONALARINI INNOVATSION RIVOJLANTIRISH ISTIQBOLLARI",
+     "byline": "Abduraxmonova Iroda Sobir qizi",
+     "page": 698
+    },
+    {
+     "title": "FTORTUTGAN -DIKARBONIL BIRIKMALAR ATSILGIDRAZONLARINING BIOLOGIK FAOLLIGINI KOMPUTER DASTURI YORDAMIDA BASHORAT QILISH",
+     "byline": "Q.G`. Avezov, B.B. Umarov, G.Q. Xoliqova, B.Sh. Ganiyev",
+     "page": 701
+    },
+    {
+     "title": "Kundalik turmushda kimyo",
+     "byline": "Rashidov Dilshod Ergashevich",
+     "page": 702
+    },
+    {
+     "title": "BUGʼDOY (Triticum aestivum L.) TАRKIBIDАGI BENZ[А]PIRENNI YuSSX USULIDА АNIQLАSH",
+     "byline": "Tursunov M.R,U.K.Abduraxmanova",
+     "page": 703
+    },
+    {
+     "title": "Pomidorlarda antioksidant vitaminlarni yuqori samarali suyuqlik xromotografiyasida aniqlash",
+     "byline": "F.X. Ibragimov, N.Sh.Hazratov",
+     "page": 704
+    },
+    {
+     "title": "СИНТЕЗ И СВОЙСТВА БИМЕТАЛЛИЧЕСКОГО ЭЛЕКТРОКАТАЛИЗАТОРА ФОСФИДА Ni-Co-P ДЛЯ ГЕНЕРАЦИИ ВОДОРОДНОГО ТОПЛИВА",
+     "byline": "Рашидова К.Х., Каттаев Н.Т., Акбаров Х.И.",
+     "page": 709
+    },
+    {
+     "title": "Ni/ Al2O3 нанокатализаторнинг физик-кимёвий хоссалари",
+     "byline": "Б.М.Абдуллаев",
+     "page": 711
+    },
+    {
+     "title": "The Role of Succinic Acid in the Body of Plants",
+     "byline": "A.R.Axmedov O‘.Q.Abdurahmonova",
+     "page": 713
+    },
+    {
+     "title": "Ғовакли алюминий оксид асосидаги нанокомпозит материалларнинг олиниши ва хоссалари",
+     "byline": "Б.М.Абдуллаев",
+     "page": 714
+    },
+    {
+     "title": "ПЕРСПЕКТИВНЫЕ НАНОКОМПОЗИЦИОННЫЕ МАШИНОСТРОИТЕЛЬНЫЕ МАТЕРИАЛЫ С ИСПОЛЬЗОВАНИЕМ НАНОСТРУКТУРНЫХ КЛАСТЕРОВ",
+     "byline": "Бозоров О.Н, Дусткобилов Э., Рахматов Э.А., Зиямухамедова У.А",
+     "page": 716
+    },
+    {
+     "title": "MAHALLIY CHIQINDILAR ASOSIDA MUQOBIL YO‘L BITUMINI OLISH",
+     "byline": "Raximov Bekzod Baxtiyorovich, Adizov Bobirjon Zamirovich",
+     "page": 721
+    },
+    {
+     "title": "MUQOBIL YO‘L BITUMINING ASOSIY SIFAT KO‘RSATKICHLARI",
+     "byline": "Raximov Bekzod Baxtiyorovich, Adizov Bobirjon Zamirovich",
+     "page": 723
+    },
+    {
+     "title": "Сода саноати чиқиндиларини қайта ишлаш асосида янги махсулотларни олиш",
+     "byline": "Умиров Ф. Э., Номозова Г. Р., Мажидов Х.Б., ҲамидоваГ.О.",
+     "page": 724
+    },
+    {
+     "title": "ION-SELEKTIV ELEKTRODLARGA NANOZARRACHALI MEMBRANANI QO‘LLASH",
+     "byline": "Yangibayev S., Mo‘minov O‘",
+     "page": 725
+    },
+    {
+     "title": "KOBALT XLORID-GLITSIN-SUV UCHLAMCHI SISTEMASINING IZOTERMIK ERUVCHANLIGINI 25 °C DA O‘RGANISH",
+     "byline": "Ernazarov Komil Anorboy o‘g‘li",
+     "page": 726
+    },
+    {
+     "title": "QUY JUNI ASOSIDA KERATIN OQSILI GIDROLIZATINI OLISH VA UNING AMINOKISLOTALI TARKIBINI TADQIQ ETISH",
+     "byline": "Т.Б.Алиев, Ф.М. Рахимова, Ф.Ш.Ҳамраева",
+     "page": 729
+    },
+    {
+     "title": "KERATIN GIDROLIZATINING 3d-METALL IONLARI BILAN KOMPLEKS BIRIKMALAR HOSIL QILISHI VA Cu(II) IONLARINI AJRATIB OLISHDAGI SAMARADORLIGI",
+     "byline": "Т.Б.Алиев, Ф.М. Рахимова, Ф.Ш.Ҳамраева",
+     "page": 731
+    },
+    {
+     "title": "ORALIQ METALLARNING DIKARBON KISLOTALARI VA ASPARAGIN KISLOTASI BILAN KOMPLEKSLARINI SINTEZI VA TADQIQOTI",
+     "byline": "Zayniddinova Gulchexra Shokirjon qizi",
+     "page": 733
+    },
+    {
+     "title": "TEMIR(2+) VA (3+) IONLARINING ASPARAGIN VA DIKARBON KISLOTALARI BILAN SINTEZ QILINGAN GETEROLIGANDLI KOMPLEKS BIRIKMALARINI TADQIQOTI",
+     "byline": "Zayniddinova Gulchehra Shokirjon qizi",
+     "page": 735
     }
    ]
   }
