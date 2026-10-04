@@ -1065,6 +1065,1124 @@
    ]
   },
   {
+   "slug": "iqlim-ozgarishi-sharoitida-ekologiya-iqtisodiyot-barqaror-rivojlanish",
+   "type": "proceedings",
+   "language": "uz",
+   "title": "Iqlim o‘zgarishi sharoitida ekologiya, iqtisodiyot va barqaror rivojlanish muammolari va ularning yechimlari",
+   "subtitle": "Respublika ilmiy-amaliy konferensiya materiallari to‘plami",
+   "title_ru": "Проблемы экологии, экономики и устойчивого развития в условиях изменения климата и пути их решения",
+   "subtitle_ru": "Сборник материалов республиканской научно-практической конференции",
+   "title_en": "Problems of Ecology, Economy and Sustainable Development under Climate Change and Their Solutions",
+   "subtitle_en": "Proceedings of the national scientific and practical conference",
+   "date": "2025-10-03",
+   "date_end": "2025-10-04",
+   "year": 2025,
+   "place": "Navoiy",
+   "place_ru": "Навои",
+   "place_en": "Navoi",
+   "publisher": "Navoiy davlat universiteti",
+   "publisher_ru": "Навоийский государственный университет",
+   "publisher_en": "Navoi State University",
+   "people": [
+    {
+     "family": "Kalonov",
+     "given": "Muhiddin",
+     "role": "chief_editor",
+     "affiliation": "NDU rektori, iqtisodiyot fanlari doktori, professor",
+     "affiliation_ru": "ректор НавГУ, доктор экономических наук, профессор",
+     "affiliation_en": "Rector of Navoi State University, Doctor of Economic Sciences, Professor"
+    },
+    {
+     "family": "Ilyasov",
+     "given": "A. S.",
+     "role": "reviewer",
+     "affiliation": "Navoiy innovatsiyalar universiteti “Aniq, texnika va tabiiy fanlar” kafedrasi professori, biologiya fanlari doktori",
+     "affiliation_ru": "профессор кафедры точных, технических и естественных наук Навоийского инновационного университета, доктор биологических наук",
+     "affiliation_en": "Professor, Department of Exact, Technical and Natural Sciences, Navoi Innovation University, Doctor of Biological Sciences"
+    },
+    {
+     "family": "Jumabayev",
+     "given": "B. Ye.",
+     "role": "reviewer",
+     "affiliation": "NDU Biologiya kafedrasi dotsenti, biologiya fanlari nomzodi",
+     "affiliation_ru": "доцент кафедры биологии НавГУ, кандидат биологических наук",
+     "affiliation_en": "Associate Professor, Department of Biology, Navoi State University, Candidate of Biological Sciences"
+    },
+    {
+     "family": "Ummatova",
+     "given": "Muxayyo",
+     "role": "technical_editor",
+     "affiliation": "NDU Biologiya kafedrasi dotsenti, biologiya fanlari bo‘yicha falsafa doktori (PhD)",
+     "affiliation_ru": "доцент кафедры биологии НавГУ, доктор философии по биологическим наукам (PhD)",
+     "affiliation_en": "Associate Professor, Department of Biology, Navoi State University, PhD in Biology"
+    },
+    {
+     "family": "To‘yboyev",
+     "given": "M. M.",
+     "role": "technical_editor",
+     "affiliation": "NDU Ilmiy tadqiqotlar va innovatsiyalar departamenti mutaxassisi",
+     "affiliation_ru": "специалист департамента научных исследований и инноваций НавГУ",
+     "affiliation_en": "Specialist, Department of Research and Innovation, Navoi State University"
+    },
+    {
+     "family": "Kushakov",
+     "given": "A. J.",
+     "role": "committee",
+     "affiliation": "tashkiliy qo‘mita raisi, NDU Biologiya kafedrasi mudiri, professor",
+     "affiliation_ru": "председатель оргкомитета, заведующий кафедрой биологии НавГУ, профессор",
+     "affiliation_en": "Chair of the organising committee, Head of the Department of Biology, Navoi State University, Professor"
+    },
+    {
+     "family": "Jumabayev",
+     "given": "B. Ye.",
+     "role": "committee",
+     "affiliation": "NDU Biologiya kafedrasi dotsenti, biologiya fanlari nomzodi",
+     "affiliation_ru": "доцент кафедры биологии НавГУ, кандидат биологических наук",
+     "affiliation_en": "Associate Professor, Department of Biology, Navoi State University, Candidate of Biological Sciences"
+    },
+    {
+     "family": "Ibodova",
+     "given": "M. N.",
+     "role": "committee",
+     "affiliation": "NDU Biologiya kafedrasi dotsenti, pedagogika fanlari bo‘yicha falsafa doktori (PhD)",
+     "affiliation_ru": "доцент кафедры биологии НавГУ, доктор философии по педагогическим наукам (PhD)",
+     "affiliation_en": "Associate Professor, Department of Biology, Navoi State University, PhD in Pedagogy"
+    },
+    {
+     "family": "Sharapova",
+     "given": "G. V.",
+     "role": "committee",
+     "affiliation": "NDU Biologiya kafedrasi dotsenti, pedagogika fanlari bo‘yicha falsafa doktori (PhD)",
+     "affiliation_ru": "доцент кафедры биологии НавГУ, доктор философии по педагогическим наукам (PhD)",
+     "affiliation_en": "Associate Professor, Department of Biology, Navoi State University, PhD in Pedagogy"
+    },
+    {
+     "family": "Xasanov",
+     "given": "N. H.",
+     "role": "committee",
+     "affiliation": "NDU Biologiya kafedrasi katta o‘qituvchisi, biologiya fanlari bo‘yicha falsafa doktori (PhD)",
+     "affiliation_ru": "старший преподаватель кафедры биологии НавГУ, доктор философии по биологическим наукам (PhD)",
+     "affiliation_en": "Senior Lecturer, Department of Biology, Navoi State University, PhD in Biology"
+    },
+    {
+     "family": "G‘aybullayeva",
+     "given": "O. O.",
+     "role": "committee",
+     "affiliation": "NDU Biologiya kafedrasi o‘qituvchisi, biologiya fanlari bo‘yicha falsafa doktori (PhD)",
+     "affiliation_ru": "преподаватель кафедры биологии НавГУ, доктор философии по биологическим наукам (PhD)",
+     "affiliation_en": "Lecturer, Department of Biology, Navoi State University, PhD in Biology"
+    }
+   ],
+   "keywords": [
+    "iqlim o‘zgarishi",
+    "ekologik muammolar",
+    "yashil iqtisodiyot",
+    "qayta tiklanuvchi energiya",
+    "ekologik ta’lim",
+    "barqaror rivojlanish",
+    "xalqaro hamkorlik"
+   ],
+   "keywords_ru": [
+    "изменение климата",
+    "экологические проблемы",
+    "зелёная экономика",
+    "возобновляемая энергия",
+    "экологическое образование",
+    "устойчивое развитие",
+    "международное сотрудничество"
+   ],
+   "keywords_en": [
+    "climate change",
+    "environmental problems",
+    "green economy",
+    "renewable energy",
+    "environmental education",
+    "sustainable development",
+    "international cooperation"
+   ],
+   "abstract": "To‘plam Navoiy davlat universitetida 2025-yil 3–4-oktyabrda o‘tkazilgan “Iqlim o‘zgarishi sharoitida ekologiya, iqtisodiyot va barqaror rivojlanish muammolari va ularning yechimlari” mavzusidagi respublika ilmiy-amaliy konferensiya materiallaridan tashkil topgan. Konferensiya O‘zbekiston Respublikasi Oliy ta’lim, fan va innovatsiyalar vazirligining 2024-yil 27-dekabrdagi 490-son buyrug‘iga asosan o‘tkazildi. To‘plamdagi 189 ta maqola besh sho‘baga bo‘lingan: iqlim o‘zgarishi va ekologik muammolar, iqtisodiy barqarorlik va yashil iqtisodiyot, energetika va innovatsion texnologiyalar, ekologik ta’lim va barqaror rivojlanish, xalqaro hamkorlik va milliy siyosat. To‘plam NDU Kengashining 2025-yil 2-oktyabrdagi 2-son yig‘ilishida nashrga tavsiya etilgan. Maqolalar o‘zbek, rus, ingliz va qozoq tillarida.",
+   "abstract_ru": "Сборник составлен из материалов республиканской научно-практической конференции «Проблемы экологии, экономики и устойчивого развития в условиях изменения климата и пути их решения», прошедшей в Навоийском государственном университете 3–4 октября 2025 года по приказу Министерства высшего образования, науки и инноваций Республики Узбекистан от 27 декабря 2024 года № 490. 189 статей разделены на пять секций: изменение климата и экологические проблемы, экономическая устойчивость и зелёная экономика, энергетика и инновационные технологии, экологическое образование и устойчивое развитие, международное сотрудничество и национальная политика. Сборник рекомендован к печати Советом НавГУ 2 октября 2025 года (протокол № 2). Статьи на узбекском, русском, английском и казахском языках.",
+   "abstract_en": "The volume brings together the proceedings of the national scientific and practical conference “Problems of Ecology, Economy and Sustainable Development under Climate Change and Their Solutions”, held at Navoi State University on 3–4 October 2025 under order No. 490 of the Ministry of Higher Education, Science and Innovation of the Republic of Uzbekistan of 27 December 2024. Its 189 papers are arranged in five sections: climate change and environmental problems, economic sustainability and the green economy, energy and innovative technologies, environmental education and sustainable development, and international cooperation and national policy. The volume was recommended for publication by the Council of Navoi State University on 2 October 2025 (minutes No. 2). Papers are in Uzbek, Russian, English and Kazakh.",
+   "languages": [
+    "uz",
+    "ru",
+    "en",
+    "kk"
+   ],
+   "pages": 630,
+   "pdf": "files/publications/iqlim-ozgarishi-sharoitida-ekologiya-iqtisodiyot-barqaror-rivojlanish.pdf",
+   "cover": "images/nsu/publications/iqlim-ozgarishi-sharoitida-ekologiya-iqtisodiyot-barqaror-rivojlanish-cover.jpg",
+   "copyright": "© Navoiy davlat universiteti, 2025",
+   "license": null,
+   "toc": [
+    {
+     "title": "SO‘Z BOSHI",
+     "byline": "Muhiddin Kalonov, Navoiy davlat universiteti rektori, iqtisod fanlari doktori, professor",
+     "page": 3
+    },
+    {
+     "section": "I sho‘ba. Iqlim o‘zgarishi va ekologik muammolar"
+    },
+    {
+     "title": "TALLIMARJON VA TUSINSOY SUV OMBORLARI GIDROBIONTLARI BIOXILMA-XILLIGI ULARNING BIOTOPLARDA TARQALISH ZICHLIGINING QIYOSIY TAHLILI",
+     "byline": "X.T.Boymurodov1, Z.I. Izzatullaev 2, J.J.Mamatqulov 1, B.E.Jumaboev3, B.X. Aliev1, A.N. Egamkulov1, N.X.Xasanov3 O.X.Mirzamurodov1. 1Samarqand davlat veterinariya, chorvachilik va biotexnologiyalar universiteti 2Samarqand davlat universiteti 3Navoiy davlat universiteti",
+     "page": 5
+    },
+    {
+     "title": "ZARAFSHON HAVZASI SUG‘ORILADIGAN SUR TUSLI QO‘NG‘IR TUPROQLARINING EKOLOGIK-MELIORATIV TAVSIFI",
+     "byline": "Bobomurodov Shuxrat Mexribonovich Tuproqshunoslik va agrokimyo ilmiy tadqiqotlar instituti, Kushakov Abduvali Jabborovich NDU professori, To‘yboyev Muhammad Mehriddinovich NDU 2-bosqich magistranti",
+     "page": 10
+    },
+    {
+     "title": "TABIIY SUV HAVZALARI VA SUV SIFATINI BAHOLASHDA BIOTIK KO’RSATKICHLARNING O’RNI",
+     "byline": "Xasanov Nodir Hamrokulovich NDU katta o’qituvchisi, b.f.f.d.(PhD) Toshqulova Elnura Shokir qizi NDU 4-bosqich talabasi",
+     "page": 13
+    },
+    {
+     "title": "TASHQI MUHIT OMILLARINING MIKROORGANIZMLARGA TA’SIRI",
+     "byline": "Yulduz Abdullayeva Farhod qizi, Rushana Irkinova Zafarjon qizi NDU 2-bosqich talabalari",
+     "page": 15
+    },
+    {
+     "title": "YAYLOV DEGRADATSIYASI VA UNING IQLIM O‘ZGARISHIGA TA’SIRI",
+     "byline": "Abralov Olim Sobirovich NDU o’qituvchisi, Boltayev Nurali Navoiy viloyati Ekologiya, atrof-muhitni muhofaza qilish va iqlim o‘zgarishi boshqarmasi",
+     "page": 18
+    },
+    {
+     "title": "NAVOIY VILOYATI SHAROITIDA (PELOPHYLAX SP.2) SUV BAQASINI GELMINTLAR BILAN ZARARLANISHINING EKOLOGIK XUSUSIYATLARI",
+     "byline": "Akmuradova Leyla Guvanchovna NDU tayanch doktoranti Ikromov Erkin Fayzullayevich Namangan davlat universiteti dotsenti Ikromov Elmurod Erkinovich Namangan davlat universiteti o’qituvchisi",
+     "page": 20
+    },
+    {
+     "title": "ZUBTURUM O’SIMLIGIDA VIRUS NATIJASIDA FIZIOLOGIK HOLATNING O’ZGARISHI",
+     "byline": "Sh.A.Akramova Chirchiq davlat pedagogika universiteti magistri,D.T. Jovliyeva b.f.f.d., Chirchiq davlat pedagogika universiteti",
+     "page": 24
+    },
+    {
+     "title": "TRANSPIRATSIYA JADALLIGINI SOYA O’SIMLIGI (GLYCINE MAX) MISOLIDA EKOLOGIYAGA TA’SIRI",
+     "byline": "Xolliyev Asqar Ergashovich Buxoro davlat universiteti biologiya fanlari doktori, professor, Aminjonova Charosxon Akmalovna, Buxoro davlat universiteti doktorant",
+     "page": 27
+    },
+    {
+     "title": "ATMOSFERA HAVOSINING IFLOSLANISHI VA UNING O‘SIMLIK QOPLAMIGA TA’SIRI: MUAMMO VA TADQIQOTLAR TAHLILI",
+     "byline": "Musurmanov Nurbek Ummatqul oʻgʻli, Guliston davlat universiteti doktoranti.",
+     "page": 32
+    },
+    {
+     "title": "ATMOSFERA IFLOSLANISHI NATIJASIDA INSONLARDA KUZATILADIGAN KASALLIKLAR",
+     "byline": "Baxodirova Umida Baxodirovna NDU dotsenti, Sharapova Gulnoza Valentinovna NDU dotsenti, p.f.f.d.(PhD) Berdimurotova Mohlaroyim NDU 2-bosqich talabasi",
+     "page": 35
+    },
+    {
+     "title": "ATROF-MUHITNI KANSEROGEN POLISIKLIK AROMATIK MODDALAR BILAN IFLOSLANISHI VA ULARNI TIRIK ORGANIZMLARGA TA’SIRI",
+     "byline": "Yulchiyev Erkin Yuldashevich, Andijon davlat universititeti dotsenti Ismoilov Ibroximjon Xakimjon o‘g‘li Andijon davlat universititeti o‘qituvchisi",
+     "page": 37
+    },
+    {
+     "title": "IQLIM O’ZGARISHI VA EKOLOGIK MUAMMOLAR",
+     "byline": "Eshmurotov Sunnatillo Shuhrat o’g’li NDU talabasi. Ummatova Muxayyo Egamberdiyevna NDU dotsenti, b.f.f.d.(PhD)",
+     "page": 40
+    },
+    {
+     "title": "CALENDULA OFFICINALIS L – DORIVOR TIRNOQGULNING O’SISH DINAMIKASIGA ATROF-MUHIT OMILLARINING TA’SIRI",
+     "byline": "Eshonquov Otabek Doniyorovich1, Babaxanova Dilnoza Bahodirovna 2 Mirzo Ulug’bek nomidagi O’zbekiston Milliy Universiteti, Chirchiq davlat pedagogika universiteti",
+     "page": 42
+    },
+    {
+     "title": "ЭКОЛОГИК ШАРОИТИ ҲАР ХИЛ БЎЛГАН ХУДУДЛАРИДАГИ СУҒОРИШДА ФОЙДАЛАНИЛАДИГАН СУВ РЕСУРСЛАРИНИНГ СИФАТ КЎРСАТКИЧЛАРИНИ АНИҚЛАШ",
+     "byline": "Eshonquov Otabek Doniyorovich 1 Babaxanova Dilnoza Bahodirovna 2,3 Mirzo Ulug’bek nomidagi O’zbekiston Milliy Universiteti, Alfraganus University Chirchiq davlat pedagogika universiteti",
+     "page": 45
+    },
+    {
+     "title": "IQLIM O’ZGARISHI VA UNING GIDROBIONTLAR POPULYATSIYASIGA TA’SIRI",
+     "byline": "Xasanov Nodir Hamrokulovich NDU katta o’qituvchisi, b.f.f.d.(PhD), Abdumurodova Feruza Hasan qizi, NDU 4-bosqich talabasi",
+     "page": 48
+    },
+    {
+     "title": "GLOBAL ISISH SHAROITIDA NAVOIY VILOYATINING EKOLOGIK MUAMMOLARI",
+     "byline": "Ismoilova Durdona Husan qizi NDU talabasi, b.f.f.d. Hakimova Ruxsatoy Begmurodovna",
+     "page": 51
+    },
+    {
+     "title": "MARKAZIY OSIYODA QURG‘OQCHILIK VA CHO‘LLANISH MUAMMOLARI HAMDA ULARNI BARTARAF ETISH YO‘LLARI",
+     "byline": "Ilmiy rahbar: Hasanova Lobar Navoiy innovatsiyalar universiteti v.b.dotsenti, PhD; Rashidova Zulayho Navoiy innovatsiyalar universiteti talabasi",
+     "page": 54
+    },
+    {
+     "title": "IQLIM O‘ZGARISHI VA EKOLOGIK MUAMMOLAR: O‘ZBEKISTON VA JAHON TAJRIBASIDA BARQAROR YECHIMLAR",
+     "byline": "Hasanova Lobar Navoiy innovatsiyalar universiteti v.b.dotsenti, PhD; Ibodullayeva Sabina Navoiy innovatsiyalar universiteti talabasi",
+     "page": 56
+    },
+    {
+     "title": "ATMOSFERADAGI ZAHARLI GAZLAR TA’SIRIDA KELIB CHIQADIGAN NAFAS YO’LI KASALLIKLARI",
+     "byline": "Baxodirova Umida Baxodirovna NDU dotsenti Sharapova Gulnoza Valentinovna NDU dotsenti Hasanova Oygul Bahrom qizi NDU 2-bosqich talabasi",
+     "page": 59
+    },
+    {
+     "title": "IQLIM O‘ZGARISHI VA SUVNING IFLOSLANISHI — FLORA VA FAUNA, XUSUSAN BALIQLARGA TA’SIRI",
+     "byline": "Ismatulloyeva Aziza To’lqin qizi NDU 1-kurs tayanch doktoranti",
+     "page": 62
+    },
+    {
+     "title": "IQLIM O‘ZGARISHLARINING INSON SALOMATLIGIGA TA’SIRIGA OID MULOHAZALAR",
+     "byline": "O’zbekiston, NDU Maktabgacha va boshlang’ich ta’lim fakulteti dekani, dots. Shamsidinova G.D.",
+     "page": 64
+    },
+    {
+     "title": "ALLERGIK KASALLIKLARNI KELIB CHIQISHIGA ATROF MUHITNING TA’SIRI",
+     "byline": "Baxodirova Umida Baxodirovna NDU dotsenti Boypo’latova Mohlaroyim Dilshodjon qizi NDU 2-bosqich talabasi",
+     "page": 67
+    },
+    {
+     "title": "OʻSIMLIKLAR BILAN SIMBIOZDAGI MIKROORGANIZLAR IQLIM OʻZGARISHI SHAROITIDA",
+     "byline": "Baxodirova Umida Baxodirovna NDU dotsent Shoniyozova Kamola Nizom qizi NDU 3-bosqich talabasi",
+     "page": 70
+    },
+    {
+     "title": "ECOLOGY OF INVASIVE PLANTS SPREADING UNDER URBANIZATION CONDITION IN CENTRAL KYZYLKUM",
+     "byline": "Navoiy Davlat universiteti magistranti IKROMOVA MAFTUNA VALI qizi. Ilmiy rahbar: PhD: Jo`rayeva.D.Y.",
+     "page": 73
+    },
+    {
+     "title": "EKOLOGIK OMILLARNING INSON XULQ-ATVORIGA YASHIRIN TA’SIRI",
+     "byline": "Umarova Jumagul Qo’ziyevna, NDU dotsenti Zokirova Farangiz Nuriddin qizi NDU 2-bosqich magistranti",
+     "page": 79
+    },
+    {
+     "title": "ATROF-MUHIT IFLOSLANISHINING INSON SALOMATLIGIGA TA`SIRI VA UNI OLDINI OLISH CHORA TADBIRLARI",
+     "byline": "Malikova Ayzada Raxmatovna NDU biologiya fanlari nomzodi,dotsent",
+     "page": 83
+    },
+    {
+     "title": "IQLIM O‘ZGARISHI VA ANTROPOGEN OMILLAR TA’SIRIDA DORIVOR O‘SIMLIKLAR BIOXILMA-XILLIGIGA TA’SIRI: EKOLOGIK VA IQTISODIY OQIBATLAR",
+     "byline": "Xakimov O‘ktam Toshbotirovich q.x.f.n. O‘Z.R.FA Navoiy bo‘limi kata ilmiy xodimi Adilov Sobitjon Uktamovich, Fanlar akademiyasi Navoiy bo‘limi tayanch doktoranti. Maxmudov Bobir Turg‘unjon o‘g‘li Fanlar akademiyasi Navoiy bo’limi tayanch doktoranti",
+     "page": 86
+    },
+    {
+     "title": "TOSHKENT SHAHRI ATROF HUDUDIDAGI EKOLOJIK VAZIYAT VA UNI YAXSHILASH CHORA-TADBIRLARI",
+     "byline": "Safarova Nasiba Irankulovna O’ZMU Geografiya va iqtisodiy bilim asosalari kafedrasi dotsenti Umurova Nigora Yoqubjon qizi GulDU Ekologiya va geografiya kafedrasi tayanch doktoranti",
+     "page": 93
+    },
+    {
+     "title": "IQLIM O’ZGARISHINING BOLALAR ORGANIZMIGA TA’SIRI",
+     "byline": "Sharapova Gulnoza Valentinovna NDU dotsenti, b.f.f.d.(PhD) Muhammadqulova Xadicha Qobiljon qizi NDU 2-bosqich magistranti",
+     "page": 97
+    },
+    {
+     "title": "TÚYETABAN ÓSIMLIGINE EKOLOGIYANÍŃ TÁSIRI",
+     "byline": "A.Musaeva, 1 kurs magistrantı, S.Tóreniyazova a.x.i.f,d. Berdaq atındaǵı Qaraqalpaq mámleketlik universiteti",
+     "page": 99
+    },
+    {
+     "title": "QORAQALPOG‘ISTON RESPUBLIKASI SHAROITIDA BOLALARDA NAFAS OLISH TIZIMI KO‘RSATKICHLARIDAGI O‘ZGARISHLAR",
+     "byline": "Orazbayeva N.M., Nazarov S.U. Jismoniy tarbiya va sport bo‘yicha mutaxassislarni qayta tayyorlash va malakasini oshirish instituti",
+     "page": 101
+    },
+    {
+     "title": "QORA BALIQ (SCHIZOTHORAX INTERMEDIUS) ONTOGENEZIDA ANTROPOGEN OMIL TA’SIRI",
+     "byline": "Norova Dilfuza Xolmatovna. NDU doktoranti",
+     "page": 105
+    },
+    {
+     "title": "O`ZBEKISTON RESPUBLIKASIDA IQLIM O‘ZGARISHLARINING KELIB CHIQISHI",
+     "byline": "O’zbekiston, NDU Maktabgacha va boshlang’ich ta’lim fakulteti dekani, dots. Shamsidinova G.D.",
+     "page": 108
+    },
+    {
+     "title": "EKOLOGIK OMILLAR VA ULARNING O’SIMLIKLAR BILAN MUNOSABATI",
+     "byline": "Ortiqova Lola Soatovna Jizzax davlat pedagogika universiteti. Tabiiy fanlar fakulteti dotsent Ubaydullayeva Sevara Tabiiy fanlar fakulteti magistr Tulqinova Komila Otabek qizi Tabiiy fanlar fakulteti bakalavr",
+     "page": 111
+    },
+    {
+     "title": "ATROF-MUHITGA IQLIM O’ZGARISHINING TA’SIRI. CHO’LLANISH, SUV RESURSLARI VA BIOXILMA-XILLIKNING YO’QOLISHI. ATMOSFERA IFLOSLANISHINI KAMAYTIRISH YO’LLARI",
+     "byline": "Raxmatullayeva Mahzuna Abdulatif qizi NDU o‘qituvchi Umaraliyeva Go‘zal Komiljonovna NDU tayanch doktoranti",
+     "page": 114
+    },
+    {
+     "title": "O‘SIMLIK BO‘RTMA NEMATODALARNING ORGANIZMIGA TA’SIRI",
+     "byline": "Matmuratova Gulnoza Bahtiyarovna JDPU Biologiya kafedrasi o`qituvchisi Tojiboyeva Nozima Sadulla qizi JDPU Biologiya ta’lim yo’nalishi 2-kurs talabasi",
+     "page": 117
+    },
+    {
+     "title": "IQLIM O‘ZGARISHI FONIDA SUN’IY SUV HAVZALARIDA TOVAR BALIQLARINI YETISHTIRISH UCHUN BIOLOGIK FAOL BIRIKMALAR BILAN BOYITILGAN OZUQALARNING AHAMIYATI",
+     "byline": "Valiyev N.V. Qoʻqon davlat universiteti, Kimyo va ekologiya kafedrasi dotsenti Ro‘ziboyeva D.X. Qoʻqon davlat universiteti tayanch doktoranti",
+     "page": 119
+    },
+    {
+     "title": "SHIMOLI-G‘ARBIY QIZILQUM YAYLOVLARIDA HARORAT STRESSI VA O‘SIMLIK QOPLAMINING DINAMIKASI",
+     "byline": "J.S.Sadinov, B.A. Adilov, F.I.Polvonov O‘zR FA Botanika instituti",
+     "page": 122
+    },
+    {
+     "title": "АДАПТАЦИЯ ПАСТБИЩНЫХ ЭКОСИСТЕМ СЕВЕРО-ЗАПАДНОГО КЫЗЫЛКУМА К ИЗМЕНЕНИЮ КЛИМАТА: НА ПРИМЕРЕ ОСОКОВО-ДЖУЗГУНОВО-БЕЛОСАКСАУЛОВОЙ С ФЕРУЛОЙ РАЗНОСТИ",
+     "byline": "Садинов Ж.С. Институт ботаники АН РУз",
+     "page": 127
+    },
+    {
+     "title": "ИҚЛИМ ЎЗГАРИШИ ШАРОИТИДА ФОРИШ ЎРМОН ВА ОВ ХЎЖАЛИГИ ФАОЛИЁТИ",
+     "byline": "Санаева Лола Шукурбоевна, Жиззах давлат педагогика университети, биология фанлари номзоди Акмалова Мадина Акмал қизи, Ўзбекистон Миллий университети Жиззах филиали талабаси",
+     "page": 132
+    },
+    {
+     "title": "HOZIRGI EKOLOGIK MUHITDA SOG‘LOM OVQATLANISH RATSIONINI TARG‘IB QILISH BORASIDA MUXIM TAVSIYALAR",
+     "byline": "Mamantayeva Zamira Xamitjonovna Toshkent shaxar Chilonzor tumani 200-maktab o‘qituvchisi",
+     "page": 135
+    },
+    {
+     "title": "ЮМШОҚ БУҒДОЙ НАМУНАЛАРИНИНГ НОҚУЛАЙ ОМИЛЛАРГА ЧИДАМЛИЛИГИ",
+     "byline": "Аллоберганова З.Б Урганч давлат университети Биология фанлари номзоди. Доцент. Султонов М.Ф Хоразм Маъмун академияси таянч доктаранти. Хива.",
+     "page": 137
+    },
+    {
+     "title": "BIOLOGIK PREPARATLAR TA’SIRIDA O‘SIMLIKLARNING FIZIOLOGIK VA BIOKIMYOVIY XUSUSIYATLARINI O‘RGANISHNI, EKOLOGIK MUAMMOLARINI BARTARAF ETISHDAGI O‘RNI",
+     "byline": "Mavlyanova Gulnoza Djambulovna O‘simliklar genetik resurslari ilmiy-tadqiqot instituti stajyor-tadqiqotchi",
+     "page": 140
+    },
+    {
+     "title": "ПЕРЕРАБОТКА ОТХОДОВ ПРОИЗВОДСТВА ПОЛИВИНИЛХЛОРИДА (ПВХ) И ИХ ЭКОЛОГИЧЕСКОЕ ЗНАЧЕНИЕ",
+     "byline": "А.К. Халибекова Навоийский государственный университет",
+     "page": 143
+    },
+    {
+     "title": "АТМОСФЕРА ҲАВОСИНИНГ ИФЛОСЛАНИШИ-ИНСОН САЛОМАТЛИГИГА ТАЪСИРИ",
+     "byline": "Рўзимова Х.К. ЧДПУ доценти, Абдумуталипова У.А, Абдурашидова Ш.Н,Очилова М.Б ЧДПУ талабалари",
+     "page": 146
+    },
+    {
+     "title": "АРАЛЬСКОЕ МОРЕ – ПУТИ РЕШЕНИЯ ЭКОЛОГИЧЕСКОЙ ПРОБЛЕМЫ",
+     "byline": "Халимова Н.Т. - НГУ; преподаватель кафедры Биологии Турсунова Ш.М. – магистр НГУ; преподаватель биологии « Euromed school » Адилханова Хонзодахон ученица 11 «А» класса «Euromed school»",
+     "page": 149
+    },
+    {
+     "title": "ЭКОЛОГИЧЕСКИЕ АСПЕКТЫ РАСПРОСТРАНЕНИЯ YERSINIA PESTIS И ВЛИЯНИЕ НА ЭКОСИСТЕМЫ",
+     "byline": "Исматов А.М. Наманганский государственный университет (Рh.D.)-старший преподователь",
+     "page": 152
+    },
+    {
+     "title": "IQLIM O‘ZGARISHI VA EKOLOGIK MUAMMOLARDA VA YECHIMLARDA SHIITAKI ZAMBURUG‘INING EKOLOGIK AHAMIYATI",
+     "byline": "Azimov Ahmad Umar o’g’li Qarshi davlat universiteti magistri",
+     "page": 154
+    },
+    {
+     "title": "EKOLOGIK VAZIYAT VA INSON SALOMATLIGIDA BIOLOGIK FAOL QO’SHIMCHALARNING ROLI",
+     "byline": "A.X.Islomov. O‘zR FA Biorganik kimyo instituti Kompleks birikmalar laboratoriyasi k.f.d., yetakchi ilmiy xodim",
+     "page": 156
+    },
+    {
+     "title": "NAVOIY SHAHAR HUDUDIDAGI EKOLOGIK VAZIYAT VA UNI YAXSHILASH CHORA-TADBIRLARI",
+     "byline": "G’aybullayeva Ozoda Obid qizi, NDU b.f.f.d. (PhD) Ma’murova Shoista Rizayevna Navoiy shahar 15-maktab o‘qituvchisi",
+     "page": 159
+    },
+    {
+     "title": "IQLIM INQIROZI VA INSON SALOMATLIGI O‘RTASIDAGI BOG‘LIQLIK",
+     "byline": "Baxodirova Umida Baxodirovna NDU dotsenti, To‘yboyev Muhammad Mexriddinovich NDU 2-bosqich magistranti Shokirova Shahnoza To‘lqin qiz NDU 2-bosqich magistranti",
+     "page": 162
+    },
+    {
+     "title": "IQLIM OʻZGARISHINING INSON SALOMATLIGIGA TAʼSIRI",
+     "byline": "Ataqulova Manzura Nematovna NDU dotsenti, p.f.f.d.(PhD) Xolmirzayeva Sitora To`lqinovna 4-kurs talabasi",
+     "page": 165
+    },
+    {
+     "title": "EKOLOGIK MUAMMOLARNING INSON HAYOTIGA TA’SIRI",
+     "byline": "Jo’rayeva Dildora NDU katta o’qituvchisi, p.f.f.d.(PhD), Ibragimova Mushtariy NDU 1-bosqich talabasi",
+     "page": 170
+    },
+    {
+     "title": "EKOLOGIK MUAMMOLAR VA ULARNING OLDINI OLISH YO‘LLARI",
+     "byline": "Umaraliyeva Go’zal Komiljonovna NDU o’qituvchi, Yusupov Doston Faxriddin o’g’li NDU o’qituvchi.",
+     "page": 171
+    },
+    {
+     "title": "EKOLOGIK XAVFSIZLIKNI TA'MINLASH, IQLIM O‘ZGARISHINING OLDINI OLISHDA BIOTEXNOLOGIK YONDASHUVLARNING ROLI VA AHAMIYATI",
+     "byline": "Xujjiyev Sodiq Oltiyevich NDU professori, b.f.n. Jonuzoqov Azimjon G‘ayrat o‘g’li NDU 3-bosqich talabasi",
+     "page": 173
+    },
+    {
+     "title": "ATROF-MUHIT MUHOFAZASI VA INSON SALOMATLIGI: TARIXIY VA ZAMONAVIY YONDASHUVLAR",
+     "byline": "Raxmonova Dilovar Ostanaqulovna Qori Niyoziy nomli Tarbiya pedagogikasi milliy instituti mustaqil tadqiqotchisi.",
+     "page": 177
+    },
+    {
+     "section": "II sho‘ba. Iqtisodiy barqarorlik va yashil iqtisodiyot"
+    },
+    {
+     "title": "SUV RESURSLARINI TEJASH VA BARQAROR RIVOJLANISH",
+     "byline": "Muhammadova Donoxon NDU Tabiiy fanlar va Tibbiyot fakulteti Biologiya yo’nalishi 4-bosqich talabasi",
+     "page": 181
+    },
+    {
+     "title": "KAPUCHIN MAYMUNLARINING BIOLOGIYASI VA IJTIMOIY HAYOTI",
+     "byline": "Ummatova Muxayyo Egamberdiyevna NDU dotsenti, b.f.f.d.(PhD), Baxodirova Malika NDU Biologiya ta’lim yo’nalishi 3-bosqich talabasi, Mamaniyozova Shaxribonu NDU Biologiya ta’lim yo’nalishi 3-bosqich talabasi",
+     "page": 186
+    },
+    {
+     "title": "“EKOLOGIK SOF BALIQ MAHSULOTLARI – SOG`LOM JAMIYAT POYDEVORI”",
+     "byline": "Hakimova Ruxsatoy Begmurodovna NDU, b.f.f.d.(PhD)",
+     "page": 188
+    },
+    {
+     "title": "GO‘ZAL TABIAT – BARCHAMIZNIKI",
+     "byline": "Maxammadiev Davron Muyassarovich JDPU, katta o‘qituvchi",
+     "page": 192
+    },
+    {
+     "title": "IQTISODIY BARQARORLIK VA YASHIL IQTISODIYOT: YASHIL ENERGIYA SALOHIYATI, AGROIQTISODIYOT VA SUV RESURSLARIDAN SAMARALI FOYDALANISH, IQTISODIY O‘SISH VA TABIAT MUHOFASASI MUVOZANATI",
+     "byline": "Mirzaqulova.R.M. Termiz Davlat Pedagogika instituti o’qituvchi Nomozov.J.N. Termiz Davlat Pedagogika instituti Tabiiy va aniq fanlar fakulteti talabasi",
+     "page": 195
+    },
+    {
+     "title": "QUYI ZARAFSHON XUDUDIDA TARQALGAN YOMG‘IR CHUVALCHANGLARINING MORFOLOGIK XUSUSIYATLARI",
+     "byline": "Xusniddin Boymurodov Samarqand davlat veterinariya medisinasi, chorvachilik va biotexnologiyalar universiteti professori, Alimardan Raxmatullayev, Qarshi davlat universiteti, dotsenti Yunus Pardayev Jismoniy tarbiya va sport boʻyicha,MQTva MOI Samarqand filiali katta oʻqituvchisi.",
+     "page": 199
+    },
+    {
+     "title": "ZARAFSHON HAVZASI OʼTLOQI TUPROQLARINING EKOLOGIK-MELIORATIV HOLATI",
+     "byline": "Kushakov Abduvali Jabborovich professor. Navoiy davlat universiteti",
+     "page": 203
+    },
+    {
+     "title": "DOVUTKO‘L SUV HAVZASIDA TARQALGAN QASHQALDOQ (FULICA ATRA) EKOLOGIYASI BO‘YICHA MATERIALLAR",
+     "byline": "Ametov Ya.I. - b.f.d., professor, Abdikarimova M.K. - tayanch doktorant, Babanov R.S. - mustaqil tadqiqotchi Qoraqalpoq davlat universiteti, Nukus sh.",
+     "page": 207
+    },
+    {
+     "title": "DRACOCEPHALUM NURATAVICUM ADYLOV O‘SIMLIGINING NUROTA TIZMASINING O‘SIMLIK QOPLAMIDAGI ROLI",
+     "byline": "Abdullayeva Nilufar Sag’dullayevna Tabiiy fanlar fakulteti Biologiya JDPU Jizzax",
+     "page": 210
+    },
+    {
+     "title": "AKPETKI KO‘LLAR TIZIMIDA UYA QURUVCHI KATTA QO‘NG‘IR (PODICEPS CRISTATUS) EKOLOGIYASIGA OID MATERIALLAR",
+     "byline": "1Arzibaev D.F. - tayanch doktorant, 2Ametova N.I. – assistent o‘qituvchi (PhD), 2Babanov R.S. - mustaqil tadqiqotchi 1Ajiniyoz nomidagi Nukus davlat pedagogika instituti 2Berdaq nomidagi Qoraqalpoq davlat universiteti",
+     "page": 213
+    },
+    {
+     "title": "BIOXILMA-XILLIKNI ASRASH VA UNING ILMIY ASOSLARI",
+     "byline": "Aslonova Sarvinoz Orif qizi, NDU magistranti Xudoyberdiyeva Ruxsora NDU magistranti",
+     "page": 215
+    },
+    {
+     "title": "YASHIL TEXNOLOGIYALAR VA ULARNING AHAMIYATI",
+     "byline": "Xolikova Moxichexra Azamatovna, ChDPU dotsenti Jo‘ldasova Aynur Sabir qiz, ChDPU - talaba Abdurahmonova Iroda Alijon qizi ChDPU - talaba",
+     "page": 218
+    },
+    {
+     "title": "QUYI AMUDARYO DAVLAT BIOSFERA REZERVATI HUDUDIDA 2025 YILNING YOZ MAVSUMIDA OLIB BORILGAN ORNITOLOGIK KUZATISH NATIJALARI",
+     "byline": "1Ametov Ya.I. - b.f.d., professor, 2Atajanov A.X. - mustaqil tadqiqotchi 1Bekniyazova D.B. - tayanch doktorant, 1Qoraqalpoq davlat universiteti, Nukus sh., 2Xorazm milliy tabiat bogʻi, Xorazm",
+     "page": 220
+    },
+    {
+     "title": "KARTOShKA X VIRUSINI AJRATISHDA INDIKATOR O‘SIMLIKLARNI TANLASH",
+     "byline": "D.T. Jovliyeva, b.f.f.d., ChDPU, V.B. Fayziyev, prof, b.f.d., ChDPU, S.U. Ahmadjonova, 3 kurs, ChDPU.",
+     "page": 223
+    },
+    {
+     "title": "OQTOQ BOTANIK GEOGRAFIK RAYONI FLORASINING VEGETATSIYA INDEKSI (NDVI) ORQALI BAHOLASH",
+     "byline": "Hamrayev Diyorjon Xonnazar o‘g‘li, tayanch doktorant, Botanika instituti. Esanov Husniddin Qurbonovich, dots., Buxoro davlat unversetiti, Qilichev Shohjahon Shomurod o'g'li,k.i.x, Botanika instituti, Toshkent",
+     "page": 226
+    },
+    {
+     "title": "TABIIY TARQALISH MAYDONIDA YIRIK BARGLI ALQOR (MEDIASIA MACROPHYLLA PIMEN) O`SIMLIGINING EKOLOGIYASINI O`RGANISH (ZOMIN DAVLAT QO`RIQXONASI)",
+     "byline": "Ikromova Yulduzoy Erkin qizi., Sh.Rashidov nomidagi SamDU, doktorantura talabasi., Umurzakova Zebo Iskandarovna Botanika kafedrasi professori",
+     "page": 231
+    },
+    {
+     "title": "SALOR KANALI KUMUSH TOVONBALIG‘INING O‘SISHI VA SERPUSHTLIGI",
+     "byline": "Ismatillayeva Gulhayo Mexriddinovna O‘zbekiston Respublikasi Fanlar akademiyasi Zoologiya instituti",
+     "page": 234
+    },
+    {
+     "title": "SILYBUM MARIANUM (MILK THISTLE) O’SIMLIGINING EKOLOGIK XUSUSIYATLARI",
+     "byline": "Jumaboyev Bahodir Yerejepovich, NDU dotsenti, Ismatova Manzura Hikmatillo qizi, NDU 2-kurs magistranti",
+     "page": 238
+    },
+    {
+     "title": "MAMLAKATIMIZDA BIOXILMA-XILLIKNI SAQLAB QOLISH MAQSADIDA PAVLONIYA ELONGATA DARAXTINI IQLIMLASHTIRISHNING AHAMIYATI",
+     "byline": "Jo‘ramurodova Mahdiya Ilxom qizi,Qarshi davlat universiteti, magistranti",
+     "page": 240
+    },
+    {
+     "title": "SHAKLLANGAN YAYLOV AKVAKULTURASI TARTIBIDA SUV HAVZASINING BALIQCHILIK XUSUSIYATLARI",
+     "byline": "Kanatbayeva T.S. NDU dotsenti, b.f.f.d.(PhD)",
+     "page": 243
+    },
+    {
+     "title": "NAVOIY VILOYATI QIZIL KITOBGA KIRITILGAN FLORA VA FAUNA TURLARINI SAQLASH MUAMMOLARI",
+     "byline": "Hakimova Ruxsatoy Begmurodovna NDU b.f.f.d.(PhD), Mamasharipova Sevinch Utkirjon qizi, NDU 2-kurs talabasi",
+     "page": 246
+    },
+    {
+     "title": "TUPROQ UNIMDORLIGI VA HOSILDORLIKNI OSHIRISH",
+     "byline": "Xolikova Moxichehra Azamatovna ChDPU Biologiya kafedrasi dotsenti, Mamutxonova Zilola Maqsudxon qizi, ChDPU Biologiya yoʻnalishi talabasi, Jumanazarova Zebiniso Shavkat qizi ChDPU Biologiya yoʻnalishi talabasi",
+     "page": 249
+    },
+    {
+     "title": "O‘ZBEKISTONNING CHO‘L ZONASIDA JOYLASHGAN XUSUSIY OVCHILIK XO‘JALIKLARI HAQIDA MA’LUMOTLAR",
+     "byline": "1Raxmonov Rashit Raximovich Qoraqlpoq davlat universiteti mustaqil izlanuvchisi, 1Jumanov Muratbay Aripbayevich Qoraqlpoq davlat universiteti professori, biologiya fanlari doktori",
+     "page": 252
+    },
+    {
+     "title": "CHAVOQ BALIQNING (RUTILUS RUTILUS ) MORFO-BIOLOGIK O‘ZGARUVCHANLIGI",
+     "byline": "Homidova Zilola Yunusovna. NDU doktoranti Profi University “Ta’lim faoliyati va tillar” fakulteti dekani",
+     "page": 255
+    },
+    {
+     "title": "TUPROQQA ISHLOV BERISH YUKINI KAMAYTIRISH ORQALI UNUMDORLIKNI OSHIRISH: ZERO (NO-TILL FARMING) DEHQONCHILIK USULI",
+     "byline": "Yuldashov Murod Xudargonovich, NDU Biologiya kafedrasi professori, q/x.f.n.",
+     "page": 258
+    },
+    {
+     "title": "GULXAYRIDOSHLAR OILASI (MALVACEAE) NING VAKILI DORIVOR GULXAYRINING SHIFOBAXSH XUSUSIYATLARI HAMDA DORIVOR PREPARATLARI O'RGANISH",
+     "byline": "Matmuratova Gulzoda Baxtiyorovna, Jizzax davlat pedogogika universiteti",
+     "page": 260
+    },
+    {
+     "title": "CHIRCHIQ DARYOSIDA OQ SLANING O‘SISH KO’RSATKICHLARI",
+     "byline": "Namozov S.M., Turayev L.G., Sobirov J.J. O’zR FA Zoologiya instituti, Toshkent",
+     "page": 263
+    },
+    {
+     "title": "YASHIL IQTISODIYOT VA \"GREEN ENERGY\" SALOHIYATI, AGROIQTISODIYOT VA SUV RESURSLARIDAN SAMARALI FOYDALANISH, IQTISODIY OʻSISH VA TABIAT MUHOFAZASI MUVOZANATI",
+     "byline": "Kanatbayeva T.S. NDU dotsenti, b.f.f.d.(PhD), O.S,Joldibayev, A.T.Suygenova Biologiya ta`lim yo`nalishi 4-kurs talabasi",
+     "page": 266
+    },
+    {
+     "title": "BIOLOGIK VA ORGANIK O‘G’ITLARNING O‘SIMLIKLAR HAYOT JARAYONIDAGI AHAMIYATI",
+     "byline": "Xolikova Moxichexra Azamatovna ChDPU Biologiya kafedrasi dotsenti, O‘rinova Gulnoza Xaytbay qizi, ChDPU biologiya yo‘nalishi 4-bosqich talabasi Nishanbayeva Almasxan Tadjimirzayevna Toshkent tibbiyot universiteti Chirchiq filiali katta o‘qituvchisi.",
+     "page": 270
+    },
+    {
+     "title": "DUKKAKLI O‘SIMLIKLAR (FABACEAE) NING TUPROQ UNUMDORLIGI VA EKOLOGIYAGA TA’SIRI",
+     "byline": "Xolikova Moxichexra Azamatovna, ChDPU dotsenti Qilichev Sevdiyor Muhiddinovich ChDPU talabasi",
+     "page": 273
+    },
+    {
+     "title": "O’ZBEKISTONDA AGROTURIZMNI RIVOJLANTIRISH ISTIQBOLLARI",
+     "byline": "Qudratov Azizjon Dehqonboyevich, Yashil iqtisodiyot va agrobiznes” kafedrasi katta o‘qituvchisi, BuxDU",
+     "page": 276
+    },
+    {
+     "title": "QUSHLAR EKOLOGIYASINI O’RGANISH",
+     "byline": "Xamroyeva Madina Dadajonovna NDU tayanch doktoranti, Abdukarimova Shaxinabonu Jasur qizi NDU 3-bosqich talabasi",
+     "page": 280
+    },
+    {
+     "title": "AYDAR-ARNASOY KO‘LLAR TIZIMI ASOSIY SUV MANBALARINING MONITORINGI, SUV SATHINI BARQAROR USHLASH BO‘YICHA KO‘RILAYOTGAN CHORALAR",
+     "byline": "Ravshanova Adolat Ravshan qizi, Biologiya kafedrasi, JDPU, Jizzax Raximova Maloxat Anvarovna, Biologiya kafedrasi, JDPU, Jizzax Abdug'aniyeva Guljahon Sayfiddin qizi Biologiya kafedrasi, JDPU, Jizzax",
+     "page": 283
+    },
+    {
+     "title": "QARSHI SHAHRIDAGI YOMG‘IR CHUVALCHANGLARINING. (LUMBRICIDAE) TURLAR XILMA – XILLILIGI",
+     "byline": "Ruiddinov Asilbek Xusan o‘g‘li, Maxmatqulova Navbahor Abdugʻofur qizi, Ne‘matova Munira Kamol qizi Qarshi davlat universiteti",
+     "page": 287
+    },
+    {
+     "title": "JIZZAX VILOYATIDA AGROTURIZMINI RIVOJLANTIRISHNING IQTISODIY BARQARORLIK VA YASHIL IQTISODIYOTDAGI AXAMIYATI",
+     "byline": "Санаева Лола Шукурбоевна, Ж Д П У, б. ф. н, в/б доцент Акмалова Мадина Акмал қизи, Ўзбекистон Миллий университети Жиззах филиали талабаси",
+     "page": 291
+    },
+    {
+     "title": "OCHIQ URUG’LILARNING YASHIL MAKONNI SAQLASH VA EKOLOGIK MUVOZANATNI TA’MINLASHDAGI ROLI",
+     "byline": "Yuldasheva Malika Berdiyorovna NDU Biologiya kafedrasi katta o’qituvchisi Sayfullayev Muhammadqodir Muhammadsodiq o‘g’li. NDU biologiya yo‘nalishi 3-bosqich talabasi Ismatullayev Baxtiyor Arslon o‘g’li NDU biologiya yo‘nalishi 3-bosqich talabasi",
+     "page": 294
+    },
+    {
+     "title": "BUZILGAN YERLAR TUSHUNCHASINING MAZMUN VA MOHIYATI",
+     "byline": "Sharipov Shavkat Muxamajanovich OʻzMU Geografiya va geoaxborot tizimlari fakulteti dekani, g.f.d. (DSc), Samatova Nafisa Rustamovna JDPU Geografiya va iqtisodiy bilim asoslari kafedrasi doktoranti",
+     "page": 297
+    },
+    {
+     "title": "JIZZAX VILOYATI FLORASIDAGI QIZIL KITOBGA KIRITILGAN IKKI URUG‘PALLALI O‘SIMLIKLAR TAKSONOMIK TAHLILI",
+     "byline": "Sharipova Mohistara Hamdam qizi JDPU Biologiya kafedrasi Tayanch doktorant., Karimova Damira Damin qizi Tayanch doktorant",
+     "page": 301
+    },
+    {
+     "title": "TURLI EKOLOGIK SHAROITLARDA DORIVOR SEMIZO‘T (PORTULACA OLERACEA) O’SIMLIGINING O‘SISH DINAMIKASI",
+     "byline": "Ubaydullayeva Sevara G’ayrat qizi J D P U magistr",
+     "page": 307
+    },
+    {
+     "title": "ZARAFSHON DARYOSI QUYI OQIMI SUV HAVZALARIDA YASHOVCHI OQCHA (ABRAMIS BRAMA) BALIG’INING EKOLOGIK XISUSIYATLARI",
+     "byline": "Umaraliyeva Go’zal Komiljonovna, Navoiy davlat universiteti 2 bosqich doktoranti",
+     "page": 310
+    },
+    {
+     "title": "QALDIRG’OCHLAR BIOLOGIYASI VA AHAMIYATI",
+     "byline": "Ummatova Muxayyo Egamberdiyevna NDU dotsenti, b.f.f.d.(PhD) Jozilova Nozima Urol qizi, NDU 1-bosqich talabasi G’afforova Roziya Lutfullo qizi NDU 1-bosqich talabasi",
+     "page": 313
+    },
+    {
+     "title": "LYCIUM BARBARUM: NAVOIY EKOTIZIMIDAGI AHAMIYATI, EKOLOGIYASI VA MOSLASHUV MEXANIZMLARI",
+     "byline": "Ataqulova Manzura Nematovna., NDU dotsenti, p.f.f.d.(PhD) Valiyeva Feruza Telmon qizi., NDU 2-kurs magistranti.",
+     "page": 315
+    },
+    {
+     "title": "IQTISODIY O‘SISH VA TABIAT MUHOFAZASI MUVOZANATIDA GIDROBIONTLARNING ROLI",
+     "byline": "Xasanov Nodir Hamrokulovich NDU b.f.f.d.(PhD)",
+     "page": 319
+    },
+    {
+     "title": "MIRZACHO’L SHAROITIDA O’STIRILGAN RUBIA TINCTORUM (L) O’SIMLIGININI INTRODUKSION BAHOLASH",
+     "byline": "Karshibaev Jaxongir Xazratkulovich, Guliston davlat pedagogika instituti dotsenti, Xoʻjamqulov Oxunjon Raxmatullo o’g’li Guliston davlat universiteti, tayanch doktorant",
+     "page": 321
+    },
+    {
+     "title": "DUKKAKLI O‘SIMLIKLAR VA ULARNING TUPROQ EKOLOGIYASIGA TA’SIRI",
+     "byline": "Xolikova Moxichexra Azamatovna, ChDPU Biologiya kafedrasi dotsenti Nishanbayeva Almasxan Tadjimirzayevna, Toshkent tibbiyot unversiteti, Chirchik filiali katta o‘qituvchisi O‘rinova Gulnoza Xaytbay qizi, ChDPU biologiya yo‘nalishi 4-bosqich talabasi",
+     "page": 325
+    },
+    {
+     "title": "DEHQONCHILIKDA BO‘Z TUPROQLARNING AGROKIMYOVIY XUSUSIYATLARI",
+     "byline": "Abduxakimova Xusnidaxon Abdullayevna FarDU dotsenti, Muhammadjonova Madinabonu A’zamjon qizi FarDU magistranti",
+     "page": 328
+    },
+    {
+     "title": "AYDARKO‘L KO‘LI SUVINING KIMYOVIY TARKIBI VA ULARNING HAVZA BIORESURSLARIGA TA’SIRI",
+     "byline": "Jumabaev Baxodir Yerejepovich NDU dotsenti, b.f.n.",
+     "page": 331
+    },
+    {
+     "title": "AMARANTHUS L. ТУРКУМИ АЙРИМ НАВЛАРИНИНГ ҚОРАҚАЛПОҒИСТОН ҲУДУДИДА БИОЭКОЛОГИК ХУСУСИЯТЛАРИ ВА ТУПРОҚНИНГ ШЎРЛАНИШ БЎЙИЧА ХИМИЯВИЙ ТАҲЛИЛИ",
+     "byline": "Мамбетова Насиба Курбанбаевна Ажинийаз номидаги НДПИ, докторант",
+     "page": 335
+    },
+    {
+     "title": "РАЗМЕРНО-ВОЗРАСТНЫЕ ПОКАЗАТЕЛИ КАРАСЯ ТУДАКУЛЬКОМ ВОДОХРАНИЛИЩЕ",
+     "byline": "Салихов Т.В., Намозов С.М., Собиров Б.Ж. Институт Зоологии АН РУз",
+     "page": 339
+    },
+    {
+     "title": "SUDOChE KO‘LLAR TIZIMI SUVO‘TLARINING TAKSONOMIK, EKOLOGIK VA ALGOTSENOTIK TAHLILI",
+     "byline": "Eshmurodova Nargiza Sharofovna. O‘zbekiston milliy universiteti",
+     "page": 343
+    },
+    {
+     "title": "YASHIL IQTISODIYOT – BARQAROR RIVOJLANISH KAFOLATI",
+     "byline": "Sheraliyeva Saida Azatovna Navoiy davlat universiteti Iqtisodiyot kafedrasi dotsent v.b.",
+     "page": 346
+    },
+    {
+     "title": "ИҚТИСОДИЙ БАРҚАРОРЛИК ВА ЯШИЛ ИҚТИСОДИЁТНИНГ ЎЗАРО БОҒЛИКЛИГИ",
+     "byline": "Муродова Нодира Куллиевна НДУ профессори, и.ф.д",
+     "page": 350
+    },
+    {
+     "title": "ИЗУЧЕНИЕ НАСЛЕДОВАНИЯ И ИЗМЕНЧИВОСТИ ВЗАИМОСВЯЗИ ХОЗЯЙСТВЕННО ЦЕННЫХ ПРИЗНАКОВ ХЛОПЧАТНИКА С ОКРАСКОЙ ВОЛОКНА",
+     "byline": "Р.Б. Рахмонова НГУ старший преподаватель",
+     "page": 354
+    },
+    {
+     "title": "AYDARKO’L IXTIOFAUNASI VA UNING EKOLOGIK XOLATI",
+     "byline": "Jumabayev Bahodir Yerejepovich NDU dotsenti, b.f.n., Buriyeva N. NDU 2-kurs magistri",
+     "page": 359
+    },
+    {
+     "title": "ОСОБЕННОСТИ АНАТОМИЧЕСКОГО И МОРФОЛОГИЧЕСКОГО СТРОЕНИЯ ЛУКОВИЦ РОДА ALLIUM",
+     "byline": "М.Х. Равшанова Навоийский Государственный Университет Старший преподаватель",
+     "page": 362
+    },
+    {
+     "title": "“YASHIL IQTISODIYOT”GA O‘TISH TAMOYILLARINING XUSUSIYATLARI",
+     "byline": "Xasanov Sh.R. NDU dotsenti.",
+     "page": 365
+    },
+    {
+     "section": "III sho‘ba. Energetika va innovatsion texnologiyalar"
+    },
+    {
+     "title": "ҚАЙТА ТИКЛАНУВЧИ ЯШИЛ ЭНЕРГИЯ: БАРЧА УЧУН МУҲИМ МАСАЛА",
+     "byline": "M.B. Kalonov NDU rektori, i.f.d., prof.",
+     "page": 371
+    },
+    {
+     "title": "MOSH NAVLARINING SAQLANUVCHANLIK DARAJASIGA, BIOSTIMULIYATORLARNI TA’SIRI",
+     "byline": "Davronov Qaxramonjon Anvarjonovich, FDU, dotsenti, Qishloq xo‘jalik fanlari doktori (DSc), Xoliqov Muxridin Baxromjon o‘g‘li, FDU, mustaqil tadqiqotchi",
+     "page": 376
+    },
+    {
+     "title": "ЭКОЛОГИК ТОЗА ЭНЕРГИЯ ИШЛАБ ЧИҚАРУВЧИ 5 KW·h ҚУВВАТЛИ ФОТОЭЛЕКТР СТАНЦИЯНИНГ АМАЛИЙ ИШ КЎРСАТКИЧЛАРИ",
+     "byline": "Камолов И.Р. НДУ – т.ф.н., профессор, Очилтошева Д.З. – Бекобод туман, мактаб физика ўқитувчиси Идибоева С.Б. Қаҳҳорова М.Э. НДУ талабалари",
+     "page": 380
+    },
+    {
+     "title": "FITOMELIORATSIYA USULIDA SANOAT CHIQINDILARI BILAN IFLOSLANGAN SUVLARNI TOZALASH",
+     "byline": "Xujjiyev Sodiq Oltiyevich NDU Biologiya kafedrasi professori, b.f.n.",
+     "page": 384
+    },
+    {
+     "title": "IFLOSLANGAN TUPROQLARNI FITOMELIORATSIYA USULIDA TOZALASHNING AFZALLIKLARI",
+     "byline": "Yuldashov Murod Xudargonovich NDU, Biologiya kafedrasi professori, q/x.f.n. Sharopova Makhliyo Davlat qizi NDU, Aniq va tabiiy fanlarni o`qitish metodikasi (biologiya) mutaxassisligi 2-kurs magistranti",
+     "page": 387
+    },
+    {
+     "title": "“FOTOPANEL BILAN AQLLI O‘RINDIQ-SMART STOP”NING IMKONIYATLARI VA AMALIY AHAMIYATI",
+     "byline": "Jamilov Yu.Yu. – NDU dotsenti, PhD Ochiltosheva D.Z. – fizika fani o‘qituvchisi, Bekobod tumani 24-maktab Eshonqulov A.U. –Osiyo xalqaro universiteti magistri",
+     "page": 390
+    },
+    {
+     "title": "YUQORI OPTIK SHAFFOFLIKKA EGA BO‘LGAN YARIMO‘TKAZGICHLI MATERIALLARNI QUYOSH ELEMENTI UCHUN TANLASH",
+     "byline": "1Atajonov Muhiddin Odiljonovich, ADTI, 1Muqobil energiya manbalari kafedrasi dotsenti. 2Boboyev Abror Karim o‘g‘li ADTI, 2 4-kurs talabasi",
+     "page": 392
+    },
+    {
+     "title": "AGROKLASTERLARDA KREDITLASH MEXANIZMLARINI TAKOMILLASHTIRISH YO‘LLARI",
+     "byline": "Kamiljanov Berdax QDU doktoranti",
+     "page": 395
+    },
+    {
+     "title": "S-7303 G‘O‘ZA NAVI QURUQ MODDA TO‘PLASHIGA KO‘CHAT QALINLIGINING TA’SIRI",
+     "byline": "Mamatqulov Orifjon Odiljon o‘g‘li FarDU mustaqil tadqiqotchisi",
+     "page": 399
+    },
+    {
+     "title": "FARG‘ONA VILOYATI SUG‘ORILADIGAN BOTQOQ-O‘TLOQI TUPROQLARDA KARTOSHKA YETISHTIRISH TEXNOLOGIYASI",
+     "byline": "Matholiqov Ro‘zali Baxtiyor o‘g‘li FarDU mustaqil tadqiqotchisi",
+     "page": 402
+    },
+    {
+     "title": "QISHLOQ XO`JALIGIDA INNOVATSION TEXNOLOGIYALARNING IQTISODIY SAMARADORLIGI",
+     "byline": "Sharapova Gulnoza Valentinovna, NDU, Biologiya kafedrasi dotsenti",
+     "page": 404
+    },
+    {
+     "title": "ENERGIYA VA ILG‘OR TEXNOLOGIYALAR: QUYOSH, SHAMOL VA SUV ENERGIYASIDAN OQILONA FOYDALANISH, UGLERODSIZ TEXNOLOGIYALAR, INNOVATSION AGROTEXNOLOGIYALAR VA RESURSNI TEJOVCHI YECHIMLAR",
+     "byline": "G’aybullayeva Ozoda Obid qizi NDU, Biologiya kafedrasi o’qituvchisi b.f.f.d.(PhD) Utemuratova Julduz Perdebay qizi NDU, talabasi",
+     "page": 407
+    },
+    {
+     "title": "TYPES OF ENERGY THAT ARE IMPORTANT FOR THE FUTURE IN THE WORLD AND IN UZBEKISTAN",
+     "byline": "Ramzjon Sokhibnazarov NSU, Teacher of the Department of \"Biology\". NSU, Muhayyo Ummatova (Ph.D), Teacher of the Department of \"Biology\".",
+     "page": 409
+    },
+    {
+     "title": "YUQORI OQSILLI OZUQALAR BILAN OZIQLANTIRISHNING KARP BALIG‘I TEXNOLOGIK KO‘RSATKICHLARIGA TA’SIRI",
+     "byline": "D.M.Yuldashova NDU, 1-kurs magistri. Kanatbayeva T.S. NDU, “Biologiya” kafedrasi dotsenti",
+     "page": 412
+    },
+    {
+     "title": "RESOURCE-EFFICIENT TECHNOLOGIES AS A BASIS FOR SUSTAINABLE DEVELOPMENT",
+     "byline": "Yuldasheva Malika NSU, Biology Department",
+     "page": 415
+    },
+    {
+     "title": "ЧИСТАЯ ЭНЕРГИЯ И СПРАВЕДЛИВОЕ ОБЩЕСТВО: ТОЧКИ ПЕРЕСЕЧЕНИЯ",
+     "byline": "Халимова Назокат Тухтасиновна преподаватель биологии «Euromed school» Турсунова Ш.М. НГУ, магистр Касатов Андрей – ученик 11 «А» класса «Euromed school»",
+     "page": 418
+    },
+    {
+     "title": "QUYOSH, SHAMOL, GIDROENERGIYADAN SAMARALI FOYDALANISH. KARBON-NEYTRAL TEXNOLOGIYALAR, INNOVATSION QISHLOQ XO’JALIGI VA RESURS TEJAMKOR TEXNOLOGIYALAR",
+     "byline": "Raxmatullayeva Mahzuna Abdulatif qizim, NDU",
+     "page": 421
+    },
+    {
+     "title": "VENGER KARP BALIG’INING BIOLOGIK XUSUSIYATLARI VA UNI YETISHTIRISHNING TEXNOLOGIK JARAYONLARI",
+     "byline": "Hosilova.U.B. O’zR FAi Navoiy bo’limi 1-kurs doktaranti",
+     "page": 424
+    },
+    {
+     "title": "XLORELLA (CHLORELLA VULGARIS) DAN PARRANDACHILIK KORXONALARIDA FOYDALANISHNING AHAMIYATI VA ISTIQBOLLARI",
+     "byline": "Ibragimova Mehribonu Farxod qizi, Islom Karimov Nomidagi TDTU, Biotexnologiya kafedrasi 1 bosqich tayanch doktaranti",
+     "page": 427
+    },
+    {
+     "title": "VINILATSETAT SINTEZI UCHUN RESURS TEJAMKOR TEXNOLOGIYA YARATISH",
+     "byline": "Ravshanova Laylo Sherzod qizi, NDU, Kimyo yo’nalishi 1-bosqich talabasi, Omanov Behruzjon Shuhrat o‘g‘li, NDU, Kimyo kafedrasi professor v.b., t.f. (PhD)",
+     "page": 432
+    },
+    {
+     "title": "MAHALLIY RUDALAR ASOSIDA OLINGAN KOAGULYANTLAR YORDAMIDA SANOAT VA OQOVA SUVLARINI TOZALASH",
+     "byline": "Barakayev M.B. NavDU akademik litseyi",
+     "page": 435
+    },
+    {
+     "title": "SIRKA KISLOTANING QISHLOQ XO‘JALIGIDA UCHUN RESURS TEJAMKOR TEXNOLOGIYASINI YARATISH",
+     "byline": "Hasanova Nilufar Sulton qizi, NDU 4-bosqich talabasi Ravshanova Laylo Sherzod qizi, NDU 1-bosqich talabasi, Omanov Behruzjon Shuhrat o‘g‘li NDU, professor v.b., t.f.f.d. (PhD)",
+     "page": 437
+    },
+    {
+     "title": "ЭНЕРГИЯ ПОД НОГАМИ: БУДУЩЕЕ ЗЕЛЕНОЙ ЭНЕРГЕТИКИ В ПЬЕЗОЭЛЕКТРИЧЕСКИХ ДОРОГАХ",
+     "byline": "Турсунова Ш.М. НГУ магистр, преподаватель биологии «Euromed school» Амирсаидов Самир, Мамбетов Влад – ученики 11 «А» класса «Euromed school»",
+     "page": 441
+    },
+    {
+     "section": "IV sho‘ba. Ekologik ta’lim va barqaror rivojlanish"
+    },
+    {
+     "title": "EKOLOGIK MUAMMOLARNI OLDINI OLISH VA AHOLI EKOLOGIK MADANIYATINI SHAKLLANTRISH",
+     "byline": "Sayfullayev Asilbek Farhod o‘g’li NDU o’qituvchisi",
+     "page": 445
+    },
+    {
+     "title": "EKOLOGIK TA’LIM VA ATROF MUHITNI MUHOFAZA QILISh",
+     "byline": "Aberqulov Egamberdi Abduraimovich JDPU o‘qituvchisi",
+     "page": 448
+    },
+    {
+     "title": "YOSHLAR ONGIDA EKOLOGIK MADANIYATNI SHAKILLANTIRISHDA TA`LIMNI O`RNI",
+     "byline": "Achulova Nazifa Raxmankulovna NDU katta o`qituvchisi, p.f.f.d (PhD).",
+     "page": 451
+    },
+    {
+     "title": "BIOLOGIYA TA`LIMI, ABU ALI IBN SINO TA’LIMOTLARI VA INNOVATSION YONDASHUVLARNI TASHKIL ETISHNING DOLZARB MASALALARI",
+     "byline": "Tojiboyeva Sevaraxon Xayrullayevna, QDPI o`qituvchisi",
+     "page": 454
+    },
+    {
+     "title": "O‘QUVCHILARDA EKOLOGIK TAFAKKURNI SHAKLLANTIRISHDA RAQAMLI TEXNOLOGIYALARDAN FOYDALANISHNING MAZMUN VA MOHIYATI",
+     "byline": "Ataqulova Manzura Nematovna, NDU dotsenti, p.f.f.d.(PhD) 36 - maktab o'qituvchisi Murodova Shaxnozabonu Murod qizi., NDU 4-kurs talabasi",
+     "page": 457
+    },
+    {
+     "title": "UZLUKSIZ TA’LIM TIZIMIDA EKOLOGIK TA’LIMNING DOLZARB MUAMMOLARI",
+     "byline": "Ataqulova Manzura Ne’matovna, NDU dotsenti, p.f.f.d (PhD)",
+     "page": 460
+    },
+    {
+     "title": "MAKTABGACHA YOSHDAGI BOLALARNI EKOLOGIK TARBIYALASHNING O‘ZIGA XOSLIGI",
+     "byline": "Azimova Gulmira Xayrullayevna, NDU Maktabgacha ta’lim yo‘nalishi talabasi",
+     "page": 464
+    },
+    {
+     "title": "EKOLOGIK BARQARORLIKNI TA`MINLASH-HAYOTIY ZARURAT!",
+     "byline": "Jo`rayeva Dildora Yunusovna p.f.f.d (PhD) Biologiya kefdrasi katta o`qituvchisi",
+     "page": 466
+    },
+    {
+     "title": "BARQAROR TARAQQIYOT YO’LIDA EKOLOGIK TA’LIM",
+     "byline": "Hamidova Dilbar G’iyosovna, NDU o’qituvchisi",
+     "page": 468
+    },
+    {
+     "title": "BARQAROR EKOLOGIK RIVOJLANISH YO‘LIDA EKOLOGIK MADANIYATNING AHAMIYATI",
+     "byline": "Sharipova Dildora Rajabovna NDU universiteti o’qituvchisi",
+     "page": 472
+    },
+    {
+     "title": "BARQAROR RIVOJLANISH YOLIDA EKOLOGIK MADANIYATNI SHAKLLANTIRISH",
+     "byline": "Urunova Dilshoda Sobirovna NDU o’qituvchisi",
+     "page": 475
+    },
+    {
+     "title": "STEAM YONDASHUV ASOSIDA EKOLOGIK MADANIYAT VA AHOLI ONGINI OSHIRISH",
+     "byline": "Ergashova Ro’zigul To’lqin qizi, NDU doktoranti",
+     "page": 481
+    },
+    {
+     "title": "YOSHLARDA EKOLOGIK ONGNI SHAKLLANTIRISHNING O‘ZIGA XOS XUSUSIYATLARI",
+     "byline": "Fayzullayev Burxon, O‘simliklar karantini va himoyasi ilmiy tadqiqot instituti Samarqand mintaqaviy filiali direktori Malikov Dilshod Boymurod o‘g‘li Kattaqo‘rg‘on davlat pedagogika institute Ta’lim jarayonini tashkil etish bo‘lim boshlig‘i",
+     "page": 484
+    },
+    {
+     "title": "ATROF-MUHITNI MUHOFAZA QILISHDA YOSHLARNING. OʻRNI VA MASʼULIYATI",
+     "byline": "Fayzullayeva Dilnoza Lutfullo qizi, NDU 4-bosqich talabasi",
+     "page": 489
+    },
+    {
+     "title": "AHOLI O`RTASIDA EKOLOGIK ONG VA EKOLOGIK MADANIYATNI SHAKLLANTIRISH USULLARI",
+     "byline": "Umarov Husan Laziz o`g`li NDU 4-kurs talabasi",
+     "page": 492
+    },
+    {
+     "title": "BIOLOGIK TA’LIM VA TADQIQOTLARDA RAQAMLI TEXNOLOGIYALAR INTEGRATSIYASI",
+     "byline": "Ibodova Mahfuza Namozovna NDU dotsenti, (PhD).",
+     "page": 495
+    },
+    {
+     "title": "TALABALARNING EKOLOGIK SAVODXONLIGINI TERMINLAR ORQALI RIVOJLANTIRISH",
+     "byline": "Jabborova Tozagul Xujamurodovna Iqtisodiyot va pedagogika universiteti b.f.f.d(PhD),v.b.dotsent",
+     "page": 501
+    },
+    {
+     "title": "EKOLOGIK TAʼLIMNING AHAMIYATI VA BARQAROR RIVOJLANISHDAGI OʻRNI",
+     "byline": "Ergasheva Maftuna Shodmon qizi NDU 4-bosqich talabasi",
+     "page": 505
+    },
+    {
+     "title": "EKOLOGIK TA’LIM VA BARQAROR RIVOJLANISH",
+     "byline": "Ummatova Muxayyo Egamberdiyevna, NDU Biologiya kafedrasi dotsenti, b.f.f.d.(PhD) Rustamova Barchinoy Yorqin qizi NDU 2-bosqich talabasi",
+     "page": 508
+    },
+    {
+     "title": "ILM-FAN VA TA’LIM ORQALI EKOLOGIK MUAMMOLARGA YECHIM",
+     "byline": "Teshayeva Mohinur Sayfullo qizi, NDU tayanch doktoranti",
+     "page": 512
+    },
+    {
+     "title": "NOBIOLOGIK IXTISOSLIK TALABALARIDA EKOLOGIK BILIMLARNI SHAKLLANTIRISHNING MUHIM JIHATLARI",
+     "byline": "Munisa Maxammadiyeva Abdusalom qizi, Qarshi davlat universiteti “Boshlang‘ich ta’lim kafedrasi” doktoranti",
+     "page": 515
+    },
+    {
+     "title": "INTEGRATION OF DIGITAL LEARNING TECHNOLOGIES AND ECOLOGY INTO BOTANY TEACHING IN HIGHER EDUCATION INSTITUTIONS",
+     "byline": "Kayumova Mohinur Karim qizi, student, NSU Lecturer at the Department of Biology",
+     "page": 519
+    },
+    {
+     "title": "BARQAROR RIVOJLANISHDA TA’LIM VA ILM-FANNING ROLI",
+     "byline": "Ravshanov Ma`rufjon Baxtiyor og`li, NDU akademik litseyi biologiya fani bosh o`qituvchisi, NDU 1-bosqich tayanch doktaranti",
+     "page": 522
+    },
+    {
+     "title": "MAKTABGACHA YOSHDAGI BOLALARDA TASVIRIY FAOLIYAT ORQALI ATROF-MUHITNI IDROK ETISHNI SHAKLLANTIRISH: PEDAGOGIK PSIXOLOGIK YONDASHUVLAR VA AMALIY TAVSIYALAR",
+     "byline": "Raxmatova Gulobod Tuyboy qizi, NDU Maktabgacha ta’lim kafedrasi o’qituvchisi",
+     "page": 524
+    },
+    {
+     "title": "EKOLOGIK TARBIYANI TA’MINLASHNING IJTIMOIY KELIB CHIQISHIDA,“HAYOT FAOLIYATI XAVFSIZLIGI”FANI PEDAGOGIK TA’LIMOTLAR TARIXI TAHLILI ASOSIDA",
+     "byline": "Akobirov Shuxrat Razitdinovich NDU katta o‘qituvchisi,p.f.f.d (PhD), Akobirova Nilufar Shuxratovna Toshkent davlat farmatsevtika instituti talabasi.",
+     "page": 527
+    },
+    {
+     "title": "EKOLOGIK TA’LIM, EKOLOGIK BARQARORLIK VA YASHIL IQTISODIYOT",
+     "byline": "Rahmonov Ilg’or. NDU Iqtisod kafedrasi o’qituvchisi. Shermamatov Muxammad Baxodir o’g’li. NDU 4-kurs talabasi",
+     "page": 531
+    },
+    {
+     "title": "BARQAROR RIVOJLANISHDA EKOLOGIK TA’LIMNING AHAMIYATI VA UNGA PEDAGOGIK YONDASHUV",
+     "byline": "Shokirova M.B. BuxDU doktoranti",
+     "page": 536
+    },
+    {
+     "title": "UMUMTA’LIM MAKTABLARIDA EKOLOGIYA MAVZULARINI O‘QITISH JARAYONIDA ILMIY-OMMABOP ADABIYOTLARDAN FOYDALANISH METODIKASI",
+     "byline": "Shomurotova Xurshida Baxtiyorovna NDU 2-bosqich doktaranti",
+     "page": 540
+    },
+    {
+     "title": "ASSESSMENT OF THE BLOOD COAGULATION SYSTEM USING OPTICAL COAGULOMETRY IN THE LABORATORY",
+     "byline": "Tukhtaeva Feruza Shonazarovna University of Business and Science Tashkent branch, Department of Natural Sciences PhD.",
+     "page": 543
+    },
+    {
+     "title": "TALABALARDA INTEGRATIV YONDASHUV ASOSIDA BIOLOGIYADAN MASALALAR YECHISH ORQALI EKOLOGIK TAFAKKURI VA BARQAROR RIVOJLANISH KOMPETENSIYALARINI SHAKLLANTIRISH",
+     "byline": "Raxmatov Uchkun Ergashevich, (O‘z.MPU, Toshkent)",
+     "page": 544
+    },
+    {
+     "title": "EKOLOGIK MUVOZANATNI ANGLASHDA OZIQ ZANJIRI VA TROFIK PIRAMIDA ASOSIDAGI INTEGRATIV MASALALARDAN FOYDALANISH METODIKASI",
+     "byline": "Raxmatov Uchkun Ergashevich, (O‘z.MPU, Toshkent) Jumanov Muratbay Arepbaevich (QQDU, Nukus)",
+     "page": 548
+    },
+    {
+     "title": "MAKTABGACHA YOSHDAGI BOLALARDA EKOLOGIK KOMPETENSIYALARNI SHAKLLANTIRISH",
+     "byline": "Yarova Gulhayo Fazliddin NDU Maktabgacha ta’lim kafedrasi o’qituvchisi",
+     "page": 552
+    },
+    {
+     "title": "O‘QUVCHILARNING EKOLOGIK MADANIYATINI RIVOJLANTIRISHDA LOYIXALI TA’LIMDAN FOYDALANISH",
+     "byline": "Ismatillaeva Dilfuza Botirjonovn Farg‘ona viloyati Rishton tumanidagi, 8-maktab biologiya o‘qituvchisi Allayorova Maloxat Normaxmat qizi mustaqil izlanuvchi",
+     "page": 555
+    },
+    {
+     "title": "EKOLOGIK TARBIYADA UZVIYLIK TIZIMINI SHAKLLANTIRISH",
+     "byline": "Mamirova Zulxumar Narbayevna Navoiy davlat universiteti",
+     "page": 558
+    },
+    {
+     "title": "QORAQALPOG‘ISTON RESPUBLIKASI XUDUDIDA TARQALGAN DORIVOR O‘SIMLIKLARINI EKOLOGIK XOLATINI O‘RGANISH MISOLIDA O‘QUVCHILARNING ILMIY TADQIQOTCHILIK KO‘NIKMALARINI SHAKLLANTIRISH",
+     "byline": "Mirzaboev Timur Bisenbay o‘g‘li, Qoraqalpoq davlat universitet Dorivor o‘simliklar agroekologiyasi va introduksiyasi kafedrasi o‘qituvchisi",
+     "page": 561
+    },
+    {
+     "title": "MAKTABDA EKOLOGIK TARBIYANING ISTIQBOLLI YO’NALISHLARI",
+     "byline": "Ergasheva Gulruxsor Surxonidinovna O’zbekiston milliy pedagogika, universiteti professori, p.f.d. Qayumova Dilsora Nurali qizi, O’zbekiston milliy pedagogika universiteti dotsenti, p.f.f.d.(PhD)",
+     "page": 565
+    },
+    {
+     "title": "IQTISODIY BARQARORLIK VA YASHIL IQTISODIYOTNI ZOOLOGIYA FANI BILAN INTEGRATSIYALASH: BARQAROR RIVOJLANISH SARI QADAM",
+     "byline": "Navruzova Sevara Akbar qizi Navoiy davlat universiteti tayanch doktoranti",
+     "page": 567
+    },
+    {
+     "title": "BIOLOGIYA TA’LIMIDA INDIVIDUAL YONDASHUVNI AMALGA OSHIRISHNING METODIK IMKONIYATLARI",
+     "byline": "Ergasheva Gulruxsor Surxonidinovna O’zMPU professori, p.f.d. (DSc) Savutova Malohat Erkinovna Xorazm viloyati Urganch shahri 1-son maktab oliy toifali biologiya o‘qituvchisi",
+     "page": 570
+    },
+    {
+     "section": "V sho‘ba. Xalqaro hamkorlik va milliy siyosat"
+    },
+    {
+     "title": "IQLIM O`ZGARISHI SHAROITIDA HUDUDIY BARQARORLIKNI TA’MINLASHDA JAHON MAMLAKATLARINING BURCH VA MAJBURIYATLARI",
+     "byline": "Abdurashidov Zafarjon UzMU “ Ekologiya kafedrasi ” dotsenti G.f.f.d (PhD).",
+     "page": 575
+    },
+    {
+     "title": "GLOBAL HAMKORLIK VA MILLIY YONDASHUVLAR: IQLIM O‘ZGARISHIGA QARSHI STRATEGIYALAR VA SUV RESURSLARINI BOSHQARISH",
+     "byline": "G’aybullayeva Ozoda Obid qizi, NDU Tabiiy fanlar va tibbiyot fakulteti Biologiya kafedrasi o’qituvchisi b.f.f.d.(PhD) Baratov Ulug’bek Dilshod o‘g‘li NDU Tabiiy fanlar va tibbiyot fakulteti Biologiya kafedrasi o’qituvchisi",
+     "page": 579
+    },
+    {
+     "title": "XALQARO HAMKORLIK VA MILLIY SIYOSAT",
+     "byline": "Sharapova Gulnoza Valentinovna, NDU Biologiya kafedrasi dotsenti, Bo’riyeva Gulshan Ulmas qizi Biologiya ta’lim yo’nalishi 2-bosqich talabasi.",
+     "page": 582
+    },
+    {
+     "title": "IQLIM XAVFSIZLIGI VA BARQAROR RIVOJLANISH: XALQARO HAMKORLIK VA MILLIY STRATEGIYALARNING UYG‘UNLIGI",
+     "byline": "G’aybullayeva Ozoda Obid qizi NDU Biologiya kafedrasi o’qituvchisi b.f.f.d.(PhD).",
+     "page": 585
+    },
+    {
+     "title": "IQLIM O‘ZGARISHIGA QARSHI KURASHISHDA XALQARO TASHABUSLAR, MILLIY STRATEGIYALAR VA DAVLAT DASTURLARI",
+     "byline": "Shomurodov Nomurod Parda o’g’li NDU o'qituvchisi, Ismatullayev Baxtiyor Arslon o‘g’li NDU 3-bosqich talabasi Sayfullayev Muhammadqodir Muhammadsodiq o‘g’li NDU 3-bosqich talabasi",
+     "page": 588
+    },
+    {
+     "title": "EKOLOGIK XAVFSIZLIKNI TA’MINLASH MASALALARI – KONSTITUTSIYA HIMOYASIDA",
+     "byline": "Shamsidinova G. D. NDU dotsenti, Maktabgacha va BT fakultet dekani, Sharopova M.- II kurs magistri.",
+     "page": 592
+    },
+    {
+     "title": "O’ZBEKISTON HAYVONOT OLAMI VA UNI MUHOFAZA QILISHNING HUQUQIY ASOSLARI",
+     "byline": "Ummatova Muxayyo Egamberdiyevna NDU dotsenti, b.f.f.d.(PhD)",
+     "page": 596
+    },
+    {
+     "title": "O’ZBEKISTONDA BARQAROR RIVOJLANISH MAQSADLARINI AMALGA OSHIRISHDA EKOLOGIK INDIKATORLARNI ROLIVA NAZARIY ASOSLARI",
+     "byline": "Payziyeva Madina Ulug’bek qizi, Atrof muhit va tabiatni muhofaza qilish texnologiyalari ilmiy tadqiqot instituti tayanch doktaranti.",
+     "page": 599
+    },
+    {
+     "title": "«ҚАЗЫҒҰРТ-ӨГЕМ» ТУРИСТІК КЛАСТЕРІН ДАМЫТУДА МЕМЛЕКЕТТІК БАҒДАРЛАМАЛАРДЫ ҚОЛДАНУДЫҢ МАҢЫЗЫ",
+     "byline": "Айтуар Асел, Кенжебай Р.Н., Амербеков Е.У. М.Әуезов атындағы Оңтүстік Қазақстан университеті, ҚР",
+     "page": 603
+    },
+    {
+     "title": "YANGI O‘ZBEKISTON EKOLOGIK BARQARORLIK VA YASHIL KELAJAK YO‘LIDA",
+     "byline": "Raxmonova Dilovar Ostanaqulovna, NDU Biologiya kafedrasi o’qituvchisi Olimova Aziza Ixtiyor qizi NDU Biologiya ta’lim yo’nalishi talabasi",
+     "page": 606
+    },
+    {
+     "title": "GLOBAL IQLIM OʻZGARISHI VA PAYDO BOʻLAYOTGAN KOʻPLAB EKOLOGIK MUAMMOLAR. MAMLAKATIMIZDAGI BIOXILMA-XILLIKNING KAMAYISHI VA KOʻRILAYOTGAN CHORA TADBIRLAR",
+     "byline": "Shodiyeva O.M. NDU Biologiya kafedrasi dotsenti Sadulloyeva G.U Biologiya taʼlim yoʻnalishi talabasi",
+     "page": 609
+    },
+    {
+     "title": "O‘ZBEKISTON VA BMT: ATROF-MUHITNI MUHOFAZA QILISH SOHASIDAGI HAMKORLIK MUNOSABATLARI",
+     "byline": "Toshturov Shuxrat Eshonqulovich, NDU doktoranti",
+     "page": 612
+    },
+    {
+     "title": "ATMOSFERA HAVOSINING IFLOSLANISHINI KAMAYTIRISH BOʻYICHA XALQARO TASHABBUSLAR",
+     "byline": "J.Q.Umarova NDU dotsenti",
+     "page": 616
+    },
+    {
+     "title": "O‘ZBEKISTON EKOLOGIYASI HOLATI VA UNING MUAMMOLARI",
+     "byline": "Sharifjanova Gulchexra, NDU “Iqtisodiyot” kafedrasi dotsenti, Niyatova Iroda NDU 4-bosqich talabasi.",
+     "page": 618
+    },
+    {
+     "title": "МАРКАЗИЙ ОСИЁДА ИҚЛИМ ЎЗГАРИШИ МУАММОЛАРИ ВА ЕЧИМЛАРИНИ БАРТАРАФ ЭТИШ ЙЎЛЛАРИ",
+     "byline": "Тоғайев Зокир Тиловович НДУ Тарих факультети декани, т.ф.ф.д (PHD)",
+     "page": 621
+    },
+    {
+     "title": "ИҚЛИМ ЎЗГАРИШИ ВА УНИНГ ТАЪСИРИ",
+     "byline": "Тоғайев Зокир Тиловович НДУ Тарих факультети декани, т.ф.ф.д (PHD)",
+     "page": 625
+    }
+   ]
+  },
+  {
    "type": "proceedings",
    "language": "uz",
    "publisher": "Navoiy davlat universiteti",
