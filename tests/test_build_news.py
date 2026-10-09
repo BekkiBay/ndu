@@ -336,6 +336,18 @@ class BuildTests(unittest.TestCase):
         self.assertIn('<button class="menu__btn" type="button" aria-label="Yana">', page)
         self.assertTrue((self.root / 'ilm-bilan-erishilgan-yutuq.html').is_file())
 
+    def test_rubric_pages_cite_the_ministry_minutes(self):
+        self.write_posts([post(slug='a', cover='images/nsu/news/a/cover.jpg')])
+        bn.build(self.root)
+        pdf = 'files/documents/vazirlik-yigilishi-bayoni-2026-09-05-107-son.pdf'
+        for name in ('bir-ixtiro-tarixi.html', 'ilm-bilan-erishilgan-yutuq.html'):
+            page = (self.root / name).read_text(encoding='utf-8')
+            self.assertIn('class="nsu-section-basis"', page)
+            self.assertIn(f'href="{pdf}"', page)
+            self.assertIn('107-son bayoni', page)
+        self.assertNotIn('nsu-section-basis', (self.root / 'kelajakka-qadam.html').read_text(encoding='utf-8'))
+        self.assertIn(f'href="../{pdf}"', bn.basis_block(bn.BASIS_107, 'ru'))
+
     def test_rubric_post_is_listed_on_the_rubric_page(self):
         self.write_posts([post(slug='a', cover='images/nsu/news/a/cover.jpg'),
                           post(slug='r', cover='images/nsu/news/a/cover.jpg',

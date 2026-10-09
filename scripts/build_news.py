@@ -44,6 +44,45 @@ SEAL = 'images/nsu/nsu-seal-navy.png'
 
 LANGS = i18n.LANGS
 
+#: Протокол совещания Минвуза № 107 от 5.09.2026: по его п. 8 заведены рубрики
+#: «Bir ixtiro tarixi» и «Ilm bilan erishilgan yutuq». Блок «Основание» внизу
+#: страницы раздела: текст, цитата поручения и ссылка на скан протокола.
+BASIS_107 = {
+    'pdf': 'files/documents/vazirlik-yigilishi-bayoni-2026-09-05-107-son.pdf',
+    'uz': {
+        'title': 'Asos',
+        'text': 'Rukn O‘zbekiston Respublikasi Oliy ta’lim, fan va innovatsiyalar vazirligi '
+                'yig‘ilishining 2026-yil 5-sentabrdagi 107-son bayoni (8-band) asosida '
+                'tashkil etilgan:',
+        'quote': '…oliy ta’lim tashkilotining rasmiy veb-saytlari va ijtimoiy tarmoqlarida '
+                 '“Bir ixtiro tarixi” va “Ilm bilan erishilgan yutuq” kabi ruknlari tashkil '
+                 'etilib, har hafta yangi materiallar e’lon qilsin.',
+        'link': 'Bayonni ochish (PDF, 1,2 MB)',
+    },
+    'ru': {
+        'title': 'Основание',
+        'text': 'Рубрика создана на основании протокола совещания Министерства высшего '
+                'образования, науки и инноваций Республики Узбекистан № 107 от 5 сентября '
+                '2026 года (пункт 8):',
+        'quote': '…на официальных веб-сайтах и в социальных сетях высшего образовательного '
+                 'учреждения организовать рубрики «Bir ixtiro tarixi» («История одного '
+                 'изобретения») и «Ilm bilan erishilgan yutuq» («Достижения благодаря науке») '
+                 'и еженедельно публиковать новые материалы.',
+        'link': 'Открыть протокол (PDF на узбекском языке, 1,2 МБ)',
+    },
+    'en': {
+        'title': 'Basis',
+        'text': 'The rubric was set up under minutes No. 107 of the meeting of the Ministry '
+                'of Higher Education, Science and Innovation of the Republic of Uzbekistan '
+                'of 5 September 2026 (item 8):',
+        'quote': '…higher education institutions shall set up rubrics such as “Bir ixtiro '
+                 'tarixi” (“The Story of an Invention”) and “Ilm bilan erishilgan yutuq” '
+                 '(“Achieved Through Science”) on their official websites and social networks '
+                 'and publish new materials every week.',
+        'link': 'Open the minutes (PDF in Uzbek, 1.2 MB)',
+    },
+}
+
 #: Разделы сайта, которые собираются из тех же постов content/news.json.
 #: Пост с ``"section": "<ключ>"`` попадает на страницу раздела, а не в
 #: Yangiliklar. Страница раздела есть в главном меню каждой страницы сайта
@@ -66,6 +105,7 @@ SECTIONS = {
     'bir-ixtiro-tarixi': {
         'page': 'bir-ixtiro-tarixi.html',
         'hero': 'images/nsu/news/library.jpg',
+        'basis': BASIS_107,
         'uz': ('Bir ixtiro tarixi',
                'Ixtiro va kashfiyotlar qanday tug‘ilgani, ularning mualliflari '
                'va jamiyatga keltirgan foydasi haqida hikoyalar.'),
@@ -78,6 +118,7 @@ SECTIONS = {
     'ilm-bilan-erishilgan-yutuq': {
         'page': 'ilm-bilan-erishilgan-yutuq.html',
         'hero': 'images/nsu/news/conference.jpg',
+        'basis': BASIS_107,
         'uz': ('Ilm bilan erishilgan yutuq',
                'Universitet olimlari, ixtirochilari va yosh tadqiqotchilarining '
                'ilm-fan orqali erishgan yutuqlari.'),
@@ -422,16 +463,26 @@ def render_list(posts, shell, lang='uz'):
     return shell.render(title, sub, asset(SEAL, lang), content, page='news.html')
 
 
+def basis_block(basis, lang):
+    """«Основание» раздела: документ, по которому он заведён."""
+    text = basis[lang]
+    return (f'<div class="nsu-section-basis"><h3>{esc(text["title"])}</h3>'
+            f'<p>{esc(text["text"])}</p><blockquote>{esc(text["quote"])}</blockquote>'
+            f'<p><a href="{esc(asset(basis["pdf"], lang))}" target="_blank" rel="noopener">'
+            f'{esc(text["link"])}</a></p></div>')
+
+
 def render_section(key, posts, shell, lang='uz'):
     info = SECTIONS[key]
     title, sub = info[lang]
     grid = ''.join(card(p, lang) for p in sort_posts(posts))
     if not grid:
-        grid = f'<p class="nsu-news-empty">{esc(LABELS[lang]["empty"])}</p>'
+        grid = f'<div class="col-12"><p class="nsu-news-empty">{esc(LABELS[lang]["empty"])}</p></div>'
+    basis = basis_block(info['basis'], lang) if info.get('basis') else ''
     content = (hero(asset(info['hero'], lang), crumbs(lang, title), title,
                     f'<p class="nsu-hero-sub">{esc(sub)}</p>')
                + MAIN_OPEN + TEXT_OPEN.format(sid='nsu-news-list')
-               + f'<div class="row nsu-news-grid">{grid}</div>'
+               + f'<div class="row nsu-news-grid">{grid}</div>' + basis
                + TEXT_CLOSE + cta(lang) + MAIN_CLOSE)
     return shell.render(title, sub, asset(info['hero'], lang), content, page=info['page'])
 

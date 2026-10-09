@@ -150,7 +150,10 @@ media/                          Joomla core, Bootstrap 5, jQuery, ConvertForms
 Рубрики «Bir ixtiro tarixi» и «Ilm bilan erishilgan yutuq» вузам велено вести
 на сайте с новыми материалами каждую неделю (протокол совещания Минвуза № 107
 от 5 сентября 2026 г., п. 8). Пока постов в разделе нет, на его странице
-написано, что материалы скоро появятся.
+написано, что материалы скоро появятся. Внизу обеих страниц — блок «Asos»
+(основание): номер и дата протокола, цитата поручения и ссылка на скан
+`files/documents/vazirlik-yigilishi-bayoni-2026-09-05-107-son.pdf`
+(`BASIS_107` в `scripts/build_news.py`).
 
 Разделы описаны в `SECTIONS` в `scripts/build_news.py`; страница раздела тоже
 генерируется и лежит в `build_i18n.GENERATED_PAGES` и `.gitignore`. Раздел
