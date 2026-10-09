@@ -42,7 +42,8 @@ class BuildError(Exception):
 #: Страницы, которые генераторы пишут для каждого языка сами: build_news.py —
 #: список новостей и страницы разделов (content/news.json, поле ``section``),
 #: build_publications.py — каталог научных публикаций.
-GENERATED_PAGES = frozenset({'news.html', 'kelajakka-qadam.html', 'publications.html'})
+GENERATED_PAGES = frozenset({'news.html', 'kelajakka-qadam.html', 'bir-ixtiro-tarixi.html',
+                             'ilm-bilan-erishilgan-yutuq.html', 'publications.html'})
 GENERATED_PREFIXES = ('news-', 'publication-')
 
 

@@ -147,6 +147,13 @@ class RecordTests(unittest.TestCase):
         self.assertEqual(api.clean_post('test', self.payload(), existing)['section'], 'kelajakka-qadam')
         self.assertNotIn('section', api.clean_post('test', self.payload(), None))
 
+    def test_section_chosen_in_the_admin_wins(self):
+        existing = {'slug': 'test', 'section': 'kelajakka-qadam'}
+        record = api.clean_post('test', self.payload(section='bir-ixtiro-tarixi'), existing)
+        self.assertEqual(record['section'], 'bir-ixtiro-tarixi')
+        # null = «Yangiliklar»: the post leaves its section
+        self.assertNotIn('section', api.clean_post('test', self.payload(section=None), existing))
+
     def test_empty_date_becomes_null(self):
         self.assertIsNone(api.clean_post('test', self.payload(date=''), None)['date'])
 

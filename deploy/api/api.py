@@ -401,8 +401,9 @@ def clean_post(slug, data, existing):
     cover = data.get('cover') or (existing or {}).get('cover')
     if not cover:
         raise ApiError(400, 'Выберите обложку.')
-    # Раздел сайта (build_news.SECTIONS). Админка его не показывает, поэтому
-    # при правке поста раздел берётся из уже сохранённой записи.
+    # Раздел сайта (build_news.SECTIONS). Админка присылает его явно (null —
+    # «Yangiliklar»); запрос без поля section оставляет раздел из уже
+    # сохранённой записи.
     section = data.get('section', (existing or {}).get('section'))
     if section is not None and not (isinstance(section, str) and SLUG_RE.match(section)):
         raise ApiError(400, 'Неверный раздел.')

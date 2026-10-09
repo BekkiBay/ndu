@@ -193,6 +193,37 @@ html[lang="ru"] .site-header .menu { gap: 14px; }
 .dd__sub { display: none; position: absolute; left: 100%; top: 0; padding-left: 8px; }
 .dd__link:hover > .dd__sub { display: block; }
 .dd__sub .dd__panel { min-width: 200px; }
+/* Список у правого края экрана раскрывается влево. */
+.dd--end { left: auto; right: 0; }
+
+/* «›» в конце меню — пункты, которым не хватает места в строке
+   (Talabalar hayoti, Bog‘lanish). Новый пункт добавляется сюда ещё одной
+   ссылкой .dd__link. В мобильном меню ничего не прячется: там все пункты
+   идут обычным списком. */
+.menu__item--more > .menu__btn {
+  justify-content: center;
+  width: 28px; height: 28px;
+  border: 1px solid rgba(255, 255, 255, .4);
+  border-radius: 50%;
+  transition: color .2s, border-color .2s, background-color .2s;
+}
+.menu__item--more > .menu__btn .ico { width: 16px; height: 16px; }
+.menu__item--more:hover > .menu__btn, .menu__item--more:focus-within > .menu__btn { border-color: currentColor; }
+.menu__item--more:hover > .menu__btn .ico, .menu__item--more:focus-within > .menu__btn .ico { transform: rotate(90deg); }
+/* Рубрики «Bir ixtiro tarixi» и «Ilm bilan erishilgan yutuq» встают в строку
+   меню только там, где она вмещает их на всех трёх языках (от 1536px), на
+   экранах уже они в списке «›». Поэтому каждая ссылка есть дважды:
+   [data-wide] в строке и [data-narrow] в списке. */
+.site-header .menu > [data-wide] { display: none; }
+@media (min-width: 1536px) {
+  .site-header .menu > [data-wide] { display: flex; }
+  .site-header .dd__link[data-narrow] { display: none; }
+}
+/* Открыта страница рубрики, а сама рубрика спрятана в «›» — подсвечиваем «›». */
+@media (max-width: 1535px) {
+  .menu:has(> [data-wide].is-active) > .menu__item--more > .menu__btn { color: var(--yellow); border-color: currentColor; }
+  .is-scrolled .menu:has(> [data-wide].is-active) > .menu__item--more > .menu__btn { color: var(--navy); }
+}
 
 /* активный пункт меню */
 .menu__btn.is-active, .menu__link.is-active { color: var(--yellow); }
@@ -203,6 +234,9 @@ html[lang="ru"] .site-header .menu { gap: 14px; }
 }
 .menu__item, .menu__link { position: relative; }
 .menu__link.is-active::after { right: 0; }
+/* У круглой «›» вместо подчёркивания — цветное кольцо. */
+.menu__item--more > .menu__btn.is-active { border-color: currentColor; }
+.menu__item--more > .menu__btn.is-active::after { content: none; }
 
 /* scrolled state */
 .is-scrolled .topbar {
@@ -218,6 +252,9 @@ html[lang="ru"] .site-header .menu { gap: 14px; }
 .is-scrolled .mainnav { background: #fff; box-shadow: var(--sh-sm); }
 .is-scrolled .menu { color: var(--gray-800); }
 .is-scrolled .menu__btn:hover, .is-scrolled .menu__link:hover { color: var(--navy); }
+.is-scrolled .menu__item--more > .menu__btn { border-color: var(--gray-300); }
+.is-scrolled .menu__item--more:hover > .menu__btn,
+.is-scrolled .menu__item--more > .menu__btn.is-active { border-color: currentColor; }
 
 @media (min-width: 640px) {
   .site-header .social-row { gap: 12px; }

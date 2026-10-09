@@ -24,7 +24,7 @@ button:disabled{opacity:.6;cursor:default}
 .link{background:none;border-color:transparent;color:var(--primary);padding-left:6px;padding-right:6px}
 label{display:block;margin:0 0 14px;font-weight:600;font-size:13px;color:var(--muted)}
 label small{font-weight:400;display:block;margin-top:4px}
-input[type=text],input[type=password],input[type=date],input:not([type]),textarea{display:block;width:100%;margin-top:4px;padding:8px 10px;font:inherit;color:var(--text);border:1px solid var(--border);border-radius:4px;background:#fff}
+input[type=text],input[type=password],input[type=date],input:not([type]),textarea,select{display:block;width:100%;margin-top:4px;padding:8px 10px;font:inherit;color:var(--text);border:1px solid var(--border);border-radius:4px;background:#fff}
 input:read-only{background:var(--light);color:var(--muted)}
 textarea{resize:vertical}
 .row2{display:grid;grid-template-columns:200px 1fr;gap:16px}
@@ -46,6 +46,7 @@ table.posts td.num{text-align:right;font-variant-numeric:tabular-nums}
 table.posts td.actions{white-space:nowrap;text-align:right}
 table.posts td.actions button{margin-left:6px}
 table.posts a.title{color:var(--text);text-decoration:none;font-weight:600}
+table.posts small.section{display:block;margin-top:2px;font-size:12px}
 table.posts a.title:hover{color:var(--primary)}
 .editor{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,420px);gap:28px;align-items:start}
 .editor form{background:#fff;border:1px solid var(--border);border-radius:6px;padding:20px}

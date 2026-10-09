@@ -154,6 +154,13 @@ async function loadList(notice) {
   pollRun();
 }
 
+// Название раздела (build_news.SECTIONS) берётся из списка в форме поста.
+function sectionLabel(key) {
+  if (!key) return '';
+  const option = [...$('f-section').options].find((o) => o.value === key);
+  return option ? option.textContent : key;
+}
+
 function renderList() {
   const posts = sortPosts(state.news.posts);
   $('count').textContent = `(${posts.length})`;
@@ -172,7 +179,14 @@ function renderList() {
     a.target = '_blank';
     a.rel = 'noopener';
     a.textContent = p.title;
-    tr.appendChild(document.createElement('td')).appendChild(a);
+    const title = tr.appendChild(document.createElement('td'));
+    title.appendChild(a);
+    const section = sectionLabel(p.section);
+    if (section) {
+      const tag = title.appendChild(document.createElement('small'));
+      tag.className = 'muted section';
+      tag.textContent = section;
+    }
     tr.appendChild(document.createElement('td')).textContent = formatDate(p.date);
     const views = tr.appendChild(document.createElement('td'));
     views.className = 'num';
@@ -344,6 +358,7 @@ function openEditor(slug) {
   $('f-date').value = post ? (post.date || '') : today();
   $('f-slug').value = post ? post.slug : '';
   $('f-slug').readOnly = !!post;
+  $('f-section').value = post ? (post.section || '') : '';
   const cover = $('cover-preview');
   cover.hidden = !post;
   cover.src = post ? siteUrl(post.cover) : '';
@@ -504,7 +519,7 @@ async function savePost(event) {
     const existing = state.editing ? findPost(state.editing) : null;
     const { files, cover, body, bodies, gallery } = await collectFiles(v.slug, existing);
     const record = {
-      slug: v.slug, title: v.title, date: v.date,
+      slug: v.slug, title: v.title, date: v.date, section: $('f-section').value || null,
       excerpt: state.texts.uz.excerpt.trim(), cover, body, gallery,
       updated: new Date().toISOString().replace(/\.\d{3}Z$/, 'Z'),
     };

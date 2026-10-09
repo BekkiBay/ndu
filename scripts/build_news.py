@@ -60,6 +60,32 @@ SECTIONS = {
                'Opportunities, announcements and news of the Step into the Future '
                '(“Kelajakka qadam”) programme.'),
     },
+    # Две рубрики, которые вузам велено вести на сайте с новыми материалами
+    # каждую неделю: протокол совещания Минвуза № 107 от 5.09.2026, п. 8,
+    # проект «Ilm-fan qahramonlari — yoshlarga namuna».
+    'bir-ixtiro-tarixi': {
+        'page': 'bir-ixtiro-tarixi.html',
+        'hero': 'images/nsu/news/library.jpg',
+        'uz': ('Bir ixtiro tarixi',
+               'Ixtiro va kashfiyotlar qanday tug‘ilgani, ularning mualliflari '
+               'va jamiyatga keltirgan foydasi haqida hikoyalar.'),
+        'ru': ('История одного изобретения',
+               'Как рождались изобретения и открытия, кто их авторы и что они дали людям.'),
+        'en': ('The Story of an Invention',
+               'How inventions and discoveries came about, who made them '
+               'and what they gave to people.'),
+    },
+    'ilm-bilan-erishilgan-yutuq': {
+        'page': 'ilm-bilan-erishilgan-yutuq.html',
+        'hero': 'images/nsu/news/conference.jpg',
+        'uz': ('Ilm bilan erishilgan yutuq',
+               'Universitet olimlari, ixtirochilari va yosh tadqiqotchilarining '
+               'ilm-fan orqali erishgan yutuqlari.'),
+        'ru': ('Достижения благодаря науке',
+               'Достижения учёных, изобретателей и молодых исследователей университета.'),
+        'en': ('Achieved Through Science',
+               'Achievements of the university’s scientists, inventors and young researchers.'),
+    },
 }
 
 MONTHS_UZ = ['yanvar', 'fevral', 'mart', 'aprel', 'may', 'iyun',
@@ -86,6 +112,7 @@ LABELS = {
                     'Biz bilan toʻgʻridan-toʻgʻri aloqaga chiqing.',
         'cta_contact': 'Bogʻlanish',
         'cta_apply': 'Hujjat topshirish',
+        'empty': 'Bu bo‘limda materiallar tez orada e’lon qilinadi.',
     },
     'ru': {
         'months': MONTHS_RU,
@@ -101,6 +128,7 @@ LABELS = {
                     'Свяжитесь с нами напрямую.',
         'cta_contact': 'Связаться',
         'cta_apply': 'Подать документы',
+        'empty': 'Материалы в этом разделе скоро появятся.',
     },
     'en': {
         'months': MONTHS_EN,
@@ -116,6 +144,7 @@ LABELS = {
                     'Get in touch with us directly.',
         'cta_contact': 'Contact us',
         'cta_apply': 'Apply now',
+        'empty': 'Materials for this section are coming soon.',
     },
 }
 
@@ -397,6 +426,8 @@ def render_section(key, posts, shell, lang='uz'):
     info = SECTIONS[key]
     title, sub = info[lang]
     grid = ''.join(card(p, lang) for p in sort_posts(posts))
+    if not grid:
+        grid = f'<p class="nsu-news-empty">{esc(LABELS[lang]["empty"])}</p>'
     content = (hero(asset(info['hero'], lang), crumbs(lang, title), title,
                     f'<p class="nsu-hero-sub">{esc(sub)}</p>')
                + MAIN_OPEN + TEXT_OPEN.format(sid='nsu-news-list')

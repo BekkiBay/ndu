@@ -138,12 +138,33 @@ media/                          Joomla core, Bootstrap 5, jQuery, ConvertForms
 - блок между маркерами `<!-- news:carousel -->` и `<!-- /news:carousel -->` в
   `index.html` — карусель из шести последних постов.
 
-Пост с полем `"section": "kelajakka-qadam"` уходит из «Yangiliklar» и карусели
-на страницу своего раздела `kelajakka-qadam.html` («Kelajakka qadam dasturi»,
-отдельный пункт главного меню). Разделы описаны в `SECTIONS` в
-`scripts/build_news.py`; страница раздела тоже генерируется и лежит в
-`build_i18n.GENERATED_PAGES`. Админка поле `section` не показывает, но при
-правке поста сохраняет.
+Пост с полем `"section"` уходит из «Yangiliklar» и карусели на страницу
+своего раздела — у каждого раздела свой пункт главного меню:
+
+| `section` | Страница | Пункт меню |
+|---|---|---|
+| `kelajakka-qadam` | `kelajakka-qadam.html` | Kelajakka qadam dasturi |
+| `bir-ixtiro-tarixi` | `bir-ixtiro-tarixi.html` | Bir ixtiro tarixi |
+| `ilm-bilan-erishilgan-yutuq` | `ilm-bilan-erishilgan-yutuq.html` | Ilm bilan erishilgan yutuq |
+
+Рубрики «Bir ixtiro tarixi» и «Ilm bilan erishilgan yutuq» вузам велено вести
+на сайте с новыми материалами каждую неделю (протокол совещания Минвуза № 107
+от 5 сентября 2026 г., п. 8). Пока постов в разделе нет, на его странице
+написано, что материалы скоро появятся.
+
+Разделы описаны в `SECTIONS` в `scripts/build_news.py`; страница раздела тоже
+генерируется и лежит в `build_i18n.GENERATED_PAGES` и `.gitignore`. Раздел
+выбирается в админке, в поле «Раздел» формы поста.
+
+**Кнопка «›» в конце меню.** На десктопе пункты, которым не хватает места в
+строке, спрятаны в выпадающий список под круглой кнопкой «›»
+(`.menu__item--more`): там «Talabalar hayoti» и «Bog‘lanish». Новый пункт
+добавляется туда ещё одной ссылкой `<a class="dd__link" …>` — на всех
+страницах, включая `contact.html`. Рубрики стоят в строке меню только от
+1536px, где она вмещает их на всех трёх языках; на экранах уже они тоже в
+«›». Поэтому их ссылки есть дважды: `data-wide` в строке и `data-narrow` в
+списке (`assets/css/header.css`). В мобильном меню ничего не прячется: все
+пункты, включая рубрики, идут обычным списком.
 
 `news.html` и `news-*.html` в `.gitignore`: CI собирает их перед проверками и
 деплоем, локально — команда из раздела «Запуск». `index.html` остаётся в git,

@@ -29,6 +29,8 @@ DONOR = '''<!DOCTYPE html><html><head>
 <a class="menu__link is-active" href="contact.html">Bogʻlanish</a>
 <a class="menu__link" href="news.html">Yangiliklar</a>
 <a class="menu__link" href="kelajakka-qadam.html">Kelajakka qadam dasturi</a>
+<a class="menu__link" href="bir-ixtiro-tarixi.html" data-wide>Bir ixtiro tarixi</a>
+<div class="menu__item menu__item--more"><button class="menu__btn is-active" type="button" aria-label="Yana"></button><div class="dd"><div class="dd__panel"><a class="dd__link" href="bir-ixtiro-tarixi.html" data-narrow>Bir ixtiro tarixi</a><a class="dd__link" href="contact.html">Bogʻlanish</a></div></div></div>
 <a class="mm__link" href="news.html">Yangiliklar</a>
 \t\t\t\t<section id="sp-page-title" class="nsu-page-hero">OLD CONTENT</section><section id="sp-main-body">OLD</section><!-- ====== FOOTER (из Макета 2) ====== -->
 <footer>F</footer>
@@ -285,7 +287,8 @@ class BuildTests(unittest.TestCase):
     def test_writes_pages_and_patches_index(self):
         result = bn.build(self.root)
         self.assertEqual(sorted(result['written']),
-                         ['index.html', 'kelajakka-qadam.html', 'news-a.html', 'news.html'])
+                         ['bir-ixtiro-tarixi.html', 'ilm-bilan-erishilgan-yutuq.html', 'index.html',
+                          'kelajakka-qadam.html', 'news-a.html', 'news.html'])
         self.assertIn('data-views="a"', (self.root / 'news-a.html').read_text(encoding='utf-8'))
         index = (self.root / 'index.html').read_text(encoding='utf-8')
         self.assertTrue(index.startswith('X<!-- news:carousel --><div role="article"'))
@@ -321,6 +324,30 @@ class BuildTests(unittest.TestCase):
         self.assertIn('<a href="kelajakka-qadam.html">Kelajakka qadam dasturi</a>', page)
         self.assertIn('class="menu__link is-active" href="kelajakka-qadam.html"', page)
         self.assertIn('class="menu__link" href="news.html"', page)
+
+    def test_rubric_pages_exist_before_their_first_post(self):
+        self.write_posts([post(slug='a', cover='images/nsu/news/a/cover.jpg')])
+        bn.build(self.root)
+        page = (self.root / 'bir-ixtiro-tarixi.html').read_text(encoding='utf-8')
+        self.assertIn('<h1>Bir ixtiro tarixi</h1>', page)
+        self.assertIn('class="nsu-news-empty"', page)
+        self.assertIn('class="menu__link is-active" href="bir-ixtiro-tarixi.html" data-wide>', page)
+        # the "›" button is active on the donor (contact.html sits in it), not here
+        self.assertIn('<button class="menu__btn" type="button" aria-label="Yana">', page)
+        self.assertTrue((self.root / 'ilm-bilan-erishilgan-yutuq.html').is_file())
+
+    def test_rubric_post_is_listed_on_the_rubric_page(self):
+        self.write_posts([post(slug='a', cover='images/nsu/news/a/cover.jpg'),
+                          post(slug='r', cover='images/nsu/news/a/cover.jpg',
+                               section='ilm-bilan-erishilgan-yutuq')])
+        bn.build(self.root)
+        read = lambda name: (self.root / name).read_text(encoding='utf-8')
+        rubric = read('ilm-bilan-erishilgan-yutuq.html')
+        self.assertIn('href="news-r.html"', rubric)
+        self.assertNotIn('nsu-news-empty', rubric)
+        self.assertNotIn('news-r.html', read('news.html'))
+        self.assertIn('<a href="ilm-bilan-erishilgan-yutuq.html">Ilm bilan erishilgan yutuq</a>',
+                      read('news-r.html'))
 
     def test_unknown_section_is_a_build_error(self):
         self.write_posts([post(slug='a', cover='images/nsu/news/a/cover.jpg', section='nope')])

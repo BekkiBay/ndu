@@ -126,6 +126,8 @@ h5.nsu-sub{font-size:17px}
 /* ---------------------------------------------------------- news grid */
 .nsu-news-grid{margin:0 -12px}
 .nsu-news-grid>[class*="col-"]{padding:12px}
+/* раздел, в котором ещё нет постов */
+.nsu-news-empty{width:100%;margin:12px;padding:48px 24px;text-align:center;color:var(--nsu-muted);border:1px dashed var(--nsu-border);border-radius:4px}
 .nsu-news-card{
   display:flex;flex-direction:column;height:100%;background:#fff;border:1px solid var(--nsu-border);
   border-radius:4px;overflow:hidden;text-decoration:none;transition:box-shadow .25s,transform .25s;
